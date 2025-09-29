@@ -1,0 +1,170 @@
+site_name: Zeekr Enthusiasts of Victoria (ZEV) Wiki
+site_description: Information about Zeekr Cars in Australia - ZEV Club Resource
+site_author: Zeekr Enthusiasts of Victoria (ZEV)
+site_url: https://thushan.github.io/zeekr/
+
+repo_name: thushan/zeekr
+repo_url: https://github.com/thushan/zeekr
+edit_uri: edit/main/docs/content/
+docs_dir: content
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.action.edit
+    - content.action.view
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+extra:
+  club:
+    name: "Zeekr Enthusiasts of Victoria"
+    abbreviation: "ZEV"
+    full_name: "Zeekr Enthusiasts of Victoria (ZEV)"
+    location: "Victoria, Australia"
+    contact_email: "info@zev.club"
+    website: "https://zev.club"
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/thushan/zeekr
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/zeekrenthusiastsvic
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/zeekr_vic
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+extra_css:
+  - stylesheets/zeekr.css
+  - stylesheets/nightowl.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: thushan
+      repo: olla
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - macros
+  - minify:
+      minify_html: true
+
+nav:
+  - Home:
+      - Overview: index.md
+  - Models:
+      - models/index.md
+      - Zeekr 7X:
+          - Overview: models/7x/overview.md
+          - 2025 Model:
+              - Specifications: models/7x/2025/specifications.md
+              - Pricing: models/7x/2025/pricing.md
+              - Service Schedule: models/7x/2025/service-schedule.md
+          - 2026 Model: models/7x/2026/overview.md
+      - Zeekr X: models/x/overview.md
+      - Zeekr 009: models/009/overview.md
+  - Guides:
+      - guides/index.md
+      - Charging:
+          - Home Setup: guides/charging/home-setup.md
+          - Public Networks: guides/charging/public-networks.md
+          - Road Trips: guides/charging/road-trips.md
+      - Ownership:
+          - Buying Process: guides/ownership/buying-process.md
+          - Delivery Checklist: guides/ownership/delivery-checklist.md
+          - First 30 Days: guides/ownership/first-30-days.md
+      - Maintenance: guides/maintenance/overview.md
+      - New to EV: guides/new-to-ev/overview.md
+  - Club:
+      - club/index.md
+      - Events: club/events/overview.md
+      - Group Buys: club/group-buys/overview.md
+      - Meet the Committee: club/meet-the-committee.md
+  - Resources:
+      - resources/index.md
+      - Service Centers (VIC): resources/service-centers-vic.md
+      - Charging Networks: resources/charging-networks-australia.md
+      - Useful Links: resources/useful-links.md
+  - Comparisons:
+      - comparisons/index.md
+      - Zeekr vs Competitors: comparisons/zeekr-vs-competitors.md
+      - Model Comparison: comparisons/model-comparison-table.md

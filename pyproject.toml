@@ -1,0 +1,30 @@
+[project]
+name = "zeekr-wiki"
+version = "1.0.0"
+description = "Zeekr Enthusiasts of Victoria (ZEV) Wiki"
+authors = [
+    {name = "Thushan Fernando", email = "thushan@thushanfernando.com"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+dependencies = [
+    "mkdocs-material>=9.6.0",
+    "mkdocs-minify-plugin>=0.8.0",
+    "mkdocs-macros-plugin>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://thushan.github.io/zeekr/"
+Repository = "https://github.com/thushan/zeekr"
+Issues = "https://github.com/thushan/zeekr/issues"
+
+[tool.uv]
+dev-dependencies = [
+    "mkdocs>=1.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mkdocs>=1.5.0",
+]
