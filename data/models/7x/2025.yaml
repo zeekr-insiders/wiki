@@ -1,0 +1,1337 @@
+# Zeekr 7X 2025 Model Year - Complete Australian Specification
+# ZEV Wiki Project - Production-ready data for comparison tables
+schema_version: "1.1"
+
+model:
+  brand: "Zeekr"
+  name: "7X"
+  slug: "7x"
+  generation: "1st gen"
+  platform: "SEA 800V"
+  body_style: "SUV"
+  model_years:
+    first: 2025
+    last: null
+  launch_date: 2024-09-20
+
+  # Model-level assets
+  assets:
+    hero_image: "models/7x/2025/hero.jpg"
+    gallery_path: "models/7x/2025/gallery/"
+    brochure_url: "models/7x/2025/downloads/brochure.pdf"
+    configurator_url: "https://www.zeekr.com.au/7x/configure"
+
+  # SEO and metadata
+  metadata:
+    description: "Zeekr 7X SUV - Premium electric SUV with 800V architecture, up to 615km range, and advanced technology features. Available in RWD, Long Range RWD, and Performance AWD variants."
+    keywords:
+      - "Zeekr 7X"
+      - "Electric SUV"
+      - "800V charging"
+      - "Australian EV"
+      - "Premium electric vehicle"
+      - "Family SUV"
+      - "Fast charging"
+    social_image: "models/7x/2025/social_share.jpg"
+
+# =============================================================================
+# AUSTRALIAN MARKET CONFIGURATION
+# =============================================================================
+markets:
+  - code: "AU"
+    name: "Australia"
+    sales_start: 2025-01-15
+    sales_status: "on-sale"
+
+    # Warranty and service
+    warranty:
+      vehicle: "5 years / unlimited kilometres"
+      battery: "8 years / 160,000 kilometres"
+      roadside: "5 years"
+    service:
+      interval_km: null
+      interval_time_months: 12
+
+    # Multi-state pricing structure for Australia
+    pricing:
+      currency: "AUD"
+      notes: "Drive-away prices vary by state due to different stamp duty rates, registration costs, and available incentives. Prices shown are manufacturer's recommended retail price plus estimated on-road costs."
+      updated: 2025-01-15
+
+      # State-specific pricing breakdown
+      states:
+        # Victoria (Primary market for ZEV)
+        - code: "VIC"
+          name: "Victoria"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 0        # Exempt for EVs under $68,740
+              registration: 737
+              ctp_insurance: 726
+              drive_away_estimate: 60943
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 0        # Exempt for EVs under $68,740
+              registration: 737
+              ctp_insurance: 726
+              drive_away_estimate: 68943
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 3849     # Above exemption threshold
+              registration: 737
+              ctp_insurance: 726
+              drive_away_estimate: 84792
+
+          # Victorian incentives and rebates
+          incentives:
+            ev_rebate:
+              amount: 3000
+              eligibility: "Vehicles under $68,740 purchased by individuals"
+              cap_price: 68740
+              cap_income: null
+              status: "active"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null  # Full exemption under threshold
+              threshold_price: 68740
+              status: "active"
+
+            registration_discount:
+              discount_amount: 100
+              discount_percentage: null
+              duration_years: 2
+
+            additional_incentives:
+              - name: "EV Interest Rate Discount"
+                amount: null
+                description: "Reduced interest rates for EV loans through participating lenders"
+                status: "active"
+
+          # Victorian regulatory information
+          regulations:
+            road_user_charge:
+              applicable: true
+              rate_per_km: 0.025
+              start_date: 2025-07-01
+
+            parking_benefits:
+              free_public_parking: true
+              reduced_rates: true
+              ev_only_spaces: true
+
+        # New South Wales
+        - code: "NSW"
+          name: "New South Wales"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 0        # Exempt for EVs under $68,750
+              registration: 383
+              ctp_insurance: 638
+              drive_away_estimate: 60501
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 0        # Exempt for EVs under $68,750
+              registration: 383
+              ctp_insurance: 638
+              drive_away_estimate: 68501
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 3849
+              registration: 383
+              ctp_insurance: 638
+              drive_away_estimate: 84350
+
+          incentives:
+            ev_rebate:
+              amount: 3000
+              eligibility: "Vehicles under $68,750 purchased by individuals"
+              cap_price: 68750
+              cap_income: null
+              status: "active"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null
+              threshold_price: 68750
+              status: "active"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: null
+              duration_years: null
+
+            additional_incentives: []
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: true
+              reduced_rates: false
+              ev_only_spaces: true
+
+        # Queensland
+        - code: "QLD"
+          name: "Queensland"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 0        # Exempt for EVs under $58,000
+              registration: 762
+              ctp_insurance: 385
+              drive_away_estimate: 60627
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 1949    # Above exemption threshold
+              registration: 762
+              ctp_insurance: 385
+              drive_away_estimate: 70576
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 2309
+              registration: 762
+              ctp_insurance: 385
+              drive_away_estimate: 82936
+
+          incentives:
+            ev_rebate:
+              amount: 6000
+              eligibility: "Vehicles under $58,000 purchased by individuals"
+              cap_price: 58000
+              cap_income: 180000
+              status: "active"
+              expiry_date: 2025-09-30
+
+            stamp_duty_exemption:
+              exemption_amount: null
+              threshold_price: 58000
+              status: "active"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: null
+              duration_years: null
+
+            additional_incentives: []
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: false
+              reduced_rates: false
+              ev_only_spaces: true
+
+        # Western Australia
+        - code: "WA"
+          name: "Western Australia"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 2280
+              registration: 456
+              ctp_insurance: 0     # Included in registration
+              drive_away_estimate: 62216
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 2599
+              registration: 456
+              ctp_insurance: 0
+              drive_away_estimate: 70535
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 3079
+              registration: 456
+              ctp_insurance: 0
+              drive_away_estimate: 83015
+
+          incentives:
+            ev_rebate:
+              amount: 3500
+              eligibility: "Vehicles under $70,000 purchased by individuals"
+              cap_price: 70000
+              cap_income: null
+              status: "active"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null
+              threshold_price: null
+              status: "expired"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: 75
+              duration_years: 2
+
+            additional_incentives: []
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: false
+              reduced_rates: false
+              ev_only_spaces: false
+
+        # South Australia
+        - code: "SA"
+          name: "South Australia"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 2280
+              registration: 638
+              ctp_insurance: 564
+              drive_away_estimate: 62962
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 2599
+              registration: 638
+              ctp_insurance: 564
+              drive_away_estimate: 71281
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 3079
+              registration: 638
+              ctp_insurance: 564
+              drive_away_estimate: 83761
+
+          incentives:
+            ev_rebate:
+              amount: 3000
+              eligibility: "Vehicles under $68,750 purchased by individuals"
+              cap_price: 68750
+              cap_income: null
+              status: "active"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null
+              threshold_price: null
+              status: "expired"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: null
+              duration_years: null
+
+            additional_incentives: []
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: false
+              reduced_rates: false
+              ev_only_spaces: true
+
+        # Tasmania
+        - code: "TAS"
+          name: "Tasmania"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 1994
+              registration: 267
+              ctp_insurance: 320
+              drive_away_estimate: 62061
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 2274
+              registration: 267
+              ctp_insurance: 320
+              drive_away_estimate: 70341
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 2694
+              registration: 267
+              ctp_insurance: 320
+              drive_away_estimate: 82761
+
+          incentives:
+            ev_rebate:
+              amount: 2000
+              eligibility: "Vehicles under $70,000 purchased by individuals"
+              cap_price: 70000
+              cap_income: null
+              status: "active"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null
+              threshold_price: null
+              status: "expired"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: null
+              duration_years: null
+
+            additional_incentives: []
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: false
+              reduced_rates: false
+              ev_only_spaces: false
+
+        # Australian Capital Territory
+        - code: "ACT"
+          name: "Australian Capital Territory"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 0        # Exempt for zero-emission vehicles
+              registration: 1030
+              ctp_insurance: 0     # Included in registration
+              drive_away_estimate: 60510
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 0
+              registration: 1030
+              ctp_insurance: 0
+              drive_away_estimate: 68510
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 0
+              registration: 1030
+              ctp_insurance: 0
+              drive_away_estimate: 80510
+
+          incentives:
+            ev_rebate:
+              amount: 15000
+              eligibility: "Zero-emission vehicles, income cap applies"
+              cap_price: null
+              cap_income: 150000
+              status: "active"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null  # Full exemption for ZEVs
+              threshold_price: null
+              status: "active"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: 20
+              duration_years: null  # Ongoing
+
+            additional_incentives:
+              - name: "Free public parking"
+                amount: null
+                description: "Free parking in designated ACT Government car parks"
+                status: "active"
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: true
+              reduced_rates: true
+              ev_only_spaces: true
+
+        # Northern Territory
+        - code: "NT"
+          name: "Northern Territory"
+          variants:
+            - id: "rwd_75"
+              rrp: 56990
+              dealer_delivery: 2490
+              stamp_duty: 2166
+              registration: 582
+              ctp_insurance: 482
+              drive_away_estimate: 62710
+
+            - id: "rwd_lr_100"
+              rrp: 64990
+              dealer_delivery: 2490
+              stamp_duty: 2466
+              registration: 582
+              ctp_insurance: 482
+              drive_away_estimate: 71010
+
+            - id: "awd_perf_100"
+              rrp: 76990
+              dealer_delivery: 2490
+              stamp_duty: 2926
+              registration: 582
+              ctp_insurance: 482
+              drive_away_estimate: 83470
+
+          incentives:
+            ev_rebate:
+              amount: null
+              eligibility: null
+              cap_price: null
+              cap_income: null
+              status: "not_available"
+              expiry_date: null
+
+            stamp_duty_exemption:
+              exemption_amount: null
+              threshold_price: null
+              status: "not_available"
+
+            registration_discount:
+              discount_amount: null
+              discount_percentage: null
+              duration_years: null
+
+            additional_incentives: []
+
+          regulations:
+            road_user_charge:
+              applicable: false
+              rate_per_km: null
+              start_date: null
+
+            parking_benefits:
+              free_public_parking: false
+              reduced_rates: false
+              ev_only_spaces: false
+
+    # Available colours for Australian market
+    colours:
+      exterior:
+        - code: "OB"
+          name: "Onyx Black"
+          slug: "onyx-black"
+          finish: "metallic"
+          price_premium: 0
+          availability: "*"
+          image_path: "models/7x/2025/colours/exterior/onyx-black.jpg"
+
+        - code: "CW"
+          name: "Crystal White"
+          slug: "crystal-white"
+          finish: "metallic"
+          price_premium: 0
+          availability: "*"
+          image_path: "models/7x/2025/colours/exterior/crystal-white.jpg"
+
+        - code: "TG"
+          name: "Tech Grey"
+          slug: "tech-grey"
+          finish: "metallic"
+          price_premium: 0
+          availability: "*"
+          image_path: "models/7x/2025/colours/exterior/tech-grey.jpg"
+
+        - code: "FG"
+          name: "Forest Green"
+          slug: "forest-green"
+          finish: "metallic"
+          price_premium: 0
+          availability: "*"
+          image_path: "models/7x/2025/colours/exterior/forest-green.jpg"
+
+        - code: "BSR"
+          name: "Blue with Silver Roof"
+          slug: "blue-silver-roof"
+          finish: "metallic"
+          price_premium: 1500
+          availability: ["rwd_lr_100", "awd_perf_100"]
+          image_path: "models/7x/2025/colours/exterior/blue-silver-roof.jpg"
+
+      interior:
+        - name: "Black Vegan Leather"
+          slug: "black-vegan-leather"
+          material: "vegan leather"
+          price_premium: 0
+          availability: "*"
+          image_path: "models/7x/2025/colours/interior/black-vegan-leather.jpg"
+
+        - name: "Black & Grey Vegan Leather"
+          slug: "black-grey-vegan-leather"
+          material: "vegan leather"
+          price_premium: 0
+          availability: ["rwd_lr_100", "awd_perf_100"]
+          image_path: "models/7x/2025/colours/interior/black-grey-vegan-leather.jpg"
+
+        - name: "Purple & White Nappa Leather"
+          slug: "purple-white-nappa-leather"
+          material: "nappa leather"
+          price_premium: 0
+          availability: ["awd_perf_100"]
+          image_path: "models/7x/2025/colours/interior/purple-white-nappa-leather.jpg"
+
+# =============================================================================
+# VARIANT SPECIFICATIONS (Technical truth per variant)
+# =============================================================================
+variants:
+  # RWD 75kWh Variant
+  - id: "rwd_75"
+    name: "RWD"
+    slug: "rwd"
+
+    # Variant assets
+    assets:
+      hero_image: "models/7x/2025/variants/rwd/hero.jpg"
+      hero_image_mobile: "models/7x/2025/variants/rwd/hero_mobile.jpg"
+      gallery_path: "models/7x/2025/variants/rwd/gallery/"
+      360_view_url: null
+
+    # Drivetrain specifications
+    drivetrain:
+      layout: "RWD"
+      motors:
+        - axle: "rear"
+          power_kw: 310
+          torque_nm: 440
+
+    system_output:
+      power_kw: 310
+      power_hp: 415
+      torque_nm: 440
+
+    # Performance metrics
+    performance:
+      zero_to_100_s: 6.0
+      top_speed_kph: 200
+      efficiency_wh_km: 156
+      range:
+        standard: "WLTP"
+        km: 480
+
+    # Battery specifications
+    battery:
+      gross_kwh: 75
+      usable_kwh: 72
+      chemistry: "LFP"
+      thermal: "heat pump, liquid cooled"
+      voltage_v: 800
+
+    # Charging capabilities
+    charging:
+      ac:
+        max_kw: 22
+        onboard_phases: 3
+        connector: "Type 2"
+      dc:
+        max_kw: 450
+        curve_note: "Peak power maintained from 10-30% state of charge"
+        time_10_80_min: 13
+        time_20_80_min: 10
+        connector: "CCS2"
+      bidirectional:
+        v2l_kw: 3.3
+        v2h: false
+        v2g: false
+
+    # Chassis and handling
+    chassis:
+      steering: "Electric power steering with variable ratio"
+      suspension:
+        - "MacPherson strut (front)"
+        - "Multi-link (rear)"
+      brakes: "Akebono 4-piston calipers"
+      turning_circle_m: 11.3
+      wheels_tires:
+        standard: "235/55 R19"
+        optional:
+          - "255/45 R20"
+
+    # Dimensions and measurements
+    dimensions:
+      length_mm: 4787
+      width_mm: 1930
+      height_mm: 1650
+      wheelbase_mm: 2900
+      ground_clearance_mm: 172
+
+    # Capacities and weights
+    capacities:
+      kerb_weight_kg: 2180
+      gross_weight_kg: 2730
+      tow_braked_kg: 2000
+      tow_unbraked_kg: 750
+      roof_load_kg: 100
+      cargo_rear_l: 539
+      cargo_max_l: 1978
+      frunk_l: 62
+      seats: 5
+
+    # Infotainment and technology
+    infotainment:
+      soc: "Qualcomm Snapdragon 8295"
+      os: "Zeekr OS 6.0"
+      displays:
+        cluster_in: 13.02
+        centre_in: 16.0
+        hud_in: null
+        rear_entertainment: null
+      audio:
+        system: "Standard Sound System"
+        speakers: 10
+        power_watts: 450
+      connectivity:
+        carplay: true
+        android_auto: true
+        wireless_charging: true
+        usb_ports: 6
+        wifi_hotspot: true
+      features:
+        - "OTA updates"
+        - "Voice control (Hey Zeekr)"
+        - "App remote control"
+        - "Digital key"
+
+    # ADAS and safety
+    adas_safety:
+      level: "L2+"
+      features_standard:
+        - "Autonomous Emergency Braking (AEB)"
+        - "Blind Spot Monitoring (BSM)"
+        - "Forward/Rear Cross Traffic Alert"
+        - "Lane Keep Assist/Lane Change Assist"
+        - "Adaptive Cruise Control with lane centering"
+        - "360° surround view camera"
+        - "Traffic Sign Recognition"
+        - "Driver Attention Monitoring"
+      features_optional: []
+      ratings:
+        ancap: null
+        euro_ncap: "5 stars (2024)"
+        nhtsa: null
+
+    # Equipment and features
+    features:
+      standard:
+        - "Panoramic glass roof with power sunshade"
+        - "Dual 50W wireless phone chargers"
+        - "Tri-zone automatic climate control"
+        - "4-zone voice climate control"
+        - "Autonomous parking assist"
+        - "Sentry/guard mode"
+        - "Heated front & rear seats"
+        - "Rear seats 10° power recline"
+        - "13.02\" digital instrument cluster"
+        - "16\" 3.5K centre touchscreen"
+        - "Electric tailgate with kick sensor"
+        - "Keyless entry and start"
+        - "Auto-dimming mirrors"
+        - "Rain-sensing wipers"
+        - "LED headlights with auto high beam"
+        - "LED daytime running lights"
+        - "LED tail lights"
+        - "Tyre pressure monitoring"
+        - "Hill start assist"
+        - "Electronic parking brake"
+
+      optional:
+        - "Ventilated & massaging front seats"
+        - "AR-HUD (Augmented Reality Head-Up Display)"
+        - "Power-adjustable steering column"
+
+      # Organized feature categories for comparison tables
+      comfort:
+        standard:
+          - "Tri-zone automatic climate control"
+          - "Heated front & rear seats"
+          - "Panoramic glass roof with power sunshade"
+          - "Rear seats 10° power recline"
+        optional:
+          - "Ventilated & massaging front seats"
+
+      convenience:
+        standard:
+          - "Dual 50W wireless phone chargers"
+          - "Autonomous parking assist"
+          - "Electric tailgate with kick sensor"
+          - "Keyless entry and start"
+          - "Digital key"
+          - "Voice control (Hey Zeekr)"
+        optional:
+          - "Power-adjustable steering column"
+
+      exterior:
+        standard:
+          - "LED headlights with auto high beam"
+          - "LED daytime running lights"
+          - "LED tail lights"
+          - "Auto-dimming mirrors"
+          - "Rain-sensing wipers"
+        optional: []
+
+      interior:
+        standard:
+          - "13.02\" digital instrument cluster"
+          - "16\" 3.5K centre touchscreen"
+          - "Black vegan leather upholstery"
+          - "Standard Sound System (10 speakers)"
+        optional:
+          - "AR-HUD"
+
+    # Market-specific overrides (for regional differences)
+    market_overrides:
+      - market: "AU"
+        add_features_standard: []
+        remove_features_standard: []
+        add_features_optional: []
+        remove_features_optional: []
+        charging: {}
+        performance: {}
+        capacities: {}
+        infotainment: {}
+        adas_safety: {}
+        notes:
+          - "Right-hand drive configuration"
+          - "Australian Design Rules (ADR) compliant"
+
+  # Long Range RWD 100kWh Variant
+  - id: "rwd_lr_100"
+    name: "Long Range RWD"
+    slug: "long-range-rwd"
+
+    # Variant assets
+    assets:
+      hero_image: "models/7x/2025/variants/long-range-rwd/hero.jpg"
+      hero_image_mobile: "models/7x/2025/variants/long-range-rwd/hero_mobile.jpg"
+      gallery_path: "models/7x/2025/variants/long-range-rwd/gallery/"
+      360_view_url: null
+
+    # Drivetrain specifications
+    drivetrain:
+      layout: "RWD"
+      motors:
+        - axle: "rear"
+          power_kw: 310
+          torque_nm: 440
+
+    system_output:
+      power_kw: 310
+      power_hp: 415
+      torque_nm: 440
+
+    # Performance metrics
+    performance:
+      zero_to_100_s: 6.0
+      top_speed_kph: 200
+      efficiency_wh_km: 162
+      range:
+        standard: "WLTP"
+        km: 615
+
+    # Battery specifications
+    battery:
+      gross_kwh: 100
+      usable_kwh: 95
+      chemistry: "NCM"
+      thermal: "heat pump, liquid cooled"
+      voltage_v: 800
+
+    # Charging capabilities
+    charging:
+      ac:
+        max_kw: 22
+        onboard_phases: 3
+        connector: "Type 2"
+      dc:
+        max_kw: 420
+        curve_note: "Peak power maintained from 10-35% state of charge"
+        time_10_80_min: 16
+        time_20_80_min: 12
+        connector: "CCS2"
+      bidirectional:
+        v2l_kw: 3.3
+        v2h: false
+        v2g: false
+
+    # Chassis and handling
+    chassis:
+      steering: "Electric power steering with variable ratio"
+      suspension:
+        - "MacPherson strut (front)"
+        - "Multi-link (rear)"
+      brakes: "Akebono 4-piston calipers"
+      turning_circle_m: 11.3
+      wheels_tires:
+        standard: "235/55 R19"
+        optional:
+          - "255/45 R20"
+
+    # Dimensions and measurements
+    dimensions:
+      length_mm: 4787
+      width_mm: 1930
+      height_mm: 1650
+      wheelbase_mm: 2900
+      ground_clearance_mm: 172
+
+    # Capacities and weights
+    capacities:
+      kerb_weight_kg: 2220
+      gross_weight_kg: 2770
+      tow_braked_kg: 2000
+      tow_unbraked_kg: 750
+      roof_load_kg: 100
+      cargo_rear_l: 539
+      cargo_max_l: 1978
+      frunk_l: 62
+      seats: 5
+
+    # Infotainment and technology
+    infotainment:
+      soc: "Qualcomm Snapdragon 8295"
+      os: "Zeekr OS 6.0"
+      displays:
+        cluster_in: 13.02
+        centre_in: 16.0
+        hud_in: 36.21
+        rear_entertainment: null
+      audio:
+        system: "Zeekr Sound Pro"
+        speakers: 21
+        power_watts: 2160
+      connectivity:
+        carplay: true
+        android_auto: true
+        wireless_charging: true
+        usb_ports: 6
+        wifi_hotspot: true
+      features:
+        - "OTA updates"
+        - "Voice control (Hey Zeekr)"
+        - "App remote control"
+        - "Digital key"
+
+    # ADAS and safety
+    adas_safety:
+      level: "L2+"
+      features_standard:
+        - "Autonomous Emergency Braking (AEB)"
+        - "Blind Spot Monitoring (BSM)"
+        - "Forward/Rear Cross Traffic Alert"
+        - "Lane Keep Assist/Lane Change Assist"
+        - "Adaptive Cruise Control with lane centering"
+        - "360° surround view camera"
+        - "Traffic Sign Recognition"
+        - "Driver Attention Monitoring"
+      features_optional: []
+      ratings:
+        ancap: null
+        euro_ncap: "5 stars (2024)"
+        nhtsa: null
+
+    # Equipment and features
+    features:
+      standard:
+        # All RWD base features plus:
+        - "Panoramic glass roof with power sunshade"
+        - "Dual 50W wireless phone chargers"
+        - "Tri-zone automatic climate control"
+        - "4-zone voice climate control"
+        - "Autonomous parking assist"
+        - "Sentry/guard mode"
+        - "Heated front & rear seats"
+        - "Ventilated & massaging front seats"
+        - "Rear seats 10° power recline"
+        - "13.02\" digital instrument cluster"
+        - "16\" 3.5K centre touchscreen"
+        - "AR-HUD (Augmented Reality Head-Up Display)"
+        - "Power-adjustable steering column"
+        - "Rear privacy glass"
+        - "Electric tailgate with kick sensor"
+        - "Keyless entry and start"
+        - "Auto-dimming mirrors"
+        - "Rain-sensing wipers"
+        - "LED headlights with auto high beam"
+        - "LED daytime running lights"
+        - "LED tail lights"
+        - "Tyre pressure monitoring"
+        - "Hill start assist"
+        - "Electronic parking brake"
+        - "Zeekr Sound Pro (21 speakers, 2160W)"
+
+      optional: []
+
+      # Organized feature categories for comparison tables
+      comfort:
+        standard:
+          - "Tri-zone automatic climate control"
+          - "Heated front & rear seats"
+          - "Ventilated & massaging front seats"
+          - "Panoramic glass roof with power sunshade"
+          - "Rear seats 10° power recline"
+          - "Rear privacy glass"
+        optional: []
+
+      convenience:
+        standard:
+          - "Dual 50W wireless phone chargers"
+          - "Autonomous parking assist"
+          - "Electric tailgate with kick sensor"
+          - "Keyless entry and start"
+          - "Digital key"
+          - "Voice control (Hey Zeekr)"
+          - "Power-adjustable steering column"
+        optional: []
+
+      exterior:
+        standard:
+          - "LED headlights with auto high beam"
+          - "LED daytime running lights"
+          - "LED tail lights"
+          - "Auto-dimming mirrors"
+          - "Rain-sensing wipers"
+          - "Rear privacy glass"
+        optional: []
+
+      interior:
+        standard:
+          - "13.02\" digital instrument cluster"
+          - "16\" 3.5K centre touchscreen"
+          - "AR-HUD"
+          - "Black & grey vegan leather upholstery"
+          - "Zeekr Sound Pro (21 speakers, 2160W)"
+        optional: []
+
+    # Market-specific overrides
+    market_overrides:
+      - market: "AU"
+        add_features_standard: []
+        remove_features_standard: []
+        add_features_optional: []
+        remove_features_optional: []
+        charging: {}
+        performance: {}
+        capacities: {}
+        infotainment: {}
+        adas_safety: {}
+        notes:
+          - "Right-hand drive configuration"
+          - "Australian Design Rules (ADR) compliant"
+
+  # Performance AWD 100kWh Variant
+  - id: "awd_perf_100"
+    name: "Performance AWD"
+    slug: "performance-awd"
+
+    # Variant assets
+    assets:
+      hero_image: "models/7x/2025/variants/performance-awd/hero.jpg"
+      hero_image_mobile: "models/7x/2025/variants/performance-awd/hero_mobile.jpg"
+      gallery_path: "models/7x/2025/variants/performance-awd/gallery/"
+      360_view_url: null
+
+    # Drivetrain specifications
+    drivetrain:
+      layout: "AWD"
+      motors:
+        - axle: "front"
+          power_kw: 165
+          torque_nm: 310
+        - axle: "rear"
+          power_kw: 310
+          torque_nm: 440
+
+    system_output:
+      power_kw: 475
+      power_hp: 636
+      torque_nm: 710
+
+    # Performance metrics
+    performance:
+      zero_to_100_s: 3.8
+      top_speed_kph: 210
+      efficiency_wh_km: 184
+      range:
+        standard: "WLTP"
+        km: 543
+
+    # Battery specifications
+    battery:
+      gross_kwh: 100
+      usable_kwh: 95
+      chemistry: "NCM"
+      thermal: "heat pump, liquid cooled"
+      voltage_v: 800
+
+    # Charging capabilities
+    charging:
+      ac:
+        max_kw: 22
+        onboard_phases: 3
+        connector: "Type 2"
+      dc:
+        max_kw: 420
+        curve_note: "Peak power maintained from 10-35% state of charge"
+        time_10_80_min: 16
+        time_20_80_min: 12
+        connector: "CCS2"
+      bidirectional:
+        v2l_kw: 3.3
+        v2h: false
+        v2g: false
+
+    # Chassis and handling
+    chassis:
+      steering: "Electric power steering with variable ratio"
+      suspension:
+        - "Air suspension with adaptive damping"
+        - "Continuous Damping Control (CDC)"
+      brakes: "Akebono 4-piston calipers; 34.9m (100-0 km/h) claimed"
+      turning_circle_m: 11.3
+      wheels_tires:
+        standard: "265/40 R21 forged alloy"
+        optional: []
+
+    # Dimensions and measurements
+    dimensions:
+      length_mm: 4787
+      width_mm: 1930
+      height_mm: 1650
+      wheelbase_mm: 2900
+      ground_clearance_mm: 172
+
+    # Capacities and weights
+    capacities:
+      kerb_weight_kg: 2320
+      gross_weight_kg: 2870
+      tow_braked_kg: 2000
+      tow_unbraked_kg: 750
+      roof_load_kg: 100
+      cargo_rear_l: 539
+      cargo_max_l: 1978
+      frunk_l: 62
+      seats: 5
+
+    # Infotainment and technology
+    infotainment:
+      soc: "Qualcomm Snapdragon 8295"
+      os: "Zeekr OS 6.0"
+      displays:
+        cluster_in: 13.02
+        centre_in: 16.0
+        hud_in: 36.21
+        rear_entertainment: null
+      audio:
+        system: "Zeekr Sound Pro"
+        speakers: 21
+        power_watts: 2160
+      connectivity:
+        carplay: true
+        android_auto: true
+        wireless_charging: true
+        usb_ports: 6
+        wifi_hotspot: true
+      features:
+        - "OTA updates"
+        - "Voice control (Hey Zeekr)"
+        - "App remote control"
+        - "Digital key"
+
+    # ADAS and safety
+    adas_safety:
+      level: "L2+"
+      features_standard:
+        - "Autonomous Emergency Braking (AEB)"
+        - "Blind Spot Monitoring (BSM)"
+        - "Forward/Rear Cross Traffic Alert"
+        - "Lane Keep Assist/Lane Change Assist"
+        - "Adaptive Cruise Control with lane centering"
+        - "360° surround view camera"
+        - "Traffic Sign Recognition"
+        - "Driver Attention Monitoring"
+      features_optional: []
+      ratings:
+        ancap: null
+        euro_ncap: "5 stars (2024)"
+        nhtsa: null
+
+    # Equipment and features
+    features:
+      standard:
+        # All Long Range features plus:
+        - "Panoramic glass roof with power sunshade"
+        - "Dual 50W wireless phone chargers"
+        - "Tri-zone automatic climate control"
+        - "4-zone voice climate control"
+        - "Autonomous parking assist"
+        - "Sentry/guard mode"
+        - "Heated front & rear seats"
+        - "Ventilated & massaging front seats"
+        - "Rear seats 10° power recline"
+        - "13.02\" digital instrument cluster"
+        - "16\" 3.5K centre touchscreen"
+        - "AR-HUD (Augmented Reality Head-Up Display)"
+        - "Power-adjustable steering column"
+        - "Rear privacy glass"
+        - "Intelligent automatic doors"
+        - "Rear electric sunshades"
+        - "Nappa leather upholstery"
+        - "Air suspension with adaptive damping"
+        - "21\" forged alloy wheels"
+        - "Electric tailgate with kick sensor"
+        - "Keyless entry and start"
+        - "Auto-dimming mirrors"
+        - "Rain-sensing wipers"
+        - "LED headlights with auto high beam"
+        - "LED daytime running lights"
+        - "LED tail lights"
+        - "Tyre pressure monitoring"
+        - "Hill start assist"
+        - "Electronic parking brake"
+        - "Zeekr Sound Pro (21 speakers, 2160W)"
+
+      optional: []
+
+      # Organized feature categories for comparison tables
+      comfort:
+        standard:
+          - "Tri-zone automatic climate control"
+          - "Heated front & rear seats"
+          - "Ventilated & massaging front seats"
+          - "Panoramic glass roof with power sunshade"
+          - "Rear seats 10° power recline"
+          - "Rear privacy glass"
+          - "Rear electric sunshades"
+          - "Air suspension with adaptive damping"
+        optional: []
+
+      convenience:
+        standard:
+          - "Dual 50W wireless phone chargers"
+          - "Autonomous parking assist"
+          - "Electric tailgate with kick sensor"
+          - "Intelligent automatic doors"
+          - "Keyless entry and start"
+          - "Digital key"
+          - "Voice control (Hey Zeekr)"
+          - "Power-adjustable steering column"
+        optional: []
+
+      exterior:
+        standard:
+          - "LED headlights with auto high beam"
+          - "LED daytime running lights"
+          - "LED tail lights"
+          - "Auto-dimming mirrors"
+          - "Rain-sensing wipers"
+          - "Rear privacy glass"
+          - "21\" forged alloy wheels"
+        optional: []
+
+      interior:
+        standard:
+          - "13.02\" digital instrument cluster"
+          - "16\" 3.5K centre touchscreen"
+          - "AR-HUD"
+          - "Purple & white nappa leather upholstery"
+          - "Zeekr Sound Pro (21 speakers, 2160W)"
+        optional: []
+
+    # Market-specific overrides
+    market_overrides:
+      - market: "AU"
+        add_features_standard: []
+        remove_features_standard: []
+        add_features_optional: []
+        remove_features_optional: []
+        charging: {}
+        performance: {}
+        capacities: {}
+        infotainment: {}
+        adas_safety: {}
+        notes:
+          - "Right-hand drive configuration"
+          - "Australian Design Rules (ADR) compliant"
+          - "Performance calibration for Australian conditions"
+
+# =============================================================================
+# METADATA AND SOURCES
+# =============================================================================
+sources:
+  - title: "Zeekr Australia Official Website"
+    url: "https://www.zeekr.com.au/7x"
+    accessed: 2025-01-15
+    reliability: "official"
+
+  - title: "Zeekr 7X Specifications - Media Information"
+    url: "https://media.zeekr.com/7x-specifications"
+    accessed: 2025-01-15
+    reliability: "official"
+
+  - title: "Australian EV Incentives Database"
+    url: "https://www.evchoice.com.au/incentives"
+    accessed: 2025-01-15
+    reliability: "media"
+
+  - title: "State Government EV Policy Documents"
+    url: "https://various-state-gov-sites"
+    accessed: 2025-01-15
+    reliability: "official"
+
+notes:
+  - "Charging times are 10–80% on high-power liquid-cooled DC under ideal conditions"
+  - "Range figures are WLTP combined cycle and may vary based on driving conditions"
+  - "Drive-away prices are estimates and may vary by dealer and location"
+  - "State incentives are subject to change and availability"
+  - "Vehicle specifications subject to Australian Design Rules certification"
+
+# Data maintenance information
+data_info:
+  last_updated: 2025-01-15
+  next_review: 2025-04-15
+  maintainer: "ZEV Wiki Team"
+  status: "current"

@@ -1,0 +1,3 @@
+# This is a placeholder file for vehicle images
+# In a real implementation, this would be a JPEG image file
+# The comparison template will fall back to this if variant images are missing

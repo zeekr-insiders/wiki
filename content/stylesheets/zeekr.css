@@ -1,0 +1,1185 @@
+/* Zeekr Brand Colors & Theme - Official Signature Orange Palette */
+:root {
+  /* Zeekr Primary Colors - Based on official brand guidelines */
+  --zeekr-primary-dark: #24292b;           /* Primary brand colour - official Zeekr dark charcoal */
+  --zeekr-surface-white: #ffffff;          /* Pure white surface */
+  --zeekr-surface-grey: #f5f5f5;           /* Official light grey background */
+  --zeekr-surface-hover: #ebebeb;          /* Official hover background */
+  --zeekr-surface-active: #f5f6f7;         /* Official active background */
+
+  /* Zeekr Signature Red-Orange - Official brand color #ff5841 */
+  --zeekr-brand-50: #fff4f2;               /* Lightest brand - for subtle backgrounds */
+  --zeekr-brand-100: #ffe6e1;              /* Light brand - for card backgrounds */
+  --zeekr-brand-200: #ffccc3;              /* Medium light brand - for sections */
+  --zeekr-brand-300: #ffaa99;              /* Medium brand - for borders */
+  --zeekr-brand-400: #ff7c66;              /* Darker brand - for muted elements */
+  --zeekr-brand-500: #ff5841;              /* Official Zeekr signature red-orange */
+  --zeekr-brand-600: #e6412a;              /* Darker brand for hover states */
+  --zeekr-brand-700: #cc2e1a;              /* Dark brand for active states */
+
+  /* Text hierarchy */
+  --zeekr-text-primary: rgba(0, 0, 0, 0.87);     /* Primary text */
+  --zeekr-text-secondary: rgba(0, 0, 0, 0.60);   /* Secondary text */
+  --zeekr-text-muted: rgba(0, 0, 0, 0.38);       /* Muted text */
+  --zeekr-text-disabled: rgba(0, 0, 0, 0.26);    /* Disabled text */
+  --zeekr-text-light: #ffffff;                   /* Light text for dark backgrounds */
+
+  /* Zeekr Brand Accent System - Official #ff5841 */
+  --zeekr-accent-primary: var(--zeekr-brand-500);         /* Primary signature red-orange */
+  --zeekr-accent-hover: var(--zeekr-brand-600);           /* Hover state red-orange */
+  --zeekr-accent-active: var(--zeekr-brand-700);          /* Active state red-orange */
+  --zeekr-accent-subtle: rgba(255, 88, 65, 0.08);         /* Very subtle brand background */
+  --zeekr-accent-border: rgba(255, 88, 65, 0.20);         /* Brand borders */
+
+  /* Border colours */
+  --zeekr-border-light: #dee2e6;           /* Light border colour */
+  --zeekr-border-brand: rgba(255, 88, 65, 0.2);    /* Brand border accent */
+
+  /* Status colours */
+  --zeekr-warning: #FFC107;                /* Warning amber */
+  --zeekr-success: #28a745;                /* Success green */
+  --zeekr-error: #dc3545;                  /* Error red */
+
+  /* SVG and diagram colours - signature brand */
+  --zeekr-electric-accent: var(--zeekr-accent-primary);    /* For vehicle diagrams */
+  --zeekr-dimension-accent: var(--zeekr-brand-400);        /* For dimension lines */
+
+  /* Refined gradients - signature brand aesthetic */
+  --zeekr-subtle-gradient: linear-gradient(135deg, var(--zeekr-primary-dark) 0%, #2d3436 100%);
+  --zeekr-accent-gradient: linear-gradient(135deg, var(--zeekr-accent-primary) 0%, var(--zeekr-accent-hover) 100%);
+  --zeekr-premium-gradient: linear-gradient(145deg, var(--zeekr-primary-dark) 0%, var(--zeekr-accent-primary) 100%);
+
+  /* Navigation selected states - clean brand accents */
+  --zeekr-nav-selected-bg: var(--zeekr-brand-50);       /* Light brand background */
+  --zeekr-nav-selected-text: var(--zeekr-primary-dark); /* Dark text for contrast */
+  --zeekr-nav-selected-border: var(--zeekr-accent-primary); /* Orange accent border */
+  --zeekr-nav-hover-bg: var(--zeekr-brand-100);         /* Light brand hover */
+  --zeekr-nav-hover-text: var(--zeekr-primary-dark);    /* Consistent dark text */
+
+  /* Dark theme */
+  --zeekr-dark-bg: var(--zeekr-primary-dark);           /* Primary dark background */
+  --zeekr-dark-surface: rgba(255, 255, 255, 0.05);     /* Subtle surface */
+  --zeekr-dark-selected: rgba(255, 88, 65, 0.15);      /* Brand selected state */
+  --zeekr-dark-hover: rgba(255, 88, 65, 0.08);         /* Subtle brand hover */
+  --zeekr-dark-accent: var(--zeekr-brand-400);         /* Brand accent for dark mode */
+  --zeekr-dark-text: #f8f9fa;                          /* Clean light text */
+  --zeekr-dark-text-secondary: rgba(248, 249, 250, 0.75); /* Secondary text */
+}
+
+/* Light theme overrides - Clean Zeekr styling with signature orange */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--zeekr-primary-dark);
+  --md-primary-fg-color--light: var(--zeekr-text-secondary);
+  --md-primary-fg-color--dark: var(--zeekr-primary-dark);
+  --md-accent-fg-color: var(--zeekr-accent-primary);
+  --md-accent-fg-color--transparent: var(--zeekr-accent-subtle);
+  --md-default-bg-color: var(--zeekr-surface-white);
+  --md-default-fg-color: var(--zeekr-text-primary);
+}
+
+/* Dark theme overrides - Dark aesthetic with signature orange highlights */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--zeekr-dark-accent);
+  --md-primary-fg-color--light: var(--zeekr-brand-300);
+  --md-primary-fg-color--dark: var(--zeekr-dark-accent);
+  --md-accent-fg-color: var(--zeekr-brand-400);
+  --md-accent-fg-color--transparent: var(--zeekr-dark-selected);
+  --md-default-bg-color: var(--zeekr-dark-bg);
+  --md-default-fg-color: var(--zeekr-dark-text);
+  --md-code-bg-color: #1a1e22;
+}
+
+/* Header - Sophisticated dark theme matching official Australian site */
+.md-header {
+  background: var(--zeekr-primary-dark);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--zeekr-border-light);
+}
+
+/* Header title with clean, modern typography inspired by ZeekrHeadline font */
+.md-header__title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--zeekr-surface-white);
+  letter-spacing: 0.5px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+/* Navigation tabs - Clean modern approach with signature brand accents */
+.md-tabs {
+  background: var(--zeekr-surface-grey);
+  border-bottom: 1px solid var(--zeekr-border-light);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.md-tabs__link {
+  color: var(--zeekr-text-secondary);
+  opacity: 0.8;
+  font-weight: 500;
+  transition: color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+  letter-spacing: 0.3px;
+  font-size: 0.9rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+  border-radius: 4px 4px 0 0;
+  margin: 0 2px;
+  padding: 1rem 1.5rem;
+}
+
+/* Navigation selected states - clean brand styling */
+.md-tabs__link--active {
+  color: var(--zeekr-nav-selected-text);
+  background-color: var(--zeekr-nav-selected-bg);
+  opacity: 1;
+  font-weight: 600;
+  position: relative;
+}
+
+.md-tabs__link--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--zeekr-nav-selected-border);
+  border-radius: 2px 2px 0 0;
+}
+
+.md-tabs__link:hover:not(.md-tabs__link--active) {
+  color: var(--zeekr-nav-hover-text);
+  background-color: var(--zeekr-nav-hover-bg);
+  opacity: 1;
+}
+
+/* Search styling - Clean modern approach with brand accents */
+.md-search__input {
+  background-color: var(--zeekr-surface-white);
+  border: 1px solid var(--zeekr-border-light);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.md-search__input:focus {
+  border-color: var(--zeekr-accent-primary);
+  box-shadow: 0 0 0 3px var(--zeekr-accent-subtle);
+  background-color: var(--zeekr-surface-white);
+  outline: none;
+}
+
+/* Sidebar navigation - Clean brand accents */
+.md-nav__link {
+  color: inherit;
+  transition: all 0.2s ease;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.md-nav__link--active {
+  color: var(--zeekr-accent-primary);
+  font-weight: 600;
+  background-color: var(--zeekr-accent-subtle);
+  border-left: 3px solid var(--zeekr-accent-primary);
+  padding-left: 0.8rem;
+  margin-right: 0.5rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.md-nav__link:hover {
+  color: var(--zeekr-accent-hover);
+  background-color: var(--zeekr-brand-50);
+  transform: none;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+/* Focus indicators for accessibility */
+.md-nav__link:focus,
+.md-tabs__link:focus,
+.md-search__input:focus {
+  outline: 3px solid var(--zeekr-accent-primary);
+  outline-offset: 2px;
+}
+
+/* Buttons - Sophisticated styling with accessibility compliance */
+.md-button {
+  background: var(--zeekr-accent-primary);
+  color: var(--zeekr-surface-white);
+  border: 1px solid var(--zeekr-accent-primary);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+  min-height: 44px; /* Touch target accessibility */
+}
+
+.md-button:hover {
+  background: var(--zeekr-accent-hover);
+  border-color: var(--zeekr-accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.2);
+}
+
+.md-button:focus {
+  outline: 3px solid var(--zeekr-accent-subtle);
+  outline-offset: 2px;
+}
+
+.md-button--primary {
+  background: var(--zeekr-accent-primary);
+  border-color: var(--zeekr-accent-primary);
+}
+
+/* Critical action buttons with minimal orange */
+.md-button--critical {
+  background: var(--zeekr-action-orange);
+  border-color: var(--zeekr-action-orange);
+}
+
+.md-button--critical:hover {
+  background: var(--zeekr-action-orange-hover);
+  border-color: var(--zeekr-action-orange-hover);
+}
+
+/* Links with signature orange accents */
+.md-typeset a {
+  color: var(--zeekr-accent-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.md-typeset a:hover {
+  color: var(--zeekr-accent-hover);
+  border-bottom-color: var(--zeekr-accent-hover);
+  text-decoration: none;
+}
+
+.md-typeset a:focus {
+  outline: 2px solid var(--zeekr-accent-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Code blocks - Clean modern theme with orange accents */
+.md-typeset .highlight {
+  border-radius: 6px;
+  border: 1px solid var(--zeekr-border-light);
+  background: var(--zeekr-surface-grey);
+}
+
+.md-typeset .highlight .gp {
+  color: var(--zeekr-accent-primary);
+}
+
+/* Custom admonitions with signature orange palette */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--zeekr-success);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: var(--zeekr-success);
+}
+
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: var(--zeekr-accent-primary);
+}
+
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: var(--zeekr-accent-subtle);
+  border-color: var(--zeekr-accent-primary);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--zeekr-warning);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: var(--zeekr-warning);
+}
+
+/* Tables - Clean, professional styling with orange accents */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--zeekr-border-light);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--zeekr-primary-dark);
+  color: var(--zeekr-surface-white);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-size: 0.9rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: var(--zeekr-brand-50);
+  transition: all 0.2s ease;
+}
+
+/* Search results - Clean orange highlights */
+.md-search-result__article--document .md-search-result__title {
+  color: var(--zeekr-accent-primary);
+}
+
+.md-search-result__teaser {
+  color: inherit;
+}
+
+/* Footer styling - Clean modern theme */
+.md-footer {
+  background: var(--zeekr-surface-grey);
+  border-top: 1px solid var(--zeekr-border-light);
+}
+
+.md-footer-meta {
+  background: var(--zeekr-primary-dark);
+  color: var(--zeekr-dark-text);
+}
+
+/* Scrollbar styling for dark theme - Orange accents */
+[data-md-color-scheme="slate"] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-track {
+  background: #1a1e22;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+  background: var(--zeekr-dark-accent);
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--zeekr-brand-400);
+}
+
+/* Custom classes for Zeekr-specific styling - Sophisticated automotive theme */
+.zeekr-hero {
+  background: var(--zeekr-premium-gradient);
+  color: var(--zeekr-surface-white);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 2rem 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--zeekr-border-brand);
+}
+
+.zeekr-card {
+  background: var(--zeekr-brand-100);
+  border: 1px solid var(--zeekr-border-brand);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: all 0.2s ease;
+}
+
+.zeekr-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 115, 85, 0.15);
+  border-color: var(--zeekr-accent-primary);
+  background: var(--zeekr-brand-50);
+}
+
+.zeekr-spec-table {
+  background: var(--zeekr-surface-grey);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--zeekr-border-light);
+}
+
+.zeekr-highlight {
+  background: var(--zeekr-brand-200);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: var(--zeekr-accent-primary);
+  font-weight: 600;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+/* Animation for loading states - Sophisticated beige glow */
+@keyframes zeekrGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--zeekr-accent-primary);
+  }
+  50% {
+    box-shadow: 0 0 20px var(--zeekr-accent-primary), 0 0 30px var(--zeekr-accent-hover);
+  }
+}
+
+@keyframes zeekrPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 8px rgba(139, 115, 85, 0.1);
+  }
+  50% {
+    transform: scale(1.01);
+    box-shadow: 0 0 16px rgba(139, 115, 85, 0.2);
+  }
+}
+
+.zeekr-glow {
+  animation: zeekrGlow 2s ease-in-out infinite;
+}
+
+.zeekr-pulse {
+  animation: zeekrPulse 3s ease-in-out infinite;
+}
+
+/* Mobile optimizations - Enhanced touch targets */
+@media screen and (max-width: 768px) {
+  .md-header__title {
+    font-size: 1rem;
+  }
+
+  .zeekr-hero {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .zeekr-card {
+    padding: 1rem;
+  }
+
+  /* Enhanced touch targets for mobile */
+  .md-tabs__link,
+  .md-nav__link,
+  .md-button {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* ============================================================================
+   ZEEKR COMPARISON TABLE STYLES - Sophisticated Beige Theme
+   ============================================================================ */
+
+/* Three-column variant comparison grid */
+.zeekr-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.zeekr-variant-card {
+  background: var(--zeekr-surface-white);
+  border: 1px solid var(--zeekr-border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.zeekr-variant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--zeekr-accent-primary);
+  background: var(--zeekr-beige-50);
+}
+
+.variant-hero {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: var(--zeekr-primary-dark);
+  border-bottom: 1px solid var(--zeekr-border-light);
+}
+
+.variant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.zeekr-variant-card:hover .variant-image {
+  transform: scale(1.05);
+}
+
+.variant-content {
+  padding: 1.5rem;
+}
+
+.variant-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--zeekr-accent-primary);
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+  letter-spacing: 0.3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+.variant-tagline {
+  text-align: center;
+  color: var(--zeekr-text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.variant-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.spec-label {
+  font-size: 0.8rem;
+  color: var(--zeekr-text-secondary);
+  opacity: 0.8;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.spec-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--zeekr-accent-primary);
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.variant-pricing {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--zeekr-border-light);
+  background: var(--zeekr-brand-50);
+}
+
+.price-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--zeekr-text-secondary);
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.price-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--zeekr-accent-primary);
+  display: block;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+/* Dimensions section with orange styling */
+.zeekr-dimensions-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0;
+  align-items: center;
+}
+
+.dimensions-visual {
+  background: var(--zeekr-surface-white);
+  border: 1px solid var(--zeekr-border-light);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dimension-diagram {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.dimension-label {
+  fill: var(--zeekr-accent-primary);
+  font-size: 12px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.wheelbase-label {
+  fill: var(--zeekr-brand-500);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.dimensions-specs {
+  background: var(--zeekr-surface-white);
+  border: 1px solid var(--zeekr-border-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dimension-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.dimension-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--zeekr-border-light);
+  transition: all 0.2s ease;
+}
+
+.dimension-item:hover {
+  background-color: var(--zeekr-brand-50);
+  transform: translateX(2px);
+}
+
+.dimension-item:last-child {
+  border-bottom: none;
+}
+
+.dimension-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--zeekr-accent-primary);
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+/* Comparison tables with signature orange theme */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: transparent;
+}
+
+.comparison-table th {
+  background: var(--zeekr-primary-dark);
+  color: var(--zeekr-surface-white);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.comparison-table td {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--zeekr-border-light);
+  transition: all 0.2s ease;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.comparison-table tr:hover td {
+  background-color: var(--zeekr-brand-50);
+  transform: none;
+}
+
+.spec-category {
+  font-weight: 600;
+  text-align: left !important;
+  color: var(--zeekr-accent-primary);
+  background: var(--zeekr-beige-100) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 0.85rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+/* Warranty section with orange styling */
+.warranty-section {
+  margin: 2rem 0;
+}
+
+.warranty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.warranty-card {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--zeekr-beige-50);
+  border: 1px solid var(--zeekr-border-brand);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.warranty-card:hover {
+  background: var(--zeekr-brand-50);
+  border-color: var(--zeekr-accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.1);
+}
+
+.warranty-card h3 {
+  color: var(--zeekr-accent-primary);
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+.warranty-term {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--zeekr-brand-500);
+  margin: 0.5rem 0 1rem 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+.warranty-card p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* State pricing sections with orange accents */
+.pricing-state-section {
+  margin: 2rem 0;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.pricing-card {
+  padding: 1.5rem;
+  background: var(--zeekr-beige-50);
+  border: 1px solid var(--zeekr-border-brand);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.pricing-card:hover {
+  background: var(--zeekr-brand-50);
+  border-color: var(--zeekr-accent-primary);
+  transform: translateY(-2px);
+}
+
+.pricing-card h4 {
+  color: var(--zeekr-accent-primary);
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+.price-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--zeekr-border-light);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.price-item:hover {
+  background-color: var(--zeekr-beige-100);
+  transform: translateX(2px);
+}
+
+.price-item:last-of-type {
+  border-bottom: none;
+}
+
+.price-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 0.5rem 0;
+  border-top: 2px solid var(--zeekr-accent-primary);
+  margin-top: 0.5rem;
+  font-weight: 600;
+  background: var(--zeekr-brand-50);
+  border-radius: 4px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.price-total .zeekr-highlight {
+  font-size: 1.2rem;
+}
+
+.incentives-info {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: var(--zeekr-beige-50);
+  border: 1px solid var(--zeekr-border-brand);
+  border-radius: 8px;
+}
+
+.incentives-info h4 {
+  color: var(--zeekr-accent-primary);
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.3px;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrHeadline', sans-serif;
+}
+
+.incentives-info ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.incentives-info li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.incentives-info strong {
+  color: var(--zeekr-brand-500);
+}
+
+/* Mobile responsiveness - Enhanced for accessibility */
+@media screen and (max-width: 768px) {
+  .zeekr-comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .zeekr-dimensions-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .dimension-diagram {
+    max-height: 200px;
+  }
+
+  .variant-specs {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .spec-item {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .comparison-table {
+    font-size: 0.8rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .warranty-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .variant-name {
+    font-size: 1.2rem;
+  }
+
+  .price-value {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .variant-hero {
+    height: 180px;
+  }
+
+  .variant-content {
+    padding: 1rem;
+  }
+
+  .dimensions-visual,
+  .dimensions-specs {
+    padding: 1rem;
+  }
+
+  .warranty-card,
+  .pricing-card {
+    padding: 1rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.4rem 0.2rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Dark theme adjustments - Clean orange dark theme */
+[data-md-color-scheme="slate"] .zeekr-variant-card {
+  background: var(--zeekr-dark-surface);
+  border-color: var(--zeekr-dark-selected);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="slate"] .zeekr-variant-card:hover {
+  background: var(--zeekr-dark-hover);
+  border-color: var(--zeekr-dark-accent);
+}
+
+[data-md-color-scheme="slate"] .dimensions-visual,
+[data-md-color-scheme="slate"] .dimensions-specs {
+  background: var(--zeekr-dark-surface);
+  border-color: var(--zeekr-dark-selected);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="slate"] .comparison-table tr:hover td {
+  background-color: var(--zeekr-dark-hover);
+}
+
+[data-md-color-scheme="slate"] .spec-category {
+  background: var(--zeekr-dark-selected) !important;
+}
+
+[data-md-color-scheme="slate"] .warranty-card,
+[data-md-color-scheme="slate"] .pricing-card,
+[data-md-color-scheme="slate"] .incentives-info {
+  background: var(--zeekr-dark-surface);
+  border-color: var(--zeekr-dark-selected);
+}
+
+[data-md-color-scheme="slate"] .warranty-card:hover,
+[data-md-color-scheme="slate"] .pricing-card:hover {
+  background: var(--zeekr-dark-hover);
+  border-color: var(--zeekr-dark-accent);
+}
+
+[data-md-color-scheme="slate"] .variant-pricing {
+  background: var(--zeekr-dark-hover);
+}
+
+[data-md-color-scheme="slate"] .price-total {
+  background: var(--zeekr-dark-selected);
+}
+
+/* Additional dark theme enhancements */
+[data-md-color-scheme="slate"] .zeekr-card {
+  background: var(--zeekr-dark-surface);
+  border-color: var(--zeekr-dark-selected);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="slate"] .zeekr-card:hover {
+  background: var(--zeekr-dark-hover);
+  border-color: var(--zeekr-dark-accent);
+}
+
+[data-md-color-scheme="slate"] .zeekr-hero {
+  background: var(--zeekr-premium-gradient);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--zeekr-dark-selected);
+}
+
+[data-md-color-scheme="slate"] .zeekr-spec-table {
+  background: var(--zeekr-dark-surface);
+  border-color: var(--zeekr-dark-selected);
+}
+
+[data-md-color-scheme="slate"] .zeekr-highlight {
+  background: var(--zeekr-dark-selected);
+}
+
+/* Premium automotive enhancements with orange styling */
+.zeekr-premium-badge {
+  background: var(--zeekr-accent-primary);
+  color: var(--zeekr-surface-white);
+  padding: 0.3rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 6px rgba(139, 115, 85, 0.2);
+  display: inline-block;
+  margin: 0.25rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.zeekr-accent-divider {
+  height: 2px;
+  background: var(--zeekr-accent-gradient);
+  border-radius: 1px;
+  margin: 2rem 0;
+  box-shadow: 0 1px 3px rgba(139, 115, 85, 0.2);
+}
+
+.zeekr-performance-meter {
+  background: linear-gradient(90deg,
+    var(--zeekr-primary-dark) 0%,
+    var(--zeekr-accent-primary) 30%,
+    var(--zeekr-brand-500) 60%,
+    var(--zeekr-accent-hover) 100%);
+  height: 8px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.zeekr-performance-meter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Automotive specification styling with orange theme */
+.zeekr-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.zeekr-spec-item {
+  background: var(--zeekr-brand-100);
+  border: 1px solid var(--zeekr-border-brand);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.zeekr-spec-item:hover {
+  transform: translateY(-1px);
+  background: var(--zeekr-brand-50);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.1);
+  border-color: var(--zeekr-accent-primary);
+}
+
+.zeekr-spec-title {
+  font-size: 0.8rem;
+  color: var(--zeekr-text-secondary);
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.5rem;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+.zeekr-spec-data {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--zeekr-accent-primary);
+  line-height: 1.2;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'ZeekrText', sans-serif;
+}
+
+/* Print styles */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer {
+    display: none !important;
+  }
+
+  .md-content {
+    margin: 0 !important;
+  }
+
+  .zeekr-comparison-grid {
+    display: block;
+  }
+
+  .zeekr-variant-card {
+    break-inside: avoid;
+    margin-bottom: 2rem;
+  }
+
+  .comparison-table {
+    break-inside: avoid;
+  }
+}
+
+/* Enhanced mobile responsiveness for new elements */
+@media screen and (max-width: 480px) {
+  .zeekr-spec-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .zeekr-spec-item {
+    padding: 0.75rem;
+  }
+
+  .zeekr-premium-badge {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .zeekr-performance-meter {
+    height: 6px;
+  }
+}
+
+/* Official Zeekr brand theme - Australian English */
+/*
+ * This stylesheet reflects Zeekr's signature brand identity:
+ * - Primary brand colour: Dark charcoal (#24292b) matching zeekrlife.com/en-au
+ * - Signature red-orange accents: Official Zeekr brand color (#ff5841) for authenticity
+ * - Typography: System fonts with ZeekrHeadline and ZeekrText inspiration
+ * - Design language: Clean, modern automotive approach like official site
+ * - Navigation: Smooth interactions with signature brand selected states
+ * - Professional automotive aesthetic: Premium brand presentation
+ * - Mobile-first responsive design optimised for Australian users
+ * - Consistent with official Zeekr branding guidelines
+ * - Brand colour palette: #ff5841, #e6412a, #cc2e1a creating authentic hierarchy
+ */

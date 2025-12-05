@@ -1,0 +1,140 @@
+# ev.schema.yaml — shared structure for all models
+schema_version: "0.3"
+
+model:
+  brand: string            # e.g., "Zeekr"
+  name: string             # e.g., "7X"
+  generation: string|null  # e.g., "1st gen (L1)"
+  platform: string|null    # e.g., "SEA 800V"
+  body_style: string       # e.g., "SUV", "MPV", "Sedan", "Wagon"
+  model_years:             # years this definition covers
+    first: int
+    last: int|null
+
+markets:                   # per-market availability & differences
+  - code: string           # ISO-like or custom, e.g., "AU"
+    name: string           # "Australia"
+    sales_start: date      # "2025-10-01"
+    sales_status: string   # "on-sale" | "pre-order" | "discontinued"
+    warranty:
+      vehicle: string
+      battery: string
+      roadside: string|null
+    service:
+      interval_km: int|null
+      interval_time_months: int|null
+    pricing:               # OPTIONAL; drive-away varies by state
+      currency: string     # "AUD"
+      notes: string|null
+      variants:            # variant-specific prices (can be ranges)
+        - id: string
+          rrp: number|null
+          drive_away_from: number|null
+    colours:               # market colour palette
+      exterior:
+        - code: string|null  # OEM paint code if known
+          name: string
+          finish: string     # "solid" | "metallic" | "pearl" | "matte"
+          availability: [variant_id,...] | "*"   # "*" = all variants
+      interior:
+        - name: string
+          material: string   # "vegan leather", "fabric", etc.
+          availability: [variant_id,...] | "*"
+
+variants:                  # technical truth per variant (market-agnostic “base”)
+  - id: string             # stable key, e.g., "rwd_75", "rwd_lr_100", "awd_perf"
+    name: string           # display name, e.g., "RWD", "Long Range RWD", "Performance AWD"
+    drivetrain:
+      layout: string       # "RWD" | "AWD" | "FWD"
+      motors:              # 1 or 2 objects
+        - axle: string     # "front" | "rear"
+          power_kw: number
+          torque_nm: number|null
+    system_output:
+      power_kw: number
+      torque_nm: number|null
+    performance:
+      zero_to_100_s: number|null
+      top_speed_kph: number|null
+      efficiency_wh_km: number|null   # if available/NEDC/WLTP-derived
+      range:
+        standard: string   # "WLTP" | "EPA" | "CLTC"
+        km: number|null
+    battery:
+      gross_kwh: number|null
+      usable_kwh: number|null
+      chemistry: string|null  # "LFP" | "NCM" | …
+      thermal: string|null    # "heat pump", "liquid cooled"
+      voltage_v: number|null
+    charging:
+      ac:
+        max_kw: number|null
+        onboard_phases: int|null
+        connector: string|null # "Type 2"
+      dc:
+        max_kw: number|null
+        curve_note: string|null
+        time_10_80_min: number|null
+        connector: string|null # "CCS2"
+      bidirectional:
+        v2l_kw: number|null
+        v2h: boolean|null
+    chassis:
+      steering: string|null
+      suspension: [string,...]      # e.g., ["MacPherson strut F", "Multi-link R", "Air", "CDC"]
+      brakes: string|null
+      turning_circle_m: number|null
+      wheels_tires:
+        std: string                  # e.g., 19"
+        opt: [string,...]
+    dimensions:
+      length_mm: int
+      width_mm: int
+      height_mm: int
+      wheelbase_mm: int
+      ground_clearance_mm: int|null
+    capacities:
+      mass_kg: number|null
+      tow_braked_kg: number|null
+      tow_unbraked_kg: number|null
+      roof_kg: number|null
+      cargo_rear_l: number|null
+      cargo_max_l: number|null
+      frunk_l: number|null
+      seats: int
+    infotainment:
+      soc: string|null
+      displays:
+        cluster_in: number|null
+        centre_in: number|null
+        hud_in: number|null
+      audio: string|null
+      phone:
+        carplay: boolean
+        android_auto: boolean
+      connectivity: [string,...]     # ["OTA", "App remote"]
+    adas_safety:
+      level: string|null             # "L2", "L2+"
+      features_std: [string,...]
+      features_opt: [string,...]
+      ratings:
+        ancap: string|null
+        euro_ncap: string|null
+    features_std: [string,...]       # spec items standard on the variant
+    features_opt: [string,...]       # pack or option items
+    market_overrides:                # per-market tweaks (only diffs)
+      - market: string               # "AU"
+        add_features_std: [string,...]
+        remove_features_std: [string,...]
+        charging: {}                 # override subset if needed
+        performance: {}
+        capacities: {}
+        infotainment: {}
+        adas_safety: {}
+        notes: [string,...]
+
+sources:                  # maintainer-facing provenance list
+  - title: string
+    url: string
+    accessed: date
+notes: [string,...]
