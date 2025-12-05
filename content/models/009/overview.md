@@ -1,42 +1,24 @@
-# Zeekr 009 - Model Overview
+# Zeekr 009 Australia - Model Overview
 
-## Introduction
-The Zeekr 009 is a luxury electric MPV (Multi-Purpose Vehicle) designed for premium family transportation and executive use. This comprehensive guide covers the 009's features relevant to Australian buyers.
+**The "Private Jet for the Road"**
 
-## Content Needed
-- Model introduction and luxury positioning
-- Executive and family features
-- Seating configurations (6/7-seat options)
-- Premium interior materials and technology
-- Performance and range specifications
-- Advanced driver assistance features
-- Cargo and storage solutions
-- Australian market availability
-- Pricing expectations
-- Target market analysis
+The Zeekr 009 is not a family van; it's an executive shuttle. If you are considering a Lexus LM or a Mercedes V-Class, this is the EV disruptor.
 
-## Luxury Features
-- Executive seating arrangements
-- Entertainment systems
-- Climate control zones
-- Premium audio systems
-- Privacy features
+## Australian Launch Details
+-   **Price:** ~$135,900 (7-Seat) / ~$139,900 (6-Seat) + ORC.
+-   **Availability:** Pre-orders open, deliveries Early 2025.
 
-## Australian Considerations
-- Road width and parking compatibility
-- Import timeline and availability
-- Service and support network
-- Luxury car tax implications
+## The Proposition
+Why buy a $140k electric van?
+1.  **Speed:** 0-100km/h in **4.5 seconds**. It is terrifyingly fast for a box.
+2.  **Range:** 116kWh Battery = **582km WLTP**. Real-world highway range is solid 400km+.
+3.  **Luxury:** The 6-seat version has "Sofaro" first-class airline seats in the second row with massage and leg rests.
 
-## Use Cases
-- Executive transportation
-- Large family needs
-- Premium ride-sharing
-- Special occasion transport
+## Key Specs
+-   **Battery:** 116 kWh NMC.
+-   **Motors:** Dual Motor AWD (450kW / 693Nm).
+-   **Suspension:** Air Suspension + CCD (Standard). This is crucial for the "magic carpet" ride.
+-   **Screen:** 17-inch OLED rear entertainment screen (drops down from roof).
 
-## Contributors
-Please add information about the 009's availability and specifications for the Australian market.
-
----
-*Last updated: [Date needed]*
-*Contributors: [Names needed]*
+## Insider Verdict
+This is a niche vehicle. It's too big for most school runs (5.2m long), but for airport transfers or luxury touring, nothing beats it on price-per-feature.

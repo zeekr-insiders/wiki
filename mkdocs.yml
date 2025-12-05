@@ -1,6 +1,6 @@
-site_name: Zeekr Enthusiasts of Victoria (ZEV) Wiki
-site_description: Information about Zeekr Cars in Australia - ZEV Club Resource
-site_author: Zeekr Enthusiasts of Victoria (ZEV)
+site_name: Zeekr Insiders Australia
+site_description: The unofficial, no-nonsense guide to owning a Zeekr in Australia.
+site_author: Zeekr Insiders Australia
 site_url: https://thushan.github.io/zeekr/
 
 repo_name: thushan/zeekr
@@ -20,8 +20,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: blue
-      accent: cyan
+      primary: black
+      accent: orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -29,8 +29,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
-      accent: cyan
+      primary: black
+      accent: orange
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -56,19 +56,19 @@ theme:
 
 extra:
   club:
-    name: "Zeekr Enthusiasts of Victoria"
-    abbreviation: "ZEV"
-    full_name: "Zeekr Enthusiasts of Victoria (ZEV)"
-    location: "Victoria, Australia"
-    contact_email: "info@zev.club"
-    website: "https://zev.club"
+    name: "Zeekr Insiders"
+    abbreviation: "ZI"
+    full_name: "Zeekr Insiders Australia"
+    location: "Australia"
+    contact_email: "insiders@zeekr.club"
+    website: "https://zeekr.club"
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/thushan/zeekr
     - icon: fontawesome/brands/facebook
-      link: https://facebook.com/zeekrenthusiastsvic
+      link: https://facebook.com/groups/zeekrinsiders
     - icon: fontawesome/brands/instagram
-      link: https://instagram.com/zeekr_vic
+      link: https://instagram.com/zeekrinsiders
   analytics:
     provider: google
     property: G-XXXXXXXXXX
@@ -140,9 +140,20 @@ nav:
               - Specifications: models/7x/2025/specifications.md
               - Pricing: models/7x/2025/pricing.md
               - Service Schedule: models/7x/2025/service-schedule.md
+          - Knowledge Base:
+              - Known Issues: models/7x/knowledge-base/7x-issues.md
+              - Modifications: models/7x/knowledge-base/7x-mods.md
           - 2026 Model: models/7x/2026/overview.md
-      - Zeekr X: models/x/overview.md
-      - Zeekr 009: models/009/overview.md
+      - Zeekr X:
+          - Overview: models/x/overview.md
+          - 2025 Model:
+              - Specifications: models/x/2025/specifications.md
+              - Pricing: models/x/2025/pricing.md
+              - Service Schedule: models/x/2025/service-schedule.md
+      - Zeekr 009:
+          - Overview: models/009/overview.md
+          - Specifications: models/009/specifications.md
+          - Pricing: models/009/pricing.md
   - Guides:
       - guides/index.md
       - Charging:

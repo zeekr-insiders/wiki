@@ -1,124 +1,21 @@
-# Zeekr Model Comparison Table
+# Zeekr Model Comparison
 
-## Overview
-Side-by-side comparison of all Zeekr models available or coming to the Australian market, helping buyers choose the right vehicle for their needs.
+Quick reference for the Australian lineup.
 
-## Content Needed
+| Feature | Zeekr X RWD | Zeekr 7X RWD | Zeekr 7X AWD | Zeekr 009 AWD |
+| :--- | :--- | :--- | :--- | :--- |
+| **Price (Pre-ORC)** | $49,900 | $57,900 | $72,900 | $135,900+ |
+| **Body Style** | Compact SUV | Mid-Size SUV | Mid-Size SUV | Luxury MPV |
+| **Battery** | 66 kWh NMC | 75 kWh LFP | 100 kWh NMC | 116 kWh NMC |
+| **WLTP Range** | 440 km | 480 km | 543 km | 582 km |
+| **Charging (DC)** | 150 kW | **450 kW (800V)** | **420 kW (800V)** | 205 kW |
+| **0-100 km/h** | 5.6s | 6.0s | 3.8s | 4.5s |
+| **Seats** | 5 | 5 | 5 | 6 or 7 |
+| **Warranty** | 5 Yr / Unltd | 5 Yr / Unltd | 5 Yr / Unltd | 5 Yr / Unltd |
+| **Service** | 2yr/40k | 2yr/40k | 2yr/40k | 2yr/40k |
 
-### Model Lineup Comparison
+## Which one fits you?
 
-#### Basic Specifications
-| Specification | Zeekr X | Zeekr 7X | Zeekr 009 |
-|--------------|---------|----------|-----------|
-| Body Style | Compact SUV | Mid-size SUV | Luxury MPV |
-| Seating Capacity | 5 | 5-7 | 6-7 |
-| Drive Configuration | | | |
-| Motor Configuration | | | |
-| Power Output (kW) | | | |
-| Torque (Nm) | | | |
-| 0-100km/h (sec) | | | |
-| Top Speed (km/h) | | | |
-
-#### Battery and Range
-| Feature | Zeekr X | Zeekr 7X | Zeekr 009 |
-|---------|---------|----------|-----------|
-| Battery Capacity (kWh) | | | |
-| WLTP Range (km) | | | |
-| Real-world Range (km) | | | |
-| DC Fast Charging (kW) | | | |
-| 10-80% Charge Time | | | |
-| AC Charging (kW) | | | |
-
-#### Dimensions and Weight
-| Measurement | Zeekr X | Zeekr 7X | Zeekr 009 |
-|------------|---------|----------|-----------|
-| Length (mm) | | | |
-| Width (mm) | | | |
-| Height (mm) | | | |
-| Wheelbase (mm) | | | |
-| Ground Clearance (mm) | | | |
-| Kerb Weight (kg) | | | |
-| Gross Vehicle Mass (kg) | | | |
-| Cargo Volume (L) | | | |
-
-#### Technology Features
-| Feature | Zeekr X | Zeekr 7X | Zeekr 009 |
-|---------|---------|----------|-----------|
-| Infotainment Screen Size | | | |
-| Digital Instrument Cluster | | | |
-| Wireless Smartphone Integration | | | |
-| Premium Audio System | | | |
-| Head-up Display | | | |
-| Wireless Charging | | | |
-| Number of USB Ports | | | |
-
-#### Safety and Driver Assistance
-| Feature | Zeekr X | Zeekr 7X | Zeekr 009 |
-|---------|---------|----------|-----------|
-| ANCAP Safety Rating | | | |
-| Autonomous Emergency Braking | | | |
-| Adaptive Cruise Control | | | |
-| Lane Keeping Assistance | | | |
-| Blind Spot Monitoring | | | |
-| 360-degree Camera | | | |
-| Automated Parking | | | |
-
-#### Pricing (Australian Market)
-| Trim Level | Zeekr X | Zeekr 7X | Zeekr 009 |
-|-----------|---------|----------|-----------|
-| Base Model RRP | | | |
-| Mid Spec RRP | | | |
-| Top Spec RRP | | | |
-| On-road Price Estimate | | | |
-| After Incentives | | | |
-
-### Model Selection Guide
-
-#### Choose Zeekr X If:
-- Urban driving is your primary use case
-- Compact size for easy parking
-- Budget-conscious luxury EV buyer
-- First-time EV owner
-- Small family or couple
-
-#### Choose Zeekr 7X If:
-- Need for larger interior space
-- Family-oriented features required
-- Balance of performance and practicality
-- Suburban and highway driving
-- Traditional SUV expectations
-
-#### Choose Zeekr 009 If:
-- Maximum luxury and space required
-- Executive or VIP transportation needs
-- Large family or frequent passengers
-- Premium features are priority
-- Business or special occasion use
-
-### Feature Availability Matrix
-Detailed breakdown of standard, optional, and unavailable features across models.
-
-### Australian Market Considerations
-- Model availability timeline
-- Import arrangements
-- Local compliance differences
-- Service network coverage by model
-- Parts availability
-
-### Total Cost of Ownership Comparison
-- Purchase price
-- Insurance estimates
-- Energy costs
-- Maintenance projections
-- Depreciation estimates
-- Government incentives impact
-
-## Model Decision Tool
-Interactive guide to help choose the right Zeekr model based on individual needs and priorities.
-
-## Contributors
-Please provide real-world specification data and ownership cost information.
-
----
-*Last updated: [Date needed]*
-*Contributors: [Names needed]*
+*   **Zeekr X:** The city runabout. Easy to park, great value at $49k.
+*   **Zeekr 7X:** The family all-rounder. 800V charging makes it the road-trip king.
+*   **Zeekr 009:** The luxury shuttle. Unmatched comfort for 6-7 adults.

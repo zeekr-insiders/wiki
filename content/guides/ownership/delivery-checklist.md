@@ -1,87 +1,34 @@
-# Vehicle Delivery Checklist
+# Zeekr Delivery Day Checklist
 
-## Overview
-Comprehensive checklist for taking delivery of your new Zeekr vehicle, ensuring everything is perfect before you drive away.
+**Don't drive off the lot until you check these items.**
 
-## Content Needed
+Dealers are busy. PDI (Pre-Delivery Inspection) can miss things. Use this list to ensure your car is 100% ready.
 
-### Pre-Delivery Preparation
-- Delivery appointment scheduling
-- Required documentation to bring
-- Payment method confirmation
-- Insurance activation timing
-- Registration transfer process
-- Temporary permit requirements (if applicable)
+## The "Must Haves" (Do not leave without these)
 
-### Exterior Inspection Checklist
-- Paint condition and colour match
-- Panel alignment and gaps
-- Wheel condition and correct specifications
-- Light functionality (all exterior lights)
-- Glass condition (windscreen, windows)
-- Door seals and weatherstripping
-- Charging port operation and condition
+-   [ ] **V2L Discharge Adapter:** This should be included. Check the frunk or the sub-boot. It allows you to plug 240V appliances into your charge port.
+-   [ ] **Type 2 Charging Cable:** Ensure it is the correct length (usually 5m) and actually fits.
+-   [ ] **Two Keys:** usually 1x Physical Key Fob and 1x NFC Card (or 2x Fobs depending on promo).
+-   [ ] **Sim Card / Data:** **CRITICAL.** Sit in the car, open Spotify or Maps. If it says "No Network", do not leave. The dealer needs to activate the eSIM. This can take 24 hours if they forgot to trigger it yesterday.
 
-### Interior Inspection Checklist
-- Seat condition and adjustment functionality
-- Dashboard and trim condition
-- All control operation (climate, infotainment)
-- USB ports and charging functionality
-- Storage compartments and cup holders
-- Floor mats and accessories installation
+## The "Zeekr Specific" Inspection
 
-### Technology and Software Checklist
-- Infotainment system setup and functionality
-- Mobile app pairing and connection
-- Over-the-air update capability
-- Navigation system operation
-- Voice command functionality
-- Smartphone integration (Android Auto/Apple CarPlay)
-- WiFi hotspot setup (if equipped)
+-   [ ] **Panel Gaps (Tailgate):** Check the alignment of the electric tailgate. This is a common adjustment point.
+-   [ ] **Charge Port Door:** Open and close it via the screen and the button. Ensure it sits flush.
+-   [ ] **Screen Pixels:** Put a white image on the 16-inch screen (bring one on a USB or open a white web page). Check for dead pixels.
+-   [ ] **Camera Calibration:** Open the 360-degree camera view. Do the lines on the ground match up? If the image looks "stitched" poorly, ask for a re-calibration.
 
-### Driving Systems Check
-- Key fob functionality and range
-- Start/stop operation
-- Gear selector operation
-- Regenerative braking settings
-- Drive mode selection
-- Parking assistance systems
-- Safety system functionality
+## The Setup (Do this with the Agent)
 
-### Charging System Verification
-- Mobile connector included and functional
-- Charging port operation
-- Charging status display accuracy
-- Scheduled charging setup
-- Charging limits configuration
+-   [ ] **App Pairing:** Pair your phone as the "Primary Owner" *right there*. Do not let them send you home to "do it later". If the server is down, you want to know now.
+-   [ ] **Phone Key:** Set up Bluetooth phone key and walk away/walk up to test the auto-lock.
+-   [ ] **Profile Save:** Adjust your seat, mirrors, and HUD, then **SAVE** it to your profile immediately.
 
-### Documentation Review
-- Owner's manual and warranty information
-- Service schedule and first service booking
-- Emergency contact information
-- Roadside assistance details
-- Mobile app setup instructions
+## Exterior Walkaround
 
-### Final Handover
-- Key and accessory inventory
-- Delivery certificate signing
-- Service appointment scheduling
-- Club membership information
-- Emergency procedures briefing
+-   [ ] **Wheel Rims:** Check for transport rash (scrapes from the truck).
+-   [ ] **Glass Roof:** Look for stress cracks or chips.
+-   [ ] **Tyre Pressures:** They are often over-inflated for shipping (e.g., 45 PSI). Ask them to drop it to the placard pressure (usually ~38-40 PSI).
 
-### Post-Delivery Tasks
-- Insurance notification
-- Registration confirmation
-- Home charging setup scheduling
-- First charge and range test
-- Owner manual reading priorities
-
-## Red Flags - When to Refuse Delivery
-Issues that should result in delivery refusal and rescheduling.
-
-## Contributors
-Please share your delivery experience and any items that should be added to this checklist.
-
----
-*Last updated: [Date needed]*
-*Contributors: [Names needed]*
+!!! tip "Take Photos"
+    If you find a scratch, photograph it immediately at the dealership. Once you leave the lot, it's "wear and tear".

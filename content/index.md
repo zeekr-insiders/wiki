@@ -1,75 +1,45 @@
-# {{ extra.club.full_name }} Wiki
+# Zeekr Insiders Australia
 
-Welcome to the official wiki for {{ extra.club.full_name }}! This comprehensive resource has been created by and for Zeekr owners and enthusiasts in {{ extra.club.location }}.
+**The unofficial, no-nonsense guide to owning and driving a Zeekr in Australia.**
 
-## Quick Navigation
+!!! info "Insider Status"
+    We are **Zeekr Insiders**. We aren't the dealership, and we aren't the marketing department. We are a community of owners and enthusiasts documenting the *reality* of owning these cars in Australian conditions.
 
-### 🚗 [Models](models/)
-Detailed information about all Zeekr models available in Australia:
+## What You'll Find Here
 
-- **[Zeekr 7X](models/7x/overview.md)** - Premium electric SUV specifications, pricing, and guides
-- **[Zeekr X](models/x/overview.md)** - Compact electric SUV information
-- **[Zeekr 009](models/009/overview.md)** - Luxury MPV details and features
+This wiki is designed to be your glovebox companion. It covers the things the manual misses and the local knowledge you only get from experience.
 
-### 📚 [Guides](guides/)
-Essential guides for Zeekr ownership in Australia:
+<div class="grid cards" markdown>
 
-- **[Charging](guides/charging/home-setup.md)** - Home setup, public networks, and road trip planning
-- **[Ownership](guides/ownership/buying-process.md)** - Buying process, delivery, and first 30 days
-- **[Maintenance](guides/maintenance/overview.md)** - Service schedules and care instructions
-- **[New to EV](guides/new-to-ev/overview.md)** - First-time electric vehicle owner resources
+-   :material-car-electric: **[The Cars](models/index.md)**
+    
+    Deep dives into the **[7X](models/7x/overview.md)**, **[X](models/x/overview.md)**, and **[009](models/009/overview.md)**. Real-world range tests, known quirks, and Australian spec breakdowns.
 
-### 🤝 [Club](club/)
-{{ extra.club.full_name }} information and activities:
+-   :material-ev-station: **[Charging in Aus](guides/charging/public-networks.md)**
+    
+    Don't get stranded. Learn which networks work, which ones fail, and why you need a "Type 2" cable in your boot *at all times*.
 
-- **[Events](club/events/overview.md)** - Meetups, drives, and club activities
-- **[Group Buys](club/group-buys/overview.md)** - Member discounts and bulk purchasing
-- **[Committee](club/meet-the-committee.md)** - Meet the people who run the club
+-   :material-tools: **[Ownership Guides](guides/ownership/first-30-days.md)**
+    
+    From the [Delivery Checklist](guides/ownership/delivery-checklist.md) to setting up your toll tags so they actually beep.
 
-### 🔧 [Resources](resources/)
-Essential resources for {{ extra.club.location }} Zeekr owners:
+-   :material-account-group: **[The Club](club/index.md)**
+    
+    Join **Zeekr Insiders**. Group buys on floor mats, screen protectors, and V2L adapters. Meetups in Victoria and beyond.
 
-- **[Service Centres](resources/service-centers-vic.md)** - Authorised service locations in Victoria
-- **[Charging Networks](resources/charging-networks-australia.md)** - Australia-wide charging information
-- **[Useful Links](resources/useful-links.md)** - Helpful websites, apps, and tools
+</div>
 
-### ⚖️ [Comparisons](comparisons/)
-Help choosing the right Zeekr for your needs:
+## Recent "Insider" Intel
 
-- **[Zeekr vs Competitors](comparisons/zeekr-vs-competitors.md)** - How Zeekr compares to other brands
-- **[Model Comparison](comparisons/model-comparison-table.md)** - Side-by-side Zeekr model comparison
+!!! tip "Quick Tip: Toll Tags in the 7X"
+    The Zeekr 7X uses athermic glass (metalized) which blocks eTag signals. You *must* place your tag in the dotted area behind the rear-view mirror. [Read more in Guides...](guides/ownership/first-30-days.md)
 
-## About This Wiki
+!!! warning "Buying a Zeekr X?"
+    As of April 1, 2025, pricing dropped significantly ($49,900 for RWD). If you are buying used, check the build date and original invoice price!
 
-This wiki is maintained by the {{ extra.club.full_name }} community. All content is contributed by club members and verified for accuracy. The information focuses specifically on the Australian market, {{ extra.club.location }} conditions, and real-world ownership experiences.
+## Contributing
 
-### Contributing to the Wiki
-
-We welcome contributions from all club members! Whether you want to:
-- Share your ownership experience
-- Add technical information
-- Update pricing or availability
-- Contribute photos or reviews
-- Suggest new content areas
-
-Please contact the club committee or contribute directly through our content management system.
-
-### Getting Started
-
-- **New to Zeekr?** Start with our [New to EV Guide](guides/new-to-ev/overview.md)
-- **Considering a purchase?** Check out our [Buying Process Guide](guides/ownership/buying-process.md) and [Model Comparisons](comparisons/index.md)
-- **Current owner?** Explore our [Charging Guides](guides/charging/home-setup.md) and [Club Events](club/events/overview.md)
-- **Need service?** Find [Service Centres in Victoria](resources/service-centers-vic.md)
-
-## Stay Connected
-
-- **Club Meetings:** Monthly meetups across Melbourne
-- **Online Community:** Join our WhatsApp and Facebook groups
-- **Events:** Regular drives, technical sessions, and social gatherings
-- **Updates:** Subscribe to club newsletters and announcements
+This is a living document. If you've found a hidden menu, a better way to route a dashcam cable, or a great service center experience, **[contribute to the wiki](https://github.com/thushan/zeekr)**.
 
 ---
-
-*This wiki is maintained by the {{ extra.club.full_name }}. Last major update: [Date needed]*
-
-*For questions or contributions, contact: {{ extra.club.contact_email }}*
+*Disclaimer: This site is not affiliated with Zeekr or Geely Holding Group. All information is provided by the community.*
