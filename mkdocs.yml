@@ -154,6 +154,7 @@ nav:
           - Overview: models/009/overview.md
           - Specifications: models/009/specifications.md
           - Pricing: models/009/pricing.md
+          - Service Schedule: models/009/service-schedule.md
   - Guides:
       - guides/index.md
       - Charging:
@@ -173,9 +174,20 @@ nav:
       - Meet the Committee: club/meet-the-committee.md
   - Resources:
       - resources/index.md
-      - Service Centers (VIC): resources/service-centers-vic.md
-      - Charging Networks: resources/charging-networks-australia.md
-      - Useful Links: resources/useful-links.md
+      - National: resources/national/index.md
+      - By State:
+          - Victoria: resources/vic/index.md
+          - New South Wales: resources/nsw/index.md
+          - Queensland: resources/qld/index.md
+          - South Australia: resources/sa/index.md
+          - Western Australia: resources/wa/index.md
+          - Tasmania: resources/tas/index.md
+          - ACT: resources/act/index.md
+          - Northern Territory: resources/nt/index.md
+      - Legacy:
+          - Service Centers (VIC): resources/service-centers-vic.md
+          - Charging Networks: resources/charging-networks-australia.md
+          - Useful Links: resources/useful-links.md
   - Comparisons:
       - comparisons/index.md
       - Zeekr vs Competitors: comparisons/zeekr-vs-competitors.md

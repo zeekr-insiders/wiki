@@ -1,11 +1,34 @@
-# 2025 Zeekr X Service Schedule
+# 2025 Zeekr X Service Schedule & Costs
 
-**Intervals:**
--   **Every 2 Years / 40,000 km.**
+**The Compact with Low Running Costs**
 
-**Costs (Estimates):**
--   Similar to the 7X, budget around **$600** for the 2-year service and **$1,150** for the 4-year service.
+Like its bigger sibling the 7X, the Zeekr X benefits from the low-maintenance nature of EVs. Official servicing is only required **every 2 years or 40,000km**.
 
-**Common Maintenance Items:**
--   **Cabin Filter:** The Zeekr X uses a high-grade filter. Replacement is usually scheduled every 2 years.
--   **Wiper Blades:** The frameless wipers can be pricey. Treat them with care.
+## Official Service Schedule
+
+| Interval | Distance | Operation | Estimated Cost* |
+| :--- | :--- | :--- | :--- |
+| **12 Months** | 20,000 km | Health Check (Optional) | **Free / ~$300** |
+| **24 Months** | 40,000 km | **Major Service (Required)** | **~$600** |
+| **36 Months** | 60,000 km | Health Check (Optional) | **~$300** |
+| **48 Months** | 80,000 km | **Major Service (Required)** | **~$1,150** |
+
+*Costs are estimates based on 2025 data and subject to change.*
+
+## Common Maintenance Items
+
+- **Cabin Filter:** High-grade filter, typically replaced every 2 years.
+- **Wiper Blades:** Frameless design - quality replacements recommended.
+- **Brake Fluid:** Flush typically at 4-year service.
+- **Tyres:** Compact SUV with good weight distribution. Expect reasonable tyre life.
+
+## Warranty Terms
+
+| Coverage | Details |
+| :--- | :--- |
+| **Vehicle Warranty** | 5 Years / Unlimited km |
+| **Battery Warranty** | 8 Years / 160,000 km (>70% capacity) |
+| **Roadside Assistance** | 5 Years complimentary |
+
+!!! tip "Lower Insurance"
+    The Zeekr X's smaller size and competitive pricing often translates to lower insurance premiums compared to larger EVs.

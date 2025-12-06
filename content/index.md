@@ -1,45 +1,61 @@
-# Zeekr Insiders Australia
-
-**The unofficial, no-nonsense guide to owning and driving a Zeekr in Australia.**
-
-!!! info "Insider Status"
-    We are **Zeekr Insiders**. We aren't the dealership, and we aren't the marketing department. We are a community of owners and enthusiasts documenting the *reality* of owning these cars in Australian conditions.
-
-## What You'll Find Here
-
-This wiki is designed to be your glovebox companion. It covers the things the manual misses and the local knowledge you only get from experience.
+<div class="hero-section">
+    <div class="hero-title">Zeekr Insiders Australia</div>
+    <div class="hero-subtitle">
+        The unofficial, no-nonsense guide to owning the future.<br>
+        Built by owners, for owners.
+    </div>
+    <div class="hero-actions">
+        <a href="models/" class="btn-hero btn-hero-primary">Explore Models</a>
+        <a href="guides/charging/public-networks/" class="btn-hero btn-hero-secondary">Charging Guide</a>
+    </div>
+</div>
 
 <div class="grid cards" markdown>
 
--   :material-car-electric: **[The Cars](models/index.md)**
+-   :material-car-electric: **The Lineup**
     
-    Deep dives into the **[7X](models/7x/overview.md)**, **[X](models/x/overview.md)**, and **[009](models/009/overview.md)**. Real-world range tests, known quirks, and Australian spec breakdowns.
+    Deep dives into the **[7X](models/7x/overview.md)**, **[X](models/x/overview.md)**, and **[009](models/009/overview.md)**. Real-world range tests, pricing, and specs.
 
--   :material-ev-station: **[Charging in Aus](guides/charging/public-networks.md)**
+-   :material-ev-station: **Charging Survival**
     
-    Don't get stranded. Learn which networks work, which ones fail, and why you need a "Type 2" cable in your boot *at all times*.
+    Don't get stranded. Learn why you need a **[Type 2 Cable](guides/charging/public-networks.md)** and which networks actually work.
 
--   :material-tools: **[Ownership Guides](guides/ownership/first-30-days.md)**
+-   :material-tools: **Ownership Guides**
     
-    From the [Delivery Checklist](guides/ownership/delivery-checklist.md) to setting up your toll tags so they actually beep.
+    From the **[Delivery Checklist](guides/ownership/delivery-checklist.md)** to fixing the annoying **[Driver Monitoring System](models/7x/knowledge-base/7x-issues.md)**.
 
--   :material-account-group: **[The Club](club/index.md)**
+-   :material-account-group: **Join The Club**
     
-    Join **Zeekr Insiders**. Group buys on floor mats, screen protectors, and V2L adapters. Meetups in Victoria and beyond.
+    Group buys on floor mats, screen protectors, and V2L adapters. **[Get Involved](club/index.md)**.
 
 </div>
 
-## Recent "Insider" Intel
+## Why "Insiders"?
 
-!!! tip "Quick Tip: Toll Tags in the 7X"
-    The Zeekr 7X uses athermic glass (metalized) which blocks eTag signals. You *must* place your tag in the dotted area behind the rear-view mirror. [Read more in Guides...](guides/ownership/first-30-days.md)
+We aren't the brochure. We tell you what the dealer won't.
 
-!!! warning "Buying a Zeekr X?"
-    As of April 1, 2025, pricing dropped significantly ($49,900 for RWD). If you are buying used, check the build date and original invoice price!
+<div class="stat-grid">
+    <div class="stat-card">
+        <div class="stat-icon">⚡</div>
+        <span class="stat-value">800V</span>
+        <span class="stat-label">Architecture (7X)</span>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon">🔌</div>
+        <span class="stat-value">450kW</span>
+        <span class="stat-label">Max Charging Speed</span>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon">⏱️</div>
+        <span class="stat-value">3.8s</span>
+        <span class="stat-label">0-100 km/h (AWD)</span>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon">💰</div>
+        <span class="stat-value">$49.9k</span>
+        <span class="stat-label">Starting Price (X)</span>
+    </div>
+</div>
 
-## Contributing
-
-This is a living document. If you've found a hidden menu, a better way to route a dashcam cable, or a great service center experience, **[contribute to the wiki](https://github.com/thushan/zeekr)**.
-
----
-*Disclaimer: This site is not affiliated with Zeekr or Geely Holding Group. All information is provided by the community.*
+!!! tip "Insider Intel: The April 2025 Price Drop"
+    Did you know the Zeekr X dropped by **$7,000** in April? If you are buying used, check the build date carefully. [Read the full pricing history](models/x/2025/pricing.md).

@@ -1,131 +1,109 @@
 # Resources - Essential Information for Zeekr Owners
 
-Your one-stop resource directory for everything you need as a Zeekr owner in {{ extra.club.location }} and across Australia.
+Your one-stop resource directory for everything you need as a Zeekr owner in Australia.
 
-## 🔧 [Service Centres in Victoria](service-centers-vic.md)
-**Professional service when you need it**
+## By State / Territory
 
-Complete directory of authorised Zeekr service centres, dealerships, and support facilities across {{ extra.club.location }}.
+<div class="card-grid">
+    <div class="z-card">
+        <h3>National</h3>
+        <p>Australia-wide resources including charging networks, government incentives, and roadside assistance.</p>
+        <a href="national/" class="btn btn-primary">National Resources</a>
+    </div>
+    <div class="z-card featured">
+        <span class="badge">Your State</span>
+        <h3>Victoria</h3>
+        <p>VIC-specific incentives, service centres, and charging infrastructure.</p>
+        <a href="vic/" class="btn btn-primary">VIC Resources</a>
+    </div>
+    <div class="z-card">
+        <h3>New South Wales</h3>
+        <p>NSW stamp duty exemption, Sydney service, and NRMA network.</p>
+        <a href="nsw/" class="btn btn-primary">NSW Resources</a>
+    </div>
+</div>
 
-- **Melbourne Metropolitan** - CBD, eastern, western, southern suburbs
-- **Regional {{ extra.club.location }}** - Geelong, Bendigo, Ballarat, Gippsland coverage
-- **Service Types** - Routine maintenance, warranty repairs, emergency service
-- **Booking Information** - Contact details, hours, online booking systems
-- **Mobile Service** - At-home and workplace service options
+<div class="card-grid">
+    <div class="z-card">
+        <h3>Queensland</h3>
+        <p>QLD registration discounts and charging along the Bruce Highway.</p>
+        <a href="qld/" class="btn btn-secondary">QLD Resources</a>
+    </div>
+    <div class="z-card">
+        <h3>South Australia</h3>
+        <p>Adelaide metro and cross-country charging considerations.</p>
+        <a href="sa/" class="btn btn-secondary">SA Resources</a>
+    </div>
+    <div class="z-card">
+        <h3>Western Australia</h3>
+        <p>Perth metro and regional WA EV infrastructure.</p>
+        <a href="wa/" class="btn btn-secondary">WA Resources</a>
+    </div>
+</div>
 
-- **Emergency Service:** 24-hour roadside assistance available
-
----
-
-## 🔌 [Charging Networks Australia](charging-networks-australia.md)
-**Power up anywhere across the continent**
-
-Comprehensive guide to public charging networks available for Zeekr vehicles throughout Australia.
-
-- **Major Networks** - Chargefox, Evie, Tesla Supercharger, NRMA, BP Pulse
-- **State Coverage** - Network availability in each state and territory
-- **Payment Methods** - Apps, RFID, contactless payment options
-- **Trip Planning** - Integration with route planning tools
-- **Real-time Information** - Availability, pricing, and reliability data
-
-- **Quick Access:** PlugShare app recommended for real-time charging information
-
----
-
-## 🔗 [Useful Links](useful-links.md)
-**Curated collection of helpful resources**
-
-Essential websites, apps, tools, and resources for Zeekr owners and EV enthusiasts in Australia.
-
-- **Official Resources** - Zeekr Australia, owner portals, documentation
-- **Government Information** - Incentives, regulations, compliance
-- **Planning Tools** - Route planning, charging apps, cost calculators
-- **Community Forums** - Discussion groups, technical support, news
-- **Educational Content** - EV basics, technical guides, industry updates
-
-- **Bookmark:** Save time with our curated collection of the most useful EV resources
+<div class="card-grid">
+    <div class="z-card">
+        <h3>Tasmania</h3>
+        <p>Compact touring paradise with Spirit of Tasmania tips.</p>
+        <a href="tas/" class="btn btn-secondary">TAS Resources</a>
+    </div>
+    <div class="z-card">
+        <h3>ACT</h3>
+        <p>Best incentives in Australia - zero stamp duty!</p>
+        <a href="act/" class="btn btn-secondary">ACT Resources</a>
+    </div>
+    <div class="z-card">
+        <h3>Northern Territory</h3>
+        <p>Remote territory considerations and Stuart Highway planning.</p>
+        <a href="nt/" class="btn btn-secondary">NT Resources</a>
+    </div>
+</div>
 
 ---
 
 ## Quick Reference
 
-### 🚨 **Emergency Contacts**
-- **Zeekr Roadside Assistance:** [Number needed]
-- **Victorian Emergency Services:** 000
-- **RACV Emergency Roadside:** 13 11 11
-- **EV Fire Emergency Protocol:** [Information needed]
+### Emergency Contacts
 
-### 📱 **Essential Apps**
-- **Zeekr Mobile App** - Vehicle control and monitoring
-- **PlugShare** - Charging station locator and reviews
-- **ABRP** - Advanced trip planning for EVs
-- **Chargefox** - Australia's largest charging network
-- **Evie Networks** - Fast charging across highways
+| Service | Contact |
+|---------|---------|
+| **Zeekr Roadside Assistance** | 1800 ZEEKR AU *(confirm)* |
+| **Emergency Services** | 000 |
+| **RACV (VIC)** | 13 11 11 |
+| **NRMA (NSW)** | 13 11 22 |
 
-### 🏛️ **Government Resources**
-- **Victorian EV Rebate:** [Current rate and eligibility]
-- **Federal Incentives:** LCT exemption and FBT benefits
-- **Registration Discounts:** Reduced fees for EVs
-- **Stamp Duty Exemptions:** State-by-state information
+!!! warning "EV Towing"
+    Always request a **flatbed tow truck**. EVs should not be towed with wheels on the ground.
 
-### 🛡️ **Insurance and Protection**
-- **EV-Specialist Insurers:** Companies with EV expertise
-- **Battery Coverage:** Extended warranty options
-- **Charging Equipment Protection:** Home charger insurance
-- **Roadside Coverage:** EV-specific breakdown services
+### Essential Apps
 
-## Victorian-Specific Resources
+| App | Purpose |
+|-----|---------|
+| **Zeekr** | Vehicle control, charging status |
+| **PlugShare** | Find chargers, read reviews |
+| **A Better Route Planner** | Trip planning with charging |
+| **Chargefox / Evie** | Network access and payment |
 
-### State Government Support
-- **Solar Victoria** - Home solar and battery incentives
-- **Sustainability Victoria** - Environmental programs and rebates
-- **VicRoads** - Registration and compliance information
-- **Energy Compare** - Electricity tariff comparison for EV charging
+### Federal Incentives
 
-### Local Infrastructure
-- **Melbourne Charging Network** - City council and shopping centre chargers
-- **Regional Network Development** - Tourism route charging infrastructure
-- **Home Installation Support** - Victorian electrical safety and permits
-- **Building Regulations** - Apartment and strata charging installation
-
-## Professional Services Directory
-
-### Recommended Partners
-- **Insurance Brokers** - EV-experienced insurance specialists
-- **Electrical Contractors** - Certified home charging installers
-- **Finance Providers** - Green loans and EV financing specialists
-- **Legal Services** - Consumer protection and warranty advice
-
-### Club Partnerships
-- **Member Discounts** - Exclusive rates for club members
-- **Group Services** - Bulk purchasing and shared services
-- **Referral Programs** - Member-to-member service recommendations
-- **Quality Assurance** - Vetted service providers
-
-## Resource Updates
-
-### How We Maintain Accuracy
-- **Regular Verification** - Links and information checked monthly
-- **Member Feedback** - Reports of outdated or incorrect information
-- **Official Sources** - Direct relationships with service providers
-- **Community Updates** - Member contributions and discoveries
-
-### Contributing to Resources
-- **Report Changes** - Contact us with updates to information
-- **New Discoveries** - Share useful resources you've found
-- **Service Reviews** - Rate and review service providers
-- **Link Verification** - Help keep our directory current
-
-## Mobile-Friendly Access
-
-All resources are optimised for mobile access, ensuring you have essential information available:
-- **Offline Downloads** - Key information available without internet
-- **QR Code Access** - Quick links to frequently used resources
-- **Location Services** - Find nearest services based on your location
-- **Emergency Mode** - Critical contact information always accessible
+| Incentive | Benefit |
+|-----------|---------|
+| **Fringe Benefits Tax Exemption** | Salary sacrifice EVs under $91,387 |
+| **Luxury Car Tax Exemption** | EVs exempt from LCT |
+| **Instant Asset Write-off** | Business vehicle deductions |
 
 ---
 
-*Resources are maintained by {{ extra.club.full_name }} and updated regularly. For urgent corrections or additions, contact the club committee.*
+## Legacy Resources
 
-- **Last comprehensive review:** [Date needed]
+These pages contain additional information that may be useful:
+
+- [Service Centres (VIC)](service-centers-vic.md) - Detailed Victorian service information
+- [Charging Networks Australia](charging-networks-australia.md) - National charging guide
+- [Useful Links](useful-links.md) - Curated external resources
+
+---
+
+*Resources are maintained by {{ extra.club.full_name }} and community contributors.*
+
+*Last updated: December 2025*

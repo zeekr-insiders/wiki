@@ -1,43 +1,78 @@
-# Zeekr X Australia - Model Overview
+<div class="hero-container hero-bg-x">
+    <div class="hero-content">
+        <div class="hero-title">Zeekr X</div>
+        <div class="hero-subtitle">Urban Luxury. Uncompromised Performance. The city SUV that redefines the segment.</div>
+        <div class="hero-actions">
+            <a href="2025/pricing/" class="btn btn-primary">View Pricing</a>
+            <a href="2025/specifications/" class="btn btn-secondary">Full Specs</a>
+        </div>
+    </div>
+</div>
 
-**The Urban Luxury Compact SUV**
+## Choose Your Configuration
 
-The Zeekr X is the style-focused city dweller. It shares a platform with the Volvo EX30 but offers more space and a more "avant-garde" interior for a similar (or better) price.
+<div class="card-grid">
+    <div class="z-card featured">
+        <span class="badge">Best Value</span>
+        <h3>RWD</h3>
+        <div class="price">$49,900 <sub>+ ORC</sub></div>
+        <ul class="feature-list">
+            <li><i>✓</i> <strong>440km</strong> WLTP Range</li>
+            <li><i>✓</i> <strong>5.6s</strong> 0-100 km/h</li>
+            <li><i>✓</i> Yamaha Sound (Optional Pack)</li>
+            <li><i>✓</i> AR-HUD (Optional Pack)</li>
+            <li class="muted">AWD Grip</li>
+            <li class="muted">22kW AC Charging</li>
+        </ul>
+        <a href="2025/specifications/" class="btn btn-primary" style="text-align:center">Details</a>
+    </div>
 
-## Australian Status
--   **Launched:** Late 2024.
--   **Price Drop:** Significant repricing in April 2025 makes this a bargain.
+    <div class="z-card">
+        <h3>AWD</h3>
+        <div class="price">$62,900 <sub>+ ORC</sub></div>
+        <ul class="feature-list">
+            <li><i>✓</i> <strong>400km</strong> WLTP Range</li>
+            <li><i>✓</i> <strong>3.8s</strong> 0-100 km/h (Supercar Pace)</li>
+            <li><i>✓</i> <strong>22kW</strong> AC Charging (Rare!)</li>
+            <li><i>✓</i> Massage Seats Standard</li>
+            <li><i>✓</i> Yamaha Sound Standard</li>
+            <li><i>✓</i> AWD Traction</li>
+        </ul>
+        <a href="2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+    </div>
+</div>
 
-## The Lineup & Pricing (Post-April 2025)
+## Key Stats
 
-| Variant | Powertrain | Battery | Range (WLTP) | Old Price | **New Price** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **RWD** | Single Motor (200kW) | 66kWh NMC | 440km | $56,900 | **$49,900** |
-| **AWD** | Dual Motor (315kW) | 66kWh NMC | 400km | $64,900 | **$62,900** |
+<div class="stats-row">
+    <div class="stat-box">
+        <span class="val">3.8s</span>
+        <span class="lbl">0-100 km/h (AWD)</span>
+    </div>
+    <div class="stat-box">
+        <span class="val">22kW</span>
+        <span class="lbl">AC Charging (AWD)</span>
+    </div>
+    <div class="stat-box">
+        <span class="val">14.6"</span>
+        <span class="lbl">Sliding Screen</span>
+    </div>
+    <div class="stat-box">
+        <span class="val">5 Star</span>
+        <span class="lbl">Safety Rating</span>
+    </div>
+</div>
 
-## Key Specs
--   **Battery:** 66 kWh NMC (Nickel Manganese Cobalt).
--   **Charging:** 150kW DC (10-80% in 30 mins).
--   **AC Charging:** **22kW On-board charger** (AWD only - rare in this segment!).
--   **0-100 km/h:** 5.6s (RWD) / 3.8s (AWD).
+## Insider Verdict
 
-## Insider "Need to Know"
+!!! tip "The 22kW Secret Weapon"
+    The AWD Zeekr X comes with a **22kW On-Board Charger**. This is a game changer if you have access to 3-phase power at work or public AC posts.
+    
+    *   **Standard EV:** ~7 hours to charge.
+    *   **Zeekr X AWD:** ~3 hours to charge.
 
-### 1. The 22kW AC Charger (AWD)
-The AWD model can charge at 22kW on AC. This is huge if you have access to 3-phase power at work or public AC posts. You can fully charge in ~3 hours on AC, whereas most EVs take 7-8 hours.
+## Knowledge Base
 
-### 2. The "Convenience Package"
-Standard on AWD, optional ($4k) on RWD.
--   **Includes:** Yamaha 13-speaker sound, AR-HUD, Ventilated Seats, Heated Steering Wheel.
--   **Verdict:** Essential. The base sound system is average; the Yamaha system is excellent.
-
-### 3. Rear Seat Space
-Unlike the Volvo EX30, actual humans can sit in the back of the Zeekr X. However, the boot is small (362L). It's a lifestyle car, not a furniture hauler.
-
-## Common Quirks
--   **Driver Monitoring:** Can be overly sensitive. Check the "Knowledge Base" for settings to reduce false alerts.
--   **Touch Controls:** Window switches are minimal toggles. They take getting used to.
-
-## Resources
--   [Full Specifications](2025/specifications.md) (Coming Soon)
--   [Pricing History](2025/pricing.md) (Coming Soon)
+-   [Detailed Specifications](2025/specifications.md)
+-   [Pricing History](2025/pricing.md)
+-   [Service Schedule](2025/service-schedule.md)

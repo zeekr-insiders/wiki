@@ -34,3 +34,19 @@
 -   **Audio:** 30-Speaker Yamaha Surround (3000W).
 -   **Doors:** Power Sliding Side Doors + Power Tailgate.
 -   **Quietness:** Active Road Noise Cancellation (RNC).
+
+## Charging
+
+| Method | Details |
+| :--- | :--- |
+| **DC Fast Charge (10-80%)** | ~30 Minutes (200kW peak) |
+| **AC Charge** | 11kW / 22kW (variant dependent) |
+| **V2L (Vehicle-to-Load)** | 3.3kW output |
+
+## Warranty & Roadside Assist
+
+| Coverage | Details |
+| :--- | :--- |
+| **Vehicle Warranty** | 5 Years / Unlimited km |
+| **Battery Warranty** | 8 Years / 160,000 km (>70% capacity) |
+| **Roadside Assistance** | 5 Years complimentary |

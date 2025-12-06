@@ -49,3 +49,11 @@
 -   **HUD:** 24.3" AR Heads-Up Display.
 -   **Seats:** Ventilated Front Seats, Heated Steering Wheel.
 -   **Ambient Light:** "Ice Block" Ambient Lighting.
+
+## Warranty & Roadside Assist
+
+| Coverage | Details |
+| :--- | :--- |
+| **Vehicle Warranty** | 5 Years / Unlimited km |
+| **Battery Warranty** | 8 Years / 160,000 km (>70% capacity) |
+| **Roadside Assistance** | 5 Years complimentary |
