@@ -3,8 +3,8 @@
         <div class="hero-title">Zeekr X</div>
         <div class="hero-subtitle">Urban Luxury. Uncompromised Performance. The city SUV that redefines the segment.</div>
         <div class="hero-actions">
-            <a href="2025/pricing/" class="btn btn-primary">View Pricing</a>
-            <a href="2025/specifications/" class="btn btn-secondary">Full Specs</a>
+            <a href="2025/pricing.md" class="btn btn-primary">View Pricing</a>
+            <a href="2025/specifications.md" class="btn btn-secondary">Full Specs</a>
         </div>
     </div>
 </div>
@@ -24,7 +24,7 @@
             <li class="muted">AWD Grip</li>
             <li class="muted">22kW AC Charging</li>
         </ul>
-        <a href="2025/specifications/" class="btn btn-primary" style="text-align:center">Details</a>
+        <a href="2025/specifications.md" class="btn btn-primary" style="text-align:center">Details</a>
     </div>
 
     <div class="z-card">
@@ -38,7 +38,7 @@
             <li><i>✓</i> Yamaha Sound Standard</li>
             <li><i>✓</i> AWD Traction</li>
         </ul>
-        <a href="2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+        <a href="2025/specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
     </div>
 </div>
 
@@ -46,18 +46,22 @@
 
 <div class="stats-row">
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">3.8s</span>
         <span class="lbl">0-100 km/h (AWD)</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">22kW</span>
         <span class="lbl">AC Charging (AWD)</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">14.6"</span>
         <span class="lbl">Sliding Screen</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">5 Star</span>
         <span class="lbl">Safety Rating</span>
     </div>

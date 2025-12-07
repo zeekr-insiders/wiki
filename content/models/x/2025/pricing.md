@@ -25,5 +25,6 @@ At **$49,900**, the Zeekr X RWD undercuts the Tesla Model Y and Volvo EX30 signi
 *   **Best Buy:** The RWD + Convenience Pack (~$54k). You get all the luxury features (Yamaha sound, HUD) without paying for the 3.8s acceleration you might not need.
 
 ## Service & Warranty
+
 -   **Service:** 2 Years / 40,000 km.
 -   **Warranty:** 5 Years / Unlimited km.

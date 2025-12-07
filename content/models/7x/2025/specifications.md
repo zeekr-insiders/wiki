@@ -2,18 +2,22 @@
 
 <div class="stat-grid">
     <div class="stat-card">
+        <img src="../../../../assets/icons/icon-wheelbase.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="stat-label">Wheelbase</span>
         <span class="stat-value">2,925mm</span>
     </div>
     <div class="stat-card">
+        <img src="../../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="stat-label">Boot Space</span>
         <span class="stat-value">616L</span>
     </div>
     <div class="stat-card">
+        <img src="../../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="stat-label">Frunk</span>
         <span class="stat-value">62L</span>
     </div>
     <div class="stat-card">
+        <img src="../../../../assets/icons/icon-ground-clearance.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="stat-label">Ground Clearance</span>
         <span class="stat-value">190mm+</span>
     </div>

@@ -1,5 +1,5 @@
 site_name: Zeekr Insiders Australia
-site_description: The unofficial, no-nonsense guide to owning a Zeekr in Australia.
+site_description: Your friendly guide to owning a Zeekr in Australia. Learn, discover, and master your EV.
 site_author: Zeekr Insiders Australia
 site_url: https://thushan.github.io/zeekr/
 
@@ -62,6 +62,7 @@ extra:
     location: "Australia"
     contact_email: "insiders@zeekr.club"
     website: "https://zeekr.club"
+    forum_url: ""  # To be added when forum is ready
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/thushan/zeekr
@@ -76,6 +77,7 @@ extra:
 extra_css:
   - stylesheets/zeekr.css
   - stylesheets/nightowl.css
+  - stylesheets/icons.css
 
 markdown_extensions:
   - abbr
@@ -105,7 +107,7 @@ markdown_extensions:
       normalize_issue_symbols: true
       repo_url_shorthand: true
       user: thushan
-      repo: olla
+      repo: zeekr
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -129,49 +131,63 @@ plugins:
       minify_html: true
 
 nav:
-  - Home:
-      - Overview: index.md
+  - Home: index.md
+
+  - Getting Started:
+      - getting-started/index.md
+      - EV Basics: getting-started/ev-basics.md
+      - Why Zeekr?: getting-started/why-zeekr.md
+      - Choosing a Model: getting-started/choosing-model.md
+
+  - Buying:
+      - buying/index.md
+      - Where to Buy: buying/dealers.md
+      - Pricing Guide: buying/pricing.md
+      - Finance Options: buying/finance.md
+      - Taking Delivery: buying/delivery.md
+
   - Models:
       - models/index.md
       - Zeekr 7X:
           - Overview: models/7x/overview.md
-          - Variant Comparison: models/7x/comparison.md
-          - 2025 Model:
-              - Specifications: models/7x/2025/specifications.md
-              - Pricing: models/7x/2025/pricing.md
-              - Service Schedule: models/7x/2025/service-schedule.md
-          - Knowledge Base:
-              - Known Issues: models/7x/knowledge-base/7x-issues.md
-              - Modifications: models/7x/knowledge-base/7x-mods.md
-          - 2026 Model: models/7x/2026/overview.md
+          - Specifications: models/7x/2025/specifications.md
+          - Pricing: models/7x/2025/pricing.md
+          - Service Schedule: models/7x/2025/service-schedule.md
+          - Known Issues: models/7x/knowledge-base/7x-issues.md
+          - Modifications: models/7x/knowledge-base/7x-mods.md
       - Zeekr X:
           - Overview: models/x/overview.md
-          - 2025 Model:
-              - Specifications: models/x/2025/specifications.md
-              - Pricing: models/x/2025/pricing.md
-              - Service Schedule: models/x/2025/service-schedule.md
+          - Specifications: models/x/2025/specifications.md
+          - Pricing: models/x/2025/pricing.md
+          - Service Schedule: models/x/2025/service-schedule.md
       - Zeekr 009:
           - Overview: models/009/overview.md
           - Specifications: models/009/specifications.md
           - Pricing: models/009/pricing.md
           - Service Schedule: models/009/service-schedule.md
-  - Guides:
-      - guides/index.md
+      - Model Comparison: comparisons/model-comparison-table.md
+
+  - Ownership:
+      - ownership/index.md
+      - First 30 Days: ownership/first-30-days.md
       - Charging:
           - Home Setup: guides/charging/home-setup.md
           - Public Networks: guides/charging/public-networks.md
           - Road Trips: guides/charging/road-trips.md
-      - Ownership:
-          - Buying Process: guides/ownership/buying-process.md
-          - Delivery Checklist: guides/ownership/delivery-checklist.md
-          - First 30 Days: guides/ownership/first-30-days.md
       - Maintenance: guides/maintenance/overview.md
-      - New to EV: guides/new-to-ev/overview.md
-  - Club:
-      - club/index.md
-      - Events: club/events/overview.md
-      - Group Buys: club/group-buys/overview.md
-      - Meet the Committee: club/meet-the-committee.md
+      - Insurance: ownership/insurance.md
+      - Accessories:
+          - ownership/accessories/index.md
+          - Protection (PPF/Tint): ownership/accessories/protection.md
+          - Recommended Gear: ownership/accessories/recommended.md
+          - Trusted Vendors: ownership/accessories/vendors.md
+
+  - Community:
+      - community/index.md
+      - Events & Meetups: community/events.md
+      - Group Buys: community/group-buys.md
+      - Forum: community/forum.md
+
   - Resources:
       - resources/index.md
       - National: resources/national/index.md
@@ -184,11 +200,5 @@ nav:
           - Tasmania: resources/tas/index.md
           - ACT: resources/act/index.md
           - Northern Territory: resources/nt/index.md
-      - Legacy:
-          - Service Centers (VIC): resources/service-centers-vic.md
-          - Charging Networks: resources/charging-networks-australia.md
-          - Useful Links: resources/useful-links.md
-  - Comparisons:
-      - comparisons/index.md
       - Zeekr vs Competitors: comparisons/zeekr-vs-competitors.md
-      - Model Comparison: comparisons/model-comparison-table.md
+      - Useful Links: resources/useful-links.md

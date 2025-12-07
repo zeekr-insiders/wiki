@@ -94,12 +94,8 @@ Your one-stop resource directory for everything you need as a Zeekr owner in Aus
 
 ---
 
-## Legacy Resources
+## Additional Resources
 
-These pages contain additional information that may be useful:
-
-- [Service Centres (VIC)](service-centers-vic.md) - Detailed Victorian service information
-- [Charging Networks Australia](charging-networks-australia.md) - National charging guide
 - [Useful Links](useful-links.md) - Curated external resources
 
 ---

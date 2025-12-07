@@ -3,8 +3,8 @@
         <div class="hero-title">Zeekr 7X</div>
         <div class="hero-subtitle">The Family SUV that charges faster than you can order coffee. 800V Architecture. 615km Range.</div>
         <div class="hero-actions">
-            <a href="2025/pricing/" class="btn btn-primary">See Pricing</a>
-            <a href="2025/specifications/" class="btn btn-secondary">Full Specs</a>
+            <a href="2025/pricing.md" class="btn btn-primary">See Pricing</a>
+            <a href="2025/specifications.md" class="btn btn-secondary">Full Specs</a>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
             <li><i>✓</i> Panoramic Roof (Sunshade incl.)</li>
             <li class="muted">Standard Sound (10 Spk)</li>
         </ul>
-        <a href="2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+        <a href="2025/specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
     </div>
 
     <div class="z-card featured">
@@ -36,7 +36,7 @@
             <li><i>✓</i> <strong>AR-HUD</strong> Included</li>
             <li><i>✓</i> Massage & Ventilated Seats</li>
         </ul>
-        <a href="2025/pricing/" class="btn btn-primary" style="text-align:center">Why this trim?</a>
+        <a href="2025/pricing.md" class="btn btn-primary" style="text-align:center">Why this trim?</a>
     </div>
 
     <div class="z-card">
@@ -49,7 +49,7 @@
             <li><i>✓</i> Auto-Opening Doors</li>
             <li><i>✓</i> Nappa Leather</li>
         </ul>
-        <a href="2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+        <a href="2025/specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
     </div>
 </div>
 
@@ -57,18 +57,22 @@
 
 <div class="stats-row">
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">13 Min</span>
         <span class="lbl">10-80% Charge (LFP)</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">800V</span>
         <span class="lbl">Architecture</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-kerb-weight.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">2.0T</span>
         <span class="lbl">Towing Capacity</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">616L</span>
         <span class="lbl">Boot Space</span>
     </div>

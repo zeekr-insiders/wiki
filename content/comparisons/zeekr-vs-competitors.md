@@ -8,6 +8,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 ### Zeekr 7X vs Premium Electric SUVs
 
 #### vs BMW iX3
+
 - Pricing comparison (RRP and on-road costs)
 - Performance specifications
 - Range and charging capabilities
@@ -17,6 +18,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Resale value considerations
 
 #### vs Mercedes EQC
+
 - Design and build quality comparison
 - Performance and efficiency
 - Charging speed and infrastructure
@@ -25,6 +27,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Total cost of ownership
 
 #### vs Audi e-tron
+
 - Specification comparison
 - Real-world range testing
 - Charging network compatibility
@@ -33,6 +36,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Service costs and availability
 
 #### vs Genesis GV60
+
 - Value proposition analysis
 - Performance comparison
 - Design and styling
@@ -41,6 +45,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Market positioning
 
 #### vs Tesla Model Y
+
 - Price-to-feature ratio
 - Charging network access
 - Software and OTA updates
@@ -51,6 +56,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 ### Zeekr X vs Compact Electric SUVs
 
 #### vs BMW iX1
+
 - Size and practicality
 - Performance and efficiency
 - Feature comparison
@@ -58,6 +64,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Market positioning
 
 #### vs Mercedes EQA
+
 - Luxury features comparison
 - Range and charging
 - Interior space and quality
@@ -65,6 +72,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Service network
 
 #### vs Volvo XC40 Recharge
+
 - Safety features comparison
 - Scandinavian vs Chinese design
 - Practicality and storage
@@ -74,6 +82,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 ### Zeekr 009 vs Luxury MPVs
 
 #### vs Mercedes V-Class (ICE comparison)
+
 - Space and seating flexibility
 - Luxury appointments
 - Technology features
@@ -81,6 +90,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Environmental impact
 
 #### vs Lexus LM (when available)
+
 - Luxury positioning
 - Executive features
 - Market positioning
@@ -89,6 +99,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 ### Key Comparison Criteria
 
 #### Performance
+
 - 0-100km/h acceleration
 - Top speed capabilities
 - Real-world range testing
@@ -96,6 +107,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Energy efficiency ratings
 
 #### Value Proposition
+
 - Purchase price comparison
 - Government incentive eligibility
 - Insurance costs
@@ -103,6 +115,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Depreciation projections
 
 #### Features and Technology
+
 - Infotainment system capabilities
 - Driver assistance features
 - Connectivity and OTA updates
@@ -110,6 +123,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Climate control and comfort
 
 #### Practical Considerations
+
 - Interior space and seating
 - Cargo capacity and flexibility
 - Towing capacity (where applicable)
@@ -117,6 +131,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Parking and maneuverability
 
 #### Ownership Experience
+
 - Dealer network coverage
 - Service quality and availability
 - Parts availability and pricing
@@ -124,6 +139,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 - Community and support
 
 ### Australian Market Context
+
 - Local support and service
 - Import arrangements and availability
 - Compliance with Australian standards
@@ -132,6 +148,7 @@ Detailed comparison of Zeekr vehicles against major competitors available in the
 
 ### Recommendation Matrix
 Decision guide based on priorities:
+
 - Best value for money
 - Highest luxury content
 - Best technology integration

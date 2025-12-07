@@ -6,6 +6,7 @@ Essential guide for planning and executing road trips with your Zeekr vehicle in
 ## Content Needed
 
 ### Pre-Trip Planning
+
 - Route planning tools and apps
 - Charging stop identification
 - Buffer planning for unexpected delays
@@ -14,6 +15,7 @@ Essential guide for planning and executing road trips with your Zeekr vehicle in
 - Emergency charging options
 
 ### Popular Victorian Road Trip Routes
+
 - Melbourne to Sydney via Hume Highway
 - Great Ocean Road charging stops
 - Melbourne to Adelaide route
@@ -22,12 +24,14 @@ Essential guide for planning and executing road trips with your Zeekr vehicle in
 - Murray River region trips
 
 ### Interstate Travel
+
 - Melbourne to Brisbane corridor
 - Melbourne to Perth (long-distance planning)
 - Tasmania ferry and island charging
 - Cross-border charging considerations
 
 ### Charging Strategy
+
 - Optimal charging levels (10-80% rule)
 - Charging stop timing with meal breaks
 - Fast charging vs. destination charging
@@ -35,6 +39,7 @@ Essential guide for planning and executing road trips with your Zeekr vehicle in
 - Peak travel season considerations
 
 ### Range Optimisation
+
 - Highway driving efficiency tips
 - Climate control impact on range
 - Cargo and passenger load effects
@@ -42,6 +47,7 @@ Essential guide for planning and executing road trips with your Zeekr vehicle in
 - Driving mode selection
 
 ### Emergency Preparedness
+
 - Backup charging options
 - Mobile charging services
 - Roadside assistance for EVs
@@ -49,6 +55,7 @@ Essential guide for planning and executing road trips with your Zeekr vehicle in
 - Towing considerations for EVs
 
 ### Trip Planning Tools
+
 - ABRP route planning
 - PlugShare for real-time availability
 - Network apps for reservation

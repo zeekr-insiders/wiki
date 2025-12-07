@@ -3,8 +3,8 @@
         <div class="hero-title">Zeekr 009</div>
         <div class="hero-subtitle">First Class on Wheels. The ultimate executive MPV for those who demand silence, space, and speed.</div>
         <div class="hero-actions">
-            <a href="pricing/" class="btn btn-primary">Pricing</a>
-            <a href="specifications/" class="btn btn-secondary">Specs</a>
+            <a href="pricing.md" class="btn btn-primary">Pricing</a>
+            <a href="specifications.md" class="btn btn-secondary">Specs</a>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
             <li><i>✓</i> 17" OLED Rear Screen</li>
             <li><i>✓</i> Air Suspension</li>
         </ul>
-        <a href="specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">View Layout</a>
+        <a href="specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">View Layout</a>
     </div>
 
     <div class="z-card featured">
@@ -36,7 +36,7 @@
             <li><i>✓</i> Hidden Tray Tables</li>
             <li><i>✓</i> Leg Rests & Footrests</li>
         </ul>
-        <a href="specifications/" class="btn btn-primary" style="text-align:center">The "Boss" Spec</a>
+        <a href="specifications.md" class="btn btn-primary" style="text-align:center">The "Boss" Spec</a>
     </div>
 </div>
 
@@ -44,18 +44,22 @@
 
 <div class="stats-row">
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">4.5s</span>
         <span class="lbl">0-100 km/h</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-range.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">582km</span>
         <span class="lbl">WLTP Range</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">30</span>
         <span class="lbl">Yamaha Speakers</span>
     </div>
     <div class="stat-box">
+        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">Air</span>
         <span class="lbl">Suspension Standard</span>
     </div>

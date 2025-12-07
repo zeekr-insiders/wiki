@@ -3,6 +3,7 @@
 **The Compact Luxury SUV.**
 
 ## Dimensions
+
 -   **Length:** 4,432 mm
 -   **Width:** 1,836 mm
 -   **Height:** 1,566 mm
@@ -12,6 +13,7 @@
 ## Powertrain
 
 ### RWD (Single Motor)
+
 -   **Power:** 200 kW
 -   **Torque:** 343 Nm
 -   **0-100 km/h:** 5.6 seconds
@@ -19,6 +21,7 @@
 -   **Battery:** 66 kWh NMC
 
 ### AWD (Dual Motor)
+
 -   **Power:** 315 kW (Combined)
 -   **Torque:** 543 Nm (Combined)
 -   **0-100 km/h:** 3.8 seconds
@@ -38,6 +41,7 @@
 ## Key Features
 
 ### Standard (RWD)
+
 -   14.6" Sliding Center Screen (Optional in some markets, check local spec)
 -   Panormaic Glass Roof
 -   Wireless Phone Charger

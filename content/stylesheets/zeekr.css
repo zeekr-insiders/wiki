@@ -713,6 +713,15 @@ h3 {
     border-bottom: 1px solid var(--border-subtle);
     font-weight: 600;
     padding: 0.75rem 1rem;
+    padding-left: 2.75rem;
+}
+
+/* Larger admonition icons */
+.md-typeset .admonition-title::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.75rem;
+    top: 0.75rem;
 }
 
 .md-typeset .admonition.tip,

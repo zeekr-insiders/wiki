@@ -26,17 +26,20 @@
 ## Factory Options
 
 ### Paint
+
 -   **Crystal White:** Standard ($0)
 -   **Phantom Black:** Standard ($0)
 -   **Smoke Grey:** +$700
 -   **Zeekr Orange:** +$1,000 (Launch colour)
 
 ### Interior
+
 -   **Charcoal Black:** Standard
 -   **Stone Grey / White:** Standard
 -   **Twilight Orange:** +$0 (No cost option on AWD)
 
 ### Option Packs
+
 -   **Convenience Package (Standard on AWD):** +$4,000 on RWD
     -   Includes: AR-HUD, Yamaha Sound, Massage Seats, Auto Doors.
 -   **Tow Package:** +$1,800 (Includes tow bar and software)

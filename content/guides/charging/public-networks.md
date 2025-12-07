@@ -6,6 +6,7 @@ Charging an EV in Australia is different from the rest of the world. We have a m
 
 ### 1. BYO Cable (The "Type 2")
 **You cannot rely on finding a cable at every charger.**
+
 -   **DC Fast Chargers (Highway):** Have tethered cables (built-in). You just plug in.
 -   **AC Destination Chargers (Shopping Centers/Hotels):** Usually **DO NOT** have cables. They just have a socket on the wall.
 -   **The Fix:** You *must* buy a **Type 2 to Type 2 (Mennekes)** cable. Keep it in the frunk or under the boot floor.
@@ -39,5 +40,6 @@ Don't wait until you are at the charger to download the app and enter your credi
 -   **Check-in:** Use PlugShare to tell others "Charging successfully".
 
 ## Vic-Specific Tips
+
 -   **RACV Solar:** Some RACV resorts have free or cheap charging for members. Check the app.
 -   **Shopping Centers:** Highpoint, Chadstone, and Westfield Doncaster have large AC charging banks. Bring your Type 2 cable!

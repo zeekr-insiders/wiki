@@ -113,7 +113,7 @@ Victorian electricians experienced with EV charger installation:
 
 ### Events
 
-See our [Events page](../../club/events/overview.md) for Victorian meetups and drives.
+See our [Events page](../../community/events.md) for Victorian meetups and drives.
 
 ## Useful Victorian Links
 

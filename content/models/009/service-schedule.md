@@ -19,18 +19,21 @@ The Zeekr 009 follows the same low-maintenance philosophy as the rest of the Zee
 
 ### Air Suspension System
 The 009's dual-chamber air suspension requires periodic inspection:
+
 - Air compressor check
 - Suspension calibration
 - Air spring condition assessment
 
 ### Power Sliding Doors
 The electric sliding doors should be:
+
 - Lubricated annually
 - Track cleaned of debris
 - Sensor alignment checked
 
 ### Large Battery Thermal Management
 The 116 kWh battery has an extensive cooling system:
+
 - Coolant levels checked at each service
 - Thermal management system inspection
 - Full coolant flush typically at 4-year service
@@ -51,12 +54,14 @@ The 116 kWh battery has an extensive cooling system:
 
 ### 2. Wheel Alignment
 The air suspension makes wheel alignment critical. Get it checked:
+
 - After any kerb strike
 - When tyres are replaced
 - If you notice uneven wear
 
 ### 3. Executive Service
 Given the 009's premium positioning, some dealers offer VIP service packages including:
+
 - Courtesy vehicle during service
 - Pick-up and delivery
 - Interior detailing

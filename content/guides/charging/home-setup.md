@@ -6,6 +6,7 @@ Complete guide to setting up home charging for your Zeekr vehicle in Australia, 
 ## Content Needed
 
 ### Charging Options
+
 - Standard 10A power outlet (2.3kW)
 - 15A power outlet upgrade (3.6kW)
 - Single-phase wall box (7.4kW)
@@ -13,6 +14,7 @@ Complete guide to setting up home charging for your Zeekr vehicle in Australia, 
 - Portable charging solutions
 
 ### Installation Requirements
+
 - Electrical panel capacity assessment
 - Dedicated circuit installation
 - Safety switch (RCD) requirements
@@ -21,6 +23,7 @@ Complete guide to setting up home charging for your Zeekr vehicle in Australia, 
 - Smart meter benefits
 
 ### Victorian Specific Information
+
 - Solar panel integration
 - Time-of-use tariffs
 - Victorian government rebates for home chargers
@@ -28,6 +31,7 @@ Complete guide to setting up home charging for your Zeekr vehicle in Australia, 
 - Apartment/strata considerations
 
 ### Cost Breakdown
+
 - Equipment costs
 - Installation costs
 - Ongoing electricity costs
@@ -35,11 +39,13 @@ Complete guide to setting up home charging for your Zeekr vehicle in Australia, 
 - Return on investment calculations
 
 ### Recommended Installers
+
 - Certified EV charging installers in Victoria
 - Installer checklist and questions to ask
 - Warranty and service considerations
 
 ### Smart Charging Features
+
 - Load balancing
 - Solar integration
 - Time-based charging

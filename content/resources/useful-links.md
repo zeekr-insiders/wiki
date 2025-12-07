@@ -6,6 +6,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 ## Content Needed
 
 ### Official Zeekr Resources
+
 - Zeekr Australia official website
 - Owner portal and mobile app
 - Service booking system
@@ -14,6 +15,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Technical documentation
 
 ### Government Resources
+
 - Federal EV policy and incentives
 - Victorian EV rebate information
 - State government EV initiatives
@@ -22,6 +24,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Emissions testing and certification
 
 ### Charging and Route Planning
+
 - PlugShare charging station locator
 - A Better Route Planner (ABRP)
 - Chargefox network app
@@ -30,6 +33,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - ElectricHighway route planner
 
 ### EV News and Information
+
 - The Driven - Australian EV news
 - EV Central Australia
 - GoAuto EV section
@@ -38,6 +42,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Clean Energy Council resources
 
 ### Insurance and Finance
+
 - EV-specialist insurance providers
 - Green car loans and financing
 - Novated leasing providers
@@ -46,6 +51,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Finance calculators
 
 ### Technical and DIY Resources
+
 - EV maintenance guides
 - Technical forums and communities
 - Parts suppliers and accessories
@@ -54,6 +60,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Modification guides and suppliers
 
 ### Community and Forums
+
 - Australian EV Facebook groups
 - Reddit EV communities
 - WhatsApp groups for owners
@@ -62,6 +69,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Online technical support forums
 
 ### Apps and Tools
+
 - Energy monitoring apps
 - Trip planning and logging
 - Maintenance scheduling
@@ -70,6 +78,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Cost comparison tools
 
 ### Educational Resources
+
 - EV basics and education
 - University EV research
 - Technical training resources
@@ -78,6 +87,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Industry reports and studies
 
 ### Environmental and Sustainability
+
 - Life cycle assessment resources
 - Carbon footprint calculators
 - Renewable energy information
@@ -86,6 +96,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Environmental impact studies
 
 ### Legal and Regulatory
+
 - Australian Design Rules for EVs
 - Consumer protection information
 - Warranty and lemon law guidance
@@ -94,6 +105,7 @@ Curated collection of helpful websites, apps, tools, and resources for Zeekr own
 - Type approval information
 
 ### Shopping and Marketplace
+
 - EV-specific marketplaces
 - Parts and accessories suppliers
 - Used EV buying guides
