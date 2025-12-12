@@ -209,11 +209,60 @@ Available custom classes in `stylesheets/zeekr.css`:
 
 <div class="stats-row">
     <div class="stat-box">
+        <img src="PATH/assets/icons/icon-range.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="val">615km</span>
         <span class="lbl">Range</span>
     </div>
 </div>
 ```
+
+### Custom SVG Icon System
+
+**Location:** `content/assets/icons/`
+
+**Available Icons:**
+| Icon | File | Use For |
+|------|------|---------|
+| Voltage | `icon-voltage.svg` | 800V architecture |
+| Charging | `icon-charging-speed.svg` | Charge times, DC charging |
+| Acceleration | `icon-acceleration.svg` | 0-100 km/h stats |
+| Price | `icon-price.svg` | Pricing, costs |
+| Battery | `icon-battery.svg` | Battery capacity |
+| Range | `icon-range.svg` | WLTP range |
+| Power | `icon-power.svg` | kW, motors |
+| Torque | `icon-torque.svg` | Nm torque |
+| Wheelbase | `icon-wheelbase.svg` | Dimensions |
+| Bootspace | `icon-bootspace.svg` | Boot/frunk capacity |
+| Ground Clearance | `icon-ground-clearance.svg` | Clearance |
+| Kerb Weight | `icon-kerb-weight.svg` | Weight, towing |
+| Seating | `icon-seating.svg` | Seat configs |
+| Air Suspension | `icon-air-suspension.svg` | Suspension |
+| AWD/RWD | `icon-awd.svg`, `icon-rwd.svg` | Drivetrain |
+
+**Usage in Markdown:**
+```html
+<!-- In stat boxes (model pages) -->
+<div class="stat-box">
+    <img src="../../../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt="">
+    <span class="val">800V</span>
+    <span class="lbl">Architecture</span>
+</div>
+
+<!-- Inline with headings -->
+### <img src="../assets/icons/icon-wheelbase.svg" class="zi-icon" alt=""> Zeekr 7X
+```
+
+**Path Calculation (CRITICAL):**
+Count directory levels from your markdown file to `content/`:
+- `content/index.md` → `assets/icons/...`
+- `content/models/index.md` → `../assets/icons/...`
+- `content/models/7x/overview.md` → `../../assets/icons/...` ✗ WRONG!
+- `content/models/7x/overview.md` → `../../../assets/icons/...` ✓ CORRECT
+
+MkDocs renders pages with trailing slash (e.g., `/models/7x/overview/`), adding an extra level. **Always add one more `../` than you'd expect.**
+
+**Theme Awareness:**
+Icons use CSS filters in `icons.css` to display in Zeekr orange (#F76400). No need to modify SVGs - they automatically match the theme.
 
 ## Key Files
 
@@ -221,6 +270,8 @@ Available custom classes in `stylesheets/zeekr.css`:
 |------|---------|
 | `mkdocs.yml` | Site config, navigation, variables |
 | `content/stylesheets/zeekr.css` | Custom styling (dark/light themes) |
+| `content/stylesheets/icons.css` | SVG icon styling and theme filters |
+| `content/assets/icons/` | Custom SVG icons (18 icons) |
 | `pyproject.toml` | Python dependencies (uv) |
 | `Makefile` | Build commands |
 | `main.py` | Custom macros for MkDocs |
@@ -264,3 +315,5 @@ When working on this project:
 5. **Test changes** - `make run` catches most issues
 6. **Relative links with .md** - Avoid bare directory links
 7. **Keep it practical** - Real advice > marketing fluff
+8. **No emojis** - Use custom SVG icons from `assets/icons/` instead
+9. **Icon paths need extra `../`** - MkDocs adds a directory level when rendering
