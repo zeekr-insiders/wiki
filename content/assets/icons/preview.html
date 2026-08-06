@@ -1,608 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeekr Icon System Preview</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zeekr Insiders Icon Sheet</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            padding: 2rem;
-            line-height: 1.6;
-        }
+    body {
+        font-family: 'Space Grotesk', -apple-system, 'Segoe UI', Roboto, sans-serif;
+        background: #0d0d0d;
+        color: #F2F2F2;
+        padding: 2.5rem;
+        line-height: 1.5;
+    }
 
-        body.dark {
-            background: #1a1a1a;
-            color: #e0e0e0;
-        }
+    header {
+        max-width: 1180px;
+        margin: 0 auto 2.5rem;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    h1 {
+        font-size: 1.6rem;
+        letter-spacing: 0.02em;
+    }
 
-        header {
-            text-align: center;
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid #ddd;
-        }
+    h1 span { color: #FF5A00; }
 
-        body.dark header {
-            border-bottom-color: #333;
-        }
+    .subtitle {
+        color: #999;
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-            color: #000;
-        }
+    .panel {
+        max-width: 1180px;
+        margin: 0 auto 2rem;
+        border-radius: 14px;
+        padding: 2rem;
+    }
 
-        body.dark h1 {
-            color: #fff;
-        }
+    .panel-label {
+        font-size: 0.75rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #FF5A00;
+        margin-bottom: 1.5rem;
+    }
 
-        .subtitle {
-            font-size: 1.1rem;
-            color: #666;
-        }
+    .panel.light { background: #F2F2F2; color: #1A1A1A; }
+    .panel.dark  { background: #1A1A1A; color: #F2F2F2; border: 1px solid #2c2c2c; }
 
-        body.dark .subtitle {
-            color: #999;
-        }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 1rem;
+    }
 
-        .theme-toggle {
-            position: fixed;
-            top: 2rem;
-            right: 2rem;
-            padding: 0.75rem 1.5rem;
-            background: #333;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
+    .tile {
+        border-radius: 10px;
+        padding: 1.1rem 1rem 0.9rem;
+        text-align: center;
+    }
 
-        .theme-toggle:hover {
-            background: #555;
-            transform: scale(1.05);
-        }
+    .panel.light .tile { background: #ffffff; border: 1px solid #e2e2e2; }
+    .panel.dark .tile  { background: #222222; border: 1px solid #333333; }
 
-        body.dark .theme-toggle {
-            background: #fff;
-            color: #333;
-        }
+    .sizes {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 0.9rem;
+        margin-bottom: 0.8rem;
+        min-height: 52px;
+    }
 
-        body.dark .theme-toggle:hover {
-            background: #ddd;
-        }
+    /* Same recolour pipeline as the site: flatten to black, map to #FF5A00 */
+    img.zi {
+        filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(726%) hue-rotate(-12deg) brightness(94%) contrast(127%);
+        display: block;
+    }
 
-        .refresh-btn {
-            position: fixed;
-            top: 2rem;
-            right: 12rem;
-            padding: 0.75rem 1.5rem;
-            background: #F76400;
-            color: white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
+    img.s48 { width: 48px; height: 48px; }
+    img.s20 { width: 20px; height: 20px; margin-bottom: 3px; }
 
-        .refresh-btn:hover {
-            background: #ff8533;
-            transform: scale(1.05);
-        }
+    .name {
+        font-size: 0.82rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+    }
 
-        .section {
-            margin-bottom: 3rem;
-        }
+    .file {
+        font-size: 0.7rem;
+        font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+        color: #888;
+        margin-top: 2px;
+    }
 
-        .section-title {
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: #000;
-            border-left: 4px solid #F76400;
-            padding-left: 1rem;
-        }
-
-        body.dark .section-title {
-            color: #fff;
-        }
-
-        .icon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .icon-item {
-            background: white;
-            padding: 2rem 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid #e0e0e0;
-        }
-
-        body.dark .icon-item {
-            background: #2a2a2a;
-            border-color: #404040;
-        }
-
-        .icon-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-
-        body.dark .icon-item:hover {
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-
-        .icon-item .icon-container {
-            width: 64px;
-            height: 64px;
-            margin: 0 auto 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* SVG styling for inline SVGs (fetch method) */
-        .icon-item .icon-container svg {
-            width: 100%;
-            height: 100%;
-            stroke: currentColor;
-            transition: all 0.3s ease;
-        }
-
-        .icon-item:hover .icon-container svg {
-            transform: scale(1.1);
-        }
-
-        /* Object tag styling for file:// protocol fallback */
-        .icon-item .icon-container object {
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            transition: all 0.3s ease;
-            /* Light theme: dark icons (default SVG stroke is currentColor/black) */
-        }
-
-        body.dark .icon-item .icon-container object {
-            /* Dark theme: invert to white */
-            filter: invert(1);
-        }
-
-        .icon-item:hover .icon-container object {
-            transform: scale(1.1);
-        }
-
-        .icon-name {
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .icon-file {
-            font-size: 0.85rem;
-            color: #666;
-            font-family: 'Courier New', monospace;
-        }
-
-        body.dark .icon-file {
-            color: #999;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .stat-card {
-            background: linear-gradient(135deg, #F76400 0%, #ff8533 100%);
-            color: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .stat-card .icon-container {
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 0.5rem;
-        }
-
-        .stat-card .icon-container svg {
-            width: 100%;
-            height: 100%;
-            stroke: white;
-        }
-
-        /* Object tags in stat cards need white icons */
-        .stat-card .icon-container object {
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            /* Invert black to white for orange background */
-            filter: invert(1);
-        }
-
-        body.dark .stat-card .icon-container object {
-            /* Still white on orange in dark mode */
-            filter: invert(1);
-        }
-
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.9;
-        }
-
-        .usage-example {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            margin-top: 2rem;
-            border: 1px solid #e0e0e0;
-        }
-
-        body.dark .usage-example {
-            background: #2a2a2a;
-            border-color: #404040;
-        }
-
-        .usage-example h3 {
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .example-row {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: #f9f9f9;
-            border-radius: 8px;
-            margin-bottom: 0.5rem;
-        }
-
-        body.dark .example-row {
-            background: #1a1a1a;
-        }
-
-        .example-row .icon-container {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
-
-        .example-row .icon-container svg {
-            width: 100%;
-            height: 100%;
-            stroke: currentColor;
-        }
-
-        .example-row .icon-container object {
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-
-        body.dark .example-row .icon-container object {
-            filter: invert(1);
-        }
-
-        .loading {
-            opacity: 0.5;
-        }
-
-        .protocol-notice {
-            font-size: 0.85rem;
-            padding: 0.5rem 1rem;
-            background: #fff3cd;
-            color: #856404;
-            border-radius: 4px;
-            margin-top: 1rem;
-            display: none;
-        }
-
-        body.dark .protocol-notice {
-            background: #3d3520;
-            color: #ffc107;
-        }
-
-        .protocol-notice.visible {
-            display: block;
-        }
-    </style>
+    .panel.light .file { color: #777; }
+</style>
 </head>
 <body>
-    <button class="refresh-btn" onclick="loadAllIcons()">Refresh Icons</button>
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    <header>
+        <h1>Zeekr Insiders <span>Icon Sheet</span></h1>
+        <p class="subtitle">18 icons - 24x24 grid, 1.5px stroke, round caps and joins. Each shown at 48px and 20px through the site's orange filter pipeline.</p>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Zeekr Icon System</h1>
-            <p class="subtitle">18 custom SVG icons for premium automotive specifications</p>
-            <p class="subtitle">Theme-aware | Lightweight | Consistent</p>
-            <p class="subtitle" style="margin-top: 1rem; font-size: 0.9rem; color: #F76400;">Icons load from .svg files - click "Refresh Icons" to reload after edits</p>
-            <p class="protocol-notice" id="protocol-notice">Running via file:// protocol - using object tags for icon loading. Some styling features may be limited.</p>
-        </header>
+    <section class="panel light">
+        <div class="panel-label">Light Panel - Arctic White</div>
+        <div class="grid" data-grid></div>
+    </section>
 
-        <section class="section">
-            <h2 class="section-title">Key Stats & Performance</h2>
-            <div class="icon-grid">
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-voltage.svg"></div>
-                    <div class="icon-name">Voltage</div>
-                    <div class="icon-file">icon-voltage.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-charging-speed.svg"></div>
-                    <div class="icon-name">Charging Speed</div>
-                    <div class="icon-file">icon-charging-speed.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-acceleration.svg"></div>
-                    <div class="icon-name">Acceleration</div>
-                    <div class="icon-file">icon-acceleration.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-price.svg"></div>
-                    <div class="icon-name">Price</div>
-                    <div class="icon-file">icon-price.svg</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Powertrain & Battery</h2>
-            <div class="icon-grid">
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-battery.svg"></div>
-                    <div class="icon-name">Battery</div>
-                    <div class="icon-file">icon-battery.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-range.svg"></div>
-                    <div class="icon-name">Range</div>
-                    <div class="icon-file">icon-range.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-motor.svg"></div>
-                    <div class="icon-name">Motor</div>
-                    <div class="icon-file">icon-motor.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-power.svg"></div>
-                    <div class="icon-name">Power</div>
-                    <div class="icon-file">icon-power.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-torque.svg"></div>
-                    <div class="icon-name">Torque</div>
-                    <div class="icon-file">icon-torque.svg</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Dimensions & Specifications</h2>
-            <div class="icon-grid">
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-wheelbase.svg"></div>
-                    <div class="icon-name">Wheelbase</div>
-                    <div class="icon-file">icon-wheelbase.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-bootspace.svg"></div>
-                    <div class="icon-name">Boot Space</div>
-                    <div class="icon-file">icon-bootspace.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-dimensions.svg"></div>
-                    <div class="icon-name">Dimensions</div>
-                    <div class="icon-file">icon-dimensions.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-ground-clearance.svg"></div>
-                    <div class="icon-name">Ground Clearance</div>
-                    <div class="icon-file">icon-ground-clearance.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-kerb-weight.svg"></div>
-                    <div class="icon-name">Kerb Weight</div>
-                    <div class="icon-file">icon-kerb-weight.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-seating.svg"></div>
-                    <div class="icon-name">Seating</div>
-                    <div class="icon-file">icon-seating.svg</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Features & Drivetrain</h2>
-            <div class="icon-grid">
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-air-suspension.svg"></div>
-                    <div class="icon-name">Air Suspension</div>
-                    <div class="icon-file">icon-air-suspension.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-awd.svg"></div>
-                    <div class="icon-name">All-Wheel Drive</div>
-                    <div class="icon-file">icon-awd.svg</div>
-                </div>
-                <div class="icon-item">
-                    <div class="icon-container" data-icon="icon-rwd.svg"></div>
-                    <div class="icon-name">Rear-Wheel Drive</div>
-                    <div class="icon-file">icon-rwd.svg</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2 class="section-title">Example Usage</h2>
-
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="icon-container" data-icon="icon-voltage.svg"></div>
-                    <div class="stat-value">800V</div>
-                    <div class="stat-label">Architecture</div>
-                </div>
-                <div class="stat-card">
-                    <div class="icon-container" data-icon="icon-charging-speed.svg"></div>
-                    <div class="stat-value">450 kW</div>
-                    <div class="stat-label">Max Charging</div>
-                </div>
-                <div class="stat-card">
-                    <div class="icon-container" data-icon="icon-acceleration.svg"></div>
-                    <div class="stat-value">3.8s</div>
-                    <div class="stat-label">0-100 km/h</div>
-                </div>
-                <div class="stat-card">
-                    <div class="icon-container" data-icon="icon-range.svg"></div>
-                    <div class="stat-value">540 km</div>
-                    <div class="stat-label">WLTP Range</div>
-                </div>
-            </div>
-
-            <div class="usage-example">
-                <h3>Specification List Examples</h3>
-                <div class="example-row">
-                    <div class="icon-container" data-icon="icon-battery.svg"></div>
-                    <span><strong>Battery:</strong> 100 kWh NMC</span>
-                </div>
-                <div class="example-row">
-                    <div class="icon-container" data-icon="icon-motor.svg"></div>
-                    <span><strong>Motor:</strong> Dual Motor AWD</span>
-                </div>
-                <div class="example-row">
-                    <div class="icon-container" data-icon="icon-power.svg"></div>
-                    <span><strong>Power:</strong> 310 kW (422 PS)</span>
-                </div>
-                <div class="example-row">
-                    <div class="icon-container" data-icon="icon-wheelbase.svg"></div>
-                    <span><strong>Wheelbase:</strong> 3,000 mm</span>
-                </div>
-            </div>
-        </section>
-    </div>
+    <section class="panel dark">
+        <div class="panel-label">Dark Panel - Carbon Grey</div>
+        <div class="grid" data-grid></div>
+    </section>
 
     <script>
-        // Detect if we're running on file:// protocol
-        const isFileProtocol = window.location.protocol === 'file:';
+        const icons = [
+            ['Voltage', 'icon-voltage.svg'],
+            ['Charging Speed', 'icon-charging-speed.svg'],
+            ['Acceleration', 'icon-acceleration.svg'],
+            ['Price', 'icon-price.svg'],
+            ['Battery', 'icon-battery.svg'],
+            ['Range', 'icon-range.svg'],
+            ['Motor', 'icon-motor.svg'],
+            ['Power', 'icon-power.svg'],
+            ['Torque', 'icon-torque.svg'],
+            ['Wheelbase', 'icon-wheelbase.svg'],
+            ['Boot Space', 'icon-bootspace.svg'],
+            ['Dimensions', 'icon-dimensions.svg'],
+            ['Ground Clearance', 'icon-ground-clearance.svg'],
+            ['Kerb Weight', 'icon-kerb-weight.svg'],
+            ['Seating', 'icon-seating.svg'],
+            ['Air Suspension', 'icon-air-suspension.svg'],
+            ['All-Wheel Drive', 'icon-awd.svg'],
+            ['Rear-Wheel Drive', 'icon-rwd.svg'],
+        ];
 
-        // Load SVG icon into container using fetch (works on http/https)
-        async function loadIconFetch(container) {
-            const iconFile = container.dataset.icon;
-            if (!iconFile) return;
-
-            container.classList.add('loading');
-
-            try {
-                // Add cache-busting parameter
-                const response = await fetch(iconFile + '?t=' + Date.now());
-                if (!response.ok) throw new Error('Fetch failed');
-                const svgText = await response.text();
-                container.innerHTML = svgText;
-            } catch (error) {
-                console.error('Failed to load icon via fetch:', iconFile, error);
-                // Fallback to object tag
-                loadIconObject(container);
-            }
-
-            container.classList.remove('loading');
-        }
-
-        // Load SVG icon using object tag (works on file://)
-        function loadIconObject(container) {
-            const iconFile = container.dataset.icon;
-            if (!iconFile) return;
-
-            container.classList.add('loading');
-
-            // Clear existing content
-            container.innerHTML = '';
-
-            // Create object element
-            const obj = document.createElement('object');
-            obj.type = 'image/svg+xml';
-            // Add cache-busting for refresh capability
-            obj.data = iconFile + '?t=' + Date.now();
-            obj.setAttribute('aria-label', iconFile.replace('icon-', '').replace('.svg', ''));
-
-            obj.onload = () => {
-                container.classList.remove('loading');
-            };
-
-            obj.onerror = () => {
-                container.classList.remove('loading');
-                container.innerHTML = '<span style="color: red; font-size: 0.75rem;">Error</span>';
-            };
-
-            container.appendChild(obj);
-        }
-
-        // Load icon using appropriate method
-        function loadIcon(container) {
-            if (isFileProtocol) {
-                loadIconObject(container);
-            } else {
-                loadIconFetch(container);
-            }
-        }
-
-        // Load all icons
-        function loadAllIcons() {
-            const containers = document.querySelectorAll('.icon-container[data-icon]');
-            containers.forEach(loadIcon);
-        }
-
-        // Toggle theme
-        function toggleTheme() {
-            document.body.classList.toggle('dark');
-            localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-        }
-
-        // Initial load
-        document.addEventListener('DOMContentLoaded', () => {
-            // Load saved theme
-            if (localStorage.getItem('theme') === 'dark') {
-                document.body.classList.add('dark');
-            }
-
-            // Show protocol notice if on file://
-            if (isFileProtocol) {
-                const notice = document.getElementById('protocol-notice');
-                if (notice) notice.classList.add('visible');
-            }
-
-            // Load all icons
-            loadAllIcons();
+        document.querySelectorAll('[data-grid]').forEach(grid => {
+            grid.innerHTML = icons.map(([name, file]) => `
+                <div class="tile">
+                    <div class="sizes">
+                        <img class="zi s48" src="${file}" alt="">
+                        <img class="zi s20" src="${file}" alt="">
+                    </div>
+                    <div class="name">${name}</div>
+                    <div class="file">${file}</div>
+                </div>
+            `).join('');
         });
     </script>
 </body>
