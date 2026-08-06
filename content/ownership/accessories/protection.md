@@ -172,21 +172,18 @@ This combination offers excellent long-term protection and is popular with owner
 
 **Front Windscreen:**
 
-- All states: No tinting allowed on driving area except top 10% (visor strip)
-- VLT requirement: 75% minimum light transmission on windscreen band (varies by state)
+- All states: No tinting allowed on the driving area except the top visor strip (roughly the top 10%)
+- The visible windscreen area must stay at a high VLT - commonly quoted around 70%, but the exact wording varies by state, so check your road authority
 
 **Front Side Windows (Driver and Passenger):**
 
-- **NSW, ACT, QLD, SA:** 35% VLT minimum
-- **VIC:** 35% VLT minimum
-- **WA:** 35% VLT minimum
-- **NT:** 35% VLT minimum
-- **TAS:** 35% VLT minimum
+- **All states and territories:** 35% VLT minimum
 
 **Rear Side Windows and Back Window:**
 
-- **All states:** Generally unlimited tint darkness
-- **Condition:** If back window is tinted darker than 35%, must have two side mirrors
+- **Most states and territories:** 20% VLT minimum - not unlimited, despite what some tint shops imply
+- **NT:** 15% VLT permitted on rear windows (via Registrar approval)
+- **Separate condition:** If the back window is tinted, you must have both side mirrors fitted - this is in addition to the VLT floor, not a substitute for it
 
 **Important:** VLT (Visible Light Transmission) percentage indicates how much light passes through. 35% VLT = 35% of light passes through (darker than 50% VLT).
 
