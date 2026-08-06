@@ -54,7 +54,7 @@ All Zeekr vehicles include roadside assistance. Key contacts:
 
 | Situation | Contact |
 |-----------|---------|
-| **Zeekr Roadside** | 1800 ZEEKR AU *(confirm number)* |
+| **Zeekr Roadside** | 1800 093 357 |
 | **NRMA/RACV/etc** | Your state auto club |
 | **Flat Battery** | Roadside can provide mobile charge |
 

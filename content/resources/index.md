@@ -67,7 +67,7 @@ Your one-stop resource directory for everything you need as a Zeekr owner in Aus
 
 | Service | Contact |
 |---------|---------|
-| **Zeekr Roadside Assistance** | 1800 ZEEKR AU *(confirm)* |
+| **Zeekr Roadside Assistance** | 1800 093 357 |
 | **Emergency Services** | 000 |
 | **RACV (VIC)** | 13 11 11 |
 | **NRMA (NSW)** | 13 11 22 |
