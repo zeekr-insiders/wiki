@@ -8,22 +8,22 @@ So you want to take your Zeekr on a road trip? Good news: the 800V architecture 
 
 After 80%, charging slows to a crawl. On a highway charger:
 
-- **10-80%:** ~15-20 minutes on a 350kW charger (7X)
+- **10-80%:** 13-16 minutes on a 350kW charger (7X, official figures - expect a little longer in the real world)
 - **80-100%:** Another 20-30 minutes for that last 20%
 
 **The strategy:** Multiple short top-ups (10-15 minutes) beat one long charge. Charge to 80%, drive, charge to 80% again.
 
-### Rule 2: Your 7X is an 800V Weapon - Use It
+### Rule 2: The 7X's 800V System Is Made for This - Use It
 
-The Zeekr 7X/X 800V architecture means you can actually hit the advertised speeds on 350kW chargers.
+The Zeekr 7X's 800V architecture means you can actually hit the advertised speeds on 350kW chargers. (The X and 009 are 400V cars, so they peak around 150kW - still fine, just plan slightly longer stops.)
 
 **Seek out these networks:**
 
 - **Chargefox Ultra-Rapid:** 350kW chargers on major highways
 - **Evie Networks:** 350kW chargers, often at fast food locations
-- **Select Tesla Superchargers:** Some are now open to non-Tesla vehicles
+- **Tesla Superchargers:** The majority of Australian Supercharger sites are now open to non-Tesla EVs with CCS2 - check the Tesla app for which ones
 
-A 400V car (Tesla Model Y, BYD Atto 3) maxes out around 150-200kW. Your Zeekr can pull 300kW+ under ideal conditions. Use that advantage.
+A 400V car (Tesla Model Y, BYD Atto 3) maxes out around 150-200kW. A 7X can pull 300kW+ under ideal conditions (peak rates are 450kW RWD / 420kW LR and AWD). Use that advantage.
 
 ### Rule 3: Plan One Charger Ahead
 
@@ -80,9 +80,11 @@ The car knows its own battery level and can route via chargers. Use it as a back
 
 **Suggested stops:**
 
-1. **Goulburn (Chargefox):** ~500km from Melbourne, perfect lunch stop
-2. **Gundagai or Yass (Chargefox/Evie):** Depending on your starting charge
+1. **Gundagai (Chargefox/Evie):** roughly 390km from Melbourne, well-placed first stop and a good lunch option
+2. **Goulburn (Chargefox):** roughly 660-690km from Melbourne (about 195km short of Sydney) - a handy final top-up
 3. **Arrive Sydney** with 20-30% remaining
+
+Distances are approximate - confirm with your route planner, as they vary with your exact start point and route.
 
 **Tips:**
 
@@ -140,6 +142,10 @@ The car knows its own battery level and can route via chargers. Use it as a back
 - Many alpine towns have 7kW AC chargers - charge overnight
 - Keep state-of-charge above 30% in remote areas
 
+### Routes from Other Cities
+
+The routes above are Melbourne-centric because that's where they were first written up. If you've done Sydney-Brisbane, Perth coastal runs, Adelaide loops or anything else in a Zeekr, we'd love your notes - contributions welcome via the club.
+
 ## Charging Strategy on the Road
 
 ### The 10-80% Rule
@@ -154,7 +160,7 @@ The car knows its own battery level and can route via chargers. Use it as a back
 
 **Time to add range:**
 
-- 10-80%: ~15-20 minutes (adds ~400km)
+- 10-80%: 13-16 minutes official, expect up to ~20 in practice (adds ~340-430km depending on pack)
 - 80-100%: Another ~20 minutes (adds ~100km)
 
 **The math:** You waste more time charging that last 20% than you save by having the extra range.
@@ -184,9 +190,9 @@ The car knows its own battery level and can route via chargers. Use it as a back
 3. Consider charging at a slower charger for 10 minutes to get buffer
 4. Use the time productively (meal, rest, stretch)
 
-### The Zeekr Charging Network is Coming
+### A Zeekr Charging Network Has Been Announced
 
-Zeekr Australia is building its own DC charging network. Once live, this will give priority access and likely better pricing for Zeekr owners.
+Zeekr announced plans (January 2025) to bring its "Zeekr Power" DC charging network to Australia, modelled on its 860+ station network in China. As of August 2026 there's no confirmed rollout timeline - it remains an announcement, not a live network.
 
 **Until then:** You're using the public networks (Chargefox, Evie, Tesla) like everyone else.
 
@@ -211,7 +217,7 @@ Zeekr Australia is building its own DC charging network. Once live, this will gi
 **Air conditioning:**
 
 - Running AC at 22°C: ~5-10% range reduction
-- Heating in winter: ~10-15% range reduction (heat pumps are more efficient than resistive heaters, which the 7X has)
+- Heating in winter: ~10-15% range reduction (the 7X has a heat pump as standard, which is far more efficient than the resistive heaters in some rivals)
 
 **Strategy:**
 
@@ -340,7 +346,7 @@ Join the forum to read reports and share your own adventures.
 
 **The {{ extra.club.abbreviation }} experience:** Most members report that after their first road trip, the anxiety disappears. The car tells you when to charge, the infrastructure works (mostly), and you arrive relaxed because you took breaks.
 
-**Best advice:** Start with a shorter trip (Melbourne to Sydney, not Melbourne to Perth). Build your confidence. Then go explore.
+**Best advice:** Start with a shorter trip (an interstate run, not a cross-continent one). Build your confidence. Then go explore.
 
 ---
 
