@@ -1,8 +1,14 @@
-<div class="hero-section">
-    <h1 class="hero-title">Zeekr Insiders Australia</h1>
+---
+hide:
+  - navigation
+  - toc
+---
+
+<div class="hero-section hero--landing">
+    <span class="hero-eyebrow">Owner-run &middot; Australia</span>
+    <h1 class="hero-title">Master your <span class="accent">Zeekr.</span></h1>
     <div class="hero-subtitle">
-        The unofficial guide to owning a Zeekr.<br>
-        Built by owners, for owners.
+        The unofficial Australian guide. Real-world range, honest pricing and the fixes that actually work. Built by owners, for owners.
     </div>
     <div class="hero-actions">
         <a href="models/" class="btn-hero btn-hero-primary">Explore Models</a>
