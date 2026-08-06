@@ -44,26 +44,34 @@
 
 ## Key Stats
 
-<div class="stats-row">
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">3.8s</span>
-        <span class="lbl">0-100 km/h (AWD)</span>
+<div class="stat-grid">
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">3.8s</span>
+            <span class="stat-label">0-100 km/h (AWD)</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">22kW</span>
-        <span class="lbl">AC Charging (AWD)</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">22kW</span>
+            <span class="stat-label">AC Charging (AWD)</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">14.6"</span>
-        <span class="lbl">Sliding Screen</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">14.6"</span>
+            <span class="stat-label">Sliding Screen</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">5 Star</span>
-        <span class="lbl">Safety Rating</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">5 Star</span>
+            <span class="stat-label">Safety Rating</span>
+        </div>
     </div>
 </div>
 
@@ -74,6 +82,30 @@
     
     *   **Standard EV:** ~7 hours to charge.
     *   **Zeekr X AWD:** ~3 hours to charge.
+
+## How Does It Compare?
+
+<div class="card-grid">
+    <div class="z-card">
+        <h3>vs Tesla Model 3 RWD</h3>
+        <p><strong>Zeekr Wins:</strong> 3.8s 0-100 (AWD), 22kW AC charging, SUV practicality</p>
+        <p><strong>Tesla Wins:</strong> 513km vs 400km range, sedan efficiency, $4k cheaper</p>
+        <a href="../../comparisons/zeekr-vs-competitors.md#compact-shootout-zeekr-x-vs-the-field" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+    </div>
+
+    <div class="z-card">
+        <h3>vs BYD Atto 3</h3>
+        <p><strong>Zeekr Wins:</strong> Premium materials, 5.6s vs 7.3s 0-100, better performance</p>
+        <p><strong>BYD Wins:</strong> Similar range, $2k cheaper, quirky interior charm</p>
+        <a href="../../comparisons/zeekr-vs-competitors.md#zeekr-x-vs-byd-atto-3" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+    </div>
+
+    <div class="z-card">
+        <h3>See All Comparisons</h3>
+        <p>Compare the X against Volvo XC40 Recharge and see detailed side-by-side spec tables.</p>
+        <a href="../../comparisons/model-comparison-table.md" class="btn btn-primary" style="text-align:center">View All Models</a>
+    </div>
+</div>
 
 ## Knowledge Base
 

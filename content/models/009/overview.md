@@ -42,26 +42,34 @@
 
 ## Key Stats
 
-<div class="stats-row">
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">4.5s</span>
-        <span class="lbl">0-100 km/h</span>
+<div class="stat-grid">
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">4.5s</span>
+            <span class="stat-label">0-100 km/h</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-range.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">582km</span>
-        <span class="lbl">WLTP Range</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-range.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">582km</span>
+            <span class="stat-label">WLTP Range</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">30</span>
-        <span class="lbl">Yamaha Speakers</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">30</span>
+            <span class="stat-label">Yamaha Speakers</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">Air</span>
-        <span class="lbl">Suspension Standard</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">Air</span>
+            <span class="stat-label">Suspension Standard</span>
+        </div>
     </div>
 </div>
 
@@ -72,3 +80,27 @@
 
 !!! warning "Garage Check"
     It is **5.2 meters long** and over **2 meters wide**. Measure your garage door before you fall in love with the test drive.
+
+## How Does It Compare?
+
+<div class="card-grid">
+    <div class="z-card">
+        <h3>vs Mercedes V-Class</h3>
+        <p><strong>Zeekr Wins:</strong> Electric vs diesel, 4.5s vs ~10s 0-100, 30 Yamaha speakers, aviation seats</p>
+        <p><strong>Merc Wins:</strong> $10k cheaper, established service network</p>
+        <a href="../../comparisons/zeekr-vs-competitors.md#the-luxury-cruiser-zeekr-009-vs-everything-else" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+    </div>
+
+    <div class="z-card">
+        <h3>vs Lexus LM</h3>
+        <p><strong>Zeekr Wins:</strong> $60k+ cheaper ($135k vs ~$200k), faster acceleration, more tech</p>
+        <p><strong>Lexus Wins:</strong> Brand prestige, ultra-luxury execution (when it arrives)</p>
+        <a href="../../comparisons/zeekr-vs-competitors.md#vs-lexus-lm-if-it-arrives" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+    </div>
+
+    <div class="z-card">
+        <h3>See All Comparisons</h3>
+        <p>See detailed side-by-side spec tables and luxury MPV comparisons.</p>
+        <a href="../../comparisons/model-comparison-table.md" class="btn btn-primary" style="text-align:center">View All Models</a>
+    </div>
+</div>

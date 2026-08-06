@@ -4,37 +4,79 @@ Finding the right dealer is an important part of your Zeekr buying journey. This
 
 ## Authorised Dealers by State
 
+Zeekr is expanding rapidly across Australia, with plans for 12-15 showrooms by the end of 2025. Here are the confirmed locations:
+
 ### Victoria
 
-*Community contributions welcome - please share your local dealer information*
+**Zeekr South Yarra**
+
+- Location: South Yarra, Melbourne
+- Services: Sales, test drives, service centre
+
+**Zeekr Doncaster**
+
+- Location: Doncaster, Melbourne
+- Services: Sales, test drives, service centre
+
+**Zeekr Geelong**
+
+- Location: Geelong
+- Services: Sales, test drives, service centre
 
 ### New South Wales
 
-*Community contributions welcome - please share your local dealer information*
+**Zeekr Sydney City**
+
+- Address: Shop 2/1037-1047 Bourke St, Waterloo/Sydney
+- Services: Sales, test drives
+
+**Zeekr Roseville**
+
+- Address: Shop 1/1015 Pacific Highway, Roseville/Chatswood
+- Services: Sales, test drives
+
+**Zeekr Parramatta**
+
+- Location: Parramatta, Western Sydney
+- Services: Sales, test drives, service centre
 
 ### Queensland
 
-*Community contributions welcome - please share your local dealer information*
+*Dealerships coming soon - check the Zeekr dealer locator for updates*
 
 ### South Australia
 
-*Community contributions welcome - please share your local dealer information*
+*Dealerships coming soon - check the Zeekr dealer locator for updates*
 
 ### Western Australia
 
-*Community contributions welcome - please share your local dealer information*
+**Zeekr Victoria Park**
+
+- Location: Victoria Park, Perth
+- Services: Sales, test drives
 
 ### Tasmania
 
-*Community contributions welcome - please share your local dealer information*
+*No confirmed dealerships at this time*
 
 ### Australian Capital Territory
 
-*Community contributions welcome - please share your local dealer information*
+**Zeekr Canberra**
+
+- Location: Canberra
+- Services: Sales, test drives, service centre
 
 ### Northern Territory
 
-*Community contributions welcome - please share your local dealer information*
+*No confirmed dealerships at this time*
+
+## Official Dealer Locator
+
+For the most current dealer information, locations, opening hours, and contact details, visit the official Zeekr Australia dealer locator:
+
+[Find a Zeekr Dealer](https://www.zeekrlife.com/en-au/find-dealer)
+
+The dealer network is expanding throughout 2025. If your area isn't yet covered, check the official site for updates or contact Zeekr Australia directly.
 
 ## What to Look for in a Dealer
 

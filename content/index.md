@@ -1,7 +1,7 @@
 <div class="hero-section">
     <div class="hero-title">Zeekr Insiders Australia</div>
     <div class="hero-subtitle">
-        The unofficial, no-nonsense guide to owning the future.<br>
+        The unofficial guide to owning a Zeekr.<br>
         Built by owners, for owners.
     </div>
     <div class="hero-actions">
@@ -37,23 +37,31 @@ We aren't the brochure. We tell you what the dealer won't.
 <div class="stat-grid">
     <div class="stat-card">
         <div class="stat-icon"><img src="assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt="Voltage"></div>
-        <span class="stat-value">800V</span>
-        <span class="stat-label">Architecture (7X)</span>
+        <div class="stat-content">
+            <span class="stat-value">800V</span>
+            <span class="stat-label">Architecture (7X)</span>
+        </div>
     </div>
     <div class="stat-card">
         <div class="stat-icon"><img src="assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt="Charging"></div>
-        <span class="stat-value">450kW</span>
-        <span class="stat-label">Max Charging Speed</span>
+        <div class="stat-content">
+            <span class="stat-value">450kW</span>
+            <span class="stat-label">Max Charging Speed</span>
+        </div>
     </div>
     <div class="stat-card">
         <div class="stat-icon"><img src="assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="Acceleration"></div>
-        <span class="stat-value">3.8s</span>
-        <span class="stat-label">0-100 km/h (AWD)</span>
+        <div class="stat-content">
+            <span class="stat-value">3.8s</span>
+            <span class="stat-label">0-100 km/h (AWD)</span>
+        </div>
     </div>
     <div class="stat-card">
         <div class="stat-icon"><img src="assets/icons/icon-price.svg" class="zi-icon zi-icon--xl" alt="Price"></div>
-        <span class="stat-value">$49.9k</span>
-        <span class="stat-label">Starting Price (X)</span>
+        <div class="stat-content">
+            <span class="stat-value">$49.9k</span>
+            <span class="stat-label">Starting Price (X)</span>
+        </div>
     </div>
 </div>
 

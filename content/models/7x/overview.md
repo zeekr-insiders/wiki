@@ -55,26 +55,34 @@
 
 ## Key Stats
 
-<div class="stats-row">
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">13 Min</span>
-        <span class="lbl">10-80% Charge (LFP)</span>
+<div class="stat-grid">
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">13 Min</span>
+            <span class="stat-label">10-80% Charge (LFP)</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">800V</span>
-        <span class="lbl">Architecture</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">800V</span>
+            <span class="stat-label">Architecture</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-kerb-weight.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">2.0T</span>
-        <span class="lbl">Towing Capacity</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-kerb-weight.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">2.0T</span>
+            <span class="stat-label">Towing Capacity</span>
+        </div>
     </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">616L</span>
-        <span class="lbl">Boot Space</span>
+    <div class="stat-card">
+        <div class="stat-icon"><img src="../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-content">
+            <span class="stat-value">616L</span>
+            <span class="stat-label">Boot Space</span>
+        </div>
     </div>
 </div>
 
@@ -85,6 +93,30 @@
 
 !!! warning "V2L Adapter Check"
     Ensure your dealer includes the V2L (Vehicle to Load) discharge adapter. It is standard equipment, but sometimes gets "lost" in the showroom.
+
+## How Does It Compare?
+
+<div class="card-grid">
+    <div class="z-card">
+        <h3>vs Tesla Model Y</h3>
+        <p><strong>Zeekr Wins:</strong> $6k cheaper, 615km vs 533km range, 800V charging (10-80% in ~10.5 min vs 27 min)</p>
+        <p><strong>Tesla Wins:</strong> Larger service network, more mature software, better resale data</p>
+        <a href="../../comparisons/zeekr-vs-competitors.md#the-big-one-zeekr-7x-vs-tesla-model-y" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+    </div>
+
+    <div class="z-card">
+        <h3>vs BYD Sealion 7</h3>
+        <p><strong>Zeekr Wins:</strong> 800V vs 400V charging, 615km vs 530km range, premium interior</p>
+        <p><strong>BYD Wins:</strong> $4k cheaper, stronger warranty (6yr vs 5yr)</p>
+        <a href="../../comparisons/zeekr-vs-competitors.md#the-value-king-zeekr-7x-vs-byd-sealion-7" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+    </div>
+
+    <div class="z-card">
+        <h3>See All Comparisons</h3>
+        <p>Compare the 7X against Polestar 3, Mercedes EQE, and more competitors. Plus see detailed side-by-side spec tables.</p>
+        <a href="../../comparisons/model-comparison-table.md" class="btn btn-primary" style="text-align:center">View All Models</a>
+    </div>
+</div>
 
 ## Knowledge Base
 
