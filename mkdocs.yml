@@ -77,8 +77,9 @@ extra:
 
 extra_css:
   - stylesheets/zeekr.css
-  - stylesheets/nightowl.css
-  - stylesheets/icons.css
+
+extra_javascript:
+  - javascripts/zeekr.js
 
 markdown_extensions:
   - abbr
