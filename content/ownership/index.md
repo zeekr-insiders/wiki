@@ -20,7 +20,7 @@ Protect and enhance your Zeekr:
 
 ## Additional Resources
 
-- **[Service & Maintenance](../guides/maintenance/overview.md)** - Keeping your Zeekr in top condition
+- **Service & Maintenance** - See the service schedules for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md)
 - **[Charging](../guides/charging/home-setup.md)** - Everything about charging your EV
 
 ## Contributing

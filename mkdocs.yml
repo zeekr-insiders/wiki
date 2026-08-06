@@ -174,7 +174,6 @@ nav:
           - Home Setup: guides/charging/home-setup.md
           - Public Networks: guides/charging/public-networks.md
           - Road Trips: guides/charging/road-trips.md
-      - Maintenance: guides/maintenance/overview.md
       - Insurance: ownership/insurance.md
       - Accessories:
           - ownership/accessories/index.md
@@ -201,4 +200,3 @@ nav:
           - ACT: resources/act/index.md
           - Northern Territory: resources/nt/index.md
       - Zeekr vs Competitors: comparisons/zeekr-vs-competitors.md
-      - Useful Links: resources/useful-links.md
