@@ -4,79 +4,50 @@ Finding the right dealer is an important part of your Zeekr buying journey. This
 
 ## Authorised Dealers by State
 
-Zeekr is expanding rapidly across Australia, with plans for 12-15 showrooms by the end of 2025. Here are the confirmed locations:
+*Last reviewed: August 2026.* Zeekr's Australian network has grown quickly - it opened its 17th dealership in mid-2026 and is still expanding. The list below covers locations we're confident of; always confirm details on the [official locator](https://www.zeekrlife.com/en-au/find-us/).
 
 ### Victoria
 
-**Zeekr South Yarra**
-
-- Location: South Yarra, Melbourne
-- Services: Sales, test drives, service centre
-
-**Zeekr Doncaster**
-
-- Location: Doncaster, Melbourne
-- Services: Sales, test drives, service centre
-
-**Zeekr Geelong**
-
-- Location: Geelong
-- Services: Sales, test drives, service centre
+- **Zeekr South Yarra** - Melbourne. Sales, test drives, service centre
+- **Zeekr Doncaster** - Melbourne. Sales, test drives, service centre
+- **Zeekr Geelong** - Sales, test drives, service centre
 
 ### New South Wales
 
-**Zeekr Sydney City**
-
-- Address: Shop 2/1037-1047 Bourke St, Waterloo/Sydney
-- Services: Sales, test drives
-
-**Zeekr Roseville**
-
-- Address: Shop 1/1015 Pacific Highway, Roseville/Chatswood
-- Services: Sales, test drives
-
-**Zeekr Parramatta**
-
-- Location: Parramatta, Western Sydney
-- Services: Sales, test drives, service centre
+- **Zeekr Sydney City** - Shop 2/1037-1047 Bourke St, Waterloo. Sales, test drives
+- **Zeekr Chatswood** - North Shore. Sales, test drives
+- **Zeekr Parramatta** - Western Sydney. Sales, test drives, service centre
 
 ### Queensland
 
-*Dealerships coming soon - check the Zeekr dealer locator for updates*
+- **Zeekr Centre Brisbane** - Sales, test drives
+- **Zeekr Gold Coast (Southport)** - opened mid-2026, Zeekr's 17th Australian site
+
+Queensland has several Zeekr locations now - check the locator for the full list.
 
 ### South Australia
 
-*Dealerships coming soon - check the Zeekr dealer locator for updates*
+- **Zeekr Adelaide (Eastwood)** - via the Solitaire group
 
 ### Western Australia
 
-**Zeekr Victoria Park**
-
-- Location: Victoria Park, Perth
-- Services: Sales, test drives
-
-### Tasmania
-
-*No confirmed dealerships at this time*
+- **Zeekr Victoria Park** - Perth. Sales, test drives
 
 ### Australian Capital Territory
 
-**Zeekr Canberra**
+- **Zeekr Canberra** - Sales, test drives, service centre
 
-- Location: Canberra
-- Services: Sales, test drives, service centre
+### Tasmania and Northern Territory
 
-### Northern Territory
-
-*No confirmed dealerships at this time*
+*No confirmed dealerships at this time - check the locator for updates.*
 
 ## Official Dealer Locator
 
 For the most current dealer information, locations, opening hours, and contact details, visit the official Zeekr Australia dealer locator:
 
-[Find a Zeekr Dealer](https://www.zeekrlife.com/en-au/find-dealer)
+[Find a Zeekr Dealer](https://www.zeekrlife.com/en-au/find-us/)
 
-The dealer network is expanding throughout 2025. If your area isn't yet covered, check the official site for updates or contact Zeekr Australia directly.
+If your area isn't yet covered, check the official site for updates or contact Zeekr Australia directly.
 
 ## What to Look for in a Dealer
 
