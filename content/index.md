@@ -49,34 +49,39 @@ hide:
 
 We aren't the brochure. We tell you what the dealer won't.
 
-<div class="stat-grid">
-    <div class="stat-card">
-        <div class="stat-icon"><img src="assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt="Voltage"></div>
-        <div class="stat-content">
-            <span class="stat-value">800V</span>
-            <span class="stat-label">Architecture (7X)</span>
+<div class="card-grid">
+    <div class="z-card model-glance">
+        <img src="assets/icons/icon-voltage.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Zeekr 7X</h3>
+        <p>The family SUV with genuine ultra-rapid charging.</p>
+        <div class="glance-stats">
+            <div><span class="val">800V</span><span class="lbl">Architecture</span></div>
+            <div><span class="val">615km</span><span class="lbl">WLTP (LR)</span></div>
+            <div><span class="val">$57.9k</span><span class="lbl">From + ORC</span></div>
         </div>
+        <a class="go" href="models/7x/overview/">Zeekr 7X</a>
     </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt="Charging"></div>
-        <div class="stat-content">
-            <span class="stat-value">450kW</span>
-            <span class="stat-label">Max Charging Speed</span>
+    <div class="z-card model-glance">
+        <img src="assets/icons/icon-price.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Zeekr X</h3>
+        <p>The compact SUV, relaunched for MY26 with more power.</p>
+        <div class="glance-stats">
+            <div><span class="val">250kW</span><span class="lbl">Power (RWD)</span></div>
+            <div><span class="val">415km</span><span class="lbl">WLTP (AWD)</span></div>
+            <div><span class="val">$48.9k</span><span class="lbl">Drive-away</span></div>
         </div>
+        <a class="go" href="models/x/overview/">Zeekr X</a>
     </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="Acceleration"></div>
-        <div class="stat-content">
-            <span class="stat-value">3.8s</span>
-            <span class="stat-label">0-100 km/h (AWD)</span>
+    <div class="z-card model-glance">
+        <img src="assets/icons/icon-seating.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Zeekr 009</h3>
+        <p>The executive MPV. Six or seven seats, first-class quiet.</p>
+        <div class="glance-stats">
+            <div><span class="val">116kWh</span><span class="lbl">Battery</span></div>
+            <div><span class="val">582km</span><span class="lbl">WLTP</span></div>
+            <div><span class="val">$115.9k</span><span class="lbl">From + ORC</span></div>
         </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="assets/icons/icon-price.svg" class="zi-icon zi-icon--xl" alt="Price"></div>
-        <div class="stat-content">
-            <span class="stat-value">$48.9k</span>
-            <span class="stat-label">Starting Price (X, drive-away)</span>
-        </div>
+        <a class="go" href="models/009/overview/">Zeekr 009</a>
     </div>
 </div>
 
