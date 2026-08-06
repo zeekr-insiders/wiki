@@ -141,13 +141,12 @@ Total potential benefit could be $10,000+ per year compared to buying with after
 
 Several companies specialise in novated leases in Australia. Research and compare:
 
-- **LeasePlan**
+- **Ayvens** (formerly LeasePlan)
 - **SG Fleet**
-- **Eclipx**
-- **Easi**
+- **FleetPartners** (absorbed the former Eclipx brands)
+- **Easifleet (Easi)**
 - **RemServ**
 - **Autopia**
-- **FleetPartners**
 
 Compare quotes from multiple providers as fees and service levels vary.
 
@@ -229,7 +228,7 @@ Some states offer additional incentives for EV purchases:
 - Interest-free or low-interest loans
 - Grants or rebates
 
-Check current incentives in your state via our [By State Resources](../resources/vic/index.md) page.
+Check current incentives in your state via our [By State Resources](../resources/index.md) page.
 
 ## Getting Started
 

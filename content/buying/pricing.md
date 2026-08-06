@@ -60,7 +60,7 @@ Stamp duty is calculated differently in each state and is one of the most signif
 - **Queensland**: Approximately $3,000-$5,000+ depending on vehicle value
 - **Other states**: Varies - check with your dealer
 
-For detailed state-by-state information on registration, insurance, and other ownership costs, see our [By State Resources](../resources/vic/index.md).
+For detailed state-by-state information on registration, insurance, and other ownership costs, see our [By State Resources](../resources/index.md).
 
 !!! tip "Stamp Duty Exemptions"
     Some states offer stamp duty concessions or exemptions for electric vehicles. Check if you're eligible for any state government EV incentives that could reduce your on-road costs.
