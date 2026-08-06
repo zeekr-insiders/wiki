@@ -25,18 +25,7 @@ Some group buys are for physical products (mats, screen protectors, mud flaps). 
 
 ## Past Group Buys
 
-We'll document successful group buys here to help future organisers and show what's possible.
-
-### Example Format
-
-*This section will be populated as we complete group buys*
-
-**Product**: 3D Floor Mats (All-Weather)
-**Date**: TBC
-**Participants**: TBC
-**Discount Achieved**: TBC
-**Supplier**: TBC
-**Would We Do It Again?**: TBC
+None completed yet - once we've run our first few, we'll document them here (product, supplier, participants, discount achieved, and whether we'd do it again) to help future organisers.
 
 ## How Group Buys Work
 

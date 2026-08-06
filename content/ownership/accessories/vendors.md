@@ -141,83 +141,9 @@ Finding quality installers for PPF, window tinting, ceramic coating, and other m
 
 ## Vendor Recommendations by State
 
-**Note:** This section is community-driven. {{ extra.club.abbreviation }} does not officially endorse any vendors. These are owner experiences shared to help other members.
+We're building a community-vetted list of installers (PPF, ceramic, tint and more) for every state. It's not published yet because we'd rather list vendors members have actually used than pad the page.
 
-### Victoria
-
-**PPF, Ceramic Coating, & Window Tinting**
-
-*Template format - community contributions needed:*
-
-- **Vendor Name**
-- Location: Suburb, Region
-- Services: PPF / Ceramic / Tint / Other
-- Products used: (e.g., XPEL, 3M, Gtechniq)
-- Owner experience: Brief description
-- Contact: Website/phone
-- Added by: {{ extra.club.abbreviation }} member (date)
-
-**To contribute:** Share your experience in our [community channels](../../community/index.md)
-
-### New South Wales
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Sydney metro
-- Regional NSW
-
-### Queensland
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Brisbane
-- Gold Coast
-- Sunshine Coast
-
-### South Australia
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Adelaide metro
-
-### Western Australia
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Perth metro
-
-### Tasmania
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Hobart
-- Launceston
-
-### Australian Capital Territory
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Canberra
-
-### Northern Territory
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Darwin
+**Used a good installer?** Share the vendor name, location, services, products used and your experience via our [community channels](../../community/index.md) - that's how this section gets built. {{ extra.club.abbreviation }} doesn't officially endorse any vendor; these will be owner experiences shared to help other members.
 
 ## Finding Installers Yourself
 

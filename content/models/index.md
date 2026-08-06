@@ -9,9 +9,8 @@ Comprehensive information about all Zeekr models available or coming to the Aust
 
 The Zeekr 7X is the brand's flagship SUV, offering premium features, advanced technology, and family-friendly practicality.
 
-- **[2025 Specifications](7x/2025/specifications.md)** - Current model specifications and technical details
-- **[2025 Pricing](7x/2025/pricing.md)** - Current pricing and options information
-- **2026 Updates** - Coming soon
+- **[Specifications](7x/2025/specifications.md)** - Current model specifications and technical details
+- **[Pricing](7x/2025/pricing.md)** - Current pricing and options information
 - **[Model Overview](7x/overview.md)** - Complete 7X information and buyer's guide
 
 **Key Highlights:**
@@ -44,7 +43,7 @@ The Zeekr X brings premium electric mobility to a more compact and affordable pa
 ### <img src="../assets/icons/icon-seating.svg" class="zi-icon" alt="MPV"> [Zeekr 009](009/overview.md)
 **Luxury Electric MPV**
 
-The Zeekr 009 represents the pinnacle of luxury electric transportation, designed for premium family and executive use.
+The Zeekr 009 is the brand's luxury MPV, designed for premium family and executive use.
 
 - **[Model Overview](009/overview.md)** - Complete 009 luxury MPV information
 
@@ -80,26 +79,22 @@ The Zeekr 009 represents the pinnacle of luxury electric transportation, designe
 
 ## Australian Market Information
 
-### Availability Timeline
+### Availability
 
-- **Zeekr 7X:** Currently available with limited stock
-- **Zeekr X:** Expected [timeline needed]
-- **Zeekr 009:** Expected [timeline needed]
+All three models are on sale in Australia now: the 7X (launched October 2025), the X (relaunched May 2026 as the MY26), and the 009 (including the 2026 FWD entry variant).
 
 ### Government Incentives
-All Zeekr models are eligible for:
 
-- Federal luxury car tax exemptions (where applicable)
-- {{ extra.club.location }} EV rebate (subject to price caps)
-- Stamp duty exemptions in most states
-- Reduced registration fees
+Incentives depend on the model's price and your state:
+
+- The 7X and X sit under the FBT-exemption threshold for novated leases; the 009 does not - see the [finance guide](../buying/finance.md)
+- The big state purchase rebates have ended, but some states offer concessional stamp duty or registration - see the [state resources](../resources/index.md)
 
 ### Service and Support
 
-- Authorised dealer network across {{ extra.club.location }}
-- Comprehensive warranty coverage
-- Parts and service availability
-- Mobile service options (coming soon)
+- Authorised dealer network across {{ extra.club.location }} (~17 locations and growing)
+- 5 year/unlimited km warranty, 8 year/160,000 km battery warranty
+- Parts and service through Zeekr dealerships
 
 ## Model Comparison
 
