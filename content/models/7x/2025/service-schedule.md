@@ -12,7 +12,10 @@ One of the biggest "Insider" perks of the Zeekr 7X is the service interval. Unli
 | **48 Months** | 80,000 km | **Major Service (Required)** | **TBA** |
 | **72 Months** | 120,000 km | **Major Service (Required)** | **TBA** |
 
-*First service cost confirmed at $690. Subsequent service pricing to be announced. Capped-price servicing coming soon.*
+*First service cost confirmed at $690. Subsequent service pricing to be announced.*
+
+!!! info "Check your schedule"
+    The MY26 Zeekr X moved to 12 month/20,000km intervals with capped pricing. Zeekr hasn't confirmed whether the 7X follows - the figures above reflect the launch schedule, so confirm with your dealer before your first service falls due.
 
 !!! info "Service Intervals"
     Zeekr requires servicing every **2 years or 40,000km**, whichever comes first. This is one of the longest intervals in the industry - most competitors want you back every 12 months.

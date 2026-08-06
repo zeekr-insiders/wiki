@@ -99,15 +99,15 @@
 <div class="card-grid">
     <div class="z-card">
         <h3>vs Tesla Model Y</h3>
-        <p><strong>Zeekr Wins:</strong> $6k cheaper, 615km vs 533km range, 800V charging (10-80% in ~10.5 min vs 27 min)</p>
+        <p><strong>Zeekr Wins:</strong> 615km vs 466km range for similar money, 800V charging (10-80% in 13-16 min vs ~27 min)</p>
         <p><strong>Tesla Wins:</strong> Larger service network, more mature software, better resale data</p>
         <a href="../../../comparisons/zeekr-vs-competitors/#the-big-one-zeekr-7x-vs-tesla-model-y" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>vs BYD Sealion 7</h3>
-        <p><strong>Zeekr Wins:</strong> 800V vs 400V charging, 615km vs 530km range, premium interior</p>
-        <p><strong>BYD Wins:</strong> $4k cheaper, stronger warranty (6yr vs 5yr)</p>
+        <p><strong>Zeekr Wins:</strong> 800V vs 400V charging, 615km vs 482km range, premium interior</p>
+        <p><strong>BYD Wins:</strong> Cheaper, stronger warranty term (6yr vs 5yr, though Zeekr's has no km cap)</p>
         <a href="../../../comparisons/zeekr-vs-competitors/#the-value-king-zeekr-7x-vs-byd-sealion-7" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
     </div>
 
@@ -120,7 +120,7 @@
 
 ## Knowledge Base
 
--   [Detailed Specifications](2025/specifications.md)
--   [Pricing & Inclusions](2025/pricing.md)
--   [Known Issues & Fixes](knowledge-base/7x-issues.md)
--   [Owner Modifications](knowledge-base/7x-mods.md)
+- [Detailed Specifications](2025/specifications.md)
+- [Pricing & Inclusions](2025/pricing.md)
+- [Known Issues & Fixes](knowledge-base/7x-issues.md)
+- [Owner Modifications](knowledge-base/7x-mods.md)
