@@ -20,7 +20,7 @@ hide:
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="assets/icons/icon-awd.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="assets/icons/icon-lineup.svg" class="zi-icon zi-icon--card" alt="">
         <h3>The Lineup</h3>
         <p>Deep dives into the <a href="models/7x/overview/">7X</a>, <a href="models/x/overview/">X</a> and <a href="models/009/overview/">009</a>. Real-world range tests, pricing, and specs.</p>
         <a class="go" href="models/">Models</a>
@@ -32,13 +32,13 @@ hide:
         <a class="go" href="guides/charging/public-networks/">Charging</a>
     </div>
     <div class="z-card">
-        <img src="assets/icons/icon-torque.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="assets/icons/icon-guides.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Ownership Guides</h3>
         <p>From the <a href="buying/delivery/">delivery checklist</a> to fixing the annoying <a href="models/7x/knowledge-base/7x-issues/">driver monitoring system</a>.</p>
         <a class="go" href="ownership/">Guides</a>
     </div>
     <div class="z-card">
-        <img src="assets/icons/icon-seating.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="assets/icons/icon-community.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Join The Club</h3>
         <p>Group buys on floor mats, screen protectors, and V2L adapters.</p>
         <a class="go" href="community/">Community</a>
@@ -51,7 +51,7 @@ We aren't the brochure. We tell you what the dealer won't.
 
 <div class="card-grid">
     <div class="z-card model-glance">
-        <img src="assets/icons/icon-voltage.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="assets/icons/icon-body-suv.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Zeekr 7X</h3>
         <p>The family SUV with genuine ultra-rapid charging.</p>
         <div class="glance-stats">
@@ -62,7 +62,7 @@ We aren't the brochure. We tell you what the dealer won't.
         <a class="go" href="models/7x/overview/">Zeekr 7X</a>
     </div>
     <div class="z-card model-glance">
-        <img src="assets/icons/icon-price.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="assets/icons/icon-body-compact.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Zeekr X</h3>
         <p>The compact SUV, relaunched for MY26 with more power.</p>
         <div class="glance-stats">
@@ -73,7 +73,7 @@ We aren't the brochure. We tell you what the dealer won't.
         <a class="go" href="models/x/overview/">Zeekr X</a>
     </div>
     <div class="z-card model-glance">
-        <img src="assets/icons/icon-seating.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="assets/icons/icon-body-mpv.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Zeekr 009</h3>
         <p>The executive MPV. Six or seven seats, first-class quiet.</p>
         <div class="glance-stats">

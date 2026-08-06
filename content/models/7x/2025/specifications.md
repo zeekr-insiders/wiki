@@ -12,7 +12,7 @@
         <span class="stat-value">616L</span>
     </div>
     <div class="stat-card">
-        <img src="../../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt="">
+        <img src="../../../../assets/icons/icon-frunk.svg" class="zi-icon zi-icon--xl" alt="">
         <span class="stat-label">Frunk (RWD/LR)</span>
         <span class="stat-value">62L</span>
     </div>

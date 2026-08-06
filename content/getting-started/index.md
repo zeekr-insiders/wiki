@@ -20,7 +20,7 @@ This section is designed to get you up to speed quickly, covering everything fro
         <a class="go" href="why-zeekr/">Why Zeekr</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-dimensions.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-lineup.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Choosing a Model</h3>
         <p>We'll help you figure out which Zeekr suits your lifestyle - whether you're after a family SUV, a luxury MPV, or something in between.</p>
         <a class="go" href="choosing-model/">Compare Models</a>

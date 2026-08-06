@@ -71,7 +71,7 @@
         </div>
     </div>
     <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-kerb-weight.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-icon"><img src="../../../assets/icons/icon-towing.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
             <span class="stat-value">2.0T</span>
             <span class="stat-label">Towing Capacity</span>

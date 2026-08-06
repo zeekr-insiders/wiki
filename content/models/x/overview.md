@@ -60,14 +60,14 @@
         </div>
     </div>
     <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-icon"><img src="../../../assets/icons/icon-screen.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
             <span class="stat-value">14.6"</span>
             <span class="stat-label">Sliding Screen</span>
         </div>
     </div>
     <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-icon"><img src="../../../assets/icons/icon-safety.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
             <span class="stat-value">5 Star</span>
             <span class="stat-label">Safety Rating</span>

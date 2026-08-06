@@ -10,7 +10,7 @@ Whether you're just starting your research or ready to sign on the dotted line, 
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="../assets/icons/icon-awd.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-dealers.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Dealers</h3>
         <p>Where to buy your Zeekr in Australia, what to look for in a dealer, and online ordering information.</p>
         <a class="go" href="dealers/">Dealers</a>
@@ -22,13 +22,13 @@ Whether you're just starting your research or ready to sign on the dotted line, 
         <a class="go" href="pricing/">Pricing</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-power.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-finance.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Finance</h3>
         <p>Payment options including salary sacrifice, novated leases, and FBT exemptions.</p>
         <a class="go" href="finance/">Finance</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-delivery.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Delivery</h3>
         <p>What to expect during the delivery process, inspection checklists, and first setup steps.</p>
         <a class="go" href="delivery/">Delivery</a>

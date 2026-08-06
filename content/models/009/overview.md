@@ -71,14 +71,14 @@
         </div>
     </div>
     <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-icon"><img src="../../../assets/icons/icon-speaker.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
             <span class="stat-value">30</span>
             <span class="stat-label">Yamaha Speakers</span>
         </div>
     </div>
     <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt=""></div>
+        <div class="stat-icon"><img src="../../../assets/icons/icon-air-suspension.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
             <span class="stat-value">Air</span>
             <span class="stat-label">Suspension Standard</span>

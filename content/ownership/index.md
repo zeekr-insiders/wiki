@@ -8,7 +8,7 @@ New to Zeekr ownership? Start here:
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="../assets/icons/icon-range.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-calendar-check.svg" class="zi-icon zi-icon--card" alt="">
         <h3>First 30 Days</h3>
         <p>Essential steps after taking delivery.</p>
         <a class="go" href="first-30-days/">First 30 Days</a>
@@ -20,7 +20,7 @@ New to Zeekr ownership? Start here:
         <a class="go" href="../guides/charging/home-setup/">Charging</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-price.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-insurance.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Insurance</h3>
         <p>Finding the right coverage for your EV.</p>
         <a class="go" href="insurance/">Insurance</a>
@@ -33,25 +33,25 @@ Protect and enhance your Zeekr:
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-accessories.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Accessories Overview</h3>
         <p>Browse recommended accessories and modifications.</p>
         <a class="go" href="accessories/">Accessories</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-ground-clearance.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-protection.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Protection</h3>
         <p>PPF, ceramic coating, and window tinting.</p>
         <a class="go" href="accessories/protection/">Protection</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-torque.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-recommended.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Recommended Gear</h3>
         <p>Community-vetted products that actually fit.</p>
         <a class="go" href="accessories/recommended/">Recommended</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-dimensions.svg" class="zi-icon zi-icon--card" alt="">
+        <img src="../assets/icons/icon-service.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Trusted Vendors</h3>
         <p>Installers and suppliers across Australia.</p>
         <a class="go" href="accessories/vendors/">Vendors</a>

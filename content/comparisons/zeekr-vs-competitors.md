@@ -35,7 +35,7 @@ This is where things get interesting.
 !!! tip "Why 800V Matters"
     Most EVs (including Tesla) use 400V architecture. Zeekr's 800V system can handle twice the voltage, which means faster charging without overheating. Think of it like filling a bucket with a fire hose instead of a garden hose.
 
-### <img src="../../assets/icons/icon-power.svg" class="zi-icon" alt=""> Features & Tech
+### <img src="../../assets/icons/icon-screen.svg" class="zi-icon" alt=""> Features & Tech
 
 | Feature | Zeekr 7X Long Range | Tesla Model Y |
 |---------|---------------------|---------------|
@@ -60,7 +60,7 @@ This is where things get interesting.
 
 **Winner: Split** - Tesla has more cargo space. Zeekr has better rear seat comfort and higher towing capacity. Pick your priority.
 
-### <img src="../../assets/icons/icon-range.svg" class="zi-icon" alt=""> Real-World Ownership
+### <img src="../../assets/icons/icon-service.svg" class="zi-icon" alt=""> Real-World Ownership
 
 | Factor | Zeekr 7X | Tesla Model Y |
 |--------|----------|---------------|
