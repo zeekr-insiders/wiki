@@ -10,6 +10,8 @@ docs_dir: content
 
 theme:
   name: material
+  logo: assets/zi-logo.png
+  favicon: assets/favicon.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
