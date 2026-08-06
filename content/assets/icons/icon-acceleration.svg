@@ -1,51 +1,5 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 64 64"
-  width="64"
-  height="64"
-  aria-hidden="true"
->
-  <defs>
-    <style>
-      .z-stroke {
-        stroke: currentColor;
-        stroke-width: 2.5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-
-      .z-accent {
-        stroke: var(--zeekr-electric-blue, #00D4FF);
-      }
-    </style>
-  </defs>
-
-  <!-- Outer gauge -->
-  <path
-    class="z-stroke"
-    d="M12 40a20 20 0 0 1 40 0"
-  />
-
-  <!-- Tick marks -->
-  <line class="z-stroke" x1="20" y1="36" x2="18" y2="34" />
-  <line class="z-stroke" x1="32" y1="32" x2="32" y2="30" />
-  <line class="z-stroke" x1="44" y1="36" x2="46" y2="34" />
-
-  <!-- Needle (angled forward = acceleration) -->
-  <line
-    class="z-stroke z-accent"
-    x1="32"
-    y1="40"
-    x2="44"
-    y2="30"
-  />
-
-  <!-- Hub -->
-  <circle
-    cx="32"
-    cy="40"
-    r="2.5"
-    fill="currentColor"
-  />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3.8 17.5a8.8 8.8 0 1 1 16.4 0"/>
+  <path d="m13.2 13.1 4-4"/>
+  <circle cx="12" cy="14.3" r="1.7"/>
 </svg>
