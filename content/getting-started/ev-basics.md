@@ -123,18 +123,18 @@ Depending on where you live, there are some decent perks:
 
 ### Federal (National)
 
-- **FBT Exemption**: If buying through a novated lease, no Fringe Benefits Tax on eligible EVs under $91,387
-- **Import Tariff Exemption**: No import duty on EVs (5% saving)
+- **FBT Exemption**: If buying through a novated lease, no Fringe Benefits Tax on eligible EVs under the fuel-efficient LCT threshold ($91,661 for 2026-27). Heads up: the full exemption is legislated to end on **31 March 2027** - from 1 April 2027 only EVs under $75,000 keep the full exemption. See the [finance guide](../buying/finance.md) for the detail.
+- **Import Tariff Exemption**: No 5% import duty on EVs priced under the LCT fuel-efficient threshold
 
-### State-Based (Victoria)
+### Road User Charges
 
-- **Zero Road User Charge**: No ZEV road user charge (for now)
-- **Stamp Duty Exemption**: Saving thousands on registration (for eligible vehicles under $68,740 - check current limits)
-- **Reduced Registration**: Lower annual rego costs
+No state currently charges EVs a per-kilometre road user charge - Victoria's was struck down by the High Court in October 2023. NSW has legislated one to start from 1 July 2027, and the federal government is considering a national scheme, so watch this space.
 
-### Other States
+### State-Based Incentives
 
-Each state has different incentives - Queensland, NSW, ACT, and others offer various rebates and concessions. Check your state's current offerings as these change regularly.
+The big purchase rebates of 2021-2023 have mostly wound up (Victoria's closed mid-2023, NSW's ended December 2023), but some states still offer concessional stamp duty or registration for EVs - Queensland and the ACT among them. These change regularly, so check the current position for your state:
+
+[State-by-State Resources](../resources/index.md){ .md-button }
 
 ## Ready for the Next Step?
 
