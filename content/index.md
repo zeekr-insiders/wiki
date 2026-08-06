@@ -59,11 +59,11 @@ We aren't the brochure. We tell you what the dealer won't.
     <div class="stat-card">
         <div class="stat-icon"><img src="assets/icons/icon-price.svg" class="zi-icon zi-icon--xl" alt="Price"></div>
         <div class="stat-content">
-            <span class="stat-value">$49.9k</span>
-            <span class="stat-label">Starting Price (X)</span>
+            <span class="stat-value">$48.9k</span>
+            <span class="stat-label">Starting Price (X, drive-away)</span>
         </div>
     </div>
 </div>
 
-!!! tip "Insider Intel: The April 2025 Price Drop"
+!!! tip "Insider Intel: The MY26 Relaunch"
     The Zeekr X was relaunched in May 2026 with sharper drive-away pricing and more power - the MY26 RWD is **$48,900 drive-away**. If you're buying used, check the build date carefully, as MY25 and MY26 cars differ in spec and price. [Read the full pricing history](models/x/2025/pricing.md).
