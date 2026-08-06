@@ -5,7 +5,7 @@ site_url: https://thushan.github.io/zeekr/
 
 repo_name: thushan/zeekr
 repo_url: https://github.com/thushan/zeekr
-edit_uri: edit/main/docs/content/
+edit_uri: edit/main/content/
 docs_dir: content
 
 theme:
@@ -37,10 +37,12 @@ theme:
 
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
+    - toc.follow
     - search.highlight
     - search.share
     - search.suggest
@@ -70,9 +72,6 @@ extra:
       link: https://facebook.com/groups/zeekrinsiders
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/zeekrinsiders
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
 
 extra_css:
   - stylesheets/zeekr.css
