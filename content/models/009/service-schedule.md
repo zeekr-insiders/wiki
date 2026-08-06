@@ -12,10 +12,10 @@ The Zeekr 009 follows the same low-maintenance philosophy as the rest of the Zee
 | **48 Months** | 80,000 km | **Major Service (Required)** | **TBA** |
 | **72 Months** | 120,000 km | **Major Service (Required)** | **TBA** |
 
-*First service cost confirmed at $690. Subsequent service pricing to be announced. Capped-price servicing coming soon.*
+*First service cost confirmed at $690. Subsequent service pricing to be announced.*
 
 !!! info "Service Intervals"
-    Zeekr requires servicing every **2 years or 40,000km**, whichever comes first. Despite the 009's premium positioning and larger battery, the service interval remains the same as the 7X/X.
+    The 009's published schedule is every **2 years or 40,000km**, whichever comes first. Note the MY26 Zeekr X moved to 12 month/20,000km intervals - Zeekr hasn't confirmed whether the 009 follows, so check the current schedule with your dealer before your first service falls due.
 
 ## What's Included in a Service?
 
