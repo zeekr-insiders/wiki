@@ -13,20 +13,27 @@
       }
     }
 
-    // Keyboard-scrollable tables (only when they actually overflow)
-    var tables = document.querySelectorAll('.md-typeset table:not([class])');
-    tables.forEach(function (table) {
-      if (table.scrollWidth > table.clientWidth) {
-        table.setAttribute('tabindex', '0');
-        table.setAttribute('role', 'region');
-        table.setAttribute('aria-label', 'Data table, scrolls horizontally');
+    // Keyboard-scrollable tables. Material wraps each table in a
+    // .md-typeset__scrollwrap at runtime; make the wrapper focusable
+    // when it actually overflows.
+    var wraps = document.querySelectorAll('.md-typeset__scrollwrap');
+    wraps.forEach(function (wrap) {
+      if (wrap.scrollWidth > wrap.clientWidth) {
+        wrap.setAttribute('tabindex', '0');
+        wrap.setAttribute('role', 'region');
+        wrap.setAttribute('aria-label', 'Data table, scrolls horizontally');
       }
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', enhance);
+  // Material's table wrapping happens after DOMContentLoaded, so run late
+  // and once more on load (fonts can change overflow).
+  window.addEventListener('load', enhance);
+  if (document.readyState !== 'loading') {
+    setTimeout(enhance, 0);
   } else {
-    enhance();
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(enhance, 0);
+    });
   }
 })();

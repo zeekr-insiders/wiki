@@ -353,7 +353,7 @@ body {
 .md-typeset .hero-title,
 .hero-title {
     font-family: var(--zi-display);
-    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    font-size: clamp(1.9rem, 5.5vw, 3.8rem);
     font-weight: 700;
     text-transform: uppercase;
     color: var(--zeekr-white);
@@ -468,7 +468,7 @@ body {
    -------------------------------------------------------------------------- */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin: 2rem 0;
 }
@@ -520,6 +520,18 @@ body {
     color: var(--text-primary);
 }
 
+/* Keep the badge clear of the heading */
+.md-typeset .z-card.featured h3,
+.z-card.featured h3 {
+    padding-right: 6.5rem;
+}
+
+/* Card CTAs pin to the bottom and span the card */
+.z-card .btn {
+    margin-top: auto;
+    align-self: stretch;
+}
+
 .z-card .price {
     font-family: var(--zi-display);
     font-size: 2.1rem;
@@ -545,17 +557,26 @@ body {
     flex-grow: 1;
 }
 
-.md-typeset .z-card .feature-list {
+.md-typeset .z-card .feature-list,
+.md-typeset ul.feature-list {
+    list-style: none;
     margin-left: 0;
+    padding-left: 0;
+}
+
+.md-typeset ul.feature-list li {
+    list-style: none;
+    margin-left: 0;
+}
+
+.md-typeset ul.feature-list li::marker {
+    content: '';
 }
 
 .feature-list li {
     padding: 0.625rem 0;
     border-bottom: 1px solid var(--border-subtle);
     font-size: 0.9375rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.625rem;
     color: var(--text-primary);
     line-height: 1.4;
 }
@@ -568,8 +589,7 @@ body {
     color: var(--zeekr-orange-text);
     font-style: normal;
     font-weight: 700;
-    flex-shrink: 0;
-    margin-top: 0.1em;
+    margin-right: 0.5em;
 }
 
 .feature-list li.muted {
@@ -586,7 +606,8 @@ body {
 /* Material grid cards get the same skin */
 .md-typeset .grid.cards > ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+    /* 4 cards land as a tidy 2x2 in the content column, not 3+1 */
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 1rem;
     padding: 0;
     margin: 0;
@@ -767,14 +788,23 @@ body {
    the pinned column never tears against hover states. A small script
    (javascripts/zeekr.js) makes overflowing tables keyboard-focusable.
    -------------------------------------------------------------------------- */
-.md-typeset table:not([class]) {
-    display: block;
-    overflow-x: auto;
+/* Material's runtime wrapper (.md-typeset__scrollwrap > .md-typeset__table)
+   is the horizontal scroll container - don't fight it with display:block. */
+.md-typeset__scrollwrap {
     -webkit-overflow-scrolling: touch;
-    max-width: 100%;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.md-typeset__scrollwrap:focus-visible {
+    outline: 2px solid var(--zeekr-orange);
+    outline-offset: 2px;
+}
+
+.md-typeset table:not([class]) {
+    /* Material makes the table itself inline-block + overflow:auto, which
+       hijacks position:sticky. Make it a plain table again so the
+       scrollwrap is the one and only scroll container. */
+    display: table;
+    overflow: visible;
     border-radius: var(--radius-md);
     border: 1px solid var(--border-default);
     border-collapse: separate;
@@ -841,11 +871,6 @@ body {
     background: var(--row-hover);
 }
 
-/* Keyboard-focusable scroll region (tabindex added by zeekr.js) */
-.md-typeset table[tabindex="0"]:focus-visible {
-    outline: 2px solid var(--zeekr-orange);
-    outline-offset: 2px;
-}
 
 /* Comparison pages (zeekr.js adds .zi-compare to the article):
    bold data cells are "best in column" - orange plus a marker, so the
@@ -897,28 +922,49 @@ body {
     top: 0.65rem;
 }
 
+/* Tips carry the brand; the rest keep semantic colours on the left edge.
+   border-color needs restating because Material's .admonition.<type>
+   selectors outrank the base rule above. */
 .md-typeset .admonition.tip,
 .md-typeset .admonition.hint {
+    border-color: var(--border-default);
     border-left: 3px solid var(--zeekr-orange);
 }
 
-.md-typeset .admonition.tip .admonition-title,
-.md-typeset .admonition.hint .admonition-title {
+.md-typeset .tip > .admonition-title,
+.md-typeset .hint > .admonition-title {
+    background-color: var(--surface-overlay);
     color: var(--zeekr-orange-text);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .hint > .admonition-title::before {
+    background-color: var(--zeekr-orange);
 }
 
 .md-typeset .admonition.warning,
 .md-typeset .admonition.caution {
+    border-color: var(--border-default);
     border-left: 3px solid var(--zeekr-warning);
 }
 
 .md-typeset .admonition.info,
 .md-typeset .admonition.note {
+    border-color: var(--border-default);
     border-left: 3px solid var(--zeekr-info);
 }
 
 .md-typeset .admonition.success {
+    border-color: var(--border-default);
     border-left: 3px solid var(--zeekr-success);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .caution > .admonition-title,
+.md-typeset .info > .admonition-title,
+.md-typeset .note > .admonition-title,
+.md-typeset .success > .admonition-title {
+    background-color: var(--surface-overlay);
 }
 
 /* --------------------------------------------------------------------------
