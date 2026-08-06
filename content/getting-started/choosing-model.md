@@ -16,7 +16,7 @@ Zeekr currently offers three models in Australia, each targeting different needs
 
 Let's break down what each one actually offers.
 
-## Zeekr 7X: The Versatile Family SUV
+## <img src="../../assets/icons/icon-body-suv.svg" class="zi-icon" alt=""> Zeekr 7X: The Versatile Family SUV
 
 **Think of it as:** The Goldilocks option - not too big, not too small, just right for most families.
 
@@ -50,7 +50,7 @@ Let's break down what each one actually offers.
 
 [Full 7X Details](../models/7x/overview.md){ .md-button }
 
-## Zeekr X: The Urban Premium Compact
+## <img src="../../assets/icons/icon-body-compact.svg" class="zi-icon" alt=""> Zeekr X: The Urban Premium Compact
 
 **Think of it as:** A sophisticated city runabout that doesn't compromise on quality.
 
@@ -84,7 +84,7 @@ Let's break down what each one actually offers.
 
 [Full X Details](../models/x/overview.md){ .md-button }
 
-## Zeekr 009: The Luxury People Mover
+## <img src="../../assets/icons/icon-body-mpv.svg" class="zi-icon" alt=""> Zeekr 009: The Luxury People Mover
 
 **Think of it as:** A first-class lounge on wheels. Seriously premium, seriously practical.
 

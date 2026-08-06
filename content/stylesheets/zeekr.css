@@ -665,6 +665,12 @@ body {
     transition: transform var(--transition-base);
 }
 
+.md-typeset .z-card .model-photo--sm,
+.z-card .model-photo--sm {
+    max-width: 200px;
+    margin-bottom: 0.5rem;
+}
+
 /* Dark bodywork on a dark card needs a stage to sit on */
 [data-md-color-scheme="slate"] .z-card .model-photo {
     background: radial-gradient(ellipse at 50% 68%, rgba(255, 255, 255, 0.1), transparent 66%);

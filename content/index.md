@@ -50,8 +50,8 @@ hide:
 We aren't the brochure. We tell you what the dealer won't.
 
 <div class="card-grid">
-    <div class="z-card model-glance">
-        <img src="assets/icons/icon-body-suv.svg" class="zi-icon zi-icon--card" alt="">
+    <div class="z-card model-glance model-card">
+        <img src="assets/images/models/zeekr-7x.webp" class="model-photo model-photo--sm" alt="Zeekr 7X" loading="lazy">
         <h3>Zeekr 7X</h3>
         <p>The family SUV with genuine ultra-rapid charging.</p>
         <div class="glance-stats">
@@ -61,8 +61,8 @@ We aren't the brochure. We tell you what the dealer won't.
         </div>
         <a class="go" href="models/7x/overview/">Zeekr 7X</a>
     </div>
-    <div class="z-card model-glance">
-        <img src="assets/icons/icon-body-compact.svg" class="zi-icon zi-icon--card" alt="">
+    <div class="z-card model-glance model-card">
+        <img src="assets/images/models/zeekr-x.webp" class="model-photo model-photo--sm" alt="Zeekr X" loading="lazy">
         <h3>Zeekr X</h3>
         <p>The compact SUV, relaunched for MY26 with more power.</p>
         <div class="glance-stats">
@@ -72,8 +72,8 @@ We aren't the brochure. We tell you what the dealer won't.
         </div>
         <a class="go" href="models/x/overview/">Zeekr X</a>
     </div>
-    <div class="z-card model-glance">
-        <img src="assets/icons/icon-body-mpv.svg" class="zi-icon zi-icon--card" alt="">
+    <div class="z-card model-glance model-card">
+        <img src="assets/images/models/zeekr-009.webp" class="model-photo model-photo--sm" alt="Zeekr 009" loading="lazy">
         <h3>Zeekr 009</h3>
         <p>The executive MPV. Six or seven seats, first-class quiet.</p>
         <div class="glance-stats">
@@ -84,6 +84,8 @@ We aren't the brochure. We tell you what the dealer won't.
         <a class="go" href="models/009/overview/">Zeekr 009</a>
     </div>
 </div>
+
+<p class="image-credit">Images: Zeekr</p>
 
 !!! tip "Insider Intel: The MY26 Relaunch"
     The Zeekr X was relaunched in May 2026 with sharper drive-away pricing and more power - the MY26 RWD is **$48,900 drive-away**. If you're buying used, check the build date carefully, as MY25 and MY26 cars differ in spec and price. [Read the full pricing history](models/x/2025/pricing.md).
