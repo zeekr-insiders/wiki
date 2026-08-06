@@ -6,22 +6,61 @@ Welcome to the ownership section of {{ extra.club.full_name }}. Whether you've j
 
 New to Zeekr ownership? Start here:
 
-- **[First 30 Days](first-30-days.md)** - Essential steps after taking delivery
-- **[Insurance](insurance.md)** - Finding the right coverage for your EV
+<div class="card-grid">
+    <div class="z-card">
+        <img src="../assets/icons/icon-range.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>First 30 Days</h3>
+        <p>Essential steps after taking delivery.</p>
+        <a class="go" href="first-30-days/">First 30 Days</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Charging</h3>
+        <p>Everything about charging your EV - home setup, public networks and road trips.</p>
+        <a class="go" href="../guides/charging/home-setup/">Charging</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-price.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Insurance</h3>
+        <p>Finding the right coverage for your EV.</p>
+        <a class="go" href="insurance/">Insurance</a>
+    </div>
+</div>
 
 ## Accessories & Protection
 
 Protect and enhance your Zeekr:
 
-- **[Accessories Overview](accessories/index.md)** - Browse recommended accessories and modifications
-- **[Protection](accessories/protection.md)** - PPF, ceramic coating, and window tinting
-- **[Recommended Accessories](accessories/recommended.md)** - Community-vetted products
-- **[Trusted Vendors](accessories/vendors.md)** - Installers and suppliers across Australia
+<div class="card-grid">
+    <div class="z-card">
+        <img src="../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Accessories Overview</h3>
+        <p>Browse recommended accessories and modifications.</p>
+        <a class="go" href="accessories/">Accessories</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-ground-clearance.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Protection</h3>
+        <p>PPF, ceramic coating, and window tinting.</p>
+        <a class="go" href="accessories/protection/">Protection</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-torque.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Recommended Gear</h3>
+        <p>Community-vetted products that actually fit.</p>
+        <a class="go" href="accessories/recommended/">Recommended</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-dimensions.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Trusted Vendors</h3>
+        <p>Installers and suppliers across Australia.</p>
+        <a class="go" href="accessories/vendors/">Vendors</a>
+    </div>
+</div>
 
 ## Additional Resources
 
 - **Service & Maintenance** - See the service schedules for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md)
-- **[Charging](../guides/charging/home-setup.md)** - Everything about charging your EV
 
 ## Contributing
 

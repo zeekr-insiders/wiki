@@ -6,23 +6,26 @@ Welcome to your journey into the world of Zeekr electric vehicles! Whether you'r
 
 This section is designed to get you up to speed quickly, covering everything from the basics of electric vehicles to choosing the right Zeekr model for your needs.
 
-### New to Electric Vehicles?
-
-If you've never owned an EV before, don't worry - they're actually simpler than you might think. We'll walk you through the fundamentals without the jargon.
-
-[Learn the EV Basics](ev-basics.md){ .md-button .md-button--primary }
-
-### Curious About Zeekr?
-
-Find out what makes Zeekr different from other EVs on the Australian market, and why so many drivers are making the switch.
-
-[Why Choose Zeekr?](why-zeekr.md){ .md-button }
-
-### Ready to Choose a Model?
-
-We'll help you figure out which Zeekr suits your lifestyle - whether you're after a family SUV, a luxury MPV, or something in between.
-
-[Compare Models](choosing-model.md){ .md-button }
+<div class="card-grid">
+    <div class="z-card">
+        <img src="../assets/icons/icon-battery.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>New to EVs?</h3>
+        <p>If you've never owned an EV before, don't worry - they're actually simpler than you might think. We'll walk you through the fundamentals without the jargon.</p>
+        <a class="go" href="ev-basics/">EV Basics</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Curious About Zeekr?</h3>
+        <p>Find out what makes Zeekr different from other EVs on the Australian market, and why so many drivers are making the switch.</p>
+        <a class="go" href="why-zeekr/">Why Zeekr</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-dimensions.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Choosing a Model</h3>
+        <p>We'll help you figure out which Zeekr suits your lifestyle - whether you're after a family SUV, a luxury MPV, or something in between.</p>
+        <a class="go" href="choosing-model/">Compare Models</a>
+    </div>
+</div>
 
 ## Join the Community
 

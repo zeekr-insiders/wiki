@@ -8,10 +8,32 @@ Whether you're just starting your research or ready to sign on the dotted line, 
 
 ### In This Section
 
-- **[Dealers](dealers.md)** - Where to buy your Zeekr in Australia, what to look for in a dealer, and online ordering information
-- **[Pricing](pricing.md)** - Current 2025 model pricing, understanding on-road costs, and what to expect when negotiating
-- **[Finance](finance.md)** - Payment options including salary sacrifice, novated leases, and FBT exemptions
-- **[Delivery](delivery.md)** - What to expect during the delivery process, inspection checklists, and first setup steps
+<div class="card-grid">
+    <div class="z-card">
+        <img src="../assets/icons/icon-awd.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Dealers</h3>
+        <p>Where to buy your Zeekr in Australia, what to look for in a dealer, and online ordering information.</p>
+        <a class="go" href="dealers/">Dealers</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-price.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Pricing</h3>
+        <p>Current 2025 model pricing, understanding on-road costs, and what to expect when negotiating.</p>
+        <a class="go" href="pricing/">Pricing</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-power.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Finance</h3>
+        <p>Payment options including salary sacrifice, novated leases, and FBT exemptions.</p>
+        <a class="go" href="finance/">Finance</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Delivery</h3>
+        <p>What to expect during the delivery process, inspection checklists, and first setup steps.</p>
+        <a class="go" href="delivery/">Delivery</a>
+    </div>
+</div>
 
 ## Before You Buy
 

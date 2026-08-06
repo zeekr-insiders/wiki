@@ -4,58 +4,29 @@ Comprehensive information about all Zeekr models available or coming to the Aust
 
 ## Current Model Lineup
 
-### <img src="../assets/icons/icon-wheelbase.svg" class="zi-icon" alt="SUV"> [Zeekr 7X](7x/overview.md)
-**Premium Electric SUV**
-
-The Zeekr 7X is the brand's flagship SUV, offering premium features, advanced technology, and family-friendly practicality.
-
-- **[Specifications](7x/2025/specifications.md)** - Current model specifications and technical details
-- **[Pricing](7x/2025/pricing.md)** - Current pricing and options information
-- **[Model Overview](7x/overview.md)** - Complete 7X information and buyer's guide
-
-**Key Highlights:**
-
-- Premium electric SUV positioning
-- Advanced driver assistance features
-- Spacious interior and cargo area
-- Fast charging capabilities
-- Australian road compliance
-
----
-
-### <img src="../assets/icons/icon-acceleration.svg" class="zi-icon" alt="Compact"> [Zeekr X](x/overview.md)
-**Compact Electric SUV**
-
-The Zeekr X brings premium electric mobility to a more compact and affordable package, perfect for urban Australian conditions.
-
-- **[Model Overview](x/overview.md)** - Complete X model information and specifications
-
-**Key Highlights:**
-
-- Compact size ideal for city driving
-- Efficient urban mobility solution
-- Premium features in smaller package
-- Competitive pricing position
-- Easy parking and manoeuvrability
-
----
-
-### <img src="../assets/icons/icon-seating.svg" class="zi-icon" alt="MPV"> [Zeekr 009](009/overview.md)
-**Luxury Electric MPV**
-
-The Zeekr 009 is the brand's luxury MPV, designed for premium family and executive use.
-
-- **[Model Overview](009/overview.md)** - Complete 009 luxury MPV information
-
-**Key Highlights:**
-
-- Luxury MPV positioning
-- Executive seating configurations
-- Premium interior appointments
-- Advanced technology integration
-- Spacious cabin and cargo areas
-
----
+<div class="card-grid">
+    <div class="z-card">
+        <img src="../assets/icons/icon-wheelbase.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Zeekr 7X</h3>
+        <p><strong>Premium Electric SUV.</strong> The brand's flagship SUV, offering premium features, advanced technology, and family-friendly practicality. Fast charging, spacious interior and cargo area, advanced driver assistance.</p>
+        <p><a href="7x/2025/specifications/">Specifications</a> &middot; <a href="7x/2025/pricing/">Pricing</a></p>
+        <a class="go" href="7x/overview/">7X Overview</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Zeekr X</h3>
+        <p><strong>Compact Electric SUV.</strong> Premium electric mobility in a more compact and affordable package, perfect for urban Australian conditions. Easy parking and manoeuvrability at a competitive price.</p>
+        <p><a href="x/2025/specifications/">Specifications</a> &middot; <a href="x/2025/pricing/">Pricing</a></p>
+        <a class="go" href="x/overview/">X Overview</a>
+    </div>
+    <div class="z-card">
+        <img src="../assets/icons/icon-seating.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Zeekr 009</h3>
+        <p><strong>Luxury Electric MPV.</strong> The brand's luxury MPV, designed for premium family and executive use. Executive seating configurations, premium interior appointments and a spacious cabin.</p>
+        <p><a href="009/specifications/">Specifications</a> &middot; <a href="009/pricing/">Pricing</a></p>
+        <a class="go" href="009/overview/">009 Overview</a>
+    </div>
+</div>
 
 ## Model Selection Guide
 
