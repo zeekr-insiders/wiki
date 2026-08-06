@@ -1,6 +1,6 @@
 <div class="hero-container hero-bg-7x">
     <div class="hero-content">
-        <div class="hero-title">Zeekr 7X</div>
+        <h1 class="hero-title">Zeekr 7X</h1>
         <div class="hero-subtitle">The Family SUV that charges faster than you can order coffee. 800V Architecture. 615km Range.</div>
         <div class="hero-actions">
             <a href="../2025/pricing/" class="btn btn-primary">See Pricing</a>
@@ -22,7 +22,7 @@
             <li><i>✓</i> Panoramic Roof (Sunshade incl.)</li>
             <li class="muted">Standard Sound (10 Spk)</li>
         </ul>
-        <a href="../2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+        <a href="../2025/specifications/" class="btn btn-secondary">Details</a>
     </div>
 
     <div class="z-card featured">
@@ -36,7 +36,7 @@
             <li><i>✓</i> <strong>AR-HUD</strong> Included</li>
             <li><i>✓</i> Massage & Ventilated Seats</li>
         </ul>
-        <a href="../2025/pricing/" class="btn btn-primary" style="text-align:center">Why this trim?</a>
+        <a href="../2025/pricing/" class="btn btn-primary">Why this trim?</a>
     </div>
 
     <div class="z-card">
@@ -49,7 +49,7 @@
             <li><i>✓</i> Auto-Opening Doors</li>
             <li><i>✓</i> Nappa Leather</li>
         </ul>
-        <a href="../2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+        <a href="../2025/specifications/" class="btn btn-secondary">Details</a>
     </div>
 </div>
 
@@ -101,20 +101,20 @@
         <h3>vs Tesla Model Y</h3>
         <p><strong>Zeekr Wins:</strong> 615km vs 466km range for similar money, 800V charging (10-80% in 13-16 min vs ~27 min)</p>
         <p><strong>Tesla Wins:</strong> Larger service network, more mature software, better resale data</p>
-        <a href="../../../comparisons/zeekr-vs-competitors/#the-big-one-zeekr-7x-vs-tesla-model-y" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#the-big-one-zeekr-7x-vs-tesla-model-y" class="btn btn-secondary">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>vs BYD Sealion 7</h3>
         <p><strong>Zeekr Wins:</strong> 800V vs 400V charging, 615km vs 482km range, premium interior</p>
         <p><strong>BYD Wins:</strong> Cheaper, stronger warranty term (6yr vs 5yr, though Zeekr's has no km cap)</p>
-        <a href="../../../comparisons/zeekr-vs-competitors/#the-value-king-zeekr-7x-vs-byd-sealion-7" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#the-value-king-zeekr-7x-vs-byd-sealion-7" class="btn btn-secondary">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>See All Comparisons</h3>
         <p>Compare the 7X against Polestar 3, Mercedes EQE, and more competitors. Plus see detailed side-by-side spec tables.</p>
-        <a href="../../../comparisons/model-comparison-table/" class="btn btn-primary" style="text-align:center">View All Models</a>
+        <a href="../../../comparisons/model-comparison-table/" class="btn btn-primary">View All Models</a>
     </div>
 </div>
 

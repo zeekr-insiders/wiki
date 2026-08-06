@@ -1,5 +1,5 @@
 <div class="hero-section">
-    <div class="hero-title">Zeekr Insiders Australia</div>
+    <h1 class="hero-title">Zeekr Insiders Australia</h1>
     <div class="hero-subtitle">
         The unofficial guide to owning a Zeekr.<br>
         Built by owners, for owners.
