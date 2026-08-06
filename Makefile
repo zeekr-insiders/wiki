@@ -1,7 +1,11 @@
 .PHONY: help install run build clean ready lint check serve dev stop deploy
 
+# uv run fails to canonicalise script paths on this machine, so we call the
+# venv interpreter directly. Works on Windows and POSIX venv layouts.
+PY := $(shell if [ -x .venv/Scripts/python.exe ]; then echo .venv/Scripts/python.exe; else echo .venv/bin/python; fi)
+
 help:
-	@echo "Zeekr Enthusiasts of Victoria (ZEV) Wiki"
+	@echo "Zeekr Insiders Australia Wiki"
 	@echo "Available targets:"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
@@ -12,17 +16,17 @@ install:
 
 run:
 	@echo "Starting development server..."
-	uv run mkdocs serve
+	$(PY) -m mkdocs serve
 
 serve: run 
 
 dev:
 	@echo "Starting development server (network accessible)..."
-	uv run mkdocs serve --dev-addr 0.0.0.0:8000
+	$(PY) -m mkdocs serve --dev-addr 0.0.0.0:8000
 
 build:
 	@echo "Building static site..."
-	uv run mkdocs build
+	$(PY) -m mkdocs build
 	@echo "✅ Site built successfully"
 
 clean:
@@ -66,13 +70,13 @@ ready: clean build lint check
 # Deployment
 deploy: ready
 	@echo "Deploying to GitHub Pages..."
-	uv run mkdocs gh-deploy --clean
+	$(PY) -m mkdocs gh-deploy --clean
 	@echo "✅ Deployed successfully to GitHub Pages"
 
 # Quick commands
 quick-build:
 	@echo "Quick building..."
-	uv run mkdocs build
+	$(PY) -m mkdocs build
 	@echo "✅ Quick build complete"
 
 quick-check: quick-build
@@ -80,11 +84,11 @@ quick-check: quick-build
 
 # Info commands
 info:
-	@echo "Zeekr Enthusiasts of Victoria (ZEV) Wiki"
+	@echo "Zeekr Insiders Australia Wiki"
 	@echo "========================================"
 	@echo "Python version: $$(python --version 2>/dev/null || echo 'Not found')"
 	@echo "UV version: $$(uv --version 2>/dev/null || echo 'Not found')"
-	@echo "MkDocs version: $$(uv run mkdocs --version 2>/dev/null || echo 'Not found')"
+	@echo "MkDocs version: $$($(PY) -m mkdocs --version 2>/dev/null || echo 'Not found')"
 	@echo ""
 	@echo "Project structure:"
 	@echo "  content/     - Wiki content (markdown files)"
