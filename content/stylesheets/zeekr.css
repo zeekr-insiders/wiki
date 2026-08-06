@@ -125,6 +125,7 @@
     --text-secondary: #b3aca4;
     --text-muted: #776f66;
     --row-hover: #201914;           /* solid, so sticky columns never tear */
+    --row-lead: #1D150F;            /* leader-row tint, solid for sticky cols */
 
     --md-code-bg-color: var(--zeekr-graphite);
     --md-admonition-bg-color: var(--surface-elevated);
@@ -156,6 +157,7 @@
     --text-secondary: #5a534b;
     --text-muted: #948c82;
     --row-hover: #F6EEE7;           /* solid, so sticky columns never tear */
+    --row-lead: #FBF1E9;            /* leader-row tint, solid for sticky cols */
 
     --md-code-bg-color: #F2F0ED;
     --md-admonition-bg-color: var(--surface-elevated);
@@ -189,14 +191,24 @@ body {
     color: var(--text-primary);
 }
 
+/* Section headers per Mock B: letterspaced caps with a trailing hairline
+   rule that fades out, instead of a plain full-width underline. */
 .md-typeset h2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-size: 1.4rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border-subtle);
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.05em;
+}
+
+.md-typeset h2::after {
+    content: '';
+    flex: 1 0 2rem;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-hot), transparent);
 }
 
 .md-typeset h3 {
@@ -612,10 +624,62 @@ body {
 .z-card h3 {
     margin: 0 0 0.5rem;
     font-family: var(--zi-display);
-    font-size: 1.15rem;
+    font-size: 0.92rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: var(--text-primary);
+}
+
+/* Card anatomy per Mock B: small caps title, muted body, caps arrow link */
+.md-typeset .z-card p,
+.z-card p {
+    font-size: 0.72rem;
+    line-height: 1.55;
+    color: var(--text-secondary);
+    margin: 0 0 0.75rem;
+}
+
+.md-typeset .z-card p strong,
+.z-card p strong {
+    color: var(--text-primary);
+}
+
+.z-card .zi-icon--card,
+.zi-icon--card {
+    width: 28px;
+    height: 28px;
+    margin: 0 0 0.9rem;
+    display: block;
+}
+
+/* Caps arrow link - the mock's "MODELS →" line */
+.md-typeset a.go,
+a.go {
+    display: inline-block;
+    margin-top: auto;
+    padding-top: 0.6rem;
+    align-self: flex-start;
+    font-family: var(--zi-display);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--zeekr-orange-text);
+}
+
+.md-typeset a.go::after,
+a.go::after {
+    content: '\00a0\2192';
+    display: inline-block;
+    transition: transform var(--transition-fast);
+}
+
+.z-card:hover a.go::after,
+a.go:hover::after,
+a.go:focus-visible::after {
+    transform: translateX(4px);
 }
 
 /* Keep the badge clear of the heading */
@@ -917,11 +981,11 @@ body {
 .md-typeset table:not([class]) th {
     font-family: var(--zi-display);
     text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 0.58rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    color: var(--text-secondary);
-    padding: 0.8rem 0.9rem;
+    letter-spacing: 0.14em;
+    color: var(--text-muted);
+    padding: 0.85rem 0.95rem;
     text-align: left;
     border-bottom: 1px solid var(--border-default);
     vertical-align: bottom;
@@ -971,17 +1035,53 @@ body {
 
 
 /* Comparison pages (zeekr.js adds .zi-compare to the article):
-   bold data cells are "best in column" - orange plus a marker, so the
-   signal is not colour-only. First-column bold stays plain emphasis. */
+   the leaderboard treatment from Mock B. Generous row height, display-font
+   values, and bold data cells read as "best in column" - orange plus a
+   marker, so the signal is not colour-only. */
+.zi-compare .md-typeset table:not([class]) td {
+    padding: 0.95rem 0.95rem;
+    font-size: 0.76rem;
+}
+
+/* Model names in the sticky first column get the display face */
+.zi-compare .md-typeset table:not([class]) td:first-child strong {
+    font-family: var(--zi-display);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
 .zi-compare .md-typeset table:not([class]) td:not(:first-child) strong {
+    font-family: var(--zi-display);
+    font-size: 0.86rem;
     color: var(--zeekr-orange-text);
     font-weight: 700;
+    letter-spacing: 0.01em;
 }
 
 .zi-compare .md-typeset table:not([class]) td:not(:first-child) strong::after {
     content: ' \25B8';
-    font-size: 0.75em;
+    font-size: 0.7em;
     vertical-align: 1px;
+}
+
+/* Leader rows - a bold (Zeekr) name in the first column plus at least one
+   winning cell tints the whole row and puts a hot edge on the pinned cell.
+   Solid colours so the sticky column never tears; degrades to plain rows
+   in browsers without :has(). */
+.zi-compare .md-typeset table:not([class]) tbody
+    tr:has(> td:first-child > strong):has(> td:not(:first-child) strong) td {
+    background: var(--row-lead);
+}
+
+.zi-compare .md-typeset table:not([class]) tbody
+    tr:has(> td:first-child > strong):has(> td:not(:first-child) strong) td:first-child {
+    box-shadow: inset 3px 0 0 var(--zeekr-orange);
+}
+
+.zi-compare .md-typeset table:not([class]) tbody
+    tr:has(> td:first-child > strong):has(> td:not(:first-child) strong):hover td {
+    background: var(--row-hover);
 }
 
 @media screen and (max-width: 768px) {
@@ -1020,23 +1120,35 @@ body {
     top: 0.65rem;
 }
 
-/* Tips carry the brand; the rest keep semantic colours on the left edge.
+/* Tips are "field notes" per Mock B: a soft orange glow bleeding through
+   the tile, a hot inset ring, and a transparent letterspaced caps title.
    border-color needs restating because Material's .admonition.<type>
    selectors outrank the base rule above. */
 .md-typeset .admonition.tip,
-.md-typeset .admonition.hint {
-    border-color: var(--border-default);
-    border-left: 3px solid var(--zeekr-orange);
+.md-typeset .admonition.hint,
+.md-typeset .admonition.success {
+    border: none;
+    border-radius: var(--radius-lg);
+    box-shadow: inset 0 0 0 1px var(--border-hot);
+    background: linear-gradient(120deg, var(--zeekr-orange-dim), transparent 65%);
 }
 
 .md-typeset .tip > .admonition-title,
-.md-typeset .hint > .admonition-title {
-    background-color: var(--surface-overlay);
+.md-typeset .hint > .admonition-title,
+.md-typeset .success > .admonition-title {
+    background: transparent;
+    border-bottom: none;
+    padding-bottom: 0.25rem;
     color: var(--zeekr-orange-text);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.66rem;
+    font-weight: 700;
 }
 
 .md-typeset .tip > .admonition-title::before,
-.md-typeset .hint > .admonition-title::before {
+.md-typeset .hint > .admonition-title::before,
+.md-typeset .success > .admonition-title::before {
     background-color: var(--zeekr-orange);
 }
 
@@ -1052,16 +1164,10 @@ body {
     border-left: 3px solid var(--zeekr-info);
 }
 
-.md-typeset .admonition.success {
-    border-color: var(--border-default);
-    border-left: 3px solid var(--zeekr-success);
-}
-
 .md-typeset .warning > .admonition-title,
 .md-typeset .caution > .admonition-title,
 .md-typeset .info > .admonition-title,
-.md-typeset .note > .admonition-title,
-.md-typeset .success > .admonition-title {
+.md-typeset .note > .admonition-title {
     background-color: var(--surface-overlay);
 }
 

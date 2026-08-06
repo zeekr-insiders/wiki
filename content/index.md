@@ -16,24 +16,33 @@ hide:
     </div>
 </div>
 
-<div class="grid cards" markdown>
+## Start Here
 
-- :material-car-electric: **The Lineup**
-    
-    Deep dives into the **[7X](models/7x/overview.md)**, **[X](models/x/overview.md)**, and **[009](models/009/overview.md)**. Real-world range tests, pricing, and specs.
-
-- :material-ev-station: **Charging Survival**
-    
-    Don't get stranded. Learn why you need a **[Type 2 Cable](guides/charging/public-networks.md)** and which networks actually work.
-
-- :material-tools: **Ownership Guides**
-    
-    From the **[Delivery Checklist](buying/delivery.md)** to fixing the annoying **[Driver Monitoring System](models/7x/knowledge-base/7x-issues.md)**.
-
-- :material-account-group: **Join The Club**
-    
-    Group buys on floor mats, screen protectors, and V2L adapters. **[Get Involved](community/index.md)**.
-
+<div class="card-grid">
+    <div class="z-card">
+        <img src="assets/icons/icon-awd.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>The Lineup</h3>
+        <p>Deep dives into the <a href="models/7x/overview/">7X</a>, <a href="models/x/overview/">X</a> and <a href="models/009/overview/">009</a>. Real-world range tests, pricing, and specs.</p>
+        <a class="go" href="models/">Models</a>
+    </div>
+    <div class="z-card">
+        <img src="assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Charging Survival</h3>
+        <p>Don't get stranded. Learn why you need a Type 2 cable and which networks actually work.</p>
+        <a class="go" href="guides/charging/public-networks/">Charging</a>
+    </div>
+    <div class="z-card">
+        <img src="assets/icons/icon-torque.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Ownership Guides</h3>
+        <p>From the <a href="buying/delivery/">delivery checklist</a> to fixing the annoying <a href="models/7x/knowledge-base/7x-issues/">driver monitoring system</a>.</p>
+        <a class="go" href="ownership/">Guides</a>
+    </div>
+    <div class="z-card">
+        <img src="assets/icons/icon-seating.svg" class="zi-icon zi-icon--card" alt="">
+        <h3>Join The Club</h3>
+        <p>Group buys on floor mats, screen protectors, and V2L adapters.</p>
+        <a class="go" href="community/">Community</a>
+    </div>
 </div>
 
 ## Why "Insiders"?
