@@ -4,29 +4,16 @@ EV ownership resources specific to Victoria.
 
 ## Government Incentives
 
-### Zero Emissions Vehicle (ZEV) Rebate
+### Zero Emissions Vehicle (ZEV) Rebate - Closed
 
-!!! warning "Check Current Status"
-    The Victorian ZEV rebate program has been subject to changes. Always verify current eligibility and availability on the [Solar Victoria website](https://www.solar.vic.gov.au/zero-emissions-vehicle-rebate).
+!!! warning "This program has ended"
+    The Victorian ZEV Subsidy (up to $3,000, vehicles under $68,740 dutiable value) closed to new applications on **30 June 2023**. There is no current Victorian EV purchase rebate.
 
-| Detail | Information |
-|--------|-------------|
-| **Value** | Up to $3,000 |
-| **Price Cap** | Vehicles under $68,740 (dutiable value) |
-| **Eligibility** | New ZEVs, Victorian residents |
-
-**Zeekr Eligibility:**
-
-- **Zeekr X RWD** ($49,900) - Eligible
-- **Zeekr X AWD** ($62,900) - Eligible
-- **Zeekr 7X RWD** ($57,900) - Eligible
-- **Zeekr 7X Long Range** ($63,900) - Eligible
-- **Zeekr 7X AWD** ($72,900) - Check eligibility (may exceed cap)
-- **Zeekr 009** ($135,900+) - Not eligible (exceeds cap)
+If you bought your Zeekr recently, no rebate applies. The main financial lever for Victorian buyers today is the federal FBT exemption via novated leasing - see the [finance guide](../../buying/finance.md).
 
 ### Stamp Duty
 
-Victoria charges stamp duty on EVs. Calculate your costs at [VicRoads](https://www.vicroads.vic.gov.au).
+Victoria charges stamp duty on EVs at the same rates as other vehicles - there is no EV concession. Indicative brackets below; the tiers are periodically indexed, so confirm current figures with the [State Revenue Office Victoria](https://www.sro.vic.gov.au) before budgeting.
 
 | Price Bracket | Rate |
 |---------------|------|
@@ -118,10 +105,10 @@ See our [Events page](../../community/events.md) for Victorian meetups and drive
 ## Useful Victorian Links
 
 - [VicRoads EV Information](https://www.vicroads.vic.gov.au)
-- [Solar Victoria ZEV Rebate](https://www.solar.vic.gov.au/zero-emissions-vehicle-rebate)
+- [State Revenue Office Victoria](https://www.sro.vic.gov.au)
 - [Environment Victoria - EV Guide](https://environmentvictoria.org.au)
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*
 *Contributors: {{ extra.club.name }} members*
