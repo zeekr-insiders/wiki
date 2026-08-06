@@ -6,7 +6,7 @@ The best part about owning an EV is waking up to a full "tank" every morning. He
 
 **Most Zeekr owners charge at home 90% of the time.** Public charging is fine for road trips, but home charging is cheaper, more convenient, and happens while you sleep.
 
-The 7X has 22kW AC charging capability, which means you can take full advantage of a three-phase wall box if you have it. The X and 009 also support high AC charging rates.
+The 7X has 22kW AC charging capability across the range, which means you can take full advantage of a three-phase wall box if you have it. The X AWD also gets 22kW; the X RWD tops out at 11kW, and the 009 is 11kW or 22kW depending on variant.
 
 ## Your Charging Options
 
@@ -33,7 +33,7 @@ The 7X has 22kW AC charging capability, which means you can take full advantage 
 
 **Good for:** Most people. Plug in overnight, wake up to 100%.
 
-**Cost:** $800-$1,500 (equipment + installation)
+**Cost:** $1,200-$2,200 (equipment + installation, 2026 pricing)
 
 **Best for:**
 
@@ -51,7 +51,7 @@ The 7X has 22kW AC charging capability, which means you can take full advantage 
 
 **Good for:** Anyone with three-phase power who wants fast home charging.
 
-**Cost:** $1,500-$3,000 (equipment + installation)
+**Cost:** $2,400-$4,500 (equipment + installation, 2026 pricing - varies by state)
 
 **Best for:**
 
@@ -70,7 +70,7 @@ The 7X has 22kW AC charging capability, which means you can take full advantage 
 | Charger Type | Power Output | Typical Cost |
 | :--- | :--- | :--- |
 | 7kW Single-Phase | 7.4kW | $700-$1,200 |
-| 22kW Three-Phase | 11kW-22kW | $1,200-$2,000 |
+| 22kW Three-Phase | 22kW | $1,200-$2,000 |
 
 Popular brands in Australia:
 
@@ -81,7 +81,7 @@ Popular brands in Australia:
 
 ### Installation Costs
 
-**Typical range:** $500-$1,500 depending on:
+**Typical range:** $500-$2,500 depending on:
 
 - Distance from your switchboard to where you want the charger
 - Whether your switchboard needs upgrading
@@ -90,7 +90,7 @@ Popular brands in Australia:
 
 **Best case:** $500 - Switchboard is in the garage, short cable run, easy install.
 
-**Worst case:** $2,000+ - Switchboard is on the opposite side of the house, needs upgrading, trenching required.
+**Worst case:** $3,000+ - Switchboard is on the opposite side of the house, needs upgrading ($1,200-$2,500 extra), trenching required.
 
 ## The Installation Process
 
@@ -112,7 +112,7 @@ You need a licensed electrician experienced with EV chargers. They'll:
 - Short cable run from switchboard
 - Accessible for future service
 
-**Cable length:** Most people get a 5-7 meter charging cable. This gives flexibility in parking position.
+**Cable length:** Most people get a 5-7 metre charging cable. This gives flexibility in parking position.
 
 ### Step 3: Installation Day
 
@@ -146,20 +146,12 @@ These are nationally recognised EV charging specialists:
 
 **Local Electricians:** Ask in your {{ extra.club.abbreviation }} state group for recommendations. Many members have had great experiences with local sparkies who've done EV training.
 
-## Victorian Solar Owners - The Free Money
+## Charging from Solar
 
-If you have solar panels in Victoria, you're in luck:
+If you have solar panels, a smart charger pays for itself quickly.
 
-### Solar Homes Rebate
-
-- **Rebate:** Up to $1,400 off installation
-- **Eligibility:** Victorian homeowners with solar already installed
-- **How to apply:** solar.vic.gov.au
-
-!!! success "Real Cost Example"
-    VIC member "Dave" paid $2,100 for a Zappi 22kW charger installed. After the $1,400 rebate, his actual cost was $700. Absolute bargain.
-
-### Charging from Solar
+!!! info "Charger rebates"
+    We're not aware of any current state rebate for home EV charger installations (Victoria's Solar Homes rebates cover panels and hot water, not chargers). If your installer mentions a rebate, ask them to point you at the government page before counting on it.
 
 With a smart charger like Zappi or Fronius Wattpilot, you can:
 
@@ -212,13 +204,13 @@ Compare that to petrol: $2.50 per litre × 25 litres = $62.50 for equivalent ran
 
 ### Best Electricity Plans for EV Owners
 
-Check these retailers for EV-specific plans:
+Dedicated EV plans go well below generic TOU off-peak rates:
 
-- **AGL**: EV Night Saver plan
-- **Origin**: EV Plan with cheaper overnight rates
+- **AGL Night Saver EV Plan**: 8c/kWh between 12am and 6am - roughly half a typical off-peak rate
+- **Origin 360 EV**: 0c/kWh in a daytime window (10am-3pm) - a solar-sponge structure, brilliant if your car is home during the day
 - **Energy Australia**: EV smart charging options
 
-Use comparison sites but filter for TOU plans with low overnight rates.
+Rates and windows change - check the retailer's current offer for your distribution area. Use comparison sites but filter for EV-specific or TOU plans with low charging-window rates.
 
 ## Smart Charging Features Worth Having
 
@@ -239,7 +231,7 @@ Modern wall boxes can do clever things:
 Before you book, confirm:
 
 1. Are you a licensed electrician with EV charging experience?
-2. Will I need a switchboard upgrade? (Add $500-$1,500 if yes)
+2. Will I need a switchboard upgrade? (Add $1,200-$2,500 if yes)
 3. What's included in your quote? (Materials, labour, testing, certificates?)
 4. Do you provide a warranty? (Equipment and installation)
 5. Will I get an electrical compliance certificate?
@@ -266,15 +258,14 @@ All EV chargers in Australia must:
 
 **Budget for home charging:**
 
-- **7kW charger (most people):** $1,200-$2,500 installed
-- **22kW charger (if you have three-phase):** $2,000-$3,500 installed
-- **Victorian solar homes:** Minus $1,400 rebate
+- **7kW charger (most people):** $1,200-$2,200 installed
+- **22kW charger (if you have three-phase):** $2,400-$4,500 installed
 
 **Ongoing costs:** $10-20 per week for typical driving (vs $80-100 for petrol).
 
 **Payback period:** Usually 6-12 months compared to public charging costs.
 
-**Convenience value:** Priceless. Seriously, never visiting a service station is life-changing.
+**Convenience:** Never visiting a service station again takes some getting used to - in the best way.
 
 ## Real {{ extra.club.abbreviation }} Member Setups
 
