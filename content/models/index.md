@@ -5,28 +5,30 @@ Comprehensive information about all Zeekr models available or coming to the Aust
 ## Current Model Lineup
 
 <div class="card-grid">
-    <div class="z-card">
-        <img src="../assets/icons/icon-wheelbase.svg" class="zi-icon zi-icon--card" alt="">
+    <div class="z-card model-card">
+        <img src="../assets/images/models/zeekr-7x.webp" class="model-photo" alt="Zeekr 7X" loading="lazy">
         <h3>Zeekr 7X</h3>
         <p><strong>Premium Electric SUV.</strong> The brand's flagship SUV, offering premium features, advanced technology, and family-friendly practicality. Fast charging, spacious interior and cargo area, advanced driver assistance.</p>
         <p><a href="7x/2025/specifications/">Specifications</a> &middot; <a href="7x/2025/pricing/">Pricing</a></p>
         <a class="go" href="7x/overview/">7X Overview</a>
     </div>
-    <div class="z-card">
-        <img src="../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--card" alt="">
+    <div class="z-card model-card">
+        <img src="../assets/images/models/zeekr-x.webp" class="model-photo" alt="Zeekr X" loading="lazy">
         <h3>Zeekr X</h3>
         <p><strong>Compact Electric SUV.</strong> Premium electric mobility in a more compact and affordable package, perfect for urban Australian conditions. Easy parking and manoeuvrability at a competitive price.</p>
         <p><a href="x/2025/specifications/">Specifications</a> &middot; <a href="x/2025/pricing/">Pricing</a></p>
         <a class="go" href="x/overview/">X Overview</a>
     </div>
-    <div class="z-card">
-        <img src="../assets/icons/icon-seating.svg" class="zi-icon zi-icon--card" alt="">
+    <div class="z-card model-card">
+        <img src="../assets/images/models/zeekr-009.webp" class="model-photo" alt="Zeekr 009" loading="lazy">
         <h3>Zeekr 009</h3>
         <p><strong>Luxury Electric MPV.</strong> The brand's luxury MPV, designed for premium family and executive use. Executive seating configurations, premium interior appointments and a spacious cabin.</p>
         <p><a href="009/specifications/">Specifications</a> &middot; <a href="009/pricing/">Pricing</a></p>
         <a class="go" href="009/overview/">009 Overview</a>
     </div>
 </div>
+
+<p class="image-credit">Images: Zeekr</p>
 
 ## Model Selection Guide
 

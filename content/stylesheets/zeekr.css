@@ -654,6 +654,36 @@ body {
     display: block;
 }
 
+/* Model cards lead with the car itself, centred above the copy */
+.md-typeset .z-card .model-photo,
+.z-card .model-photo {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    margin: 0 auto 1rem;
+    transition: transform var(--transition-base);
+}
+
+/* Dark bodywork on a dark card needs a stage to sit on */
+[data-md-color-scheme="slate"] .z-card .model-photo {
+    background: radial-gradient(ellipse at 50% 68%, rgba(255, 255, 255, 0.1), transparent 66%);
+}
+
+.z-card.model-card:hover .model-photo {
+    transform: scale(1.04);
+}
+
+.md-typeset .image-credit,
+.image-credit {
+    margin-top: 0.75rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
 /* Caps arrow link - the mock's "MODELS →" line */
 .md-typeset a.go,
 a.go {
