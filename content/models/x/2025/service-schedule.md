@@ -1,21 +1,22 @@
-# 2025 Zeekr X Service Schedule & Costs
+# Zeekr X Service Schedule & Costs
 
 **The Compact with Low Running Costs**
 
-Like its bigger sibling the 7X, the Zeekr X benefits from the low-maintenance nature of EVs. Official servicing is only required **every 2 years or 40,000km**.
+*Last reviewed: August 2026.*
 
-## Official Service Schedule
+The Zeekr X benefits from the low-maintenance nature of EVs, and capped-price servicing now applies.
 
-| Interval | Distance | Operation | Estimated Cost* |
-| :--- | :--- | :--- | :--- |
-| **24 Months** | 40,000 km | **Major Service (Required)** | **$690** |
-| **48 Months** | 80,000 km | **Major Service (Required)** | **TBA** |
-| **72 Months** | 120,000 km | **Major Service (Required)** | **TBA** |
+## Official Service Schedule (MY26)
 
-*First service cost confirmed at $690. Subsequent service pricing to be announced. Capped-price servicing coming soon.*
+The MY26 relaunch (May 2026) moved the X to **12 month / 20,000 km** service intervals with capped pricing:
 
-!!! info "Service Intervals"
-    Zeekr requires servicing every **2 years or 40,000km**, whichever comes first. One of the best service intervals in the EV market.
+| Variant | 5 Years Capped Price | 8 Years Capped Price |
+| :--- | :--- | :--- |
+| **X RWD** | $2,662 | $4,766 |
+| **X AWD** | $3,072 | $5,586 |
+
+!!! info "MY25 cars"
+    Earlier MY25 cars were sold with a 24 month / 40,000 km schedule and a $690 first service. If you own a MY25 X, confirm your schedule with your Zeekr dealer - it follows what applied when your car was sold.
 
 ## What's Included in a Service?
 
@@ -65,7 +66,7 @@ Available 24/7 for:
 
 To keep your warranty valid:
 
-- **Service on schedule:** Don't miss your 2-year/40,000km services
+- **Service on schedule:** Don't miss your scheduled services (12 months/20,000km for MY26 cars)
 - **Use authorised dealers:** Services must be done at Zeekr dealerships
 - **Keep records:** Save all service receipts and documentation
 - **Report issues promptly:** Don't delay on warranty claims
@@ -74,7 +75,7 @@ To keep your warranty valid:
 
 The X's smaller size translates to lower running costs:
 
-**Servicing:** $690 every 2 years = $345/year
+**Servicing:** roughly $530-$615/year under the MY26 capped-price program (RWD/AWD over 5 years)
 
 **Electricity:** ~$15-25/week for typical urban driving (vs $70-90 for equivalent petrol SUV)
 

@@ -2,31 +2,37 @@
 
 Understanding the true cost of your Zeekr helps you budget accurately and compare options. This guide breaks down current pricing, on-road costs, and what to expect during negotiations.
 
-## 2025 Model Pricing
+## Current Model Pricing
 
-Current manufacturer's suggested retail pricing (MSRP) for Zeekr models in Australia:
+*Last reviewed: August 2026.*
+
+Current pricing for Zeekr models in Australia:
 
 ### Zeekr 7X
 
 - **7X RWD**: $57,900 + ORC
-- **7X AWD**: $63,900 + ORC
+- **7X Long Range RWD**: $63,900 + ORC
 - **7X AWD Performance**: $72,900 + ORC
+- **7X Black Special Edition**: $75,900 + ORC
 
-[View full specifications →](../models/7x/2025/specifications.md)
+[View full specifications](../models/7x/2025/specifications.md)
 
-### Zeekr X
+### Zeekr X (MY26)
 
-- **X RWD**: $49,900 + ORC
-- **X AWD**: $62,900 + ORC
+- **X RWD**: $48,900 drive-away
+- **X AWD**: $57,900 drive-away
 
-[View full specifications →](../models/x/overview.md)
+Note the X moved to national drive-away pricing with the May 2026 relaunch - no on-road costs on top.
+
+[View full specifications](../models/x/2025/specifications.md)
 
 ### Zeekr 009
 
-- **009 ME**: $135,900 + ORC
-- **009 WE**: $139,900 + ORC
+- **009 FWD (7-seat)**: $115,900 + ORC
+- **009 AWD (7-seat)**: $135,900 + ORC
+- **009 AWD (6-seat)**: $139,900 + ORC
 
-[View full specifications →](../models/009/overview.md)
+[View full specifications](../models/009/specifications.md)
 
 !!! note "Pricing Currency"
     All prices are in Australian dollars (AUD). Pricing is subject to change - confirm current pricing with your dealer.
