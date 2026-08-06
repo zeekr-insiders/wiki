@@ -22,7 +22,7 @@ EV ownership resources specific to Western Australia.
 
 - **Chargefox** - Multiple locations
 - **Evie Networks** - Shopping centres
-- **Synergy** - WA-based network
+- **Synergy** - WA's state-owned electricity retailer has been involved in EV charging; check synergy.net.au for what's currently on offer
 
 ### Regional Considerations
 

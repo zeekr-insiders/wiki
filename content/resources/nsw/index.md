@@ -71,7 +71,7 @@ NRMA operates extensive charging infrastructure across NSW:
 
 - **Fast chargers** at strategic locations
 - **Destination chargers** at partnered hotels
-- Free for NRMA members at select locations
+- NRMA has historically offered free charging for members at some sites, but this has been wound back over time - check the NRMA app for current pricing rather than counting on it
 
 ## Home Charging
 
