@@ -90,20 +90,20 @@
         <h3>vs Tesla Model 3 RWD</h3>
         <p><strong>Zeekr Wins:</strong> 3.7s 0-100 (AWD), 22kW AC charging (AWD), SUV practicality, cheaper drive-away</p>
         <p><strong>Tesla Wins:</strong> Longer range, sedan efficiency, Supercharger network</p>
-        <a href="../../../comparisons/zeekr-vs-competitors/#compact-shootout-zeekr-x-vs-the-field" class="btn btn-secondary">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#compact-shootout-zeekr-x-vs-the-field" class="go">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>vs BYD Atto 3</h3>
         <p><strong>Zeekr Wins:</strong> Premium materials, 5.6s vs 7.3s 0-100, better performance</p>
         <p><strong>BYD Wins:</strong> Similar range, cheaper, quirky interior charm</p>
-        <a href="../../../comparisons/zeekr-vs-competitors/#zeekr-x-vs-byd-atto-3" class="btn btn-secondary">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#zeekr-x-vs-byd-atto-3" class="go">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>See All Comparisons</h3>
         <p>Compare the X against the Volvo EX40 and see detailed side-by-side spec tables.</p>
-        <a href="../../../comparisons/model-comparison-table/" class="btn btn-primary">View All Models</a>
+        <a href="../../../comparisons/model-comparison-table/" class="go">All Comparisons</a>
     </div>
 </div>
 

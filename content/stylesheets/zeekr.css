@@ -710,6 +710,7 @@ a.go:focus-visible::after {
     font-weight: 500;
     color: var(--text-secondary);
     margin-left: 0.25rem;
+    white-space: nowrap;    /* "+ ORC" never splits across lines */
 }
 
 .feature-list {
