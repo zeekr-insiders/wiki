@@ -206,7 +206,8 @@ body {
 
 .md-typeset h2::after {
     content: '';
-    flex: 1 0 2rem;
+    flex: 1 1 2rem;
+    min-width: 0;   /* the rule gives way on narrow viewports */
     height: 1px;
     background: linear-gradient(90deg, var(--border-hot), transparent);
 }
