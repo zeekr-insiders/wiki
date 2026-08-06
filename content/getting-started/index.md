@@ -28,7 +28,7 @@ We'll help you figure out which Zeekr suits your lifestyle - whether you're afte
 
 Once you've got the basics down, consider joining {{ extra.club.name }}. We're a friendly bunch of Zeekr owners and enthusiasts who love sharing tips, organising meet-ups, and helping newcomers find their feet.
 
-[Learn More About ZEV](../community/index.md)
+[Learn More About {{ extra.club.abbreviation }}](../community/index.md)
 
 ## Questions?
 

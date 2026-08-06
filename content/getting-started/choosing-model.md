@@ -10,9 +10,9 @@ Zeekr currently offers three models in Australia, each targeting different needs
 
 | Model | Type | Size | Best For | Starting Price |
 |-------|------|------|----------|----------------|
-| **7X** | Mid-size SUV | 5-seater | Families, daily driving | Check current pricing |
-| **X** | Compact SUV | 5-seater | Couples, urban driving | Check current pricing |
-| **009** | Luxury MPV | 6-7 seater | Large families, prestige | Check current pricing |
+| **7X** | Mid-size SUV | 5-seater | Families, daily driving | From $57,900 + ORC |
+| **X** | Compact SUV | 5-seater | Couples, urban driving | From $48,900 drive-away |
+| **009** | Luxury MPV | 6-7 seater | Large families, prestige | From $115,900 + ORC |
 
 Let's break down what each one actually offers.
 
