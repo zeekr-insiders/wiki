@@ -93,10 +93,22 @@ Since July 2022, eligible electric vehicles are exempt from FBT when provided th
 
 - Vehicle must be a battery electric vehicle (BEV) or hydrogen fuel cell vehicle
 - First held and used on or after 1 July 2022
-- Below the luxury car tax threshold for fuel-efficient vehicles ($91,387 for 2024-25)
+- Below the luxury car tax threshold for fuel-efficient vehicles ($91,661 for 2026-27)
 - Purchased or leased new (not second-hand when first acquired)
 
-**All current Zeekr models qualify for the FBT exemption** (confirm eligibility with your novated lease provider as thresholds may change).
+Note that plug-in hybrids lost the exemption from 1 April 2025 (with a transitional carve-out for pre-existing binding commitments) - not relevant to Zeekrs, but worth knowing if you're comparing.
+
+**Which Zeekrs qualify?** The 7X (all variants, $57,900-$72,900 + ORC) and the X (all variants) sit comfortably under the threshold. The **009 does not qualify** - at $115,900+ it's well over the cap. Confirm eligibility with your novated lease provider, as the test uses the actual price of the car as configured, not just the RRP.
+
+### The Exemption Is Winding Down From 2027
+
+The full FBT exemption is legislated to end on **31 March 2027**. From 1 April 2027:
+
+- EVs under **$75,000** keep the full exemption
+- EVs between $75,000 and the LCT threshold get a 25% discount only
+- By 1 April 2029, the 25% discount applies to all eligible EVs
+
+The government has flagged a review by mid-2027, so the detail may shift. Practical upshot: every current 7X and X variant is under $75,000 and keeps the full exemption, but if you're signing a lease that runs past March 2027, ask your provider how the change affects your quote.
 
 ### How Much Can You Save?
 
