@@ -69,5 +69,5 @@ The iconic Darwin to Adelaide drive (approximately 3,000km) is challenging but i
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*
 *Contributors needed - NT members please share local knowledge and experiences!*

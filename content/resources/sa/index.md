@@ -47,5 +47,5 @@ EV ownership resources specific to South Australia.
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*
 *Contributors needed - SA members please share local knowledge!*

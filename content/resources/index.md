@@ -10,15 +10,14 @@ Your one-stop resource directory for everything you need as a Zeekr owner in Aus
         <p>Australia-wide resources including charging networks, government incentives, and roadside assistance.</p>
         <a href="national/" class="btn btn-primary">National Resources</a>
     </div>
-    <div class="z-card featured">
-        <span class="badge">Your State</span>
+    <div class="z-card">
         <h3>Victoria</h3>
         <p>VIC-specific incentives, service centres, and charging infrastructure.</p>
         <a href="vic/" class="btn btn-primary">VIC Resources</a>
     </div>
     <div class="z-card">
         <h3>New South Wales</h3>
-        <p>NSW stamp duty exemption, Sydney service, and NRMA network.</p>
+        <p>NSW incentive changes, Sydney service, and the NRMA network.</p>
         <a href="nsw/" class="btn btn-primary">NSW Resources</a>
     </div>
 </div>
@@ -49,7 +48,7 @@ Your one-stop resource directory for everything you need as a Zeekr owner in Aus
     </div>
     <div class="z-card">
         <h3>ACT</h3>
-        <p>Best incentives in Australia - zero stamp duty!</p>
+        <p>Emissions-based duty tiers and low-interest EV loans.</p>
         <a href="act/" class="btn btn-secondary">ACT Resources</a>
     </div>
     <div class="z-card">
@@ -88,17 +87,12 @@ Your one-stop resource directory for everything you need as a Zeekr owner in Aus
 
 | Incentive | Benefit |
 |-----------|---------|
-| **Fringe Benefits Tax Exemption** | Salary sacrifice EVs under $91,387 |
-| **Luxury Car Tax Exemption** | EVs exempt from LCT |
-| **Instant Asset Write-off** | Business vehicle deductions |
-
----
-
-## Additional Resources
-
+| **Fringe Benefits Tax Exemption** | Salary sacrifice EVs under $91,661 (2026-27); full exemption ends 31 March 2027 - see the [finance guide](../buying/finance.md) |
+| **Luxury Car Tax** | No LCT on EVs priced under the fuel-efficient threshold |
+| **Instant Asset Write-off** | Business deductions apply, capped by the car cost limit |
 
 ---
 
 *Resources are maintained by {{ extra.club.full_name }} and community contributors.*
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*

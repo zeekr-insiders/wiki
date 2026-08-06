@@ -49,5 +49,5 @@ EV ownership resources specific to Western Australia.
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*
 *Contributors needed - WA members please share local knowledge!*

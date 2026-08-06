@@ -61,5 +61,5 @@ Bringing your EV to Tasmania via the Spirit of Tasmania ferry:
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*
 *Contributors needed - Tasmanian members please share local knowledge!*
