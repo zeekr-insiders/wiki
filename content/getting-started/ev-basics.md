@@ -70,7 +70,7 @@ It'd be like driving past 10 petrol stations with your fuel light on, except the
 
 ### Long Distance Travel
 
-Yes, you can absolutely do road trips in an EVs. You just plan your charging stops (usually every 2-3 hours, which coincides nicely with toilet and coffee breaks). Apps do the planning for you these days.
+Yes, you can absolutely do road trips in an EV. You just plan your charging stops (usually every 2-3 hours, which coincides nicely with toilet and coffee breaks). Apps do the planning for you these days.
 
 The 800V architecture in Zeekr vehicles means you'll spend less time charging than many other EVs - we're talking 20-30 minute stops rather than 45-60 minutes.
 

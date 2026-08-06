@@ -123,7 +123,7 @@ Australian insurers that commonly cover EVs include:
 - QBE
 - Budget Direct
 - Youi
-- Shannon's (for modified or enthusiast vehicles)
+- Shannons (for modified or enthusiast vehicles)
 
 **Note:** This is not an exhaustive list or endorsement. Always compare multiple quotes.
 

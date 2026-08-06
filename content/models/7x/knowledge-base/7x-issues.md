@@ -18,8 +18,8 @@ This page tracks common quirks, software bugs, and configuration tips for the Au
 **The Issue:** The car beeps every time the speed limit changes or if you go 1km/h over.
 **The Insider Fix:**
 
--   **Double Tap:** You can often mute the ISA (Intelligent Speed Assist) by double-tapping a specific button on the steering wheel (Check your owner's manual for the specific 7X mapping, often the "Mute" or "Return" button).
--   **Permanent Setting:** Under **Settings > Safety**, set the warning offset to "+3km/h" or "+5km/h" if the software allows (version dependent).
+- **Double Tap:** You can often mute the ISA (Intelligent Speed Assist) by double-tapping a specific button on the steering wheel (Check your owner's manual for the specific 7X mapping, often the "Mute" or "Return" button).
+- **Permanent Setting:** Under **Settings > Safety**, set the warning offset to "+3km/h" or "+5km/h" if the software allows (version dependent).
 
 ## Charging Port Locking
 
@@ -33,8 +33,8 @@ This page tracks common quirks, software bugs, and configuration tips for the Au
 **The Issue:** Spotify/Music streaming buffers.
 **The Fix:**
 
--   Check if your 3-month complimentary data plan has expired.
--   Reboot the infotainment: Hold down the two scroll wheels on the steering wheel for 10 seconds (standard reboot procedure for Zeekr OS).
+- Check if your 3-month complimentary data plan has expired.
+- Reboot the infotainment: Hold down the two scroll wheels on the steering wheel for 10 seconds (standard reboot procedure for Zeekr OS).
 
 ---
 *Have a fix? Submit it to the Wiki!*

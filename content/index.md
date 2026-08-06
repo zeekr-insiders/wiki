@@ -12,19 +12,19 @@
 
 <div class="grid cards" markdown>
 
--   :material-car-electric: **The Lineup**
+- :material-car-electric: **The Lineup**
     
     Deep dives into the **[7X](models/7x/overview.md)**, **[X](models/x/overview.md)**, and **[009](models/009/overview.md)**. Real-world range tests, pricing, and specs.
 
--   :material-ev-station: **Charging Survival**
+- :material-ev-station: **Charging Survival**
     
     Don't get stranded. Learn why you need a **[Type 2 Cable](guides/charging/public-networks.md)** and which networks actually work.
 
--   :material-tools: **Ownership Guides**
+- :material-tools: **Ownership Guides**
     
     From the **[Delivery Checklist](buying/delivery.md)** to fixing the annoying **[Driver Monitoring System](models/7x/knowledge-base/7x-issues.md)**.
 
--   :material-account-group: **Join The Club**
+- :material-account-group: **Join The Club**
     
     Group buys on floor mats, screen protectors, and V2L adapters. **[Get Involved](community/index.md)**.
 

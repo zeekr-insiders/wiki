@@ -15,20 +15,20 @@ Think of Zeekr as Geely's premium electric brand. They've taken all the engineer
 - **Volvo Safety**: Zeekr shares safety technology and philosophy with Volvo
 - **Global Platform**: Built on the same premium architecture as Polestar and Lotus EVs
 - **European Engineering**: Designed with input from Volvo's Swedish team
-- **Chinese Manufacturing Excellence**: Built in state-of-the-art facilities in China
+- **Manufacturing**: Built in Geely's modern EV facilities in China
 
-This isn't some startup gambling with your money - it's a established global automotive giant with deep pockets and serious EV expertise.
+This isn't some startup gambling with your money - it's an established global automotive giant with deep pockets and serious EV expertise.
 
 ## The 800V Advantage (Without the Tech Speak)
 
-Most EVs run on 400V electrical architecture. Zeekr uses 800V. Why should you care?
+Most EVs run on 400V electrical architecture. The Zeekr 7X uses 800V (the X and 009 are 400V cars). Why should you care?
 
 ### Faster Charging
 
 Higher voltage means faster charging without needing thicker, heavier cables. In practical terms:
 
 - **400V EVs**: Typically 30-45 minutes for 20-80% charge
-- **800V Zeekrs**: Typically 20-30 minutes for 20-80% charge
+- **800V Zeekr 7X**: Official 10-80% times of 13-16 minutes on an ultra-rapid charger
 
 On a road trip, that's the difference between a quick coffee and sitting through a full meal.
 
@@ -38,7 +38,7 @@ On a road trip, that's the difference between a quick coffee and sitting through
 
 ### Future-Proofed
 
-As ultra-fast chargers (350kW+) become more common in Australia, 800V vehicles will take full advantage. Your Zeekr is ready for the charging infrastructure of tomorrow.
+As ultra-fast chargers (350kW+) become more common in Australia, 800V vehicles will take full advantage. A 7X is ready for the charging infrastructure of tomorrow.
 
 ## What Actually Sets Zeekr Apart
 
@@ -82,9 +82,9 @@ This is crucial and often overlooked:
 
 ### Warranty Coverage
 
-- **Vehicle Warranty**: Check your model's specific warranty (typically 5-7 years)
-- **Battery Warranty**: Separate and longer coverage for the battery pack
-- **Roadside Assistance**: Included for the warranty period
+- **Vehicle Warranty**: 5 years / unlimited km (private use)
+- **Battery Warranty**: 8 years / 160,000 km (minimum 70% capacity)
+- **Roadside Assistance**: 5 years complimentary
 
 ### Australian Dealer Network
 
@@ -99,11 +99,7 @@ This isn't a grey import or some dodgy parallel import operation. These are offi
 
 ### Service Intervals
 
-Because EVs need less maintenance, service intervals are typically longer and cheaper:
-
-- First service: Usually 12 months or 20,000km
-- Subsequent services: Annual or 20,000km intervals
-- Costs: Significantly lower than equivalent petrol vehicles
+Because EVs need less maintenance, servicing is less frequent and cheaper than petrol equivalents. Intervals vary by model and model year - the 7X and 009 launched with 2 year / 40,000 km schedules, while the MY26 X is 12 months / 20,000 km. Check your model's [service schedule](../models/index.md) for the detail.
 
 ## The Realistic Downsides
 
@@ -125,7 +121,7 @@ If you're planning to keep the car for 5+ years, this matters less.
 
 While Australia's fast-charging network is improving rapidly, it's not as extensive as petrol stations (yet). Long-distance travel requires a bit more planning.
 
-That said, the 800V architecture means you'll spend less time charging than most EVs.
+That said, if you're in a 7X, the 800V architecture means you'll spend less time charging than most EVs.
 
 ## Who Is Zeekr Right For?
 
