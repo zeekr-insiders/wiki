@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  <!-- Preload the display font so headings don't visibly swap after first paint -->
+  <link rel="preload" href="{{ 'assets/fonts/space-grotesk-latin.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+{% endblock %}
