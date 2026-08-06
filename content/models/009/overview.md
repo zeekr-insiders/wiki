@@ -3,8 +3,8 @@
         <div class="hero-title">Zeekr 009</div>
         <div class="hero-subtitle">First Class on Wheels. The ultimate executive MPV for those who demand silence, space, and speed.</div>
         <div class="hero-actions">
-            <a href="pricing.md" class="btn btn-primary">Pricing</a>
-            <a href="specifications.md" class="btn btn-secondary">Specs</a>
+            <a href="../pricing/" class="btn btn-primary">Pricing</a>
+            <a href="../specifications/" class="btn btn-secondary">Specs</a>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
             <li><i>✓</i> 17" OLED Rear Screen</li>
             <li><i>✓</i> Air Suspension</li>
         </ul>
-        <a href="specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">View Layout</a>
+        <a href="../specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">View Layout</a>
     </div>
 
     <div class="z-card featured">
@@ -36,7 +36,7 @@
             <li><i>✓</i> Hidden Tray Tables</li>
             <li><i>✓</i> Leg Rests & Footrests</li>
         </ul>
-        <a href="specifications.md" class="btn btn-primary" style="text-align:center">The "Boss" Spec</a>
+        <a href="../specifications/" class="btn btn-primary" style="text-align:center">The "Boss" Spec</a>
     </div>
 </div>
 
@@ -88,19 +88,19 @@
         <h3>vs Mercedes V-Class</h3>
         <p><strong>Zeekr Wins:</strong> Electric vs diesel, 4.5s vs ~10s 0-100, 30 Yamaha speakers, aviation seats</p>
         <p><strong>Merc Wins:</strong> $10k cheaper, established service network</p>
-        <a href="../../comparisons/zeekr-vs-competitors.md#the-luxury-cruiser-zeekr-009-vs-everything-else" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#the-luxury-cruiser-zeekr-009-vs-everything-else" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>vs Lexus LM</h3>
         <p><strong>Zeekr Wins:</strong> $60k+ cheaper ($135k vs ~$200k), faster acceleration, more tech</p>
         <p><strong>Lexus Wins:</strong> Brand prestige, ultra-luxury execution (when it arrives)</p>
-        <a href="../../comparisons/zeekr-vs-competitors.md#vs-lexus-lm-if-it-arrives" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#vs-lexus-lm-if-it-arrives" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>See All Comparisons</h3>
         <p>See detailed side-by-side spec tables and luxury MPV comparisons.</p>
-        <a href="../../comparisons/model-comparison-table.md" class="btn btn-primary" style="text-align:center">View All Models</a>
+        <a href="../../../comparisons/model-comparison-table/" class="btn btn-primary" style="text-align:center">View All Models</a>
     </div>
 </div>

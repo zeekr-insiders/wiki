@@ -3,8 +3,8 @@
         <div class="hero-title">Zeekr X</div>
         <div class="hero-subtitle">Urban Luxury. Uncompromised Performance. The city SUV that redefines the segment.</div>
         <div class="hero-actions">
-            <a href="2025/pricing.md" class="btn btn-primary">View Pricing</a>
-            <a href="2025/specifications.md" class="btn btn-secondary">Full Specs</a>
+            <a href="../2025/pricing/" class="btn btn-primary">View Pricing</a>
+            <a href="../2025/specifications/" class="btn btn-secondary">Full Specs</a>
         </div>
     </div>
 </div>
@@ -24,7 +24,7 @@
             <li class="muted">AWD Grip</li>
             <li class="muted">22kW AC Charging</li>
         </ul>
-        <a href="2025/specifications.md" class="btn btn-primary" style="text-align:center">Details</a>
+        <a href="../2025/specifications/" class="btn btn-primary" style="text-align:center">Details</a>
     </div>
 
     <div class="z-card">
@@ -38,7 +38,7 @@
             <li><i>✓</i> Yamaha Sound Standard</li>
             <li><i>✓</i> AWD Traction</li>
         </ul>
-        <a href="2025/specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
+        <a href="../2025/specifications/" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">Details</a>
     </div>
 </div>
 
@@ -90,20 +90,20 @@
         <h3>vs Tesla Model 3 RWD</h3>
         <p><strong>Zeekr Wins:</strong> 3.8s 0-100 (AWD), 22kW AC charging, SUV practicality</p>
         <p><strong>Tesla Wins:</strong> 513km vs 400km range, sedan efficiency, $4k cheaper</p>
-        <a href="../../comparisons/zeekr-vs-competitors.md#compact-shootout-zeekr-x-vs-the-field" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#compact-shootout-zeekr-x-vs-the-field" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>vs BYD Atto 3</h3>
         <p><strong>Zeekr Wins:</strong> Premium materials, 5.6s vs 7.3s 0-100, better performance</p>
         <p><strong>BYD Wins:</strong> Similar range, $2k cheaper, quirky interior charm</p>
-        <a href="../../comparisons/zeekr-vs-competitors.md#zeekr-x-vs-byd-atto-3" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
+        <a href="../../../comparisons/zeekr-vs-competitors/#zeekr-x-vs-byd-atto-3" class="btn btn-secondary" style="text-align:center">Full Comparison</a>
     </div>
 
     <div class="z-card">
         <h3>See All Comparisons</h3>
         <p>Compare the X against Volvo XC40 Recharge and see detailed side-by-side spec tables.</p>
-        <a href="../../comparisons/model-comparison-table.md" class="btn btn-primary" style="text-align:center">View All Models</a>
+        <a href="../../../comparisons/model-comparison-table/" class="btn btn-primary" style="text-align:center">View All Models</a>
     </div>
 </div>
 
