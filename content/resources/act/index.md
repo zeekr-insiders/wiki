@@ -4,34 +4,20 @@ EV ownership resources specific to the Australian Capital Territory.
 
 ## Government Incentives
 
-### Stamp Duty Exemption
+### Stamp Duty - Now Emissions-Based, Not Zero
 
-!!! success "Zero Stamp Duty"
-    The ACT offers **zero stamp duty** on new zero-emission vehicles - one of the best incentives in Australia!
+!!! warning "The zero-stamp-duty era has ended"
+    From **1 September 2025** the ACT moved to an emissions-based motor vehicle duty schedule. Zero-emission vehicles get the **lowest** duty tier (around $2.50 per $100 of dutiable value) rather than paying nothing.
 
-| Detail | Information |
-|--------|-------------|
-| **Exemption** | 100% stamp duty exemption |
-| **Eligibility** | New battery electric vehicles |
-| **Savings** | Thousands of dollars depending on vehicle price |
+The old flat exemption is gone, but EVs still get the best deal on the schedule - higher-emission vehicles pay up to roughly $4.53 per $100. On a Zeekr 7X Long Range that's a saving in the low thousands compared to a petrol equivalent, not the full exemption of years past. Confirm current rates at the [ACT Revenue Office](https://www.revenue.act.gov.au/motor-vehicle-duty).
 
-**Potential Savings on Zeekr:**
+### Registration
 
-| Vehicle | Stamp Duty Saved |
-|---------|------------------|
-| Zeekr X RWD ($49,900) | ~$1,500+ |
-| Zeekr 7X Long Range ($63,900) | ~$2,000+ |
-| Zeekr 7X AWD ($72,900) | ~$2,500+ |
-| Zeekr 009 ($135,900) | ~$5,000+ |
+The two-years-free registration offer for new EVs **ended around July 2024**. Registration is now emissions-based for all vehicles, with zero-emission vehicles on the lowest tier - reduced, not free.
 
-### Registration Discounts
+### Low-Interest EV Loans
 
-The ACT also offers reduced registration for zero-emission vehicles.
-
-### Two Years Free Registration
-
-!!! info "Check Current Offer"
-    The ACT has previously offered two years free registration for new EVs. Check [Access Canberra](https://www.accesscanberra.act.gov.au) for current offers.
+A genuine current incentive: the ACT's Sustainable Household Scheme offers 3% low-interest loans of $2,000-$15,000 for new or used EV purchases and home charging infrastructure. Details at [Climate Choices ACT](https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles).
 
 ## Service Centres
 
@@ -71,7 +57,7 @@ Canberra has excellent EV charging infrastructure:
 
 The ACT has one of Australia's highest EV adoption rates, supported by:
 
-- Excellent government incentives
+- Favourable duty and registration tiers for EVs
 - Compact city size ideal for EVs
 - Strong charging infrastructure
 - Environmentally conscious population
@@ -90,4 +76,4 @@ The ACT has one of Australia's highest EV adoption rates, supported by:
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*

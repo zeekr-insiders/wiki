@@ -16,24 +16,23 @@ Queensland offers registration discounts for zero-emission vehicles.
 !!! info "Check Current Rates"
     Visit [Queensland Transport](https://www.qld.gov.au/transport) for current EV registration rates.
 
-### Stamp Duty
+### Stamp Duty - Concessional EV Rate
 
-Queensland charges stamp duty on vehicle purchases. No current EV-specific exemptions.
+Queensland doesn't exempt EVs from stamp duty, but it does apply a materially lower **concessional rate for battery electric (and hydrogen) vehicles: $2 per $100 of dutiable value**, versus $3-$4+ per $100 for petrol vehicles depending on cylinder count. Rates step up once dutiable value passes $100,000 (applied to the whole value). Plug-in hybrids do not get the EV rate; ordinary hybrids do.
+
+On a Zeekr 7X Long Range that's a saving of roughly $600-$1,300 versus an equivalent petrol SUV. Confirm exact figures with the [Queensland Revenue Office](https://qro.qld.gov.au) before budgeting.
 
 ## Service Centres
 
-### Brisbane Metropolitan
+### Brisbane and Gold Coast
 
-!!! info "Service Location"
-    *Contact Zeekr Australia for current service centre locations in Queensland.*
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
+Queensland now has Zeekr dealerships, including Zeekr Centre Brisbane and a Gold Coast (Southport) site - see the [dealer guide](../../buying/dealers.md) for the current list, or check [zeekrlife.com](https://www.zeekrlife.com/en-au/find-us/).
 
 ### Regional Queensland
 
 | Region | Nearest Service | Notes |
 |--------|-----------------|-------|
-| Gold Coast | Brisbane | ~80 km |
+| Gold Coast | Southport | Local dealership |
 | Sunshine Coast | Brisbane | ~100 km |
 | Toowoomba | Brisbane | ~130 km |
 | Cairns | TBC | Limited options |
@@ -80,4 +79,4 @@ Queensland charges stamp duty on vehicle purchases. No current EV-specific exemp
 
 ---
 
-*Last updated: December 2025*
+*Last reviewed: August 2026*
