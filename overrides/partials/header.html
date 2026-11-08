@@ -1,5 +1,6 @@
 {#- Material's header, kept as the wiki's own sticky bar (drawer, title, search, tabs). The palette toggle
     moved to the masthead (partials/zi-masthead.html), as the front door has it there. -#}
+{%- from "partials/zi-name.html" import zi_name -%}
 {% set class = "md-header" %}
 {% if "navigation.tabs.sticky" in features %}
   {% set class = class ~ " md-header--shadow md-header--lifted" %}
@@ -19,11 +20,8 @@
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
-            {% if page.meta and page.meta.title %}
-              {{ page.meta.title }}
-            {% else %}
-              {{ page.title }}
-            {% endif %}
+            {#- The same name as the tab title, so a model overview reads "Zeekr 7X", not "Overview". -#}
+            {{ zi_name(page) | trim }}
           </span>
         </div>
       </div>

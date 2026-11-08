@@ -1,28 +1,7 @@
 {% extends "base.html" %}
 
-{#- One page name for <title> and the share tags: the page's own H1, which the label checks keep in step
-    with its nav label (scripts/check_labels.py). Under a model the H1 already names the model ("Zeekr 7X
-    prices"), so nothing is prefixed and "Which 7X do I have?" is not doubled up. -#}
-{%- macro zi_name(page) -%}
-  {%- set first = page.toc | first if page and page.toc else none -%}
-  {%- if page and page.meta and page.meta.title -%}
-    {{ page.meta.title }}
-  {%- elif page and page.is_homepage -%}
-    Wiki
-  {%- elif first and first.level == 1 -%}
-    {{ first.title | striptags }}
-  {%- elif page and page.title -%}
-    {#- A hero H1 is raw HTML, so it is not in the ToC: a model's "Overview" takes the model's name. -#}
-    {%- set t = page.title | striptags -%}
-    {%- if t == "Overview" and page.parent and page.parent.title -%}
-      {{ page.parent.title }}
-    {%- else -%}
-      {{ t }}
-    {%- endif -%}
-  {%- else -%}
-    Wiki
-  {%- endif -%}
-{%- endmacro -%}
+{#- zi_name: the one page name for <title>, the share tags and the wiki bar (partials/zi-name.html). -#}
+{%- from "partials/zi-name.html" import zi_name -%}
 
 
 {#- "Page | Zeekr Insiders", the front door's title format. The home page is the wiki itself. -#}
