@@ -1241,8 +1241,8 @@ body {
 
 .md-typeset table:not([class]) th {
     min-width: 72px;
-    max-width: 176px;
-    padding: var(--sp-3);
+    padding: var(--sp-3) var(--sp-4);
+    white-space: nowrap;
     background: var(--bg-raised);
     border-bottom: var(--hairline) solid var(--line-strong);
     font-family: var(--font-display);
@@ -1256,7 +1256,8 @@ body {
 }
 
 .md-typeset table:not([class]) td {
-    padding: var(--sp-3);
+    padding: var(--sp-3) var(--sp-4);
+    white-space: nowrap;
     border-top: 0;
     border-bottom: var(--hairline) solid var(--line);
     background: var(--panel);
@@ -1269,9 +1270,32 @@ body {
     border-bottom: 0;
 }
 
-/* Solid colours on hover so the sticky column never shows through. */
+/* A sentence wraps at a readable width (hooks/tables.py marks it); every
+   other cell stays on one line, and a table wider than the column scrolls in
+   its wrapper rather than stacking figures and headers over several lines. */
+.md-typeset table:not([class]) td.zi-td-long {
+    min-width: 16em;
+    max-width: 30em;
+    white-space: normal;
+}
+
+/* Tables take the column's width, so a short one does not float in a gap. */
+.md-typeset .md-typeset__table {
+    display: block;
+    min-width: 100%;
+}
+
+.md-typeset .md-typeset__table table:not([class]) {
+    min-width: 100%;
+}
+
+/* Faint zebra rows and a firmer hover, both solid so the sticky column never shows through. */
+.md-typeset table:not([class]) tbody tr:nth-child(even) td {
+    background: color-mix(in srgb, var(--ink) 3%, var(--panel));
+}
+
 .md-typeset table:not([class]) tbody tr:hover td {
-    background: var(--bg-sunk);
+    background: color-mix(in srgb, var(--ink) 7%, var(--panel));
     box-shadow: none;
 }
 

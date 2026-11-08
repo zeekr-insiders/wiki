@@ -155,6 +155,7 @@ hooks:
   - hooks/citations.py
   - hooks/cards.py
   - hooks/headings.py
+  - hooks/tables.py
 
 plugins:
   - search:
