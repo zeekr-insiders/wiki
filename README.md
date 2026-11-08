@@ -111,11 +111,27 @@ We welcome contributions from all ZEV members and the broader community!
 - **Event Reports** - Club meetups, drives, and activities
 - **Updates** - Pricing changes, new features, availability
 
-### How to Contribute
+### How to Propose a Change
 
-1. **For Club Members**: Contact the committee or use our content management system
-2. **For Developers**: See our [detailed contributor guide](structure.md)
-3. **For Quick Updates**: Submit an issue on GitHub
+1. Open the page on the wiki and follow **Suggest an edit** at the foot of the page (or **Contribute** in the site footer). It opens the page's Markdown source in GitHub's editor.
+2. Make your change and propose it. GitHub forks the repository for you if you can't edit it directly, then opens a pull request.
+3. A wiki maintainer reviews it before it goes live, and may ask questions on the pull request.
+
+For bigger changes (a new page, a reorganised section), clone the repository and follow [Quick Start](#quick-start), then run `make ready` before opening a pull request.
+
+### Sources
+
+Every fact needs a source: publisher, title, URL and the date you accessed it. Cite it with a footnote marker after the fact, and add the entry under the page's `## Sources` heading in the same order and format as the others:
+
+```markdown
+The MY27 7X keeps the same prices [^1].
+
+## Sources
+
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+```
+
+The wiki shows each marker as a numbered superscript linked to its source. `make ready` fails if a marker has no entry or an entry is never cited.
 
 ### Content Guidelines
 
