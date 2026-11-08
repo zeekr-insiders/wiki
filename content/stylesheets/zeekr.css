@@ -1245,7 +1245,9 @@ span .zi-icon {
     height: 18px;
 }
 
-.zi-mast .md-header__option > input:focus-visible + label {
+/* Focus sits on one of Material's 0x0 radios, and not always the one just
+   before the visible label, so the ring goes on whichever label is showing. */
+.zi-mast .md-header__option:has(> input:focus-visible) > label:not([hidden]) {
     outline: var(--rule) solid var(--night-ink);
     outline-offset: 2px;
 }
@@ -1990,6 +1992,28 @@ span .zi-icon {
 
     .md-sidebar--secondary .zi-toc .md-nav__link .md-ellipsis {
         grid-column: 2;
+/* Content tabs: focus is on a hidden radio, so the ring goes on its label.
+   Ten covers the longest tab set the wiki is likely to have. */
+.md-typeset .tabbed-set > input:nth-child(1):focus-visible ~ .tabbed-labels > label:nth-child(1),
+.md-typeset .tabbed-set > input:nth-child(2):focus-visible ~ .tabbed-labels > label:nth-child(2),
+.md-typeset .tabbed-set > input:nth-child(3):focus-visible ~ .tabbed-labels > label:nth-child(3),
+.md-typeset .tabbed-set > input:nth-child(4):focus-visible ~ .tabbed-labels > label:nth-child(4),
+.md-typeset .tabbed-set > input:nth-child(5):focus-visible ~ .tabbed-labels > label:nth-child(5),
+.md-typeset .tabbed-set > input:nth-child(6):focus-visible ~ .tabbed-labels > label:nth-child(6),
+.md-typeset .tabbed-set > input:nth-child(7):focus-visible ~ .tabbed-labels > label:nth-child(7),
+.md-typeset .tabbed-set > input:nth-child(8):focus-visible ~ .tabbed-labels > label:nth-child(8),
+.md-typeset .tabbed-set > input:nth-child(9):focus-visible ~ .tabbed-labels > label:nth-child(9),
+.md-typeset .tabbed-set > input:nth-child(10):focus-visible ~ .tabbed-labels > label:nth-child(10) {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: -2px;
+}
+
+/* Closed search keeps its results panel in the DOM at zero height, and
+   Material makes it a tab stop; hiding it takes it out of the tab order. */
+#__search:not(:checked) ~ .md-header .md-search__scrollwrap {
+    visibility: hidden;
+}
+
         white-space: normal;
     }
 
