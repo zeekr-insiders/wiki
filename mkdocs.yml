@@ -6,8 +6,8 @@ site_url: https://wiki.zeekrinsiders.com.au/
 
 docs_dir: content
 
-# To be confirmed: the wiki has no remote yet. These only build each page's "Suggest an edit"
-# link (GitHub's edit view of its Markdown source); the header shows no repository widget.
+# These build each page's "Suggest an edit" link (GitHub's edit view of its Markdown source);
+# the header shows no repository widget. Nothing is pushed yet, so the branch assumes main.
 repo_url: https://github.com/zeekr-insiders/wiki
 edit_uri: edit/main/content/
 
