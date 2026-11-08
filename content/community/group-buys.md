@@ -1,4 +1,4 @@
-# Group Buys
+# Group buys
 
 Group buys are simple: we pool our orders together to get discounts on accessories and services that would otherwise cost more individually. It's one of the most practical benefits of being part of {{ extra.club.abbreviation }}.
 
@@ -10,7 +10,7 @@ Some group buys are for physical products (mats, screen protectors, mud flaps). 
 
 ## Current group buys
 
-!!! info "Active Group Buys"
+!!! info "Active group buys"
     Current group buys are announced in the Facebook group and tracked here.
 
     *No active group buys at the moment. Check back soon or propose one yourself.*
