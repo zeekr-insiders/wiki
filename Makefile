@@ -1,4 +1,4 @@
-.PHONY: help install run build clean ready lint check citations nav serve dev stop deploy
+.PHONY: help install run build clean ready lint check citations nav labels serve dev stop deploy
 
 # uv run fails to canonicalise script paths on this machine, so we call the
 # venv interpreter directly. Works on Windows and POSIX venv layouts.
@@ -67,7 +67,12 @@ nav:
 	@echo "Checking nav..."
 	$(PY) scripts/check_nav.py mkdocs.yml
 
-ready: clean nav build citations lint check
+# A page is called the same in its H1, the nav and the cards that link to it (scripts/check_labels.py).
+labels:
+	@echo "Checking labels..."
+	$(PY) scripts/check_labels.py site mkdocs.yml
+
+ready: clean nav build citations labels lint check
 	@echo ""
 	@echo "🎉 All checks passed! Ready for commit."
 	@echo ""
