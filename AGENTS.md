@@ -108,11 +108,10 @@ CI runs `mkdocs build --strict` plus the three check scripts on every pull reque
 | `hooks/tables.py` | Lets long cells wrap; short cells stay on one line and wide tables scroll. |
 | `hooks/redirects.py` | Keeps a moved page's old URL working: list it under `extra.redirects` in `mkdocs.yml` (old content path: new one). |
 | `hooks/headings.py` | Keeps the permalink glyph out of heading names for screen readers. |
-| `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and older model-data helpers. |
+| `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and `handover_checklist`. |
 | `data/glossary.yml` | Every glossary term (see Glossary below). |
 | `data/handover-checklist.yml` | The Handover checklist's items, sections and sources (see Handover checklist below). |
 | `scripts/` | The check scripts behind `make nav`, `make citations` and `make labels`. |
-| `templates/` | Page templates for contributors. |
 
 ### Spec cards
 
