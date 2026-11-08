@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="zk zk-wide zk-pair-wide" viewBox="0 0 800 632" role="img" aria-labelledby="kn-home-supply-title kn-home-supply-desc">
+<title id="kn-home-supply-title">From the street to your car: single-phase vs three-phase</title>
+<desc id="kn-home-supply-desc">Power reaches a home charger through the street network (DNSP), the service cable, the meter, the switchboard (main switch, RCD and EV circuit breaker), the wallbox (EVSE) and the car's onboard charger. Single-phase is one live plus neutral: a 32 A circuit gives about 7.4 kW at most. Three-phase is three lives plus neutral: about 11 kW on a 16 A circuit and about 22 kW on 32 A. Figures are nominal, calculated at 230 V and 400 V. A licensed electrician checks the mains cable and board, the network may need notification or approval, and the car's own limit still applies: X RWD 11 kW, 7X 22 kW AC.</desc>
+<defs>
+<style>
+svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
+svg.zk.zk-wide{max-width:none}
+[data-md-color-scheme="slate"] svg.zk{--zk-invm:#595959}
+.zk .bg{fill:var(--bg,#F2F2F2)}
+.zk .f-bg{fill:var(--bg,#F2F2F2)}
+.zk .f-panel{fill:var(--panel,#FFFFFF)}
+.zk .f-ink{fill:var(--ink,#1A1A1A)}
+.zk .f-muted{fill:var(--ink-muted,#595959)}
+.zk .f-accent{fill:var(--accent-ink,#B03C00)}
+.zk .f-tint{fill:var(--ink,#1A1A1A);fill-opacity:.06}
+.zk .f-atint{fill:var(--accent-ink,#B03C00);fill-opacity:.10}
+.zk .f-none{fill:none}
+.zk .s-ink{stroke:var(--ink,#1A1A1A)}
+.zk .s-muted{stroke:var(--ink-muted,#595959)}
+.zk .s-line{stroke:var(--line-strong,rgba(26,26,26,.36))}
+.zk .s-rule{stroke:var(--line,rgba(26,26,26,.14))}
+.zk .s-accent{stroke:var(--accent-ink,#B03C00)}
+.zk .s-bg{stroke:var(--bg,#F2F2F2)}
+.zk .s-inv{stroke:var(--bg,#F2F2F2)}
+.zk .icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.zk text{font-family:var(--font-body,'IBM Plex Sans Condensed','Arial Narrow',ui-sans-serif,sans-serif);font-weight:500}
+.zk text.d{font-family:var(--font-display,'Space Grotesk',ui-sans-serif,system-ui,sans-serif)}
+.zk text.w4{font-weight:400}.zk text.w6{font-weight:600}
+.zk .c-ink{fill:var(--ink,#1A1A1A)}
+.zk .c-muted{fill:var(--ink-muted,#595959)}
+.zk .c-accent{fill:var(--accent-ink,#B03C00)}
+.zk .c-inv{fill:var(--bg,#F2F2F2)}
+.zk .c-invm{fill:var(--zk-invm)}
+@media (max-width:599px){svg.zk-pair-wide{display:none}}
+@media (min-width:600px){svg.zk-pair-narrow{display:none}}
+</style>
+<marker id="kn-home-supply-a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path class="f-muted" d="M0 0L8 4L0 8z"/></marker>
+<marker id="kn-home-supply-ai" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path class="f-ink" d="M0 0L10 5L0 10z"/></marker>
+<marker id="kn-home-supply-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
+<pattern id="kn-home-supply-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
+</defs>
+<rect class="bg" width="800" height="632"/>
+<text class="w6 c-muted" x="40" y="36" font-size="12" letter-spacing="0.14em">HOME CHARGING: YOUR SUPPLY</text>
+<text class="d w6 c-ink" x="40" y="86" font-size="38">Single-phase tops out at about 7.4 kW.</text>
+<text class="c-muted" x="40" y="116" font-size="16">Three-phase lifts the ceiling to 22 kW. The car's own AC limit still applies.</text>
+<line class="s-muted" x1="144" y1="204" x2="160" y2="204" stroke-width="1.5" marker-end="url(#kn-home-supply-a)"/>
+<line class="s-muted" x1="248" y1="204" x2="264" y2="204" stroke-width="1.5" marker-end="url(#kn-home-supply-a)"/>
+<line class="s-muted" x1="344" y1="204" x2="360" y2="204" stroke-width="1.5" marker-end="url(#kn-home-supply-a)"/>
+<line class="s-muted" x1="504" y1="204" x2="520" y2="204" stroke-width="1.5" marker-end="url(#kn-home-supply-a)"/>
+<line class="s-muted" x1="624" y1="204" x2="640" y2="204" stroke-width="1.5" marker-end="url(#kn-home-supply-a)"/>
+<rect class="f-panel s-line" x="40" y="148" width="104" height="112" rx="2" stroke-width="1"/>
+<g class="icon s-ink" stroke-width="1.8" transform="translate(50 158) scale(0.833333)" aria-hidden="true"><path d="M12 2v20"/><path d="M2 5h20"/><path d="M3 3v2"/><path d="M7 3v2"/><path d="M17 3v2"/><path d="M21 3v2"/><path d="m19 5-7 7-7-7"/></g>
+<text class="d w6 c-ink" x="50" y="200" font-size="15">Street</text>
+<text class="d w6 c-ink" x="50" y="218" font-size="15">network</text>
+<text class="c-muted" x="50" y="236" font-size="13">DNSP</text>
+<rect class="f-panel s-line" x="160" y="148" width="88" height="112" rx="2" stroke-width="1"/>
+<g class="icon s-ink" stroke-width="1.8" transform="translate(170 158) scale(0.833333)" aria-hidden="true"><path d="M17 19a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1z"/><path d="M17 21v-2"/><path d="M19 14V6.5a1 1 0 0 0-7 0v11a1 1 0 0 1-7 0V10"/><path d="M21 21v-2"/><path d="M3 5V3"/><path d="M4 10a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a2 2 0 0 1-2 2z"/><path d="M7 5V3"/></g>
+<text class="d w6 c-ink" x="170" y="200" font-size="15">Service</text>
+<text class="d w6 c-ink" x="170" y="218" font-size="15">cable</text>
+<rect class="f-panel s-line" x="264" y="148" width="80" height="112" rx="2" stroke-width="1"/>
+<g class="icon s-ink" stroke-width="1.8" transform="translate(274 158) scale(0.833333)" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></g>
+<text class="d w6 c-ink" x="274" y="200" font-size="15">Meter</text>
+<rect class="f-panel s-line" x="360" y="148" width="144" height="112" rx="2" stroke-width="1"/>
+<g class="icon s-ink" stroke-width="1.8" transform="translate(370 158) scale(0.833333)" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></g>
+<text class="d w6 c-ink" x="370" y="200" font-size="15">Switchboard</text>
+<text class="c-muted" x="370" y="218" font-size="13">Main switch, RCD, EV</text>
+<text class="c-muted" x="370" y="234" font-size="13">circuit breaker</text>
+<rect class="f-panel s-line" x="520" y="148" width="104" height="112" rx="2" stroke-width="1"/>
+<g class="icon s-ink" stroke-width="1.8" transform="translate(530 158) scale(0.833333)" aria-hidden="true"><path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"/><path d="m2 22 3-3"/><path d="M7.5 13.5 10 11"/><path d="M10.5 16.5 13 14"/><path d="m18 3-4 4h6l-4 4"/></g>
+<text class="d w6 c-ink" x="530" y="200" font-size="15">Wallbox</text>
+<text class="c-muted" x="530" y="218" font-size="13">EVSE</text>
+<rect class="f-panel s-line" x="640" y="148" width="120" height="112" rx="2" stroke-width="1"/>
+<g class="icon s-ink" stroke-width="1.8" transform="translate(650 158) scale(0.833333)" aria-hidden="true"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></g>
+<text class="d w6 c-ink" x="650" y="200" font-size="15">Car</text>
+<text class="c-muted" x="650" y="218" font-size="13">Onboard charger</text>
+<rect class="f-panel s-ink" x="40" y="292" width="348" height="192" rx="2" stroke-width="1.5"/>
+<text class="w6 c-ink" x="56" y="320" font-size="13" letter-spacing="0.12em">A  SINGLE-PHASE</text>
+<line class="s-ink" x1="56" y1="340" x2="120" y2="340" stroke-width="2"/>
+<text class="w6 c-muted" x="126" y="344" font-size="11">L</text>
+<line class="s-muted" x1="56" y1="354" x2="120" y2="354" stroke-width="2" stroke-dasharray="4 3"/>
+<text class="w6 c-muted" x="126" y="358" font-size="11">N</text>
+<text class="c-muted" x="152" y="352" font-size="14">1 live + neutral</text>
+<text class="d w6 c-accent" x="56" y="406" font-size="40">7.4 kW</text>
+<text class="c-muted" x="56" y="430" font-size="14">32 A circuit, about 7.4 kW max</text>
+<rect class="f-panel s-line" x="412" y="292" width="348" height="192" rx="2" stroke-width="1"/>
+<text class="w6 c-ink" x="428" y="320" font-size="13" letter-spacing="0.12em">B  THREE-PHASE</text>
+<line class="s-ink" x1="428" y1="340" x2="492" y2="340" stroke-width="2"/>
+<text class="w6 c-muted" x="498" y="344" font-size="11">L1</text>
+<line class="s-ink" x1="428" y1="354" x2="492" y2="354" stroke-width="2"/>
+<text class="w6 c-muted" x="498" y="358" font-size="11">L2</text>
+<line class="s-ink" x1="428" y1="368" x2="492" y2="368" stroke-width="2"/>
+<text class="w6 c-muted" x="498" y="372" font-size="11">L3</text>
+<line class="s-muted" x1="428" y1="382" x2="492" y2="382" stroke-width="2" stroke-dasharray="4 3"/>
+<text class="w6 c-muted" x="498" y="386" font-size="11">N</text>
+<text class="c-muted" x="524" y="366" font-size="14">3 lives + neutral</text>
+<text class="d w6 c-ink" x="428" y="440" font-size="40">11 kW</text>
+<text class="c-muted" x="428" y="464" font-size="14">16 A circuit, about 11 kW</text>
+<text class="d w6 c-ink" x="586" y="440" font-size="40">22 kW</text>
+<text class="c-muted" x="586" y="464" font-size="14">32 A circuit, about 22 kW</text>
+<text class="c-muted" x="40" y="508" font-size="12">kW figures: nominal, 230 V / 400 V, calculated</text>
+<line class="s-rule" x1="40" y1="528" x2="760" y2="528" stroke-width="1"/>
+<g class="icon s-muted" stroke-width="1.8" transform="translate(40 544) scale(0.833333)" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></g>
+<text class="c-ink" x="70" y="559" font-size="13">Licensed electrician checks mains</text>
+<text class="c-ink" x="70" y="576" font-size="13">cable and board capacity</text>
+<g class="icon s-muted" stroke-width="1.8" transform="translate(288 544) scale(0.833333)" aria-hidden="true"><path d="M12 2v20"/><path d="M2 5h20"/><path d="M3 3v2"/><path d="M7 3v2"/><path d="M17 3v2"/><path d="M21 3v2"/><path d="m19 5-7 7-7-7"/></g>
+<text class="c-ink" x="318" y="559" font-size="13">Network (DNSP) may need</text>
+<text class="c-ink" x="318" y="576" font-size="13">notification or approval before</text>
+<text class="c-ink" x="318" y="593" font-size="13">connection</text>
+<g class="icon s-muted" stroke-width="1.8" transform="translate(536 544) scale(0.833333)" aria-hidden="true"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></g>
+<text class="c-ink" x="566" y="559" font-size="13">Car limit still applies: X RWD 11 kW,</text>
+<text class="c-ink" x="566" y="576" font-size="13">7X 22 kW AC</text>
+</svg>

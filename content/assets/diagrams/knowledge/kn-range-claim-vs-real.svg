@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 697" role="img" aria-labelledby="kn-range-claim-vs-real-title kn-range-claim-vs-real-desc">
+<title id="kn-range-claim-vs-real-title">Claimed vs real-world range, five cars</title>
+<desc id="kn-range-claim-vs-real-desc">Bar chart of claimed and real-world range for five cars in AAA testing. Smart #3 Premium 455 km claimed, 432 real, 5% short. Tesla Model Y Long Range 533 and 490, 8%. Kia EV6 Air 528 and 484, 8%. BYD Atto 3 Extended Range 420 (WLTP) and 369, 12%. Tesla Model 3 RWD 513 and 441, 14%. AAA Real World Testing Program, reported by NRMA, 6 August 2025. No Zeekr models tested.</desc>
+<defs>
+<style>
+svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
+svg.zk.zk-wide{max-width:none}
+[data-md-color-scheme="slate"] svg.zk{--zk-invm:#595959}
+.zk .bg{fill:var(--bg,#F2F2F2)}
+.zk .f-bg{fill:var(--bg,#F2F2F2)}
+.zk .f-panel{fill:var(--panel,#FFFFFF)}
+.zk .f-ink{fill:var(--ink,#1A1A1A)}
+.zk .f-muted{fill:var(--ink-muted,#595959)}
+.zk .f-accent{fill:var(--accent-ink,#B03C00)}
+.zk .f-tint{fill:var(--ink,#1A1A1A);fill-opacity:.06}
+.zk .f-atint{fill:var(--accent-ink,#B03C00);fill-opacity:.10}
+.zk .f-none{fill:none}
+.zk .s-ink{stroke:var(--ink,#1A1A1A)}
+.zk .s-muted{stroke:var(--ink-muted,#595959)}
+.zk .s-line{stroke:var(--line-strong,rgba(26,26,26,.36))}
+.zk .s-rule{stroke:var(--line,rgba(26,26,26,.14))}
+.zk .s-accent{stroke:var(--accent-ink,#B03C00)}
+.zk .s-bg{stroke:var(--bg,#F2F2F2)}
+.zk .s-inv{stroke:var(--bg,#F2F2F2)}
+.zk .icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.zk text{font-family:var(--font-body,'IBM Plex Sans Condensed','Arial Narrow',ui-sans-serif,sans-serif);font-weight:500}
+.zk text.d{font-family:var(--font-display,'Space Grotesk',ui-sans-serif,system-ui,sans-serif)}
+.zk text.w4{font-weight:400}.zk text.w6{font-weight:600}
+.zk .c-ink{fill:var(--ink,#1A1A1A)}
+.zk .c-muted{fill:var(--ink-muted,#595959)}
+.zk .c-accent{fill:var(--accent-ink,#B03C00)}
+.zk .c-inv{fill:var(--bg,#F2F2F2)}
+.zk .c-invm{fill:var(--zk-invm)}
+@media (max-width:599px){svg.zk-pair-wide{display:none}}
+@media (min-width:600px){svg.zk-pair-narrow{display:none}}
+</style>
+<marker id="kn-range-claim-vs-real-a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path class="f-muted" d="M0 0L8 4L0 8z"/></marker>
+<marker id="kn-range-claim-vs-real-ai" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path class="f-ink" d="M0 0L10 5L0 10z"/></marker>
+<marker id="kn-range-claim-vs-real-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
+<pattern id="kn-range-claim-vs-real-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
+</defs>
+<rect class="bg" width="480" height="697"/>
+<text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">RANGE IN THE REAL WORLD</text>
+<text class="d w6 c-ink" x="24" y="80" font-size="32">Real range ran 5% to 14%</text>
+<text class="d w6 c-ink" x="24" y="115" font-size="32">under the claim.</text>
+<rect class="f-none s-ink" x="24" y="139" width="24" height="14" rx="1" stroke-width="1.5"/>
+<text class="w6 c-ink" x="56" y="151" font-size="14">Claimed</text>
+<rect class="f-ink" x="136" y="139" width="24" height="14" rx="1"/>
+<text class="w6 c-ink" x="168" y="151" font-size="14">Real world</text>
+<text class="w6 c-muted" x="456" y="151" font-size="14" text-anchor="end">Shortfall</text>
+<text class="d w6 c-ink" x="24" y="191" font-size="15">Smart #3 Premium</text>
+<rect class="f-none s-ink" x="24" y="201" width="273" height="20" rx="1" stroke-width="1.5"/>
+<rect class="f-ink" x="24" y="201" width="259.2" height="20" rx="1"/>
+<text class="c-muted" x="24" y="241" font-size="14">432 km real of 455 km claimed</text>
+<text class="d w6 c-ink" x="456" y="219" font-size="24" text-anchor="end">5%</text>
+<text class="d w6 c-ink" x="24" y="275" font-size="15">Tesla Model Y Long Range</text>
+<rect class="f-none s-ink" x="24" y="285" width="319.8" height="20" rx="1" stroke-width="1.5"/>
+<rect class="f-ink" x="24" y="285" width="294" height="20" rx="1"/>
+<text class="c-muted" x="24" y="325" font-size="14">490 km real of 533 km claimed</text>
+<text class="d w6 c-ink" x="456" y="303" font-size="24" text-anchor="end">8%</text>
+<text class="d w6 c-ink" x="24" y="359" font-size="15">Kia EV6 Air</text>
+<rect class="f-none s-ink" x="24" y="369" width="316.8" height="20" rx="1" stroke-width="1.5"/>
+<rect class="f-ink" x="24" y="369" width="290.4" height="20" rx="1"/>
+<text class="c-muted" x="24" y="409" font-size="14">484 km real of 528 km claimed</text>
+<text class="d w6 c-ink" x="456" y="387" font-size="24" text-anchor="end">8%</text>
+<text class="d w6 c-ink" x="24" y="443" font-size="15">BYD Atto 3 Extended Range</text>
+<rect class="f-none s-ink" x="24" y="453" width="252" height="20" rx="1" stroke-width="1.5"/>
+<rect class="f-ink" x="24" y="453" width="221.4" height="20" rx="1"/>
+<text class="c-muted" x="24" y="493" font-size="14">369 km real of 420 km claimed (WLTP)</text>
+<text class="d w6 c-ink" x="456" y="471" font-size="24" text-anchor="end">12%</text>
+<text class="d w6 c-ink" x="24" y="527" font-size="15">Tesla Model 3 RWD</text>
+<rect class="f-none s-ink" x="24" y="537" width="307.8" height="20" rx="1" stroke-width="1.5"/>
+<rect class="f-ink" x="24" y="537" width="264.6" height="20" rx="1"/>
+<rect class="f-atint s-accent" x="288.6" y="537" width="43.2" height="20" rx="0" stroke-width="2"/>
+<text class="c-muted" x="24" y="577" font-size="14">441 km real of 513 km claimed</text>
+<text class="d w6 c-accent" x="456" y="555" font-size="24" text-anchor="end">14%</text>
+<line class="s-line" x1="24" y1="599" x2="384" y2="599" stroke-width="1"/>
+<line class="s-line" x1="24" y1="599" x2="24" y2="605" stroke-width="1"/>
+<text class="c-muted" x="24" y="623" font-size="14">0</text>
+<line class="s-line" x1="144" y1="599" x2="144" y2="605" stroke-width="1"/>
+<text class="c-muted" x="144" y="623" font-size="14" text-anchor="middle">200</text>
+<line class="s-line" x1="264" y1="599" x2="264" y2="605" stroke-width="1"/>
+<text class="c-muted" x="264" y="623" font-size="14" text-anchor="middle">400</text>
+<line class="s-line" x1="384" y1="599" x2="384" y2="605" stroke-width="1"/>
+<text class="c-muted" x="384" y="623" font-size="14" text-anchor="middle">600</text>
+<text class="c-muted" x="400" y="623" font-size="14">km</text>
+<line class="s-rule" x1="24" y1="635" x2="456" y2="635" stroke-width="1"/>
+<text class="c-muted" x="24" y="655" font-size="14">AAA Real World Testing Program, reported by NRMA, 6 August 2025. No</text>
+<text class="c-muted" x="24" y="673" font-size="14">Zeekr models tested.</text>
+</svg>

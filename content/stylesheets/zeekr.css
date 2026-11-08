@@ -1634,6 +1634,29 @@ span .zi-icon {
     border-radius: 0;
 }
 
+/* Inline diagrams (content/assets/diagrams, pulled in with snippets). Material
+   sizes a figure to its content, which collapses an SVG set to width: 100%, so
+   the figure takes the column instead. Each SVG caps itself at 600px; a wide
+   and narrow pair (.zk-wide) uses the full column. */
+.md-typeset figure.zi-diagram {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: var(--sp-6) 0;
+    text-align: left;
+}
+
+.md-typeset figure.zi-diagram:has(.zk-wide) {
+    max-width: none;
+}
+
+.md-typeset figure.zi-diagram figcaption {
+    max-width: none;
+    margin: var(--sp-2) 0 0;
+    font-style: normal;
+    text-align: left;
+}
+
 /* 14. Masthead: the site's black band with the badge, the six club sections
    (Wiki current) and Join us, over a 2px orange rule. Not sticky, as on the
    site; the wiki bar below it sticks. ------------------------------------- */

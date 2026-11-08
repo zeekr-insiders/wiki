@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 601" role="img" aria-labelledby="kn-tank-and-tap-title kn-tank-and-tap-desc">
+<title id="kn-tank-and-tap-title">The tank and the tap</title>
+<desc id="kn-tank-and-tap-desc">The battery is a tank measured in kWh, the energy stored. The charger or motor is a tap measured in kW, power, the rate energy flows. Time in hours equals energy in kWh divided by power in kW: 60 kWh needed at 7 kW is about 8.6 hours. A motor output of 335 kW is the rate the motor can draw, not how much energy is stored.</desc>
+<defs>
+<style>
+svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
+svg.zk.zk-wide{max-width:none}
+[data-md-color-scheme="slate"] svg.zk{--zk-invm:#595959}
+.zk .bg{fill:var(--bg,#F2F2F2)}
+.zk .f-bg{fill:var(--bg,#F2F2F2)}
+.zk .f-panel{fill:var(--panel,#FFFFFF)}
+.zk .f-ink{fill:var(--ink,#1A1A1A)}
+.zk .f-muted{fill:var(--ink-muted,#595959)}
+.zk .f-accent{fill:var(--accent-ink,#B03C00)}
+.zk .f-tint{fill:var(--ink,#1A1A1A);fill-opacity:.06}
+.zk .f-atint{fill:var(--accent-ink,#B03C00);fill-opacity:.10}
+.zk .f-none{fill:none}
+.zk .s-ink{stroke:var(--ink,#1A1A1A)}
+.zk .s-muted{stroke:var(--ink-muted,#595959)}
+.zk .s-line{stroke:var(--line-strong,rgba(26,26,26,.36))}
+.zk .s-rule{stroke:var(--line,rgba(26,26,26,.14))}
+.zk .s-accent{stroke:var(--accent-ink,#B03C00)}
+.zk .s-bg{stroke:var(--bg,#F2F2F2)}
+.zk .s-inv{stroke:var(--bg,#F2F2F2)}
+.zk .icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.zk text{font-family:var(--font-body,'IBM Plex Sans Condensed','Arial Narrow',ui-sans-serif,sans-serif);font-weight:500}
+.zk text.d{font-family:var(--font-display,'Space Grotesk',ui-sans-serif,system-ui,sans-serif)}
+.zk text.w4{font-weight:400}.zk text.w6{font-weight:600}
+.zk .c-ink{fill:var(--ink,#1A1A1A)}
+.zk .c-muted{fill:var(--ink-muted,#595959)}
+.zk .c-accent{fill:var(--accent-ink,#B03C00)}
+.zk .c-inv{fill:var(--bg,#F2F2F2)}
+.zk .c-invm{fill:var(--zk-invm)}
+@media (max-width:599px){svg.zk-pair-wide{display:none}}
+@media (min-width:600px){svg.zk-pair-narrow{display:none}}
+</style>
+<marker id="kn-tank-and-tap-a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path class="f-muted" d="M0 0L8 4L0 8z"/></marker>
+<marker id="kn-tank-and-tap-ai" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path class="f-ink" d="M0 0L10 5L0 10z"/></marker>
+<marker id="kn-tank-and-tap-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
+<pattern id="kn-tank-and-tap-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
+</defs>
+<rect class="bg" width="480" height="601"/>
+<text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">ENERGY AND POWER: THE TANK AND THE TAP</text>
+<text class="d w6 c-ink" x="24" y="76" font-size="28">A bigger tap fills the same tank</text>
+<text class="d w6 c-ink" x="24" y="106" font-size="28">faster.</text>
+<text class="c-muted" x="24" y="135" font-size="15">It does not make the tank bigger.</text>
+<path class="f-none s-accent" d="M444 191L128 191Q120 191 120 199L120 237" stroke-width="6" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#kn-tank-and-tap-aa)"/>
+<circle class="f-bg s-accent" cx="320" cy="191" r="11" stroke-width="3"/>
+<line class="s-accent" x1="320" y1="180" x2="320" y2="165" stroke-width="3"/>
+<line class="s-accent" x1="306" y1="165" x2="334" y2="165" stroke-width="3"/>
+<text class="d w6 c-ink" x="24" y="223" font-size="18">Battery</text>
+<rect class="f-ink" x="24" y="239" width="176" height="168" rx="2"/>
+<g class="icon s-inv" stroke-width="1.28571" transform="translate(40 255) scale(1.16667)" aria-hidden="true"><path d="M 22 14 L 22 10"/><rect x="2" y="6" width="16" height="12" rx="2"/></g>
+<text class="d w6 c-inv" x="40" y="347" font-size="48">kWh</text>
+<text class="w6 c-invm" x="40" y="379" font-size="16">Energy stored</text>
+<text class="d w6 c-ink" x="232" y="255" font-size="18">Charger or motor</text>
+<text class="d w6 c-ink" x="232" y="323" font-size="48">kW</text>
+<text class="w6 c-muted" x="232" y="351" font-size="16">Power: the rate energy flows</text>
+<line class="s-rule" x1="24" y1="431" x2="456" y2="431" stroke-width="1"/>
+<text class="d w6 c-ink" x="24" y="463" font-size="20">time (h) = energy (kWh) / power (kW)</text>
+<text class="w6 c-ink" x="24" y="495" font-size="17">60 kWh needed / 7 kW = about 8.6 hours</text>
+<line class="s-rule" x1="24" y1="519" x2="456" y2="519" stroke-width="1"/>
+<g class="icon s-muted" stroke-width="1.8" transform="translate(24 537) scale(0.833333)" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></g>
+<text class="c-muted" x="56" y="553" font-size="15">Motor output 335 kW means the rate the motor can draw, not</text>
+<text class="c-muted" x="56" y="573" font-size="15">how much energy is stored.</text>
+</svg>
