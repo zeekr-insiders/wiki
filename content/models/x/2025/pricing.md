@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Zeekr X Pricing
+# Zeekr X prices
 
 *Last checked: 8 November 2026.*
 

@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Zeekr 7X prices and options
+# Zeekr 7X prices
 
 *Last checked: 8 November 2026.*
 

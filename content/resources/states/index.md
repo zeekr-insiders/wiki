@@ -6,6 +6,8 @@ last_checked: 2026-11-08
 
 Duty, registration, incentives and servicing differ by state. Pick yours, or start with National for roadside cover and federal tax.
 
+## States and territories
+
 <div class="card-grid">
     <div class="z-card">
         <h3>National</h3>
@@ -49,7 +51,7 @@ Duty, registration, incentives and servicing differ by state. Pick yours, or sta
         <a href="../tas/" class="go">TAS</a>
     </div>
     <div class="z-card">
-        <h3>ACT</h3>
+        <h3>Australian Capital Territory</h3>
         <p>Incentives, duty and EV loans.</p>
         <a href="../act/" class="go">ACT</a>
     </div>

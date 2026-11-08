@@ -163,58 +163,58 @@ plugins:
 nav:
   - Home: index.md
 
-  - Getting Started:
+  - Getting started:
       - getting-started/index.md
-      - EV Basics: getting-started/ev-basics.md
+      - EV basics: getting-started/ev-basics.md
       - Why Zeekr?: getting-started/why-zeekr.md
-      - Choosing a Model: getting-started/choosing-model.md
+      - Choosing a model: getting-started/choosing-model.md
 
   - Buying:
       - buying/index.md
-      - Where to Buy: buying/dealers.md
-      - Pricing Guide: buying/pricing.md
-      - Finance Options: buying/finance.md
-      - Taking Delivery: buying/delivery.md
+      - Where to buy and service: buying/dealers.md
+      - Prices and on-road costs: buying/pricing.md
+      - Finance options: buying/finance.md
+      - Taking delivery: buying/delivery.md
 
   - Models:
       - models/index.md
       - Zeekr 7X:
           - Overview: models/7x/overview.md
-          - Which 7X Do I Have?: models/7x/which-7x.md
+          - Which 7X do I have?: models/7x/which-7x.md
           - Specifications: models/7x/2025/specifications.md
-          - Pricing: models/7x/2025/pricing.md
-          - Service Schedule: models/7x/2025/service-schedule.md
-          - Known Issues: models/7x/knowledge-base/7x-issues.md
-          - Modifications: models/7x/knowledge-base/7x-mods.md
+          - Prices: models/7x/2025/pricing.md
+          - Servicing and warranty: models/7x/2025/service-schedule.md
+          - Known issues and fixes: models/7x/knowledge-base/7x-issues.md
+          - Owner modifications: models/7x/knowledge-base/7x-mods.md
       - Zeekr X:
           - Overview: models/x/overview.md
           - Specifications: models/x/2025/specifications.md
-          - Pricing: models/x/2025/pricing.md
-          - Service Schedule: models/x/2025/service-schedule.md
+          - Prices: models/x/2025/pricing.md
+          - Servicing and warranty: models/x/2025/service-schedule.md
       - Zeekr 009:
           - Overview: models/009/overview.md
           - Specifications: models/009/specifications.md
-          - Pricing: models/009/pricing.md
-          - Service Schedule: models/009/service-schedule.md
-      - Model Comparison: comparisons/model-comparison-table.md
+          - Prices: models/009/pricing.md
+          - Servicing and warranty: models/009/service-schedule.md
+      - Model comparison: comparisons/model-comparison-table.md
 
   - Ownership:
       - ownership/index.md
-      - I've Just Got My Car: ownership/first-30-days.md
+      - I've just got my car: ownership/first-30-days.md
       - Charging:
-          - Home Setup: guides/charging/home-setup.md
-          - Public Networks: guides/charging/public-networks.md
-          - Road Trips: guides/charging/road-trips.md
+          - Home charging: guides/charging/home-setup.md
+          - Public charging: guides/charging/public-networks.md
+          - Road trips: guides/charging/road-trips.md
       - Insurance: ownership/insurance.md
       - Accessories:
           - ownership/accessories/index.md
-          - Protection (PPF/Tint): ownership/accessories/protection.md
-          - Recommended Gear: ownership/accessories/recommended.md
-          - Choosing an Installer: ownership/accessories/vendors.md
+          - Paint and window protection: ownership/accessories/protection.md
+          - Recommended accessories: ownership/accessories/recommended.md
+          - Choosing an installer: ownership/accessories/vendors.md
 
   - Community:
       - community/index.md
-      - Events & Meetups: community/events.md
+      - Drives and events: community/events.md
       - Group Buys: community/group-buys.md
       - Forum: community/forum.md
 
@@ -223,7 +223,7 @@ nav:
       - National: resources/national/index.md
       # The section's own landing page comes first and untitled: with navigation.indexes, Material
       # takes a section's first index.md as the section itself, which once swallowed Victoria.
-      - By State:
+      - By state and territory:
           - resources/states/index.md
           - Victoria: resources/vic/index.md
           - New South Wales: resources/nsw/index.md
@@ -231,6 +231,6 @@ nav:
           - South Australia: resources/sa/index.md
           - Western Australia: resources/wa/index.md
           - Tasmania: resources/tas/index.md
-          - ACT: resources/act/index.md
+          - Australian Capital Territory: resources/act/index.md
           - Northern Territory: resources/nt/index.md
-      - Zeekr vs Competitors: comparisons/zeekr-vs-competitors.md
+      - Zeekr vs other EVs: comparisons/zeekr-vs-competitors.md

@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Zeekr X Specifications (Australia)
+# Zeekr X specifications
 
 *Last checked: 8 November 2026.*
 

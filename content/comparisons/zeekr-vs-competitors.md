@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Zeekr vs Other EVs
+# Zeekr vs other EVs
 
 *Last checked: 8 November 2026.*
 

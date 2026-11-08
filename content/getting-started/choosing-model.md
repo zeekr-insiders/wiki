@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Choosing Your Zeekr: Which Model Suits You?
+# Choosing a model
 
 *Last checked: 8 November 2026.*
 

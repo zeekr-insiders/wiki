@@ -1,4 +1,4 @@
-# Ownership Resources
+# Ownership
 
 Practical guidance for living with your Zeekr, whether you collected it last week or last year.
 
@@ -9,9 +9,9 @@ New to Zeekr ownership? Start here:
 <div class="card-grid">
     <div class="z-card">
         <img src="../assets/icons/icon-calendar-check.svg" class="zi-icon zi-icon--card" alt="">
-        <h3>First 30 Days</h3>
+        <h3>I've just got my car</h3>
         <p>Essential steps after taking delivery.</p>
-        <a class="go" href="first-30-days/">First 30 Days</a>
+        <a class="go" href="first-30-days/">I've just got my car</a>
     </div>
     <div class="z-card">
         <img src="../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
@@ -34,27 +34,27 @@ Protect and enhance your Zeekr:
 <div class="card-grid">
     <div class="z-card">
         <img src="../assets/icons/icon-accessories.svg" class="zi-icon zi-icon--card" alt="">
-        <h3>Accessories Overview</h3>
+        <h3>Accessories</h3>
         <p>Browse recommended accessories and modifications.</p>
         <a class="go" href="accessories/">Accessories</a>
     </div>
     <div class="z-card">
         <img src="../assets/icons/icon-protection.svg" class="zi-icon zi-icon--card" alt="">
-        <h3>Protection</h3>
+        <h3>Paint and window protection</h3>
         <p>PPF, ceramic coating, and window tinting.</p>
         <a class="go" href="accessories/protection/">Protection</a>
     </div>
     <div class="z-card">
         <img src="../assets/icons/icon-recommended.svg" class="zi-icon zi-icon--card" alt="">
-        <h3>Recommended Gear</h3>
+        <h3>Recommended accessories</h3>
         <p>Accessories owners have found useful.</p>
         <a class="go" href="accessories/recommended/">Recommended</a>
     </div>
     <div class="z-card">
         <img src="../assets/icons/icon-service.svg" class="zi-icon zi-icon--card" alt="">
-        <h3>Choosing an Installer</h3>
+        <h3>Choosing an installer</h3>
         <p>How to pick a PPF, tint or accessory installer.</p>
-        <a class="go" href="accessories/vendors/">Vendors</a>
+        <a class="go" href="accessories/vendors/">Installers</a>
     </div>
 </div>
 

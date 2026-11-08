@@ -1,4 +1,4 @@
-# About Zeekr Insiders
+# Community
 
 Run by owners, for owners. Independent of Zeekr Australia, and happy to work with them where it helps owners.
 

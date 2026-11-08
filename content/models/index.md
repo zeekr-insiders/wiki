@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Zeekr Models
+# Models
 
 *Last checked: 8 November 2026.*
 

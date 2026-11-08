@@ -1,4 +1,4 @@
-# Community Forum
+# Forum
 
 We're setting up a proper forum for {{ extra.club.full_name }}. It's not quite ready yet, but here's what you can expect.
 

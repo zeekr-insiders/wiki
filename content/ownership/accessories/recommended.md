@@ -1,4 +1,4 @@
-# Recommended Accessories
+# Recommended accessories
 
 Practical accessories that {{ extra.club.full_name }} members have found useful. These are owner suggestions, not {{ extra.club.abbreviation }} endorsements. Always check fitment for your model and model year before you buy: the MY27 7X has a revised centre console, so console organisers and some mats made for the MY25/MY26 car may not fit [^2].
 

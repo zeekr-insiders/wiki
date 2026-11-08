@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Zeekr 009 Specifications
+# Zeekr 009 specifications
 
 *Last checked: 8 November 2026.*
 

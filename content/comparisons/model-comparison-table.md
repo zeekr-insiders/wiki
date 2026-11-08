@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Model Comparison Table
+# Model comparison
 
 *Last checked: 8 November 2026.*
 

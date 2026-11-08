@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Road Trip Charging Guide
+# Road trips
 
 *Last checked: 8 November 2026.*
 

@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Taking Delivery of Your Zeekr
+# Taking delivery
 
 *Last checked: 8 November 2026.*
 

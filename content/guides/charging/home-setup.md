@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Home Charging Setup Guide
+# Home charging
 
 *Last checked: 8 November 2026.*
 

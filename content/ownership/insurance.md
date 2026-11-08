@@ -1,4 +1,4 @@
-# Insurance for Your Zeekr
+# Insurance
 
 Insuring an EV is mostly like insuring any car, with a few extra things to check. This page is general guidance, not advice on any particular policy.
 

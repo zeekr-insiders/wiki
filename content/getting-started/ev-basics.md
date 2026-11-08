@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# EV Basics
+# EV basics
 
 *Last checked: 8 November 2026.*
 

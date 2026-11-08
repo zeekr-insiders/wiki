@@ -2,7 +2,7 @@
 last_checked: 2026-11-08
 ---
 
-# Public Charging in Australia
+# Public charging
 
 *Last checked: 8 November 2026.*
 
