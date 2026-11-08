@@ -89,7 +89,7 @@ extra:
       - {path: /garage, icon: garage, short: Garage, text: "Our stories & blog"}
       - {path: /insiders, icon: people, short: The Insiders, text: Meet the team}
       - {forum: true, icon: forum, short: Forum, text: Ask the forum}
-      - {wiki: true, icon: book, short: Wiki, text: Owner tips}
+      - {wiki: true, icon: book, short: Wiki, text: Master your Zeekr}
     og_image: "assets/img/og-default.png"
   # Same three channels, in the same order, as the front door footer (web-home src/lib/data/socials.json).
   social:
