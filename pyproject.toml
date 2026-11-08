@@ -6,7 +6,8 @@ authors = [
     {name = "Zeekr Insiders Australia"}
 ]
 readme = "README.md"
-license = {text = "MIT"}
+# The code is MIT. The written content is CC BY-NC-SA 4.0 and images belong to their owners (LICENSE-CONTENT.md).
+license = {file = "LICENSE"}
 requires-python = ">=3.11"
 dependencies = [
     "mkdocs-material>=9.6.0",
