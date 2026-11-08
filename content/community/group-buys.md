@@ -153,4 +153,4 @@ The organiser will do their best to help, but ultimately group buys operate on g
 
 ---
 
-*Want to propose a group buy? Post in the Facebook group or email [{{ extra.club.contact_email }}](mailto:{{ extra.club.contact_email }}) with your idea.*
+*Want to propose a group buy? Post in the Facebook group or use [the contact form]({{ extra.club.contact_url }}) with your idea.*
