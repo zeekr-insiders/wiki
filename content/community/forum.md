@@ -14,9 +14,9 @@ The forum will be the place for:
 
 ### What the Wiki Is For
 
-This wiki is for **reference material**—guides, specifications, how-tos, and documented knowledge. Think of it as the manual.
+This wiki is for **reference material**: guides, specifications, how-tos, and documented knowledge. Think of it as the manual.
 
-The forum is for **conversations**—everything else.
+The forum is for **conversations**: everything else.
 
 ## Why a Forum?
 
@@ -55,7 +55,7 @@ The forum will be for deeper discussions and building a searchable knowledge bas
 
 We're thinking something like:
 
-- **New Owners**: First 30 days questions, delivery experiences, getting started
+- **New Owners**: First-weeks questions, delivery experiences, getting started
 - **Models**: Dedicated sections for 7X, X, and 009
 - **Charging & Range**: Home charging, public networks, road trips
 - **Maintenance & Service**: Servicing, repairs, warranties, recalls
@@ -104,7 +104,7 @@ In the meantime, use the Facebook group for discussions and questions.
 
 ## Questions About the Forum?
 
-Use [the contact form]({{ extra.club.contact_url }}) or post in the Facebook group.
+Use [the contact form](https://zeekrinsiders.com.au/contact) or ask in the club group chat.
 
 ---
 

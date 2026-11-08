@@ -155,6 +155,7 @@ nav:
       - models/index.md
       - Zeekr 7X:
           - Overview: models/7x/overview.md
+          - Which 7X Do I Have?: models/7x/which-7x.md
           - Specifications: models/7x/2025/specifications.md
           - Pricing: models/7x/2025/pricing.md
           - Service Schedule: models/7x/2025/service-schedule.md
@@ -174,7 +175,7 @@ nav:
 
   - Ownership:
       - ownership/index.md
-      - First 30 Days: ownership/first-30-days.md
+      - I've Just Got My Car: ownership/first-30-days.md
       - Charging:
           - Home Setup: guides/charging/home-setup.md
           - Public Networks: guides/charging/public-networks.md
@@ -184,7 +185,7 @@ nav:
           - ownership/accessories/index.md
           - Protection (PPF/Tint): ownership/accessories/protection.md
           - Recommended Gear: ownership/accessories/recommended.md
-          - Trusted Vendors: ownership/accessories/vendors.md
+          - Choosing an Installer: ownership/accessories/vendors.md
 
   - Community:
       - community/index.md

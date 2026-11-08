@@ -1,37 +1,35 @@
-# Zeekr X Pricing & Options
+---
+last_checked: 2026-11-08
+---
 
-*Last reviewed: August 2026. Reflects the MY26 relaunch (May 2026).*
+# Zeekr X Pricing
 
-## Current Pricing (Drive-Away)
+*Last checked: 8 November 2026.*
+
+## Current pricing (MY26)
 
 | Variant | Price |
 | :--- | :--- |
-| **Zeekr X RWD** | **$48,900 drive-away** |
-| **Zeekr X AWD** | **$57,900 drive-away** |
+| **Zeekr X RWD** | $48,900 drive-away [1][2] |
+| **Zeekr X AWD** | $57,900 drive-away [1][2] |
 
-!!! info "Now drive-away pricing"
-    The MY26 relaunch switched the X to national drive-away pricing - no on-road costs to add on top. That is a structural change from the MY25 car's + ORC pricing, not just a price cut, so be careful comparing like-for-like with rivals quoted + ORC.
+!!! warning "Sources differ"
+    CarExpert and The Beep give the AWD as $57,900 drive-away [1][2]. A Carsales listing shows $55,990 drive-away [3]. Treat the RWD's $48,900 drive-away as the starting point and check current offers with your dealer.
 
-### Pricing History
+## Launch offers
 
-- **Launch (2024):** RWD $56,900 / AWD $64,900 + ORC
-- **April 2025:** RWD cut $7,000 to $49,900; AWD cut $2,000 to $62,900 (+ ORC)
-- **May 2026 (MY26):** RWD $48,900 / AWD $57,900 drive-away, with more power and equipment
+The pre-order offers for the updated X ended on 31 May 2026 [1]. If you ordered under one of them, the terms in your contract apply; Zeekr's warranty policy says its standard terms apply "except where otherwise stated (including as part of a promotional offer)" [4].
 
-## Launch Offers
+!!! note "Not yet confirmed"
+    The pre-order offer was reported to include a free 7 kW home charger, premium paint and two extra years of warranty and roadside assistance. We have not re-checked those terms. Your contract is the record.
 
-Pre-order incentives ran to 31 May 2026 and included a free 7kW home charger, free premium paint, and two extra years of warranty and roadside assistance (5 years extended to 7). Check with your dealer for current offers.
+## Servicing
 
-## Options
+The MY26 X is serviced every 12 months or 20,000 km. Capped-price servicing is $2,662 (RWD) or $3,072 (AWD) for 5 years [1]. See the [X service schedule](service-schedule.md) for the 8-year figures and MY25 cars.
 
-- **Exterior Colours:** Crystal White standard; premium colours have previously been $470-$700 - confirm current pricing with your dealer.
+## Sources
 
-## The Insider Verdict on Value
-
-At $48,900 drive-away, the MY26 X RWD undercuts most of the premium compact EV field, and the AWD's $57,900 drive-away price is a $5,000+ effective cut on the old car with more power (365 kW).
-
-## Service & Warranty
-
-- **Service:** 12 months / 20,000 km (MY26 - shortened from the MY25 car's 24 months / 40,000 km)
-- **Capped-price servicing:** $2,662 (RWD) or $3,072 (AWD) over 5 years
-- **Warranty:** 5 Years / Unlimited km
+1. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+2. The Beep, "2026 Zeekr X undercuts rivals with sub-$49K driveaway price", <https://thebeep.com.au/car-news/2026-zeekr-x-price-specs-australia>, accessed 8 November 2026.
+3. Carsales, "Zeekr X 2026", <https://www.carsales.com.au/research/zeekr/x/2026/>, accessed 8 November 2026.
+4. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.

@@ -1,111 +1,39 @@
-# Events & Meetups
+# Drives and events
 
-Zeekr ownership is better when you can actually see other Zeekrs on the road. Events and meetups are where that happens—whether it's a casual coffee, a scenic drive, or showing up at a car show together.
+Club drives and events run regularly across Australia. The current list, with dates and how to join, is on the website's [Drives page](https://zeekrinsiders.com.au/drives).
 
-## Types of Events
+## What runs
 
-### Coffee & Cars
+The club's guides list six kinds of event [1]:
 
-The classic. Pick a cafe with good coffee and convenient charging (bonus points if it's got DC fast charging nearby). Show up, have a chat, compare configurations, debate whether the golden or silver trim looks better.
+| Type | What it is |
+| :--- | :--- |
+| Coffee | A social meet at a cafe with good parking |
+| Family | An outing to a park or activity |
+| MyPets | A pets outing, with Pet Mode tips |
+| Drive | A group drive on sealed roads, under 200 km |
+| Touring | A scenic drive with stops and sights |
+| Camping | Overnight, may include unsealed roads |
 
-These usually happen on weekend mornings and run for a couple of hours. Low commitment, high coffee.
+## Before your first drive
 
-### Scenic Drives
+Read the [club guides](https://zeekrinsiders.com.au/garage/guides):
 
-Someone picks a route, everyone shows up, we drive together. Stops for photos, charging, and lunch. The point is the drive, not the destination (though the destination usually has good food).
+- [Taking part in a trip](https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip): what to expect on the day and how to be a good convoy member [2].
+- [Code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct): how we treat each other on drives, online and at events [3].
 
-Popular routes include coastal roads, mountain passes, and anywhere with decent scenery and minimal traffic. Range anxiety is real, so routes are planned with charging stops in mind.
+## Running one yourself
 
-### Car Shows & EV Expos
+You don't need to be on the leadership team. Propose the idea to your state rep or in the group chat, and leadership will help with promotion and coordination [1]. The organiser guides cover the rest:
 
-When there's a car show or EV expo on, we'll sometimes organise a {{ extra.club.abbreviation }} presence. It's a good way to show off the cars to people who haven't seen them in person yet, and to represent the Zeekr community.
+- [Organising an event](https://zeekrinsiders.com.au/garage/guides#organising-an-event)
+- [Planning a trip](https://zeekrinsiders.com.au/garage/guides#planning-a-trip)
+- [Leading a trip](https://zeekrinsiders.com.au/garage/guides#leading-a-trip)
 
-### Track Days
+Questions? Use [the contact form](https://zeekrinsiders.com.au/contact) or ask in the group chat.
 
-For those who want to see what their Zeekr can actually do. These don't happen often, but when they do, they're brilliant. Check your insurance policy first.
+## Sources
 
-### Charging Station Inaugurations
-
-When a new DC fast charging hub opens, especially in regional areas, we'll sometimes organise an inaugural charge. It's exactly as nerdy as it sounds, and exactly as fun.
-
-## Upcoming Events
-
-!!! info "Events Calendar"
-    We're setting up a proper events calendar. In the meantime, upcoming events are announced in the Facebook group and on Instagram.
-
-    If you're organising an event, let us know and we'll add it here.
-
-### 2025 Events
-
-*Check the Facebook group for the latest events and RSVP details.*
-
-## Past Events
-
-When we've got a few runs under our belt, we'll document them here with photos and write-ups. For now, check Instagram for event recaps.
-
-## Organising Your Own Event
-
-Don't wait for someone else to organise something in your area. If you want a coffee meet in Brisbane or a drive through Tasmania, make it happen. Here's how:
-
-### Pick a Date & Location
-
-Weekends work best for most people. Choose somewhere accessible with parking (and ideally charging). If it's a drive, plan your route with charging stops factored in.
-
-### Announce It
-
-Post in the Facebook group with:
-
-- Date and time
-- Meeting location (with charging options noted)
-- What you're doing (coffee/drive/show)
-- Rough finish time
-- RSVP method (Facebook event or just comments)
-
-Give people at least two weeks' notice for weekend events, more for big drives.
-
-### Plan for the Unexpected
-
-- Weather might be rubbish (have a wet weather plan)
-- Not everyone will show up (that's fine)
-- Someone will be late (also fine)
-- You might be the only Zeekr there (still worth it)
-
-### After the Event
-
-Post photos in the group. It encourages others to organise events and builds the community archive.
-
-## State-Specific Information
-
-### Victoria
-
-Most events currently happen in Melbourne and regional Victoria. The Facebook group is your best source for local meetups.
-
-### New South Wales
-
-Sydney-based events are growing. Regional NSW drives are popular, especially coastal routes.
-
-### Queensland
-
-Brisbane coffee meets happen semi-regularly. The Gold Coast to Sunshine Coast drive is a favourite.
-
-### Other States
-
-Events in SA, WA, TAS, ACT, and NT depend on local owners taking the initiative. If you're in one of these states and want to organise something, go for it. Even if it's just two cars, it's still a meet.
-
-## Event Guidelines
-
-Keep it simple:
-
-- **Be respectful**: Of other drivers, venues, and the general public
-- **Follow road rules**: We're not trying to make headlines for the wrong reasons
-- **Share costs**: If someone's organising, chip in for their coffee
-- **No pressure**: If someone can't make it or needs to leave early, no worries
-- **Photos welcome**: But ask before posting photos of people or their cars publicly
-
-## Suggested Venues
-
-We're building a list of Zeekr-friendly venues (good coffee, EV charging, car parking). If you've got a favourite spot, let us know.
-
----
-
-*Want to organise an event? Use [the contact form]({{ extra.club.contact_url }}) or post in the Facebook group. We'll help promote it.*
+1. Zeekr Insiders, "Event Organiser Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#organising-an-event>, accessed 8 November 2026.
+2. Zeekr Insiders, "Participant Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip>, accessed 8 November 2026.
+3. Zeekr Insiders, "Code of Conduct" (August 2026), <https://zeekrinsiders.com.au/garage/guides#code-of-conduct>, accessed 8 November 2026.

@@ -1,6 +1,6 @@
 # Ownership Resources
 
-Welcome to the ownership section of {{ extra.club.full_name }}. Whether you've just taken delivery or have been driving your Zeekr for months, this section provides practical guidance for getting the most out of your ownership experience.
+Practical guidance for living with your Zeekr, whether you collected it last week or last year.
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ New to Zeekr ownership? Start here:
     <div class="z-card">
         <img src="../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Charging</h3>
-        <p>Everything about charging your EV - home setup, public networks and road trips.</p>
+        <p>Home setup, public networks and road trips.</p>
         <a class="go" href="../guides/charging/home-setup/">Charging</a>
     </div>
     <div class="z-card">
@@ -47,21 +47,21 @@ Protect and enhance your Zeekr:
     <div class="z-card">
         <img src="../assets/icons/icon-recommended.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Recommended Gear</h3>
-        <p>Community-vetted products that actually fit.</p>
+        <p>Accessories owners have found useful.</p>
         <a class="go" href="accessories/recommended/">Recommended</a>
     </div>
     <div class="z-card">
         <img src="../assets/icons/icon-service.svg" class="zi-icon zi-icon--card" alt="">
-        <h3>Trusted Vendors</h3>
-        <p>Installers and suppliers across Australia.</p>
+        <h3>Choosing an Installer</h3>
+        <p>How to pick a PPF, tint or accessory installer.</p>
         <a class="go" href="accessories/vendors/">Vendors</a>
     </div>
 </div>
 
 ## Additional Resources
 
-- **Service & Maintenance** - See the service schedules for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md)
+- **Service and maintenance:** see the service schedules for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md)
 
 ## Contributing
 
-Have ownership tips to share? The {{ extra.club.abbreviation }} community benefits from your experience. Reach out via our [club channels](../community/index.md) to contribute.
+Have ownership tips to share? Reach out via our [club channels](../community/index.md).

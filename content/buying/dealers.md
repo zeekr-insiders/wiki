@@ -1,126 +1,52 @@
-# Zeekr Dealers in Australia
+---
+last_checked: 2026-11-08
+---
 
-Finding the right dealer is an important part of your Zeekr buying journey. This page helps you locate authorised Zeekr dealers across Australia and understand what to look for when choosing where to buy.
+# Where to buy and service
 
-## Authorised Dealers by State
+*Last checked: 8 November 2026.*
 
-*Last reviewed: August 2026.* Zeekr's Australian network has grown quickly - it opened its 17th dealership in mid-2026 and is still expanding. The list below covers locations we're confident of; always confirm details on the [official locator](https://www.zeekrlife.com/en-au/find-us/).
+This is the wiki's one list of Zeekr sales and service locations. Other pages link here rather than keeping their own list.
 
-### Victoria
+Zeekr Australia's dealer locator lists 17 sites in the ACT, NSW, Queensland, South Australia, Victoria and Western Australia, and none in Tasmania or the Northern Territory [1]. Servicing is done through Zeekr's authorised partner network [2]. Which sites offer service comes from the club's own check of each dealer on 5 November 2026; the locator does not show it in a form we could verify, so confirm with the dealer or the [official locator](https://www.zeekrlife.com/en-au/find-us) before you book.
 
-- **Zeekr South Yarra** - Melbourne. Sales, test drives, service centre
-- **Zeekr Doncaster** - Melbourne. Sales, test drives, service centre
-- **Zeekr Geelong** - Sales, test drives, service centre
+| State | Site | Sales | Service (club data) |
+| :--- | :--- | :---: | :---: |
+| ACT | [Zeekr Canberra (Phillip)](https://zeekrcanberra.com.au/) | Yes | Yes |
+| NSW | [Zeekr Castle Hill](https://www.zeekrcastlehill.com.au/) | Yes | No |
+| NSW | [Zeekr Chatswood](https://zeekrchatswood.com.au/) | Yes | No |
+| NSW | [Zeekr Newcastle (Hamilton)](https://www.zeekrnewcastle.com.au/) | Yes | Yes |
+| NSW | [Zeekr Parramatta](https://www.zeekrparramatta.com.au/) | Yes | Yes |
+| NSW | [Zeekr Sydney City (Waterloo)](https://zeekrsydneycity.com.au/) | Yes | Yes |
+| QLD | [Zeekr Brisbane City (Fortitude Valley)](https://www.zeekrcentrebrisbane.com.au/) | Yes | No |
+| QLD | [Zeekr Gold Coast (Southport)](https://www.zeekrgoldcoast.com.au/) | Yes | Yes |
+| QLD | [Zeekr Springwood (Slacks Creek)](https://www.zeekrcarsspringwood.com.au/) | Yes | No |
+| QLD | [Zeekr Sunshine Coast (Maroochydore)](https://www.zeekrsunshinecoast.com.au/) | Yes | No |
+| SA | [Zeekr Adelaide City (Eastwood)](https://solitaire.com.au/zeekr/) | Yes | No |
+| VIC | [Zeekr Berwick](https://zeekrberwick.com.au/) | Yes | No |
+| VIC | [Zeekr Doncaster](https://www.zeekrdoncaster.com.au/) | Yes | Yes |
+| VIC | [Zeekr Essendon (Essendon Fields)](https://zeekressendon.com.au/) | Yes | Yes |
+| VIC | [Zeekr Geelong (Geelong West)](https://www.zeekrgeelong.com.au/) | Yes | No |
+| VIC | [Zeekr South Yarra](https://www.zeekrsouthyarra.com.au/) | Yes | No |
+| WA | [Zeekr Perth (Victoria Park)](https://www.zeekrperth.com.au/) | Yes | Yes |
 
-### New South Wales
+Zeekr also lists **Zeekr Approved Body and Paint (Five Dock)** in NSW, phone 02 9744 2059 [1].
 
-- **Zeekr Sydney City** - Shop 2/1037-1047 Bourke St, Waterloo. Sales, test drives
-- **Zeekr Chatswood** - North Shore. Sales, test drives
-- **Zeekr Parramatta** - Western Sydney. Sales, test drives, service centre
+**Tasmania and the Northern Territory:** no Zeekr sites are listed [1]. Ask Zeekr customer support on 1800 093 357 (9 am to 6 pm AEST, Monday to Friday) how servicing and warranty work are handled where you live [2].
 
-### Queensland
+Spotted a change? Tell us via our [community channels](../community/index.md) and we will update this page.
 
-- **Zeekr Centre Brisbane** - Sales, test drives
-- **Zeekr Gold Coast (Southport)** - opened mid-2026, Zeekr's 17th Australian site
+## Questions to ask before you buy
 
-Queensland has several Zeekr locations now - check the locator for the full list.
+- What is the full drive-away price, in writing?
+- Does this site service the car, and if not, where is the nearest site that does?
+- What is the current delivery timeframe, and what happens if it slips?
+- What does the handover cover, and how long does it take?
+- Do they provide a loan car during warranty work?
 
-### South Australia
+## Sources
 
-- **Zeekr Adelaide (Eastwood)** - via the Solitaire group
+1. Zeekr Australia, "Find a dealer", <https://www.zeekrlife.com/en-au/find-us>, accessed 8 November 2026.
+2. Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
 
-### Western Australia
-
-- **Zeekr Victoria Park** - Perth. Sales, test drives
-
-### Australian Capital Territory
-
-- **Zeekr Canberra** - Sales, test drives, service centre
-
-### Tasmania and Northern Territory
-
-*No confirmed dealerships at this time - check the locator for updates.*
-
-## Official Dealer Locator
-
-For the most current dealer information, locations, opening hours, and contact details, visit the official Zeekr Australia dealer locator:
-
-[Find a Zeekr Dealer](https://www.zeekrlife.com/en-au/find-us/)
-
-If your area isn't yet covered, check the official site for updates or contact Zeekr Australia directly.
-
-## What to Look for in a Dealer
-
-When choosing where to purchase your Zeekr, consider these factors:
-
-### Service Centre Access
-
-- Does the dealer have an on-site service centre?
-- What are their service booking wait times?
-- Do they have Zeekr-trained technicians?
-- Are genuine parts readily available?
-
-### Sales Experience
-
-- Are the sales staff knowledgeable about EVs and Zeekr specifically?
-- Do they offer proper test drives with time to explore features?
-- Are they transparent about pricing, delivery times, and on-road costs?
-- Do they pressure you or let you make decisions at your own pace?
-
-### After-Sales Support
-
-- What's included in their handover process?
-- Do they provide delivery day orientation?
-- How responsive are they to questions after purchase?
-- What warranty support do they offer?
-
-### Location and Convenience
-
-- How far are you from the dealership?
-- Will you need to travel for routine servicing?
-- Do they offer collection and delivery for service?
-- Are they accessible for any warranty issues?
-
-## Online Ordering
-
-Some Zeekr dealers may offer online ordering options. When ordering online:
-
-- Confirm the full drive-away price including all on-road costs
-- Understand the delivery timeline and any potential delays
-- Clarify the pre-delivery inspection process
-- Ensure you know your cancellation rights
-- Get all agreements in writing
-- Confirm where you'll physically take delivery
-
-## Questions to Ask Your Dealer
-
-Before committing to a purchase, ask:
-
-- What is the full drive-away price including all fees?
-- What is the current delivery timeframe?
-- What's included in the pre-delivery preparation?
-- What happens if there are delivery delays?
-- What should I bring on delivery day?
-- How long is the delivery orientation session?
-- What's your service booking availability?
-- Do you provide a loan vehicle during warranty work?
-
-## Dealer Tips from {{ extra.club.abbreviation }} Members
-
-- Visit multiple dealers if possible to compare experiences
-- Don't rush - take time to understand all costs and timelines
-- Get everything in writing before paying a deposit
-- Ask to speak with existing customers if you have concerns
-- Check online reviews but take extreme opinions with a grain of salt
-- Remember the dealer relationship continues after the sale
-
-## Contributing Dealer Information
-
-Have you purchased from a Zeekr dealer in Australia? Help the community by sharing:
-
-- Dealer name and location
-- Your experience with sales and delivery
-- Service centre quality
-- Any tips for buyers in your area
-
-Contact {{ extra.club.abbreviation }} to contribute your experiences.
+Site names, web addresses and service flags are from the Zeekr Insiders dealer list, which checks each dealer's own website (last checked 5 November 2026).

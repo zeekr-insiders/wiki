@@ -4,7 +4,7 @@ Group buys are simple: we pool our orders together to get discounts on accessori
 
 ## What Are Group Buys?
 
-When enough people want the same thing—floor mats, PPF, ceramic coating, whatever—we approach suppliers and negotiate a group discount. The supplier gets a guaranteed batch order, we get a better price. Everyone wins.
+When enough people want the same thing (floor mats, PPF, ceramic coating, whatever), we approach suppliers and negotiate a group discount. The supplier gets a guaranteed batch order, we get a better price. Everyone wins.
 
 Some group buys are for physical products (mats, screen protectors, mud flaps). Others are for services (PPF installation, ceramic coating). The goal is always the same: save money on stuff you were going to buy anyway.
 
@@ -153,4 +153,4 @@ The organiser will do their best to help, but ultimately group buys operate on g
 
 ---
 
-*Want to propose a group buy? Post in the Facebook group or use [the contact form]({{ extra.club.contact_url }}) with your idea.*
+*Want to propose a group buy? Post in the club group chat or use [the contact form](https://zeekrinsiders.com.au/contact) with your idea.*

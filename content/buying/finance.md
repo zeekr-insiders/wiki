@@ -1,266 +1,106 @@
+---
+last_checked: 2026-11-08
+---
+
 # Financing Your Zeekr
 
-There are several ways to pay for your Zeekr in Australia. This guide covers the main options including salary sacrifice arrangements, novated leases, and traditional finance.
+*Last checked: 8 November 2026.*
 
-## Payment Options Overview
+The main ways to pay for a Zeekr in Australia are cash, a novated lease (salary packaging), a car loan, or a chattel mortgage for business use. This page is general information, not financial advice.
 
-### Pay Cash
+## Payment options
 
-The simplest option - pay the full drive-away price upfront.
+### Cash
 
-**Advantages:**
+No interest or fees, and the car is yours outright. The trade-off is the large upfront amount and the money you could have used elsewhere.
 
-- No interest charges or fees
-- Vehicle is yours outright immediately
-- No ongoing loan obligations
-- Simplest ownership structure
+### Novated lease (salary packaging)
 
-**Considerations:**
+Your employer pays the lease and running costs from your pre-tax salary. For eligible EVs this is often the most tax-effective option because of the FBT exemption below.
 
-- Large upfront capital requirement
-- May not be tax-effective if using pre-tax income elsewhere
-- Opportunity cost of tying up capital
+Things to weigh up:
 
-### Salary Sacrifice / Novated Lease
+- Your employer has to offer it
+- Lease providers charge setup and ongoing fees
+- It can affect your borrowing capacity
+- Changing jobs or ending early can cost you
+- There's a residual (balloon) payment at the end of the lease
 
-Package your vehicle through your employer using pre-tax income. This is often the most tax-effective way to purchase an EV in Australia.
+### Car loan
 
-**Advantages:**
+Available to anyone, paid from after-tax income, with the car as security until it's paid off. Compare fixed and variable rates, fees and any early repayment penalties.
 
-- Pay using pre-tax dollars, reducing taxable income
-- FBT exemption for eligible EVs (see below)
-- Running costs can be included (insurance, servicing, tyres)
-- Fixed budgeting with one regular payment
-- GST savings on purchase price and running costs
+### Chattel mortgage
 
-**Considerations:**
+Business finance where the business owns the car from day one. Interest and depreciation may be deductible for business use. Talk to your accountant.
 
-- Requires employer participation
-- Administration fees from novated lease company
-- May impact borrowing capacity for home loans
-- Early termination fees if you change jobs
-- Need to budget for balloon payment at lease end
+## FBT exemption for EVs
 
-### Car Loan (Finance)
+Electric vehicles priced under the luxury car tax (LCT) threshold for fuel-efficient vehicles are exempt from fringe benefits tax when provided through an employer, which is what makes novated leasing attractive [1]. The exemption for plug-in hybrids ended on 1 April 2025 [1].
 
-Traditional car loan secured against the vehicle.
+### The LCT threshold
 
-**Advantages:**
+| Financial year | Fuel-efficient vehicles (includes EVs) | Other vehicles |
+| :--- | :--- | :--- |
+| 2026-27 (from 1 July 2026) | $91,661 | $80,809 |
+| 2025-26 | $91,387 | $80,567 |
 
-- Available to anyone regardless of employment
-- Fixed or variable rate options
-- Own the vehicle outright at end of term
-- Can shop around for competitive rates
+Sources: [2][3].
 
-**Considerations:**
+### Which Zeekrs are under it?
 
-- Paid with after-tax dollars
-- Interest charges over loan term
-- Vehicle as security until loan paid off
-- No FBT benefits
+- **7X:** RRPs are $57,900, $63,900 and $72,900 before on-road costs [4], all under the threshold. The MY26 Black Special Edition was $75,900 [5].
+- **X (MY26):** from $48,900 drive-away for the RWD [6], under the threshold.
+- **009:** from $115,900 before on-road costs [7], over the threshold, so it doesn't qualify.
 
-### Chattel Mortgage
+The test uses the car's value as configured, not just the RRP. Confirm eligibility with your lease provider before signing.
 
-Business-focused finance where you own the vehicle from day one, secured by a mortgage over it.
+### Changes from April 2027
 
-**Advantages:**
+!!! note "Not yet confirmed"
+    RACV reports that from 1 April 2027, EVs priced up to $75,000 keep the full FBT exemption, while EVs between $75,000 and the LCT threshold move to 75% of the standard FBT rate, and that from 1 April 2029 all eligible EVs move to 75% [1]. We haven't confirmed this against the ATO, and it isn't clear which price counts (RRP, price with options, or drive-away).
 
-- Available for business use
-- Tax deductions on interest and depreciation
-- Balloon payment options
-- Immediate ownership
+    If it applies as reported: the standard 7X grades are all under $75,000, but the MY26 Black Special Edition ($75,900) [5] is above it. If your lease runs past March 2027, ask your provider and tax adviser how the change affects your quote.
 
-**Considerations:**
-
-- Requires business structure (company, trust, sole trader)
-- Must be used for business purposes
-- After-tax repayments
-- Residual/balloon payment at end
-
-## FBT Exemption for Electric Vehicles
-
-One of the most significant benefits of buying an EV in Australia is the Fringe Benefits Tax (FBT) exemption for eligible electric vehicles.
-
-### What Is FBT?
-
-Fringe Benefits Tax is normally charged when employers provide benefits to employees, including cars. The FBT rate is typically 47%, making salary sacrifice of traditional cars less attractive.
-
-### The EV Exemption
-
-Since July 2022, eligible electric vehicles are exempt from FBT when provided through salary sacrifice arrangements.
-
-**Eligibility Requirements:**
-
-- Vehicle must be a battery electric vehicle (BEV) or hydrogen fuel cell vehicle
-- First held and used on or after 1 July 2022
-- Below the luxury car tax threshold for fuel-efficient vehicles ($91,661 for 2026-27)
-- Purchased or leased new (not second-hand when first acquired)
-
-Note that plug-in hybrids lost the exemption from 1 April 2025 (with a transitional carve-out for pre-existing binding commitments) - not relevant to Zeekrs, but worth knowing if you're comparing.
-
-**Which Zeekrs qualify?** The 7X (all variants, $57,900-$72,900 + ORC) and the X (all variants) sit comfortably under the threshold. The **009 does not qualify** - at $115,900+ it's well over the cap. Confirm eligibility with your novated lease provider, as the test uses the actual price of the car as configured, not just the RRP.
-
-### The Exemption Is Winding Down From 2027
-
-The full FBT exemption is legislated to end on **31 March 2027**. From 1 April 2027:
-
-- EVs under **$75,000** keep the full exemption
-- EVs between $75,000 and the LCT threshold get a 25% discount only
-- By 1 April 2029, the 25% discount applies to all eligible EVs
-
-The government has flagged a review by mid-2027, so the detail may shift. Practical upshot: every current 7X and X variant is under $75,000 and keeps the full exemption, but if you're signing a lease that runs past March 2027, ask your provider how the change affects your quote.
-
-### How Much Can You Save?
-
-The FBT exemption, combined with GST savings and paying with pre-tax income, can save thousands of dollars per year compared to buying with after-tax money or salary sacrificing a petrol vehicle.
-
-Actual savings depend on:
+### What affects how much you save
 
 - Your marginal tax rate
-- The vehicle's drive-away price
-- Running costs included in the lease
-- Your lease term and residual value
+- The car's drive-away price
+- Which running costs are in the lease
+- The lease term and residual value
 
-### Example Scenario
+Ask for a full quote from more than one provider and compare the total cost, not just the fortnightly payment.
 
-*This is illustrative only - seek professional advice for your situation*
+## Questions to ask a lease provider
 
-For a vehicle with a $60,000 drive-away price on a novated lease for someone on a $100,000 salary:
-
-- **Annual lease payment**: ~$15,000 (including running costs)
-- **Tax saved (37% bracket)**: ~$5,550 per year
-- **GST saved**: ~$5,450 over lease term
-- **FBT not paid**: ~$7,000+ per year
-
-Total potential benefit could be $10,000+ per year compared to buying with after-tax money.
-
-!!! warning "Get Professional Advice"
-    These are simplified examples. Speak with a qualified tax professional or novated lease specialist to understand your specific situation.
-
-## Novated Lease Providers
-
-Several companies specialise in novated leases in Australia. Research and compare:
-
-- **Ayvens** (formerly LeasePlan)
-- **SG Fleet**
-- **FleetPartners** (absorbed the former Eclipx brands)
-- **Easifleet (Easi)**
-- **RemServ**
-- **Autopia**
-
-Compare quotes from multiple providers as fees and service levels vary.
-
-### Questions to Ask Providers
-
-- What are your administration fees (setup and ongoing)?
-- What's included in my payment (vehicle, insurance, servicing, tyres)?
+- What are the setup and ongoing fees?
+- What's included (insurance, servicing, tyres, charging)?
 - What happens if I change employers?
-- What are the early termination fees?
-- What residual value will you use?
-- Can I choose my own dealer and vehicle?
-- How is the balloon payment handled at lease end?
+- What are the early termination costs?
+- What residual value are you using, and how is it paid at the end?
+- Can I choose my own dealer and car?
 
-## Traditional Finance Options
+## Questions to ask any lender
 
-If novated leasing isn't suitable, consider:
+- What's the comparison rate, and is it fixed or variable?
+- What fees apply (application, monthly, early repayment, missed payment)?
+- Can I make extra repayments without penalty?
+- Is there a balloon payment?
 
-### Banks and Credit Unions
+## State incentives
 
-- Major banks (CBA, Westpac, NAB, ANZ)
-- Credit unions and mutual banks
-- Often competitive rates for EVs
-- Compare rates and terms
+State incentives have mostly ended and change often. See your state on the [Resources by state](../resources/index.md) page.
 
-### Dealer Finance
+## Get advice
 
-- Convenient - arranged at point of sale
-- May offer promotional rates
-- Compare with external finance options
-- Read terms carefully before signing
+This page is general information only. For your situation, talk to a licensed financial adviser, a registered tax agent, or your employer's payroll or HR team for salary packaging.
 
-### Online Lenders
+## Sources
 
-- Competitive rates
-- Fully digital application
-- Quick approval times
-- Less personalised service
-
-## What to Consider When Choosing Finance
-
-### Interest Rates
-
-- Compare APR (Annual Percentage Rate) across lenders
-- Fixed vs variable - consider rate stability vs flexibility
-- EV-specific rates may be more competitive
-
-### Loan Term
-
-- Shorter terms = higher repayments, less total interest
-- Longer terms = lower repayments, more total interest
-- Typical terms: 3-7 years
-- Balance repayment comfort with total cost
-
-### Fees and Charges
-
-- Application fees
-- Monthly account keeping fees
-- Early repayment fees
-- Missed payment penalties
-
-### Balloon/Residual Payments
-
-- Lower monthly repayments with balloon payment
-- Large sum due at end (pay, refinance, or sell vehicle)
-- Residual values set by ATO for novated leases
-
-### Flexibility
-
-- Can you make extra repayments without penalty?
-- What happens if you want to pay out early?
-- Can you vary repayment amounts?
-
-## State Government Incentives
-
-Some states offer additional incentives for EV purchases:
-
-- Registration concessions
-- Stamp duty discounts or waivers
-- Interest-free or low-interest loans
-- Grants or rebates
-
-Check current incentives in your state via our [By State Resources](../resources/index.md) page.
-
-## Getting Started
-
-### For Novated Leasing
-
-1. Check your employer participates in salary sacrifice
-2. Get quotes from 2-3 novated lease providers
-3. Compare total costs and what's included
-4. Confirm the Zeekr model you want is eligible
-5. Get a drive-away quote from your dealer
-6. Work with provider to finalise arrangements
-
-### For Traditional Finance
-
-1. Check your credit score
-2. Calculate how much you can comfortably repay
-3. Get quotes from multiple lenders
-4. Compare rates, fees, and terms
-5. Get pre-approval if possible
-6. Finalise with chosen lender once you've selected vehicle
-
-## Financial Advice Disclaimer
-
-The information on this page is general only and doesn't constitute financial advice. Your individual circumstances, tax position, and financial goals are unique.
-
-**Always seek advice from:**
-
-- Licensed financial advisers for financial planning
-- Registered tax agents for tax implications
-- Qualified accountants for business purchases
-- Your employer's HR team for salary sacrifice policies
-
-## Questions from the Community?
-
-Connect with {{ extra.club.abbreviation }} members who've financed their Zeekr to hear about their experiences with different providers and options.
+1. RACV, "Electric vehicle rebates, discounts and incentives in Australia" (5 May 2026), <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+2. Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+3. Australian Taxation Office, "Luxury car tax rate and thresholds", <https://www.ato.gov.au/tax-rates-and-codes/luxury-car-tax-rate-and-thresholds>, accessed 8 November 2026.
+4. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+5. The Driven, "Zeekr launches 7X Black Edition after 2,200 sales in Australia" (13 March 2026), <https://thedriven.io/2026/03/13/zeekr-launches-7x-black-edition-after-2200-sales-in-australia/>, accessed 8 November 2026.
+6. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+7. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.

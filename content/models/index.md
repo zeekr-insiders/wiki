@@ -1,28 +1,37 @@
-# Zeekr Models - Overview
+---
+last_checked: 2026-11-08
+---
 
-Comprehensive information about all Zeekr models available or coming to the Australian market.
+# Zeekr Models
 
-## Current Model Lineup
+*Last checked: 8 November 2026.*
+
+Three Zeekr models are on sale in Australia: the 7X, the X and the 009.
+
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](7x/which-7x.md).
+
+## Current lineup
 
 <div class="card-grid">
     <div class="z-card model-card">
         <img src="../assets/images/models/zeekr-7x.webp" class="model-photo" alt="Zeekr 7X" loading="lazy">
         <h3>Zeekr 7X</h3>
-        <p><strong>Premium Electric SUV.</strong> The brand's flagship SUV, offering premium features, advanced technology, and family-friendly practicality. Fast charging, spacious interior and cargo area, advanced driver assistance.</p>
+        <p><strong>Mid-size SUV.</strong> Five seats, 800V charging, from $57,900 before on-road costs. RWD, Long Range RWD and Performance AWD.</p>
         <p><a href="7x/2025/specifications/">Specifications</a> &middot; <a href="7x/2025/pricing/">Pricing</a></p>
         <a class="go" href="7x/overview/">7X Overview</a>
     </div>
     <div class="z-card model-card">
         <img src="../assets/images/models/zeekr-x.webp" class="model-photo" alt="Zeekr X" loading="lazy">
         <h3>Zeekr X</h3>
-        <p><strong>Compact Electric SUV.</strong> Premium electric mobility in a more compact and affordable package, perfect for urban Australian conditions. Easy parking and manoeuvrability at a competitive price.</p>
+        <p><strong>Compact SUV.</strong> Five seats, from $48,900 drive-away for the MY26 RWD. RWD and AWD.</p>
         <p><a href="x/2025/specifications/">Specifications</a> &middot; <a href="x/2025/pricing/">Pricing</a></p>
         <a class="go" href="x/overview/">X Overview</a>
     </div>
     <div class="z-card model-card">
         <img src="../assets/images/models/zeekr-009.webp" class="model-photo" alt="Zeekr 009" loading="lazy">
         <h3>Zeekr 009</h3>
-        <p><strong>Luxury Electric MPV.</strong> The brand's luxury MPV, designed for premium family and executive use. Executive seating configurations, premium interior appointments and a spacious cabin.</p>
+        <p><strong>People mover.</strong> Six or seven seats, from $115,900 before on-road costs. FWD and AWD.</p>
         <p><a href="009/specifications/">Specifications</a> &middot; <a href="009/pricing/">Pricing</a></p>
         <a class="go" href="009/overview/">009 Overview</a>
     </div>
@@ -30,53 +39,34 @@ Comprehensive information about all Zeekr models available or coming to the Aust
 
 <p class="image-credit">Images: Zeekr</p>
 
-## Model Selection Guide
+Prices: 7X [1], X [2], 009 [3].
 
-### Choose Based on Your Needs
+## Which one fits?
 
-**Urban Commuting & City Living**
+- **Compact and easy to park:** the X.
+- **Five seats with a bigger boot (539 L) and 2,000 kg braked towing:** the 7X [4][5].
+- **Six or seven seats:** the 009.
 
-- Consider the **Zeekr X** for its compact size and efficiency
+For more help, see [Choosing a Model](../getting-started/choosing-model.md) and the [model comparison table](../comparisons/model-comparison-table.md).
 
-**Family & Suburban Use**
+## Costs and incentives
 
-- The **Zeekr 7X** offers the best balance of space, features, and value
+- The 009 is priced above the 2026-27 Luxury Car Tax threshold for fuel-efficient vehicles ($91,661), so LCT applies to it; the 7X and X are below it [6]. See the [finance guide](../buying/finance.md) for novated leasing.
+- The Victorian and NSW EV purchase rebates have ended [8]. For your state, see the [state resources](../resources/index.md).
 
-**Luxury & Executive Transport**
+## Warranty and service
 
-- The **Zeekr 009** provides maximum space and premium features
+- All three models: 5 years / unlimited km vehicle warranty (private use), 8 years / 160,000 km battery warranty, 5 years roadside assistance [7].
+- Zeekr lists 17 sales sites in Australia; fewer offer service. See [Where to Buy](../buying/dealers.md).
+- Service intervals differ by model and model year. See the service schedule under each model.
 
-**First-Time EV Buyer**
+## Sources
 
-- Start with our [Getting Started Guide](../getting-started/ev-basics.md) and consider the **Zeekr X** or **7X**
-
-## Australian Market Information
-
-### Availability
-
-All three models are on sale in Australia now: the 7X (launched October 2025), the X (relaunched May 2026 as the MY26), and the 009 (including the 2026 FWD entry variant).
-
-### Government Incentives
-
-Incentives depend on the model's price and your state:
-
-- The 7X and X sit under the FBT-exemption threshold for novated leases; the 009 does not - see the [finance guide](../buying/finance.md)
-- The big state purchase rebates have ended, but some states offer concessional stamp duty or registration - see the [state resources](../resources/index.md)
-
-### Service and Support
-
-- Authorised dealer network across {{ extra.club.location }} (~17 locations and growing)
-- 5 year/unlimited km warranty, 8 year/160,000 km battery warranty
-- Parts and service through Zeekr dealerships
-
-## Model Comparison
-
-For detailed side-by-side comparisons of specifications, features, and pricing, visit our [Model Comparison Table](../comparisons/model-comparison-table.md).
-
-## Real Owner Reviews
-
-Club members share their experiences with different Zeekr models, providing real-world insights into ownership, performance, and satisfaction.
-
----
-
-*Need help choosing? Contact {{ extra.club.full_name }} for personalised advice from experienced owners.*
+1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+2. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+3. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+4. CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+5. The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
+6. Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+7. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+8. RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.

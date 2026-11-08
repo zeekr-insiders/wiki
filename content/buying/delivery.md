@@ -1,6 +1,12 @@
+---
+last_checked: 2026-11-08
+---
+
 # Taking Delivery of Your Zeekr
 
-You've ordered your Zeekr - congratulations! This guide covers what to expect during the delivery process, how to inspect your new vehicle, and what to check on delivery day.
+*Last checked: 8 November 2026.*
+
+This page covers what to expect between order and delivery, how to inspect the car, and what to check on delivery day.
 
 ## Delivery Timeline
 
@@ -10,10 +16,8 @@ Once you've signed the contract and paid your deposit:
 
 - **Confirmation**: You should receive written confirmation of your order
 - **Build allocation**: Your vehicle is allocated a build slot
-- **Manufacturing**: The vehicle is manufactured in China
-- **Shipping**: Transport to Australia (typically 4-8 weeks)
-- **Customs and compliance**: Cleared through Australian customs
-- **Dealer delivery**: Transport to your dealer and preparation
+- **Manufacturing and shipping**: The car is built and shipped to Australia
+- **Compliance and dealer delivery**: The car is cleared, complied and prepared by your dealer
 
 ### Typical Timeframes
 
@@ -24,7 +28,10 @@ Total delivery times vary based on:
 - Shipping schedules
 - Time of year
 
-**Current expectations**: Ask your dealer for specific timeframes, but generally expect 2-4 months from order to delivery. This can be shorter if stock is available or longer during high demand periods.
+Ask your dealer for a timeframe in writing. Cars in stock can be much quicker than a factory order.
+
+!!! info "Ordering around the 2027 7X (MY27) changeover"
+    Orders for the updated 2027 7X (MY27) opened on 1 November 2026, with first deliveries expected in December 2026 [1]. If you've ordered a 7X, confirm in writing which model year you're getting. See [Which 7X do I have?](../models/7x/which-7x.md).
 
 ### Stay Informed
 
@@ -100,7 +107,7 @@ Inside the vehicle:
 - **Controls**: Test steering wheel buttons, window switches, seat adjustments
 - **Climate control**: Test heating and cooling
 - **Panoramic roof**: Open and close if equipped, check for unusual sounds
-- **Boot**: Check carpet, spare tyre/repair kit, and all storage areas
+- **Boot**: Check carpet, tyre repair kit, and all storage areas
 - **Smell**: New car smell is normal, but musty or chemical smells aren't
 
 ### Functional Tests
@@ -115,6 +122,16 @@ Before you drive away:
 - **Cameras**: Reverse camera, 360° camera (if equipped)
 - **Lights**: All interior and exterior lights
 - **Wipers**: Front and rear wipers and washers
+
+### If you're collecting a 2027 7X (MY27)
+
+These are standard on every MY27 grade, so check they're there and working [1][2]:
+
+- The built-in DVR (dashcam) records, and the dealer shows you where to find the footage
+- Rear privacy glass is fitted
+- The rear number plate is on the tailgate, not the bumper (the MY25/MY26 car has it on the bumper) [1]
+
+If you ordered under the MY27 launch offer, get the included items in writing: two years of servicing, a 7 kW wallbox (supply only; installation is at your cost), and your free colour choice [1][3].
 
 ### Document Any Issues
 
@@ -133,15 +150,15 @@ The dealer should provide a comprehensive orientation to your new Zeekr.
 ### What Should Be Covered
 
 - **Charging**: How to open the port, plug in, and monitor charging
-- **Driving modes**: Eco, Comfort, Sport settings and what they do
-- **Regenerative braking**: How regen works and adjusting levels
+- **Drive modes**: What each mode does
+- **Regenerative braking**: How regen works and how to adjust it
 - **Key features**: Driver assistance systems, parking aids, cameras
 - **Infotainment**: Basic operation, connecting phone, navigation
 - **Climate control**: Operation and pre-conditioning
 - **Safety systems**: Location of safety equipment, how safety features work
-- **Maintenance**: Service requirements and booking procedures
+- **Maintenance**: The service schedule in your Service & Warranty Booklet, and how to book
 - **Warranty**: What's covered and for how long
-- **Emergency procedures**: What to do if you break down
+- **Emergency procedures**: Zeekr Roadside is 1800 093 357, 24/7 [4]
 
 ### Ask Questions
 
@@ -175,41 +192,16 @@ Ensure you get:
 
 - **Certificate of Compliance**: Proves the vehicle meets Australian standards
 - **Owner's manual**: Physical book or digital access
-- **Service book**: If physical service records are used
+- **Service & Warranty Booklet**: Zeekr's warranty policy refers to it for the service schedule, and you'll need it when making a claim [5]
 - **Warranty documentation**: Terms and conditions of manufacturer warranty
 - **Dealer receipt**: Proof of purchase with full drive-away price breakdown
 - **Registration papers**: Vehicle registration documents
 - **Insurance details**: If arranged through dealer
 - **Charge cards**: If any charging network cards are included
 
-## First Things to Set Up
+## After Delivery
 
-Once you're home with your new Zeekr:
-
-### Immediately
-
-- **Install charging cable**: If home charging, install and test your home charger
-- **Download apps**: Zeekr app for vehicle monitoring and control
-- **Set up connectivity**: Pair your phone, set up wifi if available
-- **Add charging locations**: Save your home and frequently used chargers in navigation
-- **Review insurance**: Confirm comprehensive insurance is active
-
-### Within the First Week
-
-- **Read the manual**: Seriously - you'll discover features you didn't know existed
-- **Find your service centre**: Know where your nearest authorised service centre is
-- **Join {{ extra.club.abbreviation }}**: Connect with the community for tips and support
-- **Test home charging**: Verify your home setup works correctly
-- **Explore public charging**: Find your nearest DC fast chargers and test them
-- **Set charging schedules**: If you have off-peak electricity rates
-
-### First Month
-
-- **Book first service**: Some dealers recommend an early check (confirm with your dealer)
-- **Check tyre pressures**: After a few weeks of driving
-- **Assess range**: Understand your real-world range in different conditions
-- **Explore features**: Take time to learn all the driver assistance features
-- **Review energy usage**: Check your charging costs vs previous fuel costs
+For the first weeks of ownership (app, keys, home charging, settings), see [First 30 Days](../ownership/first-30-days.md).
 
 ## What If There Are Issues?
 
@@ -225,9 +217,9 @@ Once you're home with your new Zeekr:
 If you discover issues after leaving the dealer:
 
 - **Document it**: Photos and written description
-- **Contact dealer promptly**: Same or next business day
-- **Australian Consumer Law**: You have rights under ACL for major and minor defects
-- **Warranty coverage**: Check if the issue is covered under warranty
+- **Contact the dealer promptly**: Zeekr's warranty policy asks for warranty claims to be reported to an authorised dealer within 7 calendar days, or as soon as practicable [5]
+- **Australian Consumer Law**: Your consumer guarantees apply in addition to the manufacturer's warranty [5][6]
+- **Warranty coverage**: Check whether the issue is covered under warranty
 - **Keep records**: All communication about the issue
 
 ### Escalation
@@ -235,18 +227,14 @@ If you discover issues after leaving the dealer:
 If the dealer isn't responsive:
 
 - Ask to speak with the dealer principal
-- Contact Zeekr Australia customer service
-- Consider consumer affairs in your state
-- Seek advice from consumer advocacy groups
+- Contact Zeekr Australia Customer Support: 1800 093 357 (9:00 am to 6:00 pm AEST, Monday to Friday, excluding public holidays) or customersupportau@zeekrlife.com [4]
+- Contact your state's fair trading or consumer affairs office
 
-## Enjoy Your New Zeekr
+## Sources
 
-Taking delivery is an exciting milestone. Following this checklist helps ensure you start your ownership journey on the right foot.
-
-Most deliveries go smoothly, and any minor issues are quickly resolved. The {{ extra.club.abbreviation }} community is here to support you as you settle into EV ownership.
-
-Welcome to the Zeekr family!
-
-## Questions About Delivery?
-
-Connect with {{ extra.club.abbreviation }} members who've recently taken delivery to hear about their experiences and tips for a smooth handover.
+1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+2. The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
+3. ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
+4. Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
+5. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+6. ACCC, "Just bought a new car?", <https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car>, accessed 8 November 2026.
