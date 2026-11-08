@@ -2549,11 +2549,16 @@ span .zi-icon {
     box-shadow: none;
 }
 
+/* Label and note on the left; the Show/Hide toggle on the right, centred on
+   both lines. */
 .md-content .md-typeset details.zi-sources > summary.zi-sources__summary {
     display: grid;
-    gap: var(--sp-1);
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: var(--sp-3);
+    row-gap: var(--sp-1);
     margin: 0 calc(-1 * var(--sp-3));
-    padding: var(--sp-2) calc(var(--sp-3) + var(--sp-5)) var(--sp-2) var(--sp-3);
+    padding: var(--sp-2) var(--sp-3);
     border: 0;
     border-radius: var(--radius-md);
     background: transparent;
@@ -2574,13 +2579,67 @@ span .zi-icon {
     display: none;
 }
 
+/* Material's corner chevron gives way to the toggle below. */
 .md-content .md-typeset details.zi-sources > summary.zi-sources__summary::after {
-    top: var(--sp-2);
-    right: var(--sp-3);
-    background-color: var(--ink-muted);
+    display: none;
 }
 
-.md-content .md-typeset details.zi-sources > summary.zi-sources__summary:hover .zi-sources__label {
+.zi-sources__label,
+.zi-sources__note {
+    grid-column: 1;
+}
+
+/* The toggle: Show/Hide in the eyebrow style beside a 16px chevron, in a
+   28px square target with a hairline border, square like the site's buttons. */
+.zi-sources__toggle {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    color: var(--ink-muted);
+    font-family: var(--font-display);
+    font-size: var(--fs-2xs);
+    font-weight: 600;
+    letter-spacing: var(--track-label);
+    text-transform: uppercase;
+}
+
+.zi-sources__chevron {
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    border: var(--hairline) solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: var(--panel);
+    color: var(--ink);
+    stroke-width: 1.75;
+    transition: transform var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+
+.zi-sources[open] .zi-sources__chevron {
+    transform: rotate(180deg);
+}
+
+.zi-sources__hide,
+.zi-sources[open] .zi-sources__show {
+    display: none;
+}
+
+.zi-sources[open] .zi-sources__hide {
+    display: inline;
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary:is(:hover, :focus-visible) .zi-sources__chevron {
+    border-color: var(--ink);
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary:is(:hover, :focus-visible) .zi-sources__toggle {
+    color: var(--ink);
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary:is(:hover, :focus-visible) .zi-sources__label {
     text-decoration: underline;
     text-decoration-thickness: var(--hairline);
     text-underline-offset: 0.25em;

@@ -21,7 +21,11 @@ is Python-Markdown's own and stable.
 from __future__ import annotations
 
 import html
+import pathlib
 import re
+
+# The panel's toggle draws Lucide's chevron-down (ISC, vendored with its licence).
+_CHEVRON_SVG = pathlib.Path(__file__).parent.parent / "overrides" / ".icons" / "lucide" / "chevron-down.svg"
 
 _ITEM = re.compile(r'<li id="fn:([^"]+)">(.*?)</li>', re.S)
 _REF = re.compile(r'<a\b[^>]*\bclass="footnote-ref"[^>]*>')
@@ -55,6 +59,12 @@ def _drop_toc(items, anchor: str) -> None:
             _drop_toc(item.children, anchor)
 
 
+def _chevron() -> str:
+    svg = _CHEVRON_SVG.read_text(encoding="utf-8")
+    svg = " ".join(svg[svg.index("<svg"):].split())
+    return svg.replace('class="lucide lucide-chevron-down"', 'class="zi-sources__chevron" focusable="false"', 1)
+
+
 def _panel(content: str, count: int) -> str:
     """Fold the Sources heading and everything after it into a closed panel.
 
@@ -69,6 +79,11 @@ def _panel(content: str, count: int) -> str:
         '<summary class="zi-sources__summary"><span class="zi-sources__label">Sources '
         f'<span class="zi-sources__count"><span aria-hidden="true">&middot; </span>{count}</span></span>'
         '<span class="zi-sources__note">Everything on this page is sourced from the links below.</span>'
+        # A visible Show/Hide and chevron for sighted readers; the summary's
+        # own expanded state is what assistive technology announces.
+        '<span class="zi-sources__toggle" aria-hidden="true">'
+        '<span class="zi-sources__show">Show</span><span class="zi-sources__hide">Hide</span>'
+        f"{_chevron()}</span>"
         "</summary>"
     )
     body = content[m.end():].strip()
