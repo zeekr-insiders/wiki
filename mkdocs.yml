@@ -196,6 +196,14 @@ plugins:
         default_timezone: Australia/Melbourne
   - minify:
       minify_html: true
+      # The theme's own CSS and JS ship unminified in the repo; minify them at build so they block render for less time.
+      minify_css: true
+      minify_js: true
+      css_files:
+        - stylesheets/zeekr.css
+      js_files:
+        - javascripts/zeekr.js
+        - javascripts/glossary.js
 
 nav:
   - Home: index.md
