@@ -33,7 +33,7 @@ A car only charges as fast as the slower of the car and the wallbox. See which g
 
 Hours from empty to full, ideal case, at the wallbox's rated power (energy divided by power, before charging losses). The car's own AC limit caps the speed, shown as "limited".
 
-| Pack (grade) | Portable 10 A (about 2.3 kW) | 7 kW | 11 kW | 22 kW |
+| Pack (grade) | 10 A portable | 7 kW | 11 kW | 22 kW |
 | :--- | :--- | :--- | :--- | :--- |
 | 61 kWh (X RWD) | 26.5 h | 8.7 h | 5.5 h | limited to 11 kW |
 | 66 kWh (X AWD) | 28.7 h | 9.4 h | 6.0 h | 3.0 h |

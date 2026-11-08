@@ -26,7 +26,7 @@ Nearly every EV battery sold in Australia is a lithium-ion pack, and most use on
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-nmc-lfp-compare.svg"
-<figcaption>Generic cell-level ranges from Battery University, cited above. Finished packs differ by maker.</figcaption>
+<figcaption>NMC vs LFP at a glance, from the Battery University figures cited above.</figcaption>
 </figure>
 
 !!! note "Cell figures are a guide"
