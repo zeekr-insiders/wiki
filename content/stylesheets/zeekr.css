@@ -1311,7 +1311,7 @@ body {
 
 .md-typeset table:not([class]) th {
     min-width: 72px;
-    padding: var(--sp-3) var(--sp-4);
+    padding: var(--sp-3);
     white-space: nowrap;
     background: var(--bg-raised);
     border-bottom: var(--hairline) solid var(--line-strong);
@@ -1326,7 +1326,7 @@ body {
 }
 
 .md-typeset table:not([class]) td {
-    padding: var(--sp-3) var(--sp-4);
+    padding: var(--sp-3);
     white-space: nowrap;
     border-top: 0;
     border-bottom: var(--hairline) solid var(--line);
@@ -1344,9 +1344,18 @@ body {
    other cell stays on one line, and a table wider than the column scrolls in
    its wrapper rather than stacking figures and headers over several lines. */
 .md-typeset table:not([class]) td.zi-td-long {
-    min-width: 16em;
+    min-width: 12em;
     max-width: 30em;
     white-space: normal;
+}
+
+/* A phrase in a wide table wraps only where the column is desktop width; on a
+   phone the table scrolls anyway, so the phrase keeps its line. */
+@container zi-article (min-width: 600px) {
+    .md-typeset table:not([class]) td.zi-td-phrase {
+        min-width: 8em;
+        white-space: normal;
+    }
 }
 
 /* Tables take the column's width, so a short one does not float in a gap. */
