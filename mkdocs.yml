@@ -1,39 +1,40 @@
 site_name: Zeekr Insiders Australia
 site_description: Your friendly guide to owning a Zeekr in Australia. Learn, discover, and master your EV.
 site_author: Zeekr Insiders Australia
-site_url: https://thushan.github.io/zeekr/
+# Planned wiki host, from web-home's LINKS.wiki. Canonicals and share images are built from it.
+site_url: https://wiki.zeekrinsiders.com.au/
 
 docs_dir: content
 
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/zi-logo.png
-  favicon: assets/favicon.png
+  logo: assets/img/logo-badge.png
+  favicon: assets/favicons/favicon-32.png
+  # Fonts are self-hosted in zeekr.css, so no request goes to Google Fonts.
+  font: false
+  # The front door's glyphs (overrides/.icons/zi) for the chrome Material draws itself.
+  icon:
+    menu: zi/menu
+    search: zi/search
+    top: zi/up
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
+    # Two states, as on the front door: the first visit follows the OS, the toggle then picks one.
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
       toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+        icon: zi/sun
+        name: Switch to light theme
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: zi/moon
+        name: Switch to dark theme
 
   features:
     - navigation.tabs
@@ -55,16 +56,29 @@ extra:
     abbreviation: "ZI"
     full_name: "Zeekr Insiders Australia"
     location: "Australia"
-    contact_email: "insiders@zeekr.club"
-    website: "https://zeekr.club"
-    forum_url: ""  # To be added when forum is ready
+    # The club takes messages through the front door's contact form, which routes them to the right person.
+    contact_url: "https://zeekrinsiders.com.au/contact"
+    website: "https://zeekrinsiders.com.au"
+    forum_url: "https://forums.zeekrinsiders.com.au/"
+  # The front door (web-home). Every masthead and footer link is built from base_url, so moving the site is one change here.
+  site:
+    base_url: "https://zeekrinsiders.com.au"
+    title_suffix: "Zeekr Insiders"
+    forum_url: "https://forums.zeekrinsiders.com.au/"
+    # Mirrors web-home's JOIN_URL: the forum registration page stands in until a join page exists.
+    join_url: "https://forums.zeekrinsiders.com.au/register/"
+    og_image: "assets/img/og-default.png"
+  # Same three channels, in the same order, as the front door footer (web-home src/lib/data/socials.json).
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/thushan/zeekr
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com/groups/zeekrinsiders
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/zeekrinsiders
+    - icon: zi/facebook
+      name: "Facebook: Zeekr Insiders"
+      link: https://www.facebook.com/groups/2044179713083663/
+    - icon: zi/youtube
+      name: "YouTube: @ZeekrInsiders"
+      link: https://www.youtube.com/channel/UCGs7pzQ_eeVIMCbk118RTtw
+    - icon: zi/x
+      name: "X: @zeekrinsiders"
+      link: https://x.com/zeekrinsiders
 
 extra_css:
   - stylesheets/zeekr.css
