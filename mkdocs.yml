@@ -191,6 +191,9 @@ nav:
           - Specifications: models/x/2025/specifications.md
           - Prices: models/x/2025/pricing.md
           - Servicing and warranty: models/x/2025/service-schedule.md
+      - Zeekr 7GT:
+          - Overview: models/7gt/overview.md
+          - Specifications: models/7gt/specifications.md
       - Zeekr 009:
           - Overview: models/009/overview.md
           - Specifications: models/009/specifications.md

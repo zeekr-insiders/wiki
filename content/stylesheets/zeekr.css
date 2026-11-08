@@ -368,7 +368,7 @@ body {
     text-align: center;
 }
 
-/* Model overview heroes (7X, X, 009): club banner artwork, decorative, so a
+/* Model overview heroes (7X, X, 7GT, 009): club banner artwork, decorative, so a
    CSS background with no alt. The banners put the car on the right and the
    scenery on the left, and these pages keep both sidebars, so at 1440 the
    hero is only about 840px wide: an overlay would put the title over the car.
@@ -378,6 +378,7 @@ body {
    .hero-bg-club has no artwork yet and stays a plain panel. */
 .hero-bg-7x,
 .hero-bg-x,
+.hero-bg-7gt,
 .hero-bg-009,
 .hero-bg-club {
     background: var(--night-raised);
@@ -385,6 +386,7 @@ body {
 
 .hero-bg-7x,
 .hero-bg-x,
+.hero-bg-7gt,
 .hero-bg-009 {
     --hero-fade: linear-gradient(180deg, var(--night-raised) 0%, rgb(20 20 20 / 0) 30%);
     overflow: hidden;
@@ -392,6 +394,7 @@ body {
 
 .hero-bg-7x::after,
 .hero-bg-x::after,
+.hero-bg-7gt::after,
 .hero-bg-009::after {
     content: "";
     display: block;
@@ -423,6 +426,16 @@ body {
     );
 }
 
+.hero-bg-7gt::after {
+    background-image: var(--hero-fade), url("../assets/images/models/7gt-hero-1440.webp");
+    background-image: var(--hero-fade), image-set(
+        url("../assets/images/models/7gt-hero-1440.avif") type("image/avif") 1x,
+        url("../assets/images/models/7gt-hero.avif") type("image/avif") 2x,
+        url("../assets/images/models/7gt-hero-1440.webp") type("image/webp") 1x,
+        url("../assets/images/models/7gt-hero.webp") type("image/webp") 2x
+    );
+}
+
 .hero-bg-009::after {
     background-image: var(--hero-fade), url("../assets/images/models/009-hero-1440.webp");
     background-image: var(--hero-fade), image-set(
@@ -436,6 +449,7 @@ body {
 @media (max-width: 44.984375em) {
     .hero-bg-7x::after,
     .hero-bg-x::after,
+    .hero-bg-7gt::after,
     .hero-bg-009::after {
         aspect-ratio: 1.6 / 1;
     }
@@ -453,6 +467,14 @@ body {
         background-image: var(--hero-fade), image-set(
             url("../assets/images/models/x-hero-mobile.avif") type("image/avif"),
             url("../assets/images/models/x-hero-mobile.webp") type("image/webp")
+        );
+    }
+
+    .hero-bg-7gt::after {
+        background-image: var(--hero-fade), url("../assets/images/models/7gt-hero-mobile.webp");
+        background-image: var(--hero-fade), image-set(
+            url("../assets/images/models/7gt-hero-mobile.avif") type("image/avif"),
+            url("../assets/images/models/7gt-hero-mobile.webp") type("image/webp")
         );
     }
 
