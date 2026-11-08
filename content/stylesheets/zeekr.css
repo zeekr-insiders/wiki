@@ -493,7 +493,6 @@ body {
 .md-typeset :is(.btn-primary, .btn-hero-primary):hover,
 .zi-mast .btn-primary:hover {
     filter: brightness(1.08);
-}
     text-decoration: underline;
     text-decoration-thickness: var(--hairline);
     text-underline-offset: 0.2em;
@@ -503,6 +502,7 @@ body {
 .md-typeset :is(.btn-primary, .btn-hero-primary):active,
 .zi-mast .btn-primary:active {
     filter: brightness(0.92);
+}
 
 /* 8. Cards and stats: flat panels with a visible border, no hover lift. ---- */
 .card-grid {
@@ -1521,7 +1521,6 @@ span .zi-icon {
     height: 20px;
 }
 
-.md-tabs {
 /* Touch targets: the wiki bar's menu and search buttons are 44px (Material's
    are 36px), by padding only, since Material shows and hides them per
    breakpoint with display. The small glyphs below grow an invisible hit area
@@ -1548,6 +1547,7 @@ span .zi-icon {
     inset: calc(-1 * var(--sp-2)) calc(-1 * var(--sp-3)) calc(-1 * var(--sp-2)) calc(-1 * var(--sp-1));
 }
 
+.md-tabs {
     background: var(--bg-raised);
     color: var(--ink);
     border-top: var(--hairline) solid var(--line);
@@ -1730,42 +1730,6 @@ span .zi-icon {
     height: 16px;
 }
 
-/* 17. Footer and 404 ------------------------------------------------------- */
-.zi-footer {
-    padding-block: var(--sp-6);
-    border-top: var(--hairline) solid var(--line);
-    background: var(--bg);
-    color: var(--ink);
-    font-size: var(--fs-sm);
-    line-height: var(--lh-body);
-}
-
-.zi-footer a {
-    color: var(--ink);
-}
-
-.zi-keep {
-    display: grid;
-    gap: var(--sp-3);
-    margin-bottom: var(--sp-6);
-    padding: var(--sp-5);
-    background: var(--panel);
-    border: var(--hairline) solid var(--panel-border);
-    border-radius: var(--radius-md);
-}
-
-@media (min-width: 48rem) {
-    .zi-keep {
-        grid-template-columns: minmax(0, 1fr) auto;
-        align-items: center;
-    }
-}
-
-.zi-keep h2 {
-    margin: 0 0 var(--sp-1);
-    font-family: var(--font-display);
-    font-size: var(--fs-lg);
-    font-weight: 700;
 /* The club's sections at the top of the phone drawer (partials/nav.html):
    the masthead that carries them has scrolled away by the time the drawer
    opens. Hidden while the nav is a sidebar, where the masthead is on screen. */
@@ -1856,6 +1820,42 @@ span .zi-icon {
     }
 }
 
+/* 17. Footer and 404 ------------------------------------------------------- */
+.zi-footer {
+    padding-block: var(--sp-6);
+    border-top: var(--hairline) solid var(--line);
+    background: var(--bg);
+    color: var(--ink);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-body);
+}
+
+.zi-footer a {
+    color: var(--ink);
+}
+
+.zi-keep {
+    display: grid;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-6);
+    padding: var(--sp-5);
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-md);
+}
+
+@media (min-width: 48rem) {
+    .zi-keep {
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+    }
+}
+
+.zi-keep h2 {
+    margin: 0 0 var(--sp-1);
+    font-family: var(--font-display);
+    font-size: var(--fs-lg);
+    font-weight: 700;
 }
 
 .zi-keep p {
@@ -1980,6 +1980,28 @@ span .zi-icon {
 .md-typeset__scrollwrap:focus-visible {
     outline: var(--rule) solid var(--focus);
     outline-offset: 2px;
+}
+
+/* Content tabs: focus is on a hidden radio, so the ring goes on its label.
+   Ten covers the longest tab set the wiki is likely to have. */
+.md-typeset .tabbed-set > input:nth-child(1):focus-visible ~ .tabbed-labels > label:nth-child(1),
+.md-typeset .tabbed-set > input:nth-child(2):focus-visible ~ .tabbed-labels > label:nth-child(2),
+.md-typeset .tabbed-set > input:nth-child(3):focus-visible ~ .tabbed-labels > label:nth-child(3),
+.md-typeset .tabbed-set > input:nth-child(4):focus-visible ~ .tabbed-labels > label:nth-child(4),
+.md-typeset .tabbed-set > input:nth-child(5):focus-visible ~ .tabbed-labels > label:nth-child(5),
+.md-typeset .tabbed-set > input:nth-child(6):focus-visible ~ .tabbed-labels > label:nth-child(6),
+.md-typeset .tabbed-set > input:nth-child(7):focus-visible ~ .tabbed-labels > label:nth-child(7),
+.md-typeset .tabbed-set > input:nth-child(8):focus-visible ~ .tabbed-labels > label:nth-child(8),
+.md-typeset .tabbed-set > input:nth-child(9):focus-visible ~ .tabbed-labels > label:nth-child(9),
+.md-typeset .tabbed-set > input:nth-child(10):focus-visible ~ .tabbed-labels > label:nth-child(10) {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: -2px;
+}
+
+/* Closed search keeps its results panel in the DOM at zero height, and
+   Material makes it a tab stop; hiding it takes it out of the tab order. */
+#__search:not(:checked) ~ .md-header .md-search__scrollwrap {
+    visibility: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -2131,28 +2153,6 @@ span .zi-icon {
 
     .md-sidebar--secondary .zi-toc .md-nav__link .md-ellipsis {
         grid-column: 2;
-/* Content tabs: focus is on a hidden radio, so the ring goes on its label.
-   Ten covers the longest tab set the wiki is likely to have. */
-.md-typeset .tabbed-set > input:nth-child(1):focus-visible ~ .tabbed-labels > label:nth-child(1),
-.md-typeset .tabbed-set > input:nth-child(2):focus-visible ~ .tabbed-labels > label:nth-child(2),
-.md-typeset .tabbed-set > input:nth-child(3):focus-visible ~ .tabbed-labels > label:nth-child(3),
-.md-typeset .tabbed-set > input:nth-child(4):focus-visible ~ .tabbed-labels > label:nth-child(4),
-.md-typeset .tabbed-set > input:nth-child(5):focus-visible ~ .tabbed-labels > label:nth-child(5),
-.md-typeset .tabbed-set > input:nth-child(6):focus-visible ~ .tabbed-labels > label:nth-child(6),
-.md-typeset .tabbed-set > input:nth-child(7):focus-visible ~ .tabbed-labels > label:nth-child(7),
-.md-typeset .tabbed-set > input:nth-child(8):focus-visible ~ .tabbed-labels > label:nth-child(8),
-.md-typeset .tabbed-set > input:nth-child(9):focus-visible ~ .tabbed-labels > label:nth-child(9),
-.md-typeset .tabbed-set > input:nth-child(10):focus-visible ~ .tabbed-labels > label:nth-child(10) {
-    outline: var(--rule) solid var(--focus);
-    outline-offset: -2px;
-}
-
-/* Closed search keeps its results panel in the DOM at zero height, and
-   Material makes it a tab stop; hiding it takes it out of the tab order. */
-#__search:not(:checked) ~ .md-header .md-search__scrollwrap {
-    visibility: hidden;
-}
-
         white-space: normal;
     }
 
