@@ -25,6 +25,13 @@
 - [ ] Unconfirmed or conflicting facts are labelled as such
 - [ ] Figures say which model year they apply to (MY25/MY26 or MY27)
 
+## Licensing
+
+- [ ] I agree my text is licensed CC BY-NC-SA 4.0 and my code MIT (see `LICENSE-CONTENT.md` and `LICENSE`)
+- [ ] I have the right to submit every image I added, and I've listed each image's source and licence below (or I added no images)
+
+Images (source and licence):
+
 ## AI use disclosure
 
 See [How we use AI](https://zeekrinsiders.com.au/ai). Tick all that apply.

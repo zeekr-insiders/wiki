@@ -48,10 +48,20 @@ Australian English, plain and friendly, no hype and no em dashes. Write as one o
 
 AI tools are welcome for research and drafting, as long as a person checks every fact against its source. Say what you used in the pull request's **AI use disclosure**. Our policy: [How we use AI](https://zeekrinsiders.com.au/ai).
 
+## Licensing your contribution
+
+By opening a pull request you agree that:
+
+- your text contributions are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), like the rest of the wiki's content;
+- your code contributions (theme, hooks, scripts, JavaScript and CSS) are licensed under the [MIT licence](LICENSE);
+- you have the right to submit any image you add, and you state its source and licence in the pull request.
+
+Images aren't covered by either licence; [LICENSE-CONTENT.md](LICENSE-CONTENT.md) sets out who owns what.
+
 ## Images and privacy
 
 Only add images you have the right to use, and say where each came from. Don't include anyone's personal details (names, phone numbers, number plates, VINs) without their consent.
 
 ## How changes go live
 
-Pull requests are checked automatically (strict build plus the citation, label and nav checks). Once a maintainer merges to `main`, the site rebuilds and publishes to <https://wiki.zeekrinsiders.com.au> within a few minutes.
+Pull requests are checked automatically (strict build plus the citation, label, nav and search checks). Once a maintainer merges to `main`, the site rebuilds and publishes to <https://wiki.zeekrinsiders.com.au> within a few minutes.
