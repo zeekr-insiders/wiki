@@ -7,7 +7,9 @@ On the built site:
   "Overview" page's H1 is the section's own name;
 - a link card's heading (hooks/cards.py) matches its target's H1, nav label
   or the nav group the target sits in ("Charging" for Home charging);
-- headings never skip a level (h1 straight to h3).
+- headings never skip a level (h1 straight to h3);
+- the nav as rendered (the sidebar, which is also the phone drawer) shows
+  each page under its mkdocs.yml label, with that casing.
 
 Usage: python scripts/check_labels.py [site_dir] [mkdocs.yml]
 """
@@ -27,6 +29,7 @@ from check_nav import _Loader
 _H1 = re.compile(r"<h1\b[^>]*>(.*?)</h1>", re.S)
 _HEADING = re.compile(r"<h([1-6])\b", re.S)
 _ARTICLE = re.compile(r"<article\b.*?</article>", re.S)
+_ACTIVE = re.compile(r'<a\b[^>]*class="?md-nav__link md-nav__link--active"?[^>]*>(.*?)</a>', re.S)
 _CARD = re.compile(r'<div class="?z-card[^>]*zi-card--link[^>]*>.*?<h3><a href="?([^" >]+)"?[^>]*>(.*?)</a></h3>', re.S)
 
 
@@ -68,10 +71,15 @@ def main() -> int:
 
     h1s: dict[str, str] = {}
     pages: dict[str, str] = {}
+    shown: dict[str, str] = {}
     for path in site.rglob("index.html"):
         rel = path.parent.relative_to(site).as_posix()
         url = "" if rel == "." else rel + "/"
         body = path.read_text(encoding="utf-8")
+        active = _ACTIVE.search(body)
+        if active:
+            # Material repeats the label inside the link for the ToC toggle; the first run of text is it.
+            shown[url] = " ".join(html.unescape(re.sub(r"<[^>]+>", " ", active.group(1))).split())
         article = _ARTICLE.search(body)
         pages[url] = article.group(0) if article else ""
         m = _H1.search(pages[url])
@@ -87,6 +95,11 @@ def main() -> int:
         ok = h1 == want or (section and h1 == f"{section} {want}") or (want == "overview" and h1 == section)
         if not ok:
             problems.append(f"/{url}: nav label '{label}' but H1 '{h1}'")
+
+    for url, (label, _) in sorted(labels.items()):
+        text = shown.get(url)
+        if text is not None and not text.startswith(label):
+            problems.append(f"/{url}: nav shows '{text}' but mkdocs.yml says '{label}'")
 
     for url, article in sorted(pages.items()):
         levels = [int(n) for n in _HEADING.findall(article)]
