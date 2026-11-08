@@ -185,7 +185,8 @@ plugins:
   - rss:
       enabled: true
       use_git: true
-      length: 20
+      # Above the page count, so the launch feed lists every page rather than the newest 20.
+      length: 100
       abstract_chars_count: 160
       categories:
         - feed_section
@@ -194,7 +195,7 @@ plugins:
       image: https://wiki.zeekrinsiders.com.au/assets/img/logo-badge.png
       json_feed_enabled: true
       date_from_meta:
-        default_timezone: Australia/Melbourne
+        default_timezone: Australia/Sydney
   - minify:
       minify_html: true
       # The theme's JS ships unminified in the repo; minify it at build. Not the CSS: the minifier drops the
