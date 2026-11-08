@@ -2,7 +2,9 @@
  * Progressive: the page ships as the full A to Z list with letter links, and
  * this script reveals the filter, the category chips and a copy-link button on
  * each term. Typing filters on the term, its aliases and its definition,
- * marking the matches. A #term URL scrolls to the term and highlights it,
+ * marking the matches. Results rank an exact term or alias first, then a
+ * term or alias that starts with the query, then one containing it, then a
+ * definition match, shown as one list while the query is in. A #term URL scrolls to the term and highlights it,
  * clearing any filter that would hide it. Runs only where the glossary is.
  */
 (function () {
@@ -48,6 +50,7 @@
         id: heading.id,
         name: name,
         cat: el.getAttribute('data-cat') || '',
+        names: (el.getAttribute('data-names') || name.toLowerCase()).split('|'),
         text: plain.textContent.replace(/\s+/g, ' ').toLowerCase(),
         html: el.innerHTML
       };
@@ -83,11 +86,24 @@
       });
     }
 
+    // 0 exact term or alias, 1 term or alias starts with it, 2 contains it, 3 definition only.
+    function rank(t, q) {
+      var best = 3;
+      t.names.forEach(function (n) {
+        if (n === q) best = Math.min(best, 0);
+        else if (n.indexOf(q) === 0) best = Math.min(best, 1);
+        else if (n.indexOf(q) !== -1) best = Math.min(best, 2);
+      });
+      return best;
+    }
+
     function apply() {
       var q = input.value.trim().toLowerCase();
       var shown = 0;
-      terms.forEach(function (t) {
+      root.classList.toggle('is-ranked', !!q);
+      terms.forEach(function (t, i) {
         var hit = (!category || t.cat === category) && (!q || t.text.indexOf(q) !== -1);
+        t.el.style.order = q && hit ? String(rank(t, q) * 1000 + i) : '';
         if (t.marked) {
           t.el.innerHTML = t.html;
           t.marked = false;

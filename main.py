@@ -161,7 +161,8 @@ def define_env(env):
                 meta = f'<span class="zi-term__cat">{esc(cats[t["category"]])}</span>'
                 if aka:
                     meta += " Also called " + ", ".join(esc(a) for a in aka) + "."
-                out += [f'<div class="zi-term" data-cat="{t["category"]}" markdown>', "",
+                names = "|".join([t["term"]] + [str(a) for a in aka])
+                out += [f'<div class="zi-term" data-cat="{t["category"]}" data-names="{esc(names.lower(), quote=True)}" markdown>', "",
                         f'## {t["term"]} {{ #{t["id"]} }}', "",
                         meta, '{: .zi-term__meta }', "",
                         definition, ""]

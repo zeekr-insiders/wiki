@@ -15,6 +15,8 @@
      4. Material mapping     10. Admonitions        16. Sidebars and ToC panel
      5. Base and type        11. Links              17. Footer and 404
      6. Heroes               12. Icons              18. Focus, motion, print
+    19. On this page        20. Citations          21. Suggest an edit
+    22. Glossary
    ========================================================================== */
 
 /* 1. Fonts: self-hosted, swap so text shows at once in a fallback face. ---- */
@@ -3139,7 +3141,7 @@ span .zi-icon {
     color: var(--ink);
     background: var(--panel);
     border: var(--hairline) solid var(--panel-border);
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
 }
 
@@ -3422,7 +3424,7 @@ span .zi-icon {
     text-transform: uppercase;
     color: var(--ink);
     border: var(--hairline) solid var(--line-strong);
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
 }
 
 .md-typeset .zi-term .zi-term__see {
@@ -3437,8 +3439,36 @@ span .zi-icon {
     text-decoration-thickness: 1px;
 }
 
+/* While a query is in, the terms show as one ranked list (glossary.js sets each
+   term's order): the letter groups step aside and the letters go quiet. */
+.md-typeset .zi-gloss.is-ranked {
+    display: flex;
+    flex-direction: column;
+}
+
+.md-typeset .zi-gloss.is-ranked > .zi-gloss-chips {
+    order: -3;
+}
+
+.md-typeset .zi-gloss.is-ranked > .zi-gloss-bar {
+    order: -2;
+}
+
+.md-typeset .zi-gloss.is-ranked > .zi-gloss-empty {
+    order: -1;
+}
+
+.md-typeset .zi-gloss.is-ranked .zi-gloss-group {
+    display: contents;
+}
+
+.md-typeset .zi-gloss.is-ranked .zi-gloss-letter {
+    display: none;
+}
+
 /* The term a #link landed on: a Silver Gray edge and a light tint. */
 .md-typeset .zi-term.is-target {
     background: color-mix(in srgb, var(--hue-slate-solid) var(--hue-tint), transparent);
     box-shadow: inset 3px 0 0 var(--hue-slate-solid);
 }
+
