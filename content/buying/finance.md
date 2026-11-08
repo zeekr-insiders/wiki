@@ -131,9 +131,9 @@ We found no maintained novated lease calculator or wiki explainer on Whirlpool. 
 
 ### Where the Zeekr models sit
 
-LCT threshold for fuel-efficient vehicles, 2026-27: $91,661 [^3]. $75,000 is the 100% discount line proposed from 1 April 2027 [^19].
+LCT threshold for fuel-efficient vehicles, 2026-27: $91,661 [^3]. $75,000 is the 100% discount line proposed from 1 April 2027 [^19]. Prices are before on-road costs unless stated.
 
-| Model | Price (before on-road costs unless stated) | Against $75,000 | Against $91,661 |
+| Model | Price | Against $75,000 | Against $91,661 |
 | :--- | :--- | :--- | :--- |
 | 7X RWD, Long Range, Performance AWD | $57,900, $63,900, $72,900 [^4] | Under | Under |
 | 7X MY26 Black Special Edition | $75,900 [^5] | Over by $900 on RRP | Under |
