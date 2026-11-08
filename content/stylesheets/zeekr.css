@@ -1039,6 +1039,46 @@ body {
     text-decoration-thickness: var(--rule);
 }
 
+/* Link colour in every state, spelled out. Visited always matches unvisited,
+   as on the front door. Material colours a:focus and a:hover with
+   --md-accent-fg-color, which resolves once on <body>: in the light theme a
+   focused button in the always-dark hero (the browser re-focuses the link you
+   left by when you come Back) took the page's dark ink on a black ground, and
+   in dark a focused orange button took light ink on orange. Each rule below
+   resolves --ink where the link sits, so a link reads in its own region. */
+/* Secondary navigation and permalinks are muted at rest, visited or not.
+   :where keeps these below the ink states that follow. */
+.md-nav__link:where(:link, :visited),
+.md-tabs__link:where(:link, :visited),
+.md-path__link:where(:link, :visited) {
+    color: var(--ink-muted);
+}
+
+.md-typeset .headerlink:where(:link, :visited) {
+    color: var(--ink-faint);
+}
+
+.md-typeset a:not(.btn, .btn-hero, .go, .headerlink, .md-button, .md-tag, .footnote-ref):is(:link, :visited, :hover, :active, :focus, :focus-visible),
+.md-typeset a.go:is(:link, :visited, :hover, :active, :focus, :focus-visible),
+.md-typeset a:is(.btn, .btn-hero):is(:link, :visited, :hover, :active, :focus, :focus-visible),
+.zi-footer a:is(:link, :visited, :hover, :active, :focus, :focus-visible),
+.md-nav__link:is(:hover, :active, :focus, :focus-visible),
+.md-nav--primary .md-nav__link--active,
+.md-tabs__link:is(:hover, :active, :focus, :focus-visible),
+.md-tabs__item--active .md-tabs__link,
+.md-path__link:is(:hover, :active, :focus, :focus-visible),
+.md-typeset .headerlink:is(:hover, :active, :focus, :focus-visible) {
+    color: var(--ink);
+}
+
+.md-typeset a:is(.btn-primary, .btn-hero-primary):is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    color: var(--on-accent);
+}
+
+.md-typeset a.footnote-ref:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    color: var(--accent-ink);
+}
+
 /* 12. Icons: wiki line art (<img>) drawn in the ink colour, never orange. -- */
 .zi-icon {
     display: inline-block;
