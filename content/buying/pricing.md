@@ -1,148 +1,69 @@
-# Zeekr Pricing Guide
+---
+last_checked: 2026-11-08
+---
 
-Understanding the true cost of your Zeekr helps you budget accurately and compare options. This guide breaks down current pricing, on-road costs, and what to expect during negotiations.
+# Prices and on-road costs
 
-## Current Model Pricing
+*Last checked: 8 November 2026.*
 
-*Last reviewed: August 2026.*
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-Current pricing for Zeekr models in Australia:
+## Current prices
 
 ### Zeekr 7X
 
-- **7X RWD**: $57,900 + ORC
-- **7X Long Range RWD**: $63,900 + ORC
-- **7X AWD Performance**: $72,900 + ORC
-- **7X Black Special Edition**: $75,900 + ORC
+RRP before on-road costs, unchanged for the MY27 [1][2]:
 
-[View full specifications](../models/7x/2025/specifications.md)
+- **7X RWD**: $57,900
+- **7X Long Range RWD**: $63,900
+- **7X Performance AWD**: $72,900
+
+The MY26 Black Special Edition launched in March 2026 at $75,900 before on-road costs [3]; whether it is still orderable is not confirmed. The MY27 Black Edition Package for the Performance AWD has no announced price [1]. Details, colours and the MY27 launch offer: [7X prices and options](../models/7x/2025/pricing.md).
 
 ### Zeekr X (MY26)
 
-- **X RWD**: $48,900 drive-away
-- **X AWD**: $57,900 drive-away
+The updated X was priced in April 2026 from **$48,900 drive-away** for the RWD [4][5].
 
-Note the X moved to national drive-away pricing with the May 2026 relaunch - no on-road costs on top.
-
-[View full specifications](../models/x/2025/specifications.md)
+!!! warning "Sources differ: X AWD price"
+    CarExpert and The Beep give $57,900 drive-away for the AWD [4][5]; Carsales shows $55,990 drive-away [6]. Check current offers with your dealer.
 
 ### Zeekr 009
 
-- **009 FWD (7-seat)**: $115,900 + ORC
-- **009 AWD (7-seat)**: $135,900 + ORC
-- **009 AWD (6-seat)**: $139,900 + ORC
+RRP before on-road costs at the November 2025 launch [7]:
 
-[View full specifications](../models/009/specifications.md)
+- **009 7-seat FWD**: $115,900
+- **009 7-seat AWD**: $135,900
+- **009 6-seat AWD**: $139,900
 
-!!! note "Pricing Currency"
-    All prices are in Australian dollars (AUD). Pricing is subject to change - confirm current pricing with your dealer.
+Every 009 is above the FY2026-27 luxury car tax threshold for fuel-efficient vehicles ($91,661), so LCT applies to the amount above it [8]. See [finance](finance.md).
 
-## Understanding On-Road Costs (ORC)
+## On-road costs
 
-The "+ ORC" you see means "plus on-road costs". These are the additional expenses beyond the base vehicle price that get you legally driving on Australian roads.
+"+ ORC" means plus on-road costs: stamp duty, registration, compulsory third party insurance, number plates and the dealer's delivery charge. Duty is the biggest variable and depends on your state and the price you pay:
 
-### What's Included in ORC
+- **Victoria:** EVs pay $8.40 per $200 (about 4.2%) at all values, roughly $2,430 to $3,060 across the 7X range [9]. See [Victoria](../resources/vic/index.md).
+- **New South Wales:** standard duty, about $3,200 on a $57,900 car and $3,950 on a $72,900 car [10]. The EV exemption ended on 31 December 2023 [11]. See [NSW](../resources/nsw/index.md).
+- **Other states:** see the [state pages](../resources/index.md).
 
-Typical on-road costs include:
+Always get a written drive-away quote before you pay a deposit.
 
-- **Registration**: First year of vehicle registration (varies by state)
-- **Stamp duty**: Government tax on vehicle purchases (varies significantly by state)
-- **Compulsory Third Party (CTP) insurance**: Mandatory insurance (varies by state)
-- **Dealer delivery fee**: Preparation and delivery of the vehicle
-- **Number plates**: Cost of plates (if not transferring existing)
+## Negotiating
 
-### Typical ORC Amounts
+- RRP on new EVs from newer brands tends to be firm. Accessories, delivery charges, trade-in value and finance terms are more likely to move.
+- Ask "what can you do on the drive-away price?" and get any offer in writing.
+- Around a model-year change, ask whether outgoing stock is discounted, and compare it with the new model's launch offer.
 
-On-road costs typically range from $2,500 to $5,000 depending on your state and the vehicle's value. Higher-priced models incur higher stamp duty, which increases total ORC.
+## Sources
 
-For an accurate estimate, ask your dealer for a full drive-away quote for your specific state.
-
-## State-by-State Stamp Duty Differences
-
-Stamp duty is calculated differently in each state and is one of the most significant variables in on-road costs.
-
-- **Victoria**: Approximately $3,000-$5,000+ depending on vehicle value
-- **New South Wales**: Approximately $3,000-$5,500+ depending on vehicle value
-- **Queensland**: Approximately $3,000-$5,000+ depending on vehicle value
-- **Other states**: Varies - check with your dealer
-
-For detailed state-by-state information on registration, insurance, and other ownership costs, see our [By State Resources](../resources/index.md).
-
-!!! tip "Stamp Duty Exemptions"
-    Some states offer stamp duty concessions or exemptions for electric vehicles. Check if you're eligible for any state government EV incentives that could reduce your on-road costs.
-
-## Drive-Away Price
-
-Your **drive-away price** is the total amount you'll pay to drive the vehicle home. It includes:
-
-```
-Base Price + ORC = Drive-Away Price
-```
-
-Always ask for a full drive-away quote in writing before committing to a purchase. This prevents surprises and helps you compare options accurately.
-
-## Price Negotiation Tips
-
-Australian new car pricing, particularly for EVs from newer brands, tends to be less flexible than traditional car buying. Here's what to expect:
-
-### Be Realistic
-
-- MSRP pricing is often firm, especially on popular models
-- Limited stock and high demand reduce dealer flexibility
-- Zeekr is a newer brand building market presence
-
-### What You Might Negotiate
-
-- **Accessories**: Floor mats, window tinting, paint protection
-- **Delivery fees**: Some flexibility on dealer delivery charges
-- **Trade-in value**: If trading your current vehicle
-- **Finance packages**: Better rates through dealer finance options
-
-### What's Unlikely to Move
-
-- Base vehicle price (MSRP)
-- Government charges (stamp duty, registration, CTP)
-- Manufacturer costs
-
-### Negotiation Approach
-
-- Be polite and professional
-- Do your research on pricing beforehand
-- Ask "What can you do on drive-away price?" rather than demanding discounts
-- Consider value-adds if price won't budge
-- Get any offers in writing
-- Don't be afraid to walk away and think about it
-
-## Timing Your Purchase
-
-### End of Financial Year (EOFY)
-
-June-July can see dealer incentives as they clear stock and meet targets. However, new models and limited availability may reduce traditional EOFY discounting.
-
-### End of Month/Quarter
-
-Dealers may have more flexibility near period end to meet sales targets, though this is less predictable with EVs.
-
-### Model Changeovers
-
-When newer model years arrive, previous year stock may be discounted. However, Zeekr's limited time in Australia means this may not apply yet.
-
-### Best Advice
-
-Buy when you're ready and can get the vehicle you want. Waiting for hypothetical discounts may mean missing out on availability or better finance rates.
-
-## Additional Costs to Consider
-
-Beyond the drive-away price, budget for:
-
-- **Home charging installation**: $800-$3,000+ depending on setup
-- **Insurance**: Comprehensive vehicle insurance (shop around)
-- **Extended warranty**: If offered and desired
-- **Accessories**: Mud flaps, cargo organisers, etc.
-- **Window tinting**: If not included
-
-See our [Finance](finance.md) page for information on payment options and [Delivery](delivery.md) for what happens after you've agreed to purchase.
-
-## Questions About Pricing?
-
-Connect with {{ extra.club.abbreviation }} members who've recently purchased to hear about their experiences with pricing and negotiations in different states.
+1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+2. CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+3. The Driven, "Zeekr launches 7X Black Edition after 2,200 sales in Australia", <https://thedriven.io/2026/03/13/zeekr-launches-7x-black-edition-after-2200-sales-in-australia/>, accessed 8 November 2026.
+4. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+5. The Beep, "2026 Zeekr X undercuts rivals with sub-$49K driveaway price", <https://thebeep.com.au/car-news/2026-zeekr-x-price-specs-australia>, accessed 8 November 2026.
+6. Carsales, "Zeekr X 2026", <https://www.carsales.com.au/research/zeekr/x/2026/>, accessed 8 November 2026.
+7. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+8. Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+9. State Revenue Office Victoria, "Motor vehicle duty (current rates)", <https://www.sro.vic.gov.au/rates-taxes-duties-and-levies/motor-vehicle-duty-current-rates>, accessed 8 November 2026.
+10. Revenue NSW, "Motor vehicle duty", <https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/motor-vehicle-duty>, accessed 8 November 2026.
+11. NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.
