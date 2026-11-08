@@ -61,3 +61,9 @@
   {% include "partials/zi-masthead.html" %}
   {{ super() }}
 {% endblock %}
+
+{#- The page's own "Suggest an edit" link closes the article, just above the site footer. -#}
+{% block content %}
+  {{ super() }}
+  {% include "partials/zi-contribute.html" %}
+{% endblock %}

@@ -6,6 +6,11 @@ site_url: https://wiki.zeekrinsiders.com.au/
 
 docs_dir: content
 
+# To be confirmed: the wiki has no remote yet. These only build each page's "Suggest an edit"
+# link (GitHub's edit view of its Markdown source); the header shows no repository widget.
+repo_url: https://github.com/zeekr-insiders/wiki
+edit_uri: edit/main/content/
+
 theme:
   name: material
   custom_dir: overrides
@@ -49,6 +54,7 @@ theme:
     - search.suggest
     - content.code.copy
     - content.code.select
+    - content.action.edit
 
 extra:
   club:

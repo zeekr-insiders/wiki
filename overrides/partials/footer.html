@@ -47,6 +47,7 @@
         <li><a href="{{ base }}/contact">Contact</a></li>
         <li><a href="{{ site.join_url }}">Join us</a></li>
         <li><a href="{{ base }}/privacy">Privacy</a></li>
+        <li><a href="{{ page.edit_url if (page and page.edit_url) else config.repo_url }}" rel="edit">Contribute<span class="zi-vh"> to this page on GitHub (opens another site)</span></a></li>
       </ul>
     </nav>
   </div>
