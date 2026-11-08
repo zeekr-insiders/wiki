@@ -727,6 +727,42 @@ body {
     margin: var(--sp-5) 0;
 }
 
+/* Card grids are sized by the article column, not the window, and by how many
+   cards they hold, so a row is always full: two, three or four across, never
+   three and an orphan. auto-fit alone left a fourth card alone on its row
+   whenever the column was a little under four (or three) cards wide. */
+.md-content__inner {
+    container: zi-article / inline-size;
+}
+
+@container zi-article (min-width: 480px) {
+    .card-grid:has(> :nth-child(2):last-child),
+    .card-grid:has(> :nth-child(4):last-child),
+    .card-grid.model-lineup {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@container zi-article (min-width: 600px) {
+    .card-grid:has(> :nth-child(3):last-child) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@container zi-article (min-width: 1080px) {
+    .card-grid:has(> :nth-child(4):last-child),
+    .card-grid.model-lineup {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@container zi-article (max-width: 479.98px) {
+    .card-grid,
+    .card-grid.model-lineup {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 .z-card,
 .md-typeset .grid.cards > ul > li {
     position: relative;
@@ -1105,15 +1141,21 @@ body {
     --zi-spec-cols: 2;
 }
 
-@media (min-width: 45em) {
+/* Sized by the article column (see .card-grid), so four cards go 2 x 2 in a
+   column too narrow for their detail lines rather than wrapping them. */
+@container zi-article (min-width: 560px) {
     .zi-spec-grid:has(> :nth-child(3):last-child) {
         --zi-spec-cols: 3;
     }
+}
 
+@container zi-article (min-width: 740px) {
     .zi-spec-grid:has(> :nth-child(4):last-child) {
         --zi-spec-cols: 4;
     }
+}
 
+@container zi-article (min-width: 560px) {
     /* Five or more: as many as fit, never narrower than a value needs. */
     .zi-spec-grid:has(> :nth-child(5)) {
         grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
