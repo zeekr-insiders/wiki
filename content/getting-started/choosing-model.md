@@ -11,7 +11,7 @@ Three Zeekr models are on sale in Australia. Here is how to narrow it down.
 !!! info "2027 7X (MY27)"
     The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-!!! note "Coming: Zeekr 7GT"
+!!! info "Coming: Zeekr 7GT"
     The 7GT electric wagon is confirmed for Australia but not yet on sale, and has no Australian price yet [^8]. First deliveries are expected in the first quarter of 2027 [^9]. See [Zeekr 7GT](../models/7gt/overview.md).
 
 ## The lineup at a glance

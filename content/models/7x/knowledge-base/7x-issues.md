@@ -11,7 +11,7 @@ last_checked: 2026-11-08
 
 Common quirks owners raise, with what the owner's manual says about each. Menu names change with software updates, so treat the paths as a starting point.
 
-!!! note "About the manual we checked"
+!!! info "About the manual we checked"
     The instructions below come from a 7X owner's manual (2025 Long Range RWD, Netherlands edition) on an unofficial mirror [^1]. We have not checked them against the Australian manual that comes with the car, and Australian cars may behave differently. If yours does not match, tell us and we will update the entry. For anything that might be a fault, go to your dealer: warranty claims go through an authorised Zeekr dealer [^2].
 
 ## Driver drowsiness and distraction alerts
