@@ -15,10 +15,10 @@ Charging at home overnight is the cheapest and easiest way to run an EV. Here's 
 
 | Model | Maximum AC charging |
 | :--- | :--- |
-| 7X (all grades, MY25/MY26 and MY27) | 22 kW [1] |
-| X RWD (MY26) | 11 kW [2] |
-| X AWD (MY26) | 22 kW [2] |
-| 009 FWD | 11 kW [3] |
+| 7X (all grades, MY25/MY26 and MY27) | 22 kW [^1] |
+| X RWD (MY26) | 11 kW [^2] |
+| X AWD (MY26) | 22 kW [^2] |
+| 009 FWD | 11 kW [^3] |
 | 009 AWD | Not stated in the sources we found |
 
 A car only charges as fast as the slower of the car and the wallbox. 22 kW needs three-phase power; most homes are single-phase, which tops out around 7 kW.
@@ -30,12 +30,12 @@ A car only charges as fast as the slower of the car and the wallbox. 22 kW needs
 A standard 10 amp socket gives about 2.3 kW (230 V x 10 A). That adds roughly 2.3 kWh per hour, so a 75 kWh battery takes well over a day from empty. It's fine for topping up or for low daily mileage, not for regular full charges.
 
 !!! danger "No extension leads or adapters"
-    Zeekr's 7X owner manual says not to use any adapters, extension cables or multiple ports of any kind when charging [4]. Plug the portable charger straight into a suitable wall socket. If the socket is too far from where you park, or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox.
+    Zeekr's 7X owner manual says not to use any adapters, extension cables or multiple ports of any kind when charging [^4]. Plug the portable charger straight into a suitable wall socket. If the socket is too far from where you park, or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox.
 
 !!! note "Not yet confirmed for the Australian manual"
-    The manual we read is the Netherlands edition of the 7X manual, on an unofficial mirror [4]. Check the booklet that came with your car and your portable charger's own manual.
+    The manual we read is the Netherlands edition of the 7X manual, on an unofficial mirror [^4]. Check the booklet that came with your car and your portable charger's own manual.
 
-The same manual says the cable between the car and the charging equipment must be shorter than 30 metres, and not to use damaged cables, bundle the cable while charging, or leave it in direct sunlight, because overheating protection can slow or stop charging [4].
+The same manual says the cable between the car and the charging equipment must be shorter than 30 metres, and not to use damaged cables, bundle the cable while charging, or leave it in direct sunlight, because overheating protection can slow or stop charging [^4].
 
 ### 7 kW wallbox (single-phase)
 
@@ -47,8 +47,8 @@ Only worth it if you already have three-phase power and a car that accepts 22 kW
 
 ## Did you get a wallbox with your car?
 
-- **First 1,000 7X buyers (2025 launch):** the launch offer included a 7 kW home charger plus Type 2 and mini portable (10 amp) cables [5]. Check your contract for what applied to you.
-- **2027 7X (MY27) launch offer:** orders placed with a deposit from 1 November to 31 December 2026 include a 7 kW wallbox, supply only. Installation by a licensed electrician is at your cost [6].
+- **First 1,000 7X buyers (2025 launch):** the launch offer included a 7 kW home charger plus Type 2 and mini portable (10 amp) cables [^5]. Check your contract for what applied to you.
+- **2027 7X (MY27) launch offer:** orders placed with a deposit from 1 November to 31 December 2026 include a 7 kW wallbox, supply only. Installation by a licensed electrician is at your cost [^6].
 
 ## Installation
 
@@ -108,9 +108,9 @@ Rules differ by state, so check your state's fair trading or strata guidance.
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-3. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
-4. Zeekr 7X Manual (unofficial mirror, Netherlands edition), "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
-5. CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
-6. ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^4]: Zeekr 7X Manual (unofficial mirror, Netherlands edition), "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
+[^5]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+[^6]: ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.

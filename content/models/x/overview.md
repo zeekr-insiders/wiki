@@ -45,7 +45,7 @@ last_checked: 2026-11-08
     </div>
 </div>
 
-Prices and figures: CarExpert [1]. AWD drive-away pricing varies between listings; see [pricing](2025/pricing.md).
+Prices and figures: CarExpert [^1]. AWD drive-away pricing varies between listings; see [pricing](2025/pricing.md).
 
 ## Key stats
 
@@ -94,4 +94,4 @@ Prices and figures: CarExpert [1]. AWD drive-away pricing varies between listing
 
 ## Sources
 
-1. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^1]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.

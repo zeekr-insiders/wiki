@@ -26,7 +26,7 @@ There is no engine oil, spark plugs, exhaust or fuel system to maintain.
 
 ### AC and DC
 
-**AC charging** is what you use at home, at work and at many destination chargers. The car's on-board charger sets the maximum rate: Zeekr models take 11 kW or 22 kW on AC depending on the model and variant [1][2][3]. You only get more than about 7 kW from three-phase power.
+**AC charging** is what you use at home, at work and at many destination chargers. The car's on-board charger sets the maximum rate: Zeekr models take 11 kW or 22 kW on AC depending on the model and variant [^1][^2][^3]. You only get more than about 7 kW from three-phase power.
 
 **DC fast charging** is the public chargers along highways and in town. The charger feeds the battery directly, so it is much faster. How fast depends on the charger's output, your car's limit, the battery temperature and how full the battery is: charging slows as the battery fills, which is why times are usually quoted as 10-80%.
 
@@ -40,7 +40,7 @@ If you can charge at home overnight, you start most days with the charge you nee
 
 ## Range
 
-WLTP range is a standard lab test figure, useful for comparing cars. Real-world range varies with speed, temperature, load and terrain; highway driving at 110 km/h usually gets less than the WLTP figure. Zeekr's WLTP figures run from 405 km (X RWD) to 615 km (7X Long Range, MY25/MY26) [1][2][4].
+WLTP range is a standard lab test figure, useful for comparing cars. Real-world range varies with speed, temperature, load and terrain; highway driving at 110 km/h usually gets less than the WLTP figure. Zeekr's WLTP figures run from 405 km (X RWD) to 615 km (7X Long Range, MY25/MY26) [^1][^2][^4].
 
 For long trips, plan your charging stops before you leave and keep a buffer. The [road trips guide](../guides/charging/road-trips.md) covers this.
 
@@ -59,18 +59,18 @@ EVs still need tyres, brake fluid, cabin filters, wiper blades and scheduled ser
 ### Federal
 
 - **Novated leasing (FBT).** Eligible EVs bought through a novated lease can be exempt from Fringe Benefits Tax. The details, and the thresholds, are in the [finance guide](../buying/finance.md).
-- **Luxury Car Tax.** For 2026-27 the LCT threshold for fuel-efficient vehicles, which includes EVs, is $91,661 [5].
+- **Luxury Car Tax.** For 2026-27 the LCT threshold for fuel-efficient vehicles, which includes EVs, is $91,661 [^5].
 
 !!! note "Not yet confirmed"
-    RACV reports that from April 2027, EVs priced up to $75,000 keep the full FBT exemption while those between $75,000 and the LCT threshold move to 75% of the standard FBT rate [6]. We have not confirmed this against the ATO or Treasury. Check with your novated lease provider or tax adviser.
+    RACV reports that from April 2027, EVs priced up to $75,000 keep the full FBT exemption while those between $75,000 and the LCT threshold move to 75% of the standard FBT rate [^6]. We have not confirmed this against the ATO or Treasury. Check with your novated lease provider or tax adviser.
 
 ### Road user charge
 
-NSW has legislated a distance-based road user charge for EVs that starts on 1 July 2027, or earlier if battery EVs reach 30% of new vehicle sales [7].
+NSW has legislated a distance-based road user charge for EVs that starts on 1 July 2027, or earlier if battery EVs reach 30% of new vehicle sales [^7].
 
 ### State rebates
 
-The Victorian EV purchase subsidy ended in 2023, and the NSW EV rebate and stamp duty exemption ended on 31 December 2023 [6][7]. Stamp duty and registration rules differ by state:
+The Victorian EV purchase subsidy ended in 2023, and the NSW EV rebate and stamp duty exemption ended on 31 December 2023 [^6][^7]. Stamp duty and registration rules differ by state:
 
 [State-by-State Resources](../resources/index.md){ .md-button }
 
@@ -81,10 +81,10 @@ The Victorian EV purchase subsidy ended in 2023, and the NSW EV rebate and stamp
 
 ## Sources
 
-1. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-2. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-3. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
-4. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
-5. Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
-6. RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
-7. NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.
+[^1]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^2]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^4]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+[^5]: Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+[^6]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^7]: NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.

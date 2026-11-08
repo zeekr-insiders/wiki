@@ -20,7 +20,7 @@ last_checked: 2026-11-08
 
 ## The lineup (MY25/MY26)
 
-Prices are RRP before on-road costs and are unchanged for the MY27 [1][2].
+Prices are RRP before on-road costs and are unchanged for the MY27 [^1][^2].
 
 <div class="card-grid">
     <div class="z-card">
@@ -60,7 +60,7 @@ Prices are RRP before on-road costs and are unchanged for the MY27 [1][2].
     </div>
 </div>
 
-Range, battery and 0-100 figures are from Zeekr's MY25/MY26 comparison table [3]; power and torque are the pre-update figures given by CarExpert [1].
+Range, battery and 0-100 figures are from Zeekr's MY25/MY26 comparison table [^3]; power and torque are the pre-update figures given by CarExpert [^1].
 
 ## Key numbers
 
@@ -95,11 +95,11 @@ Range, battery and 0-100 figures are from Zeekr's MY25/MY26 comparison table [3]
     </div>
 </div>
 
-The 7X uses an 800V system with peak DC charging of up to 450 kW on the RWD and 420 kW on the Long Range and AWD [1]. What you actually see depends on the charger, the battery's temperature and its state of charge. Towing is rated at 2,000 kg braked and 750 kg unbraked for the MY25/MY26 car [4]; confirm towbar and tongue-weight details with your dealer. The boot holds 539 L with the rear seats up and 1,978 L folded [5].
+The 7X uses an 800V system with peak DC charging of up to 450 kW on the RWD and 420 kW on the Long Range and AWD [^1]. What you actually see depends on the charger, the battery's temperature and its state of charge. Towing is rated at 2,000 kg braked and 750 kg unbraked for the MY25/MY26 car [^4]; confirm towbar and tongue-weight details with your dealer. The boot holds 539 L with the rear seats up and 1,978 L folded [^5].
 
 ## The MY27 update in brief
 
-The 2027 7X keeps the prices, batteries and 800V system, and adds power and a little range [1]:
+The 2027 7X keeps the prices, batteries and 800V system, and adds power and a little range [^1]:
 
 | | RWD | Long Range | Performance AWD |
 | :--- | :--- | :--- | :--- |
@@ -107,7 +107,7 @@ The 2027 7X keeps the prices, batteries and 800V system, and adds power and a li
 | 0-100 km/h | 5.6 s | 5.5 s | 3.7 s |
 | WLTP range | 482 km | 627 km | 544 km |
 
-Every grade also gets a built-in dashcam (DVR) [1] and rear privacy glass [2]. The [Which 7X do I have?](which-7x.md) page covers how to tell the two apart.
+Every grade also gets a built-in dashcam (DVR) [^1] and rear privacy glass [^2]. The [Which 7X do I have?](which-7x.md) page covers how to tell the two apart.
 
 ## More on the 7X
 
@@ -121,8 +121,8 @@ Every grade also gets a built-in dashcam (DVR) [1] and rear privacy glass [2]. T
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
-3. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
-4. The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
-5. CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
+[^3]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+[^4]: The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
+[^5]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.

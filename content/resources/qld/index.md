@@ -8,14 +8,14 @@ last_checked: 2026-11-08
 
 ## Stamp duty
 
-Queensland charges electric and hybrid light vehicles $2 per $100 (or part) of dutiable value up to $100,000, and $4 per $100 (or part) above $100,000 [2]. The government page was last updated in March 2023, so check the [current rates](https://www.qld.gov.au/transport/registration/costs/duty/rates) before you budget.
+Queensland charges electric and hybrid light vehicles $2 per $100 (or part) of dutiable value up to $100,000, and $4 per $100 (or part) above $100,000 [^2]. The government page was last updated in March 2023, so check the [current rates](https://www.qld.gov.au/transport/registration/costs/duty/rates) before you budget.
 
 ## Incentives
 
-The Queensland zero emission vehicle rebate ended on 2 September 2024. A registration discount remains for eligible vehicles under $100,000 dutiable value [1].
+The Queensland zero emission vehicle rebate ended on 2 September 2024. A registration discount remains for eligible vehicles under $100,000 dutiable value [^1].
 
 !!! note "Not yet confirmed"
-    This comes from a single secondary source (RACV, May 2026) [1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
 
 ## Service
 
@@ -32,5 +32,5 @@ Hot weather and heavy air-conditioning use cut range. Pre-cool the cabin while t
 
 ## Sources
 
-1. RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
-2. Queensland Government, "Vehicle registration duty rates", <https://www.qld.gov.au/transport/registration/costs/duty/rates>, accessed 8 November 2026.
+[^1]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^2]: Queensland Government, "Vehicle registration duty rates", <https://www.qld.gov.au/transport/registration/costs/duty/rates>, accessed 8 November 2026.

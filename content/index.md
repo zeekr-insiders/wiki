@@ -86,11 +86,11 @@ hide:
 
 <p class="image-credit">Images: Zeekr</p>
 
-*Last checked: 8 November 2026.* 7X: price [1], range and 800V system [4][1]. X: price, power and range [2]. 009: price, battery and range [3]. The updated 2027 7X (MY27) keeps the same prices and has up to 627 km WLTP on the Long Range [1]; see [Which 7X do I have?](models/7x/which-7x.md).
+*Last checked: 8 November 2026.* 7X: price [^1], range and 800V system [^4][^1]. X: price, power and range [^2]. 009: price, battery and range [^3]. The updated 2027 7X (MY27) keeps the same prices and has up to 627 km WLTP on the Long Range [^1]; see [Which 7X do I have?](models/7x/which-7x.md).
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-3. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
-4. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^4]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.

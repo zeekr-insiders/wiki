@@ -30,16 +30,16 @@ Don't wait until you're standing at a charger to create an account and add a car
 
 | Model | Peak DC charging |
 | :--- | :--- |
-| 7X RWD | up to 450 kW [1] |
-| 7X Long Range and Performance AWD | up to 420 kW [1] |
-| X RWD (MY26) | up to 230 kW [2] |
-| X AWD (MY26) | up to 150 kW [2] |
-| 009 FWD | 150 kW [3] |
+| 7X RWD | up to 450 kW [^1] |
+| 7X Long Range and Performance AWD | up to 420 kW [^1] |
+| X RWD (MY26) | up to 230 kW [^2] |
+| X AWD (MY26) | up to 150 kW [^2] |
+| 009 FWD | 150 kW [^3] |
 
-The 7X uses an 800V system [1], so it can make use of the fastest public chargers. Peak figures are what the car can accept under ideal conditions; a 350 kW charger can't deliver 450 kW, and the actual rate depends on the charger, battery temperature and state of charge.
+The 7X uses an 800V system [^1], so it can make use of the fastest public chargers. Peak figures are what the car can accept under ideal conditions; a 350 kW charger can't deliver 450 kW, and the actual rate depends on the charger, battery temperature and state of charge.
 
 !!! warning "Sources differ: 7X 10-80% times"
-    Zeekr's own 7X page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another, and EV Central quotes "as little as 11 minutes" [4][5]. Expect roughly 10 to 16 minutes on a fast charger, depending on variant, battery temperature and the charger.
+    Zeekr's own 7X page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another, and EV Central quotes "as little as 11 minutes" [^4][^5]. Expect roughly 10 to 16 minutes on a fast charger, depending on variant, battery temperature and the charger.
 
 AC charging is much slower and depends on both the charger and your car's onboard charger (11 kW or 22 kW depending on model; see [Home Charging](home-setup.md)).
 
@@ -55,8 +55,8 @@ Know a reliable charging spot in your area? Tell us through the [community chann
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-3. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
-4. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
-5. EV Central, "Key Tesla Model Y rival gets more power, same price for 2027", <https://evcentral.com.au/key-tesla-model-y-rival-gets-more-power-same-price-for-2027-zeekr-7x-upgraded-with-500kw-flagship-and-up-to-627km-range/>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^4]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+[^5]: EV Central, "Key Tesla Model Y rival gets more power, same price for 2027", <https://evcentral.com.au/key-tesla-model-y-rival-gets-more-power-same-price-for-2027-zeekr-7x-upgraded-with-500kw-flagship-and-up-to-627km-range/>, accessed 8 November 2026.

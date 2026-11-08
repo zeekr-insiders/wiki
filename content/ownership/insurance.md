@@ -115,7 +115,7 @@ While most major insurers now cover EVs, some have more experience than others. 
 ### Security Measures
 
 - **Secure parking** - Garage or locked carport reduces risk
-- **Security devices** - Tell your insurer about any dashcam or tracker. The 2027 7X (MY27) has a built-in DVR (dashcam) on every grade [1], and footage can help with a claim.
+- **Security devices** - Tell your insurer about any dashcam or tracker. The 2027 7X (MY27) has a built-in DVR (dashcam) on every grade [^1], and footage can help with a claim.
 
 ### Driver Profile
 
@@ -171,8 +171,8 @@ While most major insurers now cover EVs, some have more experience than others. 
 ### EV-Specific Considerations
 
 - **High voltage hazard** - Tell first responders and the tow operator it's an EV
-- **Towing** - Follow the towing instructions in your owner's manual. If you can't drive the car, Zeekr Roadside (1800 093 357, 24/7) can arrange a tow to the nearest authorised Zeekr retailer [2]
-- **Repairs** - Ask for a repairer that's qualified on EVs. Zeekr lists an approved body and paint repairer, Zeekr Approved Body and Paint (Five Dock, NSW), on its locator [3]
+- **Towing** - Follow the towing instructions in your owner's manual. If you can't drive the car, Zeekr Roadside (1800 093 357, 24/7) can arrange a tow to the nearest authorised Zeekr retailer [^2]
+- **Repairs** - Ask for a repairer that's qualified on EVs. Zeekr lists an approved body and paint repairer, Zeekr Approved Body and Paint (Five Dock, NSW), on its locator [^3]
 
 ## Resources
 
@@ -190,6 +190,6 @@ Compare several quotes and read the product disclosure statement before you comm
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. Zeekr, "New Vehicle Roadside Assistance Program: Terms and Conditions", <https://www.datocms-assets.com/130529/1781067092-zeekr-roadside-assistance-t-c-s.pdf>, accessed 8 November 2026.
-3. Zeekr Australia, "Find a dealer", <https://www.zeekrlife.com/en-au/find-us>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: Zeekr, "New Vehicle Roadside Assistance Program: Terms and Conditions", <https://www.datocms-assets.com/130529/1781067092-zeekr-roadside-assistance-t-c-s.pdf>, accessed 8 November 2026.
+[^3]: Zeekr Australia, "Find a dealer", <https://www.zeekrlife.com/en-au/find-us>, accessed 8 November 2026.

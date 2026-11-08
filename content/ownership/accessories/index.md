@@ -1,6 +1,6 @@
 # Accessories Overview
 
-Protection, accessories and installers, from owners in the {{ extra.club.full_name }} community. Check fitment for your model and model year: the 2027 7X (MY27) has a revised centre console and rear privacy glass as standard [1], so some advice for the MY25/MY26 car doesn't carry over.
+Protection, accessories and installers, from owners in the {{ extra.club.full_name }} community. Check fitment for your model and model year: the 2027 7X (MY27) has a revised centre console and rear privacy glass as standard [^1], so some advice for the MY25/MY26 car doesn't carry over.
 
 ## Available Categories
 
@@ -58,7 +58,7 @@ Not declaring modifications can affect a claim. See our [Insurance Guide](../ins
 
 ### Warranty Considerations
 
-Under Zeekr's Australian warranty policy [2]:
+Under Zeekr's Australian warranty policy [^2]:
 
 - **Accessories fitted by an authorised dealer before delivery** get the full vehicle warranty
 - **Accessories fitted after delivery** are covered for 24 months or 20,000 km
@@ -97,7 +97,7 @@ Owners often start with:
 2. **PPF on high-impact areas** such as the front bumper, bonnet edge, mirrors and door edges
 3. **All-weather floor mats and a boot liner**
 4. **A charging cable organiser**
-5. **A dashcam** on MY25/MY26 cars (the MY27 7X has one built in [1])
+5. **A dashcam** on MY25/MY26 cars (the MY27 7X has one built in [^1])
 
 Get more than one quote for any paid installation; prices vary a lot by location and product.
 
@@ -114,5 +114,5 @@ Recommendations in this section are based on community member experiences and do
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.

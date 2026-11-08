@@ -12,11 +12,11 @@ last_checked: 2026-11-08
 Common quirks owners raise, with what the owner's manual says about each. Menu names change with software updates, so treat the paths as a starting point.
 
 !!! note "About the manual we checked"
-    The instructions below come from a 7X owner's manual (2025 Long Range RWD, Netherlands edition) on an unofficial mirror [1]. We have not checked them against the Australian manual that comes with the car, and Australian cars may behave differently. If yours does not match, tell us and we will update the entry. For anything that might be a fault, go to your dealer: warranty claims go through an authorised Zeekr dealer [2].
+    The instructions below come from a 7X owner's manual (2025 Long Range RWD, Netherlands edition) on an unofficial mirror [^1]. We have not checked them against the Australian manual that comes with the car, and Australian cars may behave differently. If yours does not match, tell us and we will update the entry. For anything that might be a fault, go to your dealer: warranty claims go through an authorised Zeekr dealer [^2].
 
 ## Driver drowsiness and distraction alerts
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [3].
+**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^3].
 
 **The issue:** the car warns you when it thinks you are drowsy or looking away, for example at the centre screen.
 
@@ -30,7 +30,7 @@ The manual does not say whether the setting survives a restart.
 
 ## Over-speed alert
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [4].
+**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^4].
 
 **The issue:** the car alerts you when you go over the speed limit it has read.
 
@@ -45,7 +45,7 @@ The manual does not describe a tolerance or offset setting.
 
 ## Charging cable won't release
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [5].
+**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^5].
 
 **The issue:** the charging cable stays locked in the charge port after charging.
 
@@ -53,7 +53,7 @@ The manual does not describe a tolerance or offset setting.
 
 ## Screens frozen or misbehaving
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [6].
+**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^6].
 
 **The issue:** the centre display or driver display hangs, or apps such as music streaming stop responding.
 
@@ -61,9 +61,9 @@ The manual does not describe a tolerance or offset setting.
 
 ## Sources
 
-1. Zeekr 7X Manual (unofficial mirror of the 2025 Long Range RWD, Netherlands edition), <https://zeekr-manual.pages.dev/>, accessed 8 November 2026.
-2. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
-3. Zeekr 7X Manual (mirror), "Driver drowsiness and distraction alert", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214913/>, accessed 8 November 2026.
-4. Zeekr 7X Manual (mirror), "Traffic sign information", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214910/>, accessed 8 November 2026.
-5. Zeekr 7X Manual (mirror), "Stuck charging cable", <https://zeekr-manual.pages.dev/sections/hazardous-situations/T10211214/>, accessed 8 November 2026.
-6. Zeekr 7X Manual (mirror), "Reboot the center display and driver display", <https://zeekr-manual.pages.dev/sections/center-display/T10213514/>, accessed 8 November 2026.
+[^1]: Zeekr 7X Manual (unofficial mirror of the 2025 Long Range RWD, Netherlands edition), <https://zeekr-manual.pages.dev/>, accessed 8 November 2026.
+[^2]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+[^3]: Zeekr 7X Manual (mirror), "Driver drowsiness and distraction alert", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214913/>, accessed 8 November 2026.
+[^4]: Zeekr 7X Manual (mirror), "Traffic sign information", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214910/>, accessed 8 November 2026.
+[^5]: Zeekr 7X Manual (mirror), "Stuck charging cable", <https://zeekr-manual.pages.dev/sections/hazardous-situations/T10211214/>, accessed 8 November 2026.
+[^6]: Zeekr 7X Manual (mirror), "Reboot the center display and driver display", <https://zeekr-manual.pages.dev/sections/center-display/T10213514/>, accessed 8 November 2026.

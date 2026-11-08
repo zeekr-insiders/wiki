@@ -58,7 +58,7 @@ last_checked: 2026-11-08
     </div>
 </div>
 
-Prices are before on-road costs, as at the November 2025 launch; we found no later change [1][2].
+Prices are before on-road costs, as at the November 2025 launch; we found no later change [^1][^2].
 
 ## Key stats
 
@@ -93,7 +93,7 @@ Prices are before on-road costs, as at the November 2025 launch; we found no lat
     </div>
 </div>
 
-Stats: CarExpert [1].
+Stats: CarExpert [^1].
 
 ## Worth knowing
 
@@ -101,7 +101,7 @@ Stats: CarExpert [1].
     The 009 is a large vehicle. Check its length and width on Zeekr's site or at the dealer against your garage and car space before you buy.
 
 !!! info "Luxury Car Tax"
-    Every 009 variant is priced above the 2026-27 LCT threshold for fuel-efficient vehicles ($91,661), so LCT applies to the amount above it [3]. See the [finance guide](../../buying/finance.md).
+    Every 009 variant is priced above the 2026-27 LCT threshold for fuel-efficient vehicles ($91,661), so LCT applies to the amount above it [^3]. See the [finance guide](../../buying/finance.md).
 
 ## More on the 009
 
@@ -112,6 +112,6 @@ Stats: CarExpert [1].
 
 ## Sources
 
-1. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
-2. Cars24, "2026 Zeekr 009 FWD priced for Australia", <https://www.cars24.com.au/car-news/2026-zeekr-009-fwd-priced-for-australia/>, accessed 8 November 2026.
-3. Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+[^1]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^2]: Cars24, "2026 Zeekr 009 FWD priced for Australia", <https://www.cars24.com.au/car-news/2026-zeekr-009-fwd-priced-for-australia/>, accessed 8 November 2026.
+[^3]: Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.

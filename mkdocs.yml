@@ -91,7 +91,10 @@ markdown_extensions:
   - admonition
   - attr_list
   - def_list
-  - footnotes
+  # Citations are footnotes. Definition order keeps each marker's number equal to its Sources entry,
+  # and hooks/citations.py adds the labels, tooltips data and "Back to text" links.
+  - footnotes:
+      USE_DEFINITION_ORDER: true
   - md_in_html
   - toc:
       permalink: true
@@ -127,6 +130,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+# Build-time HTML tweaks that need no plugin dependency.
+hooks:
+  - hooks/citations.py
 
 plugins:
   - search:

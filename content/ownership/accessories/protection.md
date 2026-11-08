@@ -43,7 +43,7 @@ Many owners combine the two: PPF on high-impact areas, then ceramic coating over
 
 ### Check what your car already has
 
-The 2027 7X (MY27) has rear privacy glass as standard on every grade [1][2]. If you have an MY27 car, look at the existing rear glass before tinting it further, because the result may be darker than you expect and still has to meet your state's rules.
+The 2027 7X (MY27) has rear privacy glass as standard on every grade [^1][^2]. If you have an MY27 car, look at the existing rear glass before tinting it further, because the result may be darker than you expect and still has to meet your state's rules.
 
 ### Why tint
 
@@ -85,5 +85,5 @@ See [Choosing an Installer](vendors.md) for what to look for and what to ask. Sh
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.

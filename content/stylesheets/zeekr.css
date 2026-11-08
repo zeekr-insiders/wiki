@@ -1952,3 +1952,137 @@ span .zi-icon {
         transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
     }
 }
+
+/* 20. Citations (hooks/citations.py, javascripts/zeekr.js): small orange
+   superscripts linked to the Sources list. Orange is the accent ink token, as
+   on the "On this page" marker: #B03C00 on light (5.4:1 on the page) and
+   #FF5A00 on dark (6.0:1). The superscript is lifted with relative
+   positioning rather than vertical-align, and its hit area grows with a
+   pseudo-element, so neither inflates the line height. -------------------- */
+.md-typeset sup[id^="fnref"] {
+    position: relative;
+    top: -0.5em;
+    vertical-align: baseline;
+    font-size: 0.75em;
+    line-height: 0;
+}
+
+/* Back-to-back citations ("[1][2]" in the source) must not read as "12". */
+.md-typeset sup[id^="fnref"] + sup[id^="fnref"] {
+    margin-left: var(--sp-1);
+}
+
+.md-typeset a.footnote-ref {
+    position: relative;
+    padding-inline: 0.1em;
+    border-radius: var(--radius-sm);
+    color: var(--accent-ink);
+    font-size: inherit;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.md-typeset a.footnote-ref::before {
+    content: "";
+    position: absolute;
+    inset: calc(-1 * var(--sp-2)) calc(-1 * var(--sp-1));
+}
+
+.md-typeset a.footnote-ref:hover {
+    color: var(--accent-ink);
+    text-decoration: underline;
+    text-decoration-thickness: var(--rule);
+    text-underline-offset: 0.15em;
+}
+
+.md-typeset a.footnote-ref:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+/* Material outlines the marker a reader returns to; a brief wash is quieter. */
+.md-typeset [id^="fnref"]:target > .footnote-ref {
+    outline: none;
+    animation: zi-cite-flash 2s var(--ease) both;
+}
+
+/* The list keeps the body size and colour the plain Sources list had; the
+   "Sources" heading above it replaces Material's rule. */
+.md-typeset .footnote {
+    color: inherit;
+    font-size: inherit;
+}
+
+.md-typeset .footnote > hr {
+    display: none;
+}
+
+.md-typeset .footnote > ol > li {
+    border-radius: var(--radius-sm);
+}
+
+.md-typeset .footnote > ol > li:target {
+    color: inherit;
+    animation: zi-cite-flash 2s var(--ease) both;
+}
+
+.md-typeset .footnote-backref,
+.md-typeset .footnote > ol > li:hover .footnote-backref,
+.md-typeset .footnote > ol > li:target .footnote-backref {
+    display: inline-block;
+    padding-block: var(--sp-1);
+    font-size: var(--fs-sm);
+    white-space: nowrap;
+    vertical-align: baseline;
+    opacity: 1;
+    transform: none;
+}
+
+.md-typeset .footnote-backref::before {
+    display: none;
+}
+
+@keyframes zi-cite-flash {
+    from {
+        background-color: color-mix(in srgb, var(--accent-ink) 22%, transparent);
+        box-shadow: 0 0 0 var(--sp-1) color-mix(in srgb, var(--accent-ink) 22%, transparent);
+    }
+    to {
+        background-color: transparent;
+        box-shadow: 0 0 0 var(--sp-1) transparent;
+    }
+}
+
+/* Section 18 switches animations off under reduced motion, so the entry keeps a still tint instead. */
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .footnote > ol > li:target {
+        background-color: color-mix(in srgb, var(--accent-ink) 12%, transparent);
+        box-shadow: 0 0 0 var(--sp-1) color-mix(in srgb, var(--accent-ink) 12%, transparent);
+    }
+}
+
+/* One shared tooltip, placed by zeekr.js. It never takes the pointer, so it cannot trap hover. */
+.zi-cite-tip {
+    position: fixed;
+    z-index: 5;
+    max-width: min(20rem, calc(100vw - 2 * var(--sp-4)));
+    padding: var(--sp-2) var(--sp-3);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-sm);
+    background: var(--panel);
+    color: var(--ink);
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    pointer-events: none;
+}
+
+.zi-cite-tip[hidden] {
+    display: none;
+}
+
+.zi-cite-tip small {
+    display: block;
+    margin-top: var(--sp-1);
+    color: var(--ink-muted);
+    font-size: var(--fs-xs);
+}

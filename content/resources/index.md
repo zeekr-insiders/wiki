@@ -10,7 +10,7 @@ last_checked: 2026-11-08
 
 | Need | Contact |
 | :--- | :--- |
-| Zeekr Roadside (24/7) | 1800 093 357 [1] |
+| Zeekr Roadside (24/7) | 1800 093 357 [^1] |
 | Emergency | 000 |
 | Sales and service sites | [Dealers page](../buying/dealers.md) |
 
@@ -72,4 +72,4 @@ last_checked: 2026-11-08
 
 ## Sources
 
-1. Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
+[^1]: Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.

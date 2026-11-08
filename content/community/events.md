@@ -4,7 +4,7 @@ Club drives and events run regularly across Australia. The current list, with da
 
 ## What runs
 
-The club's guides list six kinds of event [1]:
+The club's guides list six kinds of event [^1]:
 
 | Type | What it is |
 | :--- | :--- |
@@ -19,12 +19,12 @@ The club's guides list six kinds of event [1]:
 
 Read the [club guides](https://zeekrinsiders.com.au/garage/guides):
 
-- [Taking part in a trip](https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip): what to expect on the day and how to be a good convoy member [2].
-- [Code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct): how we treat each other on drives, online and at events [3].
+- [Taking part in a trip](https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip): what to expect on the day and how to be a good convoy member [^2].
+- [Code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct): how we treat each other on drives, online and at events [^3].
 
 ## Running one yourself
 
-You don't need to be on the leadership team. Propose the idea to your state rep or in the group chat, and leadership will help with promotion and coordination [1]. The organiser guides cover the rest:
+You don't need to be on the leadership team. Propose the idea to your state rep or in the group chat, and leadership will help with promotion and coordination [^1]. The organiser guides cover the rest:
 
 - [Organising an event](https://zeekrinsiders.com.au/garage/guides#organising-an-event)
 - [Planning a trip](https://zeekrinsiders.com.au/garage/guides#planning-a-trip)
@@ -34,6 +34,6 @@ Questions? Use [the contact form](https://zeekrinsiders.com.au/contact) or ask i
 
 ## Sources
 
-1. Zeekr Insiders, "Event Organiser Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#organising-an-event>, accessed 8 November 2026.
-2. Zeekr Insiders, "Participant Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip>, accessed 8 November 2026.
-3. Zeekr Insiders, "Code of Conduct" (August 2026), <https://zeekrinsiders.com.au/garage/guides#code-of-conduct>, accessed 8 November 2026.
+[^1]: Zeekr Insiders, "Event Organiser Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#organising-an-event>, accessed 8 November 2026.
+[^2]: Zeekr Insiders, "Participant Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip>, accessed 8 November 2026.
+[^3]: Zeekr Insiders, "Code of Conduct" (August 2026), <https://zeekrinsiders.com.au/garage/guides#code-of-conduct>, accessed 8 November 2026.

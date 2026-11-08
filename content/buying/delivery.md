@@ -31,7 +31,7 @@ Total delivery times vary based on:
 Ask your dealer for a timeframe in writing. Cars in stock can be much quicker than a factory order.
 
 !!! info "Ordering around the 2027 7X (MY27) changeover"
-    Orders for the updated 2027 7X (MY27) opened on 1 November 2026, with first deliveries expected in December 2026 [1]. If you've ordered a 7X, confirm in writing which model year you're getting. See [Which 7X do I have?](../models/7x/which-7x.md).
+    Orders for the updated 2027 7X (MY27) opened on 1 November 2026, with first deliveries expected in December 2026 [^1]. If you've ordered a 7X, confirm in writing which model year you're getting. See [Which 7X do I have?](../models/7x/which-7x.md).
 
 ### Stay Informed
 
@@ -125,13 +125,13 @@ Before you drive away:
 
 ### If you're collecting a 2027 7X (MY27)
 
-These are standard on every MY27 grade, so check they're there and working [1][2]:
+These are standard on every MY27 grade, so check they're there and working [^1][^2]:
 
 - The built-in DVR (dashcam) records, and the dealer shows you where to find the footage
 - Rear privacy glass is fitted
-- The rear number plate is on the tailgate, not the bumper (the MY25/MY26 car has it on the bumper) [1]
+- The rear number plate is on the tailgate, not the bumper (the MY25/MY26 car has it on the bumper) [^1]
 
-If you ordered under the MY27 launch offer, get the included items in writing: two years of servicing, a 7 kW wallbox (supply only; installation is at your cost), and your free colour choice [1][3].
+If you ordered under the MY27 launch offer, get the included items in writing: two years of servicing, a 7 kW wallbox (supply only; installation is at your cost), and your free colour choice [^1][^3].
 
 ### Document Any Issues
 
@@ -158,7 +158,7 @@ The dealer should provide a comprehensive orientation to your new Zeekr.
 - **Safety systems**: Location of safety equipment, how safety features work
 - **Maintenance**: The service schedule in your Service & Warranty Booklet, and how to book
 - **Warranty**: What's covered and for how long
-- **Emergency procedures**: Zeekr Roadside is 1800 093 357, 24/7 [4]
+- **Emergency procedures**: Zeekr Roadside is 1800 093 357, 24/7 [^4]
 
 ### Ask Questions
 
@@ -192,7 +192,7 @@ Ensure you get:
 
 - **Certificate of Compliance**: Proves the vehicle meets Australian standards
 - **Owner's manual**: Physical book or digital access
-- **Service & Warranty Booklet**: Zeekr's warranty policy refers to it for the service schedule, and you'll need it when making a claim [5]
+- **Service & Warranty Booklet**: Zeekr's warranty policy refers to it for the service schedule, and you'll need it when making a claim [^5]
 - **Warranty documentation**: Terms and conditions of manufacturer warranty
 - **Dealer receipt**: Proof of purchase with full drive-away price breakdown
 - **Registration papers**: Vehicle registration documents
@@ -217,8 +217,8 @@ For the first weeks of ownership (app, keys, home charging, settings), see [Firs
 If you discover issues after leaving the dealer:
 
 - **Document it**: Photos and written description
-- **Contact the dealer promptly**: Zeekr's warranty policy asks for warranty claims to be reported to an authorised dealer within 7 calendar days, or as soon as practicable [5]
-- **Australian Consumer Law**: Your consumer guarantees apply in addition to the manufacturer's warranty [5][6]
+- **Contact the dealer promptly**: Zeekr's warranty policy asks for warranty claims to be reported to an authorised dealer within 7 calendar days, or as soon as practicable [^5]
+- **Australian Consumer Law**: Your consumer guarantees apply in addition to the manufacturer's warranty [^5][^6]
 - **Warranty coverage**: Check whether the issue is covered under warranty
 - **Keep records**: All communication about the issue
 
@@ -227,14 +227,14 @@ If you discover issues after leaving the dealer:
 If the dealer isn't responsive:
 
 - Ask to speak with the dealer principal
-- Contact Zeekr Australia Customer Support: 1800 093 357 (9:00 am to 6:00 pm AEST, Monday to Friday, excluding public holidays) or customersupportau@zeekrlife.com [4]
+- Contact Zeekr Australia Customer Support: 1800 093 357 (9:00 am to 6:00 pm AEST, Monday to Friday, excluding public holidays) or customersupportau@zeekrlife.com [^4]
 - Contact your state's fair trading or consumer affairs office
 
 ## Sources
 
-1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-2. The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
-3. ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
-4. Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
-5. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
-6. ACCC, "Just bought a new car?", <https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car>, accessed 8 November 2026.
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
+[^3]: ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
+[^4]: Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
+[^5]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+[^6]: ACCC, "Just bought a new car?", <https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car>, accessed 8 November 2026.

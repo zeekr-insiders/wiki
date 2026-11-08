@@ -4,6 +4,9 @@
  *   only applies where tables are actually comparisons.
  * - The "On this page" panel's progress track and percentage follow the
  *   reader through the article, as on the front door.
+ * - Citations (marked up by hooks/citations.py) show their source on hover
+ *   or focus, open it directly on Ctrl/Cmd-click or middle-click, and the
+ *   source's "Back to text" link returns to the citation actually followed.
  */
 (function () {
   function enhance() {
@@ -87,5 +90,108 @@
     progress();
   } else {
     document.addEventListener('DOMContentLoaded', progress);
+  }
+
+  // Citations. Delegated listeners on the document, so there is nothing to
+  // attach per marker and nothing to clean up.
+  function citations() {
+    if (!document.querySelector('a.footnote-ref[data-zi-cite]')) return;
+    var tip = document.createElement('div');
+    tip.className = 'zi-cite-tip';
+    tip.setAttribute('role', 'tooltip');
+    tip.hidden = true;
+    document.body.appendChild(tip);
+    var mac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+    var current = null;
+
+    function cite(target) {
+      return target && target.closest ? target.closest('a.footnote-ref[data-zi-cite]') : null;
+    }
+
+    function host(url) {
+      try {
+        return new URL(url).hostname.replace(/^www\./, '');
+      } catch (e) {
+        return '';
+      }
+    }
+
+    function show(link) {
+      if (current === link) return;
+      current = link;
+      var label = document.createElement('span');
+      label.textContent = link.getAttribute('data-zi-cite');
+      var meta = document.createElement('small');
+      var url = link.getAttribute('data-zi-href');
+      meta.textContent = url ? host(url) + ' \u00b7 ' + (mac ? 'Cmd' : 'Ctrl') + '-click to open' : '';
+      tip.replaceChildren(label, meta);
+      tip.hidden = false;
+
+      // Above the marker where there is room, otherwise below; kept inside the viewport.
+      var r = link.getBoundingClientRect();
+      var gap = 8;
+      var w = tip.offsetWidth;
+      var h = tip.offsetHeight;
+      var left = Math.min(Math.max(gap, r.left + r.width / 2 - w / 2), window.innerWidth - w - gap);
+      var top = r.top - h - gap;
+      if (top < gap) top = r.bottom + gap;
+      tip.style.left = left + 'px';
+      tip.style.top = top + 'px';
+      window.addEventListener('scroll', hide, { passive: true, once: true });
+    }
+
+    function hide() {
+      current = null;
+      tip.hidden = true;
+    }
+
+    function open(e, link) {
+      var url = link.getAttribute('data-zi-href');
+      if (!url) return;
+      e.preventDefault();
+      window.open(url, '_blank', 'noopener');
+    }
+
+    document.addEventListener('mouseover', function (e) {
+      var link = cite(e.target);
+      if (link) show(link);
+      else if (current && current !== document.activeElement) hide();
+    });
+    document.addEventListener('focusin', function (e) {
+      var link = cite(e.target);
+      if (link) show(link);
+      else hide();
+    });
+    document.addEventListener('focusout', function (e) {
+      if (cite(e.target)) hide();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && current) hide();
+    });
+
+    document.addEventListener('click', function (e) {
+      var link = cite(e.target);
+      if (!link) return;
+      if (e.ctrlKey || e.metaKey) {
+        open(e, link);
+        return;
+      }
+      hide();
+      // Point the source's single "Back to text" link at this citation, not the first one.
+      var entry = document.getElementById(link.getAttribute('href').slice(1));
+      var back = entry && entry.querySelector('.footnote-backref');
+      var sup = link.parentElement;
+      if (back && sup && sup.id) back.setAttribute('href', '#' + sup.id);
+    });
+    document.addEventListener('auxclick', function (e) {
+      var link = cite(e.target);
+      if (link && e.button === 1) open(e, link);
+    });
+  }
+
+  if (document.readyState !== 'loading') {
+    citations();
+  } else {
+    document.addEventListener('DOMContentLoaded', citations);
   }
 })();

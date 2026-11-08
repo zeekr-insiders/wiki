@@ -8,10 +8,10 @@ last_checked: 2026-11-08
 
 ## Incentives
 
-The WA EV rebate ended on 10 May 2025 [1].
+The WA EV rebate ended on 10 May 2025 [^1].
 
 !!! note "Not yet confirmed"
-    This comes from a single secondary source (RACV, May 2026) [1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
 
 Check current duty and registration rates with the [WA Department of Transport](https://www.transport.wa.gov.au).
 
@@ -25,4 +25,4 @@ Distances between towns are long. Check the chargers on each leg before you leav
 
 ## Sources
 
-1. RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^1]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
