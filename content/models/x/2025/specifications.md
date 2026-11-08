@@ -1,66 +1,51 @@
+---
+last_checked: 2026-11-08
+---
+
 # Zeekr X Specifications (Australia)
 
-**The Compact Luxury SUV.**
+*Last checked: 8 November 2026.*
 
-*Last reviewed: August 2026. Figures below are for the MY26 relaunch (May 2026), which brought more power and a new RWD battery.*
+Figures below are for the updated 2026 Zeekr X (MY26), priced in April 2026 [1]. If you have an earlier MY25 X, some figures may differ; check your owner's manual.
 
 ## Dimensions
 
-- **Length:** 4,432 mm
-- **Width:** 1,836 mm
-- **Height:** 1,566 mm
-- **Wheelbase:** 2,750 mm
-- **Boot Capacity:** 362L (Seats Up) / 1,182L (Seats Down)
+| | |
+| :--- | :--- |
+| **Length** | 4,432 mm |
+| **Width** | 1,836 mm |
+| **Height** | 1,566 mm |
+| **Wheelbase** | 2,750 mm |
+| **Boot** | 404 L, up to 1,247 L |
 
-## Powertrain
+Source: [1].
 
-### RWD (Single Motor)
+## Powertrain and charging
 
-- **Power:** 250 kW
-- **0-100 km/h:** 5.6 seconds
-- **Range (WLTP):** ~405 km
-- **Battery:** 61 kWh LFP (new cell-to-pack architecture for MY26)
-
-### AWD (Dual Motor)
-
-- **Power:** 365 kW (Combined)
-- **Torque:** 573 Nm (Combined)
-- **0-100 km/h:** 3.7 seconds
-- **Range (WLTP):** ~415 km
-- **Battery:** Zeekr hasn't confirmed whether the AWD pack changed for MY26 (the MY25 car used 66 kWh NMC) - check with your dealer
-
-## Charging
-
-The X uses a 400V platform (unlike the 7X's 800V system), so DC charging is solid rather than spectacular.
-
-| Method | RWD | AWD |
+| | RWD | AWD |
 | :--- | :--- | :--- |
-| **DC Fast Charge (10-80%)** | ~150 kW peak, roughly 18-30 min depending on conditions | Same |
-| **AC Charge** | 11 kW max | **22 kW (Standard)** |
+| **Battery** | 61 kWh LFP | 66 kWh NMC |
+| **Power** | 250 kW | 365 kW total (115 kW front, 250 kW rear) |
+| **0-100 km/h** | 5.6 s | 3.7 s |
+| **Range (WLTP)** | 405 km | 415 km |
+| **DC charging** | up to 230 kW | up to 150 kW |
+| **AC charging** | 11 kW | 22 kW |
 
-!!! tip "The 22kW Advantage"
-    The AWD model's 22kW AC charger is a rarity. If you have access to 3-phase power (industrial units, some public posts), you can charge 0-100% in around **3 hours** on AC. The RWD tops out at 11kW even on a 22kW post.
+Source: [1].
 
-## Key Features
+The AWD's 22 kW on-board charger only helps where you have three-phase AC power, such as a three-phase home wallbox or some public AC posts. On single-phase power both variants charge at the same rate as the supply allows.
 
-### Standard (RWD)
-
-- 14.6" Sliding Centre Screen
-- Panoramic Glass Roof
-- Wireless Phone Charger
-- 360-Degree Camera
-
-### AWD Adds
-
-- **Audio:** Yamaha 13-Speaker Surround Sound
-- **HUD:** 24.3" AR Heads-Up Display
-- **Seats:** Ventilated Front Seats, Heated Steering Wheel
-- **Ambient Light:** "Ice Block" Ambient Lighting
-
-## Warranty & Roadside Assist
+## Warranty and roadside assistance
 
 | Coverage | Details |
 | :--- | :--- |
-| **Vehicle Warranty** | 5 Years / Unlimited km |
-| **Battery Warranty** | 8 Years / 160,000 km (>70% capacity) |
-| **Roadside Assistance** | 5 Years complimentary |
+| **Vehicle warranty** | 5 years / unlimited km (private use) |
+| **High-voltage battery** | 8 years / 160,000 km, repair or replacement if health falls below 70% |
+| **Roadside assistance** | 5 years |
+
+Source: [2]. For servicing, see the [X service schedule](service-schedule.md).
+
+## Sources
+
+1. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+2. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
