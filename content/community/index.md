@@ -1,79 +1,35 @@
-# About {{ extra.club.full_name }}
+# About Zeekr Insiders
 
-Welcome to {{ extra.club.full_name }}, or {{ extra.club.abbreviation }} for short. We're a community of Zeekr owners across {{ extra.club.location }} who believe that owning a Zeekr is more fun when you've got mates who get it.
+Run by owners, for owners. Independent of Zeekr Australia, and happy to work with them where it helps owners.
 
-## Who We Are
+Zeekr Insiders is a national community of Zeekr owners, with state representatives organising things locally. A volunteer leadership team meets every fortnight to plan drives, events and the club's websites.
 
-We're not an official Zeekr organisation—just owners helping owners. Whether you've just taken delivery or you've been driving your Zeekr for years, you're part of the crew.
+## What we do
 
-Some of us are tech nerds who love tinkering with OTA updates. Some of us just want to know where the cheapest DC chargers are. Most of us are somewhere in between. What we all have in common is that we drive Zeekrs, and we reckon they're pretty bloody good cars.
+- **Drives and events.** Coffee meets, family days, pet outings, drives, touring and camping trips run across the country [1]. See [Drives and events](events.md).
+- **This wiki.** Reference material on buying and owning a Zeekr in Australia, with sources on every page.
+- **The forum.** For questions and conversations. See [Forum](forum.md).
 
-## What We Do
+## Where we talk
 
-### This Wiki
+The club's WhatsApp group chat is the main channel and the fastest way to reach other owners; the Facebook group is the second [1]. Drives also use a WhatsApp group for the people on the day [2].
 
-The wiki you're reading right now is our shared knowledge base. It's where we document everything we've learnt about owning a Zeekr in Australia—from the practical (how to set up home charging) to the obscure (which aftermarket accessories actually fit).
+## Join in
 
-Anyone can contribute. Spotted an error? Know a better way to do something? Submit a pull request or let us know.
+- Find a drive or event on the [Drives page](https://zeekrinsiders.com.au/drives).
+- Read the [club guides](https://zeekrinsiders.com.au/garage/guides) before your first drive, including the [code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct) [3].
+- Want to run something? You don't need to be on the leadership team: talk to your state rep or post in the group chat [1].
 
-### Community Forum
+## Help with the wiki
 
-We're setting up a forum for discussions, questions, and sharing stories. It'll be the place to ask "is this normal?" or "anyone else getting this weird noise?" or "what's the best road trip you've done in your Zeekr?"
-
-The wiki is for reference material. The forum is for conversations.
-
-### Events & Meetups
-
-Coffee catches, scenic drives, charging station inaugurations (yes, really), and the occasional track day. Events happen when someone decides to organise one. That someone could be you.
-
-Check out our [Events & Meetups](events.md) page for what's coming up.
-
-### Group Buys
-
-Ever wished floor mats didn't cost as much as a weekend away? Us too. We organise group buys to get discounts on accessories, PPF, ceramic coating, and other bits that make Zeekr ownership better.
-
-See what's available on our [Group Buys](group-buys.md) page.
-
-## How to Get Involved
-
-### Join the Conversation
-
-We hang out in a few places:
-
-- **Facebook Group**: Daily discussions, photos, questions, and the occasional meme
-- **Instagram**: Event photos and Zeekr spotting
-- **GitHub**: Wiki contributions and technical discussions
-
-You don't need to be active everywhere. Pick whatever suits you.
-
-### Contribute to the Wiki
-
-Found a typo? Written a guide? Want to add your state's charging network details? The wiki is open source and we welcome contributions.
-
-Check the repository at [{{ extra.club.website }}]({{ extra.club.website }}) for contribution guidelines.
-
-### Organise an Event
-
-Fancy a coffee meet in your area? Reckon your local mountain road would make a great drive? Events happen because people like you make them happen.
-
-See our [Events & Meetups](events.md) page for tips on organising your own.
-
-### Share What You Know
-
-The best thing about this community is the collective knowledge. If you've figured something out—whether it's the perfect tyre pressure for your X, or how to get Android Auto to stop being temperamental—share it. Someone else is probably wondering the same thing.
-
-## Not a Member Yet?
-
-You already are. Bought a Zeekr? You're in. That's it. There's no membership fee, no committee meetings, no formal anything.
-
-If you want to be more involved, jump into the Facebook group or contribute to the wiki. If you just want to lurk and read, that's fine too.
+Spotted an error, or know something we should add? Tell us through [the contact form](https://zeekrinsiders.com.au/contact) with a link to your source. We only publish what we can source.
 
 ## Contact
 
-Got a question about {{ extra.club.abbreviation }}? Want to get in touch about partnerships or media enquiries? Email us at [{{ extra.club.contact_email }}](mailto:{{ extra.club.contact_email }}).
+Questions about the club, partnerships or media: use [the contact form](https://zeekrinsiders.com.au/contact).
 
-For owner questions, the Facebook group is your best bet—there's always someone online who's probably dealt with whatever you're dealing with.
+## Sources
 
----
-
-*{{ extra.club.full_name }} is an independent community run by Zeekr owners for Zeekr owners. We're not affiliated with Zeekr International or any official Zeekr entity.*
+1. Zeekr Insiders, "Event Organiser Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#organising-an-event>, accessed 8 November 2026.
+2. Zeekr Insiders, "Trip Leading Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#leading-a-trip>, accessed 8 November 2026.
+3. Zeekr Insiders, "Code of Conduct" (August 2026), <https://zeekrinsiders.com.au/garage/guides#code-of-conduct>, accessed 8 November 2026.
