@@ -160,6 +160,10 @@ Embed a YouTube video with the `youtube` macro. It shows a local poster and load
 
 Save the poster first as `content/assets/images/video/<video id>.webp`, 1280 x 720 (YouTube's `maxresdefault.jpg` as WebP). Credit the channel in the page's Sources.
 
+### Tables
+
+Write tables as plain Markdown. Cells stay on one line, and a table wider than the column scrolls sideways rather than stacking its figures. `hooks/tables.py` lets a cell of running text wrap instead: over 40 characters, or 48 in the first column, where row labels run longer. Keep headers and row labels short so a table fits a phone with little scrolling.
+
 ### Content Guidelines
 
 - Focus on Australian market and Victorian specifics
