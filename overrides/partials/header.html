@@ -20,8 +20,9 @@
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
-            {#- The same name as the tab title, so a model overview reads "Zeekr 7X", not "Overview". -#}
-            {{ zi_name(page) | trim }}
+            {#- The same name as the tab title, so a model overview reads "Zeekr 7X", not "Overview". The home
+                page's tab says "Wiki", but here the bar keeps the full name it shows on every other page. -#}
+            {{ "Zeekr Insiders Wiki" if (page and page.is_homepage) else (zi_name(page) | trim) }}
           </span>
         </div>
       </div>
