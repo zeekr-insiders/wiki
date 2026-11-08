@@ -9,8 +9,8 @@ hero_image: x
         <h1 class="hero-title">Zeekr X</h1>
         <div class="hero-subtitle">Zeekr's compact SUV, updated for 2026 with more power and drive-away pricing.</div>
         <div class="hero-actions">
-            <a href="../2025/pricing/" class="btn btn-primary">View Pricing</a>
-            <a href="../2025/specifications/" class="btn btn-secondary">Full Specs</a>
+            <a href="../2025/pricing/" class="btn btn-primary">View pricing</a>
+            <a href="../2025/specifications/" class="btn btn-secondary">Full specs</a>
         </div>
     </div>
 </div>

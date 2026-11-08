@@ -72,12 +72,12 @@ NSW has legislated a distance-based road user charge for EVs that starts on 1 Ju
 
 The Victorian EV purchase subsidy ended in 2023, and the NSW EV rebate and stamp duty exemption ended on 31 December 2023 [^6][^7]. Stamp duty and registration rules differ by state:
 
-[State-by-State Resources](../resources/index.md){ .md-button }
+[State-by-state resources](../resources/index.md){ .md-button }
 
 ## Next step
 
-[Why Choose Zeekr?](why-zeekr.md){ .md-button .md-button--primary }
-[Choose Your Zeekr](choosing-model.md){ .md-button }
+[Why choose Zeekr?](why-zeekr.md){ .md-button .md-button--primary }
+[Choose your Zeekr](choosing-model.md){ .md-button }
 
 ## Sources
 

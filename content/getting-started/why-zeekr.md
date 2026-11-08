@@ -52,7 +52,7 @@ A Zeekr is worth a look if you want an EV with fast DC charging (the 7X), a long
 
 ## Next steps
 
-[Compare Zeekr Models](choosing-model.md){ .md-button .md-button--primary }
+[Compare Zeekr models](choosing-model.md){ .md-button .md-button--primary }
 
 - [Zeekr 7X](../models/7x/overview.md)
 - [Zeekr X](../models/x/overview.md)

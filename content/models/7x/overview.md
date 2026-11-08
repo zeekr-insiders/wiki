@@ -9,8 +9,8 @@ hero_image: 7x
         <h1 class="hero-title">Zeekr 7X</h1>
         <div class="hero-subtitle">Mid-size electric SUV. 800V system. Three grades from $57,900 before on-road costs.</div>
         <div class="hero-actions">
-            <a href="../2025/pricing/" class="btn btn-primary">See Pricing</a>
-            <a href="../2025/specifications/" class="btn btn-secondary">Full Specs</a>
+            <a href="../2025/pricing/" class="btn btn-primary">See pricing</a>
+            <a href="../2025/specifications/" class="btn btn-secondary">Full specs</a>
         </div>
     </div>
 </div>
