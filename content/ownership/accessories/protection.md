@@ -2,7 +2,7 @@
 
 Paint protection film (PPF), ceramic coating and window tint are the most common things owners add after delivery. This page explains what each one does and what to ask an installer. Prices vary a lot by city, installer and product, so get more than one quote.
 
-## Paint Protection Film (PPF)
+## Paint protection film (PPF)
 
 PPF is a clear urethane film applied over the paint. It protects against:
 

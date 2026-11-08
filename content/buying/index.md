@@ -5,7 +5,7 @@ From finding a dealer to taking delivery, this section covers buying a Zeekr in 
 !!! info "2027 7X (MY27)"
     The updated 2027 7X (MY27) delivers from December 2026. If you're buying a 7X now, see [Which 7X do I have?](../models/7x/which-7x.md) to understand the difference.
 
-## In This Section
+## In this section
 
 <div class="card-grid">
     <div class="z-card">
@@ -34,14 +34,14 @@ From finding a dealer to taking delivery, this section covers buying a Zeekr in 
     </div>
 </div>
 
-## Before You Buy
+## Before you buy
 
 Take time to research the specific model that suits your needs. Visit our [Models](../models/index.md) section for detailed specifications and comparisons. If you're weighing up different options, check out our [Model Comparison](../comparisons/model-comparison-table.md).
 
-## Join the Community
+## Join the community
 
 Questions about buying? Ask current owners through the [community channels](../community/index.md).
 
-## Get Started
+## Get started
 
 Start with [Dealers](dealers.md) to find a location in your state, or go straight to [Pricing](pricing.md).

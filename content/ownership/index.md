@@ -2,7 +2,7 @@
 
 Practical guidance for living with your Zeekr, whether you collected it last week or last year.
 
-## Getting Started
+## Getting started
 
 New to Zeekr ownership? Start here:
 
@@ -27,7 +27,7 @@ New to Zeekr ownership? Start here:
     </div>
 </div>
 
-## Accessories & Protection
+## Accessories & protection
 
 Protect and enhance your Zeekr:
 
@@ -58,7 +58,7 @@ Protect and enhance your Zeekr:
     </div>
 </div>
 
-## Additional Resources
+## Additional resources
 
 - **Service and maintenance:** see the service schedules for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md)
 

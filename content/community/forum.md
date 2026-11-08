@@ -2,7 +2,7 @@
 
 We're setting up a proper forum for {{ extra.club.full_name }}. It's not quite ready yet, but here's what you can expect.
 
-## What the Forum Is For
+## What the forum is for
 
 The forum will be the place for:
 
@@ -12,13 +12,13 @@ The forum will be the place for:
 - **Regional chat**: State-specific discussions about charging networks, dealers, and local events
 - **Technical deep-dives**: For those who want to get into the weeds of OTA updates, battery management, and diagnostic codes
 
-### What the Wiki Is For
+### What the wiki is for
 
 This wiki is for **reference material**: guides, specifications, how-tos, and documented knowledge. Think of it as the manual.
 
 The forum is for **conversations**: everything else.
 
-## Why a Forum?
+## Why a forum?
 
 We've been using Facebook groups, which work well for quick discussions and event coordination. But Facebook isn't great for:
 
@@ -35,7 +35,7 @@ A forum gives us:
 - No algorithmic timeline nonsense
 - Control over our own data
 
-## When Will It Be Ready?
+## When will it be ready?
 
 Soon. We're setting it up properly rather than rushing it. When it launches, you'll be able to:
 
@@ -45,13 +45,13 @@ Soon. We're setting it up properly rather than rushing it. When it launches, you
 - Follow threads that interest you
 - Get notifications when someone replies to you
 
-## Will It Replace the Facebook Group?
+## Will it replace the Facebook group?
 
 No. The Facebook group isn't going anywhere. It's good for casual chat, event coordination, and reaching a broad audience quickly.
 
 The forum will be for deeper discussions and building a searchable knowledge base. Use whichever platform suits your question or topic.
 
-## Planned Categories
+## Planned categories
 
 We're thinking something like:
 
@@ -66,7 +66,7 @@ We're thinking something like:
 
 This will evolve based on what the community actually talks about.
 
-## How to Get Involved
+## How to get involved
 
 Once the forum launches, we'll announce it in the Facebook group and on Instagram. You'll be able to:
 
@@ -94,7 +94,7 @@ Early members will help shape what the forum becomes, so if you've got opinions 
 
 The best content often starts as a forum discussion and gets refined into a wiki article.
 
-## Forum Link
+## Forum link
 
 The forum will be available at:
 
@@ -102,7 +102,7 @@ The forum will be available at:
 
 In the meantime, use the Facebook group for discussions and questions.
 
-## Questions About the Forum?
+## Questions about the forum?
 
 Use [the contact form](https://zeekrinsiders.com.au/contact) or ask in the club group chat.
 

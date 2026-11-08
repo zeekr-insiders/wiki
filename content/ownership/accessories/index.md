@@ -2,9 +2,9 @@
 
 Protection, accessories and installers, from owners in the {{ extra.club.full_name }} community. Check fitment for your model and model year: the 2027 7X (MY27) has a revised centre console and rear privacy glass as standard [^1], so some advice for the MY25/MY26 car doesn't carry over.
 
-## Available Categories
+## Available categories
 
-### Protection & Care
+### Protection & care
 
 **[Protection Options](protection.md)**
 
@@ -17,7 +17,7 @@ Paint protection film (PPF), ceramic coating and window tinting: what each optio
 - Window tinting - Heat rejection, privacy and checking your state's rules
 - What combination of protection makes sense
 
-### Recommended Accessories
+### Recommended accessories
 
 **[Community Recommendations](recommended.md)**
 
@@ -31,7 +31,7 @@ Accessories owners have found useful, by category:
 
 **Note:** These are owner recommendations, not {{ extra.club.abbreviation }} endorsements. Your experience may vary.
 
-### Choosing an Installer
+### Choosing an installer
 
 **[Choosing an Installer](vendors.md)**
 
@@ -41,9 +41,9 @@ How to pick an installer for PPF, tinting, ceramic coating and other work:
 - Questions to ask before booking
 - Warning signs of poor workmanship
 
-## Before You Modify
+## Before you modify
 
-### Insurance Implications
+### Insurance implications
 
 **Always declare modifications to your insurer:**
 
@@ -56,7 +56,7 @@ How to pick an installer for PPF, tinting, ceramic coating and other work:
 
 Not declaring modifications can affect a claim. See our [Insurance Guide](../insurance.md).
 
-### Warranty Considerations
+### Warranty considerations
 
 Under Zeekr's Australian warranty policy [^2]:
 
@@ -66,7 +66,7 @@ Under Zeekr's Australian warranty policy [^2]:
 
 Check with your dealer before fitting aftermarket parts, and think about whether a change can be reversed when you sell.
 
-### Quality Standards
+### Quality standards
 
 **Look for:**
 
@@ -76,7 +76,7 @@ Check with your dealer before fitting aftermarket parts, and think about whether
 - Examples of previous work on similar vehicles
 - Clear pricing and scope of work
 
-## Community Contributions
+## Community contributions
 
 The {{ extra.club.abbreviation }} community actively shares their experiences with accessories and modifications. Your input helps other owners make informed decisions.
 
@@ -101,7 +101,7 @@ Owners often start with:
 
 Get more than one quote for any paid installation; prices vary a lot by location and product.
 
-## Next Steps
+## Next steps
 
 - **[Protection Options](protection.md)** - Learn about PPF, ceramic, and tinting
 - **[Recommended Accessories](recommended.md)** - Browse community favourites

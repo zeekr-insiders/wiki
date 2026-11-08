@@ -8,9 +8,9 @@ last_checked: 2026-11-08
 
 This page covers what to expect between order and delivery, how to inspect the car, and what to check on delivery day.
 
-## Delivery Timeline
+## Delivery timeline
 
-### After Ordering
+### After ordering
 
 Once you've signed the contract and paid your deposit:
 
@@ -19,7 +19,7 @@ Once you've signed the contract and paid your deposit:
 - **Manufacturing and shipping**: The car is built and shipped to Australia
 - **Compliance and dealer delivery**: The car is cleared, complied and prepared by your dealer
 
-### Typical Timeframes
+### Typical timeframes
 
 Total delivery times vary based on:
 
@@ -33,17 +33,17 @@ Ask your dealer for a timeframe in writing. Cars in stock can be much quicker th
 !!! info "Ordering around the 2027 7X (MY27) changeover"
     Orders for the updated 2027 7X (MY27) opened on 1 November 2026, with first deliveries expected in December 2026 [^1]. If you've ordered a 7X, confirm in writing which model year you're getting. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-### Stay Informed
+### Stay informed
 
 - Your dealer should provide regular updates
 - Don't hesitate to follow up if you haven't heard anything for a while
 - Get delivery updates in writing when possible
 
-## Pre-Delivery Inspection (PDI)
+## Pre-delivery inspection (PDI)
 
 Before your vehicle arrives at the dealership, it undergoes a pre-delivery inspection.
 
-### What Happens in PDI
+### What happens in PDI
 
 The dealer should:
 
@@ -55,7 +55,7 @@ The dealer should:
 - Apply any dealer-installed accessories
 - Perform final quality checks
 
-### Your Rights
+### Your rights
 
 If there are any issues found during PDI:
 
@@ -64,9 +64,9 @@ If there are any issues found during PDI:
 - Don't accept delivery if you're not satisfied
 - Get any concerns documented
 
-## Delivery Day Checklist
+## Delivery day checklist
 
-### What to Bring
+### What to bring
 
 - **Photo ID**: Driver's licence (the one you'll be insured under)
 - **Payment**: Final payment method arranged (bank transfer confirmation, finance documents)
@@ -75,15 +75,15 @@ If there are any issues found during PDI:
 - **Camera/phone**: For photos if you find any issues
 - **This checklist**: Print or save this page to your phone
 
-### Allow Enough Time
+### Allow enough time
 
 A proper delivery handover takes 1-2 hours. Don't rush it. Ask the dealer to schedule your delivery when they can give you proper time and attention.
 
-## Vehicle Inspection on Delivery
+## Vehicle inspection on delivery
 
 Before signing anything, inspect the vehicle thoroughly.
 
-### Exterior Inspection
+### Exterior inspection
 
 Walk around the vehicle in good light (ideally outdoors in daylight):
 
@@ -97,7 +97,7 @@ Walk around the vehicle in good light (ideally outdoors in daylight):
 - **Charging port**: Open and inspect the charging port cover and socket
 - **Doors and boot**: Open all doors and boot, check seals and operation
 
-### Interior Inspection
+### Interior inspection
 
 Inside the vehicle:
 
@@ -110,7 +110,7 @@ Inside the vehicle:
 - **Boot**: Check carpet, tyre repair kit, and all storage areas
 - **Smell**: New car smell is normal, but musty or chemical smells aren't
 
-### Functional Tests
+### Functional tests
 
 Before you drive away:
 
@@ -133,7 +133,7 @@ These are standard on every MY27 grade, so check they're there and working [^1][
 
 If you ordered under the MY27 launch offer, get the included items in writing: two years of servicing, a 7 kW wallbox (supply only; installation is at your cost), and your free colour choice [^1][^3].
 
-### Document Any Issues
+### Document any issues
 
 If you find anything:
 
@@ -143,11 +143,11 @@ If you find anything:
 - Get the resolution plan in writing
 - Don't accept delivery if issues are significant
 
-## Delivery Orientation
+## Delivery orientation
 
 The dealer should provide a comprehensive orientation to your new Zeekr.
 
-### What Should Be Covered
+### What should be covered
 
 - **Charging**: How to open the port, plug in, and monitor charging
 - **Drive modes**: What each mode does
@@ -160,7 +160,7 @@ The dealer should provide a comprehensive orientation to your new Zeekr.
 - **Warranty**: What's covered and for how long
 - **Emergency procedures**: Zeekr Roadside is 1800 093 357, 24/7 [^4]
 
-### Ask Questions
+### Ask questions
 
 This is your time to learn about your vehicle. Ask about anything you don't understand. Common questions:
 
@@ -177,7 +177,7 @@ A walkthrough of a 7X handover, covering the infotainment and the Zeekr app [^7]
 
 {{ youtube("KlVyyYCinu4", "Zeekr 7X - Detailed Delivery Handover | Infotainment, App Guide and everything you need to know!", "Nate's Tech & Torque", "https://www.youtube.com/@NatesTechandTorque") }}
 
-## Common Things People Miss
+## Common things people miss
 
 Based on {{ extra.club.abbreviation }} member experiences, don't forget to:
 
@@ -192,7 +192,7 @@ Based on {{ extra.club.abbreviation }} member experiences, don't forget to:
 - **Understand child seat points**: If relevant to you
 - **Photo the odometer**: Document delivery kilometres
 
-## Documents You Should Receive
+## Documents you should receive
 
 Ensure you get:
 
@@ -205,20 +205,20 @@ Ensure you get:
 - **Insurance details**: If arranged through dealer
 - **Charge cards**: If any charging network cards are included
 
-## After Delivery
+## After delivery
 
 For the first weeks of ownership (app, keys, home charging, settings), see [First 30 Days](../ownership/first-30-days.md).
 
-## What If There Are Issues?
+## What if there are issues?
 
-### During Delivery
+### During delivery
 
 - Don't sign acceptance if you're not satisfied
 - Raise concerns immediately with the delivery manager
 - Get agreement on resolution in writing
 - If necessary, defer delivery until issues are resolved
 
-### After Delivery
+### After delivery
 
 If you discover issues after leaving the dealer:
 

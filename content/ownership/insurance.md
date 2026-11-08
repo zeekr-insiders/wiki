@@ -2,9 +2,9 @@
 
 Insuring an EV is mostly like insuring any car, with a few extra things to check. This page is general guidance, not advice on any particular policy.
 
-## EV Insurance Considerations
+## EV insurance considerations
 
-### What's Different About EV Insurance?
+### What's different about EV insurance?
 
 Electric vehicles have unique characteristics that affect insurance:
 
@@ -14,7 +14,7 @@ Electric vehicles have unique characteristics that affect insurance:
 - **Battery coverage** - How the policy treats battery damage
 - **Charging equipment** - Coverage for home charger and cables
 
-### Key Coverage Points
+### Key coverage points
 
 Ensure your policy explicitly covers:
 
@@ -24,9 +24,9 @@ Ensure your policy explicitly covers:
 - **Software and electronics** - Infotainment and driver assistance systems
 - **Hire car** - Whether a replacement car is included, and what kind
 
-## Agreed Value vs Market Value
+## Agreed value vs market value
 
-### Agreed Value (Recommended)
+### Agreed value (recommended)
 
 **What it means:**
 
@@ -47,7 +47,7 @@ Ensure your policy explicitly covers:
 - New brand means market value can be difficult to establish
 - Protects your investment if resale market is still developing
 
-### Market Value
+### Market value
 
 **What it means:**
 
@@ -61,9 +61,9 @@ Ensure your policy explicitly covers:
 - Risk of lower payout than expected
 - Challenging for rare vehicles like Zeekr with limited sales data
 
-## What to Tell Your Insurer
+## What to tell your insurer
 
-### Essential Information
+### Essential information
 
 Be upfront and accurate about:
 
@@ -75,7 +75,7 @@ Be upfront and accurate about:
 - **Overnight parking** - Garage, carport, street
 - **Additional drivers** - Who else will drive the vehicle
 
-### Modifications to Declare
+### Modifications to declare
 
 Even minor modifications should be disclosed:
 
@@ -99,7 +99,7 @@ While most major insurers now cover EVs, some have more experience than others. 
 - Understand EV valuation and repair costs
 - Offer coverage for home charging equipment
 
-### Questions to Ask Insurers
+### Questions to ask insurers
 
 - Do you have specific EV coverage or is it standard car insurance?
 - Is battery damage covered, and under what circumstances?
@@ -110,28 +110,28 @@ While most major insurers now cover EVs, some have more experience than others. 
 - Can I get agreed value coverage? What documentation do you need?
 - Are there discounts for EV owners?
 
-## Tips for Lower Premiums
+## Tips for lower premiums
 
-### Security Measures
+### Security measures
 
 - **Secure parking** - Garage or locked carport reduces risk
 - **Security devices** - Tell your insurer about any dashcam or tracker. The 2027 7X (MY27) has a built-in DVR (dashcam) on every grade [^1], and footage can help with a claim.
 
-### Driver Profile
+### Driver profile
 
 - **Experienced drivers** - Longer licence history, better rates
 - **Clean record** - No claims or traffic offences in recent years
 - **Limited drivers** - Restricting to named drivers can reduce premium
 - **Annual kilometres** - Don't overestimate your driving
 
-### Policy Structure
+### Policy structure
 
 - **Higher excess** - Increases excess, lowers premium (but increases out-of-pocket if you claim)
 - **Multi-policy discount** - Bundle car with home insurance
 - **Pay annually** - Often cheaper than monthly instalments
 - **Security alarm** - If you add aftermarket security
 
-## Common Pitfalls to Avoid
+## Common pitfalls to avoid
 
 ### Underinsuring
 
@@ -139,27 +139,27 @@ While most major insurers now cover EVs, some have more experience than others. 
 - Ensure sum insured is sufficient to replace your vehicle
 - Include all modifications in your sum insured
 
-### Not Reading the Policy
+### Not reading the policy
 
 - Understand excess amounts (standard, age-based, inexperienced driver)
 - Check coverage limits for specific items (e.g., charging cables may have a limit)
 - Know what's excluded
 
-### Delayed Reporting
+### Delayed reporting
 
 - Report accidents or damage immediately
 - Delays can complicate claims or lead to denial
 - Even minor incidents should be reported
 
-### Assuming Coverage
+### Assuming coverage
 
 - Don't assume your old policy terms apply to a new EV
 - Check if modifications void any warranties
 - Confirm coverage before you take delivery of the car
 
-## After an Accident
+## After an accident
 
-### Immediate Steps
+### Immediate steps
 
 1. Ensure safety - Move to safe location if possible
 2. Call emergency services if anyone is injured
@@ -168,7 +168,7 @@ While most major insurers now cover EVs, some have more experience than others. 
 5. Report to police if required (injury, hit-and-run, suspected DUI)
 6. Contact your insurer as soon as possible
 
-### EV-Specific Considerations
+### EV-specific considerations
 
 - **High voltage hazard** - Tell first responders and the tow operator it's an EV
 - **Towing** - Follow the towing instructions in your owner's manual. If you can't drive the car, Zeekr Roadside (1800 093 357, 24/7) can arrange a tow to the nearest authorised Zeekr retailer [^2]
@@ -179,7 +179,7 @@ While most major insurers now cover EVs, some have more experience than others. 
 - **Insurance Council of Australia** - [www.insurancecouncil.com.au](https://www.insurancecouncil.com.au)
 - **{{ extra.club.abbreviation }} Community** - Share experiences
 
-## Community Recommendations
+## Community recommendations
 
 {{ extra.club.abbreviation }} members share their insurance experiences and recommendations. Join our [community channels](../community/index.md) to:
 
