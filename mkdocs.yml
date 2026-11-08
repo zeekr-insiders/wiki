@@ -210,7 +210,10 @@ nav:
   - Resources:
       - resources/index.md
       - National: resources/national/index.md
+      # The section's own landing page comes first and untitled: with navigation.indexes, Material
+      # takes a section's first index.md as the section itself, which once swallowed Victoria.
       - By State:
+          - resources/states/index.md
           - Victoria: resources/vic/index.md
           - New South Wales: resources/nsw/index.md
           - Queensland: resources/qld/index.md
