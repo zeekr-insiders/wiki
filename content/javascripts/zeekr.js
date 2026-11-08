@@ -112,15 +112,22 @@
   }
 
   // The drawer. Material's menu "button" is a <label> for a hidden checkbox,
-  // which the keyboard cannot reach, so it gets a button's role, a tab stop,
-  // Enter/Space and aria-expanded. Escape closes an open drawer and returns
-  // focus to the button, as the overlay click already closes it.
+  // which the keyboard cannot reach (and a label may not take a button role),
+  // so a real button replaces it, with aria-expanded. Escape closes an open
+  // drawer and returns focus to the button, as the overlay click already does.
   function drawer() {
     var toggle = document.getElementById('__drawer');
-    var button = document.querySelector('.md-header label[for="__drawer"]');
-    if (!toggle || !button) return;
-    button.setAttribute('role', 'button');
-    button.setAttribute('tabindex', '0');
+    var label = document.querySelector('.md-header label[for="__drawer"]');
+    if (!toggle || !label) return;
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = label.className + ' zi-drawer-button';
+    button.setAttribute('aria-label', 'Wiki menu');
+    button.innerHTML = label.innerHTML;
+    var hidden = button.querySelector('.zi-sr-only');
+    if (hidden) hidden.remove();
+    label.parentNode.insertBefore(button, label);
+    label.hidden = true;
 
     function sync() {
       button.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
@@ -133,11 +140,10 @@
 
     sync();
     toggle.addEventListener('change', sync);
-    button.addEventListener('keydown', function (e) {
-      if (e.key !== 'Enter' && e.key !== ' ') return;
-      e.preventDefault();
+    button.addEventListener('click', function (e) {
       set(!toggle.checked);
-      if (toggle.checked) {
+      // From the keyboard (no pointer), move focus into the drawer it opened.
+      if (toggle.checked && e.detail === 0) {
         var first = document.querySelector('.md-sidebar--primary .zi-drawer-club a');
         if (first) first.focus();
       }

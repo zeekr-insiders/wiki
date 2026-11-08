@@ -32,7 +32,7 @@ The number plate is the easiest tell from a car park: on the bumper means MY25/M
 
 ## What changed
 
-| | MY25/MY26 | MY27 |
+| Item | MY25/MY26 | MY27 |
 | :--- | :--- | :--- |
 | Price (RRP before on-road costs) | $57,900 / $63,900 / $72,900 | Unchanged [^1][^2] |
 | RWD and Long Range power | 310 kW / 440 Nm | 335 kW / 520 Nm [^1] |

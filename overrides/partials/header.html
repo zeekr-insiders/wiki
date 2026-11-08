@@ -9,9 +9,12 @@
 {% endif %}
 <header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
-    <label class="md-header__button md-icon" for="__drawer" aria-label="Wiki menu">
+    {#- A label can't carry a button role or aria-label, so its name is hidden text. zeekr.js swaps in a real
+        button for keyboards; without JS the label still opens the drawer. -#}
+    <label class="md-header__button md-icon" for="__drawer">
       {% set icon = config.theme.icon.menu or "material/menu" %}
       {% include ".icons/" ~ icon ~ ".svg" %}
+      <span class="zi-sr-only">Wiki menu</span>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -33,9 +36,10 @@
     {% if "material/search" in config.plugins %}
       {% set search = config.plugins["material/search"] | attr("config") %}
       {% if search.enabled %}
-        <label class="md-header__button md-icon" for="__search" aria-label="{{ lang.t('search.placeholder') }}">
+        <label class="md-header__button md-icon" for="__search" title="{{ lang.t('search.placeholder') }}">
           {% set icon = config.theme.icon.search or "material/magnify" %}
           {% include ".icons/" ~ icon ~ ".svg" %}
+          <span class="zi-sr-only">{{ lang.t('search.placeholder') }}</span>
         </label>
         {% include "partials/search.html" %}
       {% endif %}

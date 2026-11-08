@@ -2339,6 +2339,12 @@ span .zi-icon {
     color: var(--ink);
 }
 
+/* A link inside a sentence needs more than colour to stand out (WCAG 1.4.1). */
+.zi-footer p a {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+}
+
 .zi-keep {
     display: grid;
     gap: var(--sp-3);
@@ -3470,5 +3476,32 @@ span .zi-icon {
 .md-typeset .zi-term.is-target {
     background: color-mix(in srgb, var(--hue-slate-solid) var(--hue-tint), transparent);
     box-shadow: inset 3px 0 0 var(--hue-slate-solid);
+}
+
+/* Hidden text that names an icon-only control for screen readers. */
+.zi-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* The drawer's real button (zeekr.js), shown where Material shows the menu label. */
+.zi-drawer-button {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-header .zi-drawer-button {
+        display: none;
+    }
 }
 

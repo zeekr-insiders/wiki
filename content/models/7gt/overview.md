@@ -31,7 +31,7 @@ The 7GT is a five-door, low-slung electric wagon (a shooting brake), designed in
 
 Zeekr has named three grades for Australia: RWD, Long Range RWD and Performance AWD [^2][^3]. The Zeekr page says the fast-charging claim applies to the Long Range RWD and Performance AWD only [^1].
 
-| | RWD | Long Range RWD | Performance AWD |
+| Spec | RWD | Long Range RWD | Performance AWD |
 | :--- | :--- | :--- | :--- |
 | Price | Not yet confirmed for Australia | Not yet confirmed for Australia | Not yet confirmed for Australia |
 | Battery | 75 kWh LFP | 100 kWh NCM | 100 kWh NCM |

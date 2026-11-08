@@ -20,7 +20,7 @@ Sources: [^1][^2].
 
 ## Variants and powertrain
 
-| | 7-seat FWD | 7-seat AWD and 6-seat AWD |
+| Spec | 7-seat FWD | 7-seat AWD and 6-seat AWD |
 | :--- | :--- | :--- |
 | **Motors** | Single, front | Dual |
 | **Power / torque** | 250 kW / 373 Nm | 450 kW / 693 Nm |
@@ -34,7 +34,7 @@ Sources: [^1][^2].
 
 ## Charging
 
-| | FWD | AWD |
+| Spec | FWD | AWD |
 | :--- | :--- | :--- |
 | **DC** | 150 kW, 10-80% in about 30 minutes | not published in our sources |
 | **AC** | 11 kW | not published in our sources |

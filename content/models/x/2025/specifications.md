@@ -12,7 +12,7 @@ Figures below are for the updated 2026 Zeekr X (MY26), priced in April 2026 [^1]
 
 ## Dimensions
 
-| | |
+| Dimension | Figure |
 | :--- | :--- |
 | **Length** | 4,432 mm |
 | **Width** | 1,836 mm |
@@ -24,7 +24,7 @@ Source: [^1].
 
 ## Powertrain and charging
 
-| | RWD | AWD |
+| Spec | RWD | AWD |
 | :--- | :--- | :--- |
 | **Battery** | 61 kWh LFP | 66 kWh NMC |
 | **Power** | 250 kW | 365 kW total (115 kW front, 250 kW rear) |

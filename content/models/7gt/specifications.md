@@ -16,7 +16,7 @@ seo_title: "Zeekr 7GT specs (reported)"
 
 Source: Australian press reports of Zeekr's local line-up [^2][^3][^4]. Not yet on Zeekr Australia's own page.
 
-| | RWD | Long Range RWD | Performance AWD |
+| Spec | RWD | Long Range RWD | Performance AWD |
 | :--- | :--- | :--- | :--- |
 | Battery | 75 kWh LFP | 100 kWh NCM | 100 kWh NCM |
 | Power / torque | 335 kW / 520 Nm | 335 kW / 520 Nm | 500 kW / 790 Nm |
@@ -39,7 +39,7 @@ Performance AWD also gets active air suspension and continuously variable damper
 
 ## Size and practicality
 
-| | Figure | Label |
+| Spec | Figure | Label |
 | :--- | :--- | :--- |
 | Body | Five-door shooting brake, five seats | Australian press [^4][^5] |
 | Length / width / height / wheelbase | 4,817 / 1,910 / 1,456 / 2,900 mm | Australian press [^4] |

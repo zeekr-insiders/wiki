@@ -81,7 +81,7 @@ The 7X uses an 800V system with peak DC charging of up to 450 kW on the RWD and 
 
 The 2027 7X keeps the prices, batteries and 800V system, and adds power and a little range [^1]:
 
-| | RWD | Long Range | Performance AWD |
+| Spec | RWD | Long Range | Performance AWD |
 | :--- | :--- | :--- | :--- |
 | Power / torque | 335 kW / 520 Nm | 335 kW / 520 Nm | 500 kW / 790 Nm |
 | 0-100 km/h | 5.6 s | 5.5 s | 3.7 s |

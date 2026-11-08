@@ -27,7 +27,7 @@ Two plugs cover almost everything you will meet on a Zeekr in Australia: **Type 
 - **Tethered**: the cable is permanently attached to the charger. A tethered cable is always provided with public DC chargers [^1].
 - **Untethered**: the charger has a socket and you bring your own Type 2 cable. Level 2 AC units can be either [^1]. Many public AC posts are untethered [^5], so carry a cable.
 
-| | Tethered | Untethered |
+| Feature | Tethered | Untethered |
 | :--- | :--- | :--- |
 | Where | All public DC; some AC | Many AC posts and home wallboxes |
 | Cable | Built in | You carry a Type 2 cable |

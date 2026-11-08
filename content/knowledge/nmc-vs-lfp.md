@@ -16,7 +16,7 @@ Nearly every EV battery sold in Australia is a lithium-ion pack, and most use on
 
 ## The two chemistries
 
-| | NMC | LFP |
+| Feature | NMC | LFP |
 | :--- | :--- | :--- |
 | Full name | Lithium nickel manganese cobalt oxide | Lithium iron phosphate |
 | Specific energy (energy per kg of cell) | 150 to 220 Wh/kg [^1] | 90 to 120 Wh/kg [^1] |

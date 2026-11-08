@@ -23,7 +23,7 @@ Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 
 
 === "MY25/MY26"
 
-    | | RWD | Long Range RWD | Performance AWD |
+    | Spec | RWD | Long Range RWD | Performance AWD |
     | :--- | :--- | :--- | :--- |
     | Battery | 75 kWh LFP | 100 kWh NMC | 100 kWh NMC |
     | Power / torque | 310 kW / 440 Nm | 310 kW / 440 Nm | 475 kW / 710 Nm |
@@ -36,7 +36,7 @@ Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 
 
 === "MY27 (from December 2026)"
 
-    | | RWD | Long Range RWD | Performance AWD |
+    | Spec | RWD | Long Range RWD | Performance AWD |
     | :--- | :--- | :--- | :--- |
     | Battery | 75 kWh LFP | 100 kWh NMC | 100 kWh NMC |
     | Power / torque | 335 kW / 520 Nm | 335 kW / 520 Nm | 500 kW / 790 Nm |
