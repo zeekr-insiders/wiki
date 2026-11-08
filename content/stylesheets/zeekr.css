@@ -408,9 +408,8 @@ body {
 
 /* The home hero's banner (club artwork, assets/images/hero/). Decorative, so
    it is a background with no alt. A dark wash runs from the left on wide
-   screens, where the cars sit in the right two thirds, and from the top on
-   phones, where the text stacks over a 4:5 crop centred on the 7X and the
-   box grows at the bottom to show the car. Night ink keeps 4.5:1 or better
+   screens, where the cars sit in the right two thirds; phones get their own
+   wider crop under the text (below). Night ink keeps 4.5:1 or better
    over the wash (measured). AVIF first, WebP where AVIF is not supported. */
 .hero--landing {
     --hero-wash: linear-gradient(90deg, rgb(0 0 0 / 0.92) 0%, rgb(0 0 0 / 0.84) 36%, rgb(0 0 0 / 0.35) 62%, rgb(0 0 0 / 0) 82%);
@@ -436,15 +435,22 @@ body {
 }
 
 @media (max-width: 44.984375em) {
+    /* Phones: the text sits on plain night black and the 16:10 crop (the whole
+       7X, a hint of the 009) fills the bottom of the box, drawn a little wider
+       than the box so the car reads larger, its sky fading up into the black.
+       --hero-img-h is the crop's drawn height: the hero's width (viewport less
+       the two 16px gutters) at 112%, times 10/16. */
     .hero--landing {
-        --hero-wash: linear-gradient(180deg, rgb(0 0 0 / 0.94) 0%, rgb(0 0 0 / 0.88) 48%, rgb(0 0 0 / 0.2) 66%, rgb(0 0 0 / 0) 82%);
-        padding-bottom: 82vw;
+        --hero-img-h: calc((100vw - 2 * var(--sp-4)) * 1.12 * 0.625);
+        --hero-wash: linear-gradient(180deg, var(--night-bg) calc(100% - var(--hero-img-h)), rgb(0 0 0 / 0) calc(100% - var(--hero-img-h) * 0.6));
+        padding-bottom: calc(var(--hero-img-h) * 0.95);
         background-image: var(--hero-wash), url("../assets/images/hero/home-hero-mobile.webp");
         background-image: var(--hero-wash), image-set(
             url("../assets/images/hero/home-hero-mobile.avif") type("image/avif"),
             url("../assets/images/hero/home-hero-mobile.webp") type("image/webp")
         );
         background-position: center, center bottom;
+        background-size: cover, auto var(--hero-img-h);
     }
 }
 
