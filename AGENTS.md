@@ -214,6 +214,7 @@ The club uses AI tools to help with research, drafting, code and some artwork, a
 
 ## Images and personal data
 
+- Licences: code is MIT (`LICENSE`), written content is CC BY-NC-SA 4.0 and images belong to their owners (`LICENSE-CONTENT.md`). Record each new image's source and licence in the PR.
 - Only use images we have the right to use: our own photos, the Zeekr brand kit, or AI-generated artwork, and record which in the PR.
 - No personal data in the repo: no member names, emails, phone numbers, number plates or VINs, unless the person has agreed to be named.
 - No secrets, tokens or `.env` files. `.gitignore` keeps agent evidence folders (`.verify/`, `.playwright-mcp/`, `.review/`) out; keep screenshots and logs there, never in `content/`.
