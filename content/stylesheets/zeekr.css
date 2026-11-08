@@ -1763,3 +1763,193 @@ span .zi-icon {
         color: #000000 !important;
     }
 }
+
+/* 19. "On this page" panel (web-home TableOfContents.svelte), wide screens
+   only, where Material shows the right-hand sidebar. Orange here is the
+   site's deliberate exception: the accent ink token, so #FF5A00 on dark and
+   #B03C00 on light (4.95:1 on the panel). ------------------------------- */
+.zi-toc__track,
+.zi-toc__pct,
+.zi-toc__top {
+    display: none;
+}
+
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--secondary .zi-toc {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: var(--sp-4) var(--sp-3) 0;
+        background: var(--bg-raised);
+        border: var(--hairline) solid var(--line-strong);
+        border-radius: var(--radius-md);
+        font-size: var(--fs-md);
+        line-height: var(--lh-snug);
+    }
+
+    .zi-toc__track {
+        display: block;
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 3px;
+        background: var(--line);
+    }
+
+    .zi-toc__track i {
+        display: block;
+        height: 100%;
+        background: var(--accent-ink);
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    .zi-toc__head {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: var(--sp-3);
+        margin: var(--sp-1) var(--sp-2) var(--sp-3);
+    }
+
+    .md-sidebar--secondary .zi-toc .md-nav__title {
+        position: static;
+        margin: 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        font-family: var(--font-display);
+        font-size: var(--fs-2xs);
+        font-weight: 600;
+        letter-spacing: var(--track-label);
+        text-transform: uppercase;
+        color: var(--ink);
+    }
+
+    .zi-toc__pct {
+        display: block;
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        font-variant-numeric: tabular-nums;
+        color: var(--accent-ink);
+    }
+
+    [dir] .md-sidebar--secondary .zi-toc .md-nav__list {
+        display: grid;
+        gap: 2px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .md-sidebar--secondary .zi-toc > .md-nav__list {
+        counter-reset: zi-toc;
+    }
+
+    .md-sidebar--secondary .zi-toc .md-nav__item {
+        padding: 0;
+    }
+
+    /* h4 and deeper stay out of the panel, as on the site. */
+    .md-sidebar--secondary .zi-toc .md-nav .md-nav .md-nav {
+        display: none;
+    }
+
+    [dir] .md-sidebar--secondary .zi-toc .md-nav__link {
+        display: grid;
+        grid-template-columns: 28px minmax(0, 1fr);
+        align-items: baseline;
+        margin: 0;
+        padding: var(--sp-2);
+        border-left: 3px solid transparent;
+        border-radius: var(--radius-sm);
+        font-weight: 500;
+        color: var(--ink-muted);
+        overflow-wrap: anywhere;
+        scroll-snap-align: none;
+    }
+
+    .md-sidebar--secondary .zi-toc .md-nav__link .md-ellipsis {
+        grid-column: 2;
+        white-space: normal;
+    }
+
+    .md-sidebar--secondary .zi-toc > .md-nav__list > .md-nav__item {
+        counter-increment: zi-toc;
+    }
+
+    .md-sidebar--secondary .zi-toc > .md-nav__list > .md-nav__item > .md-nav__link::before {
+        content: counter(zi-toc, decimal-leading-zero);
+        grid-column: 1;
+        font-family: var(--font-display);
+        font-size: var(--fs-xs);
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        font-variant-numeric: tabular-nums;
+    }
+
+    /* h3 rows: no number, text steps in under its h2. */
+    [dir] .md-sidebar--secondary .zi-toc .md-nav .md-nav .md-nav__link {
+        padding-left: var(--sp-5);
+        font-size: var(--fs-sm);
+        font-weight: 400;
+    }
+
+    .md-sidebar--secondary .zi-toc .md-nav__link:hover {
+        background: var(--bg-sunk);
+        color: var(--ink);
+    }
+
+    [dir] .md-sidebar--secondary .zi-toc .md-nav__link--active,
+    [dir] .md-sidebar--secondary .zi-toc .md-nav__link--active:hover {
+        border-left-color: var(--accent-ink);
+        background: color-mix(in srgb, var(--accent-ink) 12%, transparent);
+        font-weight: 600;
+        color: var(--ink);
+    }
+
+    .md-sidebar--secondary .zi-toc .md-nav__link--active::before {
+        color: var(--accent-ink);
+    }
+
+    .md-sidebar--secondary .zi-toc .md-nav__link:focus-visible {
+        outline: var(--rule) solid var(--ink);
+        outline-offset: -2px;
+    }
+
+    .zi-toc__top {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-2);
+        margin: var(--sp-3) calc(-1 * var(--sp-3)) 0;
+        padding: var(--sp-3) var(--sp-4);
+        border-top: var(--hairline) solid var(--line-strong);
+        font-family: var(--font-display);
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        color: var(--ink);
+        text-decoration: none;
+    }
+
+    .zi-toc__top:hover {
+        background: var(--bg-sunk);
+        color: var(--ink);
+    }
+
+    .zi-toc__top svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* The panel has its own Back to top row, so the floating one is for pages without it. */
+    body:has(.md-sidebar--secondary:not([hidden]) .zi-toc__top) .md-top {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .md-sidebar--secondary .zi-toc .md-nav__link,
+    .zi-toc__top {
+        transition: background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+    }
+}
