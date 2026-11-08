@@ -12,7 +12,13 @@
   {%- elif first and first.level == 1 -%}
     {{ first.title | striptags }}
   {%- elif page and page.title -%}
-    {{ page.title | striptags }}
+    {#- A hero H1 is raw HTML, so it is not in the ToC: a model's "Overview" takes the model's name. -#}
+    {%- set t = page.title | striptags -%}
+    {%- if t == "Overview" and page.parent and page.parent.title -%}
+      {{ page.parent.title }}
+    {%- else -%}
+      {{ t }}
+    {%- endif -%}
   {%- else -%}
     Wiki
   {%- endif -%}
@@ -42,6 +48,12 @@
   {% if page and page.is_homepage %}
     <link rel="preload" as="image" type="image/avif" href="{{ 'assets/images/hero/home-hero-mobile.avif' | url }}" media="(max-width: 44.984375em)" fetchpriority="high">
     <link rel="preload" as="image" type="image/avif" href="{{ 'assets/images/hero/home-hero-1440.avif' | url }}" imagesrcset="{{ 'assets/images/hero/home-hero-1440.avif' | url }} 1x, {{ 'assets/images/hero/home-hero.avif' | url }} 2x" media="(min-width: 45em)" fetchpriority="high">
+  {% endif %}
+  {#- A model overview fetches its own banner early (front matter hero_image), and only that page does. -#}
+  {% set art = page.meta.hero_image if page and page.meta else none %}
+  {% if art %}
+    <link rel="preload" as="image" type="image/avif" href="{{ ('assets/images/models/' ~ art ~ '-hero-mobile.avif') | url }}" media="(max-width: 44.984375em)" fetchpriority="high">
+    <link rel="preload" as="image" type="image/avif" href="{{ ('assets/images/models/' ~ art ~ '-hero-1440.avif') | url }}" imagesrcset="{{ ('assets/images/models/' ~ art ~ '-hero-1440.avif') | url }} 1x, {{ ('assets/images/models/' ~ art ~ '-hero.avif') | url }} 2x" media="(min-width: 45em)" fetchpriority="high">
   {% endif %}
   {%- set og_title = (zi_name(page) | trim) ~ " | " ~ config.extra.site.title_suffix -%}
   {%- set og_desc = (page.meta.description if page and page.meta and page.meta.description else config.site_description) -%}

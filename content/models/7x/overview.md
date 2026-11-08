@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+# Preloads this model's hero banner (overrides/main.html).
+hero_image: 7x
 ---
 
 <div class="hero-container hero-bg-7x">

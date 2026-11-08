@@ -368,12 +368,101 @@ body {
     text-align: center;
 }
 
-/* Legacy per-model classes: same panel, kept for markup compatibility. */
+/* Model overview heroes (7X, X, 009): club banner artwork, decorative, so a
+   CSS background with no alt. The banners put the car on the right and the
+   scenery on the left, and these pages keep both sidebars, so at 1440 the
+   hero is only about 840px wide: an overlay would put the title over the car.
+   Instead the text keeps its solid night panel and the banner sits below it
+   as a 3:1 band (a ::after sized by aspect-ratio, so it needs no height maths),
+   its sky fading up into the panel. Phones get a 16:10 crop of the whole car.
+   .hero-bg-club has no artwork yet and stays a plain panel. */
 .hero-bg-7x,
 .hero-bg-x,
 .hero-bg-009,
 .hero-bg-club {
     background: var(--night-raised);
+}
+
+.hero-bg-7x,
+.hero-bg-x,
+.hero-bg-009 {
+    --hero-fade: linear-gradient(180deg, var(--night-raised) 0%, rgb(20 20 20 / 0) 30%);
+    overflow: hidden;
+}
+
+.hero-bg-7x::after,
+.hero-bg-x::after,
+.hero-bg-009::after {
+    content: "";
+    display: block;
+    aspect-ratio: 3 / 1;
+    margin-top: calc(-1 * var(--sp-5));
+    background-color: var(--night-raised);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-bg-7x::after {
+    background-image: var(--hero-fade), url("../assets/images/models/7x-hero-1440.webp");
+    background-image: var(--hero-fade), image-set(
+        url("../assets/images/models/7x-hero-1440.avif") type("image/avif") 1x,
+        url("../assets/images/models/7x-hero.avif") type("image/avif") 2x,
+        url("../assets/images/models/7x-hero-1440.webp") type("image/webp") 1x,
+        url("../assets/images/models/7x-hero.webp") type("image/webp") 2x
+    );
+}
+
+.hero-bg-x::after {
+    background-image: var(--hero-fade), url("../assets/images/models/x-hero-1440.webp");
+    background-image: var(--hero-fade), image-set(
+        url("../assets/images/models/x-hero-1440.avif") type("image/avif") 1x,
+        url("../assets/images/models/x-hero.avif") type("image/avif") 2x,
+        url("../assets/images/models/x-hero-1440.webp") type("image/webp") 1x,
+        url("../assets/images/models/x-hero.webp") type("image/webp") 2x
+    );
+}
+
+.hero-bg-009::after {
+    background-image: var(--hero-fade), url("../assets/images/models/009-hero-1440.webp");
+    background-image: var(--hero-fade), image-set(
+        url("../assets/images/models/009-hero-1440.avif") type("image/avif") 1x,
+        url("../assets/images/models/009-hero.avif") type("image/avif") 2x,
+        url("../assets/images/models/009-hero-1440.webp") type("image/webp") 1x,
+        url("../assets/images/models/009-hero.webp") type("image/webp") 2x
+    );
+}
+
+@media (max-width: 44.984375em) {
+    .hero-bg-7x::after,
+    .hero-bg-x::after,
+    .hero-bg-009::after {
+        aspect-ratio: 1.6 / 1;
+    }
+
+    .hero-bg-7x::after {
+        background-image: var(--hero-fade), url("../assets/images/models/7x-hero-mobile.webp");
+        background-image: var(--hero-fade), image-set(
+            url("../assets/images/models/7x-hero-mobile.avif") type("image/avif"),
+            url("../assets/images/models/7x-hero-mobile.webp") type("image/webp")
+        );
+    }
+
+    .hero-bg-x::after {
+        background-image: var(--hero-fade), url("../assets/images/models/x-hero-mobile.webp");
+        background-image: var(--hero-fade), image-set(
+            url("../assets/images/models/x-hero-mobile.avif") type("image/avif"),
+            url("../assets/images/models/x-hero-mobile.webp") type("image/webp")
+        );
+    }
+
+    .hero-bg-009::after {
+        background-image: var(--hero-fade), url("../assets/images/models/009-hero-mobile.webp");
+        background-image: var(--hero-fade), image-set(
+            url("../assets/images/models/009-hero-mobile.avif") type("image/avif"),
+            url("../assets/images/models/009-hero-mobile.webp") type("image/webp")
+        );
+    }
 }
 
 .md-typeset .hero-title,
