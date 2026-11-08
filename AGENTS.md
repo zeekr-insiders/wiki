@@ -27,6 +27,34 @@ Every researched or factual claim on a page is cited. No exceptions, and no gues
 
 `make citations` fails if a marker has no entry, an entry is never cited, or an entry cites club-docs or the internal fact sheet. It cannot tell whether a source actually says what the page claims; that is on you.
 
+## Feeds
+
+The build publishes four feeds for feed readers and the front door (web-home reads the updated RSS feed):
+
+| Feed | URL |
+|---|---|
+| New pages, RSS | <https://wiki.zeekrinsiders.com.au/feed_rss_created.xml> |
+| Updated pages, RSS | <https://wiki.zeekrinsiders.com.au/feed_rss_updated.xml> |
+| New pages, JSON Feed | <https://wiki.zeekrinsiders.com.au/feed_json_created.json> |
+| Updated pages, JSON Feed | <https://wiki.zeekrinsiders.com.au/feed_json_updated.json> |
+
+They come from mkdocs-rss-plugin, with `hooks/feeds.py` on top. Each item has the page title, URL, created or updated date (from git, so CI checks out the full history), its top-level section as the category, and a description:
+
+1. the page's `changelog` front matter, when set;
+2. otherwise its `description` front matter;
+3. otherwise its first plain paragraph.
+
+**`changelog`.** When you change a page meaningfully, add one short line saying what changed, so the updated feed says more than "updated". Replace it on the next meaningful change; leave it alone for typo fixes.
+
+```yaml
+---
+last_checked: 2026-11-08
+changelog: "Added MY27 towing figure"
+---
+```
+
+**`launch_date`.** At the first public publish every page is new, so `extra.launch_date` in `mkdocs.yml` records that date (`YYYY-MM-DD`; it stays `null` until `wiki-publish` merges). When set, the RSS feeds carry it as `<zi:launchDate>` in the channel and the JSON feeds as `_zeekr_insiders.launch_date`, so a consumer can treat items dated on or before it as the launch, not as updates.
+
 ## Build, check, preview
 
 Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`, `uv.lock`).

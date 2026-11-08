@@ -34,6 +34,7 @@ Every fact needs a source a reader can check.
     ```
 
 - Update `last_checked` in the page's front matter when you check its facts.
+- If you changed a page meaningfully (a new figure, a corrected fact, a new section), add a one-line `changelog:` to its front matter, such as `changelog: "Added MY27 towing figure"`. The wiki's update feed and the club site show it as what changed.
 - If a fact isn't confirmed, or sources disagree, say so on the page.
 - Say which model year a figure is for: MY25/MY26 or MY27.
 
