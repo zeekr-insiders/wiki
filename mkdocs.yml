@@ -141,6 +141,7 @@ nav:
       - models/index.md
       - Zeekr 7X:
           - Overview: models/7x/overview.md
+          - Which 7X Do I Have?: models/7x/which-7x.md
           - Specifications: models/7x/2025/specifications.md
           - Pricing: models/7x/2025/pricing.md
           - Service Schedule: models/7x/2025/service-schedule.md
