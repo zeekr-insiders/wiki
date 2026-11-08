@@ -2476,6 +2476,13 @@ span .zi-icon {
     visibility: hidden;
 }
 
+/* On phones open search is a full-screen layer inside the header, whose
+   stacking sits under the masthead (z-index 5): lift the header while search
+   is open, or the masthead covers the search field. */
+#__search:checked ~ .md-header {
+    z-index: 6;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
