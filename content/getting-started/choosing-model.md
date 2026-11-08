@@ -24,7 +24,7 @@ Three Zeekr models are on sale in Australia. Here is how to narrow it down.
 
 For range, charging and towing side by side, see the [model comparison table](../comparisons/model-comparison-table.md).
 
-## <img src="../../assets/icons/icon-body-compact.svg" class="zi-icon" alt=""> Zeekr X
+## Zeekr X
 
 The smallest Zeekr, and the easiest to park.
 
@@ -34,7 +34,7 @@ The smallest Zeekr, and the easiest to park.
 
 [Full X details](../models/x/overview.md){ .md-button }
 
-## <img src="../../assets/icons/icon-body-suv.svg" class="zi-icon" alt=""> Zeekr 7X
+## Zeekr 7X
 
 The mid-size five-seater.
 
@@ -46,7 +46,7 @@ The mid-size five-seater.
 
 [Full 7X details](../models/7x/overview.md){ .md-button }
 
-## <img src="../../assets/icons/icon-body-mpv.svg" class="zi-icon" alt=""> Zeekr 009
+## Zeekr 009
 
 The people mover.
 
