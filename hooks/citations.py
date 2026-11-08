@@ -7,7 +7,12 @@ numbers, so this hook adds what a reader needs from them:
 - each marker gets an aria-label ("Source 1: CarExpert, 2027 Zeekr 7X ...") and
   the source's label and URL as data attributes, which javascripts/zeekr.js
   turns into the hover/focus tooltip and the Ctrl/Cmd-click shortcut;
-- each Sources entry's return arrows become a single visible "Back to text" link.
+- the footnotes extension's return arrows go: readers rarely used them, and the
+  browser's Back does the same job;
+- the "## Sources" section becomes a collapsed <details> panel labelled with
+  its count ("Sources (6)") and a one-line note that stays visible when shut,
+  and it leaves the "On this page" list. zeekr.js opens it when a citation is
+  followed or the page loads on a #fn: link.
 
 It runs on the rendered page body, before the minifier, so the markup it reads
 is Python-Markdown's own and stable.
@@ -21,6 +26,7 @@ import re
 _ITEM = re.compile(r'<li id="fn:([^"]+)">(.*?)</li>', re.S)
 _REF = re.compile(r'<a\b[^>]*\bclass="footnote-ref"[^>]*>')
 _BACK = re.compile(r'(?:&#160;|\xa0)?<a\b[^>]*\bclass="footnote-backref"[^>]*>.*?</a>', re.S)
+_SOURCES = re.compile(r'<h2 id="sources">.*?</h2>', re.S)
 _HREF = re.compile(r'\bhref="([^"]*)"')
 _TAG = re.compile(r"<[^>]+>")
 _GAP = re.compile(r'[ \t\n]+(<sup id="fnref)')
@@ -40,21 +46,32 @@ def _source(inner: str) -> tuple[str, str]:
     return label, url
 
 
-def _backlink(num: int, inner: str) -> str:
-    """One "Back to text" link in place of the extension's arrow, or one arrow per citation.
+def _drop_toc(items, anchor: str) -> None:
+    """Remove the heading with this id from the page's ToC, at any depth."""
+    for item in list(items):
+        if item.id == anchor:
+            items.remove(item)
+        else:
+            _drop_toc(item.children, anchor)
 
-    It points at the first citation; javascripts/zeekr.js retargets it to whichever
-    citation the reader followed, so a source cited many times stays one tidy link.
+
+def _panel(content: str, count: int) -> str:
+    """Fold the Sources heading and everything after it into a closed panel.
+
+    Sources is always the last section (scripts/check_citations.py holds pages
+    to that), so the panel runs to the end of the page body.
     """
-    first = _BACK.search(inner)
-    if not first:
-        return inner
-    href = _HREF.search(first.group(0)).group(1)
-    link = (
-        f' <a class="footnote-backref" href="{href}" '
-        f'aria-label="Back to text, where source {num} is cited">Back to text</a>'
+    m = _SOURCES.search(content)
+    if not m:
+        return content
+    summary = (
+        '<summary class="zi-sources__summary"><span class="zi-sources__label">Sources '
+        f'<span class="zi-sources__count">({count})</span></span>'
+        '<span class="zi-sources__note">Everything on this page is sourced from the links below.</span>'
+        "</summary>"
     )
-    return inner[: first.start()] + link + _BACK.sub("", inner[first.end():])
+    body = content[m.end():].strip()
+    return content[: m.start()] + f'<details class="zi-sources" id="sources">{summary}\n{body}\n</details>'
 
 
 def on_page_content(content: str, page, config, files) -> str:
@@ -68,7 +85,7 @@ def on_page_content(content: str, page, config, files) -> str:
         num = len(sources) + 1
         label, url = _source(inner)
         sources[fid] = (num, label, url)
-        return f'<li id="fn:{fid}">{_backlink(num, inner)}</li>'
+        return f'<li id="fn:{fid}">{_BACK.sub("", inner)}</li>'
 
     content = _ITEM.sub(item, content)
 
@@ -94,4 +111,7 @@ def on_page_content(content: str, page, config, files) -> str:
     content = _REF.sub(ref, content)
     # Pages write "text [1]" with a space, which would let a superscript wrap
     # onto a line of its own. A superscript hugs the word it cites.
-    return _GAP.sub(r"\1", content)
+    content = _GAP.sub(r"\1", content)
+    if sources and page.toc:
+        _drop_toc(page.toc.items, "sources")
+    return _panel(content, len(sources))

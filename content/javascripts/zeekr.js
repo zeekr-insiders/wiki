@@ -7,8 +7,8 @@
  * - The phone drawer's menu button is reachable by keyboard, and Escape
  *   closes the drawer and hands focus back to it.
  * - Citations (marked up by hooks/citations.py) show their source on hover
- *   or focus, open it directly on Ctrl/Cmd-click or middle-click, and the
- *   source's "Back to text" link returns to the citation actually followed.
+ *   or focus and open it directly on Ctrl/Cmd-click or middle-click. Following
+ *   one, or landing on a #fn: link, opens the collapsed Sources panel first.
  */
 (function () {
   function enhance() {
@@ -236,16 +236,38 @@
         return;
       }
       hide();
-      // Point the source's single "Back to text" link at this citation, not the first one.
-      var entry = document.getElementById(link.getAttribute('href').slice(1));
-      var back = entry && entry.querySelector('.footnote-backref');
-      var sup = link.parentElement;
-      if (back && sup && sup.id) back.setAttribute('href', '#' + sup.id);
+      // Open the panel before the browser follows the link, so it can scroll
+      // to the entry and :target can highlight it.
+      openSources(link.getAttribute('href').slice(1));
     });
     document.addEventListener('auxclick', function (e) {
       var link = cite(e.target);
       if (link && e.button === 1) open(e, link);
     });
+  }
+
+  // The Sources panel (hooks/citations.py) is a closed <details>. Opens it
+  // when the given id is inside it; returns that element, or null.
+  function openSources(id) {
+    var el = id ? document.getElementById(id) : null;
+    var panel = el && el.closest('details.zi-sources');
+    if (!panel) return null;
+    panel.open = true;
+    return el;
+  }
+
+  // A #fn: link from elsewhere, or a hash change on the page, lands on an
+  // entry the browser could not scroll to while the panel was shut.
+  function revealHash() {
+    var el = openSources(decodeURIComponent(location.hash.slice(1)));
+    if (el) el.scrollIntoView({ block: 'center' });
+  }
+  window.addEventListener('hashchange', revealHash);
+
+  if (document.readyState !== 'loading') {
+    revealHash();
+  } else {
+    document.addEventListener('DOMContentLoaded', revealHash);
   }
 
   if (document.readyState !== 'loading') {

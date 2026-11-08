@@ -2451,14 +2451,81 @@ span .zi-icon {
     outline-offset: 2px;
 }
 
-/* Material outlines the marker a reader returns to; a brief wash is quieter. */
-.md-typeset [id^="fnref"]:target > .footnote-ref {
-    outline: none;
-    animation: zi-cite-flash 2s var(--ease) both;
+/* The Sources panel (hooks/citations.py): a closed <details> at the foot of
+   the page, small and muted so the sources are there without competing with
+   the page. The note under the label stays visible while it is shut. The
+   extra .md-content and summary class outrank the admonition styling in
+   section 10, which would otherwise dress the panel as a callout. */
+.md-content .md-typeset details.zi-sources {
+    margin: var(--sp-7) 0 0;
+    padding: 0 var(--sp-4);
+    border: var(--hairline) solid var(--line);
+    border-radius: var(--radius-md);
+    background: transparent;
+    box-shadow: none;
+    color: var(--ink-muted);
+    /* 14px against the 16px body; the theme's root size makes 0.85rem larger than it looks. */
+    font-size: var(--fs-sm);
 }
 
-/* The list keeps the body size and colour the plain Sources list had; the
-   "Sources" heading above it replaces Material's rule. */
+.md-content .md-typeset details.zi-sources:focus-within {
+    box-shadow: none;
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary {
+    display: grid;
+    gap: var(--sp-1);
+    margin: 0 calc(-1 * var(--sp-4));
+    padding: var(--sp-3) calc(var(--sp-4) + var(--sp-5)) var(--sp-3) var(--sp-4);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--ink);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* Material draws an admonition icon before a summary; the panel needs only the chevron. */
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary::before {
+    display: none;
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary::after {
+    top: var(--sp-3);
+    right: var(--sp-4);
+    background-color: var(--ink-muted);
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary:hover .zi-sources__label {
+    text-decoration: underline;
+    text-decoration-thickness: var(--hairline);
+    text-underline-offset: 0.2em;
+}
+
+.md-content .md-typeset details.zi-sources > summary.zi-sources__summary:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.zi-sources__label {
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+.zi-sources__count {
+    color: var(--ink-muted);
+    font-weight: 600;
+}
+
+.zi-sources__note {
+    color: var(--ink-muted);
+}
+
+.md-content .md-typeset details.zi-sources > :last-child {
+    margin-bottom: var(--sp-4);
+}
+
+/* Inside the panel the list takes the panel's small muted text. */
 .md-typeset .footnote {
     color: inherit;
     font-size: inherit;
@@ -2475,22 +2542,6 @@ span .zi-icon {
 .md-typeset .footnote > ol > li:target {
     color: inherit;
     animation: zi-cite-flash 2s var(--ease) both;
-}
-
-.md-typeset .footnote-backref,
-.md-typeset .footnote > ol > li:hover .footnote-backref,
-.md-typeset .footnote > ol > li:target .footnote-backref {
-    display: inline-block;
-    padding-block: var(--sp-1);
-    font-size: var(--fs-sm);
-    white-space: nowrap;
-    vertical-align: baseline;
-    opacity: 1;
-    transform: none;
-}
-
-.md-typeset .footnote-backref::before {
-    display: none;
 }
 
 @keyframes zi-cite-flash {
