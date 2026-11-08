@@ -11,6 +11,9 @@ The three Zeekr models on sale in Australia, side by side. Prices are the manufa
 !!! info "2027 7X (MY27)"
     The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
 
+!!! note "Coming: Zeekr 7GT"
+    The 7GT electric wagon is confirmed for Australia but not yet on sale, and has no Australian price yet [^11]. First deliveries are expected in the first quarter of 2027 [^12]. See [Zeekr 7GT](../models/7gt/overview.md).
+
 ## Prices
 
 | Model | Price | Body style |
@@ -83,3 +86,5 @@ All three models carry the same standard private-use cover: 5 years and unlimite
 [^8]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
 [^9]: The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
 [^10]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+[^11]: Zeekr Australia, "Zeekr 7GT", <https://www.zeekrlife.com/en-au/models/zeekr-7gt>, accessed 8 November 2026.
+[^12]: The Driven, "Zeekr 7GT confirmed for 2026 launch in Australia with 670 km range and 3.1 second sprint", <https://thedriven.io/2026/09/19/zeekr-7gt-confirmed-for-2026-launch-australia-with-670km-range-and-3-1-second-sprint/>, accessed 8 November 2026.
