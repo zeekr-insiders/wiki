@@ -68,7 +68,7 @@ This will evolve based on what the community actually talks about.
 
 ## How to get involved
 
-Once the forum launches, we'll announce it in the Facebook group and on Instagram. You'll be able to:
+Once the forum launches, we'll announce it in the Facebook group and on [Instagram](https://www.instagram.com/zeekrinsiders/). You'll be able to:
 
 1. **Create an account**: Simple registration, no Facebook required
 2. **Introduce yourself**: There'll be a "new members" area

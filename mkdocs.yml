@@ -91,11 +91,14 @@ extra:
       - {forum: true, icon: forum, short: Forum, text: Ask the forum}
       - {wiki: true, icon: book, short: Wiki, text: Master your Zeekr}
     og_image: "assets/img/og-default.png"
-  # Same three channels, in the same order, as the front door footer (web-home src/lib/data/socials.json).
+  # The club's channels: Facebook, Instagram, YouTube, X. Keep in step with the front door (web-home src/lib/data/socials.json).
   social:
     - icon: zi/facebook
       name: "Facebook: Zeekr Insiders"
       link: https://www.facebook.com/groups/2044179713083663/
+    - icon: zi/instagram
+      name: "Instagram: @zeekrinsiders"
+      link: https://www.instagram.com/zeekrinsiders/
     - icon: zi/youtube
       name: "YouTube: @ZeekrInsiders"
       link: https://www.youtube.com/channel/UCGs7pzQ_eeVIMCbk118RTtw
