@@ -9,22 +9,10 @@ last_checked: 2026-11-08
 !!! info "2027 7X (MY27)"
     The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../which-7x.md).
 
-<div class="stat-grid">
-    <div class="stat-card">
-        <img src="../../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="stat-label">Boot (seats up / folded)</span>
-        <span class="stat-value">539 / 1,978 L</span>
-    </div>
-    <div class="stat-card">
-        <img src="../../../../assets/icons/icon-frunk.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="stat-label">Front storage (RWD)</span>
-        <span class="stat-value">About 62 L</span>
-    </div>
-    <div class="stat-card">
-        <img src="../../../../assets/icons/icon-towing.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="stat-label">Towing (braked / unbraked)</span>
-        <span class="stat-value">2,000 / 750 kg</span>
-    </div>
+<div class="zi-spec-grid">
+{{ spec_card("luggage", "Boot", "539 / 1,978 L", "Seats up / folded") }}
+{{ spec_card("package", "Front storage", "About 62 L", "RWD") }}
+{{ spec_card("caravan", "Towing", "2,000 / 750 kg", "Braked / unbraked") }}
 </div>
 
 Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 L of front storage for the Performance AWD, so check yours. The towing rating is for the MY25/MY26 car [^3]; the MY27 rating has not been published.

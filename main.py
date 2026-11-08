@@ -8,10 +8,54 @@ import os
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 
+_LUCIDE = Path(__file__).parent / "overrides" / ".icons" / "lucide"
+
+
+def _lucide(name: str, cls: str = "zi-spec-card__icon") -> str:
+    """A vendored Lucide icon (ISC, overrides/.icons/lucide) as inline SVG.
+
+    Inline so it takes currentColor from the card; the licence comment is
+    dropped from each copy because LICENSE-lucide.txt sits beside the files.
+    Decorative: the card's text always names what the icon shows.
+    """
+    svg = (_LUCIDE / f"{name}.svg").read_text(encoding="utf-8")
+    svg = svg[svg.index("<svg"):]
+    svg = " ".join(svg.split())
+    return svg.replace(
+        f'class="lucide lucide-{name}"',
+        f'class="{cls}" aria-hidden="true" focusable="false"',
+        1,
+    )
+
+
 def define_env(env):
     """
     Define custom macros for MkDocs
     """
+
+    @env.macro
+    def card_icon(icon: str) -> str:
+        """The icon at the top of a section card (home Start here, section indexes)."""
+        return _lucide(icon, "zi-card-icon")
+
+    @env.macro
+    def spec_card(icon: str, label: str, value: str, detail: str = "") -> str:
+        """One spec summary card for a .zi-spec-grid (see README, "Spec cards").
+
+        icon is a file name in overrides/.icons/lucide; value never wraps, so
+        "2,000 kg" stays on one line. Returns one line of HTML, so it can sit
+        inside a raw HTML block without a blank line ending the block.
+        """
+        parts = [
+            '<div class="zi-spec-card">',
+            _lucide(icon),
+            f'<span class="zi-spec-card__label">{label}</span>',
+            f'<span class="zi-spec-card__value">{value}</span>',
+        ]
+        if detail:
+            parts.append(f'<span class="zi-spec-card__detail">{detail}</span>')
+        parts.append("</div>")
+        return "".join(parts)
 
     @env.macro
     def load_model_data(model_slug: str, year: int) -> Dict[str, Any]:

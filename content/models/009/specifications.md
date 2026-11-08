@@ -8,6 +8,14 @@ last_checked: 2026-11-08
 
 Figures are for the 2026 009 range launched in November 2025 [^1].
 
+<div class="zi-spec-grid">
+{{ spec_card("users", "Seats", "6 or 7", "AWD 6 or 7, FWD 7") }}
+{{ spec_card("route", "WLTP range", "604 km", "FWD") }}
+{{ spec_card("battery-charging", "Peak DC", "150 kW", "FWD") }}
+</div>
+
+Sources: [^1][^2].
+
 ## Variants and powertrain
 
 | | 7-seat FWD | 7-seat AWD and 6-seat AWD |

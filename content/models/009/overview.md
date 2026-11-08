@@ -64,35 +64,11 @@ Prices are before on-road costs, as at the November 2025 launch; we found no lat
 
 ## Key stats
 
-<div class="stat-grid">
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">4.5 s</span>
-            <span class="stat-label">0-100 km/h (AWD)</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-range.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">604 km</span>
-            <span class="stat-label">WLTP range (FWD)</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-speaker.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">30</span>
-            <span class="stat-label">Yamaha speakers</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-battery.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">116 kWh</span>
-            <span class="stat-label">Battery (FWD)</span>
-        </div>
-    </div>
+<div class="zi-spec-grid">
+{{ spec_card("gauge", "0-100 km/h", "4.5 s", "AWD") }}
+{{ spec_card("route", "WLTP range", "604 km", "FWD") }}
+{{ spec_card("speaker", "Yamaha speakers", "30") }}
+{{ spec_card("battery", "Battery", "116 kWh", "FWD") }}
 </div>
 
 Stats: CarExpert [^1].

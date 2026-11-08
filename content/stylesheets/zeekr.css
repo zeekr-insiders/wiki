@@ -930,9 +930,34 @@ body {
     text-decoration: line-through;
 }
 
-.stats-row,
-.stat-grid {
+.stats-row {
     display: grid;
+    gap: 1px;
+    margin: var(--sp-5) 0;
+    overflow: hidden;
+    background: var(--line);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-md);
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.stat-box {
+    background: var(--panel);
+    padding: var(--sp-4);
+    text-align: center;
+}
+
+/* Spec summary cards (the spec_card macro in main.py; README "Spec cards").
+   Flat and square like the rest of the site: cells divided by 1px hairlines
+   (the grid gap shows the line colour behind), a small Lucide icon, an
+   eyebrow label, the value and an optional detail line. The grid always
+   fills its row: as many columns as cards on wide screens (up to four), two
+   on phones for an even count and one for an odd count, so no cell sits
+   empty. */
+.zi-spec-grid {
+    --zi-spec-cols: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--zi-spec-cols), minmax(0, 1fr));
     gap: 1px;
     margin: var(--sp-5) 0;
     overflow: hidden;
@@ -941,57 +966,70 @@ body {
     border-radius: var(--radius-md);
 }
 
-.stats-row {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+.zi-spec-grid:has(> :nth-child(2):last-child),
+.zi-spec-grid:has(> :nth-child(4):last-child) {
+    --zi-spec-cols: 2;
 }
 
-.stat-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+@media (min-width: 45em) {
+    .zi-spec-grid:has(> :nth-child(3):last-child) {
+        --zi-spec-cols: 3;
+    }
 
-@media (min-width: 56rem) {
-    .stat-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+    .zi-spec-grid:has(> :nth-child(4):last-child) {
+        --zi-spec-cols: 4;
+    }
+
+    /* Five or more: as many as fit, never narrower than a value needs. */
+    .zi-spec-grid:has(> :nth-child(5)) {
+        grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     }
 }
 
-.stat-box,
-.stat-card {
-    background: var(--panel);
-    padding: var(--sp-4);
-}
-
-.stat-box {
-    text-align: center;
-}
-
-.stat-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--sp-3);
-}
-
-.stat-card .stat-icon {
-    display: flex;
-    width: 28px;
-    height: 28px;
-}
-
-.stat-card .stat-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.stat-card .stat-content {
+.zi-spec-card {
     display: flex;
     flex-direction: column;
     gap: var(--sp-1);
+    padding: var(--sp-4);
+    background: var(--panel);
+}
+
+.zi-spec-card__icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: var(--sp-2);
+    color: var(--ink-muted);
+    stroke-width: 1.5;
+}
+
+.zi-spec-card__label {
+    font-family: var(--font-display);
+    font-size: var(--fs-2xs);
+    font-weight: 600;
+    letter-spacing: var(--track-label);
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+}
+
+/* A value and its unit stay together on one line. */
+.zi-spec-card__value {
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    line-height: 1.15;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    color: var(--ink);
+}
+
+.zi-spec-card__detail {
+    font-size: var(--fs-sm);
+    line-height: 1.4;
+    color: var(--ink-muted);
 }
 
 .stat-box .val,
-.stat-card .stat-value,
 .model-glance .glance-stats .val {
     display: block;
     font-family: var(--font-display);
@@ -1003,7 +1041,6 @@ body {
 }
 
 .stat-box .lbl,
-.stat-card .stat-label,
 .model-glance .glance-stats .lbl {
     display: block;
     margin-top: var(--sp-1);
@@ -1295,12 +1332,6 @@ img.zi-icon {
 .zi-icon--lg { width: 2em; height: 2em; }
 .zi-icon--xl { width: 48px; height: 48px; }
 .zi-icon--standalone { margin-right: 0; }
-
-.stat-icon .zi-icon,
-.stat-icon .zi-icon--xl {
-    width: 28px;
-    height: 28px;
-}
 
 .stat-box .zi-icon,
 .stats-row .zi-icon {

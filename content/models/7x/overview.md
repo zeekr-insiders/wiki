@@ -66,35 +66,11 @@ Range, battery and 0-100 figures are from Zeekr's MY25/MY26 comparison table [^3
 
 ## Key numbers
 
-<div class="stat-grid">
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">450 / 420 kW</span>
-            <span class="stat-label">Peak DC (RWD / Long Range, AWD)</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">800V</span>
-            <span class="stat-label">Electrical system</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-towing.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">2,000 kg</span>
-            <span class="stat-label">Braked towing (MY25/MY26)</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">539 L</span>
-            <span class="stat-label">Boot, seats up</span>
-        </div>
-    </div>
+<div class="zi-spec-grid">
+{{ spec_card("battery-charging", "Peak DC", "450 / 420 kW", "RWD / Long Range, AWD") }}
+{{ spec_card("zap", "Electrical system", "800V") }}
+{{ spec_card("caravan", "Braked towing", "2,000 kg", "MY25/MY26") }}
+{{ spec_card("luggage", "Boot", "539 L", "Seats up") }}
 </div>
 
 The 7X uses an 800V system with peak DC charging of up to 450 kW on the RWD and 420 kW on the Long Range and AWD [^1]. What you actually see depends on the charger, the battery's temperature and its state of charge. Towing is rated at 2,000 kg braked and 750 kg unbraked for the MY25/MY26 car [^4]; confirm towbar and tongue-weight details with your dealer. The boot holds 539 L with the rear seats up and 1,978 L folded [^5].

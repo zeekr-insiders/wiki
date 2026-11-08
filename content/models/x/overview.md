@@ -51,35 +51,11 @@ Prices and figures: CarExpert [^1]. AWD drive-away pricing varies between listin
 
 ## Key stats
 
-<div class="stat-grid">
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">3.7 s</span>
-            <span class="stat-label">0-100 km/h (AWD)</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">22 kW</span>
-            <span class="stat-label">AC charging (AWD)</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">404 L</span>
-            <span class="stat-label">Boot space</span>
-        </div>
-    </div>
-    <div class="stat-card">
-        <div class="stat-icon"><img src="../../../assets/icons/icon-service.svg" class="zi-icon zi-icon--xl" alt=""></div>
-        <div class="stat-content">
-            <span class="stat-value">12 mo</span>
-            <span class="stat-label">or 20,000 km service</span>
-        </div>
-    </div>
+<div class="zi-spec-grid">
+{{ spec_card("gauge", "0-100 km/h", "3.7 s", "AWD") }}
+{{ spec_card("plug-zap", "AC charging", "22 kW", "AWD") }}
+{{ spec_card("luggage", "Boot space", "404 L") }}
+{{ spec_card("wrench", "Service", "12 mo", "or 20,000 km") }}
 </div>
 
 ## Worth knowing
