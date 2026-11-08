@@ -57,8 +57,10 @@ CI runs `mkdocs build --strict` plus the three check scripts on every pull reque
 | `hooks/cards.py` | Makes a `.z-card` with a single `.go` link one clickable card (one tab stop). |
 | `hooks/citations.py` | Turns footnotes into labelled citations and a collapsed Sources panel. |
 | `hooks/tables.py` | Lets long cells wrap; short cells stay on one line and wide tables scroll. |
+| `hooks/redirects.py` | Keeps a moved page's old URL working: list it under `extra.redirects` in `mkdocs.yml` (old content path: new one). |
 | `hooks/headings.py` | Keeps the permalink glyph out of heading names for screen readers. |
-| `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube` and older model-data helpers. |
+| `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and older model-data helpers. |
+| `data/glossary.yml` | Every glossary term (see Glossary below). |
 | `scripts/` | The check scripts behind `make nav`, `make citations` and `make labels`. |
 | `templates/` | Page templates for contributors. |
 
@@ -76,6 +78,21 @@ The towing rating is for the MY25/MY26 car [^3].
 ```
 
 Arguments: Lucide icon name (no `.svg`), short label, value, optional detail. Cite in the sentence after the grid.
+
+### Glossary
+
+The Glossary page is built from one file, `data/glossary.yml`. To add or change a term, edit that file only; the `glossary()` macro sorts the terms A to Z and renders them. Each term has:
+
+| Field | What it holds |
+|---|---|
+| `id` | The term's anchor, as in `glossary/#soc`. Never change one that has shipped. |
+| `term` | The name as shown, sentence case. |
+| `aka` | Other names and abbreviations. The page filter and site search match them. |
+| `category` | One of the keys under `categories`: Battery, Charging, Home and grid, Driving, Ownership and money, Zeekr-specific. |
+| `definition` | One or two plain-English sentences. A factual specific gets a footnote such as `[^carexpert-7x]`, keyed to `sources` in the same file; the macro builds the page's Sources from the keys it uses. |
+| `see` | The wiki pages that explain it: `{label, page}`, with `page` relative to `content/`. |
+
+The build fails if two terms share an `id`, a term names an unknown category, or a definition cites a key that isn't in `sources`. Each term is its own entry in the site search. On the page, `javascripts/glossary.js` adds the filter box, category chips and copy-link buttons; without JavaScript the full list and the A to Z links still work.
 
 ### Videos
 
