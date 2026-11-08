@@ -105,10 +105,10 @@ Use the existing sets first; nothing here should be generated as a bitmap.
 
 - **Chrome** (masthead, footer, theme toggle, search, menu, back to top): the front door's own sprite, already copied
   to `overrides/.icons/zi/` from web-home `src/lib/components/IconSprite.svelte`.
-- **Content**: the wiki's 38 line icons in `content/assets/icons/` already follow the site's style (24px grid, 1.5
-  stroke, round caps), and are now drawn in the ink colour instead of orange.
-- **Gaps worth filling**, drawn as SVG by hand on the same grid (stroke 1.5, round caps and joins, `currentColor`, no
-  fills), saved as `content/assets/icons/icon-<name>.svg`:
+- **Content**: the vendored Lucide set in `overrides/.icons/lucide/` (ISC), used through the `card_icon` and
+  `spec_card` macros. The old hand-drawn set in `content/assets/icons/` has been removed.
+- **Gaps worth filling**: look for a Lucide icon first. Otherwise draw one as SVG on the same grid (stroke 1.5, round
+  caps and joins, `currentColor`, no fills) and save it to `overrides/.icons/zi/`, never into the vendored Lucide set:
 
 | Icon | Used for | Reference prompt (for a sketch only; redraw as SVG) |
 |---|---|---|
