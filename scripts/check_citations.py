@@ -1,10 +1,10 @@
 """Check every citation in the built site resolves, both ways.
 
 For each page: every superscript points at a Sources entry that exists, every
-entry is cited at least once, every "Back to text" link lands on a marker that
-exists, every entry has a way back to its own markers, each marker carries an
-aria-label, and no plain "[1]" citation text is left over from before the
-footnote conversion.
+entry is cited at least once, each marker carries an aria-label, the entries
+sit inside the collapsed Sources panel (hooks/citations.py) whose label counts
+them, no footnote return arrow is left, and no plain "[1]" citation text is
+left over from before the footnote conversion.
 
 Usage: python scripts/check_citations.py [site_dir]   (default: site)
 """
@@ -25,12 +25,14 @@ class _Page(HTMLParser):
         self.ids: set[str] = set()
         self.refs: list[tuple[str, str | None]] = []  # (href, aria-label)
         self.entries: list[str] = []
-        self.backrefs: list[str] = []
-        self.markers: list[str] = []
+        self.backrefs = 0
         self.leftovers: list[str] = []
         self._skip = 0  # inside <code>, <pre>, <script> or <style>
-        self._h2 = False
-        self.sources_heading = False
+        self.panels = 0
+        self._panel = 0  # <details> depth inside the Sources panel
+        self.outside: list[str] = []  # entries not in the panel
+        self._count = False
+        self.count = ""
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -38,27 +40,32 @@ class _Page(HTMLParser):
             self.ids.add(a["id"])
         if tag in ("code", "pre", "script", "style"):
             self._skip += 1
-        if tag == "h2":
-            self._h2 = True
         cls = (a.get("class") or "").split()
+        if tag == "details" and ("zi-sources" in cls or self._panel):
+            self.panels += not self._panel
+            self._panel += 1
+        if tag == "span" and "zi-sources__count" in cls:
+            self._count = True
         if tag == "a" and "footnote-ref" in cls:
             self.refs.append((a.get("href", ""), a.get("aria-label")))
         if tag == "a" and "footnote-backref" in cls:
-            self.backrefs.append(a.get("href", ""))
+            self.backrefs += 1
         if tag == "li" and a.get("id", "").startswith("fn:"):
             self.entries.append(a["id"])
-        if tag == "sup" and a.get("id", "").startswith("fnref"):
-            self.markers.append(a["id"])
+            if not self._panel:
+                self.outside.append(a["id"])
 
     def handle_endtag(self, tag):
         if tag in ("code", "pre", "script", "style") and self._skip:
             self._skip -= 1
-        if tag == "h2":
-            self._h2 = False
+        if tag == "details" and self._panel:
+            self._panel -= 1
+        if tag == "span" and self._count:
+            self._count = False
 
     def handle_data(self, data):
-        if self._h2 and data.strip() == "Sources":
-            self.sources_heading = True
+        if self._count:
+            self.count += data
         if not self._skip:
             self.leftovers.extend(_LEFTOVER.findall(data))
 
@@ -76,8 +83,14 @@ def check(site: pathlib.Path) -> list[str]:
             continue
         pages += 1
         cited += len(p.refs)
-        if not p.sources_heading:
-            problems.append(f"{rel}: has citations but no 'Sources' heading")
+        if p.panels != 1:
+            problems.append(f"{rel}: has citations but {p.panels} Sources panels, not one")
+        if p.outside:
+            problems.append(f"{rel}: Sources entries outside the panel: {p.outside}")
+        if p.count.strip() != f"({len(p.entries)})":
+            problems.append(f"{rel}: panel says {p.count.strip() or 'nothing'} but lists {len(p.entries)} sources")
+        if p.backrefs:
+            problems.append(f"{rel}: {p.backrefs} footnote return link(s) left in the Sources list")
         targets = {href.removeprefix("#") for href, _ in p.refs}
         for href, label in p.refs:
             if href.removeprefix("#") not in p.entries:
@@ -87,16 +100,6 @@ def check(site: pathlib.Path) -> list[str]:
         for entry in p.entries:
             if entry not in targets:
                 problems.append(f"{rel}: Sources entry {entry} is never cited")
-        backs = {href.removeprefix("#") for href in p.backrefs}
-        for href in p.backrefs:
-            if href.removeprefix("#") not in p.ids:
-                problems.append(f"{rel}: back link {href} points nowhere")
-        # One back link per entry, retargeted in the browser, so each entry needs a link
-        # that lands on one of its own markers.
-        for entry in p.entries:
-            own = {m for m in p.markers if m.endswith(":" + entry.removeprefix("fn:"))}
-            if not own & backs:
-                problems.append(f"{rel}: Sources entry {entry} has no back link to its citations")
     print(f"citations: {cited} across {pages} pages checked")
     return problems
 
