@@ -273,6 +273,14 @@ body {
 .md-typeset h6 {
     font-family: var(--font-display);
     color: var(--ink);
+    text-wrap: balance;
+}
+
+/* No lone word on a paragraph's or list item's last line, where supported. */
+.md-typeset p,
+.md-typeset li,
+.md-typeset td.zi-td-long {
+    text-wrap: pretty;
 }
 
 /* 600, as the front door's H1s are; h2 and h3 stay 700. */
@@ -285,7 +293,7 @@ body {
 }
 
 .md-typeset h2 {
-    font-size: var(--fs-xl);
+    font-size: 24px;
     font-weight: 700;
     line-height: var(--lh-snug);
     letter-spacing: -0.01em;
