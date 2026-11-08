@@ -1224,7 +1224,6 @@ span .zi-icon {
 
 .zi-rail .zi-ext {
     display: flex;
-    margin-left: auto;
 }
 
 .zi-rail .zi-ext svg {
@@ -1851,7 +1850,7 @@ span .zi-icon {
     }
 
     /* h4 and deeper stay out of the panel, as on the site. */
-    .md-sidebar--secondary .zi-toc .md-nav .md-nav .md-nav {
+    .md-sidebar--secondary .zi-toc .md-nav .md-nav {
         display: none;
     }
 
@@ -1889,7 +1888,7 @@ span .zi-icon {
     }
 
     /* h3 rows: no number, text steps in under its h2. */
-    [dir] .md-sidebar--secondary .zi-toc .md-nav .md-nav .md-nav__link {
+    [dir] .md-sidebar--secondary .zi-toc .md-nav .md-nav__link {
         padding-left: var(--sp-5);
         font-size: var(--fs-sm);
         font-weight: 400;
