@@ -112,17 +112,17 @@ info:
 	@echo ""
 	@echo "Project structure:"
 	@echo "  content/     - Wiki content (markdown files)"
-	@echo "  templates/   - Content templates for contributors"
+	@echo "  data/        - Glossary and Handover checklist data"
 	@echo "  site/        - Built static site (generated)"
 	@echo "  mkdocs.yml   - MkDocs configuration"
 	@echo "  pyproject.toml - Python project configuration"
 	@echo ""
 	@echo "Key files:"
 	@echo "  README.md    - Project overview and setup"
-	@echo "  structure.md - Content structure guide"
+	@echo "  AGENTS.md    - How pages are written and checked"
 	@echo "  Makefile     - This file!"
 
-# Utilit commands
+# Utility commands
 update:
 	@echo "Updating dependencies..."
 	uv sync --upgrade
@@ -130,29 +130,5 @@ update:
 
 requirements:
 	@echo "Generating requirements.txt..."
-	uv export --format requirements-txt --output-file requirements.txt
+	uv export --format requirements-txt --no-hashes --no-dev --output-file requirements.txt
 	@echo "✅ requirements.txt generated"
-
-new-content:
-	@echo "Available templates:"
-	@echo "  1. Model overview"
-	@echo "  2. Model specifications"
-	@echo "  3. Guide/tutorial"
-	@echo "  4. Event report"
-	@echo "  5. Group buy"
-	@echo "  See templates/ directory for all options"
-
-docker-build:
-	@if [ -f Dockerfile ]; then \
-		docker build -t zev-wiki .; \
-		echo "✅ Docker image built"; \
-	else \
-		echo "❌ Dockerfile not found"; \
-	fi
-
-docker-run:
-	@if docker images | grep -q zev-wiki; then \
-		docker run -p 8000:8000 zev-wiki; \
-	else \
-		echo "❌ Docker image not found. Run 'make docker-build' first"; \
-	fi
