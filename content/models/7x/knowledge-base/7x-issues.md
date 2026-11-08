@@ -11,6 +11,8 @@ last_checked: 2026-11-08
 
 Common quirks owners raise, with what the owner's manual says about each. Menu names change with software updates, so treat the paths as a starting point.
 
+<span id="owner-tips"></span><span id="optimising-7x-audio-settings"></span>Looking for settings and habits? See [Owner tips](../owner-tips.md).
+
 !!! info "About the manual we checked"
     The instructions below come from a 7X owner's manual (2025 Long Range RWD, Netherlands edition) on an unofficial mirror [^1]. We have not checked them against the Australian manual that comes with the car, and Australian cars may behave differently. If yours does not match, tell us and we will update the entry. For anything that might be a fault, go to your dealer: warranty claims go through an authorised Zeekr dealer [^2].
 
@@ -59,16 +61,6 @@ The manual does not describe a tolerance or offset setting.
 
 **What the manual says:** to restart both displays, press and hold the thumbstick on the left of the steering wheel and the scroll wheel on the right of the steering wheel together for ten seconds.
 
-## Owner tips
-
-### Optimising 7X audio settings
-
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the video [^7].
-
-Some owners find the default audio a little flat and recommend this walkthrough, which sets the EQ and sound settings for a fuller sound. The settings themselves are in the video [^7].
-
-{{ youtube("Flu6omnSUuk", "2025 Zeekr 7X Audio Settings (for most of us)", 'Nelson "Nelly" Yeung', "https://www.youtube.com/@nellyyeung888") }}
-
 ## Sources
 
 [^1]: Zeekr 7X Manual (unofficial mirror of the 2025 Long Range RWD, Netherlands edition), <https://zeekr-manual.pages.dev/>, accessed 8 November 2026.
@@ -77,4 +69,3 @@ Some owners find the default audio a little flat and recommend this walkthrough,
 [^4]: Zeekr 7X Manual (mirror), "Traffic sign information", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214910/>, accessed 8 November 2026.
 [^5]: Zeekr 7X Manual (mirror), "Stuck charging cable", <https://zeekr-manual.pages.dev/sections/hazardous-situations/T10211214/>, accessed 8 November 2026.
 [^6]: Zeekr 7X Manual (mirror), "Reboot the center display and driver display", <https://zeekr-manual.pages.dev/sections/center-display/T10213514/>, accessed 8 November 2026.
-[^7]: Nelson "Nelly" Yeung (YouTube), "2025 Zeekr 7X Audio Settings (for most of us)", <https://www.youtube.com/watch?v=Flu6omnSUuk>, accessed 8 November 2026.

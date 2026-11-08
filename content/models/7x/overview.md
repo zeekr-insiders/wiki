@@ -94,6 +94,7 @@ Every grade also gets a built-in dashcam (DVR) [^1] and rear privacy glass [^2].
 - [Prices and options](2025/pricing.md)
 - [Service schedule and warranty](2025/service-schedule.md)
 - [Known issues](knowledge-base/7x-issues.md)
+- [Owner tips](owner-tips.md)
 - [Owner modifications](knowledge-base/7x-mods.md)
 - [How the 7X compares](../../comparisons/zeekr-vs-competitors.md)
 
