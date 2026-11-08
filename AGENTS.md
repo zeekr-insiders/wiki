@@ -110,6 +110,7 @@ CI runs `mkdocs build --strict` plus the three check scripts on every pull reque
 | `hooks/headings.py` | Keeps the permalink glyph out of heading names for screen readers. |
 | `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and older model-data helpers. |
 | `data/glossary.yml` | Every glossary term (see Glossary below). |
+| `data/handover-checklist.yml` | The Handover checklist's items, sections and sources (see Handover checklist below). |
 | `scripts/` | The check scripts behind `make nav`, `make citations` and `make labels`. |
 | `templates/` | Page templates for contributors. |
 
@@ -142,6 +143,17 @@ The Glossary page is built from one file, `data/glossary.yml`. To add or change 
 | `see` | The wiki pages that explain it: `{label, page}`, with `page` relative to `content/`. |
 
 The build fails if two terms share an `id`, a term names an unknown category, or a definition cites a key that isn't in `sources`. Each term is its own entry in the site search. On the page, `javascripts/glossary.js` adds the filter box, category chips and copy-link buttons; without JavaScript the full list and the A to Z links still work.
+
+### Handover checklist
+
+The Handover checklist (`content/buying/handover-checklist.md`) is built from `data/handover-checklist.yml` by the `handover_checklist()` macro; `javascripts/handover.js` adds the model picker, progress bars, saved ticks, "Copy what's left" and "Start again". Edit items in the data file:
+
+- `id` is the key a reader's tick is saved under in their browser. Never rename or reuse one; add a new id instead.
+- `models` is `all`, `7x`, `7x-my27`, `x` or `009`. Choosing 7X in the picker also shows `7x-my27` items.
+- `cite` lists keys from `sources`, which the macro turns into the page's footnotes and Sources.
+- Where no source says what comes with the car, say "Confirm what your order includes".
+
+Ticks live only in the reader's `localStorage` (`zi-handover:v1`); the page makes no network calls.
 
 ### Videos
 
