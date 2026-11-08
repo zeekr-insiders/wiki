@@ -204,6 +204,7 @@ nav:
       - Charging:
           - Home charging: guides/charging/home-setup.md
           - Public charging: guides/charging/public-networks.md
+          - Charging etiquette: guides/charging/etiquette.md
           - Road trips: guides/charging/road-trips.md
       - Insurance: ownership/insurance.md
       - Accessories:
