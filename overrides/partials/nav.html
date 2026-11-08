@@ -1,0 +1,43 @@
+{#- Material's primary nav (partials/nav.html, 9.6) with two changes. On phones it is the drawer, and the
+    masthead with the club's sections has scrolled away by then, so the drawer opens with those sections
+    and Join us (shown only while the nav is a drawer, see zeekr.css). They sit before the <nav>, not in
+    it, because the drawer opens on the current section's nested panel, which covers the top level.
+    The repository widget is gone: the wiki sets repo_url only to build its edit links. -#}
+{% import "partials/nav-item.html" as item with context %}
+{%- set site = config.extra.site -%}
+{% set class = "md-nav md-nav--primary" %}
+{% if "navigation.tabs" in features %}
+  {% set class = class ~ " md-nav--lifted" %}
+{% endif %}
+{% if "toc.integrate" in features %}
+  {% set class = class ~ " md-nav--integrated" %}
+{% endif %}
+<nav class="zi-drawer-club" aria-labelledby="zi-drawer-club">
+  <h2 class="zi-label" id="zi-drawer-club">Zeekr Insiders</h2>
+  <ul>
+    {% for r in site.sections if not r.wiki %}
+      <li>
+        <a href="{{ site.forum_url if r.forum else site.base_url ~ r.path }}">
+          {% include ".icons/zi/" ~ r.icon ~ ".svg" %}
+          <span>{{ r.short }}</span>
+          {% if r.forum %}<span class="zi-ext">{% include ".icons/zi/ext.svg" %}</span><span class="zi-vh">(opens another site)</span>{% endif %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a class="btn btn-primary" href="{{ site.join_url }}">Join us</a>
+</nav>
+<nav class="{{ class }}" aria-label="{{ lang.t('nav') }}" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-nav__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    {{ config.site_name }}
+  </label>
+  <ul class="md-nav__list" data-md-scrollfix>
+    {% for nav_item in nav.items %}
+      {% set path = "__nav_" ~ loop.index %}
+      {{ item.render(nav_item, path, 1) }}
+    {% endfor %}
+  </ul>
+</nav>

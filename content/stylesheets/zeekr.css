@@ -1740,6 +1740,96 @@ span .zi-icon {
     font-family: var(--font-display);
     font-size: var(--fs-lg);
     font-weight: 700;
+/* The club's sections at the top of the phone drawer (partials/nav.html):
+   the masthead that carries them has scrolled away by the time the drawer
+   opens. Hidden while the nav is a sidebar, where the masthead is on screen. */
+.zi-drawer-club {
+    display: none;
+}
+
+@media screen and (max-width: 76.234375em) {
+    /* Material lays the drawer's nav absolutely over the whole sidebar; a flex
+       column puts it under the club block instead, and its nested panels
+       (absolute, 100% high) then cover only the nav, not the club links. */
+    .md-sidebar--primary .md-sidebar__inner {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .md-sidebar--primary .md-nav--primary {
+        position: relative;
+        flex: 1 1 auto;
+        min-height: 0;
+    }
+
+    .zi-drawer-club {
+        flex: none;
+        display: grid;
+        gap: var(--sp-3);
+        padding: var(--sp-4) var(--sp-4) var(--sp-5);
+        border-bottom: var(--hairline) solid var(--line);
+    }
+
+    .zi-drawer-club h2.zi-label {
+        margin: 0;
+    }
+
+    .zi-drawer-club ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0 var(--sp-3);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .zi-drawer-club a:not(.btn) {
+        display: flex;
+        align-items: center;
+        gap: var(--sp-2);
+        min-height: var(--tap);
+        color: var(--ink);
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .zi-drawer-club a:not(.btn):is(:hover, :focus-visible) {
+        text-decoration: underline;
+        text-decoration-thickness: var(--rule);
+        text-underline-offset: 0.2em;
+    }
+
+    .zi-drawer-club a:not(.btn) > svg {
+        flex: none;
+        width: 18px;
+        height: 18px;
+    }
+
+    .zi-drawer-club .zi-ext svg {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* The chevron that opens a nav group is a 20x24 label; its hit area grows to 44px. */
+    .md-nav--primary label.md-nav__link {
+        position: relative;
+    }
+
+    .md-nav--primary .md-nav__container > label.md-nav__link::after {
+        content: "";
+        position: absolute;
+        inset: calc((var(--tap) - var(--sp-5)) / -2);
+    }
+
+    .zi-drawer-club .btn-primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: var(--on-accent);
+    }
+}
+
 }
 
 .zi-keep p {

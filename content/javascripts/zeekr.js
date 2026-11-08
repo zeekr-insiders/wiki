@@ -4,6 +4,8 @@
  *   only applies where tables are actually comparisons.
  * - The "On this page" panel's progress track and percentage follow the
  *   reader through the article, as on the front door.
+ * - The phone drawer's menu button is reachable by keyboard, and Escape
+ *   closes the drawer and hands focus back to it.
  * - Citations (marked up by hooks/citations.py) show their source on hover
  *   or focus, open it directly on Ctrl/Cmd-click or middle-click, and the
  *   source's "Back to text" link returns to the citation actually followed.
@@ -90,6 +92,51 @@
     progress();
   } else {
     document.addEventListener('DOMContentLoaded', progress);
+  }
+
+  // The drawer. Material's menu "button" is a <label> for a hidden checkbox,
+  // which the keyboard cannot reach, so it gets a button's role, a tab stop,
+  // Enter/Space and aria-expanded. Escape closes an open drawer and returns
+  // focus to the button, as the overlay click already closes it.
+  function drawer() {
+    var toggle = document.getElementById('__drawer');
+    var button = document.querySelector('.md-header label[for="__drawer"]');
+    if (!toggle || !button) return;
+    button.setAttribute('role', 'button');
+    button.setAttribute('tabindex', '0');
+
+    function sync() {
+      button.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
+    }
+    function set(open) {
+      toggle.checked = open;
+      toggle.dispatchEvent(new Event('change', { bubbles: true }));
+      sync();
+    }
+
+    sync();
+    toggle.addEventListener('change', sync);
+    button.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      e.preventDefault();
+      set(!toggle.checked);
+      if (toggle.checked) {
+        var first = document.querySelector('.md-sidebar--primary .zi-drawer-club a');
+        if (first) first.focus();
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && toggle.checked) {
+        set(false);
+        button.focus();
+      }
+    });
+  }
+
+  if (document.readyState !== 'loading') {
+    drawer();
+  } else {
+    document.addEventListener('DOMContentLoaded', drawer);
   }
 
   // Citations. Delegated listeners on the document, so there is nothing to
