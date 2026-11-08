@@ -582,6 +582,14 @@ body {
     justify-content: flex-start;
 }
 
+/* Phones: once the two buttons stack, they share one width instead of two ragged ones. */
+@media (max-width: 30em) {
+    .hero--landing .hero-actions {
+        display: grid;
+        justify-content: start;
+    }
+}
+
 .md-typeset .hero-eyebrow,
 .hero-eyebrow {
     display: inline-flex;
