@@ -2349,16 +2349,22 @@ span .zi-icon {
 }
 
 @media screen and (min-width: 76.25em) {
+    /* Compact: the panel never outgrows the window (viewport less the sticky
+       wiki bar and tabs, and a gutter); its list scrolls inside it, so the
+       heading, progress and Back to top stay in view on long pages. */
     .md-sidebar--secondary .zi-toc--panel {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100vh - 9rem);
         overflow: hidden;
         margin: 0;
-        padding: var(--sp-4) var(--sp-3) 0;
+        padding: var(--sp-3) var(--sp-2) 0;
         background: var(--bg-raised);
         border: var(--hairline) solid var(--line-strong);
         border-radius: var(--radius-md);
         font-size: var(--fs-md);
-        line-height: var(--lh-snug);
+        line-height: 1.3;
     }
 
     .zi-toc__track {
@@ -2378,11 +2384,12 @@ span .zi-icon {
     }
 
     .zi-toc__head {
+        flex: none;
         display: flex;
         align-items: baseline;
         justify-content: space-between;
         gap: var(--sp-3);
-        margin: var(--sp-1) var(--sp-2) var(--sp-3);
+        margin: var(--sp-1) var(--sp-2) var(--sp-2);
     }
 
     .md-sidebar--secondary .zi-toc .md-nav__title {
@@ -2411,9 +2418,19 @@ span .zi-icon {
 
     [dir] .md-sidebar--secondary .zi-toc .md-nav__list {
         display: grid;
-        gap: 2px;
+        gap: 1px;
         margin: 0;
         padding: 0;
+    }
+
+    /* The top-level list is the scroller, with the site's thin scrollbar. */
+    .md-sidebar--secondary .zi-toc > .md-nav__list {
+        flex: 1 1 auto;
+        min-height: 0;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        scrollbar-width: thin;
+        scrollbar-color: var(--line-strong) transparent;
     }
 
     .md-sidebar--secondary .zi-toc > .md-nav__list {
@@ -2431,10 +2448,10 @@ span .zi-icon {
 
     [dir] .md-sidebar--secondary .zi-toc .md-nav__link {
         display: grid;
-        grid-template-columns: 28px minmax(0, 1fr);
+        grid-template-columns: 1.6rem minmax(0, 1fr);
         align-items: baseline;
         margin: 0;
-        padding: var(--sp-2);
+        padding: calc(var(--sp-1) * 1.5) var(--sp-2);
         border-left: 3px solid transparent;
         border-radius: var(--radius-sm);
         font-weight: 500;
@@ -2462,10 +2479,11 @@ span .zi-icon {
         font-variant-numeric: tabular-nums;
     }
 
-    /* h3 rows: no number, text steps in under its h2. */
+    /* h3 rows: no number, text aligned with its h2's text; smaller, muted,
+       regular weight carries the hierarchy, not an indent. */
     [dir] .md-sidebar--secondary .zi-toc .md-nav .md-nav__link {
-        padding-left: var(--sp-5);
-        font-size: var(--fs-sm);
+        padding-block: var(--sp-1);
+        font-size: calc(var(--fs-sm) - 1px);
         font-weight: 400;
     }
 
@@ -2492,11 +2510,12 @@ span .zi-icon {
     }
 
     .zi-toc__top {
+        flex: none;
         display: flex;
         align-items: center;
         gap: var(--sp-2);
-        margin: var(--sp-3) calc(-1 * var(--sp-3)) 0;
-        padding: var(--sp-3) var(--sp-4);
+        margin: var(--sp-2) calc(-1 * var(--sp-2)) 0;
+        padding: var(--sp-2) var(--sp-3);
         border-top: var(--hairline) solid var(--line-strong);
         font-family: var(--font-display);
         font-size: var(--fs-sm);
@@ -2518,6 +2537,20 @@ span .zi-icon {
     /* The panel has its own Back to top row, so the floating one is for pages without it. */
     body:has(.md-sidebar--secondary:not([hidden]) .zi-toc__top) .md-top {
         display: none;
+    }
+}
+
+/* Wide screens have room to spare: a wider panel (Material's is 12.1rem) so
+   fewer titles wrap, while the article keeps a comfortable measure (about
+   800px at 1440). Below this width the column would get too narrow. */
+@media screen and (min-width: 87.5em) {
+    .md-sidebar--secondary {
+        width: 13.6rem;
+    }
+
+    /* Material caps the sidebar's content at 11.5rem with padding; let the panel use the width. */
+    [dir] .md-sidebar--secondary .md-sidebar__inner {
+        padding-right: 0;
     }
 }
 

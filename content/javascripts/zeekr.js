@@ -65,6 +65,22 @@
       var p = span > 0 ? Math.min(1, Math.max(0, -rect.top / span)) : 1;
       if (bar) bar.style.transform = 'scaleX(' + p + ')';
       if (pct) pct.textContent = Math.round(p * 100) + '%';
+      follow();
+    }
+
+    // The list scrolls inside the panel on long pages; keep the row Material
+    // marks active in view, nudging only when it has left the visible part.
+    var list = toc.querySelector(':scope > .md-nav__list');
+    function follow() {
+      if (!list || list.scrollHeight <= list.clientHeight) return;
+      var active = list.querySelectorAll('.md-nav__link--active');
+      var row = active[active.length - 1];
+      if (!row) return;
+      var l = list.getBoundingClientRect();
+      var r = row.getBoundingClientRect();
+      if (r.top < l.top || r.bottom > l.bottom) {
+        list.scrollTop += r.top - l.top - (l.height - r.height) / 2;
+      }
     }
     function queue() {
       if (!frame) frame = requestAnimationFrame(update);
