@@ -1,0 +1,27 @@
+name: Report an error
+description: Something on a wiki page is wrong, out of date or unclear.
+title: "Error: "
+labels: ["error"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The page's address or title.
+      placeholder: https://wiki.zeekrinsiders.com.au/models/7x/2025/pricing/
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong
+      description: Quote the text if you can, and tell us what it should say.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source for the correction
+      description: A link we can check (Zeekr Australia, a government site, a review). If it's from your own car, say which model and model year.
+    validations:
+      required: true

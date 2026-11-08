@@ -1,123 +1,35 @@
-# New South Wales Resources
-
-EV ownership resources specific to New South Wales.
-
-## Government Incentives
-
-### Stamp Duty Exemption
-
-!!! success "Great News for NSW Buyers"
-    NSW offers stamp duty exemptions for eligible EVs, saving buyers thousands of dollars.
-
-| Detail | Information |
-|--------|-------------|
-| **Exemption** | Full stamp duty exemption |
-| **Price Cap** | Vehicles under $78,000 |
-| **Eligibility** | New battery electric vehicles |
-
-**Zeekr Eligibility:**
-
-- **Zeekr X RWD** ($49,900) - Eligible for full exemption
-- **Zeekr X AWD** ($62,900) - Eligible for full exemption
-- **Zeekr 7X RWD** ($57,900) - Eligible for full exemption
-- **Zeekr 7X Long Range** ($63,900) - Eligible for full exemption
-- **Zeekr 7X AWD** ($72,900) - Eligible for full exemption
-- **Zeekr 009** ($135,900+) - Not eligible (exceeds cap)
-
-**Potential Savings:**
-
-| Vehicle | Stamp Duty Saved |
-|---------|------------------|
-| Zeekr X RWD ($49,900) | ~$1,500 |
-| Zeekr 7X LR ($63,900) | ~$2,100 |
-| Zeekr 7X AWD ($72,900) | ~$2,700 |
-
-### EV Rebate (Check Status)
-
-!!! warning "Program Status"
-    NSW previously offered a $3,000 EV rebate. Check [Service NSW](https://www.service.nsw.gov.au) for current program availability.
-
-### Registration
-
-NSW registration includes Green Slip (CTP insurance). Some insurers offer discounts for EVs.
-
-## Service Centres
-
-### Sydney Metropolitan
-
-#### Zeekr Sydney (Official)
-
-!!! info "Service Location"
-    *Contact Zeekr Australia for current service centre locations in Sydney.*
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
-
-### Regional NSW
-
-| Region | Nearest Service | Distance from Sydney |
-|--------|-----------------|---------------------|
-| Newcastle | Sydney/Local TBC | ~160 km |
-| Wollongong | Sydney | ~80 km |
-| Canberra | ACT | ~280 km |
-| Central Coast | Sydney | ~80 km |
-
-## Charging Infrastructure
-
-### Sydney
-
-**Ultra-Rapid Locations:**
-
-- **Chargefox** - Olympic Park, Homebush, various
-- **Evie Networks** - Westfield locations
-- **NRMA** - Major network presence
-- **Ampol AmpCharge** - Service stations
-
-### Regional Highway Corridors
-
-| Route | Charger Locations |
-|-------|-------------------|
-| **M1 Pacific Motorway (Sydney - Brisbane)** | Newcastle, Port Macquarie, Coffs Harbour, Ballina |
-| **Hume Highway (Sydney - Melbourne)** | Goulburn, Albury |
-| **Great Western Highway** | Katoomba, Lithgow, Bathurst |
-| **Princes Highway South** | Wollongong, Nowra, Batemans Bay |
-
-### NRMA Charging Network
-
-NRMA operates extensive charging infrastructure across NSW:
-
-- **Fast chargers** at strategic locations
-- **Destination chargers** at partnered hotels
-- Free for NRMA members at select locations
-
-## Home Charging
-
-### Electricians
-
-*Submit recommendations for NSW-based EV charger installers*
-
-### Strata Considerations
-
-Many Sydney residents live in apartments. Key considerations:
-
-- Strata approval typically required
-- Common property vs dedicated parking
-- Metering options (individual or building)
-- Check [NSW Fair Trading](https://www.fairtrading.nsw.gov.au) for EV charging in strata guidance
-
-## NSW EV Community
-
-### Groups
-
-- **{{ extra.club.full_name }}** - National coverage
-- **EV Owners Association NSW**
-- **Tesla Owners Club of Australia (NSW)**
-
-## Useful NSW Links
-
-- [Service NSW - Electric Vehicles](https://www.service.nsw.gov.au)
-- [Transport for NSW - EV Strategy](https://www.transport.nsw.gov.au)
-- [NRMA - Electric Vehicles](https://www.mynrma.com.au/electric-vehicles)
-
+---
+last_checked: 2026-11-08
+seo_title: "NSW EV stamp duty and road user charge"
+description: "Buying a Zeekr in NSW: standard motor vehicle duty now applies to EVs, the rebate has ended, the road user charge from July 2027, and local resources."
 ---
 
-*Last updated: December 2025*
+# New South Wales
+
+*Last checked: 8 November 2026.*
+
+## Stamp duty
+
+EVs pay standard NSW motor vehicle duty. The NSW EV stamp duty exemption and the EV rebate both **ended on 31 December 2023**; only buyers who bought or paid a deposit before 1 January 2024 kept their eligibility [^1][^2]. There is no current NSW EV purchase subsidy [^1][^2].
+
+Duty on passenger vehicles is $3 per $100 (or part) of value up to $44,999, and $1,350 plus $5 per $100 (or part) above $45,000. For a new car it is worked out on the price paid including GST [^3]. As a rough guide, a $57,900 car pays about $3,200 and a $72,900 car about $3,950. Check the [Revenue NSW calculator](https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/motor-vehicle-duty) for your price.
+
+## Road user charge from 2027
+
+NSW has legislated a distance-based road user charge for EVs. It starts on **1 July 2027**, or earlier if battery EVs reach 30% of new vehicle sales, and the government says it "will replace motor vehicle duty over time" [^1]. The NSW Government is assessing what the *Vanderstock* High Court decision means for the charge [^1]. Rates have not been confirmed, so we don't quote them.
+
+## Service
+
+NSW sales and service sites are on the [dealers page](../../buying/dealers.md).
+
+## Useful links
+
+- [Revenue NSW: motor vehicle duty](https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/motor-vehicle-duty)
+- [NSW Government: EV questions](https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs)
+- [Service NSW](https://www.service.nsw.gov.au)
+
+## Sources
+
+[^1]: NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.
+[^2]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^3]: Revenue NSW, "Motor vehicle duty", <https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/motor-vehicle-duty>, accessed 8 November 2026.

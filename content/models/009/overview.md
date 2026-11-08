@@ -1,74 +1,97 @@
+---
+last_checked: 2026-11-08
+seo_title: "Zeekr 009 people mover"
+description: "The Zeekr 009 electric people mover in Australia: six or seven seats, 116 kWh battery, WLTP range, price before on-road costs and the guides for 009 owners."
+# Preloads this model's hero banner (overrides/main.html).
+hero_image: 009
+---
+
 <div class="hero-container hero-bg-009">
     <div class="hero-content">
-        <div class="hero-title">Zeekr 009</div>
-        <div class="hero-subtitle">First Class on Wheels. The ultimate executive MPV for those who demand silence, space, and speed.</div>
+        <h1 class="hero-title">Zeekr 009</h1>
+        <div class="hero-subtitle">Zeekr's electric people mover, in 6 and 7-seat layouts.</div>
         <div class="hero-actions">
-            <a href="pricing.md" class="btn btn-primary">Pricing</a>
-            <a href="specifications.md" class="btn btn-secondary">Specs</a>
+            <a href="../pricing/" class="btn btn-primary">Pricing</a>
+            <a href="../specifications/" class="btn btn-secondary">Specs</a>
         </div>
     </div>
 </div>
 
-## The Configurations
+*Last checked: 8 November 2026.*
+
+## The configurations
 
 <div class="card-grid">
     <div class="z-card">
-        <h3>7-Seat Family</h3>
+        <h3>7-Seat FWD</h3>
+        <div class="price">$115,900 <sub>+ ORC</sub></div>
+        <ul class="feature-list">
+            <li><i>✓</i> <strong>2+2+3</strong> layout</li>
+            <li><i>✓</i> <strong>604 km</strong> WLTP</li>
+            <li><i>✓</i> 250 kW single motor</li>
+            <li><i>✓</i> 116 kWh NMC battery</li>
+            <li class="muted">7.9 s 0-100 km/h</li>
+        </ul>
+        <a href="../specifications/" class="btn btn-secondary">Details</a>
+    </div>
+
+    <div class="z-card">
+        <h3>7-Seat AWD</h3>
         <div class="price">$135,900 <sub>+ ORC</sub></div>
         <ul class="feature-list">
-            <li><i>✓</i> <strong>2+2+3</strong> Layout</li>
-            <li><i>✓</i> Center Aisle Access</li>
-            <li><i>✓</i> Sofaro First Class Seats (Row 2)</li>
-            <li><i>✓</i> 17" OLED Rear Screen</li>
-            <li><i>✓</i> Air Suspension</li>
+            <li><i>✓</i> <strong>7-seat</strong> layout</li>
+            <li><i>✓</i> <strong>582 km</strong> WLTP</li>
+            <li><i>✓</i> 450 kW dual motor</li>
+            <li><i>✓</i> 4.5 s 0-100 km/h</li>
+            <li><i>✓</i> 20-inch wheels</li>
         </ul>
-        <a href="specifications.md" class="btn btn-secondary" style="text-align:center; background:var(--zeekr-shark-light); color:white!important;">View Layout</a>
+        <a href="../specifications/" class="btn btn-secondary">Details</a>
     </div>
 
-    <div class="z-card featured">
-        <span class="badge">Executive Choice</span>
-        <h3>6-Seat Luxury</h3>
+    <div class="z-card">
+        <h3>6-Seat AWD</h3>
         <div class="price">$139,900 <sub>+ ORC</sub></div>
         <ul class="feature-list">
-            <li><i>✓</i> <strong>2+2+2</strong> Layout</li>
-            <li><i>✓</i> <strong>No Aisle</strong> (Wider Seats)</li>
-            <li><i>✓</i> Executive Aviation Seats</li>
-            <li><i>✓</i> Hidden Tray Tables</li>
-            <li><i>✓</i> Leg Rests & Footrests</li>
+            <li><i>✓</i> <strong>6-seat</strong> layout</li>
+            <li><i>✓</i> <strong>582 km</strong> WLTP</li>
+            <li><i>✓</i> 450 kW dual motor</li>
+            <li><i>✓</i> 4.5 s 0-100 km/h</li>
+            <li><i>✓</i> 20-inch wheels</li>
         </ul>
-        <a href="specifications.md" class="btn btn-primary" style="text-align:center">The "Boss" Spec</a>
+        <a href="../specifications/" class="btn btn-secondary">Details</a>
     </div>
 </div>
 
-## Key Stats
+Prices are before on-road costs, as at the November 2025 launch; we found no later change [^1][^2].
 
-<div class="stats-row">
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-acceleration.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">4.5s</span>
-        <span class="lbl">0-100 km/h</span>
-    </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-range.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">582km</span>
-        <span class="lbl">WLTP Range</span>
-    </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">30</span>
-        <span class="lbl">Yamaha Speakers</span>
-    </div>
-    <div class="stat-box">
-        <img src="../../../assets/icons/icon-power.svg" class="zi-icon zi-icon--xl" alt="">
-        <span class="val">Air</span>
-        <span class="lbl">Suspension Standard</span>
-    </div>
+## Key stats
+
+<div class="zi-spec-grid">
+{{ spec_card("gauge", "0-100 km/h", "4.5 s", "AWD") }}
+{{ spec_card("route", "WLTP range", "604 km", "FWD") }}
+{{ spec_card("speaker", "Yamaha speakers", "30") }}
+{{ spec_card("battery", "Battery", "116 kWh", "FWD") }}
 </div>
 
-## Insider Verdict
+Stats: CarExpert [^1].
 
-!!! success "Not Just a Van"
-    Don't compare this to a Kia Carnival. Compare it to a **Mercedes S-Class** or a **Lexus LM ($200k+)**. The NVH (Noise, Vibration, Harshness) levels are world-class.
+## Worth knowing
 
-!!! warning "Garage Check"
-    It is **5.2 meters long** and over **2 meters wide**. Measure your garage door before you fall in love with the test drive.
+!!! warning "Measure your garage"
+    The 009 is a large vehicle. Check its length and width on Zeekr's site or at the dealer against your garage and car space before you buy.
+
+!!! info "Luxury Car Tax"
+    Every 009 variant is priced above the 2026-27 LCT threshold for fuel-efficient vehicles ($91,661), so LCT applies to the amount above it [^3]. See the [finance guide](../../buying/finance.md).
+
+## More on the 009
+
+- [Specifications](specifications.md)
+- [Pricing](pricing.md)
+- [Service schedule](service-schedule.md)
+- [How it compares](../../comparisons/model-comparison-table.md)
+
+## Sources
+
+[^1]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^2]: Cars24, "2026 Zeekr 009 FWD priced for Australia", <https://www.cars24.com.au/car-news/2026-zeekr-009-fwd-priced-for-australia/>, accessed 8 November 2026.
+[^3]: Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.

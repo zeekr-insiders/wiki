@@ -1,65 +1,31 @@
-# Tasmania Resources
-
-EV ownership resources specific to Tasmania.
-
-## Government Incentives
-
-!!! info "Check Current Programs"
-    Visit [Tasmania.gov.au](https://www.tas.gov.au) for current EV incentive programs.
-
-Tasmania has historically been supportive of EV adoption with various incentive programs.
-
-## Service Centres
-
-### Hobart / Launceston
-
-!!! info "Service Location"
-    *Contact Zeekr Australia for service arrangements in Tasmania.*
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
-
-## Charging Infrastructure
-
-Tasmania has good EV charging coverage for its size.
-
-### Major Locations
-
-- **Hobart** - Multiple fast chargers
-- **Launceston** - Good coverage
-- **Devonport** - Ferry terminal area
-
-### Touring Tasmania
-
-!!! success "EV-Friendly Destination"
-    Tasmania's compact size makes it excellent for EV touring. Most destinations are within range of charging infrastructure.
-
-| Route | Charging |
-|-------|----------|
-| **Hobart - Launceston** | Well covered |
-| **East Coast** | Improving |
-| **West Coast** | Limited - plan carefully |
-| **Cradle Mountain** | Check availability |
-
-### Spirit of Tasmania
-
-Bringing your EV to Tasmania via the Spirit of Tasmania ferry:
-
-- EVs are accepted on the ferry
-- Battery must be at certain charge level (check requirements)
-- Book early as EV spots may be limited
-
-## Tasmania EV Community
-
-- **{{ extra.club.full_name }}** - National coverage
-- **RACT - Electric Vehicles**
-
-## Useful Links
-
-- [Tasmania.gov.au - Transport](https://www.tas.gov.au)
-- [RACT - Electric Vehicles](https://www.ract.com.au)
-- [Spirit of Tasmania](https://www.spiritoftasmania.com.au)
-
+---
+last_checked: 2026-11-08
+seo_title: "Tasmania EV stamp duty and rego"
+description: "Buying a Zeekr in Tasmania: stamp duty and registration for EVs, no open EV rebates, and local servicing, charging and club resources for Tasmanian owners."
 ---
 
-*Last updated: December 2025*
-*Contributors needed - Tasmanian members please share local knowledge!*
+# Tasmania
+
+*Last checked: 8 November 2026.*
+
+## Incentives
+
+There are no open Tasmanian EV rebates [^1].
+
+!!! note "Not yet confirmed"
+    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+
+Check current duty and registration with [Tasmanian State Revenue Office](https://www.sro.tas.gov.au) and [Transport Tasmania](https://www.transport.tas.gov.au).
+
+## Service
+
+Zeekr has no sales or service sites in Tasmania [^2]. The [dealers page](../../buying/dealers.md) explains who to ask about servicing.
+
+## Taking your car on the Spirit of Tasmania
+
+Check the [Spirit of Tasmania](https://www.spiritoftasmania.com.au) website for its current rules on electric vehicles before you book.
+
+## Sources
+
+[^1]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^2]: Zeekr Australia, "Find a dealer", <https://www.zeekrlife.com/en-au/find-us>, accessed 8 November 2026.

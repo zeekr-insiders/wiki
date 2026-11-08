@@ -1,0 +1,36 @@
+{#- The club site's masthead: same badge, the same six club sections with the
+    same names and subtitles, Wiki marked current, the theme toggle and Join us. The sections and every URL
+    come from config.extra.site, so the site moving is a one-line change in mkdocs.yml. -#}
+{%- set site = config.extra.site -%}
+{%- set base = site.base_url -%}
+
+<div class="zi-mast on-night">
+  <div class="zi-wrap zi-mast__bar">
+    <a class="zi-mast__brand" href="{{ base }}/">
+      <img src="{{ 'assets/img/logo-badge.png' | url }}" alt="Zeekr Insiders home" width="573" height="551">
+    </a>
+    <nav class="zi-rail" aria-label="Club sections">
+      <ul>
+        {% for r in site.sections %}
+          {%- set href = (nav.homepage.url | url) if r.wiki else (site.forum_url if r.forum else base ~ r.path) -%}
+          <li>
+            <a href="{{ href }}"{% if r.wiki %} aria-current="page"{% endif %}>
+              {% include ".icons/zi/" ~ r.icon ~ ".svg" %}
+              <span class="zi-rail__text">
+                <span class="zi-label">{{ r.short }}</span>
+                <strong>{{ r.text }}</strong>
+              </span>
+              {% if r.forum %}<span class="zi-ext">{% include ".icons/zi/ext.svg" %}</span><span class="zi-vh">(opens another site)</span>{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="zi-mast__actions">
+      {% if config.theme.palette and not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+      <a class="btn btn-primary" href="{{ site.join_url }}">Join us</a>
+    </div>
+  </div>
+</div>

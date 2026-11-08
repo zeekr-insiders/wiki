@@ -1,0 +1,29 @@
+name: Suggest a page
+description: Something owners need to know that the wiki doesn't cover yet.
+title: "Page idea: "
+labels: ["page idea"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: Towing with the 7X
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help owners with?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Useful sources
+      description: Links that would help us write it, if you have any.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I'm happy to help write or check this page

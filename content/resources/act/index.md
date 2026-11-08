@@ -1,93 +1,26 @@
-# ACT Resources
-
-EV ownership resources specific to the Australian Capital Territory.
-
-## Government Incentives
-
-### Stamp Duty Exemption
-
-!!! success "Zero Stamp Duty"
-    The ACT offers **zero stamp duty** on new zero-emission vehicles - one of the best incentives in Australia!
-
-| Detail | Information |
-|--------|-------------|
-| **Exemption** | 100% stamp duty exemption |
-| **Eligibility** | New battery electric vehicles |
-| **Savings** | Thousands of dollars depending on vehicle price |
-
-**Potential Savings on Zeekr:**
-
-| Vehicle | Stamp Duty Saved |
-|---------|------------------|
-| Zeekr X RWD ($49,900) | ~$1,500+ |
-| Zeekr 7X Long Range ($63,900) | ~$2,000+ |
-| Zeekr 7X AWD ($72,900) | ~$2,500+ |
-| Zeekr 009 ($135,900) | ~$5,000+ |
-
-### Registration Discounts
-
-The ACT also offers reduced registration for zero-emission vehicles.
-
-### Two Years Free Registration
-
-!!! info "Check Current Offer"
-    The ACT has previously offered two years free registration for new EVs. Check [Access Canberra](https://www.accesscanberra.act.gov.au) for current offers.
-
-## Service Centres
-
-### Canberra
-
-!!! info "Service Location"
-    *Contact Zeekr Australia for service arrangements in the ACT.*
-
-    Most ACT owners will likely access Sydney service centres (~280km).
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
-
-## Charging Infrastructure
-
-### Canberra
-
-Canberra has excellent EV charging infrastructure:
-
-- **Chargefox** - Multiple locations including Majura Park
-- **Evie Networks** - Canberra Centre and others
-- **NRMA** - Strong presence
-
-### Range to Other Cities
-
-| Destination | Distance | Charging Stops |
-|-------------|----------|----------------|
-| Sydney | 280 km | 0-1 (depends on variant) |
-| Melbourne | 660 km | 2-3 stops |
-| Wollongong | 230 km | 0-1 |
-
-!!! tip "Sydney Day Trips"
-    The Zeekr 7X Long Range (615km WLTP) can comfortably do Canberra to Sydney return with a top-up in Sydney.
-
-## ACT EV Community
-
-### Strong EV Adoption
-
-The ACT has one of Australia's highest EV adoption rates, supported by:
-
-- Excellent government incentives
-- Compact city size ideal for EVs
-- Strong charging infrastructure
-- Environmentally conscious population
-
-### Groups
-
-- **{{ extra.club.full_name }}** - National coverage
-- **NRMA - Electric Vehicles**
-- **ACT Government - Sustainable Transport**
-
-## Useful Links
-
-- [Access Canberra - Vehicle Registration](https://www.accesscanberra.act.gov.au)
-- [ACT Government - Zero Emissions Vehicles](https://www.act.gov.au)
-- [NRMA - EV Charging](https://www.mynrma.com.au)
-
+---
+last_checked: 2026-11-08
+seo_title: "ACT EV incentives and rego for Zeekr owners"
+description: "EV incentives in the ACT for Zeekr owners: the interest-free loan of up to $15,000, what ended for registration and duty, and local servicing and charging."
 ---
 
-*Last updated: December 2025*
+# Australian Capital Territory
+
+*Last checked: 8 November 2026.*
+
+## Incentives, duty and registration
+
+The ACT still offers interest-free loans of up to $15,000 towards an EV. The free registration offer and the motor vehicle duty exemption for EVs have ended; the duty exemption ended on 31 August 2025 [^1].
+
+!!! note "Not yet confirmed"
+    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+
+Check current duty with the [ACT Revenue Office](https://www.revenue.act.gov.au/motor-vehicle-duty) and loan details with [Climate Choices ACT](https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles).
+
+## Service
+
+Canberra sales and service details are on the [dealers page](../../buying/dealers.md).
+
+## Sources
+
+[^1]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.

@@ -1,0 +1,22 @@
+{#- The club site's not-found page, worded the same, with ways back into
+    the wiki and out to the site. Hosts serve this file for any missing path. -#}
+{% extends "main.html" %}
+{% block htmltitle %}<title>Page not found | {{ config.extra.site.title_suffix }}</title>{% endblock %}
+{% block extrahead %}
+  {{ super() }}
+  <meta name="robots" content="noindex">
+{% endblock %}
+{% block content %}
+  {%- set base = config.extra.site.base_url -%}
+  <section class="zi-oops" aria-labelledby="zi-oops-title">
+    <p class="zi-label">404</p>
+    <h1 id="zi-oops-title">We could not find that page</h1>
+    <p>The link may be old or mistyped. Here are some places to pick up the trail.</p>
+    <ul>
+      <li><a class="btn btn-primary" href="{{ nav.homepage.url | url }}">Back to the wiki home</a></li>
+      <li><label class="btn" for="__search">Search the wiki</label></li>
+      <li><a href="{{ base }}/drives">Upcoming drives</a></li>
+      <li><a href="{{ base }}/">The club site</a></li>
+    </ul>
+  </section>
+{% endblock %}

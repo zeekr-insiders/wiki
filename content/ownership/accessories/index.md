@@ -1,36 +1,31 @@
-# Accessories Overview
+---
+seo_title: "Zeekr accessories and protection"
+description: "Zeekr accessories and protection from owners: paint protection film, ceramic coating, window tint, recommended accessories and how to choose an installer."
+---
+# Accessories
 
-Enhance, protect, and personalise your Zeekr with accessories and modifications recommended by the {{ extra.club.full_name }} community.
+Protection, accessories and installers, from owners in the {{ extra.club.full_name }} community. Check fitment for your model and model year: the 2027 7X (MY27) has a revised centre console and rear privacy glass as standard [^1], so some advice for the MY25/MY26 car doesn't carry over.
 
-## What You'll Find Here
+## Available categories
 
-This section covers practical accessories and protection options based on real owner experiences in Australia. We focus on:
-
-- **Quality over quantity** - Items that owners actually recommend
-- **Australian context** - Suppliers and installers operating locally
-- **Practical advice** - What works, what doesn't, and what's worth the cost
-- **Protection first** - Preserving your investment long-term
-
-## Available Categories
-
-### Protection & Care
+### Protection & care
 
 **[Protection Options](protection.md)**
 
-Paint protection film (PPF), ceramic coating, and window tinting guidance. Learn what each option offers, typical costs, and what's actually worth doing for Australian conditions.
+Paint protection film (PPF), ceramic coating and window tinting: what each option does and what to ask.
 
 **Topics covered:**
 
 - Paint Protection Film (PPF) - Full front vs partial coverage
 - Ceramic coating - Benefits and limitations
-- Window tinting - Legal limits by state, heat rejection, privacy
+- Window tinting - Heat rejection, privacy and checking your state's rules
 - What combination of protection makes sense
 
-### Recommended Accessories
+### Recommended accessories
 
 **[Community Recommendations](recommended.md)**
 
-Accessories vetted and recommended by actual Zeekr owners. Organised by category:
+Accessories owners have found useful, by category:
 
 - Interior comfort and convenience
 - Exterior styling and protection
@@ -40,20 +35,19 @@ Accessories vetted and recommended by actual Zeekr owners. Organised by category
 
 **Note:** These are owner recommendations, not {{ extra.club.abbreviation }} endorsements. Your experience may vary.
 
-### Trusted Vendors
+### Choosing an installer
 
-**[Installers & Suppliers](vendors.md)**
+**[Choosing an Installer](vendors.md)**
 
-Finding quality installers for PPF, tinting, ceramic coating, and other modifications. Includes:
+How to pick an installer for PPF, tinting, ceramic coating and other work:
 
 - What to look for in a good installer
 - Questions to ask before booking
-- State-by-state recommendations (community contributed)
 - Warning signs of poor workmanship
 
-## Before You Modify
+## Before you modify
 
-### Insurance Implications
+### Insurance implications
 
 **Always declare modifications to your insurer:**
 
@@ -64,26 +58,29 @@ Finding quality installers for PPF, tinting, ceramic coating, and other modifica
 - Performance modifications
 - Significant interior changes
 
-Failure to declare can void your insurance policy. See our [Insurance Guide](../insurance.md) for details.
+Not declaring modifications can affect a claim. See our [Insurance Guide](../insurance.md).
 
-### Warranty Considerations
+### Warranty considerations
 
-- **Manufacturer warranty** - Some modifications may affect warranty coverage
-- **Dealer-installed accessories** - Generally maintain full warranty
-- **Aftermarket parts** - Check with your dealer before installation
-- **Reversible vs permanent** - Consider future resale value
+Under Zeekr's Australian warranty policy [^2]:
 
-### Quality Standards
+- **Accessories fitted by an authorised dealer before delivery** get the full vehicle warranty
+- **Accessories fitted after delivery** are covered for 24 months or 20,000 km
+- **Faults caused by unapproved modifications**, including electrical ones, are excluded
+
+Check with your dealer before fitting aftermarket parts, and think about whether a change can be reversed when you sell.
+
+### Quality standards
 
 **Look for:**
 
-- Installers with EV experience (understanding of cameras, sensors, trim removal)
+- Installers with EV experience (cameras, sensors, trim removal)
 - Warranty or guarantee on workmanship
-- Use of reputable brands (3M, XPEL, STEK for PPF; Llumar, 3M, XPEL for tinting)
+- A named film or coating product with its own manufacturer warranty
 - Examples of previous work on similar vehicles
 - Clear pricing and scope of work
 
-## Community Contributions
+## Community contributions
 
 The {{ extra.club.abbreviation }} community actively shares their experiences with accessories and modifications. Your input helps other owners make informed decisions.
 
@@ -96,37 +93,30 @@ The {{ extra.club.abbreviation }} community actively shares their experiences wi
 
 Join our [community channels](../../community/index.md) to contribute your recommendations.
 
-## Popular First Purchases
+## Common first purchases
 
-Based on community feedback, most owners consider these first:
+Owners often start with:
 
-1. **Window tinting** - Heat rejection and privacy, essential for Australian climate
-2. **PPF for high-impact areas** - Front bumper, bonnet leading edge, door edges, mirrors
-3. **All-weather floor mats** - Protect factory carpet
-4. **Boot liner/cargo mat** - Keep the boot pristine
-5. **Charging cable organiser** - Tidy cable storage at home
-6. **Dashcam** - Additional security and evidence if needed
-7. **Ceramic coating** - After PPF, for easier cleaning and gloss
+1. **Window tinting** for heat and privacy (check what your car already has first)
+2. **PPF on high-impact areas** such as the front bumper, bonnet edge, mirrors and door edges
+3. **All-weather floor mats and a boot liner**
+4. **A charging cable organiser**
+5. **A dashcam** on MY25/MY26 cars (the MY27 7X has one built in [^1])
 
-## Cost Expectations
+Get more than one quote for any paid installation; prices vary a lot by location and product.
 
-Budget ranges for common protection and accessories (Australia, 2025):
-
-- **Full PPF** - $6,000-$10,000+ (full vehicle)
-- **Partial PPF** - $2,000-$4,000 (front clip: bonnet, bumper, guards, mirrors)
-- **Ceramic coating** - $800-$2,500 (quality and coverage varies)
-- **Window tinting** - $400-$800 (full vehicle, quality film)
-- **Paint correction** - $500-$1,500 (before PPF or ceramic)
-
-Prices vary by location, installer reputation, and product quality. Always get multiple quotes.
-
-## Next Steps
+## Next steps
 
 - **[Protection Options](protection.md)** - Learn about PPF, ceramic, and tinting
 - **[Recommended Accessories](recommended.md)** - Browse community favourites
-- **[Trusted Vendors](vendors.md)** - Find installers in your area
+- **[Choosing an Installer](vendors.md)** - What to look for
 - **[First 30 Days](../first-30-days.md)** - Get the basics sorted first
 
 ## Disclaimer
 
 Recommendations in this section are based on community member experiences and do not constitute official endorsements by {{ extra.club.full_name }}. Always research thoroughly, compare options, and make decisions based on your specific needs and budget.
+
+## Sources
+
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.

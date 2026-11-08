@@ -1,259 +1,97 @@
-# Choosing Your Zeekr: Which Model Suits You?
+---
+last_checked: 2026-11-08
+seo_title: "Which Zeekr should I buy? 7X, X or 009"
+description: "Choosing between the Zeekr 7X, X and 009 in Australia: which fits how you drive, park and carry people, with price, size, range and charging compared."
+---
 
-So you're sold on Zeekr - now comes the fun part. Let's figure out which model fits your life.
+# Choosing a model
 
-## The Current Australian Lineup
+*Last checked: 8 November 2026.*
 
-Zeekr currently offers three models in Australia, each targeting different needs:
+Three Zeekr models are on sale in Australia. Here is how to narrow it down.
 
-### Quick Overview
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-| Model | Type | Size | Best For | Starting Price |
-|-------|------|------|----------|----------------|
-| **7X** | Mid-size SUV | 5-seater | Families, daily driving | Check current pricing |
-| **X** | Compact SUV | 5-seater | Couples, urban driving | Check current pricing |
-| **009** | Luxury MPV | 6-7 seater | Large families, prestige | Check current pricing |
+!!! info "Coming: Zeekr 7GT"
+    The 7GT electric wagon is confirmed for Australia but not yet on sale, and has no Australian price yet [^8]. First deliveries are expected in the first quarter of 2027 [^9]. See [Zeekr 7GT](../models/7gt/overview.md).
 
-Let's break down what each one actually offers.
+## The lineup at a glance
 
-## Zeekr 7X: The Versatile Family SUV
+| Model | Type | Seats | Boot | Starting price |
+|-------|------|-------|------|----------------|
+| **X** | Compact SUV | 5 | 404 L [^1] | $48,900 drive-away (MY26 RWD) [^1] |
+| **7X** | Mid-size SUV | 5 | 539 L [^2] | $57,900 + on-road costs [^2][^3] |
+| **009** | People mover | 6 or 7 | see [specs](../models/009/specifications.md) | $115,900 + on-road costs [^4] |
 
-**Think of it as:** The Goldilocks option - not too big, not too small, just right for most families.
+For range, charging and towing side by side, see the [model comparison table](../comparisons/model-comparison-table.md).
 
-### Who It's For
+## Zeekr X
 
-- Families with 1-2 kids
-- Anyone wanting a premium SUV without the massive size
-- Daily commuters who also do regular road trips
-- People upgrading from a mid-size petrol SUV (think RAV4, CX-5 sized)
+The smallest Zeekr, and the easiest to park.
 
-### The Practical Bits
+- Suits singles, couples and small families, city and suburban driving, or a second car.
+- WLTP range is 405 km (RWD) or 415 km (AWD) [^1]. That's plenty for daily driving; on long trips you will stop more often than in a 7X Long Range.
+- Look elsewhere if you regularly carry four adults plus luggage, or bulky gear.
 
-- **Seating**: Comfortable 5 adults (3 across the back seat works fine for kids)
-- **Boot Space**: Genuinely massive - easily fits prams, sports gear, weekly shopping
-- **Driving**: Smooth, quiet, and surprisingly quick when you want it to be
-- **Range**: Enough for daily driving plus weekend trips without charging anxiety
+[Full X details](../models/x/overview.md){ .md-button }
 
-### Why Choose the 7X?
+## Zeekr 7X
 
-- Most versatile size for Australian families
-- Best balance of space, range, and price
-- Fits in standard car parks without the stress of a larger SUV
-- Premium features without the 009's price tag
+The mid-size five-seater.
 
-### Who Should Look Elsewhere?
+- Suits families who want a larger boot (539 L, or 1,978 L with the rear seats folded) [^2].
+- WLTP range is 480 km (RWD), 615 km (Long Range) or 543 km (Performance AWD) [^3][^5].
+- All three variants are rated to tow 2,000 kg braked [^6]. Towing doesn't need the AWD.
+- 800V charging with DC peaks up to 450 kW (RWD) or 420 kW (Long Range, AWD) [^3].
+- Look elsewhere if you need more than five seats.
 
-- Need 6+ seats regularly
-- Want the smallest possible EV for tight city parking
-- Regularly carry bulky items that need a bigger boot
-- Must have absolute maximum range
+[Full 7X details](../models/7x/overview.md){ .md-button }
 
-[Full 7X Details](../models/7x/overview.md){ .md-button }
+## Zeekr 009
 
-## Zeekr X: The Urban Premium Compact
+The people mover.
 
-**Think of it as:** A sophisticated city runabout that doesn't compromise on quality.
+- Suits anyone who regularly carries six or seven people.
+- Comes as a 7-seat FWD, 7-seat AWD or 6-seat AWD [^4].
+- WLTP range is 604 km (FWD) or 582 km (AWD) [^4].
+- Its price is above the Luxury Car Tax threshold, which affects novated leasing; see the [finance guide](../buying/finance.md).
+- Look elsewhere if you rarely need more than five seats or have a tight garage. Measure first.
 
-### Who It's For
+[Full 009 details](../models/009/overview.md){ .md-button }
 
-- Couples or small families (1 kid max, comfortably)
-- Urban dwellers who prioritise parking ease
-- Second car in a household
-- Anyone downsizing but not wanting to sacrifice premium feel
+## Buying a 7X around the model-year change?
 
-### The Practical Bits
+The 2027 7X opened for orders on 1 November 2026, with deliveries from December 2026, at the same prices as before [^3]. It adds power (335 kW on RWD and Long Range, 500 kW on the AWD), a little more WLTP range, and a built-in dashcam (DVR) and rear privacy glass on every grade [^3][^7]. Orders placed from 1 November to 31 December 2026 come with a launch offer that includes two years of servicing and a 7 kW wallbox (supply only) [^3].
 
-- **Seating**: Very comfortable for 4 adults, 5 at a pinch
-- **Boot Space**: Adequate for daily use, trips away, not massive family holidays
-- **Driving**: Nippy, easy to park, perfect for city streets
-- **Range**: More than enough for urban and suburban driving
+If you are being offered an MY25/MY26 car now, compare what it includes against the MY27 car before you sign. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-### Why Choose the X?
+## Choosing a variant
 
-- Easiest Zeekr to park and manoeuvre in tight spaces
-- Lower entry price point
-- Still premium quality and features
-- Perfect if you don't need maximum space
+- **Battery size.** A bigger battery costs more and gives more range. Think about how far you drive on your longest regular trips, not your average day.
+- **RWD or AWD.** AWD is quicker and gives more grip in the wet, and usually uses a little more energy. Within the 7X range, the AWD's WLTP range is lower than the Long Range RWD's [^5].
+- **Equipment.** Higher grades add comfort and tech features. Check the specification page for the grade and model year you are looking at.
 
-### Who Should Look Elsewhere?
+## Test drive with your real life in mind
 
-- Regular family of 4+ with luggage
-- Need to carry bikes, sporting gear, or bulky items regularly
-- Planning lots of long-distance road trips (smaller battery = more frequent stops)
-- Want the most spacious interior
+- Sit in every seat you will use, and have your regular passengers do the same.
+- Load what you usually carry: prams, sports gear, the dog crate.
+- Try the infotainment and driver assistance settings you'll use daily.
+- Check visibility and parking in a space like your own.
+- Anyone else who will drive the car should drive it too.
 
-[Full X Details](../models/x/overview.md){ .md-button }
+## Still unsure?
 
-## Zeekr 009: The Luxury People Mover
+Ask current owners. See [About {{ extra.club.abbreviation }}](../community/index.md) for where to find us.
 
-**Think of it as:** A first-class lounge on wheels. Seriously premium, seriously practical.
+## Sources
 
-### Who It's For
-
-- Large families (3+ kids)
-- People who prioritise passenger comfort over everything
-- Buyers coming from luxury SUVs or vans
-- Those wanting to make a statement (in a good way)
-- Families with elderly relatives who struggle with low SUV seats
-
-### The Practical Bits
-
-- **Seating**: 6 or 7 seats (depending on configuration) with legitimate space for adults
-- **Boot Space**: Massive, even with all seats up
-- **Driving**: Surprisingly agile for its size, gloriously comfortable
-- **Range**: Long-distance capable with the big battery pack
-
-### Why Choose the 009?
-
-- Best-in-class passenger space and comfort
-- Second-row seats that slide and recline (some configs have ottomans!)
-- Higher seating position - easier for elderly passengers to get in/out
-- Sliding rear doors - brilliant for tight car parks and kids
-- Makes every journey feel special, not just transport
-
-### Who Should Look Elsewhere?
-
-- Don't regularly need more than 5 seats
-- Tight budget (009 is the premium option)
-- Concerned about parking a larger vehicle
-- Want a "sporty" driving experience
-
-[Full 009 Details](../models/009/overview.md){ .md-button }
-
-## The Decision Tree
-
-Let's make this simple. Answer these questions honestly:
-
-### How Many Seats Do You Actually Need?
-
-- **Usually 4 or less**: X or 7X
-- **Usually 5**: 7X is your best bet
-- **Regularly 6-7**: 009 is the only choice
-
-### What's Your Primary Use?
-
-- **Daily urban commuting**: X excels here
-- **Mix of city and highway**: 7X is ideal
-- **Family road trips**: 7X or 009, depending on family size
-- **Passenger comfort priority**: 009 wins every time
-
-### What's Your Budget Reality?
-
-Be honest about what you can comfortably afford, including:
-
-- Purchase price (or finance payments)
-- Insurance (larger/more expensive cars cost more)
-- Charging costs (minimal difference between models)
-- Potential stamp duty and registration (varies by state)
-
-### Parking Situation
-
-- **Tight city parking**: X makes life easier
-- **Standard suburban**: 7X fits everywhere a normal SUV does
-- **Have space/not concerned**: 009 is manageable, just bigger
-
-### How Often Do You Road Trip?
-
-All Zeekr models can road trip, but:
-
-- **Rarely**: Any model works
-- **Monthly**: 7X's balance of range and charging speed shines
-- **Weekly**: 009's larger battery means fewer stops
-
-## Variant Choices Within Models
-
-Each model typically offers different variants (battery sizes, motor configurations, trim levels). General rules:
-
-### Battery Size
-
-- **Smaller battery**: Lower price, lighter weight, still plenty for daily use
-- **Larger battery**: Longer range, better for frequent road trips, slightly better performance
-
-Most owners find the standard battery more than adequate. Only go larger if you genuinely need the extra range.
-
-### Single vs Dual Motor
-
-- **Single motor (RWD)**: More efficient, lower price, perfectly adequate performance
-- **Dual motor (AWD)**: Quicker acceleration, better in wet conditions, slightly less range
-
-Unless you're towing or regularly driving in poor weather, single motor is plenty quick.
-
-### Trim Levels
-
-Higher trims usually add:
-
-- Better interior materials
-- More tech features
-- Enhanced sound systems
-- Advanced driver assistance
-
-These are nice-to-haves rather than essentials. Choose based on which features you'll actually use.
-
-## The "Test Drive Multiple" Rule
-
-Specs and reviews only tell you so much. Spend time in each model you're considering.
-
-### What to Check During Test Drives
-
-- **Visibility**: Can you see clearly in all directions?
-- **Seat Comfort**: Do the seats suit your body? (Everyone's different)
-- **Boot Access**: Can you easily load what you regularly carry?
-- **Tech Interface**: Does the infotainment system make sense to you?
-- **Driving Position**: Are you comfortable? Can you find the right seating position?
-- **Rear Seat Space**: If carrying passengers, have them sit back there
-
-### The Partner/Family Test
-
-If anyone else drives the car or sits in it regularly, they need to test it too. What works for you might not work for them.
-
-## Still Unsure?
-
-That's completely normal. Here's what usually helps:
-
-### Join the Community First
-
-Connect with {{ extra.club.name }} and chat with current owners. They'll give you unfiltered opinions about real-world ownership.
-
-### Think About Your Actual Usage
-
-- What do you do 80% of the time? (Usually daily commuting)
-- What do you do 15% of the time? (Weekend activities, shopping)
-- What do you do 5% of the time? (Road trips, special occasions)
-
-Don't buy for the 5% - rent a car for those rare occasions if needed. Choose the car that makes your daily life better.
-
-### Consider the 3-Year View
-
-What will your life look like in 3 years? Kids getting bigger? Changing jobs? Moving house? Try to choose a car that'll work for future-you, not just today-you.
-
-## Quick Recommendations
-
-If you're still stuck, here are some generalisations:
-
-### Choose the X if:
-
-You live in the inner city, rarely carry more than 4 people, and want premium quality in a compact package.
-
-### Choose the 7X if:
-
-You're a typical family, want versatility, need decent boot space, and don't want to think too hard about it. This is the "safe" choice that works for most people.
-
-### Choose the 009 if:
-
-You need the space, value passenger comfort highly, or want the most luxurious Zeekr experience available.
-
-## Next Steps
-
-Ready to dive deeper into your preferred model?
-
-- [Zeekr 7X Overview](../models/7x/overview.md)
-- [Zeekr X Overview](../models/x/overview.md)
-- [Zeekr 009 Overview](../models/009/overview.md)
-
-Want to compare detailed specifications side-by-side?
-
-[View Full Model Comparison](../comparisons/model-comparison-table.md){ .md-button }
-
-Or connect with other Zeekr owners and ask questions:
-
-[Join {{ extra.club.abbreviation }}](../community/index.md){ .md-button }
+[^1]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^2]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+[^3]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^4]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^5]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+[^6]: The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
+[^7]: The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
+[^8]: Zeekr Australia, "Zeekr 7GT", <https://www.zeekrlife.com/en-au/models/zeekr-7gt>, accessed 8 November 2026.
+[^9]: The Driven, "Zeekr 7GT confirmed for 2026 launch in Australia with 670 km range and 3.1 second sprint", <https://thedriven.io/2026/09/19/zeekr-7gt-confirmed-for-2026-launch-australia-with-670km-range-and-3-1-second-sprint/>, accessed 8 November 2026.

@@ -1,26 +1,53 @@
-# Buying a Zeekr
+---
+seo_title: "Buying a Zeekr in Australia"
+description: "How to buy a Zeekr in Australia: where to buy and service, prices and on-road costs, finance and novated leases, and what to check on delivery day."
+---
+# Buying
 
-Welcome to the buying guide for {{ extra.club.full_name }}. This section helps you navigate the process of purchasing a Zeekr in Australia, from finding a dealer to taking delivery of your new vehicle.
+From finding a dealer to taking delivery, this section covers buying a Zeekr in Australia.
 
-## What This Section Covers
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. If you're buying a 7X now, see [Which 7X do I have?](../models/7x/which-7x.md) to understand the difference.
 
-Whether you're just starting your research or ready to sign on the dotted line, we've gathered practical information to help you make informed decisions about buying your Zeekr.
+## In this section
 
-### In This Section
+<div class="card-grid">
+    <div class="z-card">
+        {{ card_icon("map-pin") }}
+        <h3>Where to buy and service</h3>
+        <p>Sales and service locations, and what to look for in a dealer.</p>
+        <a class="go" href="dealers/">Dealers</a>
+    </div>
+    <div class="z-card">
+        {{ card_icon("tag") }}
+        <h3>Prices and on-road costs</h3>
+        <p>Prices before on-road costs, what on-road costs include, and negotiating.</p>
+        <a class="go" href="pricing/">Pricing</a>
+    </div>
+    <div class="z-card">
+        {{ card_icon("wallet") }}
+        <h3>Finance options</h3>
+        <p>Payment options including salary sacrifice, novated leases, and FBT exemptions.</p>
+        <a class="go" href="finance/">Finance</a>
+    </div>
+    <div class="z-card">
+        {{ card_icon("clipboard-check") }}
+        <h3>Taking delivery</h3>
+        <p>What to expect during the delivery process, inspection checklists, and first setup steps.</p>
+        <a class="go" href="delivery/">Delivery</a>
+    </div>
+</div>
 
-- **[Dealers](dealers.md)** - Where to buy your Zeekr in Australia, what to look for in a dealer, and online ordering information
-- **[Pricing](pricing.md)** - Current 2025 model pricing, understanding on-road costs, and what to expect when negotiating
-- **[Finance](finance.md)** - Payment options including salary sacrifice, novated leases, and FBT exemptions
-- **[Delivery](delivery.md)** - What to expect during the delivery process, inspection checklists, and first setup steps
+Picking up soon? Take the [Handover checklist](handover-checklist.md) to the dealer: it ticks off on your phone, keeps your place and prints.
 
-## Before You Buy
+## Before you buy
 
 Take time to research the specific model that suits your needs. Visit our [Models](../models/index.md) section for detailed specifications and comparisons. If you're weighing up different options, check out our [Model Comparison](../comparisons/model-comparison-table.md).
 
-## Join the Community
+## Join the community
 
-Have questions about buying a Zeekr? Connect with current owners through {{ extra.club.abbreviation }} who can share their real-world experiences with the buying process.
+Questions about buying? Ask current owners through the [community channels](../community/index.md).
 
-## Get Started
+## Get started
 
-Ready to begin? Start with our [Dealers](dealers.md) page to find where you can purchase a Zeekr in your state, or jump straight to [Pricing](pricing.md) if you're ready to talk numbers.
+Start with [Dealers](dealers.md) to find a location in your state, or go straight to [Pricing](pricing.md).

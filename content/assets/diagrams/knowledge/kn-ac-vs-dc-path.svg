@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="zk zk-wide zk-pair-wide" viewBox="0 0 800 560" role="img" aria-labelledby="kn-ac-vs-dc-path-title kn-ac-vs-dc-path-desc">
+<title id="kn-ac-vs-dc-path-title">AC and DC: where the conversion happens</title>
+<desc id="kn-ac-vs-dc-path-desc">Two charging paths into the battery. AC: grid AC, wallbox or AC post with no conversion, car inlet, then the onboard charger converts AC to DC, limited to 11 or 22 kW on Zeekr, into the battery. DC fast charging: grid AC, a charger cabinet with a large converter turns AC into DC, a CCS2 cable and the car inlet carry DC straight to the battery, bypassing the onboard charger. Public DC chargers run 25 to 350 kW (RACV); the car limits it, for example up to 420 to 450 kW peak on the 7X (press-reported) and 150 kW on the X AWD and 009.</desc>
+<defs>
+<style>
+svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
+svg.zk.zk-wide{max-width:none}
+[data-md-color-scheme="slate"] svg.zk{--zk-invm:#595959}
+.zk .bg{fill:var(--bg,#F2F2F2)}
+.zk .f-bg{fill:var(--bg,#F2F2F2)}
+.zk .f-panel{fill:var(--panel,#FFFFFF)}
+.zk .f-ink{fill:var(--ink,#1A1A1A)}
+.zk .f-muted{fill:var(--ink-muted,#595959)}
+.zk .f-accent{fill:var(--accent-ink,#B03C00)}
+.zk .f-tint{fill:var(--ink,#1A1A1A);fill-opacity:.06}
+.zk .f-atint{fill:var(--accent-ink,#B03C00);fill-opacity:.10}
+.zk .f-none{fill:none}
+.zk .s-ink{stroke:var(--ink,#1A1A1A)}
+.zk .s-muted{stroke:var(--ink-muted,#595959)}
+.zk .s-line{stroke:var(--line-strong,rgba(26,26,26,.36))}
+.zk .s-rule{stroke:var(--line,rgba(26,26,26,.14))}
+.zk .s-accent{stroke:var(--accent-ink,#B03C00)}
+.zk .s-bg{stroke:var(--bg,#F2F2F2)}
+.zk .s-inv{stroke:var(--bg,#F2F2F2)}
+.zk .icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.zk text{font-family:var(--font-body,'IBM Plex Sans Condensed','Arial Narrow',ui-sans-serif,sans-serif);font-weight:500}
+.zk text.d{font-family:var(--font-display,'Space Grotesk',ui-sans-serif,system-ui,sans-serif)}
+.zk text.w4{font-weight:400}.zk text.w6{font-weight:600}
+.zk .c-ink{fill:var(--ink,#1A1A1A)}
+.zk .c-muted{fill:var(--ink-muted,#595959)}
+.zk .c-accent{fill:var(--accent-ink,#B03C00)}
+.zk .c-inv{fill:var(--bg,#F2F2F2)}
+.zk .c-invm{fill:var(--zk-invm)}
+@media (max-width:599px){svg.zk-pair-wide{display:none}}
+@media (min-width:600px){svg.zk-pair-narrow{display:none}}
+</style>
+<marker id="kn-ac-vs-dc-path-a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path class="f-muted" d="M0 0L8 4L0 8z"/></marker>
+<marker id="kn-ac-vs-dc-path-ai" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path class="f-ink" d="M0 0L10 5L0 10z"/></marker>
+<marker id="kn-ac-vs-dc-path-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
+<pattern id="kn-ac-vs-dc-path-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
+</defs>
+<rect class="bg" width="800" height="560"/>
+<text class="w6 c-muted" x="40" y="36" font-size="12" letter-spacing="0.14em">CHARGING BASICS: AC VS DC</text>
+<text class="d w6 c-ink" x="40" y="88" font-size="40">DC skips the onboard charger.</text>
+<text class="c-muted" x="40" y="118" font-size="16">Mains power is AC and a battery stores DC. Where the conversion happens is the difference.</text>
+<rect class="f-none s-line" x="392" y="148" width="380" height="264" rx="4" stroke-width="1" stroke-dasharray="2 4"/>
+<g class="icon s-muted" stroke-width="2.25" transform="translate(408 387) scale(0.666667)" aria-hidden="true"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"/><path d="M7 14h.01"/><path d="M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2"/><path d="M19 18v2"/></g>
+<text class="w6 c-muted" x="430" y="400" font-size="12" letter-spacing="0.14em">IN THE CAR</text>
+<text class="w6 c-muted" x="40" y="168" font-size="12" letter-spacing="0.14em">AC CHARGING</text>
+<text class="w6 c-ink" x="40" y="304" font-size="12" letter-spacing="0.14em">DC FAST CHARGING</text>
+<line class="s-muted" x1="112" y1="212" x2="140" y2="212" stroke-width="1.5" marker-end="url(#kn-ac-vs-dc-path-a)"/>
+<line class="s-muted" x1="268" y1="212" x2="404" y2="212" stroke-width="1.5" marker-end="url(#kn-ac-vs-dc-path-a)"/>
+<line class="s-muted" x1="476" y1="212" x2="504" y2="212" stroke-width="1.5" marker-end="url(#kn-ac-vs-dc-path-a)"/>
+<line class="s-muted" x1="648" y1="212" x2="676" y2="212" stroke-width="1.5" marker-end="url(#kn-ac-vs-dc-path-a)"/>
+<path class="f-none s-accent" d="M112 348H676" stroke-width="5" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#kn-ac-vs-dc-path-aa)"/>
+<rect class="f-bg" x="500" y="322" width="152" height="16" rx="2"/>
+<text class="w6 c-accent" x="576" y="334" font-size="12" text-anchor="middle">Bypasses onboard charger</text>
+<rect class="f-panel s-line" x="40" y="176" width="72" height="72" rx="2" stroke-width="1"/>
+<text class="d w6 c-muted" x="76" y="206.7" font-size="14" text-anchor="middle">Grid</text>
+<text class="c-muted" x="76" y="223.7" font-size="13" text-anchor="middle">AC</text>
+<rect class="f-panel s-line" x="140" y="176" width="128" height="72" rx="2" stroke-width="1"/>
+<text class="d w6 c-muted" x="150" y="198.2" font-size="14">Wallbox or AC</text>
+<text class="d w6 c-muted" x="150" y="215.2" font-size="14">post</text>
+<text class="c-muted" x="150" y="232.2" font-size="13">No conversion</text>
+<rect class="f-panel s-line" x="404" y="176" width="72" height="72" rx="2" stroke-width="1"/>
+<text class="d w6 c-muted" x="440" y="206.2" font-size="14" text-anchor="middle">Car</text>
+<text class="d w6 c-muted" x="440" y="223.2" font-size="14" text-anchor="middle">inlet</text>
+<rect class="f-ink" x="504" y="160" width="144" height="104" rx="2"/>
+<text class="d w6 c-inv" x="514" y="191" font-size="15">Onboard charger</text>
+<text class="c-invm" x="514" y="209" font-size="13">AC to DC</text>
+<text class="c-invm" x="514" y="225" font-size="13">Limit 11 or 22 kW on</text>
+<text class="c-invm" x="514" y="241" font-size="13">Zeekr</text>
+<rect class="f-panel s-ink" x="40" y="312" width="72" height="72" rx="2" stroke-width="1.5"/>
+<text class="d w6 c-ink" x="76" y="342.7" font-size="14" text-anchor="middle">Grid</text>
+<text class="c-muted" x="76" y="359.7" font-size="13" text-anchor="middle">AC</text>
+<rect class="f-panel s-ink" x="140" y="312" width="128" height="72" rx="2" stroke-width="1.5"/>
+<text class="d w6 c-ink" x="150" y="326.2" font-size="14">Charger</text>
+<text class="d w6 c-ink" x="150" y="343.2" font-size="14">cabinet</text>
+<text class="c-muted" x="150" y="360.2" font-size="13">AC to DC, large</text>
+<text class="c-muted" x="150" y="376.2" font-size="13">converter</text>
+<rect class="f-panel s-ink" x="296" y="312" width="80" height="72" rx="2" stroke-width="1.5"/>
+<text class="d w6 c-ink" x="336" y="342.2" font-size="14" text-anchor="middle">CCS2</text>
+<text class="d w6 c-ink" x="336" y="359.2" font-size="14" text-anchor="middle">cable</text>
+<rect class="f-panel s-ink" x="404" y="312" width="72" height="72" rx="2" stroke-width="1.5"/>
+<text class="d w6 c-ink" x="440" y="342.2" font-size="14" text-anchor="middle">Car</text>
+<text class="d w6 c-ink" x="440" y="359.2" font-size="14" text-anchor="middle">inlet</text>
+<rect class="f-panel s-ink" x="676" y="176" width="84" height="208" rx="2" stroke-width="1.5"/>
+<g class="icon s-ink" stroke-width="1.125" transform="translate(702 240) scale(1.33333)" aria-hidden="true"><path d="m11 7-3 5h4l-3 5"/><path d="M14.856 6H16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.935"/><path d="M22 14v-4"/><path d="M5.14 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2.936"/></g>
+<text class="d w6 c-ink" x="718" y="298" font-size="15" text-anchor="middle">Battery</text>
+<text class="c-muted" x="718" y="316" font-size="13" text-anchor="middle">DC</text>
+<line class="s-rule" x1="40" y1="436" x2="760" y2="436" stroke-width="1"/>
+<text class="w6 c-muted" x="40" y="476" font-size="13" letter-spacing="0.14em">AC</text>
+<text class="d w6 c-muted" x="72" y="476" font-size="28">11-22 kW</text>
+<text class="c-muted" x="72" y="500" font-size="13">on Zeekr</text>
+<text class="w6 c-ink" x="312" y="476" font-size="13" letter-spacing="0.14em">DC</text>
+<text class="d w6 c-ink" x="344" y="476" font-size="28">25-350 kW</text>
+<text class="c-muted" x="344" y="500" font-size="13">on public chargers (RACV)</text>
+<text class="c-muted" x="344" y="520" font-size="13">Car-limited, e.g. up to 420-450 kW 7X (peak, press-reported), 150 kW X AWD</text>
+<text class="c-muted" x="344" y="537" font-size="13">and 009</text>
+</svg>

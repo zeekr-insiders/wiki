@@ -1,127 +1,49 @@
-# Victoria Resources
-
-EV ownership resources specific to Victoria.
-
-## Government Incentives
-
-### Zero Emissions Vehicle (ZEV) Rebate
-
-!!! warning "Check Current Status"
-    The Victorian ZEV rebate program has been subject to changes. Always verify current eligibility and availability on the [Solar Victoria website](https://www.solar.vic.gov.au/zero-emissions-vehicle-rebate).
-
-| Detail | Information |
-|--------|-------------|
-| **Value** | Up to $3,000 |
-| **Price Cap** | Vehicles under $68,740 (dutiable value) |
-| **Eligibility** | New ZEVs, Victorian residents |
-
-**Zeekr Eligibility:**
-
-- **Zeekr X RWD** ($49,900) - Eligible
-- **Zeekr X AWD** ($62,900) - Eligible
-- **Zeekr 7X RWD** ($57,900) - Eligible
-- **Zeekr 7X Long Range** ($63,900) - Eligible
-- **Zeekr 7X AWD** ($72,900) - Check eligibility (may exceed cap)
-- **Zeekr 009** ($135,900+) - Not eligible (exceeds cap)
-
-### Stamp Duty
-
-Victoria charges stamp duty on EVs. Calculate your costs at [VicRoads](https://www.vicroads.vic.gov.au).
-
-| Price Bracket | Rate |
-|---------------|------|
-| Up to $65,094 | 2.5% of market value |
-| $65,094 - $150,000 | 5% of market value |
-| Over $150,000 | 6.5% of market value |
-
-### Registration
-
-Standard Victorian registration applies. No EV-specific discounts currently available.
-
-## Service Centres
-
-### Melbourne Metropolitan
-
-#### Zeekr Melbourne (Official)
-
-!!! info "Service Location"
-    *Contact Zeekr Australia for current service centre locations and booking.*
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
-
-#### Recommended Independent Specialists
-
-*Community-recommended workshops for general EV maintenance:*
-
-- **To be added** - Submit your recommendations
-
-### Regional Victoria
-
-| Region | Nearest Service | Notes |
-|--------|-----------------|-------|
-| Geelong | Melbourne | ~1 hour |
-| Ballarat | Melbourne | ~1.5 hours |
-| Bendigo | Melbourne | ~2 hours |
-| Gippsland | Melbourne | ~2 hours |
-
-!!! tip "Regional Owners"
-    Zeekr may offer mobile service or pickup/dropoff for regional customers. Contact them directly to arrange.
-
-## Charging Infrastructure
-
-### Melbourne
-
-**Ultra-Rapid Locations:**
-
-- **Chargefox** - Multiple CBD and suburban locations
-- **Evie Networks** - Shopping centres
-- **Ampol AmpCharge** - Select service stations
-
-### Regional Highway Corridors
-
-| Route | Charger Locations |
-|-------|-------------------|
-| **M1 (Melbourne - Geelong)** | Corio, Geelong |
-| **Hume Highway (Melbourne - Sydney)** | Wallan, Seymour, Benalla, Wangaratta |
-| **Western Highway (Melbourne - Adelaide)** | Ballarat, Ararat, Horsham |
-| **Princes Highway East** | Warragul, Traralgon, Sale |
-| **Great Ocean Road** | Lorne, Apollo Bay (limited) |
-
-!!! warning "Great Ocean Road"
-    Charging infrastructure on the GOR is limited. Plan carefully and consider charging in Geelong before heading west.
-
-### Home Charging Electricians
-
-Victorian electricians experienced with EV charger installation:
-
-*Submit recommendations via the club*
-
-**What to look for:**
-
-- Licensed (REC number)
-- EV charger installation experience
-- Familiar with 3-phase upgrades
-- Can assess your switchboard capacity
-
-## Victorian EV Community
-
-### Clubs & Groups
-
-- **{{ extra.club.full_name }}** - You're here!
-- **Tesla Owners Club of Australia (Victoria)**
-- **EV Council of Australia**
-
-### Events
-
-See our [Events page](../../community/events.md) for Victorian meetups and drives.
-
-## Useful Victorian Links
-
-- [VicRoads EV Information](https://www.vicroads.vic.gov.au)
-- [Solar Victoria ZEV Rebate](https://www.solar.vic.gov.au/zero-emissions-vehicle-rebate)
-- [Environment Victoria - EV Guide](https://environmentvictoria.org.au)
-
+---
+last_checked: 2026-11-08
+seo_title: "Victoria EV stamp duty and rego"
+description: "Buying a Zeekr in Victoria: the green car stamp duty rate from July 2026, the ended EV subsidy, local servicing, and useful links for Victorian Zeekr owners."
 ---
 
-*Last updated: December 2025*
-*Contributors: {{ extra.club.name }} members*
+# Victoria
+
+*Last checked: 8 November 2026.*
+
+## Stamp duty
+
+From 1 July 2026, Victoria charges "green" passenger cars, which includes every pure EV, **$8.40 per $200 or part of the value (about 4.2%) at all values** [^1]. Duty is on the dutiable value, the price you pay, so on-road extras change it.
+
+| Car | RRP | Duty at 4.2% (approx.) |
+| :--- | :--- | :--- |
+| 7X RWD | $57,900 | about $2,430 |
+| 7X Long Range | $63,900 | about $2,680 |
+| 7X Performance AWD | $72,900 | about $3,060 |
+| 009 7-seat FWD | $115,900 | about $4,870 |
+
+Duty is charged per $200 or part, so the real figure rounds up slightly. Use the [State Revenue Office calculator](https://www.sro.vic.gov.au/rates-taxes-duties-and-levies/motor-vehicle-duty-current-rates) for your actual price.
+
+!!! note "Not yet confirmed: higher duty on expensive EVs from July 2027"
+    The May 2026 Victorian Budget announced that from 1 July 2027 green cars above the luxury car threshold would lose the 4.2% rate and pay higher rates [^2]. It is subject to legislation and the SRO rate page does not mention it [^1]. It would affect high-priced EVs such as the 009, not the 7X or X.
+
+## Incentives
+
+The Victorian Zero Emissions Vehicle subsidy has ended; there has been no subsidy since 30 June 2023 [^3].
+
+!!! warning "Sources differ: EV registration discount"
+    RACV (May 2026) says EV owners can get a $100 registration discount at renewal [^3]. Other sources say the discount ended on 1 January 2026 [^4]. Check the current registration fee with VicRoads.
+
+## Service
+
+Victorian sales and service sites are on the [dealers page](../../buying/dealers.md).
+
+## Useful links
+
+- [State Revenue Office Victoria: motor vehicle duty](https://www.sro.vic.gov.au/rates-taxes-duties-and-levies/motor-vehicle-duty-current-rates)
+- [VicRoads](https://www.vicroads.vic.gov.au)
+- [Zeekr Australia](https://www.zeekrlife.com/en-au)
+
+## Sources
+
+[^1]: State Revenue Office Victoria, "Motor vehicle duty (current rates)", <https://www.sro.vic.gov.au/rates-taxes-duties-and-levies/motor-vehicle-duty-current-rates>, accessed 8 November 2026.
+[^2]: Sladen Legal, "Victorian State Budget 2026-2027", <https://sladen.com.au/news/2026/5/6/victorian-state-budget-2026-2027>, accessed 8 November 2026.
+[^3]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^4]: SolarQuotes, "VIC EV registration discount", <https://solarquotes.com.au/blog/vic-ev-registration-discount-mb3074>, accessed 8 November 2026.

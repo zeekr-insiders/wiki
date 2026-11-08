@@ -1,95 +1,137 @@
 site_name: Zeekr Insiders Australia
 site_description: Your friendly guide to owning a Zeekr in Australia. Learn, discover, and master your EV.
 site_author: Zeekr Insiders Australia
-site_url: https://thushan.github.io/zeekr/
+# The wiki's host, as the club site links it. Canonicals and share images are built from it.
+site_url: https://wiki.zeekrinsiders.com.au/
 
-repo_name: thushan/zeekr
-repo_url: https://github.com/thushan/zeekr
-edit_uri: edit/main/docs/content/
 docs_dir: content
+# These build each page's "Suggest an edit" link (GitHub's edit view of its Markdown source);
+# the header shows no repository widget. Nothing is pushed yet, so the branch assumes main.
+repo_url: https://github.com/zeekr-insiders/wiki
+edit_uri: edit/main/content/
 
 theme:
   name: material
+  language: en-AU  # overrides/partials/languages/en-AU.html: lang="en-AU", English search
+  custom_dir: overrides
+  logo: assets/img/logo-badge.png
+  favicon: assets/favicons/favicon-32.png
+  # Fonts are self-hosted in zeekr.css, so no request goes to Google Fonts.
+  font: false
+  # The front door's glyphs (overrides/.icons/zi) for the chrome Material draws itself.
+  icon:
+    menu: zi/menu
+    search: zi/search
+    top: zi/up
+    # Search's back, share and clear buttons, in the vendored Lucide outlines rather than Material's glyphs.
+    previous: lucide/arrow-left
+    share: lucide/share-2
+    close: lucide/x
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
+    # Everyone starts in light, whatever the OS prefers, as on the front door. The toggle switches to
+    # dark and back; Material keeps the visitor's choice in localStorage (__palette) and applies it
+    # in the header before the page paints, so a dark choice reloads dark with no light flash.
+    - scheme: default
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
+        icon: zi/moon
+        name: Switch to dark theme
 
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: black
-      accent: orange
+    - scheme: slate
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+        icon: zi/sun
+        name: Switch to light theme
 
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
+    - toc.follow
     - search.highlight
     - search.share
     - search.suggest
     - content.code.copy
     - content.code.select
     - content.action.edit
-    - content.action.view
-
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/pencil
-    view: material/eye
 
 extra:
+  # Moved pages: old content path -> new one. hooks/redirects.py keeps the old URL working.
+  redirects:
+    knowledge/glossary.md: glossary/index.md
+  # The first public publish, when every page lands in the feeds as new. Set it (YYYY-MM-DD)
+  # when wiki-publish merges; until then the feeds carry no launch marker.
+  launch_date: null
+  # Google Search Console's HTML-tag ownership check: paste the token (the content="..." value only).
+  # Empty, no tag is output.
+  google_site_verification: ""
   club:
     name: "Zeekr Insiders"
     abbreviation: "ZI"
     full_name: "Zeekr Insiders Australia"
     location: "Australia"
-    contact_email: "insiders@zeekr.club"
-    website: "https://zeekr.club"
-    forum_url: ""  # To be added when forum is ready
+    # The club takes messages through the front door's contact form, which routes them to the right person.
+    contact_url: "https://zeekrinsiders.com.au/contact"
+    website: "https://zeekrinsiders.com.au"
+    forum_url: "https://forums.zeekrinsiders.com.au/"
+  # The main club site. Every masthead and footer link is built from base_url, so moving the site is one change here.
+  site:
+    base_url: "https://zeekrinsiders.com.au"
+    title_suffix: "Zeekr Insiders"
+    forum_url: "https://forums.zeekrinsiders.com.au/"
+    # Matches the club site's Join link: the forum registration page stands in until a join page exists.
+    join_url: "https://forums.zeekrinsiders.com.au/register/"
+    # The club's six sections, as in the club site's masthead. The masthead
+    # and the phone drawer both list them from here. "path" is under base_url; "forum" uses forum_url;
+    # "wiki" is this site, marked current.
+    sections:
+      - {path: /drives, icon: flag, short: Drives, text: Find a drive}
+      - {path: /news, icon: pulse, short: News, text: "What's happening"}
+      - {path: /garage, icon: garage, short: Garage, text: "Our stories & blog"}
+      - {path: /insiders, icon: people, short: The Insiders, text: Meet the team}
+      - {forum: true, icon: forum, short: Forum, text: Ask the forum}
+      - {wiki: true, icon: book, short: Wiki, text: Master your Zeekr}
+    og_image: "assets/img/og-default.png"
+  # The club's channels: Facebook, Instagram, YouTube, X. Keep in step with the club site's social links.
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/thushan/zeekr
-    - icon: fontawesome/brands/facebook
-      link: https://facebook.com/groups/zeekrinsiders
-    - icon: fontawesome/brands/instagram
-      link: https://instagram.com/zeekrinsiders
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+    - icon: zi/facebook
+      name: "Facebook: Zeekr Insiders"
+      link: https://www.facebook.com/groups/2044179713083663/
+    - icon: zi/instagram
+      name: "Instagram: @zeekrinsiders"
+      link: https://www.instagram.com/zeekrinsiders/
+    - icon: zi/youtube
+      name: "YouTube: @ZeekrInsiders"
+      link: https://www.youtube.com/channel/UCGs7pzQ_eeVIMCbk118RTtw
+    - icon: zi/x
+      name: "X: @zeekrinsiders"
+      link: https://x.com/zeekrinsiders
 
 extra_css:
   - stylesheets/zeekr.css
-  - stylesheets/nightowl.css
-  - stylesheets/icons.css
+
+extra_javascript:
+  - javascripts/zeekr.js
+  - javascripts/glossary.js
+  - javascripts/handover.js
 
 markdown_extensions:
   - abbr
   - admonition
   - attr_list
   - def_list
-  - footnotes
+  # Citations are footnotes. Definition order keeps each marker's number equal to its Sources entry,
+  # and hooks/citations.py adds the labels, tooltips data and "Back to text" links.
+  - footnotes:
+      USE_DEFINITION_ORDER: true
   - md_in_html
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
-      generic: true
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
@@ -106,8 +148,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: thushan
-      repo: zeekr
+      user: zeekr-insiders
+      repo: wiki
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
@@ -123,82 +165,138 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# Build-time HTML tweaks that need no plugin dependency.
+hooks:
+  - hooks/citations.py
+  - hooks/cards.py
+  - hooks/headings.py
+  - hooks/tables.py
+  - hooks/redirects.py
+  - hooks/feeds.py
+  - hooks/seo.py
+
 plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - macros
+  # Feeds for the main club site (it reads feed_rss_updated.xml). Dates come from git, so
+  # CI checks out the full history. hooks/feeds.py adds each page's `changelog` line, its
+  # section and extra.launch_date.
+  - rss:
+      enabled: true
+      use_git: true
+      # Above the page count, so the launch feed lists every page rather than the newest 20.
+      length: 100
+      abstract_chars_count: 160
+      categories:
+        - feed_section
+      feed_title: Zeekr Insiders Wiki
+      feed_description: Owner-run guide to buying and living with a Zeekr in Australia.
+      image: https://wiki.zeekrinsiders.com.au/assets/img/logo-badge.png
+      json_feed_enabled: true
+      date_from_meta:
+        default_timezone: Australia/Sydney
   - minify:
       minify_html: true
+      # The theme's JS ships unminified in the repo; minify it at build. Not the CSS: the minifier drops the
+      # spaces around + in clamp() and calc(), which makes those values invalid (the H1 size broke).
+      minify_js: true
+      js_files:
+        - javascripts/zeekr.js
+        - javascripts/glossary.js
+        - javascripts/handover.js
 
 nav:
   - Home: index.md
 
-  - Getting Started:
+  - Getting started:
       - getting-started/index.md
-      - EV Basics: getting-started/ev-basics.md
+      - Running costs and incentives: getting-started/ev-basics.md
       - Why Zeekr?: getting-started/why-zeekr.md
-      - Choosing a Model: getting-started/choosing-model.md
+      - Choosing a model: getting-started/choosing-model.md
 
   - Buying:
       - buying/index.md
-      - Where to Buy: buying/dealers.md
-      - Pricing Guide: buying/pricing.md
-      - Finance Options: buying/finance.md
-      - Taking Delivery: buying/delivery.md
+      - Where to buy and service: buying/dealers.md
+      - Prices and on-road costs: buying/pricing.md
+      - Finance options: buying/finance.md
+      - Taking delivery: buying/delivery.md
+      - Handover checklist: buying/handover-checklist.md
 
   - Models:
       - models/index.md
       - Zeekr 7X:
           - Overview: models/7x/overview.md
+          - Which 7X do I have?: models/7x/which-7x.md
           - Specifications: models/7x/2025/specifications.md
-          - Pricing: models/7x/2025/pricing.md
-          - Service Schedule: models/7x/2025/service-schedule.md
-          - Known Issues: models/7x/knowledge-base/7x-issues.md
-          - Modifications: models/7x/knowledge-base/7x-mods.md
+          - Prices: models/7x/2025/pricing.md
+          - Servicing and warranty: models/7x/2025/service-schedule.md
+          - Known issues and fixes: models/7x/knowledge-base/7x-issues.md
+          - Owner tips: models/7x/owner-tips.md
+          - Owner modifications: models/7x/knowledge-base/7x-mods.md
       - Zeekr X:
           - Overview: models/x/overview.md
           - Specifications: models/x/2025/specifications.md
-          - Pricing: models/x/2025/pricing.md
-          - Service Schedule: models/x/2025/service-schedule.md
+          - Prices: models/x/2025/pricing.md
+          - Servicing and warranty: models/x/2025/service-schedule.md
+      - Zeekr 7GT:
+          - Overview: models/7gt/overview.md
+          - Specifications: models/7gt/specifications.md
       - Zeekr 009:
           - Overview: models/009/overview.md
           - Specifications: models/009/specifications.md
-          - Pricing: models/009/pricing.md
-          - Service Schedule: models/009/service-schedule.md
-      - Model Comparison: comparisons/model-comparison-table.md
+          - Prices: models/009/pricing.md
+          - Servicing and warranty: models/009/service-schedule.md
+      - Model comparison: comparisons/model-comparison-table.md
 
   - Ownership:
       - ownership/index.md
-      - First 30 Days: ownership/first-30-days.md
+      - I've just got my car: ownership/first-30-days.md
       - Charging:
-          - Home Setup: guides/charging/home-setup.md
-          - Public Networks: guides/charging/public-networks.md
-          - Road Trips: guides/charging/road-trips.md
-      - Maintenance: guides/maintenance/overview.md
+          - Home charging: guides/charging/home-setup.md
+          - Public charging: guides/charging/public-networks.md
+          - Charging etiquette: guides/charging/etiquette.md
+          - Road trips: guides/charging/road-trips.md
       - Insurance: ownership/insurance.md
       - Accessories:
           - ownership/accessories/index.md
-          - Protection (PPF/Tint): ownership/accessories/protection.md
-          - Recommended Gear: ownership/accessories/recommended.md
-          - Trusted Vendors: ownership/accessories/vendors.md
+          - Paint and window protection: ownership/accessories/protection.md
+          - Recommended accessories: ownership/accessories/recommended.md
+          - Choosing an installer: ownership/accessories/vendors.md
+
+  # Evergreen explainers, in the reading order the index's diagram suggests.
+  - Knowledge:
+      - knowledge/index.md
+      - kW vs kWh: knowledge/kw-vs-kwh.md
+      - NMC vs LFP batteries: knowledge/nmc-vs-lfp.md
+      - Charging to 80% vs 100%: knowledge/charging-80-vs-100.md
+      - Home charging explained: knowledge/home-charging.md
+      - AC vs DC and the charging curve: knowledge/charging-curve.md
+      - Plugs and cables: knowledge/plugs-and-cables.md
+      - Range in the real world: knowledge/real-world-range.md
+      - V2L, V2H and V2G: knowledge/v2l-v2h-v2g.md
+
+  - Glossary: glossary/index.md
 
   - Community:
       - community/index.md
-      - Events & Meetups: community/events.md
-      - Group Buys: community/group-buys.md
+      - Drives and events: community/events.md
+      - Group buys: community/group-buys.md
       - Forum: community/forum.md
 
   - Resources:
       - resources/index.md
       - National: resources/national/index.md
-      - By State:
+      # The section's own landing page comes first and untitled: with navigation.indexes, Material
+      # takes a section's first index.md as the section itself, which once swallowed Victoria.
+      - By state and territory:
+          - resources/states/index.md
           - Victoria: resources/vic/index.md
           - New South Wales: resources/nsw/index.md
           - Queensland: resources/qld/index.md
           - South Australia: resources/sa/index.md
           - Western Australia: resources/wa/index.md
           - Tasmania: resources/tas/index.md
-          - ACT: resources/act/index.md
+          - Australian Capital Territory: resources/act/index.md
           - Northern Territory: resources/nt/index.md
-      - Zeekr vs Competitors: comparisons/zeekr-vs-competitors.md
-      - Useful Links: resources/useful-links.md
+      - Zeekr vs other EVs: comparisons/zeekr-vs-competitors.md

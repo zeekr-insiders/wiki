@@ -1,388 +1,86 @@
-# Trusted Vendors & Installers
+---
+seo_title: "Choosing a PPF, tint or accessory installer"
+description: "How to choose an installer for PPF, window tint, ceramic coating and accessories on your Zeekr, what a good quote covers, and what to do if work goes wrong."
+---
+# Choosing an installer
 
-Finding quality installers for PPF, window tinting, ceramic coating, and other modifications is crucial for protecting your investment. This guide helps you identify reputable vendors and avoid poor workmanship.
+How to pick an installer for PPF, window tint, ceramic coating and other work, and what to do if something goes wrong. We don't list or endorse businesses.
 
-## What to Look for in a Good Installer
+## What to look for
 
-### Experience & Expertise
+### Experience
 
-**EV Knowledge**
+- Knows where the cameras and sensors are, and is careful around them
+- Experienced with trim removal on modern cars
+- Can show previous work on similar cars, in person or in photos
+- Trained or certified by the maker of the film or coating they use
 
-- Understanding of where cameras and sensors are located
-- Experience with trim removal on modern vehicles
-- Awareness of high-voltage components (though not directly relevant for most cosmetic work)
-- Familiarity with EV-specific considerations (e.g., no exhaust tips for PPF to wrap around)
+### The workshop
 
-**Portfolio of Work**
+- A clean, enclosed, dust-free installation bay
+- Proper equipment, including a plotter for pre-cut film patterns
+- Separate areas for washing, paint correction and film work
 
-- Photos or vehicles on-site showing previous installations
-- Examples of similar vehicles (luxury EVs, complex curves)
-- Before/after photos demonstrating skill level
-- Ideally, examples of Zeekr or similar Chinese EVs (Polestar, BYD, etc.)
+Be wary of outdoor installs or a dirty, cluttered workshop.
 
-**Certifications & Training**
+### Warranty
 
-- Manufacturer-certified installers (XPEL, 3M, Llumar, etc.)
-- Ongoing training in latest products and techniques
-- Membership in professional detailing associations
+Ask for two warranties in writing: the product warranty from the film or coating maker, and the installer's own workmanship warranty. Get the duration and what's excluded.
 
-### Installation Environment
+### Pricing
 
-**Facility Quality**
+Good signs: a detailed written quote, a clear scope, a choice of packages and no pressure.
 
-- Clean, dust-free installation bay
-- Climate-controlled environment (critical for film application)
-- Professional equipment (plotters for computer-cut film, heat guns, steamers)
-- Separate areas for different work (washing, paint correction, film installation)
+Warning signs: a quote far below everyone else, vague pricing, "today only" deals, reluctance to name the exact product, or no written quote.
 
-**Warning signs:**
+## Questions to ask before booking
 
-- Outdoor installation (dust, temperature fluctuations)
-- Dirty or cluttered workspace
-- Missing or makeshift equipment
+**Product**
 
-### Warranty & Guarantees
+1. Which exact product will you use (brand and product line, not just brand)?
+2. What warranty comes with it, and who honours it?
+3. Why do you recommend it for my car?
 
-**What to Expect**
+**Installation**
 
-- Product warranty (from film/coating manufacturer)
-- Installation workmanship warranty (from installer)
-- Clear terms in writing
-- What's covered, what's not
-- Duration of coverage
+4. Is the film pre-cut from a pattern or cut by hand on the car?
+5. How long will the car be with you?
+6. Will you check the paint, and correct it if needed, before PPF or coating?
+7. Exactly which areas does the package cover? Ask for a diagram.
 
-**Typical warranties:**
+**Experience**
 
-- PPF: 7-10 years against yellowing, cracking, peeling
-- Ceramic coating: 3-7 years depending on product tier
-- Window tint: Lifetime for quality ceramic films
-- Installation: 1-2 years workmanship guarantee
+8. Have you worked on a Zeekr, or similar EVs?
+9. Can I see examples of your work?
+10. Are you certified by the product's maker?
 
-### Pricing & Transparency
+**Logistics**
 
-**Red flags:**
+11. What happens if I'm not happy with the result?
+12. What should I do to prepare the car?
+13. Can I inspect the work with you before I pay?
 
-- Quote significantly lower than competitors (too good to be true)
-- Vague pricing ("depends" without specifics)
-- Pressure to decide immediately
-- Reluctance to specify products/brands being used
-- No written quote or scope of work
+## Finding installers
 
-**Green flags:**
+- Search for installers certified by the product maker you want; most film makers have an installer locator on their website
+- Read reviews with detailed descriptions and photos, and look at how the business responds to complaints
+- Ask other owners in the [community channels](../../community/index.md)
 
-- Detailed written quote breaking down costs
-- Clear explanation of what's included
-- Multiple package options
-- Willingness to answer questions
-- No pressure tactics
+Be wary of reviews that are all five stars or all one star, generic reviews, and businesses with no recent reviews.
 
-## Questions to Ask Before Booking
+## Warning signs
 
-### Product Questions
+**At the consultation:** pressure to book now, no examples of past work, vague answers, no look at the workshop, no written quote.
 
-1. **What specific brand and product will you use?**
-   - Expect exact names (e.g., "XPEL Ultimate Plus" not just "XPEL")
+**After the job:** dust, hair or bubbles under film, creases, lifting edges, tint defects, or an installer who is hard to reach about warranty problems.
 
-2. **What warranty comes with this product?**
-   - Manufacturer warranty terms and duration
+## If something goes wrong
 
-3. **Do you have this product in stock or will it need to be ordered?**
-   - Indicates whether they regularly use this product or it's special order
+1. Photograph the problem from several angles, with close-ups.
+2. Contact the installer promptly, in writing, with the photos, and ask for an inspection.
+3. Give them a fair chance to fix it. Rework is normal.
+4. If they won't fix it, contact the product maker, then your state's fair trading or consumer affairs office. The [ACCC](https://www.accc.gov.au) explains your rights under the Australian Consumer Law.
 
-4. **Why do you recommend this product for my vehicle?**
-   - Tests their knowledge and genuine recommendation vs upselling
+## Share your experience
 
-### Installation Questions
-
-5. **Will the film be pre-cut or hand-cut on the vehicle?**
-   - Pre-cut (computer patterns) generally preferred for PPF - less risk of blade marks
-   - Hand-cut acceptable for window tinting if installer is skilled
-
-6. **How long will the installation take?**
-   - Full PPF: 3-5 days is typical
-   - Partial PPF: 1-2 days
-   - Window tint: 2-4 hours
-   - Ceramic coating: 1-2 days with paint correction
-
-7. **Will you perform paint correction before PPF/ceramic coating?**
-   - Essential for best results - sealing in defects is permanent
-   - Ask to see the car's paint condition assessment
-
-8. **What areas exactly are covered in this package?**
-   - Request diagram or detailed description
-   - Ensure you understand what's included vs additional cost
-
-### Experience Questions
-
-9. **Have you worked on Zeekr vehicles before? If not, similar EVs?**
-   - Zeekr is rare, so "no" is acceptable
-   - Should have experience with modern luxury EVs (Polestar, Tesla, BYD, Mercedes EQ, etc.)
-
-10. **Can I see examples of your work on similar vehicles?**
-    - Portfolio, customer vehicles on-site, or photo gallery
-
-11. **Are you certified by the product manufacturer?**
-    - XPEL, 3M, Llumar certification programs exist
-
-### Logistics Questions
-
-12. **What's the process if I'm not satisfied with the work?**
-    - Rework policy, timeline for corrections
-
-13. **When can you schedule the work?**
-    - Busy shops book weeks out (good sign of reputation)
-    - Immediate availability might indicate slow business (investigate why)
-
-14. **What preparation do I need to do before bringing the car?**
-    - Usually: clean car, full tank (EVs: adequate charge), remove personal items
-
-15. **Can I see the installation in progress or when complete before pickup?**
-    - Quality installers are proud to show their work
-
-## Vendor Recommendations by State
-
-**Note:** This section is community-driven. {{ extra.club.abbreviation }} does not officially endorse any vendors. These are owner experiences shared to help other members.
-
-### Victoria
-
-**PPF, Ceramic Coating, & Window Tinting**
-
-*Template format - community contributions needed:*
-
-- **Vendor Name**
-- Location: Suburb, Region
-- Services: PPF / Ceramic / Tint / Other
-- Products used: (e.g., XPEL, 3M, Gtechniq)
-- Owner experience: Brief description
-- Contact: Website/phone
-- Added by: {{ extra.club.abbreviation }} member (date)
-
-**To contribute:** Share your experience in our [community channels](../../community/index.md)
-
-### New South Wales
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Sydney metro
-- Regional NSW
-
-### Queensland
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Brisbane
-- Gold Coast
-- Sunshine Coast
-
-### South Australia
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Adelaide metro
-
-### Western Australia
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Perth metro
-
-### Tasmania
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Hobart
-- Launceston
-
-### Australian Capital Territory
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Canberra
-
-### Northern Territory
-
-*Awaiting community contributions*
-
-**Looking for recommendations in:**
-
-- Darwin
-
-## Finding Installers Yourself
-
-### Research Methods
-
-**Online search strategies:**
-
-- "[Your city] paint protection film XPEL certified"
-- "[Your city] ceramic coating Gtechniq installer"
-- "[Your city] window tinting Llumar dealer"
-- "Tesla PPF [your city]" (installers experienced with EVs)
-
-**Review platforms:**
-
-- Google Reviews (look for detailed reviews with photos)
-- Facebook business pages and groups
-- Car forums and EV owner groups
-- Instagram (search hashtags like #ppfmelbourne, #ceramiccoating)
-
-**Manufacturer locators:**
-
-- XPEL installer locator: [www.xpel.com/find-installer](https://www.xpel.com/find-installer)
-- 3M authorised installers: Check 3M Australia website
-- Llumar dealer locator: Check Llumar/SunTek websites
-
-### Evaluating Reviews
-
-**Look for:**
-
-- Detailed reviews describing specific work done
-- Photos showing results
-- Mentions of professionalism, communication, cleanliness
-- How issues were resolved (no installer is perfect)
-- Reviews from owners of similar vehicles
-
-**Red flags:**
-
-- Only 5-star or only 1-star reviews (potentially fake/filtered)
-- Generic reviews without specifics
-- Reviews that only mention price
-- Owner responses that are defensive or unprofessional
-- Lack of recent reviews (inactive business?)
-
-## Warning Signs to Avoid
-
-### During Consultation
-
-- Pressure to book immediately with "special pricing today only"
-- Can't or won't show examples of previous work
-- Vague answers about products or process
-- Unwilling to let you see the installation facility
-- No written quote or scope of work
-- Significantly cheaper than all competitors (why?)
-
-### During Installation
-
-- Allowing you to see the work in progress and it's clearly poor quality
-- Rushing the job to meet unrealistic timeline
-- Visible dust, debris, or hair under film
-- Bubbles, creases, or misalignment
-- Edges lifting or not properly sealed
-
-### After Completion
-
-- Film peeling or lifting within days/weeks
-- Tint already bubbling or showing defects
-- Installer difficult to contact for warranty issues
-- Refusing to address obvious defects
-- Asking for positive review before addressing concerns
-
-## If Something Goes Wrong
-
-### Steps to Resolve Issues
-
-1. **Document the problem**
-   - Photos from multiple angles
-   - Close-ups of specific defects
-   - Date and time stamped
-
-2. **Contact installer promptly**
-   - Professional, factual description of issue
-   - Share photos via email for documentation
-   - Request inspection and resolution
-
-3. **Allow opportunity to fix**
-   - Quality installers will make it right
-   - Rework may be necessary (this is normal)
-
-4. **Escalate if needed**
-   - Request refund if work cannot be corrected
-   - Contact product manufacturer if installer unresponsive
-   - Consumer protection agencies (ACCC, state fair trading)
-   - Credit card chargeback as last resort
-
-### Your Rights
-
-- Australian Consumer Law guarantees services provided with acceptable care and skill
-- Right to repair, replacement, or refund for defective work
-- Warranty terms must be honoured
-
-## Contributing Your Experience
-
-Help other {{ extra.club.abbreviation }} members by sharing:
-
-### Positive Experiences
-
-- Installer name and location
-- Services performed and products used
-- What made the experience excellent
-- Photos of the result (if comfortable sharing)
-- Approximate pricing (helps others budget)
-
-### Negative Experiences
-
-- What went wrong (without defamatory statements)
-- How installer responded
-- Outcome/resolution
-- What you'd do differently
-
-**Share via:**
-
-- {{ extra.club.abbreviation }} [community channels](../../community/index.md)
-- Tag posts appropriately for easy searching
-- Update if situation changes (issue resolved, etc.)
-
-## Resources
-
-### Product Manufacturers
-
-- **XPEL:** [www.xpel.com](https://www.xpel.com) - PPF and window film
-- **3M:** [www.3m.com.au](https://www.3m.com.au) - PPF, window film, coatings
-- **Llumar/SunTek:** [www.llumar.com.au](https://www.llumar.com.au) - Window film
-- **Gtechniq:** [www.gtechniq.com](https://www.gtechniq.com) - Ceramic coatings
-- **Ceramic Pro:** [www.ceramicpro.com](https://www.ceramicpro.com) - Ceramic coatings
-
-### Consumer Protection
-
-- **ACCC:** [www.accc.gov.au](https://www.accc.gov.au) - Consumer rights and complaints
-- **Consumer Affairs Victoria:** [www.consumer.vic.gov.au](https://www.consumer.vic.gov.au)
-- (Similar agencies exist in each state)
-
-### Community
-
-- **{{ extra.club.full_name }}:** [Community channels](../../community/index.md)
-- Share experiences, ask questions, get recommendations from actual owners
-
-## Final Advice
-
-**Take your time:**
-
-- Research multiple installers
-- Get at least 3 quotes for comparison
-- Don't rush into the cheapest option
-- Quality work costs money but lasts years
-
-**Trust your instincts:**
-
-- If something feels off, walk away
-- Professional installers are confident, not pushy
-- Communication and transparency matter
-
-**Protect your investment:**
-
-- Your Zeekr deserves quality protection
-- Poor installation can damage paint permanently
-- Spending extra for quality saves money long-term
-
-Need personalised recommendations? Connect with the {{ extra.club.abbreviation }} community via our [club channels](../../community/index.md) - members regularly share their installer experiences and recommendations.
+Used an installer, good or bad? Share the business, location, work done, product used and how it went in our [community channels](../../community/index.md). Stick to facts, and update your post if things change.

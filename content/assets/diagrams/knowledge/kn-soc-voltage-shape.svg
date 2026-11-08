@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 661" role="img" aria-labelledby="kn-soc-voltage-shape-title kn-soc-voltage-shape-desc">
+<title id="kn-soc-voltage-shape-title">Why LFP is harder to gauge: voltage vs state of charge</title>
+<desc id="kn-soc-voltage-shape-desc">Illustrative line chart of cell voltage against state of charge. NMC rises steadily across its 3.0 to 4.2 V operating range. LFP stays nearly flat across most of its 2.5 to 3.65 V range and is steep only at both ends, so the car cannot tell 40% from 70% by voltage alone; a full charge lets the car recalibrate. Shapes are not measured data.</desc>
+<defs>
+<style>
+svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
+svg.zk.zk-wide{max-width:none}
+[data-md-color-scheme="slate"] svg.zk{--zk-invm:#595959}
+.zk .bg{fill:var(--bg,#F2F2F2)}
+.zk .f-bg{fill:var(--bg,#F2F2F2)}
+.zk .f-panel{fill:var(--panel,#FFFFFF)}
+.zk .f-ink{fill:var(--ink,#1A1A1A)}
+.zk .f-muted{fill:var(--ink-muted,#595959)}
+.zk .f-accent{fill:var(--accent-ink,#B03C00)}
+.zk .f-tint{fill:var(--ink,#1A1A1A);fill-opacity:.06}
+.zk .f-atint{fill:var(--accent-ink,#B03C00);fill-opacity:.10}
+.zk .f-none{fill:none}
+.zk .s-ink{stroke:var(--ink,#1A1A1A)}
+.zk .s-muted{stroke:var(--ink-muted,#595959)}
+.zk .s-line{stroke:var(--line-strong,rgba(26,26,26,.36))}
+.zk .s-rule{stroke:var(--line,rgba(26,26,26,.14))}
+.zk .s-accent{stroke:var(--accent-ink,#B03C00)}
+.zk .s-bg{stroke:var(--bg,#F2F2F2)}
+.zk .s-inv{stroke:var(--bg,#F2F2F2)}
+.zk .icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.zk text{font-family:var(--font-body,'IBM Plex Sans Condensed','Arial Narrow',ui-sans-serif,sans-serif);font-weight:500}
+.zk text.d{font-family:var(--font-display,'Space Grotesk',ui-sans-serif,system-ui,sans-serif)}
+.zk text.w4{font-weight:400}.zk text.w6{font-weight:600}
+.zk .c-ink{fill:var(--ink,#1A1A1A)}
+.zk .c-muted{fill:var(--ink-muted,#595959)}
+.zk .c-accent{fill:var(--accent-ink,#B03C00)}
+.zk .c-inv{fill:var(--bg,#F2F2F2)}
+.zk .c-invm{fill:var(--zk-invm)}
+@media (max-width:599px){svg.zk-pair-wide{display:none}}
+@media (min-width:600px){svg.zk-pair-narrow{display:none}}
+</style>
+<marker id="kn-soc-voltage-shape-a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path class="f-muted" d="M0 0L8 4L0 8z"/></marker>
+<marker id="kn-soc-voltage-shape-ai" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path class="f-ink" d="M0 0L10 5L0 10z"/></marker>
+<marker id="kn-soc-voltage-shape-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
+<pattern id="kn-soc-voltage-shape-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
+</defs>
+<rect class="bg" width="480" height="661"/>
+<text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">CHARGING TO 80% VS 100%: CALIBRATION</text>
+<text class="d w6 c-ink" x="24" y="76" font-size="28">LFP's flat voltage makes the</text>
+<text class="d w6 c-ink" x="24" y="106" font-size="28">gauge drift.</text>
+<text class="c-muted" x="24" y="135" font-size="15">The car estimates charge largely from voltage. On a flat curve, that</text>
+<text class="c-muted" x="24" y="155" font-size="15">estimate wanders.</text>
+<text class="w6 c-muted" x="24" y="195" font-size="14">Cell voltage</text>
+<rect class="f-none s-line" x="191.781" y="181" width="264.219" height="19" rx="2" stroke-width="1"/>
+<text class="w6 c-muted" x="197.781" y="194.46" font-size="11" letter-spacing="0.1em">ILLUSTRATIVE SHAPE, NOT MEASURED DATA</text>
+<rect class="f-tint" x="220.8" y="211" width="117.6" height="224" rx="0"/>
+<line class="s-line" x1="220.8" y1="211" x2="220.8" y2="435" stroke-width="1" stroke-dasharray="3 3"/>
+<line class="s-line" x1="338.4" y1="211" x2="338.4" y2="435" stroke-width="1" stroke-dasharray="3 3"/>
+<line class="s-line" x1="64" y1="211" x2="64" y2="435" stroke-width="1"/>
+<line class="s-muted" x1="58" y1="418.2" x2="64" y2="418.2" stroke-width="1"/>
+<text class="c-muted" x="54" y="423.2" font-size="14" text-anchor="end">2.5 V</text>
+<line class="s-muted" x1="58" y1="362.2" x2="64" y2="362.2" stroke-width="1"/>
+<text class="c-muted" x="54" y="367.2" font-size="14" text-anchor="end">3.0 V</text>
+<line class="s-muted" x1="58" y1="289.4" x2="64" y2="289.4" stroke-width="1"/>
+<text class="c-muted" x="54" y="294.4" font-size="14" text-anchor="end">3.65 V</text>
+<line class="s-muted" x1="58" y1="227.8" x2="64" y2="227.8" stroke-width="1"/>
+<text class="c-muted" x="54" y="232.8" font-size="14" text-anchor="end">4.2 V</text>
+<path class="f-none s-ink" d="M64.0 362.2 C70.5 355.1 83.6 330.8 103.2 319.6 C122.8 308.4 155.5 301.7 181.6 295.0 C207.7 288.3 233.9 284.9 260.0 279.3 C286.1 273.7 312.3 267.7 338.4 261.4 C364.5 255.1 397.2 246.8 416.8 241.2 C436.4 235.6 449.5 230.0 456.0 227.8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 5"/>
+<path class="f-none s-accent" d="M64.0 418.2 C66.0 409.8 70.5 380.5 75.8 367.8 C81.0 355.1 84.3 347.5 95.4 342.0 C106.5 336.6 115.0 337.0 142.4 335.3 C169.8 333.6 220.8 333.1 260.0 332.0 C299.2 330.8 350.2 329.7 377.6 328.6 C405.0 327.5 413.5 327.5 424.6 325.2 C435.7 323.0 439.0 321.1 444.2 315.2 C449.5 309.2 454.0 293.7 456.0 289.4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<line class="s-ink" x1="64" y1="435" x2="456" y2="435" stroke-width="1.5"/>
+<text class="w6 c-ink" x="79.68" y="236.76" font-size="15">NMC (dashed)</text>
+<text class="w6 c-accent" x="87.52" y="365.96" font-size="15">LFP (solid)</text>
+<line class="s-ink" x1="64" y1="435" x2="64" y2="441" stroke-width="1.5"/>
+<text class="c-muted" x="64" y="459" font-size="14">0%</text>
+<line class="s-ink" x1="220.8" y1="435" x2="220.8" y2="441" stroke-width="1.5"/>
+<text class="c-muted" x="220.8" y="459" font-size="14" text-anchor="middle">40%</text>
+<line class="s-ink" x1="338.4" y1="435" x2="338.4" y2="441" stroke-width="1.5"/>
+<text class="c-muted" x="338.4" y="459" font-size="14" text-anchor="middle">70%</text>
+<line class="s-ink" x1="456" y1="435" x2="456" y2="441" stroke-width="1.5"/>
+<text class="c-muted" x="456" y="459" font-size="14" text-anchor="end">100%</text>
+<text class="w6 c-muted" x="456" y="481" font-size="14" text-anchor="end">State of charge</text>
+<circle class="f-ink" cx="279.6" cy="359.96" r="10"/>
+<text class="d w6 c-inv" x="279.6" y="364.46" font-size="13" text-anchor="middle">1</text>
+<circle class="f-ink" cx="434" cy="292.76" r="10"/>
+<text class="d w6 c-inv" x="434" y="297.26" font-size="13" text-anchor="middle">2</text>
+<circle class="f-ink" cx="34" cy="516" r="10"/>
+<text class="d w6 c-inv" x="34" y="520.5" font-size="13" text-anchor="middle">1</text>
+<text class="c-ink" x="56" y="521" font-size="15">Small voltage change across most of the range, so the car</text>
+<text class="c-ink" x="56" y="541" font-size="15">cannot tell 40% from 70% by voltage alone.</text>
+<circle class="f-ink" cx="34" cy="568" r="10"/>
+<text class="d w6 c-inv" x="34" y="572.5" font-size="13" text-anchor="middle">2</text>
+<text class="c-ink" x="56" y="573" font-size="15">A full charge lets the car recalibrate.</text>
+<line class="s-rule" x1="24" y1="595" x2="456" y2="595" stroke-width="1"/>
+<text class="c-muted" x="24" y="619" font-size="14">Operating range per cell: NMC 3.0 to 4.2 V; LFP 2.5 to 3.65 V (Battery</text>
+<text class="c-muted" x="24" y="637" font-size="14">University).</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 576" role="img" aria-labelledby="kn-type2-ccs2-title kn-type2-ccs2-desc">
+<title id="kn-type2-ccs2-title">Type 2 and CCS2: one socket, two jobs</title>
+<desc id="kn-type2-ccs2-desc">Schematic front view of a car inlet, not to scale. The upper part is the Type 2 AC socket, a circle with a flat top and seven contacts, used for single-phase and three-phase charging. Below it CCS2 adds two large DC pins. An AC cable uses only the Type 2 part and leaves the lower pins unused behind a rubber flap; a DC fast charger's tethered CCS2 plug fills both parts.</desc>
+<defs>
+<style>
+svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
+svg.zk.zk-wide{max-width:none}
+[data-md-color-scheme="slate"] svg.zk{--zk-invm:#595959}
+.zk .bg{fill:var(--bg,#F2F2F2)}
+.zk .f-bg{fill:var(--bg,#F2F2F2)}
+.zk .f-panel{fill:var(--panel,#FFFFFF)}
+.zk .f-ink{fill:var(--ink,#1A1A1A)}
+.zk .f-muted{fill:var(--ink-muted,#595959)}
+.zk .f-accent{fill:var(--accent-ink,#B03C00)}
+.zk .f-tint{fill:var(--ink,#1A1A1A);fill-opacity:.06}
+.zk .f-atint{fill:var(--accent-ink,#B03C00);fill-opacity:.10}
+.zk .f-none{fill:none}
+.zk .s-ink{stroke:var(--ink,#1A1A1A)}
+.zk .s-muted{stroke:var(--ink-muted,#595959)}
+.zk .s-line{stroke:var(--line-strong,rgba(26,26,26,.36))}
+.zk .s-rule{stroke:var(--line,rgba(26,26,26,.14))}
+.zk .s-accent{stroke:var(--accent-ink,#B03C00)}
+.zk .s-bg{stroke:var(--bg,#F2F2F2)}
+.zk .s-inv{stroke:var(--bg,#F2F2F2)}
+.zk .icon{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.zk text{font-family:var(--font-body,'IBM Plex Sans Condensed','Arial Narrow',ui-sans-serif,sans-serif);font-weight:500}
+.zk text.d{font-family:var(--font-display,'Space Grotesk',ui-sans-serif,system-ui,sans-serif)}
+.zk text.w4{font-weight:400}.zk text.w6{font-weight:600}
+.zk .c-ink{fill:var(--ink,#1A1A1A)}
+.zk .c-muted{fill:var(--ink-muted,#595959)}
+.zk .c-accent{fill:var(--accent-ink,#B03C00)}
+.zk .c-inv{fill:var(--bg,#F2F2F2)}
+.zk .c-invm{fill:var(--zk-invm)}
+@media (max-width:599px){svg.zk-pair-wide{display:none}}
+@media (min-width:600px){svg.zk-pair-narrow{display:none}}
+</style>
+<marker id="kn-type2-ccs2-a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path class="f-muted" d="M0 0L8 4L0 8z"/></marker>
+<marker id="kn-type2-ccs2-ai" markerWidth="10" markerHeight="10" refX="10" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path class="f-ink" d="M0 0L10 5L0 10z"/></marker>
+<marker id="kn-type2-ccs2-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
+<pattern id="kn-type2-ccs2-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
+</defs>
+<rect class="bg" width="480" height="576"/>
+<text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">PLUGS AND CABLES: THE CAR INLET</text>
+<text class="d w6 c-ink" x="24" y="80" font-size="32">One socket, two jobs.</text>
+<text class="c-muted" x="24" y="109" font-size="15">CCS2 is the Type 2 socket with two extra DC pins below it.</text>
+<path class="f-panel s-ink" d="M105.6 157.0H182.4A64.0 64.0 0 1 1 105.6 157.0Z" stroke-width="2" stroke-linecap="butt" stroke-linejoin="round"/>
+<circle class="f-none s-ink" cx="128.0" cy="172.2" r="6.0" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="160.0" cy="172.2" r="6.0" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="104.0" cy="204.2" r="10.0" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="144.0" cy="204.2" r="10.0" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="184.0" cy="204.2" r="10.0" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="120.0" cy="240.2" r="10.0" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="168.0" cy="240.2" r="10.0" stroke-width="1.5"/>
+<rect class="f-panel s-ink" x="88" y="288.2" width="112" height="56" rx="28.0" stroke-width="2"/>
+<circle class="f-atint s-accent" cx="120.0" cy="316.2" r="18.0" stroke-width="3"/>
+<circle class="f-atint s-accent" cx="168.0" cy="316.2" r="18.0" stroke-width="3"/>
+<line class="s-muted" x1="220" y1="204.2" x2="260" y2="204.2" stroke-width="1"/>
+<text class="d w6 c-ink" x="268" y="200.2" font-size="16">Type 2 (AC)</text>
+<text class="c-muted" x="268" y="220.2" font-size="14">Seven pins, single-phase</text>
+<text class="c-muted" x="268" y="238.2" font-size="14">and three-phase</text>
+<line class="s-accent" x1="196" y1="316.2" x2="260" y2="316.2" stroke-width="1.5"/>
+<text class="d w6 c-accent" x="268" y="312.2" font-size="16">CCS2 adds</text>
+<text class="d w6 c-accent" x="268" y="332.2" font-size="16">two DC pins</text>
+<line class="s-rule" x1="24" y1="364.2" x2="456" y2="364.2" stroke-width="1"/>
+<text class="d w6 c-ink" x="24" y="388.2" font-size="15">Type 2 plug only</text>
+<path class="f-muted s-ink" d="M50.9 408.2H93.1A35.2 35.2 0 1 1 50.9 408.2Z" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="round"/>
+<rect class="f-panel s-ink" x="41.2" y="480.36" width="61.6" height="30.8" rx="15.400000000000002" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="58.8" cy="495.8" r="9.9" stroke-width="1.5"/>
+<circle class="f-none s-ink" cx="85.2" cy="495.8" r="9.9" stroke-width="1.5"/>
+<text class="c-muted" x="128" y="432.2" font-size="14">AC cable: lower</text>
+<text class="c-muted" x="128" y="450.2" font-size="14">pins unused</text>
+<text class="c-muted" x="128" y="468.2" font-size="14">(rubber flap)</text>
+<text class="d w6 c-ink" x="248" y="388.2" font-size="15">CCS2 plug</text>
+<path class="f-muted s-ink" d="M274.9 408.2H317.1A35.2 35.2 0 1 1 274.9 408.2Z" stroke-width="1.5" stroke-linecap="butt" stroke-linejoin="round"/>
+<rect class="f-muted s-ink" x="265.2" y="480.36" width="61.6" height="30.8" rx="15.400000000000002" stroke-width="1.5"/>
+<text class="c-muted" x="352" y="432.2" font-size="14">DC fast charger:</text>
+<text class="c-muted" x="352" y="450.2" font-size="14">tethered cable</text>
+<rect class="f-muted" x="24" y="536.2" width="16" height="16" rx="2"/>
+<text class="c-muted" x="48" y="549.2" font-size="14">Filled by the plug</text>
+<text class="c-muted" x="456" y="549.2" font-size="14" text-anchor="end">Schematic, not to scale</text>
+</svg>

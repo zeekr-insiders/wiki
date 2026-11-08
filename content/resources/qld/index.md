@@ -1,83 +1,38 @@
-# Queensland Resources
-
-EV ownership resources specific to Queensland.
-
-## Government Incentives
-
-### Registration Discount
-
-Queensland offers registration discounts for zero-emission vehicles.
-
-| Detail | Information |
-|--------|-------------|
-| **Discount** | Reduced registration fees |
-| **Eligibility** | Battery electric vehicles |
-
-!!! info "Check Current Rates"
-    Visit [Queensland Transport](https://www.qld.gov.au/transport) for current EV registration rates.
-
-### Stamp Duty
-
-Queensland charges stamp duty on vehicle purchases. No current EV-specific exemptions.
-
-## Service Centres
-
-### Brisbane Metropolitan
-
-!!! info "Service Location"
-    *Contact Zeekr Australia for current service centre locations in Queensland.*
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
-
-### Regional Queensland
-
-| Region | Nearest Service | Notes |
-|--------|-----------------|-------|
-| Gold Coast | Brisbane | ~80 km |
-| Sunshine Coast | Brisbane | ~100 km |
-| Toowoomba | Brisbane | ~130 km |
-| Cairns | TBC | Limited options |
-| Townsville | TBC | Limited options |
-
-## Charging Infrastructure
-
-### Brisbane
-
-**Ultra-Rapid Locations:**
-
-- **Chargefox** - Multiple locations
-- **Evie Networks** - Shopping centres
-- **Ampol AmpCharge** - Service stations
-
-### Highway Corridors
-
-| Route | Charger Locations |
-|-------|-------------------|
-| **Pacific Highway (Brisbane - Sydney)** | Gold Coast, Byron Bay, Coffs Harbour |
-| **Bruce Highway (Brisbane - Cairns)** | Sunshine Coast, Bundaberg, Mackay, Townsville |
-| **Warrego Highway (Brisbane - West)** | Toowoomba |
-
-!!! warning "Northern Queensland"
-    Charging infrastructure north of Townsville is limited. Plan trips to Cairns carefully with backup plans.
-
-### Queensland Climate Considerations
-
-- **Hot Weather**: Expect reduced range in summer with heavy AC use
-- **Pre-conditioning**: Use while plugged in to preserve battery
-- **Parking**: Seek shade when possible to reduce cabin heat
-
-## Queensland EV Community
-
-### Groups
-
-- **{{ extra.club.full_name }}** - National coverage
-- **Electric Vehicle Council Queensland**
-
-## Useful Queensland Links
-
-- [Queensland Transport - EVs](https://www.qld.gov.au/transport)
-- [RACQ - Electric Vehicles](https://www.racq.com.au)
-
+---
+last_checked: 2026-11-08
+seo_title: "Queensland EV stamp duty and rego"
+description: "Buying a Zeekr in Queensland: EV stamp duty rates by value, incentives, servicing, driving an EV in the heat, and useful local links for Queensland owners."
 ---
 
-*Last updated: December 2025*
+# Queensland
+
+*Last checked: 8 November 2026.*
+
+## Stamp duty
+
+Queensland charges electric and hybrid light vehicles $2 per $100 (or part) of dutiable value up to $100,000, and $4 per $100 (or part) above $100,000 [^2]. The government page was last updated in March 2023, so check the [current rates](https://www.qld.gov.au/transport/registration/costs/duty/rates) before you budget.
+
+## Incentives
+
+The Queensland zero emission vehicle rebate ended on 2 September 2024. A registration discount remains for eligible vehicles under $100,000 dutiable value [^1].
+
+!!! note "Not yet confirmed"
+    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+
+## Service
+
+Queensland sales and service sites are on the [dealers page](../../buying/dealers.md).
+
+## Driving in the heat
+
+Hot weather and heavy air-conditioning use cut range. Pre-cool the cabin while the car is still plugged in, and park in shade where you can.
+
+## Useful links
+
+- [Queensland Government: vehicle registration duty rates](https://www.qld.gov.au/transport/registration/costs/duty/rates)
+- [Queensland Revenue Office](https://qro.qld.gov.au)
+
+## Sources
+
+[^1]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^2]: Queensland Government, "Vehicle registration duty rates", <https://www.qld.gov.au/transport/registration/costs/duty/rates>, accessed 8 November 2026.

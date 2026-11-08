@@ -1,23 +1,25 @@
 [project]
 name = "zeekr-wiki"
 version = "1.0.0"
-description = "Zeekr Enthusiasts of Victoria (ZEV) Wiki"
+description = "Zeekr Insiders Australia wiki: an owner-run guide to buying and owning a Zeekr in Australia"
 authors = [
-    {name = "Thushan Fernando", email = "thushan@thushanfernando.com"}
+    {name = "Zeekr Insiders Australia"}
 ]
 readme = "README.md"
-license = {text = "MIT"}
-requires-python = ">=3.8"
+# The code is MIT. The written content is CC BY-NC-SA 4.0 and images belong to their owners (LICENSE-CONTENT.md).
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
 dependencies = [
     "mkdocs-material>=9.6.0",
     "mkdocs-minify-plugin>=0.8.0",
     "mkdocs-macros-plugin>=1.0.0",
+    "mkdocs-rss-plugin==1.20.0",
 ]
 
 [project.urls]
-Homepage = "https://thushan.github.io/zeekr/"
-Repository = "https://github.com/thushan/zeekr"
-Issues = "https://github.com/thushan/zeekr/issues"
+Homepage = "https://wiki.zeekrinsiders.com.au/"
+Repository = "https://github.com/zeekr-insiders/wiki"
+Issues = "https://github.com/zeekr-insiders/wiki/issues"
 
 [tool.uv]
 dev-dependencies = [

@@ -1,114 +1,107 @@
-# Zeekr Models - Overview
-
-Comprehensive information about all Zeekr models available or coming to the Australian market.
-
-## Current Model Lineup
-
-### <img src="../assets/icons/icon-wheelbase.svg" class="zi-icon" alt="SUV"> [Zeekr 7X](7x/overview.md)
-**Premium Electric SUV**
-
-The Zeekr 7X is the brand's flagship SUV, offering premium features, advanced technology, and family-friendly practicality.
-
-- **[2025 Specifications](7x/2025/specifications.md)** - Current model specifications and technical details
-- **[2025 Pricing](7x/2025/pricing.md)** - Current pricing and options information
-- **2026 Updates** - Coming soon
-- **[Model Overview](7x/overview.md)** - Complete 7X information and buyer's guide
-
-**Key Highlights:**
-
-- Premium electric SUV positioning
-- Advanced driver assistance features
-- Spacious interior and cargo area
-- Fast charging capabilities
-- Australian road compliance
-
+---
+last_checked: 2026-11-08
+seo_title: "Zeekr models in Australia"
+description: "The Zeekr models on sale in Australia, the 7X, X and 009, plus the 7GT electric wagon that is confirmed but not yet on sale, with prices, specs and guides."
 ---
 
-### <img src="../assets/icons/icon-acceleration.svg" class="zi-icon" alt="Compact"> [Zeekr X](x/overview.md)
-**Compact Electric SUV**
+# Models
 
-The Zeekr X brings premium electric mobility to a more compact and affordable package, perfect for urban Australian conditions.
+*Last checked: 8 November 2026.*
 
-- **[Model Overview](x/overview.md)** - Complete X model information and specifications
+Three Zeekr models are on sale in Australia: the 7X, the X and the 009. A fourth, the 7GT electric wagon, is confirmed but not yet on sale [^9].
 
-**Key Highlights:**
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](7x/which-7x.md).
 
-- Compact size ideal for city driving
-- Efficient urban mobility solution
-- Premium features in smaller package
-- Competitive pricing position
-- Easy parking and manoeuvrability
+## Current lineup
 
----
+<div class="card-grid model-lineup">
+    <div class="z-card model-glance model-banner">
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/7x-card.avif 800w, ../assets/images/models/7x-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw">
+            <img src="../assets/images/models/7x-card.webp" srcset="../assets/images/models/7x-card.webp 800w, ../assets/images/models/7x-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
+        <h3>Zeekr 7X</h3>
+        <p>Mid-size SUV with five seats and 800V charging. RWD, Long Range RWD and Performance AWD. Figures are MY25/MY26.</p>
+        <div class="glance-stats">
+            <div><span class="val">$57,900</span><span class="lbl">From + ORC</span></div>
+            <div><span class="val">539 L</span><span class="lbl">Boot</span></div>
+            <div><span class="val">2,000 kg</span><span class="lbl">Braked towing</span></div>
+        </div>
+        <a class="go" href="7x/overview/">Zeekr 7X</a>
+    </div>
+    <div class="z-card model-glance model-banner">
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/x-card.avif 800w, ../assets/images/models/x-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw">
+            <img src="../assets/images/models/x-card.webp" srcset="../assets/images/models/x-card.webp 800w, ../assets/images/models/x-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
+        <h3>Zeekr X</h3>
+        <p>Compact SUV with five seats, in RWD and AWD. Figures are MY26.</p>
+        <div class="glance-stats">
+            <div><span class="val">$48,900</span><span class="lbl">Drive-away (RWD)</span></div>
+            <div><span class="val">5</span><span class="lbl">Seats</span></div>
+        </div>
+        <a class="go" href="x/overview/">Zeekr X</a>
+    </div>
+    <div class="z-card model-glance model-banner">
+        <span class="badge">Not yet on sale</span>
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/7gt-card.avif 800w, ../assets/images/models/7gt-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw">
+            <img src="../assets/images/models/7gt-card.webp" srcset="../assets/images/models/7gt-card.webp 800w, ../assets/images/models/7gt-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
+        <h3>Zeekr 7GT</h3>
+        <p>Electric shooting brake wagon. Confirmed for Australia, no price yet. Figures are as reported.</p>
+        <div class="glance-stats">
+            <div><span class="val">670 km</span><span class="lbl">WLTP (Long Range, reported)</span></div>
+            <div><span class="val">Q1 2027</span><span class="lbl">First deliveries (expected)</span></div>
+        </div>
+        <a class="go" href="7gt/overview/">Zeekr 7GT</a>
+    </div>
+    <div class="z-card model-glance model-banner">
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/009-card.avif 800w, ../assets/images/models/009-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw">
+            <img src="../assets/images/models/009-card.webp" srcset="../assets/images/models/009-card.webp 800w, ../assets/images/models/009-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
+        <h3>Zeekr 009</h3>
+        <p>People mover with six or seven seats, in FWD and AWD.</p>
+        <div class="glance-stats">
+            <div><span class="val">$115,900</span><span class="lbl">From + ORC</span></div>
+            <div><span class="val">6 or 7</span><span class="lbl">Seats</span></div>
+        </div>
+        <a class="go" href="009/overview/">Zeekr 009</a>
+    </div>
+</div>
 
-### <img src="../assets/icons/icon-seating.svg" class="zi-icon" alt="MPV"> [Zeekr 009](009/overview.md)
-**Luxury Electric MPV**
+Figures: 7X [^1][^4][^5], X [^2], 7GT [^10], 009 [^3]. The banners are club artwork, not photos of a specific car.
 
-The Zeekr 009 represents the pinnacle of luxury electric transportation, designed for premium family and executive use.
+## Which one fits?
 
-- **[Model Overview](009/overview.md)** - Complete 009 luxury MPV information
+- **Compact and easy to park:** the X.
+- **Five seats with a bigger boot (539 L) and 2,000 kg braked towing:** the 7X [^4][^5].
+- **Six or seven seats:** the 009.
 
-**Key Highlights:**
+For more help, see [Choosing a Model](../getting-started/choosing-model.md) and the [model comparison table](../comparisons/model-comparison-table.md).
 
-- Luxury MPV positioning
-- Executive seating configurations
-- Premium interior appointments
-- Advanced technology integration
-- Spacious cabin and cargo areas
+## Costs and incentives
 
----
+- The 009 is priced above the 2026-27 Luxury Car Tax threshold for fuel-efficient vehicles ($91,661), so LCT applies to it; the 7X and X are below it [^6]. See the [finance guide](../buying/finance.md) for novated leasing.
+- The Victorian and NSW EV purchase rebates have ended [^8]. For your state, see the [state resources](../resources/index.md).
 
-## Model Selection Guide
+## Warranty and service
 
-### Choose Based on Your Needs
+- All three models: 5 years / unlimited km vehicle warranty (private use), 8 years / 160,000 km battery warranty, 5 years roadside assistance [^7].
+- Zeekr lists 17 sales sites in Australia; fewer offer service. See [Where to Buy](../buying/dealers.md).
+- Service intervals differ by model and model year. See the service schedule under each model.
 
-**Urban Commuting & City Living**
+## Sources
 
-- Consider the **Zeekr X** for its compact size and efficiency
-
-**Family & Suburban Use**
-
-- The **Zeekr 7X** offers the best balance of space, features, and value
-
-**Luxury & Executive Transport**
-
-- The **Zeekr 009** provides maximum space and premium features
-
-**First-Time EV Buyer**
-
-- Start with our [Getting Started Guide](../getting-started/ev-basics.md) and consider the **Zeekr X** or **7X**
-
-## Australian Market Information
-
-### Availability Timeline
-
-- **Zeekr 7X:** Currently available with limited stock
-- **Zeekr X:** Expected [timeline needed]
-- **Zeekr 009:** Expected [timeline needed]
-
-### Government Incentives
-All Zeekr models are eligible for:
-
-- Federal luxury car tax exemptions (where applicable)
-- {{ extra.club.location }} EV rebate (subject to price caps)
-- Stamp duty exemptions in most states
-- Reduced registration fees
-
-### Service and Support
-
-- Authorised dealer network across {{ extra.club.location }}
-- Comprehensive warranty coverage
-- Parts and service availability
-- Mobile service options (coming soon)
-
-## Model Comparison
-
-For detailed side-by-side comparisons of specifications, features, and pricing, visit our [Model Comparison Table](../comparisons/model-comparison-table.md).
-
-## Real Owner Reviews
-
-Club members share their experiences with different Zeekr models, providing real-world insights into ownership, performance, and satisfaction.
-
----
-
-*Need help choosing? Contact {{ extra.club.full_name }} for personalised advice from experienced owners.*
+[^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^4]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+[^5]: The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
+[^6]: Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+[^7]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+[^8]: RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+[^9]: Zeekr Australia, "Zeekr 7GT", <https://www.zeekrlife.com/en-au/models/zeekr-7gt>, accessed 8 November 2026.
+[^10]: The Driven, "Zeekr 7GT confirmed for 2026 launch in Australia with 670 km range and 3.1 second sprint", <https://thedriven.io/2026/09/19/zeekr-7gt-confirmed-for-2026-launch-australia-with-670km-range-and-3-1-second-sprint/>, accessed 8 November 2026.
