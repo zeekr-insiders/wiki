@@ -5,7 +5,7 @@ entry is cited at least once, each marker carries an aria-label, the entries
 sit inside the collapsed Sources panel (hooks/citations.py) whose label counts
 them, no footnote return arrow is left, no plain "[1]" citation text is
 left over from before the footnote conversion, and no entry cites the club's
-private research (club-docs, the internal fact sheet): readers can't open it,
+private research notes (such as the internal fact sheet): readers can't open it,
 so cite the public sources it relies on instead.
 
 Usage: python scripts/check_citations.py [site_dir]   (default: site)

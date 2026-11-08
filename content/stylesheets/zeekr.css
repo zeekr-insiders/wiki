@@ -1,6 +1,6 @@
 /* ==========================================================================
    Zeekr Insiders wiki theme
-   Mirrors the front door (web-home src/app.css and docs/style-guide.md) so the
+   Mirrors the main club site's styles and style guide so the
    wiki and the site read as one product: neutral greys, square corners, flat
    hairline panels, ink-coloured links, and orange kept for actions, the current
    nav underline, the home hero and the "On this page" marker.
@@ -53,7 +53,7 @@
     src: url("../assets/fonts/ibm-plex-sans-condensed-latin-600-normal.woff2") format("woff2");
 }
 
-/* 2. Tokens: names and values from web-home src/app.css. ------------------ */
+/* 2. Tokens: the club site's token names and values. --------------------- */
 :root {
     --zeekr-orange: #FF5A00;
     --arctic-white: #F2F2F2;
@@ -2564,7 +2564,7 @@ span .zi-icon {
     }
 }
 
-/* 19. "On this page" panel (web-home TableOfContents.svelte), wide screens
+/* 19. "On this page" panel (as on the club site), wide screens
    only, where Material shows the right-hand sidebar. Orange here is the
    site's deliberate exception: the accent ink token, so #FF5A00 on dark and
    #B03C00 on light (4.95:1 on the panel). ------------------------------- */
