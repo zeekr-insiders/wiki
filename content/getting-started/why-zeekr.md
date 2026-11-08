@@ -1,161 +1,69 @@
+---
+last_checked: 2026-11-08
+---
+
 # Why Choose Zeekr?
 
-You've probably heard of Tesla, maybe BYD, perhaps even Polestar or MG. So why consider a brand you might not have heard of until recently?
+*Last checked: 8 November 2026.*
 
-Let's talk about what actually matters when you're driving and living with an EV every day.
+Zeekr is a newer brand in Australia, so it's fair to ask what you get and what you give up. This page sticks to what we can source, plus the trade-offs owners should weigh.
 
-## Who Makes Zeekr?
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-Zeekr is part of Geely - the massive Chinese automotive group that also owns Volvo, Polestar, Lotus, and a chunk of Mercedes-Benz.
+## What you get
 
-Think of Zeekr as Geely's premium electric brand. They've taken all the engineering expertise from Volvo, combined it with cutting-edge EV technology, and built something genuinely impressive.
+### 800V charging on the 7X
 
-### The Geely Connection
+The 7X runs an 800V system with DC peaks of up to 450 kW (RWD) and 420 kW (Long Range and AWD) [1]. A higher-voltage car can draw more power from a high-output charger, so on a road trip the stops can be shorter. What you see on the day depends on the charger, the battery temperature and your starting charge.
 
-- **Volvo Safety**: Zeekr shares safety technology and philosophy with Volvo
-- **Global Platform**: Built on the same premium architecture as Polestar and Lotus EVs
-- **European Engineering**: Designed with input from Volvo's Swedish team
-- **Manufacturing**: Built in Geely's modern EV facilities in China
+!!! warning "Sources differ"
+    Published 10-80% times for the 7X range from about 10 to 16 minutes depending on the variant, the source and the date: Zeekr's own page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another, and EV Central quotes "as little as 11 minutes" [2][3]. Treat these as best-case figures.
 
-This isn't some startup gambling with your money - it's an established global automotive giant with deep pockets and serious EV expertise.
+### Warranty and roadside assistance
 
-## The 800V Advantage (Without the Tech Speak)
+| Coverage | Details |
+| :--- | :--- |
+| **Vehicle warranty** | 5 years / unlimited km (private use) |
+| **High-voltage battery** | 8 years / 160,000 km, repair or replacement if health falls below 70% |
+| **Roadside assistance** | 5 years |
 
-Most EVs run on 400V electrical architecture. The Zeekr 7X uses 800V (the X and 009 are 400V cars). Why should you care?
+Source: [4]. The first 1,000 7X buyers were offered 7 years of warranty and roadside assistance as a launch offer [5]; if you bought under an offer, check your contract.
 
-### Faster Charging
+### A local network
 
-Higher voltage means faster charging without needing thicker, heavier cables. In practical terms:
+Zeekr lists 17 sales sites across ACT, NSW, QLD, SA, VIC and WA [6]. Not every site services cars; see [Where to Buy](../buying/dealers.md) for which do.
 
-- **400V EVs**: Typically 30-45 minutes for 20-80% charge
-- **800V Zeekr 7X**: Official 10-80% times of 13-16 minutes on an ultra-rapid charger
+### Servicing
 
-On a road trip, that's the difference between a quick coffee and sitting through a full meal.
+Service intervals depend on the model and model year. The MY26 X is serviced every 12 months or 20,000 km [7]. For the 7X, published sources disagree, so check your service booklet. Each model's service schedule page has the detail:
+[7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md), [009](../models/009/service-schedule.md).
 
-### Better Efficiency
+## The trade-offs
 
-800V systems waste less energy as heat, meaning more of your electricity goes into actual driving. You get slightly better range and the battery stays cooler (which helps with longevity).
+- **A newer brand.** Fewer people will know the car, and there is little long-term ownership history in Australia yet.
+- **Resale is unknown.** Without years of used-car sales, nobody can say how Zeekrs will hold their value here.
+- **Service coverage is thinner than older brands.** Check how far your nearest service centre is before you buy, especially in regional areas. There are no Zeekr sites in Tasmania or the Northern Territory [6].
+- **Model-year changes.** The 7X was updated for 2027 at the same prices with more power and more standard equipment [1]. If you are buying around a model-year change, compare what each car includes.
 
-### Future-Proofed
+## Who it suits
 
-As ultra-fast chargers (350kW+) become more common in Australia, 800V vehicles will take full advantage. A 7X is ready for the charging infrastructure of tomorrow.
+A Zeekr is worth a look if you want an EV with fast DC charging (the 7X), a long warranty with no kilometre limit, and you are near a service centre. If you need a brand with a long local track record or live far from a service site, weigh that first.
 
-## What Actually Sets Zeekr Apart
-
-Forget the marketing brochures - here's what you'll notice day-to-day:
-
-### Build Quality That Surprises People
-
-The first thing passengers comment on is how solid everything feels. Doors close with a reassuring "thunk", materials feel premium, and there's none of the creaking or rattling you sometimes get with newer EV brands.
-
-This is the Volvo influence showing through.
-
-### Interior Space and Practicality
-
-Zeekr engineers clearly thought about real-world use:
-
-- **Massive boot space**: Proper family-car practicality
-- **Clever storage**: Multiple charging points, cupholders that actually hold Australian coffee cups
-- **Comfortable seats**: Designed for long distances, not just show-room photos
-- **Thoughtful details**: One-touch windows that actually work properly, easy-to-clean materials
-
-### Technology That Doesn't Get in the Way
-
-The tech is there when you need it, invisible when you don't. No learning a complex menu system just to change the temperature.
-
-Features like:
-
-- **Adaptive cruise control** that doesn't phantom brake constantly
-- **360-degree cameras** that actually help with parking
-- **Voice controls** that understand Australian accents (mostly!)
-- **OTA updates** that genuinely add features over time
-
-### Ride Comfort
-
-Zeekr's air suspension (on models that have it) is genuinely excellent. It soaks up our potholed Australian roads while staying composed in corners.
-
-Multiple owners have commented it rides better than European SUVs costing $20-30k more.
-
-## Australian Support and Warranty
-
-This is crucial and often overlooked:
-
-### Warranty Coverage
-
-- **Vehicle Warranty**: 5 years / unlimited km (private use)
-- **Battery Warranty**: 8 years / 160,000 km (minimum 70% capacity)
-- **Roadside Assistance**: 5 years complimentary
-
-### Australian Dealer Network
-
-Zeekr entered Australia properly, with:
-
-- Established dealer and service network
-- Parts availability
-- Local customer support team
-- Proper compliance with Australian Design Rules (ADRs)
-
-This isn't a grey import or some dodgy parallel import operation. These are officially supported vehicles with genuine Australian warranty coverage.
-
-### Service Intervals
-
-Because EVs need less maintenance, servicing is less frequent and cheaper than petrol equivalents. Intervals vary by model and model year - the 7X and 009 launched with 2 year / 40,000 km schedules, while the MY26 X is 12 months / 20,000 km. Check your model's [service schedule](../models/index.md) for the detail.
-
-## The Realistic Downsides
-
-Let's be honest about the challenges:
-
-### Brand Recognition
-
-Your mates might not have heard of Zeekr. You'll answer "What is it?" more than "How do you like it?"
-
-Some people care about this. Most Zeekr owners seem to enjoy being different.
-
-### Resale Value Unknown
-
-Because Zeekr is relatively new to Australia, we don't have long-term resale data. EVs generally depreciate faster than petrol cars, but premium EVs hold value better than budget ones.
-
-If you're planning to keep the car for 5+ years, this matters less.
-
-### Charging Network Still Growing
-
-While Australia's fast-charging network is improving rapidly, it's not as extensive as petrol stations (yet). Long-distance travel requires a bit more planning.
-
-That said, if you're in a 7X, the 800V architecture means you'll spend less time charging than most EVs.
-
-## Who Is Zeekr Right For?
-
-Zeekr suits you if:
-
-- You want premium quality without the luxury badge tax
-- You value practicality and comfort over brand prestige
-- You're an early adopter who appreciates good technology
-- You do regular road trips and want fast charging capability
-- You're interested in being part of a growing enthusiast community
-
-Zeekr might not suit you if:
-
-- You need everyone to recognise your car brand
-- You're nervous about newer automotive brands
-- You live regional without access to fast charging infrastructure
-- You want the absolute maximum range (some competitors offer more)
-
-## The Community Factor
-
-Here's something that doesn't show up in spec sheets: {{ extra.club.name }} is a genuinely welcoming community of owners and enthusiasts.
-
-Need help understanding a feature? Want recommendations for road-trip charging stops? Curious about real-world range? Someone in the community has answers.
-
-There's something special about being part of a smaller, passionate community rather than just another number in a massive brand's customer database.
-
-## Ready to Choose Your Model?
-
-Now that you know what makes Zeekr special, let's figure out which model suits your needs.
+## Next steps
 
 [Compare Zeekr Models](choosing-model.md){ .md-button .md-button--primary }
 
-Or jump straight to detailed model information:
+- [Zeekr 7X](../models/7x/overview.md)
+- [Zeekr X](../models/x/overview.md)
+- [Zeekr 009](../models/009/overview.md)
 
-- [Zeekr 7X](../models/7x/overview.md) - Premium mid-size SUV
-- [Zeekr X](../models/x/overview.md) - Compact luxury SUV
-- [Zeekr 009](../models/009/overview.md) - Luxury MPV/people mover
+## Sources
+
+1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+2. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+3. EV Central, 2027 Zeekr 7X article (1 November 2026), <https://evcentral.com.au/key-tesla-model-y-rival-gets-more-power-same-price-for-2027-zeekr-7x-upgraded-with-500kw-flagship-and-up-to-627km-range/>, accessed 8 November 2026.
+4. Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+5. CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
+6. Zeekr Australia, "Find a dealer", <https://www.zeekrlife.com/en-au/find-us>, accessed 8 November 2026.
+7. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.

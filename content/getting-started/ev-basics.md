@@ -1,147 +1,90 @@
-# EV Basics: Your Introduction to Electric Vehicles
+---
+last_checked: 2026-11-08
+---
 
-So you're thinking about going electric? Good on you! Let's break down the basics without the technical mumbo-jumbo.
+# EV Basics
 
-## How Do Electric Vehicles Work?
+*Last checked: 8 November 2026.*
 
-In the simplest terms: batteries power an electric motor that turns the wheels. That's it. No pistons, no combustion, no gearbox (well, usually just a single-speed one).
+The basics of living with an electric car, for anyone coming from petrol or diesel.
 
-Think of it like a giant remote control car - except this one's road legal and won't get stuck under the couch.
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
 
-### The Main Components
+## How an EV works
 
-- **Battery Pack**: The fuel tank equivalent - stores electrical energy
-- **Electric Motor**: Converts electrical energy into motion (and back again when braking!)
-- **Inverter**: Manages power flow between the battery and motor
-- **Onboard Charger**: Converts AC power from the grid to DC power for the battery
+A battery pack powers one or more electric motors, which drive the wheels through a single-speed reduction gear. The main parts:
 
-That's genuinely about it. EVs have roughly 20 moving parts compared to over 2,000 in a petrol car. Less to break, less to service.
+- **Battery pack:** stores the energy. Its size is given in kilowatt-hours (kWh).
+- **Electric motor:** turns that energy into motion, and works in reverse as a generator when you slow down (regenerative braking).
+- **Inverter:** manages the flow of power between the battery and the motor.
+- **On-board charger:** converts AC power from a wall socket or wallbox into DC for the battery.
 
-## Charging Your EV
+There is no engine oil, spark plugs, exhaust or fuel system to maintain.
 
-This is where most newcomers get a bit overwhelmed, but it's actually pretty straightforward once you know the basics.
+## Charging
 
-### AC vs DC Charging
+### AC and DC
 
-There are two main types of charging:
+**AC charging** is what you use at home, at work and at many destination chargers. The car's on-board charger sets the maximum rate: Zeekr models take 11 kW or 22 kW on AC depending on the model and variant [1][2][3]. You only get more than about 7 kW from three-phase power.
 
-**AC (Alternating Current) Charging**
+**DC fast charging** is the public chargers along highways and in town. The charger feeds the battery directly, so it is much faster. How fast depends on the charger's output, your car's limit, the battery temperature and how full the battery is: charging slows as the battery fills, which is why times are usually quoted as 10-80%.
 
-- What you'll use at home or at work
-- Slower, but that's fine for overnight charging
-- Typically 7-22kW in Australia
-- Like filling up a bathtub with a tap - slow and steady
+### What the kW numbers mean
 
-**DC (Direct Current) Fast Charging**
+kW is the rate; kWh is the amount. An hour on a 7 kW charger adds about 7 kWh to the battery. To turn that into kilometres, divide by your car's consumption, which the car shows in kWh per 100 km. For example, at 18 kWh/100 km, 7 kWh is a little under 40 km.
 
-- Public fast chargers along highways
-- Much quicker - think 20-80% in 20-40 minutes
-- Ranges from 50kW to 350kW+ in Australia
-- Like filling that bathtub with a fire hose
+### Where to charge
 
-### What Do Those kW Numbers Mean?
+If you can charge at home overnight, you start most days with the charge you need and rarely use public chargers for daily driving. For trips, apps such as PlugShare, Chargefox and A Better Route Planner show public chargers and help plan stops. See the [charging guides](../guides/charging/home-setup.md) for home setup, public networks and road trips.
 
-Think of kilowatts (kW) like litres per minute when filling up with petrol - it's just how fast energy flows into your battery.
+## Range
 
-- **7kW home charger**: Adds roughly 40-50km of range per hour
-- **22kW AC charger**: Adds roughly 120-150km of range per hour
-- **150kW DC charger**: Can add 200-300km in 20 minutes
+WLTP range is a standard lab test figure, useful for comparing cars. Real-world range varies with speed, temperature, load and terrain; highway driving at 110 km/h usually gets less than the WLTP figure. Zeekr's WLTP figures run from 405 km (X RWD) to 615 km (7X Long Range, MY25/MY26) [1][2][4].
 
-Your Zeekr will only take as much power as it's designed for, so don't worry about "overcharging" - the car manages all that automatically.
+For long trips, plan your charging stops before you leave and keep a buffer. The [road trips guide](../guides/charging/road-trips.md) covers this.
 
-### Where Do You Charge?
+## Running costs
 
-Most EV owners do 80-90% of their charging at home overnight. It's honestly brilliant - you wake up every morning to a "full tank" and never need to visit a servo for your daily driving.
+### Energy
 
-For longer trips, Australia has a growing network of public fast chargers along major routes. Apps like PlugShare, Chargefox, and ABRP (A Better Route Planner) show you where they all are.
+Home charging is usually far cheaper per kilometre than petrol, and public DC charging costs more than home charging. Your actual cost depends on your electricity plan and how much you use public chargers. To work it out: consumption (kWh per 100 km) times your price per kWh.
 
-## Range Anxiety: Let's Talk About It
+### Maintenance
 
-"What if I run out of charge?" - It's the question every EV newcomer asks. Here's the thing: after a few weeks of ownership, you'll wonder why you ever worried.
+EVs still need tyres, brake fluid, cabin filters, wiper blades and scheduled servicing. Regenerative braking does much of the slowing, so the friction brakes see less wear. Service intervals vary by Zeekr model and model year; see the service schedule page for your model.
 
-### The Reality
+## Incentives and taxes
 
-- Most Aussies drive less than 40km per day
-- Modern EVs (like Zeekrs) have 400-600km+ of range
-- You charge at home overnight, starting each day with a full battery
-- Running out of charge requires actively ignoring multiple warnings
+### Federal
 
-It'd be like driving past 10 petrol stations with your fuel light on, except the car has been beeping at you for the last 100km.
+- **Novated leasing (FBT).** Eligible EVs bought through a novated lease can be exempt from Fringe Benefits Tax. The details, and the thresholds, are in the [finance guide](../buying/finance.md).
+- **Luxury Car Tax.** For 2026-27 the LCT threshold for fuel-efficient vehicles, which includes EVs, is $91,661 [5].
 
-### Long Distance Travel
+!!! note "Not yet confirmed"
+    RACV reports that from April 2027, EVs priced up to $75,000 keep the full FBT exemption while those between $75,000 and the LCT threshold move to 75% of the standard FBT rate [6]. We have not confirmed this against the ATO or Treasury. Check with your novated lease provider or tax adviser.
 
-Yes, you can absolutely do road trips in an EV. You just plan your charging stops (usually every 2-3 hours, which coincides nicely with toilet and coffee breaks). Apps do the planning for you these days.
+### Road user charge
 
-The 800V architecture in the Zeekr 7X means you'll spend less time charging than many other EVs - we're talking 15-20 minute stops rather than 45-60 minutes. The X and 009 charge at more typical rates.
+NSW has legislated a distance-based road user charge for EVs that starts on 1 July 2027, or earlier if battery EVs reach 30% of new vehicle sales [7].
 
-## Running Costs: The Good News
+### State rebates
 
-Here's where EVs really shine for your wallet.
-
-### Fuel Savings
-
-Electricity is significantly cheaper than petrol. On average:
-
-- **Petrol car**: ~$20-25 per 100km (at $2/litre)
-- **EV (home charging)**: ~$3-5 per 100km
-- **EV (public fast charging)**: ~$8-12 per 100km
-
-Even with public charging, you're still way ahead. Most owners charge at home 90% of the time.
-
-### Maintenance Savings
-
-Remember those 2,000+ moving parts in petrol cars? They all need servicing, lubricating, and eventually replacing.
-
-**EVs don't have:**
-
-- Engine oil changes
-- Spark plugs
-- Timing belts
-- Transmission fluid
-- Fuel filters
-- Exhaust systems
-
-**You still need:**
-
-- Tyres (though they wear a bit faster due to the weight)
-- Brake fluid (changed less often thanks to regenerative braking)
-- Cabin air filters
-- Wiper blades
-- Washer fluid
-
-Typical service costs for an EV are 30-50% lower than petrol equivalents.
-
-### Regenerative Braking = Longer-Lasting Brakes
-
-When you lift off the accelerator, the electric motor reverses and acts as a generator, slowing the car and putting energy back into the battery. This means you barely use the friction brakes for normal driving.
-
-Some EV owners go 100,000km+ before needing brake pad replacements. That's not a typo.
-
-## Australian EV Incentives
-
-Depending on where you live, there are some decent perks:
-
-### Federal (National)
-
-- **FBT Exemption**: If buying through a novated lease, no Fringe Benefits Tax on eligible EVs under the fuel-efficient LCT threshold ($91,661 for 2026-27). Heads up: the full exemption is legislated to end on **31 March 2027** - from 1 April 2027 only EVs under $75,000 keep the full exemption. See the [finance guide](../buying/finance.md) for the detail.
-- **Import Tariff Exemption**: No 5% import duty on EVs priced under the LCT fuel-efficient threshold
-
-### Road User Charges
-
-No state currently charges EVs a per-kilometre road user charge - Victoria's was struck down by the High Court in October 2023. NSW has legislated one to start from 1 July 2027, and the federal government is considering a national scheme, so watch this space.
-
-### State-Based Incentives
-
-The big purchase rebates of 2021-2023 have mostly wound up (Victoria's closed mid-2023, NSW's ended December 2023), but some states still offer concessional stamp duty or registration for EVs - Queensland and the ACT among them. These change regularly, so check the current position for your state:
+The Victorian EV purchase subsidy ended in 2023, and the NSW EV rebate and stamp duty exemption ended on 31 December 2023 [6][7]. Stamp duty and registration rules differ by state:
 
 [State-by-State Resources](../resources/index.md){ .md-button }
 
-## Ready for the Next Step?
-
-Now that you've got the fundamentals down, let's look at what makes Zeekr special.
+## Next step
 
 [Why Choose Zeekr?](why-zeekr.md){ .md-button .md-button--primary }
-
-Or if you want to jump straight to comparing models:
-
 [Choose Your Zeekr](choosing-model.md){ .md-button }
+
+## Sources
+
+1. CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+2. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+3. CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+4. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+5. Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+6. RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
+7. NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.
