@@ -2523,11 +2523,23 @@ span .zi-icon {
     /* Compact: the panel never outgrows the window (viewport less the sticky
        wiki bar and tabs, and a gutter); its list scrolls inside it, so the
        heading, progress and Back to top stay in view on long pages. */
+    /* Material sizes the scroll area to the part of the sidebar in view, which
+       at the top of a page is less than the window. The panel fits that, so
+       its foot and Back to top never fall below the fold, cut mid-row. */
+    .md-sidebar--secondary .md-sidebar__inner {
+        height: 100%;
+    }
+
+    .md-sidebar--secondary .md-sidebar__inner > .zi-toc--panel {
+        max-height: min(100%, calc(100vh - 9rem));
+    }
+
     .md-sidebar--secondary .zi-toc--panel {
         position: relative;
         display: flex;
         flex-direction: column;
         max-height: calc(100vh - 9rem);
+        box-sizing: border-box;
         overflow: hidden;
         margin: 0;
         padding: var(--sp-3) var(--sp-2) 0;
