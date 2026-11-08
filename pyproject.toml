@@ -1,9 +1,9 @@
 [project]
 name = "zeekr-wiki"
 version = "1.0.0"
-description = "Zeekr Enthusiasts of Victoria (ZEV) Wiki"
+description = "Zeekr Insiders Australia wiki: an owner-run guide to buying and owning a Zeekr in Australia"
 authors = [
-    {name = "Thushan Fernando", email = "thushan@thushanfernando.com"}
+    {name = "Zeekr Insiders Australia"}
 ]
 readme = "README.md"
 license = {text = "MIT"}
