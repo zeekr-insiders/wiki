@@ -342,8 +342,9 @@ body {
     color: var(--ink);
 }
 
-/* 6. Heroes: an always-dark panel, square and flat. The home hero is the one
-   place the wiki body carries orange, as the site's home hero does. --------- */
+/* 6. Heroes: an always-dark panel, square and flat. No orange: the wiki keeps
+   orange to buttons, the current tab, reading progress, the ToC marker and
+   citations. --------------------------------------------------------------- */
 .hero-section,
 .hero-container {
     position: relative;
@@ -402,7 +403,6 @@ body {
 
 .hero--landing {
     text-align: left;
-    border-top: var(--rule) solid var(--zeekr-orange);
 }
 
 .hero--landing .hero-subtitle {
@@ -424,12 +424,12 @@ body {
     font-weight: 600;
     letter-spacing: var(--track-label);
     text-transform: uppercase;
-    color: var(--zeekr-orange);
+    color: var(--ink-muted);
 }
 
 .md-typeset .hero-title .accent,
 .hero-title .accent {
-    color: var(--zeekr-orange);
+    color: inherit;
 }
 
 /* 7. Buttons: 44px, square, hairline; primary is the orange fill with Carbon
