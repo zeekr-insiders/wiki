@@ -59,6 +59,16 @@ The manual does not describe a tolerance or offset setting.
 
 **What the manual says:** to restart both displays, press and hold the thumbstick on the left of the steering wheel and the scroll wheel on the right of the steering wheel together for ten seconds.
 
+## Owner tips
+
+### Optimising 7X audio settings
+
+**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the video [^7].
+
+Some owners find the default audio a little flat and recommend this walkthrough, which sets the EQ and sound settings for a fuller sound. The settings themselves are in the video [^7].
+
+{{ youtube("Flu6omnSUuk", "2025 Zeekr 7X Audio Settings (for most of us)", 'Nelson "Nelly" Yeung', "https://www.youtube.com/@nellyyeung888") }}
+
 ## Sources
 
 [^1]: Zeekr 7X Manual (unofficial mirror of the 2025 Long Range RWD, Netherlands edition), <https://zeekr-manual.pages.dev/>, accessed 8 November 2026.
@@ -67,3 +77,4 @@ The manual does not describe a tolerance or offset setting.
 [^4]: Zeekr 7X Manual (mirror), "Traffic sign information", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214910/>, accessed 8 November 2026.
 [^5]: Zeekr 7X Manual (mirror), "Stuck charging cable", <https://zeekr-manual.pages.dev/sections/hazardous-situations/T10211214/>, accessed 8 November 2026.
 [^6]: Zeekr 7X Manual (mirror), "Reboot the center display and driver display", <https://zeekr-manual.pages.dev/sections/center-display/T10213514/>, accessed 8 November 2026.
+[^7]: Nelson "Nelly" Yeung (YouTube), "2025 Zeekr 7X Audio Settings (for most of us)", <https://www.youtube.com/watch?v=Flu6omnSUuk>, accessed 8 November 2026.
