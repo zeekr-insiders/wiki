@@ -123,7 +123,7 @@ Use these variables for consistency:
 - `{{ extra.club.abbreviation }}` - "ZEV"
 - `{{ extra.club.full_name }}` - "Zeekr Enthusiasts of Victoria (ZEV)"
 - `{{ extra.club.location }}` - "Victoria, Australia"
-- `{{ extra.club.contact_email }}` - Contact email
+- `{{ extra.club.contact_url }}` - Contact form
 - `{{ extra.club.website }}` - Club website
 
 ## Best Practices
@@ -162,12 +162,12 @@ If you need help with templates:
 1. Check the specific template's comment block for guidance
 2. Look at existing content using that template
 3. Ask in the club Discord/forum
-4. Contact {{ extra.club.contact_email }}
+4. Use [the contact form]({{ extra.club.contact_url }})
 
 ### Technical Support
 For technical wiki issues:
 - **GitHub Issues:** Report bugs or suggest improvements
-- **Committee Contact:** {{ extra.club.contact_email }}
+- **Committee Contact:** [the contact form]({{ extra.club.contact_url }})
 - **Member Forum:** Ask the community
 
 ### Content Review
@@ -192,7 +192,7 @@ Templates are reviewed and updated:
 To suggest template improvements:
 1. Create a GitHub issue describing the improvement
 2. Submit a pull request with proposed changes
-3. Email suggestions to {{ extra.club.contact_email }}
+3. Use [the contact form]({{ extra.club.contact_url }})
 
 ---
 

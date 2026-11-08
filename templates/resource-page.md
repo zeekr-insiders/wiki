@@ -302,7 +302,7 @@ RESOURCE TYPES:
 {{ extra.club.abbreviation }} members can help maintain this resource by:
 
 1. **Submitting New Providers**
-   - Email {{ extra.club.contact_email }}
+   - Use [the contact form]({{ extra.club.contact_url }})
    - Include: Name, location, services, contact details
    - Add your experience and rating
 
@@ -397,4 +397,4 @@ If you have issues with a listed provider:
 !!! info "Disclaimer"
     This resource is maintained by {{ extra.club.full_name }} members for informational purposes. The club does not endorse or guarantee any listed providers. Members should verify current information and make their own assessment of service quality. Ratings and reviews reflect individual member experiences and may not represent all users' experiences.
 
-**To suggest updates or report issues with this resource, contact {{ extra.club.contact_email }}**
+**To suggest updates or report issues with this resource, use [the contact form]({{ extra.club.contact_url }})**

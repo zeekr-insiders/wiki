@@ -324,7 +324,7 @@ Send email to [EMAIL] with:
 **Compatibility:** [WHO TO ASK]
 
 ### Club Leadership
-For concerns about the group buy process: {{ extra.club.contact_email }}
+For concerns about the group buy process: [the contact form]({{ extra.club.contact_url }})
 
 ## Related Resources
 
@@ -386,4 +386,4 @@ For concerns about the group buy process: {{ extra.club.contact_email }}
 !!! info "Disclaimer"
     {{ extra.club.full_name }} facilitates group purchases as a member service. The club does not manufacture, warrant, or support the products directly. Members participate at their own discretion and risk. Always verify product compatibility and suitability for your specific vehicle and needs.
 
-*For questions about this group buy, contact [ORGANISER] or email {{ extra.club.contact_email }}*
+*For questions about this group buy, contact [ORGANISER] or use [the contact form]({{ extra.club.contact_url }})*

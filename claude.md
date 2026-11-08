@@ -262,15 +262,16 @@ Count directory levels from your markdown file to `content/`:
 MkDocs renders pages with trailing slash (e.g., `/models/7x/overview/`), adding an extra level. **Always add one more `../` than you'd expect.**
 
 **Theme Awareness:**
-Icons use CSS filters in `icons.css` to display in Zeekr orange (#F76400). No need to modify SVGs - they automatically match the theme.
+A CSS filter in `zeekr.css` draws icons in the page's ink colour (Carbon on light, Arctic White on dark), never orange, to match the front door. Draw new SVGs in black with `stroke="currentColor"`; no need to colour them.
 
 ## Key Files
 
 | File | Purpose |
 |------|---------|
 | `mkdocs.yml` | Site config, navigation, variables |
-| `content/stylesheets/zeekr.css` | Custom styling (dark/light themes) |
-| `content/stylesheets/icons.css` | SVG icon styling and theme filters |
+| `content/stylesheets/zeekr.css` | The whole theme: the front door's tokens, icon colouring, the On this page panel |
+| `overrides/` | Masthead, footer, header, ToC and 404 templates matching the front door; `.icons/zi/` holds its glyphs |
+| `docs/image-brief.md` | Images and icons still to make, with prompts |
 | `content/assets/icons/` | Custom SVG icons (18 icons) |
 | `pyproject.toml` | Python dependencies (uv) |
 | `Makefile` | Build commands |
@@ -279,7 +280,7 @@ Icons use CSS filters in `icons.css` to display in Zeekr orange (#F76400). No ne
 ## Development Workflow
 
 1. **Edit content** in `content/` directory
-2. **Preview locally**: `make run` → http://localhost:8000/zeekr/
+2. **Preview locally**: `make run` → http://localhost:8000/
 3. **Check for issues**: Watch terminal for warnings
 4. **Validate**: `make ready` before committing
 5. **Deploy**: `make deploy` pushes to GitHub Pages

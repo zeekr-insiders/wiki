@@ -349,6 +349,6 @@ Thank you to all {{ extra.club.abbreviation }} members and guests who attended a
 </div>
 
 **Contact Information:**
-For more information about this event or future {{ extra.club.abbreviation }} events, contact us at {{ extra.club.contact_email }} or visit {{ extra.club.website }}.
+For more information about this event or future {{ extra.club.abbreviation }} events, use [the contact form]({{ extra.club.contact_url }}) or visit {{ extra.club.website }}.
 
 *This report represents the experiences and feedback of {{ extra.club.full_name }} members. Event details and member feedback are documented with permission.*
