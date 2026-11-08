@@ -1790,7 +1790,8 @@ span .zi-icon {
         gap: var(--sp-2);
         min-height: var(--tap);
         color: var(--ink);
-        font-size: var(--fs-sm);
+        /* The drawer's own nav text size, so the two lists read as one menu. */
+        font-size: var(--fs-md);
         font-weight: 600;
         text-decoration: none;
     }
