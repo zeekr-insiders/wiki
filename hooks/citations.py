@@ -23,6 +23,7 @@ _REF = re.compile(r'<a\b[^>]*\bclass="footnote-ref"[^>]*>')
 _BACK = re.compile(r'(?:&#160;|\xa0)?<a\b[^>]*\bclass="footnote-backref"[^>]*>.*?</a>', re.S)
 _HREF = re.compile(r'\bhref="([^"]*)"')
 _TAG = re.compile(r"<[^>]+>")
+_GAP = re.compile(r'[ \t\n]+(<sup id="fnref)')
 
 
 def _source(inner: str) -> tuple[str, str]:
@@ -90,4 +91,7 @@ def on_page_content(content: str, page, config, files) -> str:
             attrs.append(f'data-zi-href="{html.escape(url)}"')
         return "<a " + " ".join(attrs) + ">"
 
-    return _REF.sub(ref, content)
+    content = _REF.sub(ref, content)
+    # Pages write "text [1]" with a space, which would let a superscript wrap
+    # onto a line of its own. A superscript hugs the word it cites.
+    return _GAP.sub(r"\1", content)

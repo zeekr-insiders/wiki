@@ -126,9 +126,17 @@
       meta.textContent = url ? host(url) + ' \u00b7 ' + (mac ? 'Cmd' : 'Ctrl') + '-click to open' : '';
       tip.replaceChildren(label, meta);
       tip.hidden = false;
+      place();
+      window.addEventListener('scroll', place, { passive: true });
+    }
 
-      // Above the marker where there is room, otherwise below; kept inside the viewport.
-      var r = link.getBoundingClientRect();
+    // Above the marker where there is room, otherwise below; kept inside the
+    // viewport. Scrolling (including focus scrolling a marker into view)
+    // follows the marker rather than hiding the tip.
+    function place() {
+      if (!current) return;
+      var r = current.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) return hide();
       var gap = 8;
       var w = tip.offsetWidth;
       var h = tip.offsetHeight;
@@ -137,12 +145,12 @@
       if (top < gap) top = r.bottom + gap;
       tip.style.left = left + 'px';
       tip.style.top = top + 'px';
-      window.addEventListener('scroll', hide, { passive: true, once: true });
     }
 
     function hide() {
       current = null;
       tip.hidden = true;
+      window.removeEventListener('scroll', place);
     }
 
     function open(e, link) {
