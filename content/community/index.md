@@ -2,7 +2,7 @@
 
 Run by owners, for owners. Independent of Zeekr Australia, and happy to work with them where it helps owners.
 
-Zeekr Insiders is a national community of Zeekr owners, with state representatives organising things locally. A volunteer leadership team meets every fortnight to plan drives, events and the club's websites.
+Zeekr Insiders is a national community of Zeekr owners, with state leads organising things locally. A volunteer leadership team meets every fortnight to plan drives, events and the club's websites.
 
 ## What we do
 
@@ -18,7 +18,7 @@ The club's WhatsApp group chat is the main channel and the fastest way to reach 
 
 - Find a drive or event on the [Drives page](https://zeekrinsiders.com.au/drives).
 - Read the [club guides](https://zeekrinsiders.com.au/garage/guides) before your first drive, including the [code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct) [^3].
-- Want to run something? You don't need to be on the leadership team: talk to your state rep or post in the group chat [^1].
+- Want to run something? You don't need to be on the leadership team: talk to your state lead or post in the group chat [^1].
 
 ## Help with the wiki
 

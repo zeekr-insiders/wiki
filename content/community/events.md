@@ -24,7 +24,7 @@ Read the [club guides](https://zeekrinsiders.com.au/garage/guides):
 
 ## Running one yourself
 
-You don't need to be on the leadership team. Propose the idea to your state rep or in the group chat, and leadership will help with promotion and coordination [^1]. The organiser guides cover the rest:
+You don't need to be on the leadership team. Propose the idea to your state lead or in the group chat, and leadership will help with promotion and coordination [^1]. The organiser guides cover the rest:
 
 - [Organising an event](https://zeekrinsiders.com.au/garage/guides#organising-an-event)
 - [Planning a trip](https://zeekrinsiders.com.au/garage/guides#planning-a-trip)
