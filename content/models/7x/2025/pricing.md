@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X price in Australia"
+description: "Zeekr 7X prices in Australia for the RWD, Long Range RWD and Performance AWD before on-road costs, unchanged for the MY27, with options and launch offers."
 ---
 
 # Zeekr 7X prices

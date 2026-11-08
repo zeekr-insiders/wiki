@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X vs X vs 009 comparison"
+description: "Zeekr 7X, X and 009 compared side by side for Australia: price, battery, range, charging, size and towing, with each figure's model year and source."
 ---
 
 # Model comparison

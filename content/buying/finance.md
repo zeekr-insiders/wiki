@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr finance, novated lease and FBT"
+description: "Paying for a Zeekr in Australia: cash, novated lease, car loan or chattel mortgage, how the EV FBT exemption and LCT threshold work, and what to ask a lender."
 ---
 
 # Finance options

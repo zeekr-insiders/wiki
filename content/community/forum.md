@@ -1,3 +1,7 @@
+---
+seo_title: "Zeekr Insiders forum"
+description: "The Zeekr Insiders owners' forum: what it is for, how it fits with the wiki and the club's other channels, and where to ask questions about owning a Zeekr."
+---
 # Forum
 
 We're setting up a proper forum for {{ extra.club.full_name }}. It's not quite ready yet, but here's what you can expect.

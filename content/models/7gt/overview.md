@@ -1,7 +1,8 @@
 ---
 title: Zeekr 7GT
-description: Zeekr's electric shooting brake wagon. Confirmed for Australia, not yet on sale. What is known so far.
 last_checked: 2026-11-08
+seo_title: "Zeekr 7GT electric wagon in Australia"
+description: "The Zeekr 7GT electric shooting brake: confirmed for Australia but not yet on sale. What is known so far about its range, power, timing and how it compares."
 # Preloads this model's hero banner (overrides/main.html).
 hero_image: 7gt
 ---

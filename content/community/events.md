@@ -1,3 +1,7 @@
+---
+seo_title: "Zeekr club drives and events"
+description: "Zeekr Insiders drives and events run regularly across Australia. Where to find the current list of club drives, with dates and how to join one near you."
+---
 # Drives and events
 
 Club drives and events run regularly across Australia. The current list, with dates and how to join, is on the website's [Drives page](https://zeekrinsiders.com.au/drives).

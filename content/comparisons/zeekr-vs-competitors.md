@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr vs other EVs: how to compare"
+description: "How to compare a Zeekr with other EVs in Australia: what to check on price, range, charging and warranty, and why this page does not publish rival figures."
 ---
 
 # Zeekr vs other EVs

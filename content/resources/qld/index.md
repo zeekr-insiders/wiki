@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Queensland EV stamp duty and rego"
+description: "Buying a Zeekr in Queensland: EV stamp duty rates by value, incentives, servicing, driving an EV in the heat, and useful local links for Queensland owners."
 ---
 
 # Queensland

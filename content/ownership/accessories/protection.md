@@ -1,3 +1,7 @@
+---
+seo_title: "Zeekr PPF, ceramic coating and tint"
+description: "Paint protection film, ceramic coating and window tint for a Zeekr: what each does, how much to cover, legal tint limits, costs and what to ask an installer."
+---
 # Paint and window protection
 
 Paint protection film (PPF), ceramic coating and window tint are the most common things owners add after delivery. This page explains what each one does and what to ask an installer. Prices vary a lot by city, installer and product, so get more than one quote.

@@ -1,4 +1,8 @@
-# Choosing an Installer
+---
+seo_title: "Choosing a PPF, tint or accessory installer"
+description: "How to choose an installer for PPF, window tint, ceramic coating and accessories on your Zeekr, what a good quote covers, and what to do if work goes wrong."
+---
+# Choosing an installer
 
 How to pick an installer for PPF, window tint, ceramic coating and other work, and what to do if something goes wrong. We don't list or endorse businesses.
 

@@ -1,7 +1,8 @@
 ---
 title: AC vs DC and the charging curve
-description: How AC and DC charging differ, why fast-charge times are quoted as 10 to 80%, why you rarely see the peak kW, and what 800V means in brief.
 last_checked: 2026-11-08
+seo_title: "AC vs DC charging and the charging curve"
+description: "AC vs DC charging explained: where the conversion happens, why fast-charge times are quoted 10 to 80%, why you rarely see the peak kW, and what 800V means."
 ---
 
 # AC vs DC and the charging curve

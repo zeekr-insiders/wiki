@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr roadside assistance and support"
+description: "Zeekr Australia roadside assistance and customer support numbers, federal EV tax that applies in every state, useful EV apps, and links to each state page."
 ---
 
 # National

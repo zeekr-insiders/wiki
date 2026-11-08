@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Victoria EV stamp duty and rego"
+description: "Buying a Zeekr in Victoria: the green car stamp duty rate from July 2026, the ended EV subsidy, local servicing, and useful links for Victorian Zeekr owners."
 ---
 
 # Victoria

@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr prices and on-road costs in Australia"
+description: "Current Zeekr 7X, X and 009 prices in Australia before on-road costs, what stamp duty, registration and CTP add, and tips for negotiating with a Zeekr dealer."
 ---
 
 # Prices and on-road costs

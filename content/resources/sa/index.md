@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "South Australia EV stamp duty and rego"
+description: "Buying a Zeekr in South Australia: stamp duty and registration for EVs, the ended $3,000 rebate, and local servicing, charging and club resources."
 ---
 
 # South Australia

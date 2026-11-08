@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Public EV charging for Zeekr owners"
+description: "Public charging a Zeekr in Australia: the cable and apps to sort out first, how fast each Zeekr charges on DC, charging etiquette and local tips from owners."
 ---
 
 # Public charging

@@ -1,3 +1,7 @@
+---
+seo_title: "Zeekr Insiders owners' club"
+description: "Zeekr Insiders is an owner-run Zeekr club in Australia, independent of Zeekr Australia. Find drives, group buys and the forum, and how to get involved."
+---
 # Community
 
 Run by owners, for owners. Independent of Zeekr Australia, and happy to work with them where it helps owners.

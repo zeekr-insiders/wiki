@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "WA EV stamp duty and rego"
+description: "Buying a Zeekr in Western Australia: stamp duty and registration for EVs, the rebate that ended in May 2025, and local servicing and charging."
 ---
 
 # Western Australia

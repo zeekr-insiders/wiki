@@ -1,3 +1,7 @@
+---
+seo_title: "Getting started with Zeekr and EVs"
+description: "New to EVs or to Zeekr? Start here: EV explainers, running costs and incentives, why owners chose Zeekr and how to choose between the 7X, X and 009."
+---
 # Getting started
 
 New to EVs, or new to Zeekr? Start here.

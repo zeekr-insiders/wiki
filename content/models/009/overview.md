@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 009 people mover"
+description: "The Zeekr 009 electric people mover in Australia: six or seven seats, 116 kWh battery, WLTP range, price before on-road costs and the guides for 009 owners."
 # Preloads this model's hero banner (overrides/main.html).
 hero_image: 009
 ---

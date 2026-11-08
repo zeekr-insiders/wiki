@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr dealers and service centres in Australia"
+description: "Where to buy and service a Zeekr in Australia: the wiki's single list of Zeekr sales and service locations, plus the questions to ask a dealer before you buy."
 ---
 
 # Where to buy and service

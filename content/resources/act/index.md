@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "ACT EV incentives and rego for Zeekr owners"
+description: "EV incentives in the ACT for Zeekr owners: the interest-free loan of up to $15,000, what ended for registration and duty, and local servicing and charging."
 ---
 
 # Australian Capital Territory

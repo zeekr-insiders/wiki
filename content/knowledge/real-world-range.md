@@ -1,7 +1,8 @@
 ---
 title: Range in the real world
-description: Why your Zeekr's range differs from the WLTP number, and what speed, cold, wind, rain, roof loads and towing do to it, using sourced figures.
 last_checked: 2026-11-08
+seo_title: "EV real-world range vs WLTP"
+description: "Why real EV range differs from the WLTP figure: Australian test results, and what speed, cold, wind, roof loads and towing do to range, with sourced figures."
 ---
 
 # Range in the real world

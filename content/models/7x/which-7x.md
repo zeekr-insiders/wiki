@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X MY25/MY26 vs MY27: which do I have?"
+description: "How to tell the original Zeekr 7X (MY25/MY26) from the updated 2027 7X (MY27) in Australia, what changed between them and what is still unknown."
 ---
 
 # Which 7X do I have?

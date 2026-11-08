@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr X specs: battery, range, charging"
+description: "Zeekr X specifications for Australia: 2026 RWD and AWD dimensions, battery, power, WLTP range, AC and DC charging and warranty, with notes for MY25 owners."
 ---
 
 # Zeekr X specifications

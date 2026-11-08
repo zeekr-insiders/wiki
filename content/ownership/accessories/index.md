@@ -1,3 +1,7 @@
+---
+seo_title: "Zeekr accessories and protection"
+description: "Zeekr accessories and protection from owners: paint protection film, ceramic coating, window tint, recommended accessories and how to choose an installer."
+---
 # Accessories
 
 Protection, accessories and installers, from owners in the {{ extra.club.full_name }} community. Check fitment for your model and model year: the 2027 7X (MY27) has a revised centre console and rear privacy glass as standard [^1], so some advice for the MY25/MY26 car doesn't carry over.

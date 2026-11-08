@@ -1,7 +1,8 @@
 ---
 title: Plugs and cables
-description: Type 2 and CCS2 explained, tethered vs untethered chargers, and the portable 10 A or 15 A charger with its safety rules, including no extension leads.
 last_checked: 2026-11-08
+seo_title: "Type 2, CCS2 and EV cables in Australia"
+description: "EV plugs and cables in Australia: Type 2 and CCS2, tethered vs untethered chargers, and portable charger safety, including why Zeekr says no extension leads."
 ---
 
 # Plugs and cables

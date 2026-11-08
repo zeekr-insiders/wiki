@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr owner resources in Australia"
+description: "Zeekr owner resources for Australia: roadside assistance and support numbers, federal EV tax, and state-by-state duty, registration and EV incentives."
 ---
 
 # Resources

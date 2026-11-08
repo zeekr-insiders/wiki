@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr home charging setup"
+description: "Setting up home charging for a Zeekr: portable charger or wallbox, 7 kW vs 22 kW, what a quote should cover, solar and smart charging, tariffs and strata."
 ---
 
 # Home charging

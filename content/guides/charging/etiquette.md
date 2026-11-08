@@ -2,6 +2,7 @@
 title: Charging etiquette
 description: Practical charging manners for Zeekr owners at public DC and AC chargers, on road trips and on club drives, with the Australian rules on EV bays.
 last_checked: 2026-11-08
+seo_title: "EV charging etiquette in Australia"
 ---
 
 # Charging etiquette

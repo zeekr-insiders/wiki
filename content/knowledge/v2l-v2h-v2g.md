@@ -1,7 +1,8 @@
 ---
 title: V2L, V2H and V2G
-description: What vehicle-to-load, vehicle-to-home and vehicle-to-grid mean, which Zeekrs support V2L, and the current Australian status of V2H and V2G.
 last_checked: 2026-11-08
+seo_title: "V2L, V2H and V2G explained"
+description: "V2L, V2H and V2G explained for Australia: what each needs, which Zeekrs support vehicle-to-load, and where vehicle-to-grid stands with chargers and approvals."
 ---
 
 # V2L, V2H and V2G

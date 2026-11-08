@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 009 price in Australia"
+description: "Zeekr 009 prices in Australia for each grade before on-road costs, as announced at the November 2025 launch, and what to check before you order one."
 ---
 
 # Zeekr 009 prices

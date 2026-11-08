@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X servicing and warranty"
+description: "Zeekr 7X servicing and warranty in Australia: the service interval, MY27 launch-offer servicing, the 8-year battery warranty and roadside assistance."
 ---
 
 # Zeekr 7X servicing and warranty

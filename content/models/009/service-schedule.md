@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 009 servicing and warranty"
+description: "Zeekr 009 servicing and warranty in Australia: the service interval, the vehicle and battery warranty, how to keep your warranty valid, and roadside assistance."
 ---
 
 # Zeekr 009 servicing and warranty

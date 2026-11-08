@@ -1,7 +1,8 @@
 ---
 title: NMC vs LFP batteries
-description: What the two common EV battery chemistries are, how they differ, and which Zeekr grades in Australia use which.
 last_checked: 2026-11-08
+seo_title: "NMC vs LFP batteries: which Zeekr has which"
+description: "NMC vs LFP EV batteries explained: how the two chemistries differ in weight, lifespan and charging, and which Zeekr X, 7X and 009 grades in Australia use which."
 ---
 
 # NMC vs LFP batteries

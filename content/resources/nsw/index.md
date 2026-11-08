@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "NSW EV stamp duty and road user charge"
+description: "Buying a Zeekr in NSW: standard motor vehicle duty now applies to EVs, the rebate has ended, the road user charge from July 2027, and local resources."
 ---
 
 # New South Wales

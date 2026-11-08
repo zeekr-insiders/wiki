@@ -1,3 +1,7 @@
+---
+seo_title: "Insuring a Zeekr in Australia"
+description: "Insuring a Zeekr or any EV in Australia: what is different about EV cover, agreed vs market value, what to tell your insurer, and questions to ask insurers."
+---
 # Insurance
 
 Insuring an EV is mostly like insuring any car, with a few extra things to check. This page is general guidance, not advice on any particular policy.

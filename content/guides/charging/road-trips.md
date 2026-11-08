@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr road trip planning"
+description: "Planning a road trip in a Zeekr: plan on less than the WLTP range, stop at 80% unless you need more, peak charging rates, planning tools and Zeekr Roadside."
 ---
 
 # Road trips

@@ -1,7 +1,8 @@
 ---
 title: kW vs kWh
-description: The difference between kilowatts and kilowatt-hours, with the two sums every EV owner needs for charge time and running cost.
 last_checked: 2026-11-08
+seo_title: "kW vs kWh explained for EV owners"
+description: "kW vs kWh explained: the difference between power and energy, where you see each on a Zeekr, and the two sums every EV owner needs for charge time and cost."
 ---
 
 # kW vs kWh

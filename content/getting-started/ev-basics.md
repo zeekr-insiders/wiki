@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "EV running costs and incentives in Australia"
+description: "What an EV costs to run in Australia and the taxes and incentives that apply: home vs public charging, servicing, FBT, LCT, road user charges and state rebates."
 ---
 
 # Running costs and incentives

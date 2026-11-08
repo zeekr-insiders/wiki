@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr delivery checklist"
+description: "Taking delivery of a new Zeekr: typical timeframes after ordering, the pre-delivery inspection, and a delivery day checklist for outside, inside and functions."
 ---
 
 # Taking delivery

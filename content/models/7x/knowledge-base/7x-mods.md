@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X owner modifications"
+description: "Zeekr 7X modifications owners ask about, such as dashcams, screen protectors and mud flaps, and how unapproved changes can affect your Zeekr warranty."
 ---
 
 # Zeekr 7X owner modifications

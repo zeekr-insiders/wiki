@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "New Zeekr owner checklist: first 30 days"
+description: "Just picked up your Zeekr? Numbers to save, paperwork to keep, home charging, the app and the settings owners ask about first in their first 30 days."
 ---
 
 # I've just got my car

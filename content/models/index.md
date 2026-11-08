@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr models in Australia"
+description: "The Zeekr models on sale in Australia, the 7X, X and 009, plus the 7GT electric wagon that is confirmed but not yet on sale, with prices, specs and guides."
 ---
 
 # Models

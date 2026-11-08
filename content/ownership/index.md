@@ -1,3 +1,7 @@
+---
+seo_title: "Owning a Zeekr in Australia"
+description: "Living with a Zeekr in Australia: your first 30 days, home and public charging, insurance, accessories, paint protection and choosing an installer."
+---
 # Ownership
 
 Practical guidance for living with your Zeekr, whether you collected it last week or last year.

@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr Australia owners' wiki"
+description: "Owner-run guide to buying and owning a Zeekr in Australia: 7X, X and 009 prices, specs, charging, servicing and running costs, with sources on every page."
 hide:
   - navigation
   - toc

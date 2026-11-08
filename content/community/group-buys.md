@@ -1,3 +1,7 @@
+---
+seo_title: "Zeekr group buys"
+description: "How Zeekr Insiders group buys work: owners pool orders for accessories and services to get a better price, how deals are chosen and how to take part."
+---
 # Group buys
 
 Group buys are simple: we pool our orders together to get discounts on accessories and services that would otherwise cost more individually. It's one of the most practical benefits of being part of {{ extra.club.abbreviation }}.

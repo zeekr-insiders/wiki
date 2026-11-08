@@ -1,7 +1,8 @@
 ---
 title: Charging to 80% vs 100%
-description: Why LFP and NMC Zeekrs get different charge-limit advice, what LFP calibration is, and a simple rule for daily and trip charging.
 last_checked: 2026-11-08
+seo_title: "Charge to 80% or 100%? LFP vs NMC"
+description: "Should you charge your EV to 80% or 100%? Why NMC and LFP Zeekrs get different charge-limit advice, what LFP calibration is, and a simple daily and trip rule."
 ---
 
 # Charging to 80% vs 100%

@@ -2,6 +2,7 @@
 title: Knowledge
 description: Evergreen EV explainers for Australian Zeekr owners, from battery chemistry and charging to V2G, with sources and links to the charging guides.
 last_checked: 2026-11-08
+seo_title: "EV knowledge: batteries, charging and range"
 ---
 
 # Knowledge

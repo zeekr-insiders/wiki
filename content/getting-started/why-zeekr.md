@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Why Zeekr? Pros and cons in Australia"
+description: "Why buy a Zeekr in Australia: what you get for the money, the warranty and servicing, and the trade-offs of a newer brand, sticking to what we can source."
 ---
 
 # Why Zeekr?

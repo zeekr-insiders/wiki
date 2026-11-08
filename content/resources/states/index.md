@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "EV stamp duty and rego by state"
+description: "EV stamp duty, registration and incentives differ by Australian state and territory. Pick yours for current duty rates, rebates and local Zeekr resources."
 ---
 
 # By state and territory

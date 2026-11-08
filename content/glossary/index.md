@@ -1,6 +1,7 @@
 ---
 last_checked: 2026-11-08
-description: Plain-English definitions of the EV, charging, buying and Zeekr terms used across the wiki, each linked to the page that explains it.
+seo_title: "EV and Zeekr glossary"
+description: "EV and Zeekr glossary: plain-English definitions of battery, charging, buying and Zeekr terms like SOC, LFP, V2L and LCT, each linked to its explainer."
 hide:
   - toc
 ---

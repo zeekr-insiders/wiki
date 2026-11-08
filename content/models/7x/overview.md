@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X electric SUV"
+description: "The Zeekr 7X electric SUV in Australia: three grades, 800V charging, WLTP range up to 627 km on the MY27, prices before on-road costs and owner guides."
 # Preloads this model's hero banner (overrides/main.html).
 hero_image: 7x
 ---

@@ -1,7 +1,8 @@
 ---
 title: Home charging explained
-description: What an Australian home supply can run, 7 kW single-phase vs 11 or 22 kW three-phase, real charge times for each Zeekr battery, and the cost and network approval basics.
 last_checked: 2026-11-08
+seo_title: "Home EV charging: single vs three-phase"
+description: "Home EV charging explained: what single-phase and three-phase supply can run, real charge times for each Zeekr battery, install costs and network approval."
 ---
 
 # Home charging explained

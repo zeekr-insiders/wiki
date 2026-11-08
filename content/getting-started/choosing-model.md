@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Which Zeekr should I buy? 7X, X or 009"
+description: "Choosing between the Zeekr 7X, X and 009 in Australia: which fits how you drive, park and carry people, with price, size, range and charging compared."
 ---
 
 # Choosing a model

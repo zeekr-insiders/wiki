@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Zeekr 7X owner tips and settings"
+description: "Zeekr 7X owner tips: practical settings and habits other owners recommend, starting with audio and EQ settings for a fuller sound, each with its source."
 ---
 
 # Zeekr 7X owner tips

@@ -1,5 +1,7 @@
 ---
 last_checked: 2026-11-08
+seo_title: "Tasmania EV stamp duty and rego"
+description: "Buying a Zeekr in Tasmania: stamp duty and registration for EVs, no open EV rebates, and local servicing, charging and club resources for Tasmanian owners."
 ---
 
 # Tasmania

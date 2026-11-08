@@ -1,3 +1,7 @@
+---
+seo_title: "Buying a Zeekr in Australia"
+description: "How to buy a Zeekr in Australia: where to buy and service, prices and on-road costs, finance and novated leases, and what to check on delivery day."
+---
 # Buying
 
 From finding a dealer to taking delivery, this section covers buying a Zeekr in Australia.
