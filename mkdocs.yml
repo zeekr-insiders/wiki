@@ -26,6 +26,10 @@ theme:
     menu: zi/menu
     search: zi/search
     top: zi/up
+    # Search's back, share and clear buttons, in the vendored Lucide outlines rather than Material's glyphs.
+    previous: lucide/arrow-left
+    share: lucide/share-2
+    close: lucide/x
   palette:
     # Two states, as on the front door: the first visit follows the OS, the toggle then picks one.
     - media: "(prefers-color-scheme: dark)"
