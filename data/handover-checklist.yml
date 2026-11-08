@@ -1,0 +1,574 @@
+# The Handover checklist (content/buying/handover-checklist.md), rendered by the
+# handover_checklist() macro in main.py and made interactive by javascripts/handover.js.
+#
+# phases:   the three phases, in order.
+# sections: id, title, phase. Shown in this order within each phase.
+# items:    id (stable: it is the localStorage key for a reader's tick, so never reuse or rename one),
+#           section, text (the thing to do), hint (optional, one line), models (all, 7x, 7x-my27, x, 009),
+#           cite (optional keys into sources), link (optional {label, page}, page relative to content/
+#           or an #anchor on the page).
+# sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
+#
+# Where no source says what comes with the car, an item says "Confirm what your order includes".
+
+phases:
+  - {id: pre, title: "Before delivery day"}
+  - {id: delivery, title: "Delivery day"}
+  - {id: post, title: "After delivery"}
+
+sections:
+  - {id: pre-apps, title: "Set up the charging apps (the day before)", phase: pre}
+  - {id: pre-prep, title: "Car, app and paperwork", phase: pre}
+  - {id: pre-plan, title: "Home charging and the drive home", phase: pre}
+  - {id: paper, title: "Paperwork", phase: delivery}
+  - {id: ext, title: "Exterior walk-around (in daylight)", phase: delivery}
+  - {id: int, title: "Interior", phase: delivery}
+  - {id: box, title: "In the box and in the car", phase: delivery}
+  - {id: walk, title: "The consultant walks you through", phase: delivery}
+  - {id: chg, title: "Charging check", phase: delivery}
+  - {id: False, title: "Before you drive off", phase: delivery}
+  - {id: post-days, title: "First days", phase: post}
+  - {id: post-week, title: "First week and the club", phase: post}
+
+sources:
+  zeekr-service: "Zeekr Australia, \"Service and Warranty\", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026."
+  warranty: "Zeekr Intelligent Technology Australia, \"Australian Warranty Policy\", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026."
+  roadside-terms: "Zeekr, \"New Vehicle Roadside Assistance Program: Terms and Conditions (current as at April 2026)\", <https://www.datocms-assets.com/130529/1781067092-zeekr-roadside-assistance-t-c-s.pdf>, accessed 8 November 2026."
+  accc: "ACCC, \"Just bought a new car?\", <https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car>, accessed 8 November 2026."
+  carexpert-7x: "CarExpert, \"2027 Zeekr 7X update: more power, same price\", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026."
+  thebeep-7x: "The Beep, \"2027 Zeekr 7X adds power and features without a price rise\", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026."
+  zecar-my27: "ZeCar, \"Zeekr 7X MY27 launch offer\", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026."
+  manual-charging: "Zeekr 7X Manual (unofficial mirror, Netherlands edition), \"Charge the car\", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026."
+  chargefox: "Chargefox, \"Chargefox home page (app sign-up)\", <https://www.chargefox.com/>, accessed 8 November 2026."
+  evie: "Evie Networks, \"Evie home page (app download)\", <https://www.evie.com.au/>, accessed 8 November 2026."
+  nrma: "NRMA, \"EV charging (My NRMA app, tap and pay)\", <https://www.mynrma.com.au/electric-vehicles/charging>, accessed 8 November 2026."
+  jolt: "JOLT, \"JOLT Australia home page (app registration)\", <https://joltcharge.com/au/>, accessed 8 November 2026."
+  carexpert-7x-launch: "CarExpert, \"2026 Zeekr 7X price and specs\", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026."
+  nate-handover: "Nate's Tech & Torque (YouTube), \"Zeekr 7X - Detailed Delivery Handover | Infotainment, App Guide and everything you need to know!\", <https://www.youtube.com/watch?v=KlVyyYCinu4>, accessed 8 November 2026."
+  zeekr-7x: "Zeekr Australia, \"Zeekr 7X\", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026."
+  carexpert-x: "CarExpert, \"2026 Zeekr X price and specs updated: EV gets massive price cuts\", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026."
+  carexpert-009: "CarExpert, \"2026 Zeekr 009: Luxury EV people mover gets more affordable\", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026."
+  racv-7x-review: "RACV, \"2026 Zeekr 7X RWD review (14 Oct 2026)\", <https://www.racv.com.au/royalauto/car-reviews/zeekr/2026-zeekr-7x-rwd-review.html>, accessed 8 November 2026."
+  carexpert-7x-longterm: "CarExpert, \"2026 Zeekr 7X review: long-term conclusion (3 Nov 2026)\", <https://www.carexpert.com.au/car-reviews/2026-zeekr-7x-review-long-term-conclusion>, accessed 8 November 2026."
+
+items:
+  - id: pre-app-chargefox
+    section: pre-apps
+    text: "Install Chargefox and create your account"
+    hint: "Sign up in the app. Add a payment card now, not standing at a charger."
+    models: ["all"]
+    cite: [chargefox]
+  - id: pre-app-evie
+    section: pre-apps
+    text: "Install Evie and create your account"
+    hint: "Same again: do it at home on wifi."
+    models: ["all"]
+    cite: [evie]
+  - id: pre-app-nrma
+    section: pre-apps
+    text: "Install My NRMA and set up your account"
+    hint: "Sessions have to start in the My NRMA app to get the member price. Some sites take tap and pay."
+    models: ["all"]
+    cite: [nrma]
+  - id: pre-app-jolt
+    section: pre-apps
+    text: "Install JOLT if it has sites near you"
+    hint: "Registration is in the app; you start a session by QR code or the code on the charger."
+    models: ["all"]
+    cite: [jolt]
+  - id: pre-app-card
+    section: pre-apps
+    text: "Add a payment card to every app you set up"
+    hint: "One card for all of them keeps it simple."
+    models: ["all"]
+  - id: pre-app-rfid
+    section: pre-apps
+    text: "Ask each network if it offers an RFID card or tag"
+    hint: "Not covered on the sign-up pages we checked, so ask. App-only is fine for most people."
+    models: ["all"]
+  - id: pre-video
+    section: pre-prep
+    text: "Watch before you go: Nate's Tech & Torque 7X handover video"
+    hint: "A full 7X handover covering the infotainment and the Zeekr app. It shows the MY25/MY26 car."
+    models: ["7x"]
+    cite: [nate-handover]
+    link: {label: "Watch it below", page: "#watch-before-you-go"}
+  - id: pre-zeekr-app
+    section: pre-prep
+    text: "Install the Zeekr app and create your account"
+    hint: "Done before the day, you can pair the car in minutes instead of waiting on a sign-up email."
+    models: ["all"]
+    cite: [nate-handover]
+  - id: pre-licence
+    section: pre-prep
+    text: "Driver's licence in your wallet"
+    hint: "Use the licence of the person who is insured."
+    models: ["all"]
+  - id: pre-insurance
+    section: pre-prep
+    text: "Comprehensive insurance starts on delivery day"
+    hint: "Keep the confirmation on your phone. Give the insurer the VIN as soon as you have it."
+    models: ["all"]
+  - id: pre-payment
+    section: pre-prep
+    text: "Final payment or finance confirmed in writing"
+    hint: "Bank transfer receipt or finance approval, saved on your phone."
+    models: ["all"]
+  - id: pre-time
+    section: pre-prep
+    text: "Booked a daylight slot and allowed an hour or two"
+    hint: "A rushed handover is how things get missed. Ask the dealer to book you in properly."
+    models: ["all"]
+  - id: pre-order-copy
+    section: pre-prep
+    text: "Your order, spec and any promised extras saved on your phone"
+    hint: "You will check the car and the paperwork against this."
+    models: ["all"]
+  - id: pre-model-year
+    section: pre-prep
+    text: "Confirmed in writing which model year you are getting"
+    hint: "MY25/MY26 and MY27 differ in features and look."
+    models: ["7x"]
+    cite: [carexpert-7x]
+    link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: pre-offer-terms
+    section: pre-prep
+    text: "Launch offer terms in writing"
+    hint: "Offer items per the MY27 launch offer: two years of servicing, 7 kW wallbox (supply only), free colour choice, 5,000 Zeekr app points. Offer applied to orders placed 1 Nov to 31 Dec 2026."
+    models: ["7x-my27"]
+    cite: [zecar-my27, carexpert-7x, thebeep-7x]
+  - id: pre-home-charger
+    section: pre-plan
+    text: "Home charger booked or installed if you need one"
+    hint: "A licensed electrician does the install. See the quote checklist in Home charging."
+    models: ["all"]
+    link: {label: "Home charging", page: "guides/charging/home-setup.md"}
+  - id: pre-home-wallbox
+    section: pre-plan
+    text: "MY27 launch wallbox: arrange an electrician"
+    hint: "The offer covers the wallbox only. Installation is at your cost."
+    models: ["7x-my27"]
+    cite: [zecar-my27, carexpert-7x]
+  - id: pre-home-portable
+    section: pre-plan
+    text: "Portable charger: plug it straight into a wall socket"
+    hint: "The 7X manual says no adapters, extension cables or multiple ports. Install a proper outlet if the socket is too far."
+    models: ["7x"]
+    cite: [manual-charging]
+  - id: pre-drive-plan
+    section: pre-plan
+    text: "Plan the drive home and where you will first charge"
+    hint: "Pick a charger on or near the route and check you have its app set up."
+    models: ["all"]
+  - id: paper-invoice
+    section: paper
+    text: "Invoice matches your order"
+    hint: "Check variant, colour, extras, and the drive-away price breakdown."
+    models: ["all"]
+  - id: paper-vin
+    section: paper
+    text: "VIN on every document matches the car"
+    hint: "Check the invoice, rego papers and insurance against the VIN on the car."
+    models: ["all"]
+  - id: paper-rego
+    section: paper
+    text: "Registration papers handed over"
+    hint: "Or confirm in writing when and how they arrive."
+    models: ["all"]
+  - id: paper-booklet
+    section: paper
+    text: "Service & Warranty Booklet received (or digital copy)"
+    hint: "Zeekr's warranty policy refers to it for the service schedule and you show it when claiming."
+    models: ["all"]
+    cite: [warranty]
+  - id: paper-warranty
+    section: paper
+    text: "Ask what your warranty is, and get any extras in writing"
+    hint: "Zeekr's standard terms are 5 years / unlimited km, 8 years / 160,000 km on the high-voltage battery. Launch offers can add to this, so check your contract."
+    models: ["all"]
+    cite: [warranty, zeekr-7x, carexpert-7x-launch]
+  - id: paper-roadside
+    section: paper
+    text: "Zeekr Roadside 1800 093 357 saved in your phone"
+    hint: "24 hours a day, 7 days a week. Have your VIN and location ready when you call."
+    models: ["all"]
+    cite: [zeekr-service]
+  - id: paper-compliance
+    section: paper
+    text: "Compliance plate and build date photographed"
+    hint: "Handy later for working out which model year you have."
+    models: ["7x"]
+    link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: paper-manual
+    section: paper
+    text: "Owner's manual in the car or digital access confirmed"
+    hint: "Ask where it lives."
+    models: ["all"]
+  - id: paper-accessories
+    section: paper
+    text: "Dealer-fitted accessories listed on the invoice"
+    hint: "Accessories fitted before delivery by an authorised dealer carry the full vehicle warranty. Fitted afterwards, 24 months / 20,000 km."
+    models: ["all"]
+    cite: [warranty]
+  - id: ext-paint
+    section: ext
+    text: "Paint: scratches, chips, swirl marks, repaired-looking patches"
+    hint: "Crouch and look along each panel. Check the roof and lower edges."
+    models: ["all"]
+  - id: ext-gaps
+    section: ext
+    text: "Panel gaps look even all round"
+    hint: "Check bonnet, doors and tailgate."
+    models: ["all"]
+  - id: ext-colour
+    section: ext
+    text: "Colour matches your order"
+    hint: "Compare against the invoice. Optional colours were free during launch offers."
+    models: ["all"]
+  - id: ext-glass
+    section: ext
+    text: "Windscreen, windows and glass roof free of chips and cracks"
+    models: ["all"]
+  - id: ext-wheels
+    section: ext
+    text: "Wheels and tyres: kerbing, damage, matching tyres"
+    hint: "Photograph all four wheels."
+    models: ["all"]
+  - id: ext-wheel-size
+    section: ext
+    text: "Wheels match your order"
+    hint: "RWD 19-inch, Performance AWD 21-inch forged on the MY27 car. Long Range sources differ, so go by your order."
+    models: ["7x-my27"]
+    cite: [carexpert-7x, thebeep-7x]
+  - id: ext-lights
+    section: ext
+    text: "Headlights, indicators, brake and reverse lights work"
+    hint: "Ask someone to watch while you press the pedal."
+    models: ["all"]
+  - id: ext-cameras
+    section: ext
+    text: "Camera and sensor lenses clean and undamaged"
+    models: ["all"]
+  - id: ext-chargeport
+    section: ext
+    text: "Charge port flap opens, closes and the socket looks clean"
+    models: ["all"]
+  - id: ext-ppf
+    section: ext
+    text: "PPF or tint, if you ordered it: edges clean, no bubbles"
+    hint: "Look in daylight."
+    models: ["all"]
+    link: {label: "Choosing an installer", page: "ownership/accessories/vendors.md"}
+  - id: ext-plate-my27
+    section: ext
+    text: "Rear number plate is on the tailgate"
+    hint: "This is how you tell a MY27 7X. The MY25/MY26 car has it on the bumper."
+    models: ["7x-my27"]
+    cite: [carexpert-7x]
+    link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: ext-privacy
+    section: ext
+    text: "Rear privacy glass fitted"
+    hint: "Reported as standard on every MY27 grade."
+    models: ["7x-my27"]
+    cite: [carexpert-7x, thebeep-7x]
+  - id: int-seats
+    section: int
+    text: "Seats and trim free of marks, tears and loose panels"
+    hint: "Check all seats, door cards and the console."
+    models: ["all"]
+  - id: int-material
+    section: int
+    text: "Seat material matches your order"
+    hint: "Sources disagree on which 7X grades get Nappa leather, so check your order, not a spec sheet."
+    models: ["7x"]
+    cite: [carexpert-7x, zeekr-7x]
+  - id: int-films
+    section: int
+    text: "Protective film removed from screens and trim"
+    models: ["all"]
+  - id: int-screens
+    section: int
+    text: "Screens work, with no dead pixels or marks"
+    hint: "Show a white and a black screen to spot dead pixels."
+    models: ["all"]
+  - id: int-screens-my27
+    section: int
+    text: "16-inch centre screen and 13-inch driver display present"
+    hint: "Reported as standard on every MY27 grade."
+    models: ["7x-my27"]
+    cite: [carexpert-7x]
+  - id: int-roof
+    section: int
+    text: "Sunroof or blind opens and closes smoothly, if fitted"
+    models: ["all"]
+  - id: int-controls
+    section: int
+    text: "Steering wheel buttons, window switches, seat adjustment and climate work"
+    models: ["all"]
+  - id: int-odo
+    section: int
+    text: "Odometer reading photographed"
+    hint: "A new car should show only delivery-run kilometres. If it does not, ask why."
+    models: ["all"]
+  - id: int-smell
+    section: int
+    text: "No musty or chemical smell"
+    models: ["all"]
+  - id: int-dvr
+    section: int
+    text: "Built-in dashcam (DVR) present and recording"
+    hint: "Ask where to find the footage."
+    models: ["7x-my27"]
+    cite: [carexpert-7x]
+  - id: box-note
+    section: box
+    text: "Confirm what your order includes, and tick it off here"
+    hint: "What comes standard differs by model and year. Use your order as the list, not this page."
+    models: ["all"]
+  - id: box-keys
+    section: box
+    text: "Confirm what keys or cards your order includes: count them"
+    hint: "Test each one."
+    models: ["all"]
+  - id: box-cables
+    section: box
+    text: "Confirm what your order includes: charging cable(s)"
+    hint: "The first 1,000 7X buyers were offered a Type 2 cable, a mini portable (10 amp) cable and a 7 kW home charger. Check your contract."
+    models: ["7x"]
+    cite: [carexpert-7x-launch]
+  - id: box-repair
+    section: box
+    text: "Confirm what your order includes: tyre repair kit or spare"
+    hint: "Find where it is stored and check it is sealed and complete."
+    models: ["all"]
+  - id: box-accessories
+    section: box
+    text: "Accessories you ordered are all there"
+    hint: "Floor mats, cargo cover, anything promised."
+    models: ["all"]
+  - id: box-wallbox
+    section: box
+    text: "MY27 launch offer: wallbox supplied, plus any gifts"
+    hint: "Supply only. The offer listed 5,000 app points, a Frank Green bottle and either an Anker powerbank or sparkling wine."
+    models: ["7x-my27"]
+    cite: [zecar-my27, carexpert-7x, thebeep-7x]
+  - id: box-cards
+    section: box
+    text: "Any charging network cards supplied"
+    hint: "Ask if there are any."
+    models: ["all"]
+  - id: walk-app
+    section: walk
+    text: "Pair your phone and the Zeekr app before you leave"
+    hint: "Nate's video shows the app features."
+    models: ["all"]
+    cite: [nate-handover]
+  - id: walk-key
+    section: walk
+    text: "Ask whether your car has a digital key and how to set it up"
+    models: ["all"]
+  - id: walk-profile
+    section: walk
+    text: "Driver profile, seat, mirror and steering settings saved"
+    models: ["all"]
+  - id: walk-charging
+    section: walk
+    text: "How to open the port, start and stop a charge, and what the lights mean"
+    models: ["all"]
+  - id: walk-limit
+    section: walk
+    text: "Ask how to set a charge limit, and what limit they suggest"
+    hint: "Write down the answer. We have no Zeekr-sourced figure."
+    models: ["all"]
+  - id: walk-rates-7x
+    section: walk
+    text: "Know your car's peak charging rates: 7X"
+    hint: "DC up to 450 kW (RWD) or 420 kW (Long Range, AWD); AC up to 22 kW. Actual speed depends on the charger."
+    models: ["7x"]
+    cite: [carexpert-7x]
+  - id: walk-rates-x
+    section: walk
+    text: "Know your car's peak charging rates: X (MY26)"
+    hint: "RWD: 230 kW DC and 11 kW AC. AWD: 150 kW DC and 22 kW AC."
+    models: ["x"]
+    cite: [carexpert-x]
+  - id: walk-rates-009
+    section: walk
+    text: "Know your car's peak charging rates: 009"
+    hint: "FWD: 150 kW DC and 11 kW AC."
+    models: ["009"]
+    cite: [carexpert-009]
+  - id: walk-regen
+    section: walk
+    text: "Regen braking and one-pedal driving: how to adjust it"
+    models: ["all"]
+  - id: walk-adas
+    section: walk
+    text: "Driver assistance basics: what is on, how to switch it off"
+    models: ["all"]
+  - id: walk-monitor
+    section: walk
+    text: "Driver monitoring settings: what it watches and how to change it"
+    models: ["all"]
+  - id: walk-ota
+    section: walk
+    text: "Software updates: how to check, and how you are notified"
+    models: ["all"]
+  - id: walk-tyres
+    section: walk
+    text: "Correct tyre pressures and where to find them"
+    models: ["all"]
+  - id: walk-service
+    section: walk
+    text: "Service schedule and how to book"
+    hint: "7X sources differ (12 months / 20,000 km vs 24 months / 40,000 km). Get it from your booklet. The MY26 X is 12 months / 20,000 km."
+    models: ["all"]
+    cite: [racv-7x-review, carexpert-7x-longterm, carexpert-x]
+  - id: walk-roadside
+    section: walk
+    text: "How to call Zeekr Roadside and what it covers"
+    hint: "Includes flat 12-volt help and a tow to the nearest authorised retailer. Ask what happens if the main battery is flat."
+    models: ["all"]
+    cite: [roadside-terms]
+  - id: walk-dvr
+    section: walk
+    text: "Where dashcam footage is and how to view it"
+    hint: "Where it is stored is not stated in the sources we found."
+    models: ["7x-my27"]
+    cite: [carexpert-7x]
+  - id: chg-plug
+    section: chg
+    text: "Plug in at the dealer if they can, and see a session start"
+    hint: "This checks the charge port, the cable and the app together."
+    models: ["all"]
+  - id: chg-port
+    section: chg
+    text: "Charge port flap and socket work smoothly, with nothing loose"
+    models: ["all"]
+  - id: chg-cable
+    section: chg
+    text: "Cable has no damage, and fits and locks properly"
+    hint: "Do not use a damaged cable or port."
+    models: ["7x"]
+    cite: [manual-charging]
+  - id: chg-adapters
+    section: chg
+    text: "No adapters, extension cables or multi-port leads while charging"
+    hint: "Zeekr's 7X manual says so."
+    models: ["7x"]
+    cite: [manual-charging]
+  - id: chg-sun
+    section: chg
+    text: "Do not bundle the cable up, and keep it out of direct sun while charging"
+    hint: "The manual says sun can trigger overheat protection, which can reduce or stop charging."
+    models: ["7x"]
+    cite: [manual-charging]
+  - id: chg-app
+    section: chg
+    text: "The session shows in the Zeekr app"
+    models: ["all"]
+  - id: off-soc
+    section: False
+    text: "Ask for a reasonable state of charge"
+    hint: "Enough to reach your first planned charger with margin."
+    models: ["all"]
+  - id: off-owe
+    section: False
+    text: "Any agreed fixes written down and signed (the 'we owe you' list)"
+    hint: "Take a photo. Ask when each will be done."
+    models: ["all"]
+  - id: off-rights
+    section: False
+    text: "Know your rights if something is wrong"
+    hint: "The ACL lets you reject a car with a major failure and choose repair, replacement or refund. Tell the dealer clearly and say why. The ACCC page does not cover refusing delivery, so raise problems before you sign."
+    models: ["all"]
+    cite: [accc]
+  - id: off-contact
+    section: False
+    text: "A named contact and phone number for follow-up"
+    hint: "Plus the service desk."
+    models: ["all"]
+  - id: off-copies
+    section: False
+    text: "Copies or photos of everything you signed"
+    models: ["all"]
+  - id: off-photos
+    section: False
+    text: "Photos of the finished car and odometer taken before you leave"
+    models: ["all"]
+  - id: post-charge-test
+    section: post-days
+    text: "Do your first public charge"
+    hint: "Try a fast charger near home with the app you set up, so the first one is not on a road trip."
+    models: ["all"]
+  - id: post-app
+    section: post-days
+    text: "Try each app feature you were shown once"
+    hint: "Lock, climate, charging status."
+    models: ["all"]
+  - id: post-ota
+    section: post-days
+    text: "Check for the first software update and install it when prompted"
+    models: ["all"]
+  - id: post-insurance
+    section: post-days
+    text: "Insurance and rego details match the car"
+    hint: "Check VIN, plate, and the policy start date."
+    models: ["all"]
+  - id: post-fixes
+    section: post-days
+    text: "Book the 'we owe you' items and keep the emails"
+    models: ["all"]
+  - id: post-claims
+    section: post-days
+    text: "Report any fault to an authorised dealer within 7 days, or as soon as practicable"
+    hint: "This is what Zeekr's warranty policy asks."
+    models: ["all"]
+    cite: [warranty]
+  - id: post-points
+    section: post-days
+    text: "MY27 launch offer: check the 5,000 Zeekr app points arrived"
+    hint: "Part of the launch offer listed on the ZeCar page."
+    models: ["7x-my27"]
+    cite: [zecar-my27]
+  - id: post-home
+    section: post-days
+    text: "Home charger installed and tested, if you were arranging one"
+    hint: "Licensed electrician only."
+    models: ["all"]
+    link: {label: "Home charging", page: "guides/charging/home-setup.md"}
+  - id: post-first30
+    section: post-week
+    text: "Work through the 'I've just got my car' page"
+    hint: "App, keys, home charging and settings."
+    models: ["all"]
+    link: {label: "I've just got my car", page: "ownership/first-30-days.md"}
+  - id: post-service-date
+    section: post-week
+    text: "Put your first service date in your calendar"
+    hint: "Take it from your booklet, not from a review."
+    models: ["all"]
+  - id: post-whatsapp
+    section: post-week
+    text: "Join the club WhatsApp group"
+    hint: "The club's main channel and the quickest way to reach other owners."
+    models: ["all"]
+    link: {label: "Community", page: "community/index.md"}
+  - id: post-facebook
+    section: post-week
+    text: "Join the club Facebook group"
+    hint: "The second channel."
+    models: ["all"]
+    link: {label: "Community", page: "community/index.md"}
+  - id: post-forum
+    section: post-week
+    text: "Watch for the club forum"
+    hint: "Not live yet."
+    models: ["all"]
+    link: {label: "Forum", page: "community/forum.md"}
+  - id: post-feedback
+    section: post-week
+    text: "Tell the club how your handover went"
+    hint: "Fixes this checklist."
+    models: ["all"]

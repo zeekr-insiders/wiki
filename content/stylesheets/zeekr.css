@@ -16,7 +16,7 @@
      5. Base and type        11. Links              17. Footer and 404
      6. Heroes               12. Icons              18. Focus, motion, print
     19. On this page        20. Citations          21. Suggest an edit
-    22. Glossary
+    22. Glossary            23. Handover checklist
    ========================================================================== */
 
 /* 1. Fonts: self-hosted, swap so text shows at once in a fallback face. ---- */
@@ -3505,3 +3505,284 @@ span .zi-icon {
     }
 }
 
+/* 23. Handover checklist (the handover_checklist() macro, javascripts/handover.js).
+   Phone first: whole rows are 44px+ tap targets, sections fold, and each
+   phase's progress bar sticks under the header while you are in that phase.
+   The tools and progress ship hidden until the script runs; print shows the
+   plain list with its boxes. ---------------------------------------------- */
+.md-typeset .zi-hc {
+    --zi-hc-top: 0px;
+}
+
+.md-typeset .zi-hc-tools {
+    display: grid;
+    gap: var(--sp-3);
+    margin: var(--sp-5) 0;
+    padding: var(--sp-4);
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-md);
+}
+
+.md-typeset .zi-hc-tools[hidden],
+.md-typeset .zi-hc-progress[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-hc-models {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+}
+
+.md-typeset .zi-hc-tools__label {
+    flex-basis: 100%;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.md-typeset .zi-hc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+}
+
+.md-typeset .zi-hc-button {
+    min-height: var(--tap);
+    padding: 0 var(--sp-4);
+    font: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--bg);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-button:hover {
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-hc-button:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-hc-status {
+    margin: 0;
+    min-height: 1.2em;
+    color: var(--ink-muted);
+    font-size: var(--fs-sm);
+}
+
+.md-typeset .zi-hc-phase > h2 {
+    margin-top: var(--sp-7);
+}
+
+.md-typeset .zi-hc-progress {
+    position: sticky;
+    top: var(--zi-hc-top);
+    z-index: 2;
+    margin: 0 0 var(--sp-3);
+    padding: var(--sp-2) 0;
+    background: var(--bg);
+    border-bottom: var(--hairline) solid var(--line);
+}
+
+.md-typeset .zi-hc-progress__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0 var(--sp-3);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.md-typeset .zi-hc-progress__overall {
+    color: var(--ink-muted);
+    font-weight: 400;
+}
+
+.md-typeset .zi-hc-progress__track {
+    height: 6px;
+    margin-top: var(--sp-1);
+    background: var(--line);
+}
+
+/* Reading progress is one of orange's jobs. */
+.md-typeset .zi-hc-progress__track i {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: var(--zeekr-orange);
+    transition: width 200ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .zi-hc-progress__track i {
+        transition: none;
+    }
+}
+
+.md-content .md-typeset details.zi-hc-section {
+    margin: 0 0 var(--sp-3);
+    padding: 0;
+    font-size: inherit;
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-md);
+    box-shadow: none;
+    overflow: visible;
+}
+
+/* Not an admonition: drop Material's details icon and tint. */
+.md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary::before {
+    display: none;
+}
+
+.md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary {
+    background: none;
+    border: 0;
+    border-radius: var(--radius-md);
+}
+
+.md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary {
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-3);
+    min-height: 52px;
+    padding: var(--sp-2) 48px var(--sp-2) var(--sp-4);
+    font-family: var(--font-display);
+    font-size: var(--fs-md);
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary::-webkit-details-marker {
+    display: none;
+}
+
+.md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: -2px;
+}
+
+.md-typeset .zi-hc-section__title {
+    flex: 1;
+}
+
+.md-typeset .zi-hc-section__count {
+    color: var(--ink-muted);
+    font-family: var(--font-body);
+    font-size: var(--fs-sm);
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* A finished section says so in words as well as weight. */
+.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::before {
+    content: "Done: ";
+    color: var(--ink);
+    font-weight: 600;
+}
+
+.md-typeset .zi-hc-item {
+    padding: 0 var(--sp-4) var(--sp-2);
+    border-top: var(--hairline) solid var(--line);
+}
+
+.md-typeset .zi-hc-check {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    min-height: var(--tap);
+    padding-top: var(--sp-3);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-check input {
+    flex: none;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    accent-color: var(--ink);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-check input:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-hc-check input:checked + .zi-hc-text {
+    color: var(--ink-muted);
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+}
+
+.md-typeset .zi-hc-tag {
+    display: inline-block;
+    margin-right: var(--sp-2);
+    padding: 0 var(--sp-1);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    vertical-align: 1px;
+    border: var(--hairline) solid var(--line-strong);
+    border-radius: var(--radius-sm);
+}
+
+.md-typeset .zi-hc-hint {
+    margin: var(--sp-1) 0 var(--sp-1) 36px;
+    color: var(--ink-muted);
+    font-size: var(--fs-sm);
+}
+
+@media print {
+    .md-typeset .zi-hc-tools,
+    .md-typeset .zi-hc-progress,
+    .md-typeset .zi-video,
+    .md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary::after,
+    .zi-contribute {
+        display: none !important;
+    }
+
+    .md-content .md-typeset details.zi-hc-section {
+        border: 0;
+        break-inside: auto;
+    }
+
+    .md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary {
+        min-height: 0;
+        padding: var(--sp-3) 0 var(--sp-1);
+    }
+
+    .md-typeset .zi-hc-item {
+        padding: 0;
+        border: 0;
+        break-inside: avoid;
+    }
+
+    .md-typeset .zi-hc-check {
+        min-height: 0;
+        padding-top: var(--sp-1);
+    }
+
+    .md-typeset .zi-hc-check input {
+        width: 14px;
+        height: 14px;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .md-typeset .zi-hc-hint {
+        margin-left: 26px;
+    }
+}

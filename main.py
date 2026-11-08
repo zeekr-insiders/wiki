@@ -178,6 +178,80 @@ def define_env(env):
         return "\n".join(out)
 
     @env.macro
+    def handover_checklist(lead: Optional[List[str]] = None) -> str:
+        """The Handover checklist, from data/handover-checklist.yml (AGENTS.md, "Handover checklist").
+
+        Each phase is an h2 with a progress bar, each section a collapsible
+        <details>, each item a real checkbox with its hint, link and footnotes.
+        javascripts/handover.js adds the model picker, progress, saved ticks,
+        "Copy what's left" and "Start again"; without it the page is a plain,
+        printable list. The page's Sources are built from the keys items cite,
+        in reading order, after any `lead` keys the page's own text cites first.
+        """
+        data = yaml.safe_load((Path(__file__).parent / "data" / "handover-checklist.yml").read_text(encoding="utf-8"))
+        sources = data["sources"]
+        esc = html.escape
+        ids = [i["id"] for i in data["items"]]
+        if len(ids) != len(set(ids)):
+            raise ValueError("data/handover-checklist.yml: duplicate item id")
+        tags = {"7x": "7X", "7x-my27": "MY27 7X", "x": "X", "009": "009"}
+        models = [("all", "All models"), ("7x", "7X"), ("x", "X"), ("009", "009"), ("7gt", "7GT")]
+        used: List[str] = list(lead or [])
+
+        def link(l: Dict[str, str]) -> str:
+            page = l["page"]
+            target = page if page.startswith("#") else "../" + page
+            return f"[{l['label']}]({target})"
+
+        out = ['<div class="zi-hc" markdown>', "",
+               '<div class="zi-hc-tools" hidden>'
+               '<div class="zi-hc-models" role="group" aria-labelledby="zi-hc-models-label">'
+               '<span class="zi-hc-tools__label" id="zi-hc-models-label">Show items for</span>'
+               + "".join(f'<button type="button" class="zi-chip" data-model="{k}" aria-pressed="{str(k == "all").lower()}">{v}</button>'
+                         for k, v in models)
+               + '</div>'
+               '<div class="zi-hc-actions">'
+               '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
+               '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
+               '</div>'
+               '<p class="zi-hc-status" role="status" aria-live="polite"></p>'
+               '</div>', ""]
+        for phase in data["phases"]:
+            out += [f'<section class="zi-hc-phase" data-phase="{phase["id"]}" markdown>', "",
+                    f'## {phase["title"]} {{ #{phase["id"]} }}', "",
+                    '<div class="zi-hc-progress" hidden aria-hidden="true">'
+                    '<div class="zi-hc-progress__text"><span class="zi-hc-progress__phase"></span>'
+                    '<span class="zi-hc-progress__overall"></span></div>'
+                    '<div class="zi-hc-progress__track"><i></i></div></div>', ""]
+            for section in [s for s in data["sections"] if s["phase"] == phase["id"]]:
+                out += [f'<details class="zi-hc-section" id="{section["id"]}" open markdown>',
+                        f'<summary class="zi-hc-section__summary"><span class="zi-hc-section__title">{esc(section["title"])}</span>'
+                        '<span class="zi-hc-section__count"></span></summary>', ""]
+                for item in [i for i in data["items"] if i["section"] == section["id"]]:
+                    item_models = [m.lower() for m in item.get("models") or ["all"]]
+                    tag = "".join(f'<span class="zi-hc-tag">{tags[m]}</span>' for m in item_models if m in tags)
+                    hint = esc(str(item.get("hint") or "")).strip()
+                    for key in item.get("cite") or []:
+                        if key not in sources:
+                            raise ValueError(f"data/handover-checklist.yml: {item['id']} cites unknown source {key}")
+                        if key not in used:
+                            used.append(key)
+                    cites = "".join(f"[^{k}]" for k in item.get("cite") or [])
+                    extra = (" " + link(item["link"]) + ".") if item.get("link") else ""
+                    out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" markdown>',
+                            f'<label class="zi-hc-check"><input type="checkbox" name="{item["id"]}" data-id="{item["id"]}">'
+                            f'<span class="zi-hc-text">{tag}{esc(item["text"])}</span></label>']
+                    if hint or cites or extra:
+                        out.append(f'<p class="zi-hc-hint" markdown="span">{hint}{cites}{extra}</p>')
+                    out += ["</div>", ""]
+                out += ["</details>", ""]
+            out += ["</section>", ""]
+        out += ["</div>", ""]
+        if used:
+            out += ["## Sources", ""] + [f"[^{k}]: {sources[k]}" for k in used] + [""]
+        return "\n".join(out)
+
+    @env.macro
     def load_model_data(model_slug: str, year: int) -> Dict[str, Any]:
         """
         Load model data from YAML file

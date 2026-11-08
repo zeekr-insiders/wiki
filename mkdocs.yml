@@ -118,6 +118,7 @@ extra_css:
 extra_javascript:
   - javascripts/zeekr.js
   - javascripts/glossary.js
+  - javascripts/handover.js
 
 markdown_extensions:
   - abbr
@@ -196,14 +197,13 @@ plugins:
         default_timezone: Australia/Melbourne
   - minify:
       minify_html: true
-      # The theme's own CSS and JS ship unminified in the repo; minify them at build so they block render for less time.
-      minify_css: true
+      # The theme's JS ships unminified in the repo; minify it at build. Not the CSS: the minifier drops the
+      # spaces around + in clamp() and calc(), which makes those values invalid (the H1 size broke).
       minify_js: true
-      css_files:
-        - stylesheets/zeekr.css
       js_files:
         - javascripts/zeekr.js
         - javascripts/glossary.js
+        - javascripts/handover.js
 
 nav:
   - Home: index.md
@@ -220,6 +220,7 @@ nav:
       - Prices and on-road costs: buying/pricing.md
       - Finance options: buying/finance.md
       - Taking delivery: buying/delivery.md
+      - Handover checklist: buying/handover-checklist.md
 
   - Models:
       - models/index.md
