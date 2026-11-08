@@ -80,13 +80,13 @@ ready: clean nav build citations labels lint check
 	@echo "  - Review the built site in site/ directory"
 	@echo "  - Test locally with 'make run'"
 	@echo "  - Commit your changes"
-	@echo "  - Deploy with 'make deploy'"
+	@echo "  - Open a pull request; merging to main publishes the site"
 
-# Deployment
-deploy: ready
-	@echo "Deploying to GitHub Pages..."
-	$(PY) -m mkdocs gh-deploy --clean
-	@echo "✅ Deployed successfully to GitHub Pages"
+# Publishing is GitHub Actions' job (.github/workflows/deploy.yml): merging to main builds and deploys
+# to wiki.zeekrinsiders.com.au. gh-deploy would push a gh-pages branch the Pages setup ignores.
+deploy:
+	@echo "No manual deploys: merge to main and GitHub Actions publishes the wiki."
+	@exit 1
 
 # Quick commands
 quick-build:

@@ -15,9 +15,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://thushan.github.io/zeekr/"
-Repository = "https://github.com/thushan/zeekr"
-Issues = "https://github.com/thushan/zeekr/issues"
+Homepage = "https://wiki.zeekrinsiders.com.au/"
+Repository = "https://github.com/zeekr-insiders/wiki"
+Issues = "https://github.com/zeekr-insiders/wiki/issues"
 
 [tool.uv]
 dev-dependencies = [

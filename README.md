@@ -28,8 +28,8 @@ This MkDocs-powered wiki serves the Victoria, Australia Zeekr community with:
 
 ```bash
 # Clone the repository
-git clone https://github.com/thushan/zeekr.git
-cd zeekr
+git clone https://github.com/zeekr-insiders/wiki.git
+cd wiki
 
 # Install dependencies using uv
 uv sync
@@ -42,8 +42,8 @@ uv run mkdocs serve
 
 ```bash
 # Clone the repository
-git clone https://github.com/thushan/zeekr.git
-cd zeekr
+git clone https://github.com/zeekr-insiders/wiki.git
+cd wiki
 
 # Create virtual environment
 python -m venv .venv
@@ -257,21 +257,14 @@ The wiki uses custom Zeekr branding in `content/stylesheets/`:
 
 ## Deployment
 
-The wiki is automatically deployed to GitHub Pages when changes are pushed to the main branch. The deployment is handled by GitHub Actions.
-
-### Manual Deployment
-
-```bash
-# Deploy to GitHub Pages
-uv run mkdocs gh-deploy
-```
+Merging to `main` publishes the wiki: `.github/workflows/deploy.yml` runs the strict build and the checks, then deploys to GitHub Pages at <https://wiki.zeekrinsiders.com.au>. Pull requests run the same checks without deploying. There is no manual deploy.
 
 ## Links
 
-- **Live Site**: [https://thushan.github.io/zeekr/](https://thushan.github.io/zeekr/)
-- **Repository**: [https://github.com/thushan/zeekr](https://github.com/thushan/zeekr)
-- **Issues**: [https://github.com/thushan/zeekr/issues](https://github.com/thushan/zeekr/issues)
-- **ZEV Club**: https://zev.club
+- **Live Site**: <https://wiki.zeekrinsiders.com.au>
+- **Repository**: <https://github.com/zeekr-insiders/wiki>
+- **Issues**: <https://github.com/zeekr-insiders/wiki/issues>
+- **Club**: <https://zeekrinsiders.com.au>
 
 ## Support
 

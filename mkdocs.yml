@@ -137,8 +137,8 @@ markdown_extensions:
   - pymdownx.magiclink:
       normalize_issue_symbols: true
       repo_url_shorthand: true
-      user: thushan
-      repo: zeekr
+      user: zeekr-insiders
+      repo: wiki
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
