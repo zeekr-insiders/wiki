@@ -672,9 +672,9 @@ a.go {
     color: var(--hue-slate-ink);
 }
 
-/* Not included in this trim: struck through and faint, still 4.5:1 or better. */
+/* Not included in this trim: struck through and muted (7:1 light, 6.8:1 dark); the faint token is under 4.5:1 on the dark panel. */
 .md-typeset ul.feature-list li.muted {
-    color: var(--ink-faint);
+    color: var(--ink-muted);
     text-decoration: line-through;
 }
 
@@ -1703,7 +1703,7 @@ span .zi-icon {
     list-style: none;
 }
 
-.md-typeset .zi-oops li {
+[dir] .md-typeset .zi-oops li {
     margin: 0;
 }
 
@@ -1774,7 +1774,7 @@ span .zi-icon {
 }
 
 @media screen and (min-width: 76.25em) {
-    .md-sidebar--secondary .zi-toc {
+    .md-sidebar--secondary .zi-toc--panel {
         position: relative;
         overflow: hidden;
         margin: 0;
