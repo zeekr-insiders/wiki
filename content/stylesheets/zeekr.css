@@ -740,12 +740,16 @@ body {
     color: var(--ink);
 }
 
-.z-card .zi-icon--card,
-.zi-icon--card {
+/* Section card icons: vendored Lucide (card_icon macro in main.py), drawn in
+   ink at 28px with the same 1.5 stroke as the spec card icons. */
+.zi-card-icon {
     display: block;
+    flex: none;
     width: 28px;
     height: 28px;
     margin: 0 0 var(--sp-3);
+    color: var(--ink);
+    stroke-width: 1.5;
 }
 
 /* Captions and credits: 14px muted, no opacity (7:1 light, 6.8:1 dark). */

@@ -8,19 +8,19 @@ New to Zeekr ownership? Start here:
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="../assets/icons/icon-calendar-check.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("key-round") }}
         <h3>I've just got my car</h3>
         <p>Essential steps after taking delivery.</p>
         <a class="go" href="first-30-days/">I've just got my car</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("plug-zap") }}
         <h3>Charging</h3>
         <p>Home setup, public networks, <a href="../guides/charging/etiquette/">etiquette</a> and road trips.</p>
         <a class="go" href="../guides/charging/home-setup/">Charging</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-insurance.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("shield-check") }}
         <h3>Insurance</h3>
         <p>Finding the right coverage for your EV.</p>
         <a class="go" href="insurance/">Insurance</a>
@@ -33,25 +33,25 @@ Protect and enhance your Zeekr:
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="../assets/icons/icon-accessories.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("shopping-bag") }}
         <h3>Accessories</h3>
         <p>Browse recommended accessories and modifications.</p>
         <a class="go" href="accessories/">Accessories</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-protection.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("spray-can") }}
         <h3>Paint and window protection</h3>
         <p>PPF, ceramic coating, and window tinting.</p>
         <a class="go" href="accessories/protection/">Protection</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-recommended.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("badge-check") }}
         <h3>Recommended accessories</h3>
         <p>Accessories owners have found useful.</p>
         <a class="go" href="accessories/recommended/">Recommended</a>
     </div>
     <div class="z-card">
-        <img src="../assets/icons/icon-service.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("wrench") }}
         <h3>Choosing an installer</h3>
         <p>How to pick a PPF, tint or accessory installer.</p>
         <a class="go" href="accessories/vendors/">Installers</a>

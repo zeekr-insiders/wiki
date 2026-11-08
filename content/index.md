@@ -21,25 +21,25 @@ hide:
 
 <div class="card-grid">
     <div class="z-card">
-        <img src="assets/icons/icon-price.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("tag") }}
         <h3>Buying</h3>
         <p>Prices, on-road costs, finance and where to buy, with the 2027 7X changeover explained.</p>
         <a class="go" href="buying/">Buying</a>
     </div>
     <div class="z-card">
-        <img src="assets/icons/icon-delivery.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("key-round") }}
         <h3>I've just got my car</h3>
         <p>Numbers to save, paperwork to keep, home charging and the settings owners ask about first.</p>
         <a class="go" href="ownership/first-30-days/">I've just got my car</a>
     </div>
     <div class="z-card">
-        <img src="assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("plug-zap") }}
         <h3>Charging</h3>
         <p>Home setup, public networks and planning a road trip.</p>
         <a class="go" href="guides/charging/public-networks/">Charging</a>
     </div>
     <div class="z-card">
-        <img src="assets/icons/icon-community.svg" class="zi-icon zi-icon--card" alt="">
+        {{ card_icon("users") }}
         <h3>Community</h3>
         <p>Who we are, and how to join a drive near you.</p>
         <a class="go" href="community/">Community</a>
