@@ -55,6 +55,26 @@ changelog: "Added MY27 towing figure"
 
 **`launch_date`.** At the first public publish every page is new, so `extra.launch_date` in `mkdocs.yml` records that date (`YYYY-MM-DD`; it stays `null` until `wiki-publish` merges). When set, the RSS feeds carry it as `<zi:launchDate>` in the channel and the JSON feeds as `_zeekr_insiders.launch_date`, so a consumer can treat items dated on or before it as the launch, not as updates.
 
+## Search and sharing
+
+Each page's front matter carries what search engines and share cards show:
+
+```yaml
+---
+last_checked: 2026-11-08
+seo_title: "Zeekr 7X specs: range, charging, towing"
+description: "Zeekr 7X specifications for Australia: battery, power, WLTP range, DC and AC charging, towing, boot space, equipment and warranty for MY25/MY26 and MY27."
+---
+```
+
+- **`seo_title`** (optional) is the `<title>` and share title, before " | Zeekr Insiders". Put the words people search for first. Without it, the title is the page's H1. Keep the whole title under about 60 characters.
+- **`description`** (required) is the meta and share description: 140 to 160 characters, written for someone deciding whether to click, and unique to the page.
+- `make seo` (`scripts/check_seo.py`, part of `make ready` and CI) fails on a missing, duplicate or wrong-length description, a duplicate title, a missing canonical, a `lang` other than `en-AU`, more than one H1, or structured data that does not parse.
+
+`hooks/seo.py` adds the rest at build time: git dates for the sitemap's `lastmod` and the article dates, the share image (a model page shares its model's banner from `assets/img/og-<model>.jpg`, the rest share the default card), and JSON-LD: Organization and WebSite on the home page, a BreadcrumbList everywhere else, a TechArticle with the page's Sources as citations on content pages, a DefinedTermSet on the glossary and a VideoObject per video. Don't add FAQPage markup unless a page really is questions and answers.
+
+`content/robots.txt` allows everything and names the sitemap. The 404 page and redirect stubs carry `noindex`. For Google Search Console's HTML-tag check, put the token in `extra.google_site_verification` in `mkdocs.yml`.
+
 ## Build, check, preview
 
 Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`, `uv.lock`).
@@ -67,7 +87,8 @@ Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`
 | `make nav` | `scripts/check_nav.py`: no titled `index.md` comes first in a nav section (it would be swallowed) |
 | `make citations` | `scripts/check_citations.py`: every citation reaches its Sources entry and back |
 | `make labels` | `scripts/check_labels.py`: a page has the same name in its H1, the nav and the cards linking to it; headings never skip a level |
-| `make ready` | The gate: clean, nav, build, citations, labels, lint, check. Must pass before a commit is pushed or a PR is opened. |
+| `make seo` | `scripts/check_seo.py`: titles, descriptions, canonicals, `lang` and structured data (see Search and sharing) |
+| `make ready` | The gate: clean, nav, build, citations, labels, seo, lint, check. Must pass before a commit is pushed or a PR is opened. |
 
 CI runs `mkdocs build --strict` plus the three check scripts on every pull request and on every push to `main`. Treat any strict-mode warning as a failure.
 
@@ -194,6 +215,7 @@ Before you say work is done:
     - **nav**: `scripts/check_nav.py mkdocs.yml`
     - **citations**: `scripts/check_citations.py site`
     - **labels**: `scripts/check_labels.py site mkdocs.yml`
+    - **seo**: `scripts/check_seo.py site`
 2. `mkdocs build --strict` passes with no warnings (CI runs this).
 3. For visual changes, you have looked at the page yourself in light and dark, at phone and desktop widths.
 
