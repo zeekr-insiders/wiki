@@ -145,7 +145,7 @@ Notes:
 - The MY27 Black Edition Package for the 7X Performance AWD has no announced price at the time of writing. Add its price to $72,900 before assuming it stays under $75,000. That leaves $2,100 of headroom.
 - Options, dealer delivery and accessories can push a car over a line. Today the exemption turns on whether LCT became payable. From April 2027 the draft turns on base value (see above).
 - On the 2026-27 car limit of $69,883, the 7X Performance AWD at $72,900 is over the GST credit cap, so expect a purchase GST credit of up to $6,353 rather than the full one-eleventh. The 7X RWD and Long Range sit below the limit (our arithmetic, on RRP, which includes GST).
-- Prices move. Check the current RRP before relying on this table. The club's fact sheet lists the sources and dates.
+- Prices move. Check the current RRP before relying on this table. Each figure's source and date is in the Sources panel at the end of this page.
 
 ### Zeekr-specific notes
 

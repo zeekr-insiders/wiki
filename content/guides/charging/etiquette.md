@@ -80,7 +80,7 @@ AC chargers are slower (typically 7 to 22 kW)[^1] and suit places you will be fo
 - **Overstays.** Leave when you are charged or at the signed time limit. If the bay is signposted EV charging, you can only stop there while plugged in[^3].
 - **Leave a note.** A short dash note with your mobile number and expected unplug time is a courtesy, not a rule, and helps in holiday towns where chargers are scarce. (Club suggestion, not from a cited source.)
 - **Holiday towns.** Leave home with a full battery and, if you can, top up where you are staying before heading home. This leaves public chargers free for others[^2].
-- **Accommodation.** Ask the host before plugging in. If there is no policy, offer to pay a little for the power[^2][^1]. Do not overload a circuit or run extension leads; Zeekr's 7X manual says not to use adapters or extension cables[^6]. Offering to add the venue to PlugShare can help them attract EV guests[^1].
+- **Accommodation.** Ask the host before plugging in. If there is no policy, offer to pay a little for the power[^2][^1]. Do not overload a circuit or run extension leads; Zeekr's 7X manual says not to use adapters or extension cables[^7]. Offering to add the venue to PlugShare can help them attract EV guests[^1].
 - **Destination chargers.** Tesla Destination chargers may be set to Tesla-only by the operator, and most do not need the Tesla app[^3].
 
 ## The rules on EV bays
@@ -100,14 +100,14 @@ Accessible EV charging bays are only for a driver who is charging, displaying a 
 
 ## Road trips and club drives
 
-The club's trip guides say to stagger charging if the stop has fewer plugs than cars, to allow 20 to 40 minutes at DC stops, to move the car once done, and not to hog a charger past what the next leg needs[^7]. Putting that together for a convoy:
+The club's trip guides say to stagger charging if the stop has fewer plugs than cars, to allow 20 to 40 minutes at DC stops, to move the car once done, and not to hog a charger past what the next leg needs[^8]. Putting that together for a convoy:
 
 - **Tell the group before you leave** how many plugs the stop has. Fewer plugs than cars means staggering, not a pile-up.
 - **Charge the lowest-range cars first**, since the convoy plans around them.
 - **Charge to the next leg, not to 100%.** Two partial charges beat one long one[^1].
 - **Split across chargers or nearby sites** if there are two, rather than all queueing at one.
 - **Stay with your car** or within phone reach, so you can move when it finishes.
-- **Have a backup charger** for any single-unit stop, and flag faults to the trip lead and on PlugShare[^7].
+- **Have a backup charger** for any single-unit stop, and flag faults to the trip lead and on PlugShare[^8].
 - **Be welcoming.** Other drivers at the stop may be first-timers. A convoy is a good advert for the community.
 
 See [Road Trips](road-trips.md) for planning and the club's trip guides on the club website.
@@ -119,5 +119,6 @@ See [Road Trips](road-trips.md) for planning and the club's trip guides on the c
 [^3]: RACV, "The rules and etiquette of public EV charging" (9 September 2026), <https://www.racv.com.au/royalauto/transport/electric-vehicles/ev-charging-station-etiquette-rules.html>, accessed 8 November 2026.
 [^4]: NRMA, "What are the fines for parking in EV charging bays?" (20 September 2024), <https://www.mynrma.com.au/open-road/advice-and-how-to/fines-for-blocking-ev-chargers>, accessed 8 November 2026.
 [^5]: The Driven, "Tesla introduces Supercharger congestion fees in Australia" (6 March 2025), <https://thedriven.io/2025/03/06/tesla-introduces-supercharger-congestion-fees-in-australia/>, accessed 8 November 2026. The Chargefox figure is as reported there.
-[^6]: Zeekr Insiders, "Wiki sourced fact sheet" (club-docs research, 8 November 2026), sections 4.4 and 6, citing CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, and the Zeekr 7X owner manual, "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
-[^7]: Zeekr Insiders, "Trip Planning Guide" and "Participating in a Trip" (club trip guides), <https://zeekrinsiders.com.au/garage/guides>, accessed 8 November 2026.
+[^6]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+[^7]: Zeekr 7X Manual (unofficial mirror, Netherlands edition), "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
+[^8]: Zeekr Insiders, "Trip Planning Guide" and "Participating in a Trip" (club trip guides), <https://zeekrinsiders.com.au/garage/guides>, accessed 8 November 2026.
