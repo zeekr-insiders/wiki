@@ -1047,6 +1047,18 @@ body {
     white-space: nowrap;
 }
 
+/* Lineup grids (home and Models page): cards at least 320px wide, so four
+   models sit 2x2 in the sidebar-narrowed Models column and 4 across on the
+   full-width home page, never 3 and an orphan. */
+.card-grid.model-lineup {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+/* The status chip sits on the banner's top-right corner. */
+.z-card.model-banner .badge {
+    z-index: 1;
+}
+
 /* Models page banner cards: a 2:1 strip of each model's banner across the top
    of the card, edge to edge, sized by width and height attributes so nothing
    shifts while it loads. Not overflow: hidden on the card, which would clip
