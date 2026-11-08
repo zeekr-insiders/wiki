@@ -151,6 +151,7 @@ markdown_extensions:
 hooks:
   - hooks/citations.py
   - hooks/cards.py
+  - hooks/headings.py
 
 plugins:
   - search:
