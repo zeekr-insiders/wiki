@@ -82,7 +82,7 @@ Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`
 | Command | What it does |
 |---|---|
 | `make install` | `uv sync` into `.venv/` |
-| `make run` | Dev server on <http://localhost:8000>. The maintainer often has this running; don't start a second one on the same port. |
+| `make run` | Dev server on <http://localhost:8000> (MkDocs' default). If one is already running, use it rather than starting another on the same port. |
 | `make build` | `mkdocs build` into `site/` |
 | `make nav` | `scripts/check_nav.py`: no titled `index.md` comes first in a nav section (it would be swallowed) |
 | `make citations` | `scripts/check_citations.py`: every citation reaches its Sources entry and back |
@@ -216,7 +216,8 @@ The club uses AI tools to help with research, drafting, code and some artwork, a
 
 - Only use images we have the right to use: our own photos, the Zeekr brand kit, or AI-generated artwork, and record which in the PR.
 - No personal data in the repo: no member names, emails, phone numbers, number plates or VINs, unless the person has agreed to be named.
-- No secrets, tokens or `.env` files. `.gitignore` keeps agent evidence folders (`.verify/`, `.playwright-mcp/`, `.review/`) out; keep screenshots and logs there.
+- No secrets, tokens or `.env` files. `.gitignore` keeps agent evidence folders (`.verify/`, `.playwright-mcp/`, `.review/`) out; keep screenshots and logs there, never in `content/`.
+- This repository is public. Commit nothing from the club's private notes, no member details, and no local file paths or machine-specific setup.
 
 ## Checks that must pass
 
