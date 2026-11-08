@@ -12,6 +12,7 @@ edit_uri: edit/main/content/
 
 theme:
   name: material
+  language: en-AU  # overrides/partials/languages/en-AU.html: lang="en-AU", English search
   custom_dir: overrides
   logo: assets/img/logo-badge.png
   favicon: assets/favicons/favicon-32.png
@@ -66,6 +67,9 @@ extra:
   # The first public publish, when every page lands in the feeds as new. Set it (YYYY-MM-DD)
   # when wiki-publish merges; until then the feeds carry no launch marker.
   launch_date: null
+  # Google Search Console's HTML-tag ownership check: paste the token (the content="..." value only).
+  # Empty, no tag is output.
+  google_site_verification: ""
   club:
     name: "Zeekr Insiders"
     abbreviation: "ZI"
@@ -168,6 +172,7 @@ hooks:
   - hooks/tables.py
   - hooks/redirects.py
   - hooks/feeds.py
+  - hooks/seo.py
 
 plugins:
   - search:

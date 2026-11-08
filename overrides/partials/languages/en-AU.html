@@ -1,0 +1,6 @@
+{#- Australian English. Material looks up each string here first and falls back to its own en.html, so
+    only what differs is listed: the page's lang attribute, and search stemming, which stays English. -#}
+{% macro t(key) %}{{ {
+  "language": "en-AU",
+  "search.config.lang": "en"
+}[key] }}{% endmacro %}

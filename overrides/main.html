@@ -4,9 +4,13 @@
 {%- from "partials/zi-name.html" import zi_name -%}
 
 
-{#- "Page | Zeekr Insiders", the front door's title format. The home page is the wiki itself. -#}
+{#- "Page | Zeekr Insiders", the front door's title format. A page's `seo_title` front matter puts the words
+    people search for first ("Zeekr 7X specs: range, charging, towing"); otherwise it is the page's name. -#}
+{%- macro zi_title(page) -%}
+  {%- if page and page.meta and page.meta.seo_title -%}{{ page.meta.seo_title }}{%- else -%}{{ zi_name(page) | trim }}{%- endif -%}
+{%- endmacro -%}
 {% block htmltitle %}
-  <title>{{ zi_name(page) | trim }} | {{ config.extra.site.title_suffix }}</title>
+  <title>{{ zi_title(page) | trim }} | {{ config.extra.site.title_suffix }}</title>
 {% endblock %}
 
 {% block site_meta %}
@@ -16,6 +20,10 @@
   <link rel="apple-touch-icon" href="{{ 'apple-touch-icon.png' | url }}">
   <link rel="manifest" href="{{ 'site.webmanifest' | url }}">
   <meta name="theme-color" content="#000000">
+  {#- Search Console ownership check: set extra.google_site_verification in mkdocs.yml. -#}
+  {% if config.extra.google_site_verification %}
+    <meta name="google-site-verification" content="{{ config.extra.google_site_verification }}">
+  {% endif %}
 {% endblock %}
 
 {% block extrahead %}
@@ -34,10 +42,11 @@
     <link rel="preload" as="image" type="image/avif" href="{{ ('assets/images/models/' ~ art ~ '-hero-mobile.avif') | url }}" media="(max-width: 44.984375em)" fetchpriority="high">
     <link rel="preload" as="image" type="image/avif" href="{{ ('assets/images/models/' ~ art ~ '-hero-1440.avif') | url }}" imagesrcset="{{ ('assets/images/models/' ~ art ~ '-hero-1440.avif') | url }} 1x, {{ ('assets/images/models/' ~ art ~ '-hero.avif') | url }} 2x" media="(min-width: 45em)" fetchpriority="high">
   {% endif %}
-  {%- set og_title = (zi_name(page) | trim) ~ " | " ~ config.extra.site.title_suffix -%}
+  {%- set og_title = (zi_title(page) | trim) ~ " | " ~ config.extra.site.title_suffix -%}
   {%- set og_desc = (page.meta.description if page and page.meta and page.meta.description else config.site_description) -%}
-  {#- Share images must be absolute, so they are built from site_url, not the page's relative path. -#}
-  {%- set og_image = config.site_url ~ config.extra.site.og_image -%}
+  {#- Share images must be absolute, so they are built from site_url, not the page's relative path. Model
+      pages share their model's banner (hooks/seo.py picks it); the rest share the default card. -#}
+  {%- set og_image = config.site_url ~ (page.meta.zi_og_image if page and page.meta and page.meta.zi_og_image else config.extra.site.og_image) -%}
   <meta property="og:type" content="{{ 'website' if (page and page.is_homepage) else 'article' }}">
   <meta property="og:site_name" content="Zeekr Insiders Wiki">
   <meta property="og:locale" content="en_AU">
@@ -47,11 +56,19 @@
   <meta property="og:image" content="{{ og_image }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Zeekr Insiders">
+  <meta property="og:image:alt" content="{{ zi_title(page) | trim }}">
+  {% if page and page.meta and page.meta.zi_modified and not page.is_homepage %}
+    <meta property="article:published_time" content="{{ page.meta.zi_created }}">
+    <meta property="article:modified_time" content="{{ page.meta.zi_modified }}">
+  {% endif %}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ og_desc }}">
   <meta name="twitter:image" content="{{ og_image }}">
+  {#- Structured data for search engines (hooks/seo.py builds it; scripts/check_seo.py checks it). -#}
+  {% if page and page.meta and page.meta.zi_jsonld %}
+    <script type="application/ld+json">{{ page.meta.zi_jsonld }}</script>
+  {% endif %}
   {#- Material already links the two RSS feeds when the rss plugin is on; these add the JSON Feed versions. -#}
   <link rel="alternate" type="application/feed+json" title="Zeekr Insiders Wiki: new pages" href="{{ 'feed_json_created.json' | url }}">
   <link rel="alternate" type="application/feed+json" title="Zeekr Insiders Wiki: updated pages" href="{{ 'feed_json_updated.json' | url }}">
