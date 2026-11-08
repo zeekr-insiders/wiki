@@ -1670,6 +1670,15 @@ span .zi-icon {
     color: var(--ink);
 }
 
+/* Hover adds an underline as well as ink, so the cue is not colour alone. */
+.md-sidebar--primary a.md-nav__link:hover,
+.md-sidebar--primary .md-nav__container:hover > a.md-nav__link {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: var(--hairline);
+    text-underline-offset: 0.2em;
+}
+
 /* Current page: ink and semibold with the wiki's Silver Gray marker. */
 .md-nav--primary .md-nav__link--active {
     position: relative;
@@ -2251,9 +2260,24 @@ span .zi-icon {
     line-height: 0;
 }
 
-/* Back-to-back citations ("[1][2]" in the source) must not read as "12". */
-.md-typeset sup[id^="fnref"] + sup[id^="fnref"] {
-    margin-left: var(--sp-1);
+/* Brackets, as the source writes "[1]", tell a citation from a footnote or a
+   power by shape as well as colour, and keep "[1][2]" from reading as "12".
+   The alt text after "/" is empty, so screen readers hear only the link's
+   aria-label. */
+.md-typeset sup[id^="fnref"]::before {
+    content: "[";
+    content: "[" / "";
+}
+
+.md-typeset sup[id^="fnref"]::after {
+    content: "]";
+    content: "]" / "";
+}
+
+.md-typeset sup[id^="fnref"]::before,
+.md-typeset sup[id^="fnref"]::after {
+    color: var(--accent-ink);
+    font-weight: 700;
 }
 
 .md-typeset a.footnote-ref {
