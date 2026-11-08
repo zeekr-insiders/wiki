@@ -585,9 +585,10 @@ body {
     color: var(--ink-muted);
 }
 
-/* The card's "more" link: the site's label in ink with an arrow. */
-.md-typeset a.go,
-a.go {
+/* The card's "more" label: the site's label in ink with an arrow. On a card
+   that is one link (hooks/cards.py) it is a span, a cue for the heading link. */
+.md-typeset .go,
+.go {
     display: inline-flex;
     align-items: center;
     gap: var(--sp-1);
@@ -605,7 +606,7 @@ a.go {
     text-underline-offset: 0.3em;
 }
 
-.md-typeset a.go::after {
+.md-typeset .go::after {
     content: "\2192";
     letter-spacing: 0;
 }
@@ -613,6 +614,85 @@ a.go {
 .md-typeset a.go:hover {
     color: var(--ink);
     text-decoration-thickness: var(--rule);
+}
+
+/* Cards with one destination (hooks/cards.py): the heading links there and
+   its ::after covers the card, as on the front door's Insider cards. Hover and
+   keyboard focus take the border to ink, tint the surface faintly, underline
+   the heading and nudge the arrow; flat and square, no lift or glow. */
+.md-typeset .z-card.zi-card--link {
+    transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+
+.md-typeset .z-card a.zi-card__link {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+    text-underline-offset: 0.2em;
+}
+
+.md-typeset .z-card a.zi-card__link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-md);
+}
+
+/* Other links in the card stay clickable on their own, above the stretched link. */
+.md-typeset .zi-card--link a:not(.zi-card__link) {
+    position: relative;
+    z-index: 1;
+}
+
+.md-typeset .z-card.zi-card--link:hover,
+.md-typeset .z-card.zi-card--link:has(.zi-card__link:focus-visible) {
+    border-color: var(--ink);
+    background-color: color-mix(in srgb, var(--ink) 4%, var(--panel));
+}
+
+.md-typeset .z-card.featured.zi-card--link:hover,
+.md-typeset .z-card.featured.zi-card--link:has(.zi-card__link:focus-visible) {
+    border-left-color: var(--hue-slate-ink);
+}
+
+.md-typeset .zi-card--link:hover a.zi-card__link,
+.md-typeset .z-card a.zi-card__link:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: var(--rule);
+}
+
+/* The ring goes round the whole card, the target the reader is choosing. */
+.md-typeset .z-card a.zi-card__link:focus-visible {
+    outline: none;
+}
+
+.md-typeset .z-card a.zi-card__link:focus-visible::after {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-card--link .go::after {
+    transition: transform var(--dur-fast) var(--ease);
+}
+
+.md-typeset .zi-card--link:hover .go::after,
+.md-typeset .zi-card--link:has(.zi-card__link:focus-visible) .go::after {
+    transform: translateX(2px);
+}
+
+/* Touch has no hover, so the heading carries a hairline underline at rest to read as a link. */
+@media (hover: none) {
+    .md-typeset .z-card a.zi-card__link {
+        text-decoration: underline;
+        text-decoration-thickness: var(--hairline);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .zi-card--link:hover .go::after,
+    .md-typeset .zi-card--link:has(.zi-card__link:focus-visible) .go::after {
+        transform: none;
+    }
 }
 
 .z-card .btn {

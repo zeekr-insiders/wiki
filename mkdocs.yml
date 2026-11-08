@@ -140,6 +140,7 @@ markdown_extensions:
 # Build-time HTML tweaks that need no plugin dependency.
 hooks:
   - hooks/citations.py
+  - hooks/cards.py
 
 plugins:
   - search:
