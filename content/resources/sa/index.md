@@ -1,51 +1,28 @@
-# South Australia Resources
-
-EV ownership resources specific to South Australia.
-
-## Government Incentives
-
-!!! info "Check Current Programs"
-    Visit [SA.GOV.AU](https://www.sa.gov.au) for current EV incentive programs.
-
-## Service Centres
-
-### Adelaide
-
-!!! info "Service Location"
-    *Contact Zeekr Australia for service arrangements in South Australia.*
-
-    Website: [zeekr.com.au](https://www.zeekr.com.au)
-
-## Charging Infrastructure
-
-### Adelaide
-
-- **Chargefox** - Multiple locations
-- **Evie Networks** - Shopping centres
-- **ChargePoint** - Various
-
-### Highway Corridors
-
-| Route | Notes |
-|-------|-------|
-| **Adelaide - Melbourne** | Well-serviced route |
-| **Adelaide - Sydney** | Via Broken Hill - limited charging |
-| **Adelaide - Perth** | Nullarbor crossing requires careful planning |
-
-!!! warning "Nullarbor Crossing"
-    The Adelaide to Perth route across the Nullarbor requires extensive planning. Charging infrastructure is improving but still limited in remote sections.
-
-## South Australia EV Community
-
-- **{{ extra.club.full_name }}** - National coverage
-- **RAA - Electric Vehicles**
-
-## Useful Links
-
-- [SA.GOV.AU - Transport](https://www.sa.gov.au)
-- [RAA - Electric Vehicles](https://www.raa.com.au)
-
+---
+last_checked: 2026-11-08
 ---
 
-*Last reviewed: August 2026*
-*Contributors needed - SA members please share local knowledge!*
+# South Australia
+
+*Last checked: 8 November 2026.*
+
+## Incentives
+
+The South Australian $3,000 EV rebate ended on 31 December 2023 [1].
+
+!!! note "Not yet confirmed"
+    This comes from a single secondary source (RACV, May 2026) [1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+
+Check current stamp duty and registration with [RevenueSA](https://www.revenuesa.sa.gov.au) and [mySA GOV](https://www.sa.gov.au).
+
+## Service
+
+South Australian sales and service sites are on the [dealers page](../../buying/dealers.md).
+
+## Long trips
+
+For long routes such as Adelaide to Perth across the Nullarbor, check the chargers on each leg before you leave and have a backup for every stop.
+
+## Sources
+
+1. RACV, "Electric vehicle rebates, discounts and incentives in Australia", <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-discounts-government-incentives-australia.html>, accessed 8 November 2026.
