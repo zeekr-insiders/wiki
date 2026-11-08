@@ -3,8 +3,10 @@
 For each page: every superscript points at a Sources entry that exists, every
 entry is cited at least once, each marker carries an aria-label, the entries
 sit inside the collapsed Sources panel (hooks/citations.py) whose label counts
-them, no footnote return arrow is left, and no plain "[1]" citation text is
-left over from before the footnote conversion.
+them, no footnote return arrow is left, no plain "[1]" citation text is
+left over from before the footnote conversion, and no entry cites the club's
+private research (club-docs, the internal fact sheet): readers can't open it,
+so cite the public sources it relies on instead.
 
 Usage: python scripts/check_citations.py [site_dir]   (default: site)
 """
@@ -17,6 +19,13 @@ import sys
 from html.parser import HTMLParser
 
 _LEFTOVER = re.compile(r"\[\d+\]")
+# The club's internal research is private. A government "fact sheet" is fine;
+# the club's own one is not.
+_PRIVATE = re.compile(
+    r"club-docs|wiki sourced fact sheet|club's fact sheet"
+    r"|zeekr insiders,?\s+(?:[\"\u201c][^\"\u201d]*[\"\u201d]\s+)?fact sheet",
+    re.I,
+)
 
 
 class _Page(HTMLParser):
@@ -33,6 +42,8 @@ class _Page(HTMLParser):
         self.outside: list[str] = []  # entries not in the panel
         self._count = 0  # <span> depth inside the panel's count
         self.count = ""
+        self._entry: str | None = None  # the Sources entry being read
+        self.texts: dict[str, str] = {}
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -52,6 +63,8 @@ class _Page(HTMLParser):
             self.backrefs += 1
         if tag == "li" and a.get("id", "").startswith("fn:"):
             self.entries.append(a["id"])
+            self._entry = a["id"]
+            self.texts[a["id"]] = ""
             if not self._panel:
                 self.outside.append(a["id"])
 
@@ -62,10 +75,14 @@ class _Page(HTMLParser):
             self._panel -= 1
         if tag == "span" and self._count:
             self._count -= 1
+        if tag == "li":
+            self._entry = None
 
     def handle_data(self, data):
         if self._count:
             self.count += data
+        if self._entry:
+            self.texts[self._entry] += data
         if not self._skip:
             self.leftovers.extend(_LEFTOVER.findall(data))
 
@@ -100,6 +117,8 @@ def check(site: pathlib.Path) -> list[str]:
         for entry in p.entries:
             if entry not in targets:
                 problems.append(f"{rel}: Sources entry {entry} is never cited")
+            if _PRIVATE.search(p.texts.get(entry, "")):
+                problems.append(f"{rel}: Sources entry {entry} cites the club's private research; cite its public sources")
     print(f"citations: {cited} across {pages} pages checked")
     return problems
 

@@ -23,8 +23,9 @@ Every researched or factual claim on a page is cited. No exceptions, and no gues
 4. **Label what is shaky.** If no source confirms a fact, say so in the sentence ("not confirmed", "provisional"). If sources disagree, say they disagree and show both, or send the reader to the authority (service booklet, ATO, dealer).
 5. **Model years.** Always say which car a figure applies to. The original 7X is **MY25/MY26**; the updated 2027 car is **MY27**. Never let a figure float without its model year when the years differ.
 6. **Never invent.** No made-up figures, quotes, URLs, dates or publishers. If you can't find a source, leave the claim out or mark it unconfirmed. Citations can't go inside a spec card grid; cite in the sentence after it.
+7. **Public sources only.** Never cite the club's private research (club-docs, the internal fact sheet): readers can't open it. Cite the public sources it relies on, each as its own entry. The club's public guides on zeekrinsiders.com.au are fine.
 
-`make citations` fails if a marker has no entry or an entry is never cited. It cannot tell whether a source actually says what the page claims; that is on you.
+`make citations` fails if a marker has no entry, an entry is never cited, or an entry cites club-docs or the internal fact sheet. It cannot tell whether a source actually says what the page claims; that is on you.
 
 ## Build, check, preview
 
