@@ -1057,10 +1057,12 @@ body {
     color: var(--ink-muted);
 }
 
+/* Two even columns on every lineup card, so a long label wraps in its own
+   column instead of pushing its figure onto a row of its own. */
 .model-glance .glance-stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--sp-4);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--sp-3) var(--sp-4);
     margin: var(--sp-3) 0 var(--sp-2);
     padding-top: var(--sp-3);
     border-top: var(--hairline) solid var(--line);
@@ -1070,9 +1072,6 @@ body {
     font-size: var(--fs-lg);
 }
 
-.model-glance .glance-stats .lbl {
-    white-space: nowrap;
-}
 
 /* Lineup grids (home and Models page): cards at least 320px wide, so four
    models sit 2x2 in the sidebar-narrowed Models column and 4 across on the
