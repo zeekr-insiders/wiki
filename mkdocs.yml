@@ -223,6 +223,19 @@ nav:
           - Recommended accessories: ownership/accessories/recommended.md
           - Choosing an installer: ownership/accessories/vendors.md
 
+  # Evergreen explainers, in the reading order the index's diagram suggests.
+  - Knowledge:
+      - knowledge/index.md
+      - kW vs kWh: knowledge/kw-vs-kwh.md
+      - NMC vs LFP batteries: knowledge/nmc-vs-lfp.md
+      - Charging to 80% vs 100%: knowledge/charging-80-vs-100.md
+      - Home charging explained: knowledge/home-charging.md
+      - AC vs DC and the charging curve: knowledge/charging-curve.md
+      - Plugs and cables: knowledge/plugs-and-cables.md
+      - Range in the real world: knowledge/real-world-range.md
+      - V2L, V2H and V2G: knowledge/v2l-v2h-v2g.md
+      - EV glossary: knowledge/glossary.md
+
   - Community:
       - community/index.md
       - Drives and events: community/events.md
