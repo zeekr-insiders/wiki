@@ -1,22 +1,44 @@
-# Python virtual environment
+# Python and the virtual environment
 .venv/
 venv/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.ruff_cache/
 
-# MkDocs build output
+# MkDocs build output; GitHub Actions builds the published site
 site/
 
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
+# Node tooling, should any linter bring it in
+node_modules/
 
-# IDE files
+# Secrets and local settings
+.env
+.env.*
+
+# Agent and review evidence: screenshots, logs and notes stay on the machine that made them.
+# The agent instruction files (AGENTS.md, CLAUDE.md) are meant to be committed.
+.verify/
+.review/
+.playwright-mcp/
+.serena/
+.claude/settings.local.json
+
+# Local scratch
+scratch/
+.scratch/
+tmp/
+*.tmp
+*.bak
+
+# Editors
 .vscode/
 .idea/
+*.swp
+*~
 
 # OS files
 .DS_Store
 Thumbs.db
-
-# Review artefacts (local only)
-.review/
+desktop.ini
