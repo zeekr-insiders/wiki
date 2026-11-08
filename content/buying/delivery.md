@@ -171,6 +171,12 @@ This is your time to learn about your vehicle. Ask about anything you don't unde
 - How do I turn off/adjust driver assistance features?
 - Where's the spare tyre or repair kit?
 
+### Video: a 7X handover
+
+A walkthrough of a 7X handover, covering the infotainment and the Zeekr app [^7]. It shows the MY25/MY26 car.
+
+{{ youtube("KlVyyYCinu4", "Zeekr 7X - Detailed Delivery Handover | Infotainment, App Guide and everything you need to know!", "Nate's Tech & Torque", "https://www.youtube.com/@NatesTechandTorque") }}
+
 ## Common Things People Miss
 
 Based on {{ extra.club.abbreviation }} member experiences, don't forget to:
@@ -238,3 +244,4 @@ If the dealer isn't responsive:
 [^4]: Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
 [^5]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
 [^6]: ACCC, "Just bought a new car?", <https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car>, accessed 8 November 2026.
+[^7]: Nate's Tech & Torque (YouTube), "Zeekr 7X - Detailed Delivery Handover | Infotainment, App Guide and everything you need to know!", <https://www.youtube.com/watch?v=KlVyyYCinu4>, accessed 8 November 2026.

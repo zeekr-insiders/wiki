@@ -752,6 +752,81 @@ body {
     stroke-width: 1.5;
 }
 
+/* Click-to-load video (youtube macro, main.py): a 16:9 poster in a square,
+   hairline frame with a play mark; the whole poster is the button. Orange is
+   allowed here because it is a button. */
+/* Material shrink-wraps a figure to its image; the video takes the column. */
+.md-typeset .zi-video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: var(--sp-5) 0;
+}
+
+.zi-video__frame {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: var(--hairline) solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: var(--night-bg);
+}
+
+.md-typeset .zi-video__frame img,
+.zi-video__frame iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+}
+
+.zi-video__play {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background: rgb(0 0 0 / 0.15);
+    cursor: pointer;
+}
+
+.zi-video__mark {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: var(--on-accent);
+    transition: filter var(--dur-fast) var(--ease);
+}
+
+.zi-video__play:hover .zi-video__mark {
+    filter: brightness(1.08);
+}
+
+.zi-video__play:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: -4px;
+}
+
+.zi-video__icon {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+    stroke-width: 1.5;
+}
+
+.md-typeset .zi-video figcaption {
+    max-width: none;
+    margin: var(--sp-2) 0 0;
+    font-style: normal;
+    color: var(--ink-muted);
+    font-size: var(--fs-sm);
+    text-align: left;
+}
+
 /* Captions and credits: 14px muted, no opacity (7:1 light, 6.8:1 dark). */
 .md-typeset .image-credit,
 .image-credit,

@@ -150,6 +150,16 @@ The arguments are the icon, a short label, the value and an optional detail line
 
 To add an icon, copy it from the [Lucide](https://lucide.dev/icons/) release into `overrides/.icons/lucide/` unchanged.
 
+### Videos
+
+Embed a YouTube video with the `youtube` macro. It shows a local poster and loads YouTube (from youtube-nocookie.com) only when the reader presses play, so nothing reaches YouTube before then:
+
+```markdown
+{{ youtube("KlVyyYCinu4", "Video title as on YouTube", "Channel name", "https://www.youtube.com/@channel") }}
+```
+
+Save the poster first as `content/assets/images/video/<video id>.webp`, 1280 x 720 (YouTube's `maxresdefault.jpg` as WebP). Credit the channel in the page's Sources.
+
 ### Content Guidelines
 
 - Focus on Australian market and Victorian specifics

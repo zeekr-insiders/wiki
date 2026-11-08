@@ -6,6 +6,7 @@
  *   reader through the article, as on the front door.
  * - The phone drawer's menu button is reachable by keyboard, and Escape
  *   closes the drawer and hands focus back to it.
+ * - Videos load YouTube only when the reader presses play.
  * - Citations (marked up by hooks/citations.py) show their source on hover
  *   or focus and open it directly on Ctrl/Cmd-click or middle-click. Following
  *   one, or landing on a #fn: link, opens the collapsed Sources panel first.
@@ -269,6 +270,24 @@
   } else {
     document.addEventListener('DOMContentLoaded', revealHash);
   }
+
+  // Click-to-load videos (the youtube macro in main.py): the poster is local,
+  // so YouTube hears nothing until the reader presses play.
+  document.addEventListener('click', function (e) {
+    var play = e.target.closest ? e.target.closest('.zi-video__play') : null;
+    if (!play) return;
+    var frame = play.closest('.zi-video__frame');
+    var id = frame && frame.getAttribute('data-zi-video');
+    if (!id || !/^[\w-]{11}$/.test(id)) return;
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+    iframe.title = frame.getAttribute('data-zi-title') || 'YouTube video';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.allowFullscreen = true;
+    frame.replaceChildren(iframe);
+    iframe.focus();
+  });
 
   if (document.readyState !== 'loading') {
     citations();

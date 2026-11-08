@@ -3,6 +3,8 @@ MkDocs Macros for Zeekr Model Data Processing
 Provides functions to load and process YAML model data for comparison tables.
 """
 
+import html
+
 import yaml
 import os
 from pathlib import Path
@@ -32,6 +34,29 @@ def define_env(env):
     """
     Define custom macros for MkDocs
     """
+
+    @env.macro
+    def youtube(video_id: str, title: str, channel: str, channel_url: str) -> str:
+        """A click-to-load YouTube video (README, "Videos").
+
+        Until the reader presses play the page shows only a local poster
+        (content/assets/images/video/<id>.webp, 1280 x 720), so nothing is requested from
+        YouTube and no cookie is set. zeekr.js then swaps in the
+        youtube-nocookie.com player. One line of HTML, so it can sit in
+        Markdown on its own line.
+        """
+        depth = env.page.url.strip("/").count("/") + 1 if env.page.url.strip("/") else 0
+        poster = "../" * depth + f"assets/images/video/{video_id}.webp"
+        watch = f"https://www.youtube.com/watch?v={video_id}"
+        safe = html.escape(title, quote=True)
+        return (
+            f'<figure class="zi-video"><div class="zi-video__frame" data-zi-video="{video_id}" data-zi-title="{safe}">'
+            f'<img src="{poster}" alt="" width="1280" height="720" loading="lazy" decoding="async">'
+            f'<button type="button" class="zi-video__play" aria-label="Play video: {safe} (loads YouTube)">'
+            f'<span class="zi-video__mark">{_lucide("play", "zi-video__icon")}</span></button></div>'
+            f'<figcaption>Video: <a href="{channel_url}">{html.escape(channel)}</a> on YouTube. '
+            f'<a href="{watch}">Watch on YouTube</a></figcaption></figure>'
+        )
 
     @env.macro
     def card_icon(icon: str) -> str:
