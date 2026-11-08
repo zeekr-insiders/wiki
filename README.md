@@ -44,3 +44,9 @@ For anything bigger, clone the repository and run `make ready` before you open a
 | `hooks/`, `main.py` | Build-time hooks and the page macros |
 | `scripts/` | The checks behind `make ready` |
 | `mkdocs.yml` | Site settings and navigation |
+
+## Licence
+
+- **Code** (theme, hooks, scripts, JavaScript and CSS): MIT. See [LICENSE](LICENSE).
+- **Written content** (the page text and the text data): [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+- **Images and media are not covered by either.** Zeekr brand imagery is © Zeekr, used with credit. Member photos are © their owners, used with permission. Club artwork, including the AI-assisted banners and the diagrams, is © Zeekr Insiders, all rights reserved unless stated. Lucide icons are ISC licensed. Embedded videos are © their creators.
