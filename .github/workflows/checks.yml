@@ -1,0 +1,38 @@
+# The same build and checks as Deploy, on every pull request, without publishing anything.
+name: Checks
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2 # v10.3.3
+        with:
+          python-version: "3.13"
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --frozen
+
+      - name: Check nav
+        run: .venv/bin/python scripts/check_nav.py mkdocs.yml
+
+      - name: Build (strict)
+        run: .venv/bin/python -m mkdocs build --strict
+
+      - name: Check citations
+        run: .venv/bin/python scripts/check_citations.py site
+
+      - name: Check labels
+        run: .venv/bin/python scripts/check_labels.py site mkdocs.yml
