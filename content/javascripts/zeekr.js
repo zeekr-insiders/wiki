@@ -177,9 +177,10 @@
       window.addEventListener('scroll', place, { passive: true });
     }
 
-    // Above the marker where there is room, otherwise below; kept inside the
-    // viewport. Scrolling (including focus scrolling a marker into view)
-    // follows the marker rather than hiding the tip.
+    // Below the marker's line, so it never covers the words being read;
+    // above only when there is no room below. Kept inside the viewport.
+    // Scrolling (including focus scrolling a marker into view) follows the
+    // marker rather than hiding the tip.
     function place() {
       if (!current) return;
       var r = current.getBoundingClientRect();
@@ -188,8 +189,11 @@
       var w = tip.offsetWidth;
       var h = tip.offsetHeight;
       var left = Math.min(Math.max(gap, r.left + r.width / 2 - w / 2), window.innerWidth - w - gap);
-      var top = r.top - h - gap;
-      if (top < gap) top = r.bottom + gap;
+      // The superscript sits high in its line; clear the whole line box.
+      var line = parseFloat(getComputedStyle(current.closest('p, li, td, th, dd') || current).lineHeight) || r.height;
+      var top = r.top + line;
+      if (top + h > window.innerHeight - gap) top = r.top - h - gap;
+      top = Math.max(gap, top);
       tip.style.left = left + 'px';
       tip.style.top = top + 'px';
     }
