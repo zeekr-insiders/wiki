@@ -35,6 +35,7 @@ The 7X interval is disputed in published reports (12 months/20,000 km or 24 mont
 - Plug the portable charger straight into a suitable wall socket. The 7X manual says not to use any adapters, extension cables or multiple ports [^4]. If the socket is too far away or not up to it, get a licensed electrician to install a dedicated outlet or a wallbox.
 - MY27 launch-offer wallboxes are supply only; installation is at your cost [^5].
 - More in [home charging](../guides/charging/home-setup.md).
+- Before your first public charge, read [charging etiquette](../guides/charging/etiquette.md).
 
 ## Settings worth knowing (7X)
 

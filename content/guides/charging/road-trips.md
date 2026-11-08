@@ -28,6 +28,8 @@ The planning, leading and participant guides are on the [club website](https://z
 
 Charging slows a lot as the battery gets close to full. On a long trip, several short stops to around 80% usually get you there sooner than fewer long stops to 100%. Charge higher only when the next leg needs it.
 
+When others are waiting, see [Charging etiquette](etiquette.md).
+
 ### Peak rates
 
 | Model | Peak DC charging |

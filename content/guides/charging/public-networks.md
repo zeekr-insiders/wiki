@@ -45,9 +45,7 @@ AC charging is much slower and depends on both the charger and your car's onboar
 
 ## Etiquette
 
-- **Stop at 80% when others are waiting.** Charging slows a lot near full, so the last 20% ties up the bay for a long time.
-- **Move the car when you're done.** Don't leave it plugged in and finished in a busy bay.
-- **Check in on PlugShare.** A quick "charged fine" or "unit 2 faulty" helps the next driver.
+Sharing chargers, moving on when you're done and the rules on EV bays are in [Charging etiquette](etiquette.md).
 
 ## Local tips
 

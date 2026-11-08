@@ -16,7 +16,7 @@ New to Zeekr ownership? Start here:
     <div class="z-card">
         <img src="../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--card" alt="">
         <h3>Charging</h3>
-        <p>Home setup, public networks and road trips.</p>
+        <p>Home setup, public networks, <a href="../guides/charging/etiquette/">etiquette</a> and road trips.</p>
         <a class="go" href="../guides/charging/home-setup/">Charging</a>
     </div>
     <div class="z-card">

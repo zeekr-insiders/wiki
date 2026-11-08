@@ -36,7 +36,7 @@ kW is the rate; kWh is the amount. An hour on a 7 kW charger adds about 7 kWh to
 
 ### Where to charge
 
-If you can charge at home overnight, you start most days with the charge you need and rarely use public chargers for daily driving. For trips, apps such as PlugShare, Chargefox and A Better Route Planner show public chargers and help plan stops. See the [charging guides](../guides/charging/home-setup.md) for home setup, public networks and road trips.
+If you can charge at home overnight, you start most days with the charge you need and rarely use public chargers for daily driving. For trips, apps such as PlugShare, Chargefox and A Better Route Planner show public chargers and help plan stops. See the [charging guides](../guides/charging/home-setup.md) for home setup, public networks and road trips, and [charging etiquette](../guides/charging/etiquette.md) before your first public charge.
 
 ## Range
 
