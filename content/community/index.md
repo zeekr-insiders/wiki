@@ -70,7 +70,7 @@ If you want to be more involved, jump into the Facebook group or contribute to t
 
 ## Contact
 
-Got a question about {{ extra.club.abbreviation }}? Want to get in touch about partnerships or media enquiries? Email us at [{{ extra.club.contact_email }}](mailto:{{ extra.club.contact_email }}).
+Got a question about {{ extra.club.abbreviation }}? Want to get in touch about partnerships or media enquiries? Use [the contact form]({{ extra.club.contact_url }}).
 
 For owner questions, the Facebook group is your best bet—there's always someone online who's probably dealt with whatever you're dealing with.
 

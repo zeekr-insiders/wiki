@@ -108,4 +108,4 @@ We're building a list of Zeekr-friendly venues (good coffee, EV charging, car pa
 
 ---
 
-*Want to organise an event? Email [{{ extra.club.contact_email }}](mailto:{{ extra.club.contact_email }}) or post in the Facebook group. We'll help promote it.*
+*Want to organise an event? Use [the contact form]({{ extra.club.contact_url }}) or post in the Facebook group. We'll help promote it.*

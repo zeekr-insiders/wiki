@@ -27,8 +27,8 @@ All content files have access to the following club variables defined in `mkdocs
 {{ extra.club.abbreviation }}  # "ZEV"
 {{ extra.club.full_name }}     # "Zeekr Enthusiasts of Victoria (ZEV)"
 {{ extra.club.location }}      # "Victoria, Australia"
-{{ extra.club.contact_email }} # "info@zev.club"
-{{ extra.club.website }}       # "https://zev.club"
+{{ extra.club.contact_url }}   # "https://zeekrinsiders.com.au/contact"
+{{ extra.club.website }}       # "https://zeekrinsiders.com.au"
 ```
 
 ### Usage Guidelines
@@ -38,7 +38,7 @@ All content files have access to the following club variables defined in `mkdocs
 ```markdown
 # Welcome to {{ extra.club.full_name }}
 The {{ extra.club.abbreviation }} community is based in {{ extra.club.location }}.
-Contact us at {{ extra.club.contact_email }} for more information.
+Get in touch through [the contact form]({{ extra.club.contact_url }}) for more information.
 Visit our website: {{ extra.club.website }}
 ```
 
@@ -57,7 +57,7 @@ Visit our website: [website needed]
 - **`{{ extra.club.abbreviation }}`**: Use for subsequent references in the same content
 - **`{{ extra.club.name }}`**: Use when the full name is too long for the context
 - **`{{ extra.club.location }}`**: Use for geographic references
-- **`{{ extra.club.contact_email }}`**: Use for contact information
+- **`{{ extra.club.contact_url }}`**: Use for contact information
 - **`{{ extra.club.website }}`**: Use for website links
 
 ### Benefits of Using Variables
@@ -79,8 +79,8 @@ extra:
     abbreviation: "ZEV"
     full_name: "Zeekr Enthusiasts of Victoria (ZEV)"
     location: "Victoria, Australia"
-    contact_email: "info@zev.club"
-    website: "https://zev.club"
+    contact_url: "https://zeekrinsiders.com.au/contact"
+    website: "https://zeekrinsiders.com.au"
 ```
 
 ### Content Review Checklist
@@ -88,7 +88,7 @@ extra:
 Before submitting content, ensure:
 
 - [ ] No hardcoded club names (search for "Victoria Zeekr Club", "VZC", etc.)
-- [ ] Contact information uses `{{ extra.club.contact_email }}`
+- [ ] Contact information uses `{{ extra.club.contact_url }}`
 - [ ] Geographic references use `{{ extra.club.location }}`
 - [ ] Website links use `{{ extra.club.website }}`
 - [ ] Club references use appropriate variables
@@ -913,7 +913,7 @@ For official specifications, refer to [Zeekr Australia](https://www.zeekr.com.au
 
 - **Club Meetings**: Regular opportunities for face-to-face help
 - **Online Groups**: WhatsApp and Facebook for quick questions
-- **Email Support**: {{ extra.club.contact_email }}
+- **Email Support**: {{ extra.club.contact_url }}
 
 ---
 

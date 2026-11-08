@@ -399,7 +399,7 @@ As a {{ extra.club.full_name }} member, you may be eligible for:
 - **Extended Warranty Options:** [DETAILS]
 - **Exclusive Events:** First access to new model launches
 
-Contact {{ extra.club.contact_email }} for member pricing information.
+Use [the contact form]({{ extra.club.contact_url }}) for member pricing information.
 </div>
 
 ## Frequently Asked Questions

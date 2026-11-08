@@ -1,0 +1,31 @@
+{#- The front door's "On this page" panel (web-home TableOfContents.svelte): a progress track along the top,
+    numbered h2 rows, h3 rows indented, the active row marked by Material's toc.follow, and a Back to top row.
+    The track and percentage are filled by javascripts/zeekr.js; without it the panel is a plain list. -#}
+{% set title = "On this page" %}
+{% set toc = page.toc %}
+{% set first = toc | first %}
+{% if first and first.level == 1 %}
+  {% set toc = first.children %}
+{% endif %}
+{#- The panel chrome only when there is something to list, so a page without headings shows no empty box. -#}
+<nav class="md-nav md-nav--secondary zi-toc{% if toc %} zi-toc--panel{% endif %}" aria-label="{{ title }}">
+  {% if toc %}
+    <div class="zi-toc__track" aria-hidden="true"><i></i></div>
+    <div class="zi-toc__head">
+      <label class="md-nav__title" for="__toc">
+        <span class="md-nav__icon md-icon"></span>
+        {{ title }}
+      </label>
+      <p class="zi-toc__pct" aria-hidden="true"></p>
+    </div>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      {% for toc_item in toc %}
+        {% include "partials/toc-item.html" %}
+      {% endfor %}
+    </ul>
+    <a class="zi-toc__top" href="#">
+      {% include ".icons/zi/up.svg" %}
+      Back to top
+    </a>
+  {% endif %}
+</nav>

@@ -416,4 +416,4 @@ COMPARISON TYPES:
 !!! info "Methodology Note"
     This comparison uses data from official specifications, professional reviews, and real-world {{ extra.club.abbreviation }} member experiences. Prices and specifications are current as of [DATE] and subject to change. Members are encouraged to verify current information with dealers before making purchase decisions.
 
-**Questions about this comparison? Contact {{ extra.club.contact_email }} or discuss in our [member forum/group].**
+**Questions about this comparison? Use [the contact form]({{ extra.club.contact_url }}) or discuss in our [member forum/group].**

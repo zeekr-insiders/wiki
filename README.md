@@ -137,8 +137,8 @@ To maintain consistency across the wiki, always use MkDocs variables for club re
 {{ extra.club.abbreviation }}  # "ZEV"
 {{ extra.club.full_name }}     # "Zeekr Enthusiasts of Victoria (ZEV)"
 {{ extra.club.location }}      # "Victoria, Australia"
-{{ extra.club.contact_email }} # "info@zev.club"
-{{ extra.club.website }}       # "https://zev.club"
+{{ extra.club.contact_url }}   # "https://zeekrinsiders.com.au/contact"
+{{ extra.club.website }}       # "https://zeekrinsiders.com.au"
 ```
 
 #### Usage Examples
@@ -146,7 +146,7 @@ To maintain consistency across the wiki, always use MkDocs variables for club re
 **Correct:**
 ```markdown
 Welcome to {{ extra.club.full_name }}!
-Contact us at {{ extra.club.contact_email }}
+Get in touch through [the contact form]({{ extra.club.contact_url }})
 {{ extra.club.abbreviation }} is based in {{ extra.club.location }}
 ```
 

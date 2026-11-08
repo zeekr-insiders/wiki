@@ -104,7 +104,7 @@ In the meantime, use the Facebook group for discussions and questions.
 
 ## Questions About the Forum?
 
-Email [{{ extra.club.contact_email }}](mailto:{{ extra.club.contact_email }}) or post in the Facebook group.
+Use [the contact form]({{ extra.club.contact_url }}) or post in the Facebook group.
 
 ---
 

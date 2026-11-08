@@ -1,6 +1,63 @@
 {% extends "base.html" %}
 
+{#- One page name for <title> and the share tags. Pages under a model ("Overview", "Pricing") take the model's
+    name too, so a tab or a share reads "Zeekr 7X Pricing", not just "Pricing". -#}
+{%- macro zi_name(page) -%}
+  {%- if page and page.meta and page.meta.title -%}
+    {{ page.meta.title }}
+  {%- elif page and page.title and not page.is_homepage -%}
+    {%- set t = page.title | striptags -%}
+    {%- if page.parent and page.parent.title and page.parent.title.startswith("Zeekr ") and not t.startswith("Zeekr") -%}
+      {{ page.parent.title }} {{ t }}
+    {%- else -%}
+      {{ t }}
+    {%- endif -%}
+  {%- else -%}
+    Wiki
+  {%- endif -%}
+{%- endmacro -%}
+
+
+{#- "Page | Zeekr Insiders", the front door's title format. The home page is the wiki itself. -#}
+{% block htmltitle %}
+  <title>{{ zi_name(page) | trim }} | {{ config.extra.site.title_suffix }}</title>
+{% endblock %}
+
+{% block site_meta %}
+  {{ super() }}
+  {#- Material only links theme.favicon; the rest of the set matches web-home/static. -#}
+  <link rel="icon" href="{{ 'favicon.ico' | url }}" sizes="48x48">
+  <link rel="apple-touch-icon" href="{{ 'apple-touch-icon.png' | url }}">
+  <link rel="manifest" href="{{ 'site.webmanifest' | url }}">
+  <meta name="theme-color" content="#000000">
+{% endblock %}
+
 {% block extrahead %}
-  <!-- Preload the display font so headings don't visibly swap after first paint -->
+  {#- Preload the faces above the fold so headings and body do not visibly swap after first paint. -#}
   <link rel="preload" href="{{ 'assets/fonts/space-grotesk-latin.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ 'assets/fonts/ibm-plex-sans-condensed-latin-400-normal.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+  {%- set og_title = (zi_name(page) | trim) ~ " | " ~ config.extra.site.title_suffix -%}
+  {%- set og_desc = (page.meta.description if page and page.meta and page.meta.description else config.site_description) -%}
+  {#- Share images must be absolute, so they are built from site_url, not the page's relative path. -#}
+  {%- set og_image = config.site_url ~ config.extra.site.og_image -%}
+  <meta property="og:type" content="{{ 'website' if (page and page.is_homepage) else 'article' }}">
+  <meta property="og:site_name" content="Zeekr Insiders Wiki">
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:title" content="{{ og_title }}">
+  <meta property="og:description" content="{{ og_desc }}">
+  {% if page and page.canonical_url %}<meta property="og:url" content="{{ page.canonical_url }}">{% endif %}
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Zeekr Insiders">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title }}">
+  <meta name="twitter:description" content="{{ og_desc }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+{% endblock %}
+
+{#- The front door's masthead sits above Material's header and scrolls away; the wiki bar below it stays. -#}
+{% block header %}
+  {% include "partials/zi-masthead.html" %}
+  {{ super() }}
 {% endblock %}

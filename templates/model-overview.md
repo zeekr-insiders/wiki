@@ -178,7 +178,7 @@ We welcome contributions from {{ extra.club.abbreviation }} members who own or h
 To contribute, please:
 1. Join our [GitHub repository]({{ extra.club.website }})
 2. Submit a pull request with your additions
-3. Contact us at {{ extra.club.contact_email }}
+3. Use [the contact form]({{ extra.club.contact_url }})
 
 ---
 
