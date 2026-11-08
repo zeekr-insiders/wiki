@@ -1,7 +1,11 @@
+---
+last_checked: 2026-11-08
+---
+
 <div class="hero-container hero-bg-7x">
     <div class="hero-content">
         <h1 class="hero-title">Zeekr 7X</h1>
-        <div class="hero-subtitle">The Family SUV that charges faster than you can order coffee. 800V Architecture. 615km Range.</div>
+        <div class="hero-subtitle">Mid-size electric SUV. 800V system. Three grades from $57,900 before on-road costs.</div>
         <div class="hero-actions">
             <a href="../2025/pricing/" class="btn btn-primary">See Pricing</a>
             <a href="../2025/specifications/" class="btn btn-secondary">Full Specs</a>
@@ -9,118 +13,116 @@
     </div>
 </div>
 
-## The Lineup
+*Last checked: 8 November 2026.*
+
+!!! info "2027 7X (MY27)"
+    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](which-7x.md).
+
+## The lineup (MY25/MY26)
+
+Prices are RRP before on-road costs and are unchanged for the MY27 [1][2].
 
 <div class="card-grid">
     <div class="z-card">
         <h3>RWD</h3>
         <div class="price">$57,900 <sub>+ ORC</sub></div>
         <ul class="feature-list">
-            <li><i>✓</i> <strong>480km</strong> Range (WLTP)</li>
-            <li><i>✓</i> <strong>75kWh</strong> "Golden Battery" (LFP)</li>
-            <li><i>✓</i> <strong>6.0s</strong> 0-100 km/h</li>
-            <li><i>✓</i> Panoramic Roof (Sunshade incl.)</li>
-            <li class="muted">Standard Sound (10 Spk)</li>
+            <li><i>✓</i> <strong>480 km</strong> range (WLTP)</li>
+            <li><i>✓</i> <strong>75 kWh</strong> LFP battery</li>
+            <li><i>✓</i> <strong>310 kW</strong> / 440 Nm</li>
+            <li><i>✓</i> <strong>6.0 s</strong> 0-100 km/h</li>
         </ul>
         <a href="../2025/specifications/" class="btn btn-secondary">Details</a>
     </div>
 
-    <div class="z-card featured">
-        <span class="badge">Insider Pick</span>
-        <h3>Long Range</h3>
+    <div class="z-card">
+        <h3>Long Range RWD</h3>
         <div class="price">$63,900 <sub>+ ORC</sub></div>
         <ul class="feature-list">
-            <li><i>✓</i> <strong>615km</strong> Range (WLTP)</li>
-            <li><i>✓</i> <strong>100kWh</strong> Battery (NMC)</li>
-            <li><i>✓</i> <strong>21-Speaker</strong> Sound Pro</li>
-            <li><i>✓</i> <strong>AR-HUD</strong> Included</li>
-            <li><i>✓</i> Massage & Ventilated Seats</li>
+            <li><i>✓</i> <strong>615 km</strong> range (WLTP)</li>
+            <li><i>✓</i> <strong>100 kWh</strong> NMC battery</li>
+            <li><i>✓</i> <strong>310 kW</strong> / 440 Nm</li>
+            <li><i>✓</i> <strong>6.0 s</strong> 0-100 km/h</li>
         </ul>
-        <a href="../2025/pricing/" class="btn btn-primary">Why this trim?</a>
+        <a href="../2025/specifications/" class="btn btn-secondary">Details</a>
     </div>
 
     <div class="z-card">
-        <h3>AWD Performance</h3>
+        <h3>Performance AWD</h3>
         <div class="price">$72,900 <sub>+ ORC</sub></div>
         <ul class="feature-list">
-            <li><i>✓</i> <strong>543km</strong> Range (WLTP)</li>
-            <li><i>✓</i> <strong>3.8s</strong> 0-100 km/h</li>
-            <li><i>✓</i> <strong>Air Suspension</strong> + CDC</li>
-            <li><i>✓</i> Auto-Opening Doors</li>
-            <li><i>✓</i> Nappa Leather</li>
+            <li><i>✓</i> <strong>543 km</strong> range (WLTP)</li>
+            <li><i>✓</i> <strong>100 kWh</strong> NMC battery</li>
+            <li><i>✓</i> <strong>475 kW</strong> / 710 Nm</li>
+            <li><i>✓</i> <strong>3.8 s</strong> 0-100 km/h</li>
         </ul>
         <a href="../2025/specifications/" class="btn btn-secondary">Details</a>
     </div>
 </div>
 
-## Key Stats
+Range, battery and 0-100 figures are from Zeekr's MY25/MY26 comparison table [3]; power and torque are the pre-update figures given by CarExpert [1].
+
+## Key numbers
 
 <div class="stat-grid">
     <div class="stat-card">
         <div class="stat-icon"><img src="../../../assets/icons/icon-charging-speed.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
-            <span class="stat-value">13 Min</span>
-            <span class="stat-label">10-80% Charge (LFP)</span>
+            <span class="stat-value">450 / 420 kW</span>
+            <span class="stat-label">Peak DC (RWD / Long Range, AWD)</span>
         </div>
     </div>
     <div class="stat-card">
         <div class="stat-icon"><img src="../../../assets/icons/icon-voltage.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
             <span class="stat-value">800V</span>
-            <span class="stat-label">Architecture</span>
+            <span class="stat-label">Electrical system</span>
         </div>
     </div>
     <div class="stat-card">
         <div class="stat-icon"><img src="../../../assets/icons/icon-towing.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
-            <span class="stat-value">2.0T</span>
-            <span class="stat-label">Towing Capacity</span>
+            <span class="stat-value">2,000 kg</span>
+            <span class="stat-label">Braked towing (MY25/MY26)</span>
         </div>
     </div>
     <div class="stat-card">
         <div class="stat-icon"><img src="../../../assets/icons/icon-bootspace.svg" class="zi-icon zi-icon--xl" alt=""></div>
         <div class="stat-content">
-            <span class="stat-value">616L</span>
-            <span class="stat-label">Boot Space</span>
+            <span class="stat-value">539 L</span>
+            <span class="stat-label">Boot, seats up</span>
         </div>
     </div>
 </div>
 
-## Insider "Need to Know"
+The 7X uses an 800V system with peak DC charging of up to 450 kW on the RWD and 420 kW on the Long Range and AWD [1]. What you actually see depends on the charger, the battery's temperature and its state of charge. Towing is rated at 2,000 kg braked and 750 kg unbraked for the MY25/MY26 car [4]; confirm towbar and tongue-weight details with your dealer. The boot holds 539 L with the rear seats up and 1,978 L folded [5].
 
-!!! tip "The 800V Advantage"
-    Most competitors (Tesla Model Y, BYD) use **400V** architecture. The Zeekr 7X uses **800V**. This means when you plug into a 350kW ultra-rapid charger, you actually get the speed. It is significantly faster to charge on road trips.
+## The MY27 update in brief
 
-!!! warning "V2L Adapter Check"
-    Ensure your dealer includes the V2L (Vehicle to Load) discharge adapter. It is standard equipment, but sometimes gets "lost" in the showroom.
+The 2027 7X keeps the prices, batteries and 800V system, and adds power and a little range [1]:
 
-## How Does It Compare?
+| | RWD | Long Range | Performance AWD |
+| :--- | :--- | :--- | :--- |
+| Power / torque | 335 kW / 520 Nm | 335 kW / 520 Nm | 500 kW / 790 Nm |
+| 0-100 km/h | 5.6 s | 5.5 s | 3.7 s |
+| WLTP range | 482 km | 627 km | 544 km |
 
-<div class="card-grid">
-    <div class="z-card">
-        <h3>vs Tesla Model Y</h3>
-        <p><strong>Zeekr Wins:</strong> 615km vs 466km range for similar money, 800V charging (10-80% in 13-16 min vs ~27 min)</p>
-        <p><strong>Tesla Wins:</strong> Larger service network, more mature software, better resale data</p>
-        <a href="../../../comparisons/zeekr-vs-competitors/#the-big-one-zeekr-7x-vs-tesla-model-y" class="go">Full Comparison</a>
-    </div>
+Every grade also gets a built-in dashcam (DVR) [1] and rear privacy glass [2]. The [Which 7X do I have?](which-7x.md) page covers how to tell the two apart.
 
-    <div class="z-card">
-        <h3>vs BYD Sealion 7</h3>
-        <p><strong>Zeekr Wins:</strong> 800V vs 400V charging, 615km vs 482km range, premium interior</p>
-        <p><strong>BYD Wins:</strong> Cheaper, stronger warranty term (6yr vs 5yr, though Zeekr's has no km cap)</p>
-        <a href="../../../comparisons/zeekr-vs-competitors/#the-value-king-zeekr-7x-vs-byd-sealion-7" class="go">Full Comparison</a>
-    </div>
+## More on the 7X
 
-    <div class="z-card">
-        <h3>See All Comparisons</h3>
-        <p>Compare the 7X against Polestar 3, Mercedes EQE, and more competitors. Plus see detailed side-by-side spec tables.</p>
-        <a href="../../../comparisons/model-comparison-table/" class="go">All Comparisons</a>
-    </div>
-</div>
+- [Which 7X do I have?](which-7x.md)
+- [Specifications](2025/specifications.md)
+- [Prices and options](2025/pricing.md)
+- [Service schedule and warranty](2025/service-schedule.md)
+- [Known issues](knowledge-base/7x-issues.md)
+- [Owner modifications](knowledge-base/7x-mods.md)
+- [How the 7X compares](../../comparisons/zeekr-vs-competitors.md)
 
-## Knowledge Base
+## Sources
 
-- [Detailed Specifications](2025/specifications.md)
-- [Pricing & Inclusions](2025/pricing.md)
-- [Known Issues & Fixes](knowledge-base/7x-issues.md)
-- [Owner Modifications](knowledge-base/7x-mods.md)
+1. CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
+2. The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.
+3. Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
+4. The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
+5. CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
