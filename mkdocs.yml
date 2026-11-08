@@ -60,6 +60,9 @@ theme:
     - content.action.edit
 
 extra:
+  # Moved pages: old content path -> new one. hooks/redirects.py keeps the old URL working.
+  redirects:
+    knowledge/glossary.md: glossary/index.md
   club:
     name: "Zeekr Insiders"
     abbreviation: "ZI"
@@ -107,6 +110,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/zeekr.js
+  - javascripts/glossary.js
 
 markdown_extensions:
   - abbr
@@ -159,6 +163,7 @@ hooks:
   - hooks/cards.py
   - hooks/headings.py
   - hooks/tables.py
+  - hooks/redirects.py
 
 plugins:
   - search:
@@ -235,7 +240,8 @@ nav:
       - Plugs and cables: knowledge/plugs-and-cables.md
       - Range in the real world: knowledge/real-world-range.md
       - V2L, V2H and V2G: knowledge/v2l-v2h-v2g.md
-      - EV glossary: knowledge/glossary.md
+
+  - Glossary: glossary/index.md
 
   - Community:
       - community/index.md

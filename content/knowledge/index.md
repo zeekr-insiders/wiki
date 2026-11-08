@@ -8,7 +8,7 @@ last_checked: 2026-11-08
 
 *Last checked: 8 November 2026.*
 
-Plain-English explainers for owners, with every claim footnoted. For step-by-step guides (setting up a home charger, public networks, road trips) see the [charging guides](../guides/charging/home-setup.md). For model-specific figures, see [Models](../models/index.md).
+Plain-English explainers for owners, with every claim footnoted. For step-by-step guides (setting up a home charger, public networks, road trips) see the [charging guides](../guides/charging/home-setup.md). For model-specific figures, see [Models](../models/index.md). For a quick definition, try the [Glossary](../glossary/index.md).
 
 !!! info "How we handle figures"
     Zeekr figures come from motoring press and Zeekr Australia pages. Where sources conflict or we could not confirm, the page says so. Charts marked "illustrative" show a shape, not measured data.
@@ -66,7 +66,7 @@ Plain-English explainers for owners, with every claim footnoted. For step-by-ste
     </div>
 </div>
 
-## Range, power out and terms
+## Range and power out
 
 <div class="card-grid">
     <div class="z-card">
@@ -80,11 +80,5 @@ Plain-English explainers for owners, with every claim footnoted. For step-by-ste
         <h3>V2L, V2H and V2G</h3>
         <p>What your Zeekr can power, and where V2G stands in Australia.</p>
         <a class="go" href="v2l-v2h-v2g/">V2L, V2H and V2G</a>
-    </div>
-    <div class="z-card">
-        {{ card_icon("book-a") }}
-        <h3>EV glossary</h3>
-        <p>Short definitions, each linked to the page that explains it.</p>
-        <a class="go" href="glossary/">EV glossary</a>
     </div>
 </div>

@@ -1,0 +1,532 @@
+# The wiki's glossary. The Glossary page (content/glossary/index.md) renders this file
+# through the glossary() macro in main.py, so this is the only place to edit a term.
+#
+# Each term:
+#   id:         stable anchor (glossary/#id). Never change one that has shipped; links depend on it.
+#   term:       the name as it is shown, sentence case.
+#   aka:        other names and abbreviations. The page filter and site search match these.
+#   category:   one key from `categories` below.
+#   definition: one or two plain-English sentences (Markdown). A factual specific (a figure, a
+#               date, which Zeekr has what) carries a footnote such as [^carexpert-7x], keyed to
+#               `sources` below. Generic definitions need none.
+#   see:        wiki pages that explain it: {label, page}, page relative to content/, anchor allowed.
+#
+# Terms are sorted A to Z by the macro, so add them anywhere. Australian English, no em dashes.
+
+categories:
+  battery: Battery
+  charging: Charging
+  home: Home and grid
+  driving: Driving
+  money: Ownership and money
+  zeekr: Zeekr-specific
+
+sources:
+  carexpert-x: 'CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.'
+  carexpert-7x: 'CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.'
+  carexpert-009: 'CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.'
+  thebeep-7x: 'The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.'
+  zeekr-7x: 'Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.'
+  driven-7x: 'The Driven, "Zeekr delivers 1,000th unit of the highly popular 7X SUV, expands dealer network", 13 December 2025, <https://thedriven.io/2025/12/13/zeekr-delivers-1000th-unit-of-the-highly-popular-7x-suv-expands-dealer-network/>, accessed 8 November 2026.'
+  driven-ota: 'The Driven, "Zeekr rolls out first OTA update for 7X electric SUV in Australia", <https://thedriven.io/2026/06/02/zeekr-rolls-out-first-ota-update-for-7x-electric-suv-in-australia/>, accessed 8 November 2026.'
+  warranty: 'Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.'
+  manual-traffic: 'Zeekr 7X Manual (unofficial mirror, Netherlands edition), "Traffic sign information", <https://zeekr-manual.pages.dev/sections/driver-assistance/T10214910/>, accessed 8 November 2026.'
+  racv-plugs: 'RACV, "Guide to electric vehicle charging, plug types and cables", 5 February 2025, <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-charging-plug-types>, accessed 8 November 2026.'
+  fueleconomy-cold: 'US Department of Energy, fueleconomy.gov, "Fuel Economy in Cold Weather", <https://fueleconomy.gov/Feg/coldweather.shtml>, accessed 8 November 2026.'
+  ato-fbt: 'Australian Taxation Office, "Electric vehicles and fringe benefits tax" (fact sheet for employers, current at February 2023), <https://www.ato.gov.au/law/view/pdf/afs/afs_ev_fbt.pdf>, accessed 8 November 2026.'
+  nsw-ruc: 'NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.'
+
+terms:
+  # Battery
+  - id: battery-pack
+    term: Battery pack
+    aka: [Traction battery, High-voltage battery]
+    category: battery
+    definition: 'The large battery that drives the car, sized in kWh. It feeds the motors through a single-speed reduction gear, so there is no engine oil, spark plugs, exhaust or fuel system to service.'
+    see:
+      - {label: kW vs kWh, page: knowledge/kw-vs-kwh.md}
+  - id: bms
+    term: BMS
+    aka: [Battery management system]
+    category: battery
+    definition: 'The electronics and software that monitor and protect the battery pack, including slowing charging as it fills and estimating the state of charge.'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+  - id: cell-balancing
+    term: Cell balancing
+    aka: [Balancing]
+    category: battery
+    definition: 'The BMS evening out the charge across the pack''s cells, which mostly happens near a full charge. It is one reason LFP cars are given an occasional full charge.'
+    see:
+      - {label: Charging to 80% vs 100%, page: knowledge/charging-80-vs-100.md}
+  - id: charge-limit
+    term: Charge limit
+    aka: [Target charge, Charge target]
+    category: battery
+    definition: 'The state of charge you set the car to stop at. The usual advice differs for NMC and LFP batteries, and your owner''s manual comes first.'
+    see:
+      - {label: Charging to 80% vs 100%, page: knowledge/charging-80-vs-100.md}
+  - id: degradation
+    term: Battery degradation
+    aka: [Capacity fade, Battery wear]
+    category: battery
+    definition: 'The slow loss of usable capacity as a battery ages and cycles, which shows up as less range from a full charge. State of health is how it is measured.'
+    see:
+      - {label: NMC vs LFP batteries, page: knowledge/nmc-vs-lfp.md}
+  - id: kwh
+    term: kWh
+    aka: [Kilowatt-hour]
+    category: battery
+    definition: 'An amount of energy. Battery size and your power bill are measured in kWh.'
+    see:
+      - {label: kW vs kWh, page: knowledge/kw-vs-kwh.md}
+  - id: lfp
+    term: LFP
+    aka: [Lithium iron phosphate, LiFePO4]
+    category: battery
+    definition: 'A battery chemistry that tolerates more charge cycles and full charges, with a flat voltage curve that makes the gauge harder to judge. Zeekr uses it in the X RWD and 7X RWD [^carexpert-x][^carexpert-7x].'
+    see:
+      - {label: NMC vs LFP batteries, page: knowledge/nmc-vs-lfp.md}
+      - {label: Charging to 80% vs 100%, page: knowledge/charging-80-vs-100.md}
+  - id: lfp-calibration
+    term: LFP calibration
+    aka: [Gauge calibration]
+    category: battery
+    definition: 'A full charge that lets the car correct its estimate of how full an LFP battery is.'
+    see:
+      - {label: Charging to 80% vs 100%, page: knowledge/charging-80-vs-100.md}
+  - id: nmc
+    term: NMC
+    aka: [NCM, Nickel manganese cobalt]
+    category: battery
+    definition: 'A battery chemistry that stores more energy per kilogram than LFP, usually given an 80% to 90% daily charge limit. Zeekr uses it in the X AWD, the 7X Long Range and Performance AWD, and the 009 FWD [^carexpert-x][^carexpert-7x][^carexpert-009].'
+    see:
+      - {label: NMC vs LFP batteries, page: knowledge/nmc-vs-lfp.md}
+  - id: soc
+    term: State of charge
+    aka: [SOC, Battery percentage]
+    category: battery
+    definition: 'How full the battery is, shown as a percentage.'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+  - id: soh
+    term: State of health
+    aka: [SOH, Battery health]
+    category: battery
+    definition: 'How much capacity the battery has left compared with new. Zeekr''s Australian warranty covers repair or replacement of the high-voltage battery if its state of health falls below 70% within 8 years or 160,000 km [^warranty].'
+    see:
+      - {label: Zeekr 7X servicing and warranty, page: models/7x/2025/service-schedule.md}
+  - id: thermal-runaway
+    term: Thermal runaway
+    aka: []
+    category: battery
+    definition: 'A chain reaction in which a damaged or overheated cell heats itself and its neighbours. LFP cells reach it at a higher temperature than NMC cells.'
+    see:
+      - {label: NMC vs LFP batteries, page: knowledge/nmc-vs-lfp.md}
+
+  # Charging
+  - id: ac-charging
+    term: AC charging
+    aka: [Alternating current, AC, Level 2]
+    category: charging
+    definition: 'Charging from mains power at home, at work or at destination chargers. The car''s onboard charger converts the AC to DC, and its rating sets the top speed.'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+  - id: ccs2
+    term: CCS2
+    aka: [Combined Charging System, Combo 2]
+    category: charging
+    definition: 'The DC fast-charging plug used in Australia: a Type 2 socket with two extra large pins below it for DC [^racv-plugs].'
+    see:
+      - {label: Plugs and cables, page: knowledge/plugs-and-cables.md}
+  - id: chademo
+    term: CHAdeMO
+    aka: []
+    category: charging
+    definition: 'An older DC fast-charging standard, found mostly on older Japanese-built cars [^racv-plugs]. Zeekrs do not use it.'
+    see:
+      - {label: Plugs and cables, page: knowledge/plugs-and-cables.md}
+  - id: charging-curve
+    term: Charging curve
+    aka: [Taper, Charge curve]
+    category: charging
+    definition: 'A chart of charging power against state of charge. Power ramps up, holds near a peak, then tapers as the battery fills, which is why fast-charge times are quoted from 10% to 80%.'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+  - id: dc-charging
+    term: DC fast charging
+    aka: [DCFC, Rapid charging, DC, Direct current]
+    category: charging
+    definition: 'Public fast charging, where the charger converts mains power to DC and feeds the battery directly, bypassing the onboard charger.'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+      - {label: Public charging, page: guides/charging/public-networks.md}
+  - id: evse
+    term: EVSE
+    aka: [Electric vehicle supply equipment, Wallbox, Charge point]
+    category: charging
+    definition: 'The proper name for a wallbox or charging post: the equipment between the supply and the car.'
+    see:
+      - {label: Home charging explained, page: knowledge/home-charging.md}
+  - id: idle-fee
+    term: Idle fee
+    aka: [Overstay fee, Congestion fee]
+    category: charging
+    definition: 'A per-minute charge some networks add when a car stays plugged in after charging finishes, or past a set level at busy sites.'
+    see:
+      - {label: Charging etiquette, page: guides/charging/etiquette.md}
+  - id: kw
+    term: kW
+    aka: [Kilowatt]
+    category: charging
+    definition: 'A rate of power. Charger speed and motor output are measured in kW.'
+    see:
+      - {label: kW vs kWh, page: knowledge/kw-vs-kwh.md}
+  - id: obc
+    term: Onboard charger
+    aka: [OBC]
+    category: charging
+    definition: 'The unit inside the car that converts AC to DC for the battery. Its rating sets the AC charging speed: 11 kW or 22 kW on the Zeekrs with published figures [^carexpert-x][^carexpert-7x].'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+  - id: plugshare
+    term: PlugShare
+    aka: []
+    category: charging
+    definition: 'An app and website that maps public chargers across networks, with check-ins from other drivers.'
+    see:
+      - {label: Public charging, page: guides/charging/public-networks.md}
+  - id: portable-charger
+    term: Portable charger
+    aka: [Mode 2 charger, Travel charger, Granny charger]
+    category: charging
+    definition: 'A cable with a built-in control box that plugs into a household socket. It is slow, and Zeekr''s manual says never to use it with an extension lead or adapter.'
+    see:
+      - {label: Plugs and cables, page: knowledge/plugs-and-cables.md}
+  - id: preconditioning
+    term: Preconditioning
+    aka: [Preheating, Pre-conditioning]
+    category: charging
+    definition: 'Warming or cooling the battery or cabin before you drive or fast charge. Doing it while the car is plugged in uses grid power instead of range [^fueleconomy-cold].'
+    see:
+      - {label: Range in the real world, page: knowledge/real-world-range.md}
+  - id: rfid-card
+    term: RFID card
+    aka: [Charge card, Charging fob]
+    category: charging
+    definition: 'A card or key fob that some charging networks accept for starting a session instead of their app.'
+    see:
+      - {label: Public charging, page: guides/charging/public-networks.md}
+  - id: tethered
+    term: Tethered and untethered
+    aka: [Tethered, Untethered, BYO cable]
+    category: charging
+    definition: 'Whether a charger has its own cable attached (tethered) or only a socket for yours (untethered). Public DC chargers are always tethered [^racv-plugs].'
+    see:
+      - {label: Plugs and cables, page: knowledge/plugs-and-cables.md}
+  - id: type-2
+    term: Type 2
+    aka: [Mennekes]
+    category: charging
+    definition: 'The most common AC charging plug in Australia, supporting single-phase and three-phase charging [^racv-plugs].'
+    see:
+      - {label: Plugs and cables, page: knowledge/plugs-and-cables.md}
+
+  # Home and grid
+  - id: bidirectional-charger
+    term: Bidirectional charger
+    aka: [Two-way charger]
+    category: home
+    definition: 'A charger that can send power out of the car as well as into it. V2H and V2G need one.'
+    see:
+      - {label: V2L, V2H and V2G, page: knowledge/v2l-v2h-v2g.md}
+  - id: cec
+    term: CEC
+    aka: [Clean Energy Council]
+    category: home
+    definition: 'The industry body that lists approved inverters and bidirectional chargers. A V2G charger needs to be on its list before it can be installed in an Australian home.'
+    see:
+      - {label: V2L, V2H and V2G, page: knowledge/v2l-v2h-v2g.md}
+  - id: dnsp
+    term: DNSP
+    aka: [Distribution network service provider, Distributor, Network]
+    category: home
+    definition: 'The company that runs the local poles and wires, such as Ausgrid or Energex, and sets the rules for connecting a home charger.'
+    see:
+      - {label: Home charging explained, page: knowledge/home-charging.md}
+  - id: load-balancing
+    term: Load balancing
+    aka: [Load management]
+    category: home
+    definition: 'A charger feature that cuts charging power when the house is drawing a lot, so the main switch does not trip.'
+    see:
+      - {label: Home charging, page: guides/charging/home-setup.md}
+  - id: qecm
+    term: QECM
+    aka: [Queensland Electricity Connection Manual, ECM]
+    category: home
+    definition: 'Energex and Ergon''s rulebook for connecting equipment to the Queensland network, including home chargers.'
+    see:
+      - {label: Home charging explained, page: knowledge/home-charging.md}
+  - id: rcd
+    term: RCD
+    aka: [Residual current device, Safety switch]
+    category: home
+    definition: 'A safety switch that cuts power when it detects a fault. A charger circuit should have one.'
+    see:
+      - {label: Plugs and cables, page: knowledge/plugs-and-cables.md}
+  - id: single-phase
+    term: Single-phase
+    aka: [Single phase]
+    category: home
+    definition: 'The usual home supply, with one live conductor. A home charger on it tops out at about 7 kW.'
+    see:
+      - {label: Home charging explained, page: knowledge/home-charging.md}
+  - id: solar-charging
+    term: Solar charging
+    aka: [Solar diversion, Excess solar charging]
+    category: home
+    definition: 'A charger setting that charges the car from surplus rooftop solar instead of exporting it.'
+    see:
+      - {label: Home charging, page: guides/charging/home-setup.md}
+  - id: three-phase
+    term: Three-phase
+    aka: [Three phase, 3-phase]
+    category: home
+    definition: 'A supply with three live conductors. It allows a home charger of up to 22 kW.'
+    see:
+      - {label: Home charging explained, page: knowledge/home-charging.md}
+  - id: tou
+    term: Time-of-use tariff
+    aka: [TOU, EV plan]
+    category: home
+    definition: 'An electricity plan with cheaper rates at set times, often overnight or in the middle of the day.'
+    see:
+      - {label: Home charging, page: guides/charging/home-setup.md}
+  - id: v2g
+    term: V2G
+    aka: [Vehicle to grid]
+    category: home
+    definition: 'Exporting energy from the car''s battery to the electricity network, through a certified bidirectional charger with network approval.'
+    see:
+      - {label: V2L, V2H and V2G, page: knowledge/v2l-v2h-v2g.md}
+  - id: v2h
+    term: V2H
+    aka: [Vehicle to home]
+    category: home
+    definition: 'Powering a house from the car, mainly as backup during an outage. It needs a bidirectional charger and changes to the home wiring.'
+    see:
+      - {label: V2L, V2H and V2G, page: knowledge/v2l-v2h-v2g.md}
+  - id: v2l
+    term: V2L
+    aka: [Vehicle to load]
+    category: home
+    definition: 'Powering appliances straight from the car through an adapter. The 7X is rated at 3.3 kW [^driven-7x].'
+    see:
+      - {label: V2L, V2H and V2G, page: knowledge/v2l-v2h-v2g.md}
+
+  # Driving
+  - id: 800v
+    term: 800V architecture
+    aka: [800V, 800 volt]
+    category: driving
+    definition: 'A higher-voltage electrical system that carries the same power with less current, so the car can sustain faster charging. The 7X uses one [^zeekr-7x].'
+    see:
+      - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
+  - id: adas
+    term: ADAS
+    aka: [Advanced driver assistance systems, Driver assistance]
+    category: driving
+    definition: 'The car''s driver aids, such as adaptive cruise, lane keeping and speed alerts. On the 7X their settings sit under Zeekr AD [^manual-traffic].'
+    see:
+      - {label: Known issues and fixes, page: models/7x/knowledge-base/7x-issues.md}
+  - id: ancap
+    term: ANCAP
+    aka: [Australasian New Car Assessment Program, Safety rating]
+    category: driving
+    definition: 'The independent body that crash-tests new cars sold in Australia and New Zealand and rates them out of five stars.'
+    see:
+      - {label: Zeekr 7GT specifications, page: models/7gt/specifications.md}
+  - id: cltc
+    term: CLTC
+    aka: [China Light-duty Vehicle Test Cycle]
+    category: driving
+    definition: 'China''s laboratory range test. It usually gives higher figures than WLTP, so China-market range claims are not comparable with Australian ones.'
+    see:
+      - {label: Range in the real world, page: knowledge/real-world-range.md}
+  - id: consumption
+    term: kWh/100 km
+    aka: [Consumption, Efficiency, Energy use]
+    category: driving
+    definition: 'How much energy the car uses to drive 100 km, the EV''s equivalent of litres per 100 km. The trip computer shows it.'
+    see:
+      - {label: kW vs kWh, page: knowledge/kw-vs-kwh.md}
+  - id: inverter
+    term: Inverter
+    aka: []
+    category: driving
+    definition: 'The electronics between the battery and the motor, turning the battery''s DC into the AC the motor runs on and back again under regenerative braking.'
+    see: []
+  - id: one-pedal
+    term: One-pedal driving
+    aka: [One pedal]
+    category: driving
+    definition: 'A strong regenerative braking setting that slows the car to a stop when you lift off the accelerator, so you rarely need the brake pedal. What your car offers is in its driving settings.'
+    see: []
+  - id: regen
+    term: Regenerative braking
+    aka: [Regen]
+    category: driving
+    definition: 'The motor working as a generator when you slow down, putting energy back into the battery and saving wear on the friction brakes.'
+    see:
+      - {label: Running costs and incentives, page: getting-started/ev-basics.md}
+  - id: wltp
+    term: WLTP
+    aka: [Worldwide Harmonised Light Vehicles Test Procedure]
+    category: driving
+    definition: 'The laboratory test cycle behind Zeekr''s published Australian range figures. Real-world range is usually lower.'
+    see:
+      - {label: Range in the real world, page: knowledge/real-world-range.md}
+
+  # Ownership and money
+  - id: ceramic-coating
+    term: Ceramic coating
+    aka: []
+    category: money
+    definition: 'A hard, glossy layer applied over the paint that makes it easier to clean. It does not stop stone chips the way PPF does.'
+    see:
+      - {label: Paint and window protection, page: ownership/accessories/protection.md}
+  - id: chattel-mortgage
+    term: Chattel mortgage
+    aka: []
+    category: money
+    definition: 'A business car loan in which the buyer owns the car from the start and the lender holds it as security.'
+    see:
+      - {label: Finance options, page: buying/finance.md}
+  - id: ctp
+    term: CTP
+    aka: [Compulsory third party, Green slip]
+    category: money
+    definition: 'The compulsory insurance that covers injury to other people, paid with registration and part of on-road costs.'
+    see:
+      - {label: Prices and on-road costs, page: buying/pricing.md}
+  - id: drive-away
+    term: Drive-away price
+    aka: [Drive away, DAP]
+    category: money
+    definition: 'The full price to drive the car away, including on-road costs such as stamp duty, registration and CTP.'
+    see:
+      - {label: Prices and on-road costs, page: buying/pricing.md}
+  - id: fbt
+    term: FBT
+    aka: [Fringe Benefits Tax]
+    category: money
+    definition: 'A tax on benefits an employer provides. Eligible EVs supplied through an employer, including by novated lease, can be exempt [^ato-fbt].'
+    see:
+      - {label: Finance options, page: buying/finance.md}
+  - id: lct
+    term: LCT
+    aka: [Luxury Car Tax]
+    category: money
+    definition: 'A federal tax on the part of a car''s price above a threshold, which is higher for fuel-efficient vehicles including EVs. The threshold also caps the FBT exemption.'
+    see:
+      - {label: Finance options, page: buying/finance.md}
+  - id: novated-lease
+    term: Novated lease
+    aka: [Salary packaging, Salary sacrifice]
+    category: money
+    definition: 'A three-way agreement between you, your employer and a lender, where the car''s costs come out of your pay. For an eligible EV it can be FBT-exempt.'
+    see:
+      - {label: Finance options, page: buying/finance.md}
+  - id: orc
+    term: On-road costs
+    aka: [ORC, On-roads]
+    category: money
+    definition: 'The costs on top of the car''s price before you can drive it: stamp duty, registration, CTP and any dealer delivery charge.'
+    see:
+      - {label: Prices and on-road costs, page: buying/pricing.md}
+  - id: ota
+    term: OTA update
+    aka: [Over-the-air update, Software update]
+    category: money
+    definition: 'A software update the car downloads and installs itself, with no workshop visit. Zeekr''s first OTA update for the 7X in Australia was reported in June 2026 [^driven-ota].'
+    see:
+      - {label: Owner modifications, page: models/7x/knowledge-base/7x-mods.md}
+  - id: ppf
+    term: PPF
+    aka: [Paint protection film, Clear bra]
+    category: money
+    definition: 'A clear film applied over the paint to protect it from stone chips and scratches.'
+    see:
+      - {label: Paint and window protection, page: ownership/accessories/protection.md}
+  - id: rego
+    term: Registration
+    aka: [Rego]
+    category: money
+    definition: 'The state or territory licence to drive the car on public roads, renewed each year.'
+    see:
+      - {label: Prices and on-road costs, page: buying/pricing.md}
+  - id: road-user-charge
+    term: Road user charge
+    aka: [RUC, Distance-based charge]
+    category: money
+    definition: 'A per-kilometre charge on EVs in place of the fuel excise petrol drivers pay. NSW has legislated one to start on 1 July 2027 [^nsw-ruc].'
+    see:
+      - {label: Running costs and incentives, page: getting-started/ev-basics.md}
+  - id: rrp
+    term: RRP
+    aka: [Recommended retail price, List price]
+    category: money
+    definition: 'The maker''s published price before on-road costs.'
+    see:
+      - {label: Prices and on-road costs, page: buying/pricing.md}
+  - id: stamp-duty
+    term: Stamp duty
+    aka: [Motor vehicle duty]
+    category: money
+    definition: 'A state or territory tax charged when a car is bought or first registered. Rates and EV rules differ by state.'
+    see:
+      - {label: Prices and on-road costs, page: buying/pricing.md}
+  - id: vin
+    term: VIN
+    aka: [Vehicle identification number]
+    category: money
+    definition: 'The car''s unique 17-character identifier, on the compliance plate and the registration papers. Keep it private.'
+    see: []
+
+  # Zeekr-specific
+  - id: battery-warranty
+    term: Battery warranty
+    aka: [High-voltage battery warranty]
+    category: zeekr
+    definition: 'Zeekr''s Australian warranty on the high-voltage battery runs for 8 years or 160,000 km [^warranty].'
+    see:
+      - {label: Zeekr 7X servicing and warranty, page: models/7x/2025/service-schedule.md}
+  - id: dvr
+    term: DVR
+    aka: [Digital video recorder, Dashcam, Built-in dashcam]
+    category: zeekr
+    definition: 'A built-in dashcam that records with the car''s own cameras. It is standard on every MY27 7X grade [^carexpert-7x].'
+    see:
+      - {label: "Which 7X do I have?", page: models/7x/which-7x.md}
+  - id: my25-my26
+    term: MY25/MY26
+    aka: [MY25, MY26, Launch 7X, Original 7X]
+    category: zeekr
+    definition: 'The wiki''s name for the original 7X, sold from its 2025 launch until the MY27 update. A figure without a model year can differ between the two.'
+    see:
+      - {label: "Which 7X do I have?", page: models/7x/which-7x.md}
+  - id: my27
+    term: MY27
+    aka: [2027 7X, Updated 7X]
+    category: zeekr
+    definition: 'The updated 7X, with more power and the same prices. Orders opened on 1 November 2026 and first deliveries are expected in December 2026 [^carexpert-7x][^thebeep-7x].'
+    see:
+      - {label: "Which 7X do I have?", page: models/7x/which-7x.md}
+  - id: zeekr-ad
+    term: Zeekr AD
+    aka: [Zeekr assisted driving]
+    category: zeekr
+    definition: 'The 7X settings menu for driver assistance, such as the over-speed alert [^manual-traffic].'
+    see:
+      - {label: Known issues and fixes, page: models/7x/knowledge-base/7x-issues.md}

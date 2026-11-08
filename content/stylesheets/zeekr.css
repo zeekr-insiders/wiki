@@ -3111,3 +3111,334 @@ span .zi-icon {
     color: var(--ink-muted);
     font-size: var(--fs-sm);
 }
+
+/* 22. Glossary (the glossary() macro, javascripts/glossary.js). The filter,
+   chips and copy buttons ship hidden and the script reveals them, so without
+   JS the page is the plain list. On wide screens the search and the letters
+   stick under the header; on phones nothing sticks, to leave room to read.
+   Matches and the landed-on term use the wiki's ink and Silver Gray, never
+   orange. ------------------------------------------------------------------ */
+.md-typeset .zi-gloss {
+    --zi-gloss-top: 0px;
+    --zi-gloss-bar-h: 0px;
+}
+
+.md-typeset .zi-gloss-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin: var(--sp-4) 0 0;
+}
+
+.md-typeset .zi-chip {
+    min-height: var(--tap);
+    padding: 0 var(--sp-4);
+    font: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.md-typeset .zi-chip:hover {
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-chip[aria-pressed="true"] {
+    color: var(--bg);
+    background: var(--ink);
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-chip:focus-visible,
+.md-typeset .zi-gloss-clear:focus-visible,
+.md-typeset .zi-gloss-reset:focus-visible,
+.md-typeset .zi-term__copy:focus-visible,
+.md-typeset .zi-gloss-az a:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-gloss-bar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+    margin: 0 0 var(--sp-4);
+    padding: var(--sp-3) 0 var(--sp-2);
+    background: var(--bg);
+    border-bottom: var(--hairline) solid var(--line);
+}
+
+@media screen and (min-width: 60em) {
+    .md-typeset .zi-gloss-bar {
+        position: sticky;
+        top: var(--zi-gloss-top);
+        z-index: 2;
+    }
+}
+
+.md-typeset .zi-gloss-search__label {
+    display: block;
+    margin-bottom: var(--sp-1);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink);
+}
+
+/* Announced to screen readers only ("Link copied"). */
+.md-typeset .zi-gloss-status {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.md-typeset .zi-gloss-search__field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.md-typeset .zi-gloss-search__icon {
+    position: absolute;
+    left: var(--sp-3);
+    width: 18px;
+    height: 18px;
+    color: var(--ink-muted);
+    pointer-events: none;
+}
+
+.md-typeset .zi-gloss-search__input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 104px 0 40px;
+    font: inherit;
+    font-size: var(--fs-md);
+    color: var(--ink);
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-sm);
+}
+
+.md-typeset .zi-gloss-search__input:placeholder-shown {
+    padding-right: var(--sp-3);
+}
+
+.md-typeset .zi-gloss-search__input::placeholder {
+    color: var(--ink-muted);
+}
+
+.md-typeset .zi-gloss-search__input:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 0;
+}
+
+.md-typeset .zi-gloss-search__input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.md-typeset .zi-gloss-clear {
+    position: absolute;
+    right: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+    min-height: var(--tap);
+    padding: 0 var(--sp-3);
+    font: inherit;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.md-typeset .zi-gloss-clear[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-gloss-clear__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.md-typeset .zi-gloss-az-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-1) var(--sp-3);
+}
+
+.md-typeset .zi-gloss-az {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.md-typeset .zi-gloss-az a,
+.md-typeset .zi-gloss-az span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    min-height: 36px;
+    padding: 0 2px;
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.md-typeset .zi-gloss-az a {
+    color: var(--ink);
+}
+
+.md-typeset .zi-gloss-az a:hover {
+    text-decoration: underline;
+}
+
+/* No terms under it: greyed and inert, never coloured alone (it is also unlinked or aria-disabled). */
+.md-typeset .zi-gloss-az .is-empty {
+    color: var(--ink-faint);
+    opacity: 0.55;
+    pointer-events: none;
+}
+
+.md-typeset .zi-gloss-count {
+    margin: 0;
+    color: var(--ink-muted);
+    font-size: var(--fs-sm);
+}
+
+.md-typeset .zi-gloss-empty {
+    padding: var(--sp-5) 0;
+    color: var(--ink-muted);
+}
+
+.md-typeset .zi-gloss-reset {
+    min-height: var(--tap);
+    padding: 0 var(--sp-2);
+    font: inherit;
+    font-weight: 600;
+    color: var(--ink);
+    text-decoration: underline;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.md-typeset .zi-gloss-letter {
+    margin: var(--sp-6) 0 0;
+    padding-bottom: var(--sp-1);
+    font-family: var(--font-display);
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    border-bottom: var(--rule) solid var(--ink);
+    scroll-margin-top: calc(var(--zi-gloss-top) + var(--zi-gloss-bar-h) + var(--sp-3));
+}
+
+.md-typeset .zi-term {
+    padding: var(--sp-4) var(--sp-3);
+    margin: 0 calc(-1 * var(--sp-3));
+    border-bottom: var(--hairline) solid var(--line);
+}
+
+.md-typeset .zi-term h2 {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin: 0 0 var(--sp-1);
+    font-size: var(--fs-lg);
+    scroll-margin-top: calc(var(--zi-gloss-top) + var(--zi-gloss-bar-h) + var(--sp-5));
+}
+
+/* The copy button stands in for Material's permalink here. */
+.md-typeset .zi-term h2 .headerlink {
+    display: none;
+}
+
+.md-typeset .zi-term__copy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    color: var(--ink-muted);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 120ms ease;
+}
+
+.md-typeset .zi-term:hover .zi-term__copy,
+.md-typeset .zi-term__copy:focus-visible,
+.md-typeset .zi-term__copy.is-copied,
+.md-typeset .zi-term.is-target .zi-term__copy {
+    opacity: 1;
+}
+
+/* No hover on touch screens, so the button always shows there. */
+@media (hover: none) {
+    .md-typeset .zi-term__copy {
+        opacity: 1;
+    }
+}
+
+.md-typeset .zi-term__copy:hover,
+.md-typeset .zi-term__copy.is-copied {
+    color: var(--ink);
+}
+
+.md-typeset .zi-term__copy-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.md-typeset .zi-term p {
+    margin: 0 0 var(--sp-2);
+}
+
+.md-typeset .zi-term .zi-term__meta {
+    color: var(--ink-muted);
+    font-size: var(--fs-sm);
+}
+
+.md-typeset .zi-term__cat {
+    display: inline-block;
+    margin-right: var(--sp-1);
+    padding: 0 var(--sp-2);
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border: var(--hairline) solid var(--line-strong);
+    border-radius: 999px;
+}
+
+.md-typeset .zi-term .zi-term__see {
+    margin: 0;
+    font-size: var(--fs-sm);
+}
+
+.md-typeset .zi-term mark {
+    color: inherit;
+    background: color-mix(in srgb, var(--hue-gold-solid) 40%, transparent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+/* The term a #link landed on: a Silver Gray edge and a light tint. */
+.md-typeset .zi-term.is-target {
+    background: color-mix(in srgb, var(--hue-slate-solid) var(--hue-tint), transparent);
+    box-shadow: inset 3px 0 0 var(--hue-slate-solid);
+}

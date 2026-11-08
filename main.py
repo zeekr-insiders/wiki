@@ -4,6 +4,7 @@ Provides functions to load and process YAML model data for comparison tables.
 """
 
 import html
+import re
 
 import yaml
 import os
@@ -81,6 +82,99 @@ def define_env(env):
             parts.append(f'<span class="zi-spec-card__detail">{detail}</span>')
         parts.append("</div>")
         return "".join(parts)
+
+    @env.macro
+    def glossary() -> str:
+        """The Glossary page body, from data/glossary.yml (README, "Glossary").
+
+        Terms are sorted A to Z into letter groups, each an h2 with the term's id
+        as its anchor, so Material's search indexes every term (and its aliases,
+        in the text under it) and lands on it. The filter, chips and copy-link
+        buttons are progressive: they ship hidden and javascripts/glossary.js
+        reveals them, so without JS the page is the plain list with an A to Z
+        bar of anchor links. Footnote keys in definitions become the page's
+        Sources, numbered in reading order.
+        """
+        data = yaml.safe_load((Path(__file__).parent / "data" / "glossary.yml").read_text(encoding="utf-8"))
+        cats = data["categories"]
+        sources = data.get("sources") or {}
+        terms = sorted(data["terms"], key=lambda t: t["term"].casefold())
+        ids = [t["id"] for t in terms]
+        if len(ids) != len(set(ids)):
+            raise ValueError("data/glossary.yml: duplicate term id")
+
+        def letter(term: str) -> str:
+            c = term[0].upper()
+            return c if c.isalpha() else "#"
+
+        def letter_id(c: str) -> str:
+            return "letter-0-9" if c == "#" else f"letter-{c.lower()}"
+
+        groups: Dict[str, List[Dict[str, Any]]] = {}
+        for t in terms:
+            groups.setdefault(letter(t["term"]), []).append(t)
+        alphabet = ["#"] + [chr(c) for c in range(ord("A"), ord("Z") + 1)]
+
+        esc = html.escape
+        letters = "".join(
+            f'<a href="#{letter_id(c)}" data-letter="{letter_id(c)}">{"0-9" if c == "#" else c}</a>' if c in groups
+            else f'<span class="is-empty" aria-hidden="true">{"0-9" if c == "#" else c}</span>'
+            for c in alphabet)
+        chips = "".join(f'<button type="button" class="zi-chip" data-cat="{k}" aria-pressed="false">{esc(v)}</button>'
+                        for k, v in cats.items())
+        bar = ['<div class="zi-gloss-chips" role="group" aria-label="Filter by category" hidden>'
+               '<button type="button" class="zi-chip" data-cat="" aria-pressed="true">All</button>' + chips + '</div>',
+               # Only the search and the letters stick on wide screens; the chips would crowd the page.
+               '<div class="zi-gloss-bar">',
+               '<div class="zi-gloss-search" hidden>',
+               '<label class="zi-gloss-search__label" for="zi-gloss-q">Filter the glossary</label>',
+               '<div class="zi-gloss-search__field">' + _lucide("search", "zi-gloss-search__icon")
+               + '<input id="zi-gloss-q" class="zi-gloss-search__input" type="search" autocomplete="off" spellcheck="false" '
+               'placeholder="Try SOC, regen or LCT" aria-describedby="zi-gloss-count">'
+               '<button type="button" class="zi-gloss-clear" hidden>' + _lucide("x", "zi-gloss-clear__icon")
+               + '<span>Clear</span></button></div>',
+               '</div>',
+               '<div class="zi-gloss-az-row"><nav class="zi-gloss-az" aria-label="Jump to a letter">' + letters + '</nav>'
+               '<p class="zi-gloss-count" id="zi-gloss-count" aria-live="polite" hidden></p></div>',
+               '</div>',
+               '<p class="zi-gloss-empty" hidden>No terms match. <button type="button" class="zi-gloss-reset">Clear the filter</button></p>',
+               '<template id="zi-gloss-link-icon">' + _lucide("link", "zi-term__copy-icon") + '</template>']
+
+        used: List[str] = []
+        out = ['<div class="zi-gloss" markdown>', "", "\n".join(bar), ""]
+        for c in alphabet:
+            if c not in groups:
+                continue
+            label = "0-9" if c == "#" else c
+            out += [f'<section class="zi-gloss-group" markdown>', "",
+                    f'<p class="zi-gloss-letter" id="{letter_id(c)}">{label}</p>', ""]
+            for t in groups[c]:
+                if t["category"] not in cats:
+                    raise ValueError(f"data/glossary.yml: {t['id']} has unknown category {t['category']}")
+                definition = " ".join(str(t["definition"]).split())
+                for key in re.findall(r"\[\^([^\]]+)\]", definition):
+                    if key not in sources:
+                        raise ValueError(f"data/glossary.yml: {t['id']} cites [^{key}], which is not in sources")
+                    if key not in used:
+                        used.append(key)
+                aka = t.get("aka") or []
+                meta = f'<span class="zi-term__cat">{esc(cats[t["category"]])}</span>'
+                if aka:
+                    meta += " Also called " + ", ".join(esc(a) for a in aka) + "."
+                out += [f'<div class="zi-term" data-cat="{t["category"]}" markdown>', "",
+                        f'## {t["term"]} {{ #{t["id"]} }}', "",
+                        meta, '{: .zi-term__meta }', "",
+                        definition, ""]
+                see = t.get("see") or []
+                if see:
+                    links = " &middot; ".join(f'[{s["label"]}](../{s["page"]})' for s in see)
+                    out += [f"See: {links}", "{: .zi-term__see }", ""]
+                out += ["</div>", ""]
+            out += ["</section>", ""]
+        out += ["</div>", ""]
+        if used:
+            out += ["## Sources", ""] + [f"[^{k}]: {sources[k]}" for k in used] + [""]
+        return "\n".join(out)
 
     @env.macro
     def load_model_data(model_slug: str, year: int) -> Dict[str, Any]:

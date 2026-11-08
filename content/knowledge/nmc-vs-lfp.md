@@ -63,7 +63,7 @@ Nearly every EV battery sold in Australia is a lithium-ion pack, and most use on
 
 - [Charging to 80% vs 100%](charging-80-vs-100.md)
 - [kW vs kWh](kw-vs-kwh.md)
-- [EV glossary](glossary.md)
+- [Glossary](../glossary/index.md)
 
 ## Sources
 
