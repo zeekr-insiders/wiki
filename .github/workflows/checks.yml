@@ -39,3 +39,6 @@ jobs:
 
       - name: Check labels
         run: .venv/bin/python scripts/check_labels.py site mkdocs.yml
+
+      - name: Check search metadata
+        run: .venv/bin/python scripts/check_seo.py site
