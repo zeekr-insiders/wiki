@@ -46,6 +46,8 @@ hide:
     </div>
 </div>
 
+New to EVs? [Knowledge](knowledge/index.md) explains batteries, charging and range in plain English.
+
 ## The lineup at a glance
 
 <div class="card-grid model-lineup">
