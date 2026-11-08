@@ -27,22 +27,22 @@ theme:
     share: lucide/share-2
     close: lucide/x
   palette:
-    # Two states, as on the front door: the first visit follows the OS, the toggle then picks one.
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: zi/sun
-        name: Switch to light theme
-
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    # Everyone starts in light, whatever the OS prefers, as on the front door. The toggle switches to
+    # dark and back; Material keeps the visitor's choice in localStorage (__palette) and applies it
+    # in the header before the page paints, so a dark choice reloads dark with no light flash.
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: zi/moon
         name: Switch to dark theme
+
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: zi/sun
+        name: Switch to light theme
 
   features:
     - navigation.tabs

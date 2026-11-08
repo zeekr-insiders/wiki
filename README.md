@@ -222,7 +222,7 @@ VZC is based in Victoria, Australia
 ### Key Features
 
 - **Responsive Design** - Works perfectly on mobile and desktop
-- **Dark/Light Mode** - Automatic theme switching
+- **Light and dark themes** - Light by default, with a dark toggle that remembers your choice
 - **Advanced Search** - Full-text search with highlighting
 - **Navigation** - Tabbed navigation with breadcrumbs
 - **Code Highlighting** - Syntax highlighting for technical content

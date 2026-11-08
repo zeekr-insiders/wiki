@@ -107,6 +107,10 @@ Plain Markdown. Keep headers and row labels short so a table fits a phone with l
 
 The wiki uses the front door's neutral palette: Carbon, greys and Arctic White, with ink-coloured links. **Zeekr orange (`--zeekr-orange`, `#FF5A00`) is kept for actions and position only**: primary buttons, the current tab underline, reading progress, the home hero and the "On this page" marker. Never use orange for body text, headings, emphasis, icons, card accents or "best in column" markers. On light backgrounds, orange text uses `--orange-ink-light` (`#B03C00`) for contrast. Use the tokens in `zeekr.css`, never raw hex values.
 
+### Light and dark
+
+The wiki starts in light for every visitor, whatever their OS prefers, as the front door does. Dark applies only when the visitor picks it with the header toggle; Material stores that choice in `localStorage` (`__palette`) and applies it before the page paints, so it persists with no flash. `mkdocs.yml` therefore lists two palettes, light first, with no `media` queries. Key every dark-mode style off `[data-md-color-scheme="slate"]` (light is `"default"`), never `@media (prefers-color-scheme: dark)`, including the style block inside an inline diagram.
+
 ## Accessibility
 
 - Text and UI meet WCAG 2.2 AA contrast in both light and dark themes. Check both.
