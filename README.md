@@ -162,7 +162,7 @@ Save the poster first as `content/assets/images/video/<video id>.webp`, 1280 x 7
 
 ### Tables
 
-Write tables as plain Markdown. Cells stay on one line, and a table wider than the column scrolls sideways rather than stacking its figures. `hooks/tables.py` lets a cell of running text wrap instead: over 40 characters, or 48 in the first column, where row labels run longer. Keep headers and row labels short so a table fits a phone with little scrolling.
+Write tables as plain Markdown. Cells stay on one line, and a table wider than the column scrolls sideways rather than stacking its figures. `hooks/tables.py` lets a cell of running text wrap instead: over 40 characters, or 48 in the first column, where row labels run longer. In a table of three or more columns, a phrase over 22 characters outside the first column also wraps on desktop, so the table fits the column. Keep headers and row labels short so a table fits a phone with little scrolling.
 
 ### Content Guidelines
 
