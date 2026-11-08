@@ -664,6 +664,53 @@ body {
     filter: brightness(0.92);
 }
 
+/* Markdown buttons ({ .md-button }) take the same look. Material draws them in
+   --md-primary-fg-color, which the custom palette leaves near the page colour,
+   so unstyled they all but vanish. */
+.md-typeset .md-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--tap);
+    margin: var(--sp-1) var(--sp-2) var(--sp-1) 0;
+    padding: 0 var(--sp-4);
+    border: var(--hairline) solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--font-display);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: border-color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+
+.md-typeset .md-button:is(:hover, :focus) {
+    border-color: var(--ink);
+    background-color: color-mix(in srgb, var(--ink) 8%, transparent);
+    color: var(--ink);
+}
+
+.md-typeset .md-button:active {
+    background-color: color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+.md-typeset .md-button--primary,
+.md-typeset .md-button--primary:is(:hover, :focus) {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+}
+
+.md-typeset .md-button--primary:hover {
+    filter: brightness(1.08);
+    text-decoration: underline;
+    text-decoration-thickness: var(--hairline);
+    text-underline-offset: 0.2em;
+}
+
 /* 8. Cards and stats: flat panels with a visible border, no hover lift. ---- */
 .card-grid {
     display: grid;
