@@ -1,4 +1,4 @@
-.PHONY: help install run build clean ready lint check serve dev stop deploy
+.PHONY: help install run build clean ready lint check citations serve dev stop deploy
 
 # uv run fails to canonicalise script paths on this machine, so we call the
 # venv interpreter directly. Works on Windows and POSIX venv layouts.
@@ -57,7 +57,12 @@ check: build
 		echo "   Install with: gem install html-proofer"; \
 	fi
 
-ready: clean build lint check
+# Every citation superscript must reach its Sources entry and back (scripts/check_citations.py).
+citations:
+	@echo "Checking citations..."
+	$(PY) scripts/check_citations.py site
+
+ready: clean build citations lint check
 	@echo ""
 	@echo "🎉 All checks passed! Ready for commit."
 	@echo ""
