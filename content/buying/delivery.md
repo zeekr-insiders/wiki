@@ -68,6 +68,8 @@ If there are any issues found during PDI:
 
 ## Delivery day checklist
 
+The [Handover checklist](handover-checklist.md) has the full list to tick off on your phone at the dealer, from the apps to set up the day before to the first weeks with the car. The essentials:
+
 ### What to bring
 
 - **Photo ID**: Driver's licence (the one you'll be insured under)
@@ -75,7 +77,7 @@ If there are any issues found during PDI:
 - **Insurance proof**: Confirmation of comprehensive insurance starting from delivery day
 - **Number plates**: If transferring existing plates, bring the transfer papers
 - **Camera/phone**: For photos if you find any issues
-- **This checklist**: Print or save this page to your phone
+- **The checklist**: the [Handover checklist](handover-checklist.md) ticks off on your phone, or prints
 
 ### Allow enough time
 

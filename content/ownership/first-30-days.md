@@ -8,7 +8,7 @@ description: "Just picked up your Zeekr? Numbers to save, paperwork to keep, hom
 
 *Last checked: 8 November 2026.*
 
-The things worth sorting out in your first few weeks with a Zeekr. Some details below are checked against a 7X manual; X and 009 owners should check their own manual where it says so.
+The things worth sorting out in your first few weeks with a Zeekr. Still at the dealer, or just home? The [Handover checklist](../buying/handover-checklist.md) covers delivery day and the first weeks, item by item. Some details below are checked against a 7X manual; X and 009 owners should check their own manual where it says so.
 
 ## Save these numbers
 

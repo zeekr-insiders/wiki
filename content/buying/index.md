@@ -38,6 +38,8 @@ From finding a dealer to taking delivery, this section covers buying a Zeekr in 
     </div>
 </div>
 
+Picking up soon? Take the [Handover checklist](handover-checklist.md) to the dealer: it ticks off on your phone, keeps your place and prints.
+
 ## Before you buy
 
 Take time to research the specific model that suits your needs. Visit our [Models](../models/index.md) section for detailed specifications and comparisons. If you're weighing up different options, check out our [Model Comparison](../comparisons/model-comparison-table.md).
