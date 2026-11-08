@@ -133,6 +133,23 @@ The MY27 7X keeps the same prices [^1].
 
 The wiki shows each marker as a numbered superscript linked to its source. `make ready` fails if a marker has no entry or an entry is never cited.
 
+### Spec cards
+
+A model page's headline figures go in a spec card grid. Write one `spec_card` per figure inside a `zi-spec-grid` div, with no blank lines between them:
+
+```markdown
+<div class="zi-spec-grid">
+{{ spec_card("luggage", "Boot", "539 / 1,978 L", "Seats up / folded") }}
+{{ spec_card("caravan", "Towing", "2,000 / 750 kg", "Braked / unbraked") }}
+</div>
+
+The towing rating is for the MY25/MY26 car [^3].
+```
+
+The arguments are the icon, a short label, the value and an optional detail line. The icon is a file name (without `.svg`) in `overrides/.icons/lucide/`. Values never wrap. The grid sets its own columns from the number of cards. Cite the figures in the sentence after the grid, as citations can't go inside it.
+
+To add an icon, copy it from the [Lucide](https://lucide.dev/icons/) release into `overrides/.icons/lucide/` unchanged.
+
 ### Content Guidelines
 
 - Focus on Australian market and Victorian specifics
@@ -259,6 +276,8 @@ uv run mkdocs gh-deploy
 ## License
 
 This project is licensed under the MIT Licence - see the [LICENCE](LICENCE) file for details.
+
+The spec card icons in `overrides/.icons/lucide/` are from [Lucide](https://lucide.dev), ISC licence, copied unchanged; see `overrides/.icons/lucide/LICENSE-lucide.txt`.
 
 ## Acknowledgments
 
