@@ -21,13 +21,13 @@ Charging at home overnight is the cheapest and easiest way to run an EV. Here's 
 | 009 FWD | 11 kW [^3] |
 | 009 AWD | Not stated in the sources we found |
 
-A car only charges as fast as the slower of the car and the wallbox. 22 kW needs three-phase power; most homes are single-phase, which tops out around 7 kW.
+A car only charges as fast as the slower of the car and the wallbox. 22 kW needs three-phase power; most homes are single-phase, which tops out around 7 kW. [Home charging explained](../../knowledge/home-charging.md) covers single-phase and three-phase supply and charge times for each battery, and [kW vs kWh](../../knowledge/kw-vs-kwh.md) the sums behind them.
 
 ## Your options
 
 ### Portable charger from a wall socket
 
-A standard 10 amp socket gives about 2.3 kW (230 V x 10 A). That adds roughly 2.3 kWh per hour, so a 75 kWh battery takes well over a day from empty. It's fine for topping up or for low daily mileage, not for regular full charges.
+A standard 10 amp socket gives about 2.3 kW (230 V x 10 A). That adds roughly 2.3 kWh per hour, so a 75 kWh battery takes well over a day from empty. It's fine for topping up or for low daily mileage, not for regular full charges. See [Plugs and cables](../../knowledge/plugs-and-cables.md) for portable charger safety.
 
 !!! danger "No extension leads or adapters"
     Zeekr's 7X owner manual says not to use any adapters, extension cables or multiple ports of any kind when charging [^4]. Plug the portable charger straight into a suitable wall socket. If the socket is too far from where you park, or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox.

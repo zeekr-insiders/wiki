@@ -16,7 +16,7 @@ Australia has several charging networks, a couple of plug types at the AC end, a
 ### Carry a Type 2 cable
 
 - **DC fast chargers** have the cable attached. Plug in and go.
-- **AC chargers** at shopping centres, hotels and car parks often have only a socket, so you need your own Type 2 to Type 2 cable. Keep it in the car.
+- **AC chargers** at shopping centres, hotels and car parks often have only a socket, so you need your own Type 2 to Type 2 cable. Keep it in the car. [Plugs and cables](../../knowledge/plugs-and-cables.md) explains Type 2, CCS2 and tethered chargers.
 
 ### Set up the apps at home
 
@@ -36,7 +36,7 @@ Don't wait until you're standing at a charger to create an account and add a car
 | X AWD (MY26) | up to 150 kW [^2] |
 | 009 FWD | 150 kW [^3] |
 
-The 7X uses an 800V system [^1], so it can make use of the fastest public chargers. Peak figures are what the car can accept under ideal conditions; a 350 kW charger can't deliver 450 kW, and the actual rate depends on the charger, battery temperature and state of charge.
+The 7X uses an 800V system [^1], so it can make use of the fastest public chargers. Peak figures are what the car can accept under ideal conditions; a 350 kW charger can't deliver 450 kW, and the actual rate depends on the charger, battery temperature and state of charge. [AC vs DC and the charging curve](../../knowledge/charging-curve.md) explains why times are quoted 10 to 80% and why you rarely see the peak.
 
 !!! warning "Sources differ: 7X 10-80% times"
     Zeekr's own 7X page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another, and EV Central quotes "as little as 11 minutes" [^4][^5]. Expect roughly 10 to 16 minutes on a fast charger, depending on variant, battery temperature and the charger.

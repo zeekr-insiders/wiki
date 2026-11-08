@@ -35,7 +35,7 @@ Practical accessories that {{ extra.club.full_name }} members have found useful.
 !!! note "Not yet confirmed for the Australian manual"
     The manual we read is the Netherlands edition of the 7X manual, on an unofficial mirror [^1]. Check the booklet that came with your car, and follow your portable charger's own manual too.
 
-The same manual also says not to use a damaged cable or socket, not to coil or bundle the cable while charging, and to keep the cable out of direct sunlight, because overheating protection can slow or stop charging [^1].
+The same manual also says not to use a damaged cable or socket, not to coil or bundle the cable while charging, and to keep the cable out of direct sunlight, because overheating protection can slow or stop charging [^1]. [Plugs and cables](../../knowledge/plugs-and-cables.md) covers portable chargers, Type 2 cables and the safe way to plug in.
 
 ### Storage
 

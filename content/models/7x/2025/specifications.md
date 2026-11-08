@@ -48,6 +48,8 @@ Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 
 !!! warning "Sources differ: 10-80% charging time"
     Zeekr's page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another [^4]; EV Central quotes "as little as 11 minutes" for the MY27 [^6]. Expect roughly 10 to 16 minutes depending on grade, battery and charger.
 
+What the figures mean: [NMC vs LFP batteries](../../../knowledge/nmc-vs-lfp.md) for the battery chemistry, [kW vs kWh](../../../knowledge/kw-vs-kwh.md) for the units, and [AC vs DC and the charging curve](../../../knowledge/charging-curve.md) for charging speeds.
+
 ## Equipment
 
 === "MY25/MY26"

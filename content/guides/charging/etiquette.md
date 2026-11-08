@@ -30,7 +30,7 @@ Screenshot this one.
 
 ### Charge to what you need
 
-Avoid charging above 80% at a DC fast charger unless nobody is waiting and your next leg needs it. Charging slows right down near full, and 80 to 100% can take as long as 10 to 80%[^1]. On a long trip, two partial charges are usually quicker than one long one[^1]. The EVC and RACV give the same advice[^2][^3].
+Avoid charging above 80% at a DC fast charger unless nobody is waiting and your next leg needs it. Charging slows right down near full, and 80 to 100% can take as long as 10 to 80%[^1]. On a long trip, two partial charges are usually quicker than one long one[^1]. The EVC and RACV give the same advice[^2][^3]. Why it slows is in [AC vs DC and the charging curve](../../knowledge/charging-curve.md).
 
 !!! tip "Zeekr note"
     The 7X can accept up to 450 kW (RWD) or 420 kW (Long Range and Performance AWD) on DC, and 10 to 80% takes roughly 10 to 16 minutes depending on variant and charger[^6]. Because the car does most of its work before 80%, you will rarely need to sit past it on a trip. Peak rates are for ideal conditions; the public charger itself is often the limit.

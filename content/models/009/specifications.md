@@ -39,6 +39,8 @@ Sources: [^1][^2].
 
 Sources: [^1][^2].
 
+What the figures mean: [NMC vs LFP batteries](../../knowledge/nmc-vs-lfp.md) for the battery chemistry, [kW vs kWh](../../knowledge/kw-vs-kwh.md) for the units, and [AC vs DC and the charging curve](../../knowledge/charging-curve.md) for charging speeds.
+
 ## Other details
 
 - **Audio:** 30-speaker Yamaha system [^1].

@@ -15,7 +15,7 @@ Road trips in a Zeekr work well with a bit of planning. This page covers the pla
 
 These come from the club's trip guides [^1]:
 
-- **Plan on 70 to 80% of rated range.** Speed, hills, temperature, load and wind all cut into the WLTP figure. Plan legs around the lower number.
+- **Plan on 70 to 80% of rated range.** Speed, hills, temperature, load and wind all cut into the WLTP figure. Plan legs around the lower number. See [Range in the real world](../../knowledge/real-world-range.md) for what each factor costs.
 - **Charge to at least 90% the night before.**
 - **Plan for the lowest-range car** if you're travelling in a group.
 - **Have a backup charger** for any stop that's a single unit.
@@ -26,7 +26,7 @@ The planning, leading and participant guides are on the [club website](https://z
 
 ### Stop at 80% unless you need more
 
-Charging slows a lot as the battery gets close to full. On a long trip, several short stops to around 80% usually get you there sooner than fewer long stops to 100%. Charge higher only when the next leg needs it.
+Charging slows a lot as the battery gets close to full. On a long trip, several short stops to around 80% usually get you there sooner than fewer long stops to 100%. Charge higher only when the next leg needs it. The [charging curve](../../knowledge/charging-curve.md) shows why.
 
 When others are waiting, see [Charging etiquette](etiquette.md).
 

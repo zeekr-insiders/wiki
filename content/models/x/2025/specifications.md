@@ -35,6 +35,8 @@ Source: [^1].
 
 The AWD's 22 kW on-board charger only helps where you have three-phase AC power, such as a three-phase home wallbox or some public AC posts. On single-phase power both variants charge at the same rate as the supply allows.
 
+What the figures mean: [NMC vs LFP batteries](../../../knowledge/nmc-vs-lfp.md) for the battery chemistry, [kW vs kWh](../../../knowledge/kw-vs-kwh.md) for the units, and [AC vs DC and the charging curve](../../../knowledge/charging-curve.md) for charging speeds.
+
 ## Warranty and roadside assistance
 
 | Coverage | Details |
