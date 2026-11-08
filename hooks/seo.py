@@ -9,7 +9,8 @@ For each page this sets, for overrides/main.html and the sitemap to use:
 - page.meta["zi_jsonld"]: the page's structured data (schema.org JSON-LD):
   Organization and WebSite (with a search action) on the home page; a
   BreadcrumbList everywhere else; a TechArticle on content pages, with
-  dateModified, the club as publisher and each Sources entry as a citation;
+  dateModified, the content licence, the club as publisher and each Sources
+  entry as a citation;
   a DefinedTermSet on the glossary (from data/glossary.yml); and a
   VideoObject for each click-to-load video.
 
@@ -33,6 +34,8 @@ _FOOTNOTE = re.compile(r"^\[\^[^\]]+\]:\s*(.+)$", re.M)
 _URL = re.compile(r"<(https?://[^>\s]+)>")
 _VIDEO = re.compile(r"""youtube\(\s*"([\w-]+)"\s*,\s*"([^"]+)"\s*,\s*(["'])(.*?)\3\s*,\s*"([^"]+)"\s*\)""")
 _MODELS = ("7x", "x", "009", "7gt")
+# The written content's licence (LICENSE-CONTENT.md). Images are not covered, so only text items carry it.
+_CONTENT_LICENCE = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 _dates: dict[str, tuple[str, str]] = {}
 
 
@@ -131,6 +134,7 @@ def _glossary(page, config) -> dict:
         "name": "Zeekr Insiders EV glossary",
         "url": page.canonical_url,
         "inLanguage": "en-AU",
+        "license": _CONTENT_LICENCE,
         "hasDefinedTerm": terms,
     }
 
@@ -181,6 +185,7 @@ def on_page_context(context, page, config, nav, **kwargs):
                 "url": page.canonical_url,
                 "mainEntityOfPage": page.canonical_url,
                 "inLanguage": "en-AU",
+                "license": _CONTENT_LICENCE,
                 "datePublished": meta["zi_created"],
                 "dateModified": meta["zi_modified"],
                 "image": site_url + meta["zi_og_image"],
