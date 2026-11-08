@@ -473,10 +473,36 @@ body {
     color: var(--on-accent);
 }
 
-.md-typeset .btn-primary:hover,
-.md-typeset .btn-hero-primary:hover {
+/* Hover and press are visible changes, not a 1px border swap, and never a
+   lift. Outline buttons take the ink border and a faint ink tint that deepens
+   on press. The orange button lightens and underlines its label on hover and
+   darkens on press, keeping Carbon text at 4.5:1 or better (measured). */
+:is(.btn, .btn-hero):not(.btn-primary, .btn-hero-primary):hover,
+.md-typeset :is(.btn, .btn-hero):not(.btn-primary, .btn-hero-primary):hover,
+.zi-mast .btn:not(.btn-primary):hover {
+    border-color: var(--ink);
+    background-color: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+:is(.btn, .btn-hero):not(.btn-primary, .btn-hero-primary):active,
+.md-typeset :is(.btn, .btn-hero):not(.btn-primary, .btn-hero-primary):active {
+    background-color: color-mix(in srgb, var(--ink) 16%, transparent);
+}
+
+:is(.btn-primary, .btn-hero-primary):hover,
+.md-typeset :is(.btn-primary, .btn-hero-primary):hover,
+.zi-mast .btn-primary:hover {
     filter: brightness(1.08);
 }
+    text-decoration: underline;
+    text-decoration-thickness: var(--hairline);
+    text-underline-offset: 0.2em;
+}
+
+:is(.btn-primary, .btn-hero-primary):active,
+.md-typeset :is(.btn-primary, .btn-hero-primary):active,
+.zi-mast .btn-primary:active {
+    filter: brightness(0.92);
 
 /* 8. Cards and stats: flat panels with a visible border, no hover lift. ---- */
 .card-grid {
@@ -1205,9 +1231,6 @@ span .zi-icon {
     color: var(--carbon-grey);
 }
 
-.zi-mast .btn:hover {
-    border-color: var(--night-ink);
-}
 
 /* Material's palette toggle restyled as the site's square theme button. */
 .zi-mast .md-header__option {
