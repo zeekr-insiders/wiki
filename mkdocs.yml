@@ -5,6 +5,9 @@ site_author: Zeekr Insiders Australia
 site_url: https://wiki.zeekrinsiders.com.au/
 
 docs_dir: content
+# The old icon set's preview sheet is a working file, not a page readers should land on.
+exclude_docs: |
+  assets/icons/preview.html
 
 # These build each page's "Suggest an edit" link (GitHub's edit view of its Markdown source);
 # the header shows no repository widget. Nothing is pushed yet, so the branch assumes main.
