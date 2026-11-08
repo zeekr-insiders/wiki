@@ -52,6 +52,9 @@
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ og_desc }}">
   <meta name="twitter:image" content="{{ og_image }}">
+  {#- Material already links the two RSS feeds when the rss plugin is on; these add the JSON Feed versions. -#}
+  <link rel="alternate" type="application/feed+json" title="Zeekr Insiders Wiki: new pages" href="{{ 'feed_json_created.json' | url }}">
+  <link rel="alternate" type="application/feed+json" title="Zeekr Insiders Wiki: updated pages" href="{{ 'feed_json_updated.json' | url }}">
 {% endblock %}
 
 {#- The front door's masthead sits above Material's header and scrolls away; the wiki bar below it stays. -#}

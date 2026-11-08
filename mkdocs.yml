@@ -63,6 +63,9 @@ extra:
   # Moved pages: old content path -> new one. hooks/redirects.py keeps the old URL working.
   redirects:
     knowledge/glossary.md: glossary/index.md
+  # The first public publish, when every page lands in the feeds as new. Set it (YYYY-MM-DD)
+  # when wiki-publish merges; until then the feeds carry no launch marker.
+  launch_date: null
   club:
     name: "Zeekr Insiders"
     abbreviation: "ZI"
@@ -164,11 +167,28 @@ hooks:
   - hooks/headings.py
   - hooks/tables.py
   - hooks/redirects.py
+  - hooks/feeds.py
 
 plugins:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - macros
+  # Feeds for the front door (web-home reads feed_rss_updated.xml). Dates come from git, so
+  # CI checks out the full history. hooks/feeds.py adds each page's `changelog` line, its
+  # section and extra.launch_date.
+  - rss:
+      enabled: true
+      use_git: true
+      length: 20
+      abstract_chars_count: 160
+      categories:
+        - feed_section
+      feed_title: Zeekr Insiders Wiki
+      feed_description: Owner-run guide to buying and living with a Zeekr in Australia.
+      image: https://wiki.zeekrinsiders.com.au/assets/img/logo-badge.png
+      json_feed_enabled: true
+      date_from_meta:
+        default_timezone: Australia/Melbourne
   - minify:
       minify_html: true
 
