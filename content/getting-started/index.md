@@ -6,10 +6,16 @@ New to EVs, or new to Zeekr? Start here.
 
 <div class="card-grid">
     <div class="z-card">
-        {{ card_icon("battery-charging") }}
-        <h3>EV basics</h3>
-        <p>How charging works, what the kW numbers mean, and what changes from owning a petrol car.</p>
-        <a class="go" href="ev-basics/">EV Basics</a>
+        {{ card_icon("book-open") }}
+        <h3>Knowledge</h3>
+        <p>How charging works, what the kW numbers mean, and how far you will really get.</p>
+        <a class="go" href="../knowledge/">Knowledge</a>
+    </div>
+    <div class="z-card">
+        {{ card_icon("wallet") }}
+        <h3>Running costs and incentives</h3>
+        <p>What an EV costs to run, and the taxes and incentives when you buy.</p>
+        <a class="go" href="ev-basics/">Running costs and incentives</a>
     </div>
     <div class="z-card">
         {{ card_icon("zap") }}

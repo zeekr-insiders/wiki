@@ -8,9 +8,11 @@ last_checked: 2026-11-08
 
 *Last checked: 8 November 2026.*
 
-Plain definitions. Each term links to the page with the detail and the sources.
+Plain definitions. Most terms link to the page with the detail and the sources.
 
 **AC (alternating current).** Mains power. Home and most destination charging is AC and the car's onboard charger converts it. [AC vs DC charging](charging-curve.md)
+
+**Battery pack.** Stores the car's energy, sized in kWh. It feeds one or more electric motors that drive the wheels through a single-speed reduction gear, so there is no engine oil, spark plugs, exhaust or fuel system to maintain. [kW vs kWh](kw-vs-kwh.md)
 
 **BMS (battery management system).** The car's software and electronics that monitor and protect the pack, including limiting charge power as it fills. [Charging curve](charging-curve.md)
 
@@ -28,6 +30,8 @@ Plain definitions. Each term links to the page with the detail and the sources.
 
 **EVSE (electric vehicle supply equipment).** The proper name for a wallbox or charging post. [Home charging](home-charging.md)
 
+**Inverter.** Manages the flow of power between the battery and the motor. No page of its own.
+
 **kW (kilowatt).** A rate of power. Charger speed and motor output. [kW vs kWh](kw-vs-kwh.md)
 
 **kWh (kilowatt-hour).** An amount of energy. Battery size and your power bill. [kW vs kWh](kw-vs-kwh.md)
@@ -43,6 +47,8 @@ Plain definitions. Each term links to the page with the detail and the sources.
 **Phase (single-phase, three-phase).** How many live conductors a supply has. Single-phase tops out around 7 kW for a home charger, three-phase up to 22 kW. [Home charging](home-charging.md)
 
 **Portable charger.** A cable with a built-in control box that plugs into a household socket; slow, and never used with an extension lead on a Zeekr. [Plugs and cables](plugs-and-cables.md)
+
+**Regenerative braking.** The motor works as a generator when you slow down, putting energy back into the battery and saving wear on the friction brakes. No page of its own.
 
 **RCD (residual current device).** A safety switch that cuts power on a fault. [Plugs and cables](plugs-and-cables.md)
 
