@@ -748,20 +748,6 @@ body {
     margin: 0 0 var(--sp-3);
 }
 
-.md-typeset .z-card .model-photo,
-.z-card .model-photo {
-    display: block;
-    width: 100%;
-    max-width: 260px;
-    height: auto;
-    margin: 0 auto var(--sp-4);
-}
-
-.md-typeset .z-card .model-photo--sm {
-    max-width: 200px;
-    margin-bottom: var(--sp-2);
-}
-
 /* Captions and credits: 14px muted, no opacity (7:1 light, 6.8:1 dark). */
 .md-typeset .image-credit,
 .image-credit,

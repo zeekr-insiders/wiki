@@ -72,8 +72,8 @@ Light and dark: banners sit in a dark panel in both themes, so the left text are
 - **Not generated**: a generated "Zeekr" would be a fake car. Use the brand kit: `Zeekr Brand Lifestyle 100/` or the
   model folders in `Products logo/` and `Layout/`, cropped so the car sits in the right half.
 - **Alt text**: decorative (`alt=""`), the hero heading names the model.
-- **Card renders**: the existing `content/assets/images/models/zeekr-7x.webp`, `zeekr-x.webp` and `zeekr-009.webp`
-  front-45 renders stay as they are (transparent ground, credited "Images: Zeekr").
+- **Lineup cards**: the home and Models page cards use 2:1 crops of the same banners
+  (`content/assets/images/models/<model>-card*.{avif,webp}`); the earlier Zeekr front-45 renders are retired.
 
 ## 4. Share (Open Graph) images
 
