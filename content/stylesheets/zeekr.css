@@ -509,6 +509,7 @@ body {
 .hero-subtitle {
     max-width: 560px;
     margin: 0 auto var(--sp-5);
+    text-wrap: balance;
     font-size: var(--fs-lg);
     line-height: var(--lh-body);
     color: var(--night-muted);
@@ -1054,6 +1055,8 @@ body {
 }
 
 .z-card .price sub {
+    /* On the figure's baseline, not dropped below it as a subscript. */
+    vertical-align: baseline;
     margin-left: var(--sp-1);
     font-size: var(--fs-sm);
     font-weight: 500;
