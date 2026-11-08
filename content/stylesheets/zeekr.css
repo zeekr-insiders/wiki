@@ -275,9 +275,10 @@ body {
     color: var(--ink);
 }
 
+/* 600, as the front door's H1s are; h2 and h3 stay 700. */
 .md-typeset h1 {
     font-size: var(--fs-h1);
-    font-weight: 700;
+    font-weight: 600;
     line-height: var(--lh-tight);
     letter-spacing: var(--track-tight);
     margin: 0 0 var(--sp-5);
@@ -380,7 +381,7 @@ body {
     margin: 0 0 var(--sp-4);
     font-family: var(--font-display);
     font-size: clamp(32px, 4vw + 12px, 56px);
-    font-weight: 700;
+    font-weight: 600;
     line-height: var(--lh-tight);
     letter-spacing: var(--track-tight);
     color: var(--night-ink);
