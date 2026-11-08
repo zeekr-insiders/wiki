@@ -31,7 +31,7 @@ class _Page(HTMLParser):
         self.panels = 0
         self._panel = 0  # <details> depth inside the Sources panel
         self.outside: list[str] = []  # entries not in the panel
-        self._count = False
+        self._count = 0  # <span> depth inside the panel's count
         self.count = ""
 
     def handle_starttag(self, tag, attrs):
@@ -44,8 +44,8 @@ class _Page(HTMLParser):
         if tag == "details" and ("zi-sources" in cls or self._panel):
             self.panels += not self._panel
             self._panel += 1
-        if tag == "span" and "zi-sources__count" in cls:
-            self._count = True
+        if tag == "span" and (self._count or "zi-sources__count" in cls):
+            self._count += 1
         if tag == "a" and "footnote-ref" in cls:
             self.refs.append((a.get("href", ""), a.get("aria-label")))
         if tag == "a" and "footnote-backref" in cls:
@@ -61,7 +61,7 @@ class _Page(HTMLParser):
         if tag == "details" and self._panel:
             self._panel -= 1
         if tag == "span" and self._count:
-            self._count = False
+            self._count -= 1
 
     def handle_data(self, data):
         if self._count:
@@ -87,7 +87,7 @@ def check(site: pathlib.Path) -> list[str]:
             problems.append(f"{rel}: has citations but {p.panels} Sources panels, not one")
         if p.outside:
             problems.append(f"{rel}: Sources entries outside the panel: {p.outside}")
-        if p.count.strip() != f"({len(p.entries)})":
+        if p.count.replace("\u00b7", "").strip() != str(len(p.entries)):
             problems.append(f"{rel}: panel says {p.count.strip() or 'nothing'} but lists {len(p.entries)} sources")
         if p.backrefs:
             problems.append(f"{rel}: {p.backrefs} footnote return link(s) left in the Sources list")

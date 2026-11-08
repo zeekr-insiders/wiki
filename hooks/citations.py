@@ -10,7 +10,7 @@ numbers, so this hook adds what a reader needs from them:
 - the footnotes extension's return arrows go: readers rarely used them, and the
   browser's Back does the same job;
 - the "## Sources" section becomes a collapsed <details> panel labelled with
-  its count ("Sources (6)") and a one-line note that stays visible when shut,
+  its count ("Sources · 6") and a one-line note that stays visible when shut,
   and it leaves the "On this page" list. zeekr.js opens it when a citation is
   followed or the page loads on a #fn: link.
 
@@ -65,13 +65,18 @@ def _panel(content: str, count: int) -> str:
     if not m:
         return content
     summary = (
+        # The dot is decoration; a screen reader hears "Sources 6".
         '<summary class="zi-sources__summary"><span class="zi-sources__label">Sources '
-        f'<span class="zi-sources__count">({count})</span></span>'
+        f'<span class="zi-sources__count"><span aria-hidden="true">&middot; </span>{count}</span></span>'
         '<span class="zi-sources__note">Everything on this page is sourced from the links below.</span>'
         "</summary>"
     )
     body = content[m.end():].strip()
-    return content[: m.start()] + f'<details class="zi-sources" id="sources">{summary}\n{body}\n</details>'
+    # The wrapper carries the divider and the space that set the panel apart from the article.
+    return (
+        content[: m.start()]
+        + f'<div class="zi-sources-wrap"><details class="zi-sources" id="sources">{summary}\n{body}\n</details></div>'
+    )
 
 
 def on_page_content(content: str, page, config, files) -> str:

@@ -2487,20 +2487,28 @@ span .zi-icon {
 }
 
 /* The Sources panel (hooks/citations.py): a closed <details> at the foot of
-   the page, small and muted so the sources are there without competing with
-   the page. The note under the label stays visible while it is shut. The
-   extra .md-content and summary class outrank the admonition styling in
-   section 10, which would otherwise dress the panel as a callout. */
+   the page that reads as a footer, not more article. It sits after a hairline
+   divider and extra space, on its own raised surface with a hairline border,
+   and its type is small: an eyebrow label like "On this page" ("SOURCES · 6"),
+   a 12px muted note and 12px entries. The extra .md-content and summary class
+   outrank the admonition styling in section 10, which would otherwise dress
+   it as a callout. */
+.md-typeset .zi-sources-wrap {
+    margin-top: var(--sp-7);
+    padding-top: var(--sp-5);
+    border-top: var(--hairline) solid var(--line);
+}
+
 .md-content .md-typeset details.zi-sources {
-    margin: var(--sp-7) 0 0;
-    padding: 0 var(--sp-4);
+    margin: 0;
+    padding: 0 var(--sp-3);
     border: var(--hairline) solid var(--line);
     border-radius: var(--radius-md);
-    background: transparent;
+    background: var(--bg-raised);
     box-shadow: none;
     color: var(--ink-muted);
-    /* 14px against the 16px body; the theme's root size makes 0.85rem larger than it looks. */
-    font-size: var(--fs-sm);
+    font-size: var(--fs-xs);
+    line-height: 1.5;
 }
 
 .md-content .md-typeset details.zi-sources:focus-within {
@@ -2510,13 +2518,21 @@ span .zi-icon {
 .md-content .md-typeset details.zi-sources > summary.zi-sources__summary {
     display: grid;
     gap: var(--sp-1);
-    margin: 0 calc(-1 * var(--sp-4));
-    padding: var(--sp-3) calc(var(--sp-4) + var(--sp-5)) var(--sp-3) var(--sp-4);
+    margin: 0 calc(-1 * var(--sp-3));
+    padding: var(--sp-2) calc(var(--sp-3) + var(--sp-5)) var(--sp-2) var(--sp-3);
+    border: 0;
     border-radius: var(--radius-md);
     background: transparent;
-    color: var(--ink);
+    color: var(--ink-muted);
+    font-family: var(--font-body, inherit);
+    font-size: var(--fs-xs);
     font-weight: 400;
     cursor: pointer;
+}
+
+.md-content .md-typeset details.zi-sources[open] > summary.zi-sources__summary {
+    border-bottom: var(--hairline) solid var(--line);
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
 }
 
 /* Material draws an admonition icon before a summary; the panel needs only the chevron. */
@@ -2525,15 +2541,15 @@ span .zi-icon {
 }
 
 .md-content .md-typeset details.zi-sources > summary.zi-sources__summary::after {
-    top: var(--sp-3);
-    right: var(--sp-4);
+    top: var(--sp-2);
+    right: var(--sp-3);
     background-color: var(--ink-muted);
 }
 
 .md-content .md-typeset details.zi-sources > summary.zi-sources__summary:hover .zi-sources__label {
     text-decoration: underline;
     text-decoration-thickness: var(--hairline);
-    text-underline-offset: 0.2em;
+    text-underline-offset: 0.25em;
 }
 
 .md-content .md-typeset details.zi-sources > summary.zi-sources__summary:focus-visible {
@@ -2541,23 +2557,30 @@ span .zi-icon {
     outline-offset: 2px;
 }
 
+/* The "On this page" eyebrow: display face, uppercase, tracked. */
 .zi-sources__label {
     font-family: var(--font-display);
-    font-size: var(--fs-sm);
-    font-weight: 700;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    letter-spacing: var(--track-label);
+    text-transform: uppercase;
+    color: var(--ink);
 }
 
 .zi-sources__count {
     color: var(--ink-muted);
-    font-weight: 600;
 }
 
 .zi-sources__note {
     color: var(--ink-muted);
 }
 
+.md-content .md-typeset details.zi-sources .footnote > ol {
+    margin-block: var(--sp-3);
+}
+
 .md-content .md-typeset details.zi-sources > :last-child {
-    margin-bottom: var(--sp-4);
+    margin-bottom: var(--sp-2);
 }
 
 /* Inside the panel the list takes the panel's small muted text. */
