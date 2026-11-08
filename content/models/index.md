@@ -14,32 +14,49 @@ Three Zeekr models are on sale in Australia: the 7X, the X and the 009.
 ## Current lineup
 
 <div class="card-grid">
-    <div class="z-card model-card">
-        <img src="../assets/images/models/zeekr-7x.webp" class="model-photo" alt="Zeekr 7X" loading="lazy">
+    <div class="z-card model-glance model-banner">
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/7x-card.avif 800w, ../assets/images/models/7x-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 33vw">
+            <img src="../assets/images/models/7x-card.webp" srcset="../assets/images/models/7x-card.webp 800w, ../assets/images/models/7x-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 33vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
         <h3>Zeekr 7X</h3>
-        <p><strong>Mid-size SUV.</strong> Five seats, 800V charging, from $57,900 before on-road costs. RWD, Long Range RWD and Performance AWD.</p>
-        <p><a href="7x/2025/specifications/">Specifications</a> &middot; <a href="7x/2025/pricing/">Pricing</a></p>
-        <a class="go" href="7x/overview/">7X Overview</a>
+        <p>Mid-size SUV with five seats and 800V charging. RWD, Long Range RWD and Performance AWD. Figures are MY25/MY26.</p>
+        <div class="glance-stats">
+            <div><span class="val">$57,900</span><span class="lbl">From + ORC</span></div>
+            <div><span class="val">539 L</span><span class="lbl">Boot</span></div>
+            <div><span class="val">2,000 kg</span><span class="lbl">Braked towing</span></div>
+        </div>
+        <a class="go" href="7x/overview/">Zeekr 7X</a>
     </div>
-    <div class="z-card model-card">
-        <img src="../assets/images/models/zeekr-x.webp" class="model-photo" alt="Zeekr X" loading="lazy">
+    <div class="z-card model-glance model-banner">
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/x-card.avif 800w, ../assets/images/models/x-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 33vw">
+            <img src="../assets/images/models/x-card.webp" srcset="../assets/images/models/x-card.webp 800w, ../assets/images/models/x-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 33vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
         <h3>Zeekr X</h3>
-        <p><strong>Compact SUV.</strong> Five seats, from $48,900 drive-away for the MY26 RWD. RWD and AWD.</p>
-        <p><a href="x/2025/specifications/">Specifications</a> &middot; <a href="x/2025/pricing/">Pricing</a></p>
-        <a class="go" href="x/overview/">X Overview</a>
+        <p>Compact SUV with five seats, in RWD and AWD. Figures are MY26.</p>
+        <div class="glance-stats">
+            <div><span class="val">$48,900</span><span class="lbl">Drive-away (RWD)</span></div>
+            <div><span class="val">5</span><span class="lbl">Seats</span></div>
+        </div>
+        <a class="go" href="x/overview/">Zeekr X</a>
     </div>
-    <div class="z-card model-card">
-        <img src="../assets/images/models/zeekr-009.webp" class="model-photo" alt="Zeekr 009" loading="lazy">
+    <div class="z-card model-glance model-banner">
+        <picture>
+            <source type="image/avif" srcset="../assets/images/models/009-card.avif 800w, ../assets/images/models/009-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 33vw">
+            <img src="../assets/images/models/009-card.webp" srcset="../assets/images/models/009-card.webp 800w, ../assets/images/models/009-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 33vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
+        </picture>
         <h3>Zeekr 009</h3>
-        <p><strong>People mover.</strong> Six or seven seats, from $115,900 before on-road costs. FWD and AWD.</p>
-        <p><a href="009/specifications/">Specifications</a> &middot; <a href="009/pricing/">Pricing</a></p>
-        <a class="go" href="009/overview/">009 Overview</a>
+        <p>People mover with six or seven seats, in FWD and AWD.</p>
+        <div class="glance-stats">
+            <div><span class="val">$115,900</span><span class="lbl">From + ORC</span></div>
+            <div><span class="val">6 or 7</span><span class="lbl">Seats</span></div>
+        </div>
+        <a class="go" href="009/overview/">Zeekr 009</a>
     </div>
 </div>
 
-<p class="image-credit">Images: Zeekr</p>
-
-Prices: 7X [^1], X [^2], 009 [^3].
+Figures: 7X [^1][^4][^5], X [^2], 009 [^3]. The banners are club artwork, not photos of a specific car.
 
 ## Which one fits?
 

@@ -1025,6 +1025,21 @@ body {
     white-space: nowrap;
 }
 
+/* Models page banner cards: a 2:1 strip of each model's banner across the top
+   of the card, edge to edge, sized by width and height attributes so nothing
+   shifts while it loads. Not overflow: hidden on the card, which would clip
+   the card's focus ring. */
+.md-typeset .z-card.model-banner .model-banner__img {
+    display: block;
+    width: calc(100% + 2 * var(--sp-5));
+    max-width: none;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    margin: calc(-1 * var(--sp-5)) calc(-1 * var(--sp-5)) var(--sp-4);
+    object-fit: cover;
+    border-radius: calc(var(--radius-md) - var(--hairline)) calc(var(--radius-md) - var(--hairline)) 0 0;
+}
+
 /* 9. Tables: hairline and flat; label-style headers; 14px body. The scroll
    wrapper is the one scroll container so the first column can stick. ------ */
 .md-typeset__scrollwrap {
