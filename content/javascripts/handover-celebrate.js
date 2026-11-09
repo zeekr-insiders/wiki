@@ -1,5 +1,5 @@
-/* Handover checklist celebrations. handover.js fires zi-hc:section-done when a
- * tick finishes a section; this plays a short effect themed to that section,
+/* Handover checklist celebrations. handover.js fires zi-hc:section-done once
+ * a finished section has folded away; this plays a short effect themed to that section,
  * and a bigger finale when every item is ticked. Everything draws on one fixed
  * canvas with pointer-events: none, created on demand and removed as soon as
  * the last particle is gone, so it never blocks taps or scrolling. Reduced
@@ -257,8 +257,8 @@
 
   function rectOf(el) { return el.getBoundingClientRect(); }
 
-  // On a phone the summary of a long section has usually scrolled away (or
-  // sits under the sticky bars) by its last tick, so fall back to that item.
+  // handover.js folds the section and brings its heading into view first, so
+  // this is the heading; the ticked item is only a fallback if it can't be.
   function anchorFor(sec, item) {
     var sum = sec.querySelector('summary');
     var r = rectOf(sum);
@@ -862,6 +862,13 @@
     }
     start();
     (effects[sec.id] || effects['pre-prep'])(sec, palette(), anchorFor(sec, d.item));
+  });
+
+  // Start again: whatever is still playing stops with the ticks.
+  document.addEventListener('zi-hc:reset', function () {
+    stop();
+    closeCard();
+    fired = {};
   });
 
   // Leaving the page mid-effect (or Material swapping it) drops any leftovers.
