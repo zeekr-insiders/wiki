@@ -94,7 +94,7 @@ extra:
       - {path: /news, icon: pulse, short: News, text: "What's happening"}
       - {path: /garage, icon: garage, short: Garage, text: "Our stories & blog"}
       - {path: /insiders, icon: people, short: The Insiders, text: Meet the team}
-      - {forum: true, icon: forum, short: Forum, text: Ask the forum}
+      - {forum: true, icon: forum, short: Forum, text: Our community}
       - {wiki: true, icon: book, short: Wiki, text: Master your Zeekr}
     og_image: "assets/img/og-default.png"
   # The club's channels: Facebook, Instagram, YouTube, X. Keep in step with the club site's social links.
@@ -116,6 +116,7 @@ extra_css:
   - stylesheets/zeekr.css
 
 extra_javascript:
+  - javascripts/celebrate.js
   - javascripts/zeekr.js
   - javascripts/glossary.js
   - javascripts/handover.js

@@ -28,6 +28,12 @@ hide:
         <p>Prices, on-road costs, finance and where to buy, with the 2027 7X changeover explained.</p>
         <a class="go" href="buying/">Buying</a>
     </div>
+    <div class="z-card zi-card--celebrate">
+        {{ card_icon("clipboard-check") }}
+        <h3>I'm about to pick up my car</h3>
+        <p>A handover checklist to tick off on your phone at the dealer, so nothing gets missed on the big day.</p>
+        <a class="go" href="buying/handover-checklist/">Handover checklist</a>
+    </div>
     <div class="z-card">
         {{ card_icon("key-round") }}
         <h3>I've just got my car</h3>
@@ -37,14 +43,8 @@ hide:
     <div class="z-card">
         {{ card_icon("plug-zap") }}
         <h3>Charging</h3>
-        <p>Home setup, public networks and planning a road trip.</p>
-        <a class="go" href="guides/charging/public-networks/">Charging</a>
-    </div>
-    <div class="z-card">
-        {{ card_icon("users") }}
-        <h3>Community</h3>
-        <p>Who we are, and how to join a drive near you.</p>
-        <a class="go" href="community/">Community</a>
+        <p>What your home supply can run, real charge times for each Zeekr and what an install costs.</p>
+        <a class="go" href="knowledge/home-charging/">Home charging</a>
     </div>
 </div>
 
