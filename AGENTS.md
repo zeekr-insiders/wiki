@@ -154,6 +154,8 @@ The Handover checklist (`content/buying/handover-checklist.md`) is built from `d
 
 Ticks live only in the reader's `localStorage` (`zi-handover:v1`); the page makes no network calls.
 
+Finishing a section with a tick plays a short effect themed to it, and ticking everything plays a finale (`javascripts/handover-celebrate.js`, `stylesheets/handover-celebrate.css`). The effects are keyed by section `id`, so a new or renamed section needs its entry in `effects` there; an unknown id falls back to the stars. Reduced motion gets a static check badge, print gets nothing.
+
 ### Videos
 
 Use the `youtube` macro. It shows a local poster and loads youtube-nocookie.com only when the reader presses play:
