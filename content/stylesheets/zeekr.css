@@ -1668,6 +1668,9 @@ span .zi-icon {
     background: var(--night-bg);
     border-bottom: var(--rule) solid var(--zeekr-orange);
     font-family: var(--font-body);
+    /* The site's header inherits the body's 1.45; Material leaves it at normal,
+       which set the rail labels 2px shorter and nudged every title up. */
+    line-height: var(--lh-body);
 }
 
 .zi-wrap {
@@ -1856,8 +1859,8 @@ span .zi-icon {
 }
 
 .zi-rail .zi-ext svg {
-    width: 14px;
-    height: 14px;
+    width: 18px;
+    height: 18px;
 }
 
 .zi-vh {
@@ -1947,8 +1950,10 @@ span .zi-icon {
         border-top: 0;
     }
 
+    /* Columns size to their copy before sharing the rest, as on the site. */
     .zi-rail ul {
         flex: 1;
+        grid-template-columns: repeat(6, minmax(max-content, 1fr));
     }
 
     .zi-rail li,
