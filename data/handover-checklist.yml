@@ -26,7 +26,7 @@ sections:
   - {id: box, title: "In the box and in the car", phase: delivery}
   - {id: walk, title: "The consultant walks you through", phase: delivery}
   - {id: chg, title: "Charging check", phase: delivery}
-  - {id: False, title: "Before you drive off", phase: delivery}
+  - {id: "off", title: "Before you drive off", phase: delivery}
   - {id: post-days, title: "First days", phase: post}
   - {id: post-week, title: "First week and the club", phase: post}
 
@@ -469,32 +469,32 @@ items:
     text: "The session shows in the Zeekr app"
     models: ["all"]
   - id: off-soc
-    section: False
+    section: "off"
     text: "Ask for a reasonable state of charge"
     hint: "Enough to reach your first planned charger with margin."
     models: ["all"]
   - id: off-owe
-    section: False
+    section: "off"
     text: "Any agreed fixes written down and signed (the 'we owe you' list)"
     hint: "Take a photo. Ask when each will be done."
     models: ["all"]
   - id: off-rights
-    section: False
+    section: "off"
     text: "Know your rights if something is wrong"
     hint: "The ACL lets you reject a car with a major failure and choose repair, replacement or refund. Tell the dealer clearly and say why. The ACCC page does not cover refusing delivery, so raise problems before you sign."
     models: ["all"]
     cite: [accc]
   - id: off-contact
-    section: False
+    section: "off"
     text: "A named contact and phone number for follow-up"
     hint: "Plus the service desk."
     models: ["all"]
   - id: off-copies
-    section: False
+    section: "off"
     text: "Copies or photos of everything you signed"
     models: ["all"]
   - id: off-photos
-    section: False
+    section: "off"
     text: "Photos of the finished car and odometer taken before you leave"
     models: ["all"]
   - id: post-charge-test
