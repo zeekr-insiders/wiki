@@ -842,6 +842,60 @@ body {
     color: var(--ink);
 }
 
+/* The handover card's hover trace: a club-palette stroke runs clockwise from
+   the top-left corner round the card, and confetti (celebrate.js, bound in
+   zeekr.js) fires when it closes. --zi-trace is registered so it can
+   transition; leaving early runs it back quickly, and the confetti only fires
+   on a completed loop. Hover-capable pointers only, so a tap never sets it off;
+   reduced motion gets the whole stroke at once and no confetti. */
+@property --zi-trace {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.md-typeset .z-card.zi-card--celebrate::before {
+    --zi-trace: 0deg;
+    content: "";
+    position: absolute;
+    inset: calc(-1 * var(--hairline));
+    padding: var(--rule);
+    border-radius: inherit;
+    /* 315deg points the sweep's start at the top-left corner. */
+    background: conic-gradient(
+        from 315deg,
+        var(--zeekr-orange),
+        var(--hue-gold-solid) calc(var(--zi-trace) * 0.35),
+        var(--hue-plum-ink) calc(var(--zi-trace) * 0.7),
+        var(--zeekr-orange) var(--zi-trace),
+        transparent var(--zi-trace)
+    );
+    mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+    pointer-events: none;
+    transition: --zi-trace 0.3s ease-out;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .md-typeset .z-card.zi-card--celebrate:hover::before {
+        --zi-trace: 360deg;
+        transition: --zi-trace 1.2s linear;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .md-typeset .z-card.zi-card--celebrate:has(.zi-card__link:focus-visible)::before {
+        --zi-trace: 360deg;
+        transition: --zi-trace 1.2s linear;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .z-card.zi-card--celebrate:is(:hover, :has(.zi-card__link:focus-visible))::before {
+        --zi-trace: 360deg;
+        transition: none;
+    }
+}
+
 /* Section card icons: vendored Lucide (card_icon macro in main.py), drawn in
    ink at 28px with the same 1.5 stroke as the spec card icons. */
 .zi-card-icon {

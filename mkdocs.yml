@@ -116,6 +116,7 @@ extra_css:
   - stylesheets/zeekr.css
 
 extra_javascript:
+  - javascripts/celebrate.js
   - javascripts/zeekr.js
   - javascripts/glossary.js
   - javascripts/handover.js
