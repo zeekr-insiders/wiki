@@ -114,12 +114,14 @@ extra:
 
 extra_css:
   - stylesheets/zeekr.css
+  - stylesheets/handover-celebrate.css
 
 extra_javascript:
   - javascripts/celebrate.js
   - javascripts/zeekr.js
   - javascripts/glossary.js
   - javascripts/handover.js
+  - javascripts/handover-celebrate.js
 
 markdown_extensions:
   - abbr
@@ -206,6 +208,7 @@ plugins:
         - javascripts/zeekr.js
         - javascripts/glossary.js
         - javascripts/handover.js
+        - javascripts/handover-celebrate.js
 
 nav:
   - Home: index.md
