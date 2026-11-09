@@ -5,7 +5,9 @@
  * models, each phase shows a sticky progress bar with the overall count,
  * "Copy what's left" copies the unticked items as plain text grouped by
  * section, and "Start again" clears everything after a confirm. Printing opens
- * every section first. Runs only where the checklist is.
+ * every section first. A tick that finishes a section fires zi-hc:section-done
+ * (detail: section, item, title, all) for handover-celebrate.js. Runs only where the
+ * checklist is.
  */
 (function () {
   var KEY = 'zi-handover:v1';
@@ -104,10 +106,25 @@
       var box = e.target;
       if (!box.matches || !box.matches('.zi-hc-item input[type="checkbox"]')) return;
       var id = box.getAttribute('data-id');
+      var section = box.closest('.zi-hc-section');
+      var wasDone = section.classList.contains('is-done');
       if (box.checked) state.done[id] = 1;
       else delete state.done[id];
       save(state);
       render();
+      // Only a tick that finishes a section is news. Saved progress, the model
+      // picker and unticking never fire this; handover-celebrate.js listens.
+      if (box.checked && !wasDone && section.classList.contains('is-done')) {
+        root.dispatchEvent(new CustomEvent('zi-hc:section-done', {
+          bubbles: true,
+          detail: {
+            section: section,
+            item: box.closest('.zi-hc-item'),
+            title: section.querySelector('.zi-hc-section__title').textContent.trim(),
+            all: items.filter(applies).every(function (item) { return !!state.done[item.id]; })
+          }
+        }));
+      }
     });
 
     chips.forEach(function (chip) {
