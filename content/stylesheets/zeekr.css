@@ -1368,6 +1368,14 @@ body {
     }
 }
 
+/* The finance page's "Do the maths" table: its resource names wrap in a narrower
+   first column, so all four columns fit a desktop article without scrolling. */
+.md-typeset .zi-table-maths table:not([class]) td:first-child {
+    min-width: 10em;
+    max-width: 11em;
+    white-space: normal;
+}
+
 /* Tables take the column's width, so a short one does not float in a gap. */
 .md-typeset .md-typeset__table {
     display: block;
