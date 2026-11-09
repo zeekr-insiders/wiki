@@ -70,6 +70,15 @@
     }
 }
 
+/* handover.js scrolls the page itself while it folds a finished section and
+ * opens the next. Material answers any upward scroll with its "Back to top"
+ * button, right over the heading being celebrated, so keep it out of the way
+ * until the reader scrolls by hand. */
+.zi-hc-hush .md-top {
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Reduced motion: a check badge and a brief, still highlight instead. */
 .md-content .md-typeset details.zi-hc-section.zi-cheer-static {
     box-shadow: 0 0 0 var(--rule) var(--accent);

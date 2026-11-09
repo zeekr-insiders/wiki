@@ -155,6 +155,25 @@
       return top + (bar && !bar.hidden ? bar.offsetHeight : 0) + 8;
     }
 
+    // Material shows its "Back to top" button on any upward scroll, ours
+    // included, and it lands on the heading we just brought into view. Hide it
+    // from the start of a sequence until the reader next scrolls by hand.
+    var hushed = false;
+    var hushedAt = 0;
+    var ours = false;
+
+    function hush() {
+      hushed = true;
+      hushedAt = Date.now(); // a scroll event already queued isn't the reader's
+      document.body.classList.add('zi-hc-hush');
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!hushed || ours || flow || Date.now() - hushedAt < 200) return;
+      hushed = false;
+      document.body.classList.remove('zi-hc-hush');
+    }, { passive: true });
+
     // Scroll a section's heading to just under the sticky bars if it isn't
     // already in view, then call back once the scroll has settled.
     function reveal(section, always, then) {
@@ -165,20 +184,29 @@
         return;
       }
       var calm = reduced();
-      window.scrollTo({ top: window.pageYOffset + r.top - offset, behavior: calm ? 'instant' : 'smooth' });
+      hush();
+      ours = true;
+      var target = Math.max(0, Math.min(window.pageYOffset + r.top - offset,
+        document.documentElement.scrollHeight - window.innerHeight));
+      window.scrollTo({ top: target, behavior: calm ? 'instant' : 'smooth' });
+      // Its last scroll events can trail the settle by a frame or two.
+      function settle() { setTimeout(function () { ours = false; }, 100); }
       if (calm) {
+        settle();
         then();
         return;
       }
       var called = false;
-      function once() {
-        if (called) return;
+      function once(e) {
+        // A scrollend from an earlier, interrupted scroll can arrive first.
+        if (called || (e && Math.abs(window.pageYOffset - target) > 2)) return;
         called = true;
         window.removeEventListener('scrollend', once);
+        settle();
         then();
       }
       window.addEventListener('scrollend', once);
-      setTimeout(once, 700); // no scrollend in older Safari, or no scroll needed
+      setTimeout(once, 1200); // no scrollend in older Safari, or no scroll needed
     }
 
     function collapse(section, then) {
@@ -238,6 +266,7 @@
         stage: 'beat',
         gen: gen
       };
+      hush();
       f.timer = setTimeout(function () {
         f.stage = 'fold';
         collapse(section, function () {
