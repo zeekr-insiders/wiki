@@ -23,7 +23,7 @@ The club's guides list six kinds of event [^1]:
 
 Read the [club guides](https://zeekrinsiders.com.au/garage/guides):
 
-- [Taking part in a trip](https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip): what to expect on the day and how to be a good convoy member [^2].
+- [Taking part in a trip](https://zeekrinsiders.com.au/garage/guides#participating-in-a-trip): what to expect on the day and how to be a good member of the group [^2].
 - [Code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct): how we treat each other on drives, online and at events [^3].
 
 ## Running one yourself
