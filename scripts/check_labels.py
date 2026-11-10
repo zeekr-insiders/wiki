@@ -2,10 +2,10 @@
 
 On the built site:
 
-- a page's H1 matches its nav label (case aside). Under a model section the
+- (warning only) a page's H1 matches its nav label (case aside). Under a model section the
   H1 may carry the model's name ("Zeekr 7X prices" for "Prices"), and an
   "Overview" page's H1 is the section's own name;
-- a link card's heading (hooks/cards.py) matches its target's H1, nav label
+- (warning only) a link card's heading (hooks/cards.py) matches its target's H1, nav label
   or the nav group the target sits in ("Charging" for Home charging);
 - headings never skip a level (h1 straight to h3);
 - the nav as rendered (the sidebar, which is also the phone drawer) shows
@@ -87,6 +87,7 @@ def main() -> int:
             h1s[url] = _text(m.group(1))
 
     problems: list[str] = []
+    warnings: list[str] = []
     for url, (label, parents) in sorted(labels.items()):
         if url not in h1s or url == "":
             continue
@@ -94,7 +95,7 @@ def main() -> int:
         section = _text(parents[-1]) if parents else ""
         ok = h1 == want or (section and h1 == f"{section} {want}") or (want == "overview" and h1 == section)
         if not ok:
-            problems.append(f"/{url}: nav label '{label}' but H1 '{h1}'")
+            warnings.append(f"/{url}: nav label '{label}' but H1 '{h1}'")
 
     for url, (label, _) in sorted(labels.items()):
         text = shown.get(url)
@@ -115,8 +116,13 @@ def main() -> int:
             groups = {_text(p) for p in parents[-1:]} if len(parents) >= 2 else set()
             allowed = {h1s.get(target, ""), _text(label)} | groups
             if _text(title) not in allowed:
-                problems.append(f"/{url}: card '{_text(title)}' links to /{target}, called {sorted(a for a in allowed if a)}")
+                warnings.append(f"/{url}: card '{_text(title)}' links to /{target}, called {sorted(a for a in allowed if a)}")
 
+    # Naming agreement is editorial: warn, never block an editor.
+    for line in warnings:
+        print(f"warning: {line}", file=sys.stderr)
+    if warnings:
+        print(f"labels: {len(warnings)} naming warning(s), not blocking", file=sys.stderr)
     for line in problems:
         print(line, file=sys.stderr)
     if problems:

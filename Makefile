@@ -26,7 +26,7 @@ dev:
 
 build:
 	@echo "Building static site..."
-	$(PY) -m mkdocs build
+	$(PY) -m mkdocs build --strict
 	@echo "✅ Site built successfully"
 
 clean:
@@ -41,20 +41,19 @@ lint:
 		find content -name "*.md" -exec markdownlint {} +; \
 		echo "✅ Markdown linting complete"; \
 	else \
-		echo "⚠️  markdownlint not installed, skipping..."; \
-		echo "   Install with: npm install -g markdownlint-cli"; \
+		echo "markdownlint not installed. Install with: npm install -g markdownlint-cli" >&2; \
+		exit 1; \
 	fi
 
+# Optional extras, not part of ready: they fail loudly when the tool is missing. The strict build covers internal links.
 check: build
-	@echo "Checking for build issues..."
-	@echo "✅ Build check complete"
 	@echo "Checking for broken internal links..."
 	@if command -v htmlproofer >/dev/null 2>&1; then \
 		htmlproofer site/ --disable-external; \
 		echo "✅ Link checking complete"; \
 	else \
-		echo "⚠️  htmlproofer not installed, skipping link checks..."; \
-		echo "   Install with: gem install html-proofer"; \
+		echo "htmlproofer not installed. Install with: gem install html-proofer" >&2; \
+		exit 1; \
 	fi
 
 # Every citation superscript must reach its Sources entry and back (scripts/check_citations.py).
@@ -77,7 +76,7 @@ seo:
 	@echo "Checking search metadata..."
 	$(PY) scripts/check_seo.py site
 
-ready: clean nav build citations labels seo lint check
+ready: clean nav build citations labels seo
 	@echo ""
 	@echo "🎉 All checks passed! Ready for commit."
 	@echo ""

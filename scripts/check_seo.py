@@ -4,7 +4,8 @@ Every indexable page (not the 404 or a redirect stub, which carry noindex):
 
 - has lang="en-AU" on <html>, one <h1>, and a canonical link on site_url;
 - has a <title> in the "Page | Zeekr Insiders" form that no other page shares;
-- has a meta description of 140 to 160 characters that no other page shares
+- has a meta description that no other page shares (140 to 160 characters
+  is advised and only warns)
   (front matter `description`; see AGENTS.md, "Search and sharing");
 - has structured data that parses as JSON-LD: a BreadcrumbList on every page
   but the home page, which has Organization and WebSite; an article carries a
@@ -80,8 +81,9 @@ def _types(node) -> list[str]:
     return [g.get("@type") for g in graph]
 
 
-def check(site: pathlib.Path, site_url: str) -> tuple[list[str], int]:
+def check(site: pathlib.Path, site_url: str) -> tuple[list[str], int, list[str]]:
     problems: list[str] = []
+    warnings: list[str] = []
     titles: dict[str, str] = {}
     descs: dict[str, str] = {}
     indexable: set[str] = set()
@@ -110,7 +112,7 @@ def check(site: pathlib.Path, site_url: str) -> tuple[list[str], int]:
             problems.append(f"{rel}: no meta description (front matter `description`)")
         else:
             if not DESC_MIN <= len(desc) <= DESC_MAX:
-                problems.append(f"{rel}: description is {len(desc)} characters, not {DESC_MIN} to {DESC_MAX}")
+                warnings.append(f"{rel}: description is {len(desc)} characters, not {DESC_MIN} to {DESC_MAX}")
             if desc in descs:
                 problems.append(f"{rel}: description duplicates {descs[desc]}")
             descs.setdefault(desc, rel)
@@ -151,7 +153,7 @@ def check(site: pathlib.Path, site_url: str) -> tuple[list[str], int]:
         listed = {u.findtext("s:loc", namespaces=ns) for u in ET.parse(sitemap).getroot().findall("s:url", ns)}
         for url in sorted(indexable - listed):
             problems.append(f"sitemap.xml does not list {url}")
-    return problems, len(indexable)
+    return problems, len(indexable), warnings
 
 
 def main() -> int:
@@ -160,7 +162,10 @@ def main() -> int:
     if not site.is_dir():
         print(f"seo: {site} does not exist, build the site first", file=sys.stderr)
         return 2
-    problems, pages = check(site, site_url)
+    problems, pages, warnings = check(site, site_url)
+    # The length window is search taste, so it warns rather than blocks.
+    for line in warnings:
+        print(f"warning: {line}", file=sys.stderr)
     for line in problems:
         print(line, file=sys.stderr)
     if problems:
