@@ -42,7 +42,7 @@ Every fact needs a source a reader can check.
 
 ## Style
 
-Australian English, plain and friendly, no hype and no em dashes. Write as one owner explaining something to another. [AGENTS.md](AGENTS.md) has the full guide, including colour, accessibility and diagrams.
+Australian English, plain and friendly, no hype, no em dashes, and never the word "convoy". Write as one owner explaining something to another. [AGENTS.md](AGENTS.md) has the full guide.
 
 ## AI use
 
@@ -64,4 +64,4 @@ Only add images you have the right to use, and say where each came from. Don't i
 
 ## How changes go live
 
-Pull requests are checked automatically (strict build plus the citation, label, nav and search checks). Once a maintainer merges to `main`, the site rebuilds and publishes to <https://wiki.zeekrinsiders.com.au> within a few minutes.
+Pull requests are checked automatically (strict build plus the nav, citation, label and search checks). When a maintainer merges to `main`, GitHub Pages publishes to <https://wiki.zeekrinsiders.com.au> (served through Cloudflare). Only the owner pushes to `main`.

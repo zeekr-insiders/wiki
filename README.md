@@ -17,22 +17,9 @@ make run
 
 Then open <http://localhost:8000>. The page reloads as you edit files under `content/`.
 
-Without uv, use a virtual environment and the pinned requirements:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-mkdocs serve
-```
-
 ## Making a change
 
-The quickest way is **Suggest an edit** at the foot of any wiki page, which opens that page's source in GitHub's editor and turns your change into a pull request. [CONTRIBUTING.md](CONTRIBUTING.md) covers that, the sources rule and how changes go live.
-
-For anything bigger, clone the repository and run `make ready` before you open a pull request. It builds the site and runs the same checks as CI: citations, page names, navigation and search metadata.
-
-[AGENTS.md](AGENTS.md) is the full guide to how pages are written: the sources rule, writing style, spec cards, videos, tables, diagrams, the glossary and checklist data files, feeds and search metadata. It is written for AI assistants but is the most complete reference for people too.
+Use **Suggest an edit** at the foot of any wiki page, or clone the repository and run `make ready` before opening a pull request. [CONTRIBUTING.md](CONTRIBUTING.md) covers the process and the sources rule. [AGENTS.md](AGENTS.md) is the full reference for how pages are written and checked.
 
 ## Layout
 
