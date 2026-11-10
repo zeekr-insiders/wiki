@@ -1,10 +1,10 @@
 # AGENTS.md: Zeekr Insiders wiki
 
-Instructions for AI coding agents (and a handy summary for people). This is the canonical file; `CLAUDE.md` points here.
+Reference for AI agents and people. `CLAUDE.md` points here.
 
 ## What this is
 
-The Zeekr Insiders Australia wiki: an owner-run reference for Australian Zeekr owners, built with MkDocs Material and heavily customised to match the club site (the "front door", <https://zeekrinsiders.com.au>). It publishes from `main` to <https://wiki.zeekrinsiders.com.au> through GitHub Pages (`.github/workflows/deploy.yml`). Nobody deploys by hand.
+The Zeekr Insiders Australia wiki: an owner-run reference for Australian Zeekr owners, built with MkDocs Material and heavily customised to match the club site (the "front door", <https://zeekrinsiders.com.au>). It publishes from `main` to <https://wiki.zeekrinsiders.com.au> through GitHub Pages (`.github/workflows/deploy.yml`), behind Cloudflare. Nobody deploys by hand, and only the owner pushes to `main`; agents never push.
 
 The club is independent of Zeekr Australia. We write as owners talking to owners, not as a brand.
 
@@ -53,7 +53,7 @@ changelog: "Added MY27 towing figure"
 ---
 ```
 
-**`launch_date`.** At the first public publish every page is new, so `extra.launch_date` in `mkdocs.yml` records that date (`YYYY-MM-DD`; it stays `null` until `wiki-publish` merges). When set, the RSS feeds carry it as `<zi:launchDate>` in the channel and the JSON feeds as `_zeekr_insiders.launch_date`, so a consumer can treat items dated on or before it as the launch, not as updates.
+**`launch_date`.** At the first public publish every page is new, so `extra.launch_date` in `mkdocs.yml` records that date (`YYYY-MM-DD`, `null` until set). When set, the RSS feeds carry it as `<zi:launchDate>` in the channel and the JSON feeds as `_zeekr_insiders.launch_date`, so a consumer can treat items dated on or before it as the launch, not as updates.
 
 ## Search and sharing
 
@@ -88,9 +88,9 @@ Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`
 | `make citations` | `scripts/check_citations.py`: every citation reaches its Sources entry and back |
 | `make labels` | `scripts/check_labels.py`: headings never skip a level (blocks); a page's name differing between its H1, the nav and the cards linking to it only warns |
 | `make seo` | `scripts/check_seo.py`: titles, descriptions, canonicals, `lang` and structured data (see Search and sharing) |
-| `make ready` | The gate: clean, nav, one strict build, citations, labels, seo. `make lint` and `make check` (markdownlint, htmlproofer) are optional extras that fail if the tool is missing. Must pass before a commit is pushed or a PR is opened. |
+| `make ready` | The gate: clean, nav, one strict build, citations, labels, seo. `make lint` and `make check` (markdownlint, htmlproofer) are optional extras that fail if the tool is missing. |
 
-CI runs `mkdocs build --strict` plus the three check scripts on every pull request and on every push to `main`. Treat any strict-mode warning as a failure.
+CI runs `mkdocs build --strict` plus the check scripts on every pull request and push to `main`. Treat any strict-mode warning as a failure.
 
 ## Repo layout
 
@@ -111,7 +111,7 @@ CI runs `mkdocs build --strict` plus the three check scripts on every pull reque
 | `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and `handover_checklist`. |
 | `data/glossary.yml` | Every glossary term (see Glossary below). |
 | `data/handover-checklist.yml` | The Handover checklist's items, sections and sources (see Handover checklist below). |
-| `scripts/` | The check scripts behind `make nav`, `make citations` and `make labels`. |
+| `scripts/` | The check scripts behind `make ready`. |
 
 ### Spec cards
 
@@ -174,6 +174,7 @@ Plain Markdown. Keep headers and row labels short so a table fits a phone with l
 
 - Australian English: colour, centre, organise, licence (noun), tyre, boot, bonnet, windscreen, rego.
 - No em dashes. Use a full stop, comma, colon or brackets.
+- Never the word "convoy" (a separate product); say "drive" or "group drive".
 - Owner to owner: friendly, direct, practical. "You'll want to" rather than "Users should".
 - No hype, no marketing speak, no dealership-promo tone. Say what matters and what it costs.
 - Prices in AUD, with "before on-road costs" or "drive-away" context.
@@ -222,19 +223,9 @@ The club uses AI tools to help with research, drafting, code and some artwork, a
 - No secrets, tokens or `.env` files. `.gitignore` keeps agent evidence folders (`.verify/`, `.playwright-mcp/`, `.review/`) out; keep screenshots and logs there, never in `content/`.
 - This repository is public. Commit nothing from the club's private notes, no member details, and no local file paths or machine-specific setup.
 
-## Checks that must pass
+## Before you say work is done
 
-Before you say work is done:
+1. `make ready` passes. Failures: nav, strict build, citations, seo (missing or duplicate title or description, canonical, `lang`, H1, structured data), labels (skipped heading levels). Warnings only: page name differing between H1, nav and cards (labels) and a description outside 140 to 160 characters (seo).
+2. For visual changes, look at the page yourself in light and dark, at phone and desktop widths.
 
-1. `make ready` passes, which includes:
-    - **nav**: `scripts/check_nav.py mkdocs.yml`
-    - **citations**: `scripts/check_citations.py site`
-    - **labels**: `scripts/check_labels.py site mkdocs.yml`
-    - **seo**: `scripts/check_seo.py site`
-2. `mkdocs build --strict` passes with no warnings (CI runs this).
-3. For visual changes, you have looked at the page yourself in light and dark, at phone and desktop widths.
-
-## Git
-
-- Work on a branch, not `main`. Small commits, one change each, with a plain one-line message.
-- `main` publishes the live site on every push, so it only takes reviewed pull requests.
+Work on a branch with small one-line commits. `main` publishes the live site, so it only takes reviewed changes.
