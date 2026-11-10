@@ -101,15 +101,15 @@ Accessible EV charging bays are only for a driver who is charging, displaying a 
 
 ## Road trips and club drives
 
-The club's trip guides say to stagger charging if the stop has fewer plugs than cars, to allow 20 to 40 minutes at DC stops, to move the car once done, and not to hog a charger past what the next leg needs[^8]. Putting that together for a convoy:
+The club's trip guides say to stagger charging if the stop has fewer plugs than cars, to allow 20 to 40 minutes at DC stops, to move the car once done, and not to hog a charger past what the next leg needs[^8]. Putting that together for a group drive:
 
 - **Tell the group before you leave** how many plugs the stop has. Fewer plugs than cars means staggering, not a pile-up.
-- **Charge the lowest-range cars first**, since the convoy plans around them.
+- **Charge the lowest-range cars first**, since the group plans around them.
 - **Charge to the next leg, not to 100%.** Two partial charges beat one long one[^1].
 - **Split across chargers or nearby sites** if there are two, rather than all queueing at one.
 - **Stay with your car** or within phone reach, so you can move when it finishes.
 - **Have a backup charger** for any single-unit stop, and flag faults to the trip lead and on PlugShare[^8].
-- **Be welcoming.** Other drivers at the stop may be first-timers. A convoy is a good advert for the community.
+- **Be welcoming.** Other drivers at the stop may be first-timers. A group of Zeekrs is a good advert for the community.
 
 See [Road Trips](road-trips.md) for planning and the club's trip guides on the club website.
 
