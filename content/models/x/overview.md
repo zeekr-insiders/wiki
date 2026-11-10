@@ -1,4 +1,5 @@
 ---
+models: ["x"]
 last_checked: 2026-11-08
 seo_title: "Zeekr X compact electric SUV"
 description: "The Zeekr X compact electric SUV in Australia: RWD and AWD grades, battery and WLTP range, drive-away pricing and the guides for Zeekr X owners."

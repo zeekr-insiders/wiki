@@ -74,6 +74,8 @@
   <link rel="alternate" type="application/feed+json" title="Zeekr Insiders Wiki: updated pages" href="{{ 'feed_json_updated.json' | url }}">
   {#- Analytics: cookieless and scrubbed, see javascripts/analytics.js. The key comes from extra.analytics in mkdocs.yml. -#}
   {% if config.extra.analytics and config.extra.analytics.posthog_key %}
+    {#- Model keys from `models:` front matter, shared with the club site and forum so traffic compares per model. -#}
+    {% if page and page.meta and page.meta.models %}<meta name="zi-models" content="{{ page.meta.models | join(',') }}">{% endif %}
     <script defer src="{{ 'javascripts/analytics.js' | url }}"
       data-key="{{ config.extra.analytics.posthog_key }}"
       data-api-host="{{ config.extra.analytics.api_host }}"

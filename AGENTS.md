@@ -75,6 +75,8 @@ description: "Zeekr 7X specifications for Australia: battery, power, WLTP range,
 
 `content/robots.txt` allows everything and names the sitemap. The 404 page and redirect stubs carry `noindex`. For Google Search Console's HTML-tag check, put the token in `extra.google_site_verification` in `mkdocs.yml`.
 
+**`models`.** Optional front matter listing the models a page is about, from `7x`, `x`, `009`, `7gt`, `8x`, `9x` (quote them, e.g. `models: ["7x"]`); leave general pages untagged. The keys match the club site and forum, analytics sends them with `content_viewed`, and `make models` fails on unknown keys.
+
 ## Build, check, preview
 
 Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`, `uv.lock`).

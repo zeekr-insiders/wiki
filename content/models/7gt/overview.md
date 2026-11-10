@@ -1,4 +1,5 @@
 ---
+models: ["7gt"]
 title: Zeekr 7GT
 last_checked: 2026-11-08
 seo_title: "Zeekr 7GT electric wagon in Australia"
