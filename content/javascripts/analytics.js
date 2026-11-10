@@ -58,6 +58,15 @@
     queue = [];
   }
 
+  // Which models a page is about (front matter `models:`), so traffic can be compared per model across site, wiki and
+  // forum. Path only, no query string; no visitor data. Fired through track() so it waits for the SDK like the rest.
+  function contentViewed() {
+    var m = document.querySelector('meta[name="zi-models"]');
+    var models = m && m.content ? m.content.split(',').filter(Boolean) : [];
+    track('content_viewed', { content_type: 'wiki', slug: location.pathname, models: models });
+  }
+  contentViewed();
+
   function load() {
     var s = document.createElement('script');
     s.async = true;
