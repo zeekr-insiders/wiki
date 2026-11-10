@@ -1,4 +1,4 @@
-.PHONY: help install run build clean ready lint check citations nav labels seo serve dev stop deploy
+.PHONY: help install run build clean ready lint check citations nav labels seo models serve dev stop deploy
 
 # uv run fails to canonicalise script paths on this machine, so we call the
 # venv interpreter directly. Works on Windows and POSIX venv layouts.
@@ -71,12 +71,17 @@ labels:
 	@echo "Checking labels..."
 	$(PY) scripts/check_labels.py site mkdocs.yml
 
+# Front matter `models:` may only use the shared model keys (scripts/check_models.py).
+models:
+	@echo "Checking model tags..."
+	$(PY) scripts/check_models.py content
+
 # Every page has a unique title and description, a canonical, lang en-AU and valid structured data (scripts/check_seo.py).
 seo:
 	@echo "Checking search metadata..."
 	$(PY) scripts/check_seo.py site
 
-ready: clean nav build citations labels seo
+ready: clean nav models build citations labels seo
 	@echo ""
 	@echo "🎉 All checks passed! Ready for commit."
 	@echo ""
