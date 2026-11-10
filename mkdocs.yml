@@ -86,15 +86,15 @@ extra:
     forum_url: "https://forums.zeekrinsiders.com.au/"
     # Matches the club site's Join link: the forum registration page stands in until a join page exists.
     join_url: "https://forums.zeekrinsiders.com.au/register/"
-    # The club's six sections, as in the club site's masthead. The masthead
+    # The club's sections in the canonical order across all sites (Website is the badge/home link, then these). The masthead
     # and the phone drawer both list them from here. "path" is under base_url; "forum" uses forum_url;
     # "wiki" is this site, marked current.
     sections:
+      - {forum: true, icon: forum, short: Forum, text: Our community}
       - {path: /drives, icon: flag, short: Drives, text: Find a drive}
       - {path: /news, icon: pulse, short: News, text: "What's happening"}
       - {path: /garage, icon: garage, short: Garage, text: "Our stories & blog"}
       - {path: /insiders, icon: people, short: The Insiders, text: Meet the team}
-      - {forum: true, icon: forum, short: Forum, text: Our community}
       - {wiki: true, icon: book, short: Wiki, text: Master your Zeekr}
     og_image: "assets/img/og-default.png"
   # The club's channels: Facebook, Instagram, YouTube, X. Keep in step with the club site's social links.
