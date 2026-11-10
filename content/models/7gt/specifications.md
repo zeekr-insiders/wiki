@@ -1,4 +1,5 @@
 ---
+models: ["7gt"]
 title: Zeekr 7GT specifications
 description: Published specifications for the Zeekr 7GT, with each figure marked as Australian press, global or China-market. Not yet confirmed for Australia.
 last_checked: 2026-11-08

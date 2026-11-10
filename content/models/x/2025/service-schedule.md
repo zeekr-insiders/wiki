@@ -1,4 +1,5 @@
 ---
+models: ["x"]
 last_checked: 2026-11-08
 seo_title: "Zeekr X servicing and warranty"
 description: "Zeekr X servicing and warranty in Australia: the updated X's 12-month or 20,000 km intervals, capped-price servicing, battery warranty and roadside cover."

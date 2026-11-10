@@ -1,4 +1,5 @@
 ---
+models: ["7x"]
 last_checked: 2026-11-08
 seo_title: "Zeekr 7X specs: range, charging, towing"
 description: "Zeekr 7X specifications for Australia: battery, power, WLTP range, DC and AC charging, towing, boot space, equipment and warranty for MY25/MY26 and MY27."

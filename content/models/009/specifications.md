@@ -1,4 +1,5 @@
 ---
+models: ["009"]
 last_checked: 2026-11-08
 seo_title: "Zeekr 009 specs: battery, range, charging"
 description: "Zeekr 009 specifications for Australia: FWD and AWD power and torque, battery, WLTP range, AC and DC charging, seating, audio and warranty for the 2026 range."

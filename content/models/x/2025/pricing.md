@@ -1,4 +1,5 @@
 ---
+models: ["x"]
 last_checked: 2026-11-08
 seo_title: "Zeekr X price in Australia"
 description: "Zeekr X prices in Australia for the updated 2026 RWD and AWD, the pre-order launch offers that ended in May 2026, and what servicing costs for the X."
