@@ -10,6 +10,8 @@
  * - Citations (marked up by hooks/citations.py) show their source on hover
  *   or focus and open it directly on Ctrl/Cmd-click or middle-click. Following
  *   one, or landing on a #fn: link, opens the collapsed Sources panel first.
+ * - The home page's handover card fires a confetti burst (celebrate.js) when
+ *   its hover trace completes a full loop.
  */
 (function () {
   function enhance() {
@@ -316,4 +318,16 @@
   } else {
     document.addEventListener('DOMContentLoaded', citations);
   }
+  // The handover card's trace (zeekr.css) is a transition on --zi-trace. It
+  // only ends at 360deg when the reader stayed for the whole loop; leaving
+  // early ends it at 0deg, so that is the no-confetti case. One transition per
+  // hover means one burst per hover. Delegated on document, so it keeps
+  // working if Material's instant navigation swaps the page body.
+  document.addEventListener('transitionend', function (e) {
+    if (e.propertyName !== '--zi-trace' || e.pseudoElement !== '::before') return;
+    var card = e.target;
+    if (!card.classList || !card.classList.contains('zi-card--celebrate')) return;
+    if (getComputedStyle(card, '::before').getPropertyValue('--zi-trace').trim() !== '360deg') return;
+    if (window.ZICelebrate) window.ZICelebrate.burst(card, { kinds: ['confetti', 'sparks'] });
+  });
 })();

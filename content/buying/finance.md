@@ -123,11 +123,15 @@ Collect these first: the drive-away price and options, your gross income, the le
 
 **Check the calculator's financial year and tax settings before trusting the result.** Tax brackets, the LCT threshold, the charging rate and FBT rules all change in 2026-27 and 2027-28.
 
+<div class="zi-table-maths" markdown>
+
 | Resource | What it is | Maintainer | Currency |
 | :--- | :--- | :--- | :--- |
 | [Novated Lease Guide calculator](https://novatedlease.guide/calculator/) [^25] | Free web app. Compares a novated lease with cash, a loan or keeping your current car. Models the April 2027 changes from the September 2026 exposure draft, using the lease start date and the car's base value | "changyang1230", described on the site as an independent Australian specialist doctor. Not affiliated with any provider, no referral fees, funded by donations, per the site [^25][^26] | Site home page says "Updated Oct 2026", and the calculator says it applies the September 2026 draft (not yet law). The calculator page shows no tax-year label of its own, so check its brackets against the current ones |
 | [Original spreadsheet (Google Sheets)](https://docs.google.com/spreadsheets/d/1CtpBXmuhRW3HrBjqJqnPeFhOfqCbPK-wXA17oz_1fuA/) [^25][^26] | The spreadsheet the web app was built from and checked against. The site says the two match to the cent | Same author | Spreadsheet in public use since 2023, with the web app from early 2026 [^26]. No update date shown, so prefer the web app |
 | [r/AusFinance: "EV and ICE novated lease calculator"](https://www.reddit.com/r/AusFinance/comments/1c5b9xx/ev_and_ice_novated_lease_calculator/) [^27] | The April 2024 community thread where the spreadsheet was shared, with owner comments | Posted by u/changyang1230, the same handle the site uses [^27][^26] | Posted 16 April 2024. The thread uses the 4.2 cents per km charging rate, which has since moved to 5.47 for 2026-27. Use it for discussion, not figures |
+
+</div>
 
 We found no maintained novated lease calculator or wiki explainer on Whirlpool. Its electric vehicle wiki page is an index of forum threads, including "Electric Car on Novated Lease" [^28]. That is owner opinion, not a calculator. Treat anything quoted in forums as a lead to check against the ATO and your quote.
 

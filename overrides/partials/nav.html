@@ -1,7 +1,8 @@
 {#- Material's primary nav (partials/nav.html, 9.6) with two changes. On phones it is the drawer, and the
-    masthead with the club's sections has scrolled away by then, so the drawer opens with those sections
-    and Join us (shown only while the nav is a drawer, see zeekr.css). They sit before the <nav>, not in
-    it, because the drawer opens on the current section's nested panel, which covers the top level.
+    masthead with the club's sections has scrolled away by then, so the drawer opens with the club site's
+    home, the same sections in the masthead's order (Wiki last, marked current) and Join us (shown
+    only while the nav is a drawer, see zeekr.css). They sit before the <nav>, not in it, because
+    the drawer opens on the current section's nested panel, which covers the top level.
     The repository widget is gone: the wiki sets repo_url only to build its edit links. -#}
 {% import "partials/nav-item.html" as item with context %}
 {%- set site = config.extra.site -%}
@@ -15,9 +16,17 @@
 <nav class="zi-drawer-club" aria-labelledby="zi-drawer-club">
   <h2 class="zi-label" id="zi-drawer-club">Zeekr Insiders</h2>
   <ul>
-    {% for r in site.sections if not r.wiki %}
+    <li class="zi-drawer-club__home">
+      <a href="{{ site.base_url }}/">
+        <img src="{{ 'assets/img/logo-badge.png' | url }}" alt="" width="573" height="551">
+        <span>Website</span>
+        <span class="zi-vh">(Zeekr Insiders home)</span>
+      </a>
+    </li>
+    {% for r in site.sections %}
+      {%- set href = (nav.homepage.url | url) if r.wiki else (site.forum_url if r.forum else site.base_url ~ r.path) -%}
       <li>
-        <a href="{{ site.forum_url if r.forum else site.base_url ~ r.path }}">
+        <a href="{{ href }}"{% if r.wiki %} aria-current="page"{% endif %}>
           {% include ".icons/zi/" ~ r.icon ~ ".svg" %}
           <span>{{ r.short }}</span>
           {% if r.forum %}<span class="zi-ext">{% include ".icons/zi/ext.svg" %}</span><span class="zi-vh">(opens another site)</span>{% endif %}
