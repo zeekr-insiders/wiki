@@ -69,7 +69,7 @@ description: "Zeekr 7X specifications for Australia: battery, power, WLTP range,
 
 - **`seo_title`** (optional) is the `<title>` and share title, before " | Zeekr Insiders". Put the words people search for first. Without it, the title is the page's H1. Keep the whole title under about 60 characters.
 - **`description`** (required) is the meta and share description: 140 to 160 characters, written for someone deciding whether to click, and unique to the page.
-- `make seo` (`scripts/check_seo.py`, part of `make ready` and CI) fails on a missing, duplicate or wrong-length description, a duplicate title, a missing canonical, a `lang` other than `en-AU`, more than one H1, or structured data that does not parse.
+- `make seo` (`scripts/check_seo.py`, part of `make ready` and CI) fails on a missing or duplicate description (a length outside 140 to 160 only warns), a duplicate title, a missing canonical, a `lang` other than `en-AU`, more than one H1, or structured data that does not parse.
 
 `hooks/seo.py` adds the rest at build time: git dates for the sitemap's `lastmod` and the article dates, the share image (a model page shares its model's banner from `assets/img/og-<model>.jpg`, the rest share the default card), and JSON-LD: Organization and WebSite on the home page, a BreadcrumbList everywhere else, a TechArticle with the page's Sources as citations on content pages, a DefinedTermSet on the glossary and a VideoObject per video. Don't add FAQPage markup unless a page really is questions and answers.
 
@@ -83,12 +83,12 @@ Dependencies are managed with [uv](https://docs.astral.sh/uv/) (`pyproject.toml`
 |---|---|
 | `make install` | `uv sync` into `.venv/` |
 | `make run` | Dev server on <http://localhost:8000> (MkDocs' default). If one is already running, use it rather than starting another on the same port. |
-| `make build` | `mkdocs build` into `site/` |
+| `make build` | `mkdocs build --strict` (as CI does) into `site/` |
 | `make nav` | `scripts/check_nav.py`: no titled `index.md` comes first in a nav section (it would be swallowed) |
 | `make citations` | `scripts/check_citations.py`: every citation reaches its Sources entry and back |
-| `make labels` | `scripts/check_labels.py`: a page has the same name in its H1, the nav and the cards linking to it; headings never skip a level |
+| `make labels` | `scripts/check_labels.py`: headings never skip a level (blocks); a page's name differing between its H1, the nav and the cards linking to it only warns |
 | `make seo` | `scripts/check_seo.py`: titles, descriptions, canonicals, `lang` and structured data (see Search and sharing) |
-| `make ready` | The gate: clean, nav, build, citations, labels, seo, lint, check. Must pass before a commit is pushed or a PR is opened. |
+| `make ready` | The gate: clean, nav, one strict build, citations, labels, seo. `make lint` and `make check` (markdownlint, htmlproofer) are optional extras that fail if the tool is missing. Must pass before a commit is pushed or a PR is opened. |
 
 CI runs `mkdocs build --strict` plus the three check scripts on every pull request and on every push to `main`. Treat any strict-mode warning as a failure.
 
