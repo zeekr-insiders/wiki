@@ -61,6 +61,12 @@ theme:
     - content.action.edit
 
 extra:
+  # PostHog analytics (javascripts/analytics.js), same project and privacy posture as the club site. The key is a
+  # public client key, safe to commit. Set it to null to switch analytics off.
+  analytics:
+    posthog_key: phc_uS7jrsGr3k4ZwtmxXgCMt9346gVDJSVTwtW76JykTbN5
+    api_host: https://zeekrinsiders.com.au/ingest
+    ui_host: https://eu.posthog.com
   # Moved pages: old content path -> new one. hooks/redirects.py keeps the old URL working.
   redirects:
     knowledge/glossary.md: glossary/index.md

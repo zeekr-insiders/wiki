@@ -1,4 +1,5 @@
 ---
+models: ["7x"]
 last_checked: 2026-11-08
 seo_title: "Zeekr 7X known issues and fixes"
 description: "Common Zeekr 7X quirks owners raise, such as driver alerts, the over-speed alert, a stuck charging cable and frozen screens, with what the owner's manual says."
