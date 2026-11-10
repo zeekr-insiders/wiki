@@ -2369,6 +2369,24 @@ span .zi-icon {
         height: 18px;
     }
 
+    /* Seven entries in two columns: the home link takes the first row on its own so the six sections pair up. */
+    .zi-drawer-club__home {
+        grid-column: 1 / -1;
+    }
+
+    .zi-drawer-club a:not(.btn) > img {
+        flex: none;
+        width: auto;
+        height: var(--sp-5);
+    }
+
+    .zi-drawer-club a[aria-current] {
+        text-decoration: underline;
+        text-decoration-thickness: var(--rule);
+        text-underline-offset: 0.2em;
+        text-decoration-color: var(--accent);
+    }
+
     .zi-drawer-club .zi-ext svg {
         width: 12px;
         height: 12px;
