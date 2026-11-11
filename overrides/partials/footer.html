@@ -1,18 +1,9 @@
-{#- The club site's footer: the same About, Explore and The club columns,
-    the same socials and the copyright line. "Keep in touch" links to the site's signup rather than
-    carrying a second form here. -#}
+{#- Mirrors the club site's footer (web-home SiteFooter.svelte): the same About, Explore and The club
+    columns in the same order, Keep in touch under the about text, and the legal row with the build on
+    the right. Keep in touch links to the site's signup rather than carrying a second form here. -#}
 {%- set site = config.extra.site -%}
 {%- set base = site.base_url -%}
 <footer class="zi-footer">
-  <div class="zi-wrap">
-    <section class="zi-keep" aria-labelledby="zi-keep">
-      <div>
-        <h2 id="zi-keep">Keep in touch</h2>
-        <p>Club news, drives near you and the odd giveaway. Sign up on the Zeekr Insiders site.</p>
-      </div>
-      <a class="btn" href="{{ base }}/#connect">Sign up on the club site</a>
-    </section>
-  </div>
   <div class="zi-wrap zi-footer__grid">
     <div>
       <h2 class="zi-label">Zeekr Insiders</h2>
@@ -28,12 +19,17 @@
           {% endfor %}
         </ul>
       {% endif %}
+      <section class="zi-keep" aria-labelledby="zi-keep">
+        <h2 class="zi-label" id="zi-keep">Keep in touch</h2>
+        <p>Club news, upcoming drives and the occasional giveaway. Unsubscribe anytime.</p>
+        <a class="btn" href="{{ base }}/#connect">Sign up on the club site</a>
+      </section>
     </div>
     <nav aria-labelledby="zi-foot-sections">
       <h2 class="zi-label" id="zi-foot-sections">Explore</h2>
       <ul class="zi-footer__links">
-        <li><a href="{{ base }}/drives">Drives</a></li>
         <li><a href="{{ base }}/news">News</a></li>
+        <li><a href="{{ base }}/drives">Drives</a></li>
         <li><a href="{{ base }}/garage">Garage</a></li>
         <li><a href="{{ base }}/insiders">The Insiders</a></li>
         <li><a href="{{ site.forum_url }}">Forum<span class="zi-vh"> (opens another site)</span></a></li>
@@ -43,18 +39,24 @@
     <nav aria-labelledby="zi-foot-club">
       <h2 class="zi-label" id="zi-foot-club">The club</h2>
       <ul class="zi-footer__links">
-        <li><a href="{{ base }}/garage/guides#code-of-conduct">Code of conduct</a></li>
-        <li><a href="{{ base }}/contact">Contact</a></li>
-        <li><a href="{{ site.join_url }}">Join us</a></li>
-        <li><a href="{{ base }}/privacy">Privacy</a></li>
+        <li><a href="{{ site.join_url }}">Join us<span class="zi-vh"> (on the forum, opens another site)</span></a></li>
+        <li><a href="{{ base }}/club">Club documents</a></li>
+        <li><a href="{{ base }}/club/code-of-conduct">Code of conduct</a></li>
         <li><a href="{{ base }}/ai">How we use AI</a></li>
+        <li><a href="{{ base }}/privacy">Privacy</a></li>
+        <li><a href="{{ base }}/contact">Contact</a></li>
         <li><a href="{{ page.edit_url if (page and page.edit_url) else config.repo_url }}" rel="edit">Contribute<span class="zi-vh"> to this page on GitHub (opens another site)</span></a></li>
       </ul>
     </nav>
   </div>
   <div class="zi-wrap zi-footer__legal">
-    <p>Model images: Zeekr. Badge and banner artwork: Zeekr Insiders (AI-assisted, see <a href="{{ base }}/ai">How we use AI</a>).</p>
-    <p>&copy; 2026 Zeekr Insiders Australia. <a href="{{ config.repo_url }}/blob/main/LICENSE-CONTENT.md">Content CC BY-NC-SA 4.0 &middot; Code MIT &middot; Images &copy; their owners<span class="zi-vh"> (licence details on GitHub, opens another site)</span></a></p>
-    <p class="zi-footer__build">v{{ config.extra.build.version }} (Build {% if config.extra.build.sha %}<a href="{{ config.repo_url }}/commit/{{ config.extra.build.sha }}">{{ config.extra.build.short }}</a>{% else %}{{ config.extra.build.short }}{% endif %})</p>
+    <div>
+      <p>&copy; 2026 Zeekr Insiders Australia. <a href="{{ config.repo_url }}/blob/main/LICENSE-CONTENT.md">Content CC BY-NC-SA 4.0 &middot; Code MIT &middot; Images &copy; their owners<span class="zi-vh"> (licence details on GitHub, opens another site)</span></a></p>
+      <p>Built with <a href="{{ base }}/ai">AI Assistance</a></p>
+    </div>
+    <div class="zi-footer__build">
+      <p>v{{ config.extra.build.version }} (Build {% if config.extra.build.sha %}<a href="{{ config.repo_url }}/commit/{{ config.extra.build.sha }}">{{ config.extra.build.short }}</a>{% else %}{{ config.extra.build.short }}{% endif %})</p>
+      <p>Created by <a href="https://tensorfoundry.io" target="_blank" rel="noopener">TensorFoundry</a></p>
+    </div>
   </div>
 </footer>
