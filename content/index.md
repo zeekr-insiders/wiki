@@ -82,7 +82,7 @@ New to EVs? [Knowledge](knowledge/index.md) explains batteries, charging and ran
         <a class="go" href="models/x/overview/">Zeekr X</a>
     </div>
     <div class="z-card model-glance model-banner">
-        <span class="badge">Not yet on sale</span>
+        <span class="badge">Preorder</span>
         <picture>
             <source type="image/avif" srcset="assets/images/models/7gt-card.avif 800w, assets/images/models/7gt-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 25vw">
             <img src="assets/images/models/7gt-card.webp" srcset="assets/images/models/7gt-card.webp 800w, assets/images/models/7gt-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 25vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
