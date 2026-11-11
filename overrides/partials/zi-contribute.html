@@ -1,7 +1,7 @@
-{#- "Suggest an edit" at the foot of every page with a source file: Material's content.action.edit
+{#- "Suggest an edit" at the foot of every page with a source file except the home page (a landing page, not an article): Material's content.action.edit
     feature and page.edit_url (repo_url + edit_uri in mkdocs.yml), moved from the top-right icon to
     a labelled link the reader meets once they have finished reading. -#}
-{% if page and page.edit_url and "content.action.edit" in (config.theme.features or []) %}
+{% if page and page.edit_url and not page.is_homepage and "content.action.edit" in (config.theme.features or []) %}
   <aside class="zi-contribute" aria-labelledby="zi-contribute">
     <a class="go" id="zi-contribute" href="{{ page.edit_url }}" rel="edit">Suggest an edit<span class="zi-vh"> to this page on GitHub (opens another site)</span></a>
     <p>Changes are reviewed before they go live. Please include a source.</p>

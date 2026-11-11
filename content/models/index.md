@@ -44,7 +44,7 @@ Three Zeekr models are on sale in Australia: the 7X, the X and the 009. A fourth
         <a class="go" href="x/overview/">Zeekr X</a>
     </div>
     <div class="z-card model-glance model-banner">
-        <span class="badge">Not yet on sale</span>
+        <span class="badge">Preorder</span>
         <picture>
             <source type="image/avif" srcset="../assets/images/models/7gt-card.avif 800w, ../assets/images/models/7gt-card-1200.avif 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw">
             <img src="../assets/images/models/7gt-card.webp" srcset="../assets/images/models/7gt-card.webp 800w, ../assets/images/models/7gt-card-1200.webp 1200w" sizes="(max-width: 44.984375em) 100vw, 50vw" width="800" height="400" alt="" loading="lazy" decoding="async" class="model-banner__img">
