@@ -183,6 +183,7 @@ hooks:
   - hooks/redirects.py
   - hooks/feeds.py
   - hooks/seo.py
+  - hooks/version.py
 
 plugins:
   - search:

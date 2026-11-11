@@ -2530,6 +2530,14 @@ span .zi-icon {
     color: var(--ink-muted);
 }
 
+.zi-footer__build {
+    font-size: 0.75rem;
+}
+
+.zi-footer__build a {
+    color: inherit;
+}
+
 .zi-footer__legal p + p {
     margin-top: var(--sp-1);
 }
