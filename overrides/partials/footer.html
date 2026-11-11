@@ -55,5 +55,6 @@
   <div class="zi-wrap zi-footer__legal">
     <p>Model images: Zeekr. Badge and banner artwork: Zeekr Insiders (AI-assisted, see <a href="{{ base }}/ai">How we use AI</a>).</p>
     <p>&copy; 2026 Zeekr Insiders Australia. <a href="{{ config.repo_url }}/blob/main/LICENSE-CONTENT.md">Content CC BY-NC-SA 4.0 &middot; Code MIT &middot; Images &copy; their owners<span class="zi-vh"> (licence details on GitHub, opens another site)</span></a></p>
+    <p class="zi-footer__build">v{{ config.extra.build.version }} (Build {% if config.extra.build.sha %}<a href="{{ config.repo_url }}/commit/{{ config.extra.build.sha }}">{{ config.extra.build.short }}</a>{% else %}{{ config.extra.build.short }}{% endif %})</p>
   </div>
 </footer>

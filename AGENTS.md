@@ -109,6 +109,7 @@ CI runs `mkdocs build --strict` plus the check scripts on every pull request and
 | `hooks/citations.py` | Turns footnotes into labelled citations and a collapsed Sources panel. |
 | `hooks/tables.py` | Lets long cells wrap; short cells stay on one line and wide tables scroll. |
 | `hooks/redirects.py` | Keeps a moved page's old URL working: list it under `extra.redirects` in `mkdocs.yml` (old content path: new one). |
+| `VERSION` / `hooks/version.py` | The wiki version (edit `VERSION`, one line) and the footer stamp `v1.0.0 (Build abc1234)`: the short commit comes from `GITHUB_SHA` in CI, else `git rev-parse HEAD`, else `dev`. |
 | `hooks/headings.py` | Keeps the permalink glyph out of heading names for screen readers. |
 | `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and `handover_checklist`. |
 | `data/glossary.yml` | Every glossary term (see Glossary below). |
