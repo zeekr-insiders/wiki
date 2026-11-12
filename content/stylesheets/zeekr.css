@@ -160,6 +160,10 @@
     --hue-gold-ink: #E4BA58;
     /* Green is kept to one job: a finished Handover checklist section. */
     --hue-green-ink: #8CCB98;
+    /* Link chips: the Handover checklist's link-outs. Text on the chip is 9:1 here, 7:1 in light. */
+    --link-chip-bg: #16263A;
+    --link-chip-border: #6FA8E8;
+    --link-chip-ink: #A9CDF5;
     --hue-tint: 13%;
 
     /* Black line art on <img> icons becomes the ink colour (#F2F2F2 here). */
@@ -193,6 +197,9 @@
     --hue-gold-on: #1A1A1A;
     --hue-gold-ink: #865809;
     --hue-green-ink: #2E6B3A;
+    --link-chip-bg: #E8F1FB;
+    --link-chip-border: #2B6CB0;
+    --link-chip-ink: #1D4F8C;
     --hue-tint: 9%;
 
     --icon-filter: brightness(0) invert(10%);
@@ -3962,13 +3969,62 @@ span .zi-icon {
     border-radius: var(--radius-sm);
 }
 
+/* Link chips: an item's link-outs as blue pills on their own row, so they
+   read as things to tap rather than more hint text. An icon says where each
+   goes (off-site, a phone call); wiki links carry none. Blue is kept for this. */
 .md-typeset .zi-hc-links {
-    display: block;
-    margin-top: var(--sp-1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: var(--sp-2);
 }
 
-.md-typeset .zi-hc-links a {
-    white-space: nowrap;
+.md-typeset .zi-hc-links a.zi-hc-link,
+.md-typeset .zi-hc-links a.zi-hc-link:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    padding: 2px var(--sp-3);
+    color: var(--link-chip-ink);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    background: var(--link-chip-bg);
+    border: var(--hairline) solid var(--link-chip-border);
+    border-radius: var(--radius-pill);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    box-shadow: inset 0 0 0 var(--hairline) var(--link-chip-border);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-link:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-hc-link--ext::after,
+.md-typeset .zi-hc-link--tel::before {
+    content: "";
+    flex: none;
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+    -webkit-mask: var(--zi-link-icon) center / contain no-repeat;
+    mask: var(--zi-link-icon) center / contain no-repeat;
+}
+
+/* Lucide external-link and phone (ISC), as masks so they take the chip's ink. */
+.md-typeset .zi-hc-link--ext {
+    --zi-link-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M15 3h6v6'/><path d='M10 14 21 3'/><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/></svg>");
+}
+
+.md-typeset .zi-hc-link--tel {
+    --zi-link-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384'/></svg>");
 }
 
 /* State tags read apart from model tags by their dashed edge, not colour. */
@@ -3989,6 +4045,36 @@ span .zi-icon {
     .md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary::after,
     .zi-contribute {
         display: none !important;
+    }
+
+    /* Link chips print as plain text with the address after them. */
+    .md-typeset .zi-hc-links {
+        display: block;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-link:is(:link, :visited) {
+        display: block;
+        min-height: 0;
+        margin-right: var(--sp-3);
+        padding: 0;
+        color: var(--ink);
+        font-weight: 400;
+        background: none;
+        border: 0;
+    }
+
+    .md-typeset .zi-hc-link--tel::before {
+        display: none;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-link::after {
+        content: " (" attr(href) ")";
+        width: auto;
+        height: auto;
+        background: none;
+        -webkit-mask: none;
+        mask: none;
+        word-break: break-all;
     }
 
     .md-content .md-typeset details.zi-hc-section,

@@ -31,6 +31,9 @@ def _lucide(name: str, cls: str = "zi-spec-card__icon") -> str:
     )
 
 
+# The chip's icon shows a link leaves the wiki; this says it to screen readers, as the masthead and footer do.
+_EXT = '<span class="zi-vh"> (opens another site)</span>'
+
 _UTM = {"utm_source": "zeekrinsiders", "utm_medium": "wiki", "utm_campaign": "handover-checklist"}
 
 
@@ -220,21 +223,23 @@ def define_env(env):
             optional `path` under it), `url` (anywhere else) or `tel` (digits to dial). Links that
             leave the wiki get the checklist's UTM tags here, so the data file never carries them;
             citations are built elsewhere and stay clean."""
+            # Each renders as a link chip (zeekr.css); the kind class picks its icon.
             label = l["label"]
             if l.get("tel"):
-                return f"[{label}](tel:{l['tel']})"
+                return f"[{label}](tel:{l['tel']}){{: .zi-hc-link .zi-hc-link--tel }}"
             if l.get("club"):
-                return f"[{label}]({_utm(club[l['club']].rstrip('/') + '/' + l.get('path', '').lstrip('/'))})"
+                url = _utm(club[l['club']].rstrip('/') + '/' + l.get('path', '').lstrip('/'))
+                return f"[{label}{_EXT}]({url}){{: .zi-hc-link .zi-hc-link--ext }}"
             if l.get("url"):
-                return f"[{label}]({_utm(l['url'])})"
+                return f"[{label}{_EXT}]({_utm(l['url'])}){{: .zi-hc-link .zi-hc-link--ext }}"
             page = l["page"]
             target = page if page.startswith("#") else "../" + page
-            return f"[{label}]({target})"
+            return f"[{label}]({target}){{: .zi-hc-link }}"
 
         def links(item: Dict[str, Any]) -> str:
             ls = ([item["link"]] if item.get("link") else []) + list(item.get("links") or [])
-            # Their own line under the hint, so a row of links never trails a sentence.
-            return ('<span class="zi-hc-links">' + " &middot; ".join(link(l) for l in ls) + "</span>") if ls else ""
+            # Their own row under the hint, so links never trail a sentence.
+            return ('<span class="zi-hc-links">' + " ".join(link(l) for l in ls) + "</span>") if ls else ""
 
         # One compact toolbar: two native selects (the phone's own picker beats a
         # wall of chips), the location pin beside State, then the two actions.
