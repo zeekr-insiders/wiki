@@ -164,6 +164,8 @@ Ticks, the model and the chosen state (`done`, `model`, `region`) live only in t
 
 A finished section shows a light green tint and edge (`--hue-green-ink`, light and dark values in `zeekr.css`) and "Done" with a check icon beside its count, so colour is never the only signal. Green is kept for this one job.
 
+After the last phase, a "How was the checklist?" panel asks for feedback in the forum's Forum, Website & Wiki Feedback forum (`forums/forum-feedback/` under `extra.club.forum_url`, with the checklist's UTM tags) through a "Share your thoughts" link chip. It is separate from the theme's "Suggest an edit".
+
 Finishing a section with a tick folds it away, plays a short effect themed to it from its heading, then opens the next unfinished section and scrolls it into view; finished sections also start folded when a reader comes back. Ticking everything ends on a finale (`javascripts/handover-celebrate.js`, `stylesheets/handover-celebrate.css`). The effects are keyed by section `id`, so a new or renamed section needs its entry in `effects` there; an unknown id falls back to the stars. Reduced motion gets a static check badge, print gets nothing.
 
 ### Videos

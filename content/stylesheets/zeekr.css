@@ -3996,6 +3996,29 @@ span .zi-icon {
     border-radius: var(--radius-pill);
 }
 
+/* "How was the checklist?": a quiet panel after the last phase asking for
+   feedback on the forum, its link the same blue chip as the items' links. */
+.md-typeset .zi-hc-cta {
+    margin: var(--sp-7) 0 var(--sp-5);
+    padding: var(--sp-4) var(--sp-5);
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-left: 3px solid var(--link-chip-border);
+    border-radius: var(--radius-md);
+}
+
+.md-typeset .zi-hc-cta > h2 {
+    margin: 0 0 var(--sp-2);
+}
+
+.md-typeset .zi-hc-cta > p {
+    margin: 0;
+}
+
+.md-typeset .zi-hc-cta .zi-hc-links {
+    margin-top: var(--sp-3);
+}
+
 /* The other platform's store chip (handover.js). */
 .md-typeset .zi-hc-links a.zi-hc-link[hidden] {
     display: none;

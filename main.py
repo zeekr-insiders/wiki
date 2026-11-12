@@ -337,6 +337,13 @@ def define_env(env):
                 out += ["</details>", ""]
             out += ["</section>", ""]
         out += ["</div>", ""]
+        # Feedback on the checklist itself, separate from the theme's "Suggest an edit".
+        feedback = link({"label": "Share your thoughts", "club": "forum_url", "path": "forums/forum-feedback/"})
+        out += ['<aside class="zi-hc-cta" markdown>', "",
+                "## How was the checklist? { #checklist-feedback }", "",
+                "Let us know your thoughts on the forum: what helped, what was missing, and what we could do better.", "",
+                f'<p class="zi-hc-links" markdown="span">{feedback}</p>', "",
+                "</aside>", ""]
         # The state outlines ride inside the page so "Use my location" needs no request:
         # the position is matched here, in the browser, and never leaves the device.
         geo = json.loads((Path(__file__).parent / "data" / "au-states.geojson").read_text(encoding="utf-8"))
