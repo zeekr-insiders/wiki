@@ -158,6 +158,8 @@
     --hue-gold-solid: #E6B237;
     --hue-gold-on: #1A1A1A;
     --hue-gold-ink: #E4BA58;
+    /* Green is kept to one job: a finished Handover checklist section. */
+    --hue-green-ink: #8CCB98;
     --hue-tint: 13%;
 
     /* Black line art on <img> icons becomes the ink colour (#F2F2F2 here). */
@@ -190,6 +192,7 @@
     --hue-gold-solid: #E8AF2C;
     --hue-gold-on: #1A1A1A;
     --hue-gold-ink: #865809;
+    --hue-green-ink: #2E6B3A;
     --hue-tint: 9%;
 
     --icon-filter: brightness(0) invert(10%);
@@ -3808,11 +3811,22 @@ span .zi-icon {
     white-space: nowrap;
 }
 
-/* A finished section says so in words as well as weight. */
-.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::before {
-    content: "Done: ";
+/* A finished section says so in words, a check and weight, with a light
+   green tint and edge on top: colour is never the only signal. */
+.md-content .md-typeset details.zi-hc-section.is-done {
+    background: color-mix(in srgb, var(--hue-green-ink) var(--hue-tint), var(--panel));
+    border-color: var(--hue-green-ink);
+    border-left: 3px solid var(--hue-green-ink);
+}
+
+.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count {
     color: var(--ink);
-    font-weight: 600;
+}
+
+.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::before {
+    content: "\2713\00a0Done: ";
+    color: var(--hue-green-ink);
+    font-weight: 700;
 }
 
 .md-typeset .zi-hc-item {
@@ -3882,7 +3896,9 @@ span .zi-icon {
         display: none !important;
     }
 
-    .md-content .md-typeset details.zi-hc-section {
+    .md-content .md-typeset details.zi-hc-section,
+    .md-content .md-typeset details.zi-hc-section.is-done {
+        background: none;
         border: 0;
         break-inside: auto;
     }
