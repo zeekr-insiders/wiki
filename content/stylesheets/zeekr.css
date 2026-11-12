@@ -3824,9 +3824,22 @@ span .zi-icon {
 }
 
 .md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::before {
-    content: "\2713\00a0Done: ";
+    content: "Done: ";
     color: var(--hue-green-ink);
     font-weight: 700;
+}
+
+/* The check is a mask, not a glyph: the condensed body face has no tick. */
+.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::after {
+    content: "";
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin-left: var(--sp-1);
+    vertical-align: -0.2em;
+    background-color: var(--hue-green-ink);
+    -webkit-mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center / contain no-repeat;
+    mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center / contain no-repeat;
 }
 
 .md-typeset .zi-hc-item {
