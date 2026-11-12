@@ -3861,7 +3861,8 @@ span .zi-icon {
     font-weight: 600;
 }
 
-.md-typeset .zi-hc-progress__overall {
+/* The overall count leads; the phase count follows, quieter. */
+.md-typeset .zi-hc-progress__phase {
     color: var(--ink-muted);
     font-weight: 400;
 }

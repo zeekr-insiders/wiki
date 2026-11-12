@@ -303,8 +303,8 @@ def define_env(env):
             out += [f'<section class="zi-hc-phase" data-phase="{phase["id"]}" markdown>', "",
                     f'## {phase["title"]} {{ #{phase["id"]} }}', "",
                     '<div class="zi-hc-progress" hidden aria-hidden="true">'
-                    '<div class="zi-hc-progress__text"><span class="zi-hc-progress__phase"></span>'
-                    '<span class="zi-hc-progress__overall"></span></div>'
+                    '<div class="zi-hc-progress__text"><span class="zi-hc-progress__overall"></span>'
+                    '<span class="zi-hc-progress__phase"></span></div>'
                     '<div class="zi-hc-progress__track"><i></i></div></div>', ""]
             for section in [s for s in data["sections"] if s["phase"] == phase["id"]]:
                 out += [f'<details class="zi-hc-section" id="{section["id"]}" open markdown>',
