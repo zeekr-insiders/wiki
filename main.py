@@ -264,11 +264,15 @@ def define_env(env):
             return ('<span class="zi-hc-links">' + " ".join(link(l) for l in ls) + "</span>") if ls else ""
 
         # One compact toolbar: two native selects (the phone's own picker beats a
-        # wall of chips), the location pin beside State, then the two actions.
+        # wall of chips), the location pin beside State, then Essentials or Everything.
         # The whole bar ships hidden; without JS every item shows, tagged.
         out = ['<div class="zi-hc" markdown>', "",
                '<div class="zi-hc-tools" hidden>'
-               '<div class="zi-hc-bar">'
+               # Once set, the bar folds to a one-line summary with a Change button (handover.js).
+               '<div class="zi-hc-summary" hidden><p class="zi-hc-summary__text"></p>'
+               '<button type="button" class="zi-hc-button zi-hc-change" aria-expanded="true" aria-controls="zi-hc-bar">'
+               'Done</button></div>'
+               '<div class="zi-hc-bar" id="zi-hc-bar">'
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
                '<select id="zi-hc-model" class="zi-hc-select">'

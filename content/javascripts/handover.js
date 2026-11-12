@@ -30,14 +30,16 @@
           done: state.done || {},
           model: MODELS.indexOf(state.model) >= 0 ? state.model : 'all',
           region: REGIONS.indexOf(state.region) >= 0 ? state.region : null,
-          // First visit: Express. A reader who ticked items before the views existed
-          // was using the full list, so they keep it.
+          // First visit: Essentials (`express`). A reader who ticked items before the
+          // views existed was using the full list, so they keep Everything (`full`).
           view: state.view === 'express' || state.view === 'full' ? state.view
-            : (Object.keys(state.done || {}).length ? 'full' : 'express')
+            : (Object.keys(state.done || {}).length ? 'full' : 'express'),
+          // The reader has chosen something or ticked an item: the toolbar folds.
+          set: !!state.set || Object.keys(state.done || {}).length > 0 || (state.model && state.model !== 'all')
         };
       }
     } catch (e) { /* storage blocked or corrupt: start fresh */ }
-    return { done: {}, model: 'all', region: null, view: 'express' };
+    return { done: {}, model: 'all', region: null, view: 'express', set: false };
   }
 
   var REGIONS = ['all', 'NSW', 'VIC', 'QLD', 'SA', 'WA', 'TAS', 'ACT', 'NT'];
@@ -118,6 +120,10 @@
     var stateSelect = root.querySelector('#zi-hc-state');
     var stateHelp = root.querySelector('#zi-hc-state-help');
     var locate = root.querySelector('.zi-hc-locate');
+    var bar = root.querySelector('.zi-hc-bar');
+    var summary = root.querySelector('.zi-hc-summary');
+    var summaryText = root.querySelector('.zi-hc-summary__text');
+    var change = root.querySelector('.zi-hc-change');
     // state.region is only what the reader chose; a time-zone guess is shown
     // but not saved, so it can never stick as if they had picked it.
     var guessed = state.region ? null : guessRegion();
@@ -206,8 +212,10 @@
       viewCounts.express = fitting.filter(function (i) { return i.express; }).length;
       viewCounts.full = fitting.length;
       Array.prototype.forEach.call(root.querySelectorAll('.zi-hc-view__count'), function (c) {
-        c.textContent = ' (' + viewCounts[c.getAttribute('data-view')] + ')';
+        // A no-break space: an ordinary one would collapse at the edge of the flex label.
+        c.textContent = '\u00a0(' + viewCounts[c.getAttribute('data-view')] + ')';
       });
+      summaryText.textContent = choices();
     }
 
     var viewCounts = { express: 0, full: 0 };
@@ -605,7 +613,44 @@
     measure();
     window.addEventListener('resize', measure, { passive: true });
 
+    /* The toolbar folds to one line ("7X MY27 · VIC · Essentials (26)" and a
+     * Change button) once the reader has set it up: on later visits, and on
+     * a first visit after their first tick if the bar has scrolled out of
+     * view (folding it in view would jolt the page). Choosing something on a
+     * first visit shows the summary with a Done button, so they can fold it
+     * themselves. */
+    function fold(closed, focus) {
+      bar.hidden = closed;
+      summary.hidden = false;
+      change.setAttribute('aria-expanded', closed ? 'false' : 'true');
+      change.textContent = closed ? 'Change' : 'Done';
+      if (focus && !closed) modelSelect.focus();
+    }
+
+    function chose() {
+      if (state.set) return;
+      state.set = true;
+      save(state);
+      if (summary.hidden) fold(false);
+    }
+
+    change.addEventListener('click', function () {
+      fold(!bar.hidden, true);
+    });
+
+    [modelSelect, stateSelect].concat(viewRadios).forEach(function (el) {
+      el.addEventListener('change', chose);
+    });
+    locate.addEventListener('click', chose);
+
+    root.addEventListener('change', function (e) {
+      if (!e.target.matches || !e.target.matches('.zi-hc-item input[type="checkbox"]') || state.set) return;
+      chose();
+      if (tools.getBoundingClientRect().bottom < 0) fold(true);
+    });
+
     render();
+    if (state.set) fold(true);
     // Coming back with saved progress: fold the finished sections so the page
     // opens on where the reader left off. No scrolling: a jump on load jars.
     sync();
