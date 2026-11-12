@@ -164,6 +164,11 @@
     --link-chip-bg: #16263A;
     --link-chip-border: #6FA8E8;
     --link-chip-ink: #A9CDF5;
+    /* Store icons wear their platform's colours so Apple and Android read apart at a glance. */
+    --store-apple-bg: #F5F5F7;
+    --store-apple-ink: #000000;
+    --store-android-bg: #3DDC84;
+    --store-android-ink: #073B1E;
     --hue-tint: 13%;
 
     /* Black line art on <img> icons becomes the ink colour (#F2F2F2 here). */
@@ -200,6 +205,10 @@
     --link-chip-bg: #E8F1FB;
     --link-chip-border: #2B6CB0;
     --link-chip-ink: #1D4F8C;
+    --store-apple-bg: #000000;
+    --store-apple-ink: #FFFFFF;
+    --store-android-bg: #3DDC84;
+    --store-android-ink: #073B1E;
     --hue-tint: 9%;
 
     --icon-filter: brightness(0) invert(10%);
@@ -4177,6 +4186,20 @@ span .zi-icon {
     border-radius: 50%;
 }
 
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="ios"],
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="ios"]:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    color: var(--store-apple-ink);
+    background: var(--store-apple-bg);
+    border-color: var(--store-apple-bg);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="android"],
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="android"]:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    color: var(--store-android-ink);
+    background: var(--store-android-bg);
+    border-color: var(--store-android-bg);
+}
+
 .md-typeset .zi-hc-links a.zi-hc-store svg {
     width: 16px;
     height: 16px;
@@ -4274,7 +4297,7 @@ span .zi-icon {
         display: block;
     }
 
-    .md-typeset .zi-hc-links a.zi-hc-store:is(:link, :visited) {
+    .md-typeset .zi-hc-links a.zi-hc-store[data-store]:is(:link, :visited) {
         display: block;
         width: auto;
         height: auto;
