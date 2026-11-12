@@ -4028,6 +4028,12 @@ span .zi-icon {
     gap: var(--sp-1);
 }
 
+/* Tags the current filters already satisfy (handover.js). Print shows them all. */
+.md-typeset .zi-hc-tags[hidden],
+.md-typeset .zi-hc-tag[hidden] {
+    display: none;
+}
+
 .md-typeset .zi-hc-tag {
     display: inline-block;
     padding: 0 var(--sp-1);
@@ -4218,5 +4224,14 @@ span .zi-icon {
 
     .md-typeset .zi-hc-hint {
         margin-left: 26px;
+    }
+
+    /* A printed list carries every tag, whatever was filtered on screen. */
+    .md-typeset .zi-hc-tags[hidden] {
+        display: flex !important;
+    }
+
+    .md-typeset .zi-hc-tag[hidden] {
+        display: inline-block !important;
     }
 }

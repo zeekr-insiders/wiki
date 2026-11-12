@@ -133,6 +133,7 @@
         models: (el.getAttribute('data-models') || 'all').split(' '),
         states: (el.getAttribute('data-states') || '').split(' ').filter(Boolean),
         express: el.hasAttribute('data-express'),
+        tagRow: el.querySelector('.zi-hc-tags'),
         text: el.querySelector('.zi-hc-text').textContent.trim()
       };
     });
@@ -167,6 +168,17 @@
         var on = applies(item);
         item.el.hidden = !on;
         item.box.checked = !!state.done[item.id];
+        // Tags only where they narrow further: a chosen model already satisfies
+        // every model tag on a shown item, and a chosen state every state tag.
+        if (item.tagRow) {
+          var left = 0;
+          Array.prototype.forEach.call(item.tagRow.children, function (t) {
+            var isState = t.classList.contains('zi-hc-tag--state');
+            t.hidden = isState ? region !== 'all' : state.model !== 'all';
+            if (!t.hidden) left++;
+          });
+          item.tagRow.hidden = !left;
+        }
         if (on) {
           total++;
           if (item.box.checked) done++;
