@@ -88,6 +88,10 @@ sources:
   aant: "AANT, \"Join\", <https://www.aant.com.au/Join>, accessed 12 November 2026."
   zeekr-eu-manual: "Zeekr Europe, \"ZEEKR 7X Owner's Manual (2025 YEAR)\", <https://www.zeekr.eu/en-nl/manual-result?lk=en_US&ln=English&vk=AA69&vn=ZEEKR+7X&yk=MZ17&yn=2025+YEAR>, accessed 12 November 2026."
   vehicle-recalls: "Australian Government, \"Vehicle Recalls: browse all recalls\", <https://www.vehiclerecalls.gov.au/recalls/browse-all-recalls>, accessed 12 November 2026."
+  nsw-dl: "Service NSW, \"Licence holders and the NSW Digital Driver Licence\", <https://www.service.nsw.gov.au/nsw-digital-driver-licence/licence-holders-and-nsw-digital-driver-licence>, accessed 12 November 2026."
+  vic-dl: "Service Victoria, \"Where can I use my digital licence\", <https://service.vic.gov.au/find-services/digital-wallet/digital-driver-licence/about-digital-driver-licences/where-to-use>, accessed 12 November 2026."
+  qld-dl: "Queensland Government, \"Using the Service Queensland app\", <https://www.qld.gov.au/servicequeensland/app/using>, accessed 12 November 2026."
+  sa-dl: "Government of South Australia, \"mySAGOV mobile app\", <https://www.sa.gov.au/mysagov/my-sagov-mobile-app>, accessed 12 November 2026."
 
 items:
   - id: pre-app-chargefox
@@ -218,8 +222,21 @@ items:
   - id: pre-licence
     section: pre-prep
     text: "Driver's licence in your wallet"
-    hint: "Use the licence of the person who is insured."
+    hint: "Use the licence of the person who is insured. Bring the card."
     models: ["all"]
+    states: [WA, TAS, ACT, NT]
+  - id: pre-licence-digital
+    section: pre-prep
+    text: "Driver's licence with you: the card, or your state's digital licence"
+    hint: "NSW, Victoria, Queensland and South Australia have a digital licence you can use instead of the card, in the Service NSW, Service Victoria, Service Queensland and mySAGOV apps. Set it up before the day, and take the card too if you're going interstate. Use the licence of the person who is insured."
+    models: ["all"]
+    states: [NSW, VIC, QLD, SA]
+    cite: [nsw-dl, vic-dl, qld-dl, sa-dl]
+    links:
+      - {label: "NSW digital licence", url: "https://www.service.nsw.gov.au/nsw-digital-driver-licence"}
+      - {label: "Victorian digital licence", url: "https://service.vic.gov.au/find-services/digital-wallet/digital-driver-licence"}
+      - {label: "Service Queensland app", url: "https://www.qld.gov.au/servicequeensland/app/using"}
+      - {label: "mySAGOV app", url: "https://www.sa.gov.au/mysagov/my-sagov-mobile-app"}
   - id: pre-insurance
     section: pre-prep
     text: "Comprehensive insurance starts on delivery day"
