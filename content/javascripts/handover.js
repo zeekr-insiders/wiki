@@ -1,8 +1,10 @@
 /* The Handover checklist (the handover_checklist() macro, data/handover-checklist.yml).
  * Progressive: without this the page is a plain list of checkboxes that
- * prints. With it: ticks and the chosen model are kept in this browser's
- * localStorage (never sent anywhere), a model picker hides items for other
- * models, each phase shows a sticky progress bar with the overall count,
+ * prints. With it: ticks, the chosen model year and the chosen state are kept
+ * in this browser's localStorage (never sent anywhere), a model picker hides
+ * items for other models and years, a state picker (first guessed from the
+ * time zone, or set by "Use my location" against outlines inlined in the
+ * page) hides items for other states, each phase shows a sticky progress bar with the overall count,
  * "Copy what's left" copies the unticked items as plain text grouped by
  * section, and "Start again" clears everything after a confirm. Printing opens
  * every section first. A tick that finishes a section folds it away, fires
@@ -26,11 +28,56 @@
       if (state && typeof state === 'object') {
         return {
           done: state.done || {},
-          model: MODELS.indexOf(state.model) >= 0 ? state.model : 'all'
+          model: MODELS.indexOf(state.model) >= 0 ? state.model : 'all',
+          region: REGIONS.indexOf(state.region) >= 0 ? state.region : null
         };
       }
     } catch (e) { /* storage blocked or corrupt: start fresh */ }
-    return { done: {}, model: 'all' };
+    return { done: {}, model: 'all', region: null };
+  }
+
+  var REGIONS = ['all', 'NSW', 'VIC', 'QLD', 'SA', 'WA', 'TAS', 'ACT', 'NT'];
+
+  // A first guess at the reader's state from the time zone their device is
+  // set to, so nothing is asked of them. Canberra shares Sydney's zone, so the
+  // ACT can't be told apart and guesses NSW; Broken Hill keeps South
+  // Australian time but is in NSW.
+  var ZONES = {
+    Sydney: 'NSW', ACT: 'NSW', Canberra: 'NSW', NSW: 'NSW', Broken_Hill: 'NSW', Yancowinna: 'NSW', Lord_Howe: 'NSW', LHI: 'NSW',
+    Melbourne: 'VIC', Victoria: 'VIC',
+    Brisbane: 'QLD', Lindeman: 'QLD', Queensland: 'QLD',
+    Adelaide: 'SA', South: 'SA',
+    Perth: 'WA', West: 'WA', Eucla: 'WA',
+    Hobart: 'TAS', Tasmania: 'TAS', Currie: 'TAS',
+    Darwin: 'NT', North: 'NT'
+  };
+
+  function guessRegion() {
+    try {
+      var zone = Intl.DateTimeFormat().resolvedOptions().timeZone || '';
+      var m = /^Australia\/(.+)$/.exec(zone);
+      return (m && ZONES[m[1]]) || null;
+    } catch (e) { return null; }
+  }
+
+  // Ray casting over the bundled outlines (data/au-states.geojson, inlined
+  // by the macro). The ACT comes first in the file so it wins over NSW.
+  function inside(lon, lat, ring) {
+    var c = false;
+    for (var i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      var xi = ring[i][0], yi = ring[i][1], xj = ring[j][0], yj = ring[j][1];
+      if ((yi > lat) !== (yj > lat) && lon < (xj - xi) * (lat - yi) / (yj - yi) + xi) c = !c;
+    }
+    return c;
+  }
+
+  function regionAt(geo, lon, lat) {
+    var hit = null;
+    (geo.features || []).some(function (f) {
+      if (inside(lon, lat, f.geometry.coordinates[0])) hit = f.properties.state;
+      return !!hit;
+    });
+    return hit;
   }
 
   function save(state) {
@@ -48,6 +95,13 @@
     var tools = root.querySelector('.zi-hc-tools');
     var status = root.querySelector('.zi-hc-status');
     var chips = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-models .zi-chip'));
+    var stateChips = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-states .zi-chip'));
+    var stateNote = root.querySelector('.zi-hc-state-note');
+    var locate = root.querySelector('.zi-hc-locate');
+    // state.region is only what the reader chose; a time-zone guess is shown
+    // but not saved, so it can never stick as if they had picked it.
+    var guessed = state.region ? null : guessRegion();
+    var region = state.region || guessed || 'all';
     var phases = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-phase'));
     var sections = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-section'));
     var items = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-item')).map(function (el) {
@@ -57,6 +111,7 @@
         box: box,
         id: box.getAttribute('data-id'),
         models: (el.getAttribute('data-models') || 'all').split(' '),
+        states: (el.getAttribute('data-states') || '').split(' ').filter(Boolean),
         text: el.querySelector('.zi-hc-text').textContent.trim()
       };
     });
@@ -69,6 +124,7 @@
     // The picker names a year ("7x-my27"); an item applies if it is tagged
     // for every model, for that year, or for the model in every year ("7x").
     function applies(item) {
+      if (region !== 'all' && item.states.length && item.states.indexOf(region) < 0) return false;
       if (state.model === 'all') return true;
       var base = state.model.split('-')[0];
       return item.models.some(function (m) {
@@ -105,6 +161,9 @@
       });
       chips.forEach(function (c) {
         c.setAttribute('aria-pressed', c.getAttribute('data-model') === state.model ? 'true' : 'false');
+      });
+      stateChips.forEach(function (c) {
+        c.setAttribute('aria-pressed', c.getAttribute('data-state') === region ? 'true' : 'false');
       });
     }
 
@@ -331,6 +390,52 @@
         say('Showing ' + shown + ' items for ' + chip.textContent + '.');
       });
     });
+
+    function setRegion(r, note) {
+      region = r;
+      state.region = r;
+      guessed = null;
+      save(state);
+      render();
+      sync();
+      stateNote.textContent = note || '';
+      say('Showing ' + items.filter(applies).length + ' items for ' + (r === 'all' ? 'all states' : r) + '.');
+    }
+
+    stateChips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        setRegion(chip.getAttribute('data-state'));
+      });
+    });
+
+    if (guessed) {
+      stateNote.textContent = 'Guessed ' + guessed + ' from your time zone. Pick your state if that is wrong.';
+    }
+
+    // "Use my location": the browser asks first, and the answer is matched to
+    // a state right here against the outlines in the page. Nothing is sent.
+    var geoEl = document.getElementById('zi-hc-geo');
+    var geo = null;
+    try { geo = geoEl ? JSON.parse(geoEl.textContent) : null; } catch (e) { geo = null; }
+    if (geo && navigator.geolocation) {
+      locate.hidden = false;
+      locate.addEventListener('click', function () {
+        locate.disabled = true;
+        stateNote.textContent = 'Finding your location. It stays on this device.';
+        navigator.geolocation.getCurrentPosition(function (pos) {
+          locate.disabled = false;
+          var hit = regionAt(geo, pos.coords.longitude, pos.coords.latitude);
+          if (hit) {
+            setRegion(hit, 'Matched ' + hit + ' from your location, on this device only.');
+          } else {
+            stateNote.textContent = 'That location is not in an Australian state. Pick yours above.';
+          }
+        }, function () {
+          locate.disabled = false;
+          stateNote.textContent = 'Location is unavailable or blocked. Pick your state above.';
+        }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+      });
+    }
 
     root.querySelector('.zi-hc-reset').addEventListener('click', function () {
       if (!window.confirm('Start again? This clears every tick on this device.')) return;

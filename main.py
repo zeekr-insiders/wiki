@@ -2,6 +2,7 @@
 glossary and the Handover checklist (AGENTS.md describes each)."""
 
 import html
+import json
 import re
 
 from pathlib import Path
@@ -217,6 +218,15 @@ def define_env(env):
                + "".join(f'<button type="button" class="zi-chip" data-model="{k}" aria-pressed="{str(k == "all").lower()}">{v}</button>'
                          for k, v in models)
                + '</div>'
+               '<div class="zi-hc-states" role="group" aria-labelledby="zi-hc-states-label">'
+               '<span class="zi-hc-tools__label" id="zi-hc-states-label">Your state</span>'
+               '<button type="button" class="zi-chip" data-state="all" aria-pressed="true">All states</button>'
+               + "".join(f'<button type="button" class="zi-chip" data-state="{s}" aria-pressed="false">{s}</button>'
+                         for s in states)
+               + '<button type="button" class="zi-hc-button zi-hc-locate" hidden>'
+               + _lucide("map-pin", "zi-hc-locate__icon") + '<span>Use my location</span></button>'
+               '<p class="zi-hc-state-note" aria-live="polite"></p>'
+               '</div>'
                '<div class="zi-hc-actions">'
                '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
                '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
@@ -240,6 +250,13 @@ def define_env(env):
                         if m != "all" and m not in tags:
                             raise ValueError(f"data/handover-checklist.yml: {item['id']} has unknown model {m}")
                     tag = "".join(f'<span class="zi-hc-tag">{tags[m]}</span>' for m in item_models if m in tags)
+                    # No `states` means every state. Tagged items keep their tags without JS, so a
+                    # printed or script-free list still says where each one applies.
+                    item_states = [s.upper() for s in item.get("states") or []]
+                    for s in item_states:
+                        if s not in states:
+                            raise ValueError(f"data/handover-checklist.yml: {item['id']} has unknown state {s}")
+                    tag += "".join(f'<span class="zi-hc-tag zi-hc-tag--state">{s}</span>' for s in item_states)
                     hint = esc(str(item.get("hint") or "")).strip()
                     for key in item.get("cite") or []:
                         if key not in sources:
@@ -248,7 +265,8 @@ def define_env(env):
                             used.append(key)
                     cites = "".join(f"[^{k}]" for k in item.get("cite") or [])
                     extra = (" " + link(item["link"]) + ".") if item.get("link") else ""
-                    out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" markdown>',
+                    out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" '
+                            f'data-states="{" ".join(item_states)}" markdown>',
                             f'<label class="zi-hc-check"><input type="checkbox" name="{item["id"]}" data-id="{item["id"]}">'
                             f'<span class="zi-hc-text">{tag}{esc(item["text"])}</span></label>']
                     if hint or cites or extra:
@@ -257,6 +275,12 @@ def define_env(env):
                 out += ["</details>", ""]
             out += ["</section>", ""]
         out += ["</div>", ""]
+        # The state outlines ride inside the page so "Use my location" needs no request:
+        # the position is matched here, in the browser, and never leaves the device.
+        geo = json.loads((Path(__file__).parent / "data" / "au-states.geojson").read_text(encoding="utf-8"))
+        geo.pop("_comment", None)
+        out += ['<script type="application/json" id="zi-hc-geo">'
+                + json.dumps(geo, separators=(",", ":")).replace("</", "<\\/") + "</script>", ""]
         if used:
             out += ["## Sources", ""] + [f"[^{k}]: {sources[k]}" for k in used] + [""]
         return "\n".join(out)
