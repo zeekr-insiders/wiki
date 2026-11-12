@@ -11,9 +11,7 @@ changelog: "Model-year items for the 7X and X, a state picker with state items, 
 
 The Insiders Handover Checklist: everything owners wish they had checked, from the days before delivery to the first weeks with the car. Tick items off on your phone at the dealer. It keeps the handover thorough and helps you check you got everything.
 
-Tags under each item show where it applies: a model (7X, X, 009), a model year (7X MY25/26, 7X MY27, X MY25, X MY26) or a state (ACT, NSW, NT, QLD, SA, TAS, VIC, WA). Untagged items apply to everyone. Where the car's contents vary, an item says "Confirm what your order includes": your order is the list.
-
-Your ticks, choices and location stay on this device; nothing is sent anywhere.
+Your ticks, choices and location stay on this device; nothing is sent anywhere or tracked!
 
 For what happens between order and delivery, and your rights if something is wrong, see [Taking delivery](delivery.md).
 
