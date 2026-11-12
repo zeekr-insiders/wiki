@@ -369,6 +369,8 @@ items:
     hint: "24 hours a day, 7 days a week. Have your VIN and location ready when you call."
     models: ["all"]
     cite: [zeekr-service]
+    links:
+      - {label: "Call 1800 093 357", tel: "1800093357"}
   - id: paper-compliance
     section: paper
     text: "Compliance plate and build date photographed"
@@ -735,6 +737,8 @@ items:
     hint: "Includes flat 12-volt help and a tow to the nearest authorised retailer. Ask what happens if the main battery is flat."
     models: ["all"]
     cite: [roadside-terms]
+    links:
+      - {label: "Call 1800 093 357", tel: "1800093357"}
   - id: walk-dvr
     section: walk
     text: "Where dashcam footage is and how to view it"
