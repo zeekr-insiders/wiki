@@ -895,18 +895,14 @@ items:
     hint: "The forum is the club's home. Post in the deliveries thread or introduce yourself, and search there first when something puzzles you."
     models: ["all"]
     link: {label: "Go to the forum", club: forum_url}
-  - id: post-whatsapp
-    section: post-week
-    text: "Join the club WhatsApp group"
-    hint: "For quick chat with other owners."
-    models: ["all"]
-    link: {label: "Community", page: "community/index.md"}
   - id: post-facebook
     section: post-week
     text: "Join the club Facebook group"
-    hint: "Another way to keep up with the club."
+    hint: "Zeekr Insiders is the club's main group. There are also groups for the 7X and the 7GT."
     models: ["all"]
-    link: {label: "Community", page: "community/index.md"}
+    links:
+      - {label: "Zeekr Insiders on Facebook", club: facebook_url}
+      - {label: "All the club's groups", page: "community/index.md#where-we-talk"}
   - id: post-feedback
     section: post-week
     text: "Tell the club how your handover went"

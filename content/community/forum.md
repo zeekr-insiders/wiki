@@ -40,9 +40,9 @@ The forum gives us:
 - No algorithmic timeline
 - Control over our own data
 
-## Does it replace the Facebook group and WhatsApp?
+## Does it replace the Facebook groups?
 
-No. They are still there for casual chat, event coordination and reaching people quickly. The forum is where deeper discussions live and where answers stay findable. Use whichever suits your question.
+No. The club's Facebook groups are still there for casual chat, event coordination and reaching people quickly: {% for g in extra.club.facebook_groups %}[{{ g.name }}]({{ g.url }}){{ ", " if not loop.last else "." }}{% endfor %} The forum is where deeper discussions live and where answers stay findable. Use whichever suits your question.
 
 ## How to get started
 

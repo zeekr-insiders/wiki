@@ -85,6 +85,12 @@ extra:
     contact_url: "https://zeekrinsiders.com.au/contact"
     website: "https://zeekrinsiders.com.au"
     forum_url: "https://forums.zeekrinsiders.com.au/"
+    # The club's Facebook groups, as the club site lists them (web-home src/lib/data/socials.json). The first is the main one.
+    facebook_url: "https://www.facebook.com/groups/2044179713083663/"
+    facebook_groups:
+      - {name: "Zeekr Insiders", url: "https://www.facebook.com/groups/2044179713083663/", note: "the club's main group"}
+      - {name: "Zeekr 7X Australia", url: "https://www.facebook.com/groups/1293809462343436/", note: "for 7X owners"}
+      - {name: "Zeekr 7GT", url: "https://www.facebook.com/groups/1398020641948605/", note: "for the 7GT"}
   # The main club site. Every masthead and footer link is built from base_url, so moving the site is one change here.
   site:
     base_url: "https://zeekrinsiders.com.au"
