@@ -3655,6 +3655,15 @@ span .zi-icon {
     font-weight: 600;
 }
 
+/* Change (or Done) and Restart, pinned to the right end; on a narrow phone
+   they wrap as one group under the choices, still right-aligned. */
+.md-typeset .zi-hc-summary__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-left: auto;
+}
+
 .md-typeset .zi-hc-summary[hidden],
 .md-typeset .zi-hc-bar[hidden] {
     display: none;

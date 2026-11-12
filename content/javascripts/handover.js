@@ -5,10 +5,10 @@
  * years, a State select (first guessed from the time zone, or set by "Use my
  * location" against outlines inlined in the page) hides items for other
  * states, and Show switches between Essentials and Everything. Once set, the
- * toolbar folds to a one-line summary with a Change button. Each phase shows a
+ * toolbar folds to a one-line summary with Change and Restart. Each phase shows a
  * sticky progress bar led by the overall count. After the last phase, "Copy
  * what's left" copies the unticked items as plain text grouped by section, and
- * "Start again" clears every tick after a confirm. Printing opens
+ * "Start again" (or Restart up top) clears every tick after a confirm. Printing opens
  * every section first. A tick that finishes a section folds it away, fires
  * zi-hc:section-done (detail: section, item, title, all) for
  * handover-celebrate.js from its heading, then opens the next unfinished one;
@@ -535,7 +535,8 @@
       });
     }
 
-    end.querySelector('.zi-hc-reset').addEventListener('click', function () {
+    // "Start again" at the end and "Restart" on the toolbar's summary line.
+    function restart() {
       if (!window.confirm('Start again? This clears every tick on this device.')) return;
       dropFlows();
       root.dispatchEvent(new CustomEvent('zi-hc:reset', { bubbles: true }));
@@ -546,7 +547,9 @@
       var first = sections.filter(function (s) { return !s.hidden; })[0];
       if (first) reveal(first, true, function () {});
       say('All ticks cleared.');
-    });
+    }
+    end.querySelector('.zi-hc-reset').addEventListener('click', restart);
+    root.querySelector('.zi-hc-restart').addEventListener('click', restart);
 
     function leftText() {
       // Say what the list was made for, so a copy pasted to the dealer makes sense on its own.

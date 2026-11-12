@@ -310,8 +310,12 @@ def define_env(env):
                '<div class="zi-hc-tools" hidden>'
                # Once set, the bar folds to a one-line summary with a Change button (handover.js).
                '<div class="zi-hc-summary" hidden><p class="zi-hc-summary__text"></p>'
+               '<div class="zi-hc-summary__actions">'
                '<button type="button" class="zi-hc-button zi-hc-change" aria-expanded="true" aria-controls="zi-hc-bar">'
-               'Done</button></div>'
+               'Done</button>'
+               # The same as "Start again" at the end, where a returning reader can reach it.
+               '<button type="button" class="zi-hc-button zi-hc-restart">Restart</button>'
+               '</div></div>'
                '<div class="zi-hc-bar" id="zi-hc-bar">'
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
