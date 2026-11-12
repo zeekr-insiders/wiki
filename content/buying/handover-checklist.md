@@ -21,4 +21,6 @@ A full 7X handover, covering the infotainment and the Zeekr app [^nate-handover]
 
 {{ youtube("KlVyyYCinu4", "Zeekr 7X - Detailed Delivery Handover | Infotainment, App Guide and everything you need to know!", "Nate's Tech & Torque", "https://www.youtube.com/@NatesTechandTorque") }}
 
+## Set up your checklist { #set-up }
+
 {{ handover_checklist(lead=["nate-handover"]) }}
