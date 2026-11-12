@@ -3962,6 +3962,15 @@ span .zi-icon {
     border-radius: var(--radius-sm);
 }
 
+.md-typeset .zi-hc-links {
+    display: block;
+    margin-top: var(--sp-1);
+}
+
+.md-typeset .zi-hc-links a {
+    white-space: nowrap;
+}
+
 /* State tags read apart from model tags by their dashed edge, not colour. */
 .md-typeset .zi-hc-tag--state {
     border-style: dashed;

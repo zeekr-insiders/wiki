@@ -233,7 +233,8 @@ def define_env(env):
 
         def links(item: Dict[str, Any]) -> str:
             ls = ([item["link"]] if item.get("link") else []) + list(item.get("links") or [])
-            return (" " + " &middot; ".join(link(l) for l in ls)) if ls else ""
+            # Their own line under the hint, so a row of links never trails a sentence.
+            return ('<span class="zi-hc-links">' + " &middot; ".join(link(l) for l in ls) + "</span>") if ls else ""
 
         # One compact toolbar: two native selects (the phone's own picker beats a
         # wall of chips), the location pin beside State, then the two actions.
