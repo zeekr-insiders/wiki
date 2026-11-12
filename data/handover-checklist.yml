@@ -892,9 +892,15 @@ items:
   - id: post-forum-join
     section: post-week
     text: "Join the club forum and say hello"
-    hint: "The forum is the club's home. Post in the deliveries thread or introduce yourself, and search there first when something puzzles you."
+    hint: "The forum is the club's home. Introduce yourself, and search there first when something puzzles you."
     models: ["all"]
     link: {label: "Go to the forum", club: forum_url}
+  - id: post-just-got-my-ride
+    section: post-week
+    text: "Show off your new Zeekr in Just Got My Ride on the forum, and tell us how the handover went"
+    hint: "Photos welcome. What you wish you had checked helps the next owner, and makes this list better."
+    models: ["all"]
+    link: {label: "Just Got My Ride", club: forum_url, path: "forums/just-got-my-ride/"}
   - id: post-facebook
     section: post-week
     text: "Join the club Facebook group"
@@ -903,8 +909,3 @@ items:
     links:
       - {label: "Zeekr Insiders on Facebook", club: facebook_url}
       - {label: "All the club's groups", page: "community/index.md#where-we-talk"}
-  - id: post-feedback
-    section: post-week
-    text: "Tell the club how your handover went"
-    hint: "Post it on the forum: what you wish you had checked makes this list better."
-    models: ["all"]
