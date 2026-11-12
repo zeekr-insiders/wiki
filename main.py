@@ -212,8 +212,21 @@ def define_env(env):
         tags = {"7x": "7X", "7x-my26": "7X MY25/26", "7x-my27": "7X MY27",
                 "x": "X", "x-my25": "X MY25", "x-my26": "X MY26", "009": "009"}
         # The picker offers years, not bare models: the cars differ too much between years.
-        models = [("all", "Any model"), ("7x-my26", "7X MY25/26"), ("7x-my27", "7X MY27"),
-                  ("x-my25", "X MY25"), ("x-my26", "X MY26"), ("009", "009")]
+        # Grouped by car, newest year first. Each year option still names its car ("7X MY27",
+        # not "MY27"), because a closed select shows only the chosen option's text.
+        models = [("all", "Any model"),
+                  ("Zeekr 7X", [("7x-my27", "7X MY27"), ("7x-my26", "7X MY25/26")]),
+                  ("Zeekr X", [("x-my26", "X MY26"), ("x-my25", "X MY25")]),
+                  ("009", "Zeekr 009")]
+
+        def model_options() -> str:
+            out = ""
+            for k, v in models:
+                if isinstance(v, list):
+                    out += f'<optgroup label="{k}">' + "".join(f'<option value="{a}">{b}</option>' for a, b in v) + "</optgroup>"
+                else:
+                    out += f'<option value="{k}">{v}</option>'
+            return out
         states = ["NSW", "VIC", "QLD", "SA", "WA", "TAS", "ACT", "NT"]
         club = env.variables["extra"]["club"]
         used: List[str] = list(lead or [])
@@ -257,7 +270,7 @@ def define_env(env):
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
                '<select id="zi-hc-model" class="zi-hc-select">'
-               + "".join(f'<option value="{k}">{v}</option>' for k, v in models)
+               + model_options()
                + '</select></div>'
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-state">State'
