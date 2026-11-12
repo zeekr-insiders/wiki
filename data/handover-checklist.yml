@@ -96,12 +96,16 @@ items:
     hint: "Sign up in the app. Add a payment card now, not standing at a charger."
     models: ["all"]
     cite: [chargefox]
+    links:
+      - {label: "Chargefox", url: "https://www.chargefox.com/"}
   - id: pre-app-evie
     section: pre-apps
     text: "Install Evie and create your account"
     hint: "Same again: do it at home on wifi. Ampol agreed in October 2026 to buy Evie; until the deal completes, expected in the first half of 2027, the two networks run separately."
     models: ["all"]
     cite: [evie, thedriven-ampol-evie]
+    links:
+      - {label: "Evie", url: "https://www.evie.com.au/"}
   - id: pre-app-nrma
     section: pre-apps
     text: "Install My NRMA and set up your account"
@@ -109,18 +113,25 @@ items:
     models: ["all"]
     states: [NSW, VIC, QLD, SA, TAS, ACT, NT]
     cite: [nrma]
+    links:
+      - {label: "My NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging"}
   - id: pre-app-jolt
     section: pre-apps
     text: "Install JOLT if it has sites near you"
     hint: "Registration is in the app; you start a session by QR code or the code on the charger."
     models: ["all"]
     cite: [jolt]
+    links:
+      - {label: "JOLT", url: "https://joltcharge.com/au/"}
   - id: pre-app-finder
     section: pre-apps
     text: "Install PlugShare or A Better Route Planner to find chargers"
     hint: "Both show chargers across the networks. The ACT and SA governments point drivers to PlugShare; RACQ suggests A Better Route Planner."
     models: ["all"]
     cite: [act-chargers, sa-charging, racq-charging]
+    links:
+      - {label: "PlugShare", url: "https://www.plugshare.com/"}
+      - {label: "A Better Route Planner", url: "https://abetterrouteplanner.com/"}
   - id: pre-app-vic
     section: pre-apps
     text: "RACV member? Add your number in Chargefox"
@@ -128,6 +139,8 @@ items:
     models: ["all"]
     states: [VIC]
     cite: [racv-chargefox]
+    links:
+      - {label: "RACV Chargefox discount", url: "https://www.racv.com.au/membership/member-discounts/motoring/chargefox.html"}
   - id: pre-app-qld
     section: pre-apps
     text: "Queensland Electric Super Highway: use your Chargefox account"
@@ -135,6 +148,9 @@ items:
     models: ["all"]
     states: [QLD]
     cite: [yurika-qesh, racq-charging]
+    links:
+      - {label: "Queensland Electric Super Highway", url: "https://www.yurika.com.au/qld-electric-super-highway"}
+      - {label: "RACQ charging", url: "https://www.racq.com.au/car/electric-vehicles/queensland-electric-car-charging-infrastructure"}
   - id: pre-app-wa
     section: pre-apps
     text: "WA EV Network: use your Chargefox account"
@@ -142,6 +158,9 @@ items:
     models: ["all"]
     states: [WA]
     cite: [horizon-wa, synergy-wa, rac-chargefox]
+    links:
+      - {label: "WA EV Network", url: "https://synergy.net.au/evnetwork"}
+      - {label: "RAC Chargefox discount", url: "https://rac.com.au/membership-benefits/discounts-and-special-offers/member-benefit-chargefox"}
   - id: pre-app-sa
     section: pre-apps
     text: "Find RAA Charge sites on the RAA website or PlugShare"
@@ -149,6 +168,8 @@ items:
     models: ["all"]
     states: [SA]
     cite: [sa-charging]
+    links:
+      - {label: "SA statewide charging network", url: "https://www.energymining.sa.gov.au/industry/modern-energy/electric-vehicles/statewide-charging-network"}
   - id: pre-app-tas
     section: pre-apps
     text: "Tasmania's Electric Highway: use Chargefox"
@@ -156,6 +177,8 @@ items:
     models: ["all"]
     states: [TAS]
     cite: [nrma-tas, recfit-tas]
+    links:
+      - {label: "Electric Highway Tasmania", url: "https://www.mynrma.com.au/electric-vehicles/charging/electric-highway-tasmania"}
   - id: pre-app-act
     section: pre-apps
     text: "Canberra: check which operators run your local chargers"
@@ -163,6 +186,8 @@ items:
     models: ["all"]
     states: [ACT]
     cite: [act-chargers]
+    links:
+      - {label: "ACT public chargers", url: "https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles/public-ev-chargers-in-the-act"}
   - id: pre-app-nt
     section: pre-apps
     text: "Plan around NRMA's highway chargers"
@@ -170,6 +195,8 @@ items:
     models: ["all"]
     states: [NT]
     cite: [katherine-nt]
+    links:
+      - {label: "NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging"}
   - id: pre-app-rfid
     section: pre-apps
     text: "Ask each network if it offers an RFID card or tag"
@@ -232,6 +259,8 @@ items:
     hint: "The MY27 launch offer (orders 1 November to 31 December 2026, not demonstrators) lists two years of servicing, a 7 kW wallbox (supply only), free colour choice and 5,000 Zeekr app points."
     models: ["7x-my27"]
     cite: [zeekr-offers, zecar-my27, carexpert-7x]
+    links:
+      - {label: "Zeekr offers", url: "https://www.zeekrlife.com/en-au/offers"}
   - id: pre-nt-rego
     section: pre-prep
     text: "Register before 30 June 2027 to get the NT's EV concessions"
@@ -264,6 +293,8 @@ items:
     models: ["all"]
     states: [ACT]
     cite: [act-shs]
+    links:
+      - {label: "Sustainable Household Scheme", url: "https://www.climatechoices.act.gov.au/policy-programs/sustainable-household-scheme"}
   - id: pre-tariff-eme
     section: pre-plan
     text: "Compare EV and time-of-use power plans on Energy Made Easy"
@@ -271,6 +302,8 @@ items:
     models: ["all"]
     states: [NSW, QLD, SA, TAS, ACT]
     cite: [energy-made-easy, nrma-ev-plans]
+    links:
+      - {label: "Energy Made Easy", url: "https://www.energymadeeasy.gov.au/"}
   - id: pre-tariff-vic
     section: pre-plan
     text: "Compare EV and time-of-use power plans on Victorian Energy Compare"
@@ -278,6 +311,8 @@ items:
     models: ["all"]
     states: [VIC]
     cite: [vic-energy-compare, energy-made-easy, nrma-ev-plans]
+    links:
+      - {label: "Victorian Energy Compare", url: "https://www.victorianenergysaver.vic.gov.au/victorian-energy-compare"}
   - id: pre-tariff-wa
     section: pre-plan
     text: "Synergy customer? Look at the EV Add On plan"
@@ -285,6 +320,8 @@ items:
     models: ["all"]
     states: [WA]
     cite: [synergy-ev-addon]
+    links:
+      - {label: "Synergy EV Add On", url: "https://synergy.net.au/Your-home/Energy-plans/Electric-Vehicle-Add-On"}
   - id: pre-tariff-nt
     section: pre-plan
     text: "Look at Jacana Energy's time-of-use tariff"
@@ -292,6 +329,8 @@ items:
     models: ["all"]
     states: [NT]
     cite: [jacana-tou]
+    links:
+      - {label: "Jacana Energy tariffs", url: "https://jacanaenergy.com.au/your-home/pricing-and-plans/residential-pricing-and-tariffs"}
   - id: pre-drive-plan
     section: pre-plan
     text: "Plan the drive home and where you will first charge"
@@ -342,6 +381,8 @@ items:
     hint: "Ask where it lives. For the 7X, Zeekr Europe has the 2025 manual (European edition) online."
     cite: [zeekr-eu-manual]
     models: ["all"]
+    links:
+      - {label: "Zeekr 7X manual (EU)", url: "https://www.zeekr.eu/en-nl/manual-result?lk=en_US&ln=English&vk=AA69&vn=ZEEKR+7X&yk=MZ17&yn=2025+YEAR"}
   - id: paper-accessories
     section: paper
     text: "Dealer-fitted accessories listed on the invoice"
@@ -743,6 +784,8 @@ items:
     hint: "The ACL lets you reject a car with a major failure and choose repair, replacement or refund. Tell the dealer clearly and say why. The ACCC page does not cover refusing delivery, so raise problems before you sign."
     models: ["all"]
     cite: [accc]
+    links:
+      - {label: "ACCC: just bought a new car?", url: "https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car"}
   - id: off-toll
     section: "off"
     text: "New plate added to your toll account, or your tag moved across"
@@ -750,6 +793,10 @@ items:
     models: ["all"]
     states: [NSW, VIC, QLD]
     cite: [linkt-tags, eastlink-wgt]
+    links:
+      - {label: "Linkt", url: "https://www.linkt.com.au/"}
+      - {label: "E-Toll", url: "https://www.myetoll.transport.nsw.gov.au/"}
+      - {label: "EastLink", url: "https://www.eastlink.com.au/"}
   - id: off-contact
     section: "off"
     text: "A named contact and phone number for follow-up"
@@ -789,6 +836,8 @@ items:
     models: ["all"]
     states: [NSW]
     cite: [nsw-toll-cap, service-nsw-toll]
+    links:
+      - {label: "Claim toll relief (Service NSW)", url: "https://service.nsw.gov.au/transaction/claim-the-toll-relief-cap"}
   - id: post-fixes
     section: post-days
     text: "Book the 'we owe you' items and keep the emails"
@@ -805,6 +854,8 @@ items:
     hint: "Search the federal government's recall site, vehiclerecalls.gov.au. Do it again now and then."
     models: ["all"]
     cite: [vehicle-recalls]
+    links:
+      - {label: "Search vehiclerecalls.gov.au", url: "https://www.vehiclerecalls.gov.au/recalls/browse-all-recalls"}
   - id: post-points
     section: post-days
     text: "MY27 launch offer: check the 5,000 Zeekr app points arrived"
