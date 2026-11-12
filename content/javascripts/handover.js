@@ -17,9 +17,9 @@
   var KEY = 'zi-handover:v1';
 
   // The picker's choices. A saved model that isn't one of them (a bare "7x"
-  // or "x" from before the picker offered years, or the retired "7gt") falls
-  // back to All models rather than hiding everything.
-  var MODELS = ['all', '7x-my26', '7x-my27', 'x-my25', 'x-my26', '009'];
+  // or "x" from before the picker offered years) falls back to Any model
+  // rather than hiding everything.
+  var MODELS = ['all', '7x-my26', '7x-my27', 'x-my25', 'x-my26', '009', '7gt'];
 
   function load() {
     try {

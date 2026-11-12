@@ -210,14 +210,15 @@ def define_env(env):
             raise ValueError("data/handover-checklist.yml: duplicate item id")
         # A bare model tag ("7x") covers every year of it; a year tag narrows it.
         tags = {"7x": "7X", "7x-my26": "7X MY25/26", "7x-my27": "7X MY27",
-                "x": "X", "x-my25": "X MY25", "x-my26": "X MY26", "009": "009"}
+                "x": "X", "x-my25": "X MY25", "x-my26": "X MY26", "009": "009", "7gt": "7GT"}
         # The picker offers years, not bare models: the cars differ too much between years.
         # Grouped by car, newest year first. Each year option still names its car ("7X MY27",
         # not "MY27"), because a closed select shows only the chosen option's text.
         models = [("all", "Any model"),
                   ("Zeekr 7X", [("7x-my27", "7X MY27"), ("7x-my26", "7X MY25/26")]),
                   ("Zeekr X", [("x-my26", "X MY26"), ("x-my25", "X MY25")]),
-                  ("009", "Zeekr 009")]
+                  ("Zeekr 009", [("009", "009")]),
+                  ("Zeekr 7GT", [("7gt", "7GT")])]
 
         def model_options() -> str:
             out = ""
@@ -227,7 +228,8 @@ def define_env(env):
                 else:
                     out += f'<option value="{k}">{v}</option>'
             return out
-        states = ["NSW", "VIC", "QLD", "SA", "WA", "TAS", "ACT", "NT"]
+        # A to Z in the State select and on item tags alike, so a reader scans one order everywhere.
+        states = ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
         club = env.variables["extra"]["club"]
         used: List[str] = list(lead or [])
 
@@ -308,7 +310,7 @@ def define_env(env):
                     tag = "".join(f'<span class="zi-hc-tag">{tags[m]}</span>' for m in item_models if m in tags)
                     # No `states` means every state. Tagged items keep their tags without JS, so a
                     # printed or script-free list still says where each one applies.
-                    item_states = [s.upper() for s in item.get("states") or []]
+                    item_states = sorted(s.upper() for s in item.get("states") or [])
                     for s in item_states:
                         if s not in states:
                             raise ValueError(f"data/handover-checklist.yml: {item['id']} has unknown state {s}")
