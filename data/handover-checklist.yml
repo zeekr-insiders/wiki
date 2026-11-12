@@ -208,7 +208,7 @@ items:
     hint: "A full 7X handover covering the infotainment and the Zeekr app. It shows the MY25/MY26 car."
     models: ["7x"]
     cite: [nate-handover]
-    link: {label: "Watch it below", page: "#watch-before-you-go"}
+    link: {label: "Watch it above", page: "#watch-before-you-go"}
   - id: pre-zeekr-app
     section: pre-prep
     text: "Install the Zeekr app and create your account"
