@@ -1,6 +1,8 @@
 # The Handover checklist (content/buying/handover-checklist.md), rendered by the
 # handover_checklist() macro in main.py and made interactive by javascripts/handover.js.
 #
+# version:  YYYY.MM.DD, the day the checklist last changed; shown on the toolbar's summary line.
+#           Bump it whenever items, sections or sources change.
 # phases:   the three phases, in order.
 # sections: id, title, phase. Shown in this order within each phase.
 # items:    id (stable: it is the localStorage key for a reader's tick, so never reuse or rename one),
@@ -14,6 +16,8 @@
 # sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
 #
 # Where no source says what comes with the car, an item says "Confirm what your order includes".
+
+version: "2026.11.12"
 
 phases:
   - {id: pre, title: "Before delivery day"}

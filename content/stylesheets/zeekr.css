@@ -3664,6 +3664,15 @@ span .zi-icon {
     margin-left: auto;
 }
 
+/* When the checklist last changed: small and muted, so it never competes with the choices. */
+.md-typeset .zi-hc-version {
+    margin-right: var(--sp-1);
+    color: var(--ink-muted);
+    font-size: var(--fs-xs);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
 .md-typeset .zi-hc-summary[hidden],
 .md-typeset .zi-hc-bar[hidden] {
     display: none;

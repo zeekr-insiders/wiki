@@ -1,6 +1,7 @@
 """mkdocs-macros for the wiki: card icons, spec cards, click-to-load videos, the
 glossary and the Handover checklist (AGENTS.md describes each)."""
 
+import datetime
 import html
 import json
 import re
@@ -298,6 +299,17 @@ def define_env(env):
                           f'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="{path}"/></svg></a>')
             return f'<span class="zi-hc-app">{head}{icons}</span>'
 
+        def version() -> str:
+            """When the checklist last changed, "v2026.11.12", from `version` in the data file.
+            Screen readers and the tooltip get the date in words."""
+            v = str(data.get("version") or "")
+            if not re.fullmatch(r"\d{4}\.\d{2}\.\d{2}", v):
+                raise ValueError(f"data/handover-checklist.yml: version must be YYYY.MM.DD, got {v!r}")
+            when = datetime.date(*map(int, v.split(".")))
+            words = f"Checklist last updated {when.day} {when:%B %Y}"
+            return (f'<span class="zi-hc-version" title="{words}">'
+                    f'<span aria-hidden="true">v{v}</span><span class="zi-vh">{words}</span></span>')
+
         def links(item: Dict[str, Any]) -> str:
             ls = ([item["link"]] if item.get("link") else []) + list(item.get("links") or [])
             # Their own row under the hint, so links never trail a sentence.
@@ -311,7 +323,8 @@ def define_env(env):
                # Once set, the bar folds to a one-line summary with a Change button (handover.js).
                '<div class="zi-hc-summary" hidden><p class="zi-hc-summary__text"></p>'
                '<div class="zi-hc-summary__actions">'
-               '<button type="button" class="zi-hc-button zi-hc-change" aria-expanded="true" aria-controls="zi-hc-bar">'
+               + version()
+               + '<button type="button" class="zi-hc-button zi-hc-change" aria-expanded="true" aria-controls="zi-hc-bar">'
                'Done</button>'
                # The same as "Start again" at the end, where a returning reader can reach it.
                '<button type="button" class="zi-hc-button zi-hc-restart">Restart</button>'
