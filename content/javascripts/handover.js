@@ -144,6 +144,11 @@
     // for every model, for that year, or for the model in every year ("7x").
     function applies(item) {
       if (state.view === 'express' && !item.express) return false;
+      return fits(item);
+    }
+
+    // Model and state only: what the Essentials and Everything counts are of.
+    function fits(item) {
       if (region !== 'all' && item.states.length && item.states.indexOf(region) < 0) return false;
       if (state.model === 'all') return true;
       var base = state.model.split('-')[0];
@@ -182,7 +187,15 @@
       modelSelect.value = state.model;
       viewRadios.forEach(function (r) { r.checked = r.value === state.view; });
       stateSelect.value = region;
+      var fitting = items.filter(fits);
+      viewCounts.express = fitting.filter(function (i) { return i.express; }).length;
+      viewCounts.full = fitting.length;
+      Array.prototype.forEach.call(root.querySelectorAll('.zi-hc-view__count'), function (c) {
+        c.textContent = ' (' + viewCounts[c.getAttribute('data-view')] + ')';
+      });
     }
+
+    var viewCounts = { express: 0, full: 0 };
 
     // Messages clear after a few seconds unless they matter longer (`keep`).
     function say(text, keep) {
@@ -399,9 +412,10 @@
       }, 0);
     });
 
-    // Express or Comprehensive. Ticks are shared: switching only changes
-    // which items count, so progress, folding, the finale and "Copy what's
-    // left" all follow the view.
+    // Essentials (`express`) or Everything (`full`). Ticks are shared:
+    // switching only changes which items count, so progress, folding, the
+    // finale and "Copy what's left" all follow the view. The counts on the
+    // two options say what changed, so there is no status message.
     viewRadios.forEach(function (r) {
       r.addEventListener('change', function () {
         if (!r.checked) return;
@@ -409,8 +423,6 @@
         save(state);
         render();
         sync();
-        say((state.view === 'express' ? 'Express: the essentials, ' : 'Comprehensive: everything, ') +
-          items.filter(applies).length + ' items.');
       });
     });
 
@@ -419,8 +431,6 @@
       save(state);
       render();
       sync();
-      var label = modelSelect.options[modelSelect.selectedIndex].text;
-      say('Showing ' + items.filter(applies).length + ' items for ' + (state.model === 'all' ? 'any model' : label) + '.');
     });
 
     function setRegion(r, note) {

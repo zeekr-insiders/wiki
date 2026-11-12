@@ -269,12 +269,6 @@ def define_env(env):
         out = ['<div class="zi-hc" markdown>', "",
                '<div class="zi-hc-tools" hidden>'
                '<div class="zi-hc-bar">'
-               # Express or Comprehensive: native radios, styled as a segmented control.
-               '<fieldset class="zi-hc-view"><legend class="zi-hc-tools__label">View</legend>'
-               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="express">'
-               '<span>Express</span></label>'
-               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="full">'
-               '<span>Comprehensive</span></label></fieldset>'
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
                '<select id="zi-hc-model" class="zi-hc-select">'
@@ -291,6 +285,14 @@ def define_env(env):
                '<button type="button" class="zi-hc-button zi-hc-locate" aria-label="Use my location" title="Use my location" hidden>'
                + _lucide("map-pin", "zi-hc-locate__icon") + '</button>'
                '</div></div>'
+               # Essentials or Everything: native radios, styled as a segmented control. The
+               # counts (handover.js) follow the model and state, so no status line is needed.
+               # The values keep their first names (`express`, `full`) so saved choices still load.
+               '<fieldset class="zi-hc-view"><legend class="zi-hc-tools__label">Show</legend>'
+               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="express">'
+               '<span>Essentials<span class="zi-hc-view__count" data-view="express"></span></span></label>'
+               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="full">'
+               '<span>Everything<span class="zi-hc-view__count" data-view="full"></span></span></label></fieldset>'
                '<div class="zi-hc-actions">'
                '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
                '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
