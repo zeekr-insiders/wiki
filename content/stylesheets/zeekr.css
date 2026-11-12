@@ -3639,7 +3639,7 @@ span .zi-icon {
 .md-typeset .zi-hc-bar {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: var(--sp-2) var(--sp-3);
 }
 
@@ -3725,12 +3725,16 @@ span .zi-icon {
     color: var(--ink-muted);
 }
 
-.md-typeset .zi-hc-guess {
-    font-weight: 400;
+/* Help under State: small and muted. Empty, it takes no room but stays in
+   the page so a new message is announced. */
+.md-typeset .zi-hc-help {
+    margin: 2px 0 0;
+    color: var(--ink-muted);
+    font-size: var(--fs-xs);
 }
 
-.md-typeset .zi-hc-guess[hidden] {
-    display: none;
+.md-typeset .zi-hc-help:empty {
+    margin: 0;
 }
 
 .md-typeset .zi-hc-select {

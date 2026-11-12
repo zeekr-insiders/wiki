@@ -116,7 +116,7 @@
     var modelSelect = root.querySelector('#zi-hc-model');
     var viewRadios = Array.prototype.slice.call(root.querySelectorAll('input[name="zi-hc-view"]'));
     var stateSelect = root.querySelector('#zi-hc-state');
-    var guessHint = root.querySelector('.zi-hc-guess');
+    var stateHelp = root.querySelector('#zi-hc-state-help');
     var locate = root.querySelector('.zi-hc-locate');
     // state.region is only what the reader chose; a time-zone guess is shown
     // but not saved, so it can never stick as if they had picked it.
@@ -444,28 +444,27 @@
       sync();
     });
 
+    // Help under State: the guess, a location result or why it failed. It
+    // clears once the reader picks.
+    function help(text) {
+      stateHelp.textContent = text || '';
+    }
+
     function setRegion(r, note) {
       region = r;
       state.region = r;
       guessed = null;
-      guessHint.hidden = true;
+      help(note);
       save(state);
       render();
       sync();
-      say((note ? note + ' ' : '') + 'Showing ' + items.filter(applies).length + ' items for ' +
-        (r === 'all' ? 'any state' : r) + '.', !!note);
     }
 
     stateSelect.addEventListener('change', function () {
       setRegion(stateSelect.value);
     });
 
-    // The guess shows in the select itself, with a small "(guessed)" beside
-    // the label that goes once the reader picks.
-    if (guessed) {
-      guessHint.hidden = false;
-      stateSelect.title = 'Guessed from your time zone. Pick your state if that is wrong.';
-    }
+    if (guessed) help('Guessed from your time zone');
 
     // "Use my location": the browser asks first, and the answer is matched to
     // a state right here against the outlines in the page. Nothing is sent.
@@ -485,20 +484,22 @@
         if (busy) return;
         setBusy(true);
         locate.classList.remove('is-denied');
-        say('Finding your location. It stays on this device.', true);
+        help('Finding your location (it stays on this device)');
         navigator.geolocation.getCurrentPosition(function (pos) {
           setBusy(false);
           var hit = regionAt(geo, pos.coords.longitude, pos.coords.latitude);
           if (hit) {
-            setRegion(hit, 'Matched ' + hit + ' from your location, on this device only.');
+            setRegion(hit, 'Set from your location');
           } else {
-            say('That location is not in an Australian state. Pick yours from State.', true);
+            help('That location is not in an Australian state. Pick your state.');
+            stateSelect.focus();
           }
         }, function () {
           setBusy(false);
           locate.classList.add('is-denied');
           locate.title = 'Use my location (unavailable or blocked)';
-          say('Location is unavailable or blocked. Pick your state from State.', true);
+          help('Location blocked. Pick your state.');
+          stateSelect.focus();
         }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
       });
     }

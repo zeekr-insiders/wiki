@@ -276,15 +276,19 @@ def define_env(env):
                + '</select></div>'
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-state">State'
-               '<span class="zi-hc-guess" hidden> (guessed)</span></label>'
+               '</label>'
                '<div class="zi-hc-field__row">'
-               '<select id="zi-hc-state" class="zi-hc-select">'
+               '<select id="zi-hc-state" class="zi-hc-select" aria-describedby="zi-hc-state-help">'
                '<option value="all">Any state</option>'
                + "".join(f'<option value="{s}">{s}</option>' for s in states)
                + '</select>'
                '<button type="button" class="zi-hc-button zi-hc-locate" aria-label="Use my location" title="Use my location" hidden>'
                + _lucide("map-pin", "zi-hc-locate__icon") + '</button>'
-               '</div></div>'
+               '</div>'
+               # Inline help under State (a guess, or why location failed), not a status line that
+               # pushes the page about. It clears once the reader picks.
+               '<p class="zi-hc-help" id="zi-hc-state-help" aria-live="polite"></p>'
+               '</div>'
                # Essentials or Everything: native radios, styled as a segmented control. The
                # counts (handover.js) follow the model and state, so no status line is needed.
                # The values keep their first names (`express`, `full`) so saved choices still load.
