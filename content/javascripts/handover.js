@@ -110,7 +110,9 @@
 
     var state = load();
     var tools = root.querySelector('.zi-hc-tools');
-    var status = root.querySelector('.zi-hc-status');
+    // The actions and their messages sit after the checklist, outside .zi-hc.
+    var end = document.querySelector('.zi-hc-end');
+    var status = end.querySelector('.zi-hc-status');
     var modelSelect = root.querySelector('#zi-hc-model');
     var viewRadios = Array.prototype.slice.call(root.querySelectorAll('input[name="zi-hc-view"]'));
     var stateSelect = root.querySelector('#zi-hc-state');
@@ -136,6 +138,7 @@
     });
 
     tools.hidden = false;
+    end.hidden = false;
     phases.forEach(function (p) {
       p.querySelector('.zi-hc-progress').hidden = false;
     });
@@ -196,6 +199,14 @@
     }
 
     var viewCounts = { express: 0, full: 0 };
+
+    // The reader's choices in words: "7X MY27 · VIC · Essentials (26)".
+    function choices() {
+      var model = state.model === 'all' ? 'Any model' : modelSelect.options[modelSelect.selectedIndex].text;
+      var place = region === 'all' ? 'Any state' : region;
+      var view = state.view === 'express' ? 'Essentials' : 'Everything';
+      return model + ' \u00b7 ' + place + ' \u00b7 ' + view + ' (' + viewCounts[state.view] + ')';
+    }
 
     // Messages clear after a few seconds unless they matter longer (`keep`).
     function say(text, keep) {
@@ -501,7 +512,7 @@
       });
     }
 
-    root.querySelector('.zi-hc-reset').addEventListener('click', function () {
+    end.querySelector('.zi-hc-reset').addEventListener('click', function () {
       if (!window.confirm('Start again? This clears every tick on this device.')) return;
       dropFlows();
       root.dispatchEvent(new CustomEvent('zi-hc:reset', { bubbles: true }));
@@ -515,7 +526,8 @@
     });
 
     function leftText() {
-      var lines = ['Zeekr handover: still to do', ''];
+      // Say what the list was made for, so a copy pasted to the dealer makes sense on its own.
+      var lines = ['Zeekr handover: still to do', 'For: ' + choices(), ''];
       var count = 0;
       sections.forEach(function (s) {
         var left = Array.prototype.slice.call(s.querySelectorAll('.zi-hc-item:not([hidden])')).filter(function (el) {
@@ -532,7 +544,7 @@
       return { text: lines.join('\n').trim() + '\n', count: count };
     }
 
-    root.querySelector('.zi-hc-copy').addEventListener('click', function () {
+    end.querySelector('.zi-hc-copy').addEventListener('click', function () {
       var left = leftText();
       if (!left.count) {
         say('Nothing left to copy: every item is ticked.');

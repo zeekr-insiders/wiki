@@ -4063,6 +4063,15 @@ span .zi-icon {
     border-radius: var(--radius-pill);
 }
 
+/* The actions after the last phase, where a reader finishes. */
+.md-typeset .zi-hc-end {
+    margin: var(--sp-6) 0 0;
+}
+
+.md-typeset .zi-hc-end[hidden] {
+    display: none;
+}
+
 /* "How was the checklist?": a quiet panel after the last phase asking for
    feedback on the forum, its link the same blue chip as the items' links. */
 .md-typeset .zi-hc-cta {
@@ -4135,6 +4144,7 @@ span .zi-icon {
 
 @media print {
     .md-typeset .zi-hc-tools,
+    .md-typeset .zi-hc-end,
     .md-typeset .zi-hc-progress,
     .md-typeset .zi-video,
     .md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary::after,

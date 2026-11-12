@@ -293,11 +293,7 @@ def define_env(env):
                '<span>Essentials<span class="zi-hc-view__count" data-view="express"></span></span></label>'
                '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="full">'
                '<span>Everything<span class="zi-hc-view__count" data-view="full"></span></span></label></fieldset>'
-               '<div class="zi-hc-actions">'
-               '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
-               '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
-               '</div></div>'
-               '<p class="zi-hc-status" role="status" aria-live="polite"></p>'
+               '</div>'
                '</div>', ""]
         for phase in data["phases"]:
             out += [f'<section class="zi-hc-phase" data-phase="{phase["id"]}" markdown>', "",
@@ -346,6 +342,14 @@ def define_env(env):
                 out += ["</details>", ""]
             out += ["</section>", ""]
         out += ["</div>", ""]
+        # The actions sit at the end, where a reader finishes; they need JS, so they ship hidden.
+        out += ['<div class="zi-hc-end" hidden>'
+                '<div class="zi-hc-actions">'
+                '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
+                '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
+                '</div>'
+                '<p class="zi-hc-status" role="status" aria-live="polite"></p>'
+                '</div>', ""]
         # Feedback on the checklist itself, separate from the theme's "Suggest an edit".
         feedback = link({"label": "Share your thoughts", "club": "forum_url", "path": "forums/forum-feedback/"})
         out += ['<aside class="zi-hc-cta" markdown>', "",
