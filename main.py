@@ -192,11 +192,20 @@ def define_env(env):
         ids = [i["id"] for i in data["items"]]
         if len(ids) != len(set(ids)):
             raise ValueError("data/handover-checklist.yml: duplicate item id")
-        tags = {"7x": "7X", "7x-my27": "MY27 7X", "x": "X", "009": "009"}
-        models = [("all", "All models"), ("7x", "7X"), ("x", "X"), ("009", "009"), ("7gt", "7GT")]
+        # A bare model tag ("7x") covers every year of it; a year tag narrows it.
+        tags = {"7x": "7X", "7x-my26": "7X MY25/26", "7x-my27": "7X MY27",
+                "x": "X", "x-my25": "X MY25", "x-my26": "X MY26", "009": "009"}
+        # The picker offers years, not bare models: the cars differ too much between years.
+        models = [("all", "All models"), ("7x-my26", "7X MY25/26"), ("7x-my27", "7X MY27"),
+                  ("x-my25", "X MY25"), ("x-my26", "X MY26"), ("009", "009")]
+        states = ["NSW", "VIC", "QLD", "SA", "WA", "TAS", "ACT", "NT"]
+        club = env.variables["extra"]["club"]
         used: List[str] = list(lead or [])
 
         def link(l: Dict[str, str]) -> str:
+            # `club` names a link in extra.club (forum_url, contact_url), so club links live in mkdocs.yml only.
+            if l.get("club"):
+                return f"[{l['label']}]({club[l['club']]})"
             page = l["page"]
             target = page if page.startswith("#") else "../" + page
             return f"[{l['label']}]({target})"
@@ -227,6 +236,9 @@ def define_env(env):
                         '<span class="zi-hc-section__count"></span></summary>', ""]
                 for item in [i for i in data["items"] if i["section"] == section["id"]]:
                     item_models = [m.lower() for m in item.get("models") or ["all"]]
+                    for m in item_models:
+                        if m != "all" and m not in tags:
+                            raise ValueError(f"data/handover-checklist.yml: {item['id']} has unknown model {m}")
                     tag = "".join(f'<span class="zi-hc-tag">{tags[m]}</span>' for m in item_models if m in tags)
                     hint = esc(str(item.get("hint") or "")).strip()
                     for key in item.get("cite") or []:

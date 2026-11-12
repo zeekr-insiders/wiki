@@ -4,9 +4,11 @@
 # phases:   the three phases, in order.
 # sections: id, title, phase. Shown in this order within each phase.
 # items:    id (stable: it is the localStorage key for a reader's tick, so never reuse or rename one),
-#           section, text (the thing to do), hint (optional, one line), models (all, 7x, 7x-my27, x, 009),
+#           section, text (the thing to do), hint (optional, one line),
+#           models (all; 7x or x for every year of that model; 7x-my26 (covers MY25/MY26), 7x-my27,
+#           x-my25, x-my26 for one year; 009),
 #           cite (optional keys into sources), link (optional {label, page}, page relative to content/
-#           or an #anchor on the page).
+#           or an #anchor on the page; or {label, club} naming a link in extra.club, such as forum_url).
 # sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
 #
 # Where no source says what comes with the car, an item says "Confirm what your order includes".
@@ -48,8 +50,16 @@ sources:
   zeekr-7x: "Zeekr Australia, \"Zeekr 7X\", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026."
   carexpert-x: "CarExpert, \"2026 Zeekr X price and specs updated: EV gets massive price cuts\", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026."
   carexpert-009: "CarExpert, \"2026 Zeekr 009: Luxury EV people mover gets more affordable\", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026."
-  racv-7x-review: "RACV, \"2026 Zeekr 7X RWD review (14 Oct 2026)\", <https://www.racv.com.au/royalauto/car-reviews/zeekr/2026-zeekr-7x-rwd-review.html>, accessed 8 November 2026."
   carexpert-7x-longterm: "CarExpert, \"2026 Zeekr 7X review: long-term conclusion (3 Nov 2026)\", <https://www.carexpert.com.au/car-reviews/2026-zeekr-7x-review-long-term-conclusion>, accessed 8 November 2026."
+  brochure-7x: "Zeekr Australia, \"ZEEKR 7X Specification (brochure)\", <https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf>, accessed 12 November 2026."
+  carsguide-7x: "CarsGuide, \"Zeekr 7X 2026 review: Performance\", <https://www.carsguide.com.au/family/zeekr-7x-performance-100309>, accessed 12 November 2026."
+  zeekr-offers: "Zeekr Australia, \"Zeekr Offers\", <https://www.zeekrlife.com/en-au/offers>, accessed 12 November 2026."
+  carexpert-x-2025: "CarExpert, \"2025 Zeekr X price and specs: Model Y money for Volvo EX30 twin\", <https://www.carexpert.com.au/car-news/2025-zeekr-x-price-and-specs-model-y-money-for-volvo-ex30-twin>, accessed 12 November 2026."
+  carexpert-x-review: "CarExpert, \"2025 Zeekr X review\", <https://carexpert.com.au/car-reviews/2025-zeekr-x-review>, accessed 12 November 2026."
+  carexpert-x-quick: "CarExpert, \"2026 Zeekr X review: Quick drive\", <https://carexpert.com.au/car-reviews/2026-zeekr-x-review-quick-drive>, accessed 12 November 2026."
+  chasingcars-x: "Chasing Cars, \"Zeekr X 2026 drops up to $10,000 with more power and better equipment confirmed for Kia EV3, BMW iX1 rival\", <https://www.chasingcars.com.au/news/new-car-prices/zeekr-x-2026-drops-up-to-10000-with-more-power-and-better-equipment-confirmed-for-kia-ev3-bmw-ix1-rival/>, accessed 12 November 2026."
+  thedriven-x-2025: "The Driven, \"Zeekr X Review: Neck-snapping performance in more ways than one\", <https://thedriven.io/2025/07/21/zeekr-x-review-neck-snapping-performance-in-more-ways-than-one/>, accessed 12 November 2026."
+  zeekr-x: "Zeekr Australia, \"Introducing New MY26 ZEEKR X\", <https://www.zeekrlife.com/en-au/models/new-zeekr-x>, accessed 12 November 2026."
 
 items:
   - id: pre-app-chargefox
@@ -131,12 +141,18 @@ items:
     models: ["7x"]
     cite: [carexpert-7x]
     link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: pre-model-year-x
+    section: pre-prep
+    text: "Confirmed in writing whether your X is an MY25 or MY26"
+    hint: "The MY26 has a redesigned centre console and touch shortcuts on the steering wheel, and the MY26 AWD has a fridge under the front armrest."
+    models: ["x"]
+    cite: [carexpert-x-quick, carexpert-x]
   - id: pre-offer-terms
     section: pre-prep
     text: "Launch offer terms in writing"
-    hint: "Offer items per the MY27 launch offer: two years of servicing, 7 kW wallbox (supply only), free colour choice, 5,000 Zeekr app points. Offer applied to orders placed 1 Nov to 31 Dec 2026."
+    hint: "The MY27 launch offer (orders 1 November to 31 December 2026, not demonstrators) lists two years of servicing, a 7 kW wallbox (supply only), free colour choice and 5,000 Zeekr app points."
     models: ["7x-my27"]
-    cite: [zecar-my27, carexpert-7x, thebeep-7x]
+    cite: [zeekr-offers, zecar-my27, carexpert-7x]
   - id: pre-home-charger
     section: pre-plan
     text: "Home charger booked or installed if you need one"
@@ -240,6 +256,18 @@ items:
     hint: "RWD 19-inch, Performance AWD 21-inch forged on the MY27 car. Long Range sources differ, so go by your order."
     models: ["7x-my27"]
     cite: [carexpert-7x, thebeep-7x]
+  - id: ext-wheel-size-my26
+    section: ext
+    text: "Wheels match your grade"
+    hint: "19-inch on the RWD and Long Range RWD, 21-inch forged on the Performance AWD."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: ext-wheel-size-x
+    section: ext
+    text: "Wheels match your grade"
+    hint: "19-inch on the RWD, 20-inch forged on the AWD. The MY26 AWD could also be ordered with black 20-inch wheels."
+    models: ["x"]
+    cite: [carexpert-x-2025, carexpert-x, carexpert-x-quick]
   - id: ext-lights
     section: ext
     text: "Headlights, indicators, brake and reverse lights work"
@@ -266,12 +294,25 @@ items:
     models: ["7x-my27"]
     cite: [carexpert-7x]
     link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: ext-plate-my26
+    section: ext
+    text: "Rear number plate is on the bumper"
+    hint: "That is the MY25/MY26 car. The MY27 has it on the tailgate."
+    models: ["7x-my26"]
+    cite: [carexpert-7x]
+    link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
   - id: ext-privacy
     section: ext
     text: "Rear privacy glass fitted"
-    hint: "Reported as standard on every MY27 grade."
+    hint: "Standard on every MY27 grade."
     models: ["7x-my27"]
     cite: [carexpert-7x, thebeep-7x]
+  - id: ext-privacy-my26
+    section: ext
+    text: "Rear privacy glass fitted, if your grade has it"
+    hint: "The Long Range and Performance have it. The base RWD does not."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
   - id: int-seats
     section: int
     text: "Seats and trim free of marks, tears and loose panels"
@@ -280,9 +321,27 @@ items:
   - id: int-material
     section: int
     text: "Seat material matches your order"
-    hint: "Sources disagree on which 7X grades get Nappa leather, so check your order, not a spec sheet."
-    models: ["7x"]
-    cite: [carexpert-7x, zeekr-7x]
+    hint: "On the MY27, Nappa leather moves down to the Long Range. Check the seats against your order."
+    models: ["7x-my27"]
+    cite: [thebeep-7x]
+  - id: int-material-my26
+    section: int
+    text: "Seat material matches your grade"
+    hint: "Soft PU on the RWD and Long Range RWD, Nappa leather on the Performance AWD."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: int-seats-x-my25
+    section: int
+    text: "Seat and comfort features match your order"
+    hint: "On the MY25 RWD, the optional Convenience package added heated and ventilated front seats, a heated steering wheel and the 13-speaker Yamaha audio."
+    models: ["x-my25"]
+    cite: [carexpert-x-2025]
+  - id: int-seats-x-my26
+    section: int
+    text: "Heated front and rear seats work"
+    hint: "Standard on both MY26 grades. The AWD adds massaging front seats."
+    models: ["x-my26"]
+    cite: [chasingcars-x, carexpert-x]
   - id: int-films
     section: int
     text: "Protective film removed from screens and trim"
@@ -295,9 +354,21 @@ items:
   - id: int-screens-my27
     section: int
     text: "16-inch centre screen and 13-inch driver display present"
-    hint: "Reported as standard on every MY27 grade."
+    hint: "Standard on every MY27 grade."
     models: ["7x-my27"]
     cite: [carexpert-7x]
+  - id: int-hud-my26
+    section: int
+    text: "Head-up display works, if your grade has it"
+    hint: "The Long Range and Performance have the 36-inch head-up display. The base RWD does not."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: int-screens-x
+    section: int
+    text: "14.6-inch touchscreen and 8.8-inch driver display work"
+    hint: "The same screens on both grades."
+    models: ["x"]
+    cite: [carexpert-x]
   - id: int-roof
     section: int
     text: "Sunroof or blind opens and closes smoothly, if fitted"
@@ -321,6 +392,12 @@ items:
     hint: "Ask where to find the footage."
     models: ["7x-my27"]
     cite: [carexpert-7x]
+  - id: int-dvr-x
+    section: int
+    text: "Built-in dashcam (DVR) present and recording"
+    hint: "Every X has one. Ask where to find the footage."
+    models: ["x"]
+    cite: [carexpert-x-2025, zeekr-x]
   - id: box-note
     section: box
     text: "Confirm what your order includes, and tick it off here"
@@ -331,6 +408,18 @@ items:
     text: "Confirm what keys or cards your order includes: count them"
     hint: "Test each one."
     models: ["all"]
+  - id: box-keys-7x-my26
+    section: box
+    text: "Test the UWB key fob and the NFC card"
+    hint: "Every MY25/MY26 grade has both. Count them against your order and try each on the car before you leave."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: box-keys-x
+    section: box
+    text: "Test the key fob, the NFC card and the phone key"
+    hint: "The X fob is small and square with no keyring loop. The NFC card is tapped on the B-pillar, and the Zeekr app works as a digital key."
+    models: ["x"]
+    cite: [carexpert-x-review]
   - id: box-cables
     section: box
     text: "Confirm what your order includes: charging cable(s)"
@@ -342,6 +431,24 @@ items:
     text: "Confirm what your order includes: tyre repair kit or spare"
     hint: "Find where it is stored and check it is sealed and complete."
     models: ["all"]
+  - id: box-repair-7x
+    section: box
+    text: "No spare wheel: find the tyre repair and inflator kit"
+    hint: "The MY25/MY26 7X has a kit instead of a spare. Check it is there and sealed."
+    models: ["7x-my26"]
+    cite: [carsguide-7x]
+  - id: box-repair-x
+    section: box
+    text: "No spare wheel: find the tyre repair kit"
+    hint: "The MY25 X has a kit instead of a spare. Check it is there and sealed."
+    models: ["x-my25"]
+    cite: [carexpert-x-review]
+  - id: box-v2l
+    section: box
+    text: "Ask whether the V2L cable or adapter is in the box"
+    hint: "The 7X powers appliances through a separate discharge cable (3.3 kW on the MY25/MY26). The X uses an external adapter, as it has no socket in the cabin."
+    models: ["7x", "x"]
+    cite: [brochure-7x, carsguide-7x, thedriven-x-2025]
   - id: box-accessories
     section: box
     text: "Accessories you ordered are all there"
@@ -384,15 +491,21 @@ items:
   - id: walk-rates-7x
     section: walk
     text: "Know your car's peak charging rates: 7X"
-    hint: "DC up to 450 kW (RWD) or 420 kW (Long Range, AWD); AC up to 22 kW. Actual speed depends on the charger."
+    hint: "DC up to 450 kW (RWD) or 420 kW (Long Range, AWD); AC up to 22 kW. The same on MY25/MY26 and MY27. Actual speed depends on the charger."
     models: ["7x"]
-    cite: [carexpert-7x]
+    cite: [brochure-7x, carexpert-7x]
   - id: walk-rates-x
     section: walk
     text: "Know your car's peak charging rates: X (MY26)"
     hint: "RWD: 230 kW DC and 11 kW AC. AWD: 150 kW DC and 22 kW AC."
-    models: ["x"]
+    models: ["x-my26"]
     cite: [carexpert-x]
+  - id: walk-rates-x-my25
+    section: walk
+    text: "Know your car's peak charging rates: X (MY25)"
+    hint: "150 kW DC on both grades. AC: 7.2 kW (RWD) or 11 kW (AWD)."
+    models: ["x-my25"]
+    cite: [carexpert-x-2025]
   - id: walk-rates-009
     section: walk
     text: "Know your car's peak charging rates: 009"
@@ -422,9 +535,38 @@ items:
   - id: walk-service
     section: walk
     text: "Service schedule and how to book"
-    hint: "7X sources differ (12 months / 20,000 km vs 24 months / 40,000 km). Get it from your booklet. The MY26 X is 12 months / 20,000 km."
+    hint: "Take the interval from your booklet."
     models: ["all"]
-    cite: [racv-7x-review, carexpert-7x-longterm, carexpert-x]
+  - id: walk-service-7x-my26
+    section: walk
+    text: "Service interval: confirm it from your booklet"
+    hint: "Reviews of the MY25/MY26 7X give both 2 years / 40,000 km and 12 months / 20,000 km. Your booklet decides."
+    models: ["7x-my26"]
+    cite: [carsguide-7x, carexpert-7x-longterm]
+  - id: walk-service-7x-my27
+    section: walk
+    text: "Service interval: confirm it from your booklet"
+    hint: "The MY27 launch offer's servicing covers the 12 month / 20,000 km and 24 month / 40,000 km services."
+    models: ["7x-my27"]
+    cite: [zeekr-offers]
+  - id: walk-service-x-my25
+    section: walk
+    text: "Service interval: every 24 months or 40,000 km"
+    hint: "The MY25 X schedule. Check it against your booklet."
+    models: ["x-my25"]
+    cite: [carexpert-x-review]
+  - id: walk-service-x-my26
+    section: walk
+    text: "Service interval: every 12 months or 20,000 km"
+    hint: "The MY26 X moved to a shorter interval than the MY25. Check it against your booklet."
+    models: ["x-my26"]
+    cite: [carexpert-x]
+  - id: walk-hud-x
+    section: walk
+    text: "X AWD: set up the head-up display and mirrors on the touchscreen"
+    hint: "The AWD has a 24.3-inch augmented reality head-up display. It and the mirrors are adjusted through the touchscreen."
+    models: ["x"]
+    cite: [carexpert-x-2025, carexpert-x-quick]
   - id: walk-roadside
     section: walk
     text: "How to call Zeekr Roadside and what it covers"

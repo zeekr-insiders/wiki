@@ -14,12 +14,20 @@
 (function () {
   var KEY = 'zi-handover:v1';
 
+  // The picker's choices. A saved model that isn't one of them (a bare "7x"
+  // or "x" from before the picker offered years, or the retired "7gt") falls
+  // back to All models rather than hiding everything.
+  var MODELS = ['all', '7x-my26', '7x-my27', 'x-my25', 'x-my26', '009'];
+
   function load() {
     try {
       var raw = window.localStorage.getItem(KEY);
       var state = raw ? JSON.parse(raw) : null;
       if (state && typeof state === 'object') {
-        return { done: state.done || {}, model: state.model || 'all' };
+        return {
+          done: state.done || {},
+          model: MODELS.indexOf(state.model) >= 0 ? state.model : 'all'
+        };
       }
     } catch (e) { /* storage blocked or corrupt: start fresh */ }
     return { done: {}, model: 'all' };
@@ -58,10 +66,13 @@
       p.querySelector('.zi-hc-progress').hidden = false;
     });
 
+    // The picker names a year ("7x-my27"); an item applies if it is tagged
+    // for every model, for that year, or for the model in every year ("7x").
     function applies(item) {
       if (state.model === 'all') return true;
+      var base = state.model.split('-')[0];
       return item.models.some(function (m) {
-        return m === 'all' || m === state.model || m.indexOf(state.model + '-') === 0;
+        return m === 'all' || m === state.model || m === base;
       });
     }
 
