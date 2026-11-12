@@ -114,6 +114,7 @@ CI runs `mkdocs build --strict` plus the check scripts on every pull request and
 | `main.py` | mkdocs-macros: `spec_card`, `card_icon`, `youtube`, `glossary` and `handover_checklist`. |
 | `data/glossary.yml` | Every glossary term (see Glossary below). |
 | `data/handover-checklist.yml` | The Handover checklist's items, sections and sources (see Handover checklist below). |
+| `data/au-states.geojson` | Simplified state outlines for the checklist's "Use my location" button, inlined into the page. |
 | `scripts/` | The check scripts behind `make ready`. |
 
 ### Spec cards
@@ -148,14 +149,20 @@ The build fails if two terms share an `id`, a term names an unknown category, or
 
 ### Handover checklist
 
-The Handover checklist (`content/buying/handover-checklist.md`) is built from `data/handover-checklist.yml` by the `handover_checklist()` macro; `javascripts/handover.js` adds the model picker, progress bars, saved ticks, "Copy what's left" and "Start again". Edit items in the data file:
+The Handover checklist (`content/buying/handover-checklist.md`) is built from `data/handover-checklist.yml` by the `handover_checklist()` macro; `javascripts/handover.js` adds the model picker, the state picker, progress bars, saved ticks, "Copy what's left" and "Start again". Edit items in the data file:
 
-- `id` is the key a reader's tick is saved under in their browser. Never rename or reuse one; add a new id instead.
-- `models` is `all`, `7x`, `7x-my27`, `x` or `009`. Choosing 7X in the picker also shows `7x-my27` items.
+- `id` is the key a reader's tick is saved under in their browser. Never rename or reuse one: to retire an item, delete it; to change what it asks, add a new id.
+- `models` is `all`, a model in every year (`7x`, `x`), a model year (`7x-my26`, which covers MY25/MY26, `7x-my27`, `x-my25`, `x-my26`) or `009`. The picker offers years only (All models, 7X MY25/26, 7X MY27, X MY25, X MY26, 009): choosing `7x-my27` shows items tagged `all`, `7x` and `7x-my27`. The years differ a lot, so give each year its own item for screens, seats, wheels, keys, servicing and the like rather than one hedged item. A saved model the picker no longer offers (an old `7x`, `x` or `7gt`) falls back to All models. The build fails on an unknown tag.
+- `states` (optional) lists `NSW`, `VIC`, `QLD`, `SA`, `WA`, `TAS`, `ACT`, `NT`; leave it out for every state. The build fails on an unknown state.
 - `cite` lists keys from `sources`, which the macro turns into the page's footnotes and Sources.
-- Where no source says what comes with the car, say "Confirm what your order includes".
+- `link` is `{label, page}` (relative to `content/`, or an `#anchor`), or `{label, club}` naming a link in `extra.club` such as `forum_url`.
+- Phrase a gap as an action ("Ask the dealer", "Confirm what your order includes"), never as an excuse about what the sources lack.
 
-Ticks live only in the reader's `localStorage` (`zi-handover:v1`); the page makes no network calls.
+Each item shows its model, year and state tags (state tags have a dashed edge), so without JavaScript every item shows, tagged. The state picker ("Your state": All states plus the eight) starts on a guess from the browser's time zone, labelled as a guess and not saved until the reader picks; Canberra shares Sydney's zone, so the ACT guesses NSW. "Use my location" asks the browser for a position and matches it to a state on the page with a point-in-polygon test against `data/au-states.geojson`, which the macro inlines into the page. Those outlines are hand-simplified (borders to within a few kilometres, coasts boxed out to sea, the ACT listed first so it wins over NSW); fix a misplaced town there.
+
+Ticks, the model and the chosen state (`done`, `model`, `region`) live only in the reader's `localStorage` (`zi-handover:v1`); the page makes no network calls and the position never leaves the device.
+
+A finished section shows a light green tint and edge (`--hue-green-ink`, light and dark values in `zeekr.css`) and "✓ Done" beside its count, so colour is never the only signal. Green is kept for this one job.
 
 Finishing a section with a tick folds it away, plays a short effect themed to it from its heading, then opens the next unfinished section and scrolls it into view; finished sections also start folded when a reader comes back. Ticking everything ends on a finale (`javascripts/handover-celebrate.js`, `stylesheets/handover-celebrate.css`). The effects are keyed by section `id`, so a new or renamed section needs its entry in `effects` there; an unknown id falls back to the stars. Reduced motion gets a static check badge, print gets nothing.
 
