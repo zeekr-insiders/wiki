@@ -85,6 +85,8 @@ sources:
   synergy-ev-addon: "Synergy, \"Electric Vehicle Add On\", <https://synergy.net.au/Your-home/Energy-plans/Electric-Vehicle-Add-On>, accessed 12 November 2026."
   jacana-tou: "Jacana Energy, \"Residential pricing and tariffs\", <https://jacanaenergy.com.au/your-home/pricing-and-plans/residential-pricing-and-tariffs>, accessed 12 November 2026."
   aant: "AANT, \"Join\", <https://www.aant.com.au/Join>, accessed 12 November 2026."
+  zeekr-eu-manual: "Zeekr Europe, \"ZEEKR 7X Owner's Manual (2025 YEAR)\", <https://www.zeekr.eu/en-nl/manual-result?lk=en_US&ln=English&vk=AA69&vn=ZEEKR+7X&yk=MZ17&yn=2025+YEAR>, accessed 12 November 2026."
+  vehicle-recalls: "Australian Government, \"Vehicle Recalls: browse all recalls\", <https://www.vehiclerecalls.gov.au/recalls/browse-all-recalls>, accessed 12 November 2026."
 
 items:
   - id: pre-app-chargefox
@@ -167,15 +169,10 @@ items:
     models: ["all"]
     states: [NT]
     cite: [katherine-nt]
-  - id: pre-app-card
-    section: pre-apps
-    text: "Add a payment card to every app you set up"
-    hint: "One card for all of them keeps it simple."
-    models: ["all"]
   - id: pre-app-rfid
     section: pre-apps
     text: "Ask each network if it offers an RFID card or tag"
-    hint: "Not covered on the sign-up pages we checked, so ask. App-only is fine for most people."
+    hint: "App-only works for most people. A card or tag is a handy backup if your phone is flat."
     models: ["all"]
   - id: pre-video
     section: pre-prep
@@ -341,7 +338,8 @@ items:
   - id: paper-manual
     section: paper
     text: "Owner's manual in the car or digital access confirmed"
-    hint: "Ask where it lives."
+    hint: "Ask where it lives. For the 7X, Zeekr Europe has the 2025 manual (European edition) online."
+    cite: [zeekr-eu-manual]
     models: ["all"]
   - id: paper-accessories
     section: paper
@@ -376,7 +374,7 @@ items:
   - id: ext-wheel-size
     section: ext
     text: "Wheels match your order"
-    hint: "RWD 19-inch, Performance AWD 21-inch forged on the MY27 car. Long Range sources differ, so go by your order."
+    hint: "RWD 19-inch, Performance AWD 21-inch forged on the MY27 car. Check the Long Range against your order."
     models: ["7x-my27"]
     cite: [carexpert-7x, thebeep-7x]
   - id: ext-wheel-size-my26
@@ -402,7 +400,7 @@ items:
     models: ["all"]
   - id: ext-chargeport
     section: ext
-    text: "Charge port flap opens, closes and the socket looks clean"
+    text: "Charge port flap opens and closes smoothly, and the socket is clean with nothing loose"
     models: ["all"]
   - id: ext-ppf
     section: ext
@@ -546,9 +544,8 @@ items:
   - id: box-cables
     section: box
     text: "Confirm what your order includes: charging cable(s)"
-    hint: "The first 1,000 7X buyers were offered a Type 2 cable, a mini portable (10 amp) cable and a 7 kW home charger. Check your contract."
-    models: ["7x"]
-    cite: [carexpert-7x-launch]
+    hint: "Ask which cables come with the car, and get the answer in writing."
+    models: ["all"]
   - id: box-repair
     section: box
     text: "Confirm what your order includes: tyre repair kit or spare"
@@ -609,7 +606,7 @@ items:
   - id: walk-limit
     section: walk
     text: "Ask how to set a charge limit, and what limit they suggest"
-    hint: "Write down the answer. We have no Zeekr-sourced figure."
+    hint: "Write down the answer."
     models: ["all"]
   - id: walk-rates-7x
     section: walk
@@ -699,17 +696,13 @@ items:
   - id: walk-dvr
     section: walk
     text: "Where dashcam footage is and how to view it"
-    hint: "Where it is stored is not stated in the sources we found."
+    hint: "Ask the consultant to show you on the car."
     models: ["7x-my27"]
     cite: [carexpert-7x]
   - id: chg-plug
     section: chg
     text: "Plug in at the dealer if they can, and see a session start"
     hint: "This checks the charge port, the cable and the app together."
-    models: ["all"]
-  - id: chg-port
-    section: chg
-    text: "Charge port flap and socket work smoothly, with nothing loose"
     models: ["all"]
   - id: chg-cable
     section: chg
@@ -805,6 +798,12 @@ items:
     hint: "This is what Zeekr's warranty policy asks."
     models: ["all"]
     cite: [warranty]
+  - id: post-recalls
+    section: post-days
+    text: "Check your VIN for open recalls"
+    hint: "Search the federal government's recall site, vehiclerecalls.gov.au. Do it again now and then."
+    models: ["all"]
+    cite: [vehicle-recalls]
   - id: post-points
     section: post-days
     text: "MY27 launch offer: check the 5,000 Zeekr app points arrived"
@@ -834,26 +833,26 @@ items:
     hint: "Zeekr Roadside comes with the car; club cover (NRMA, RACV, RACQ, RAA, RAC, RACT, AANT) is optional. Membership can also bring charging discounts, such as RACV's and RAC's through Chargefox."
     models: ["all"]
     cite: [zeekr-service, aant, racv-chargefox, rac-chargefox]
+  - id: post-forum-join
+    section: post-week
+    text: "Join the club forum and say hello"
+    hint: "The forum is the club's home. Post in the deliveries thread or introduce yourself, and search there first when something puzzles you."
+    models: ["all"]
+    link: {label: "Go to the forum", club: forum_url}
   - id: post-whatsapp
     section: post-week
     text: "Join the club WhatsApp group"
-    hint: "The club's main channel and the quickest way to reach other owners."
+    hint: "For quick chat with other owners."
     models: ["all"]
     link: {label: "Community", page: "community/index.md"}
   - id: post-facebook
     section: post-week
     text: "Join the club Facebook group"
-    hint: "The second channel."
+    hint: "Another way to keep up with the club."
     models: ["all"]
     link: {label: "Community", page: "community/index.md"}
-  - id: post-forum
-    section: post-week
-    text: "Watch for the club forum"
-    hint: "Not live yet."
-    models: ["all"]
-    link: {label: "Forum", page: "community/forum.md"}
   - id: post-feedback
     section: post-week
     text: "Tell the club how your handover went"
-    hint: "Fixes this checklist."
+    hint: "Post it on the forum: what you wish you had checked makes this list better."
     models: ["all"]
