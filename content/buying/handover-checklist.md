@@ -1,17 +1,21 @@
 ---
-last_checked: 2026-11-08
+last_checked: 2026-11-12
 seo_title: "The Insiders Handover Checklist for a new Zeekr"
 description: "A tick-as-you-go Zeekr handover checklist for Australia: what to set up before delivery day, what to check at the dealer, and what to do in the first weeks."
-changelog: "New page: The Insiders Handover Checklist, 99 items from the days before to the first weeks"
+changelog: "Model-year items for the 7X and X, a state picker with state items, and the forum is now the place to say hello"
 ---
 
 # Handover checklist
 
-*Last checked: 8 November 2026.*
+*Last checked: 12 November 2026.*
 
 The Insiders Handover Checklist: everything owners wish they had checked, from the days before delivery to the first weeks with the car. Tick items off on your phone at the dealer. It keeps the handover thorough and helps you check you got everything.
 
-Your ticks stay on this device only; nothing is sent anywhere. Pick your model to hide items that don't apply, and when you are done, "Copy what's left" gives you a list to send to the dealer. Tagged items (7X, MY27 7X, X, 009) apply only to that model. Where we found no source for what comes with the car, an item says "Confirm what your order includes": your order is the list.
+Pick your car and model year, and your state, to hide items that don't apply. The 7X MY25/26 and MY27, and the X MY25 and MY26, differ in screens, seats, wheels, keys and servicing, so each year has its own checks. Your state starts as a guess from your device's time zone; change it, or press "Use my location". When you are done, "Copy what's left" gives you a list to send to the dealer.
+
+Tags show where an item applies: a model (7X, X, 009), a model year (7X MY25/26, 7X MY27, X MY25, X MY26) or a state (NSW, VIC, QLD, SA, WA, TAS, ACT, NT). Untagged items apply to everyone. Where the car's contents vary, an item says "Confirm what your order includes": your order is the list.
+
+Your ticks and choices stay on this device; nothing is sent anywhere. "Use my location" asks your browser first, and your position is matched to a state on this page itself, never sent or saved.
 
 For what happens between order and delivery, and your rights if something is wrong, see [Taking delivery](delivery.md).
 
