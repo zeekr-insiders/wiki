@@ -1,12 +1,14 @@
 /* The Handover checklist (the handover_checklist() macro, data/handover-checklist.yml).
  * Progressive: without this the page is a plain list of checkboxes that
- * prints. With it: ticks, the chosen model year and the chosen state are kept
- * in this browser's localStorage (never sent anywhere), a Model select hides
- * items for other models and years, a State select (first guessed from the
- * time zone, or set by "Use my location" against outlines inlined in the
- * page) hides items for other states, each phase shows a sticky progress bar with the overall count,
- * "Copy what's left" copies the unticked items as plain text grouped by
- * section, and "Start again" clears everything after a confirm. Printing opens
+ * prints. With it: ticks and choices are kept in this browser's localStorage
+ * (never sent anywhere). A Model select hides items for other models and
+ * years, a State select (first guessed from the time zone, or set by "Use my
+ * location" against outlines inlined in the page) hides items for other
+ * states, and Show switches between Essentials and Everything. Once set, the
+ * toolbar folds to a one-line summary with a Change button. Each phase shows a
+ * sticky progress bar led by the overall count. After the last phase, "Copy
+ * what's left" copies the unticked items as plain text grouped by section, and
+ * "Start again" clears every tick after a confirm. Printing opens
  * every section first. A tick that finishes a section folds it away, fires
  * zi-hc:section-done (detail: section, item, title, all) for
  * handover-celebrate.js from its heading, then opens the next unfinished one;
