@@ -1,8 +1,8 @@
 /* The Handover checklist (the handover_checklist() macro, data/handover-checklist.yml).
  * Progressive: without this the page is a plain list of checkboxes that
  * prints. With it: ticks, the chosen model year and the chosen state are kept
- * in this browser's localStorage (never sent anywhere), a model picker hides
- * items for other models and years, a state picker (first guessed from the
+ * in this browser's localStorage (never sent anywhere), a Model select hides
+ * items for other models and years, a State select (first guessed from the
  * time zone, or set by "Use my location" against outlines inlined in the
  * page) hides items for other states, each phase shows a sticky progress bar with the overall count,
  * "Copy what's left" copies the unticked items as plain text grouped by
@@ -94,9 +94,9 @@
     var state = load();
     var tools = root.querySelector('.zi-hc-tools');
     var status = root.querySelector('.zi-hc-status');
-    var chips = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-models .zi-chip'));
-    var stateChips = Array.prototype.slice.call(root.querySelectorAll('.zi-hc-states .zi-chip'));
-    var stateNote = root.querySelector('.zi-hc-state-note');
+    var modelSelect = root.querySelector('#zi-hc-model');
+    var stateSelect = root.querySelector('#zi-hc-state');
+    var guessHint = root.querySelector('.zi-hc-guess');
     var locate = root.querySelector('.zi-hc-locate');
     // state.region is only what the reader chose; a time-zone guess is shown
     // but not saved, so it can never stick as if they had picked it.
@@ -159,16 +159,14 @@
         p.querySelector('.zi-hc-progress__overall').textContent = 'Overall ' + done + ' of ' + total;
         p.querySelector('.zi-hc-progress__track i').style.width = (shown ? (ticked / shown) * 100 : 0) + '%';
       });
-      chips.forEach(function (c) {
-        c.setAttribute('aria-pressed', c.getAttribute('data-model') === state.model ? 'true' : 'false');
-      });
-      stateChips.forEach(function (c) {
-        c.setAttribute('aria-pressed', c.getAttribute('data-state') === region ? 'true' : 'false');
-      });
+      modelSelect.value = state.model;
+      stateSelect.value = region;
     }
 
-    function say(text) {
+    // Messages clear after a few seconds unless they matter longer (`keep`).
+    function say(text, keep) {
       status.textContent = text;
+      if (keep) return;
       setTimeout(function () {
         if (status.textContent === text) status.textContent = '';
       }, 4000);
@@ -207,7 +205,7 @@
     }
 
     // Fold what's finished and open what isn't, quietly: on load, and when the
-    // model picker changes which items count.
+    // Model or State select changes which items count.
     function sync() {
       sections.forEach(function (s) {
         if (!s.hidden) s.open = !s.classList.contains('is-done');
@@ -380,59 +378,70 @@
       }, 0);
     });
 
-    chips.forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        state.model = chip.getAttribute('data-model');
-        save(state);
-        render();
-        sync();
-        var shown = items.filter(applies).length;
-        say('Showing ' + shown + ' items for ' + chip.textContent + '.');
-      });
+    modelSelect.addEventListener('change', function () {
+      state.model = modelSelect.value;
+      save(state);
+      render();
+      sync();
+      var label = modelSelect.options[modelSelect.selectedIndex].text;
+      say('Showing ' + items.filter(applies).length + ' items for ' + (state.model === 'all' ? 'any model' : label) + '.');
     });
 
     function setRegion(r, note) {
       region = r;
       state.region = r;
       guessed = null;
+      guessHint.hidden = true;
       save(state);
       render();
       sync();
-      stateNote.textContent = note || '';
-      say('Showing ' + items.filter(applies).length + ' items for ' + (r === 'all' ? 'all states' : r) + '.');
+      say((note ? note + ' ' : '') + 'Showing ' + items.filter(applies).length + ' items for ' +
+        (r === 'all' ? 'any state' : r) + '.', !!note);
     }
 
-    stateChips.forEach(function (chip) {
-      chip.addEventListener('click', function () {
-        setRegion(chip.getAttribute('data-state'));
-      });
+    stateSelect.addEventListener('change', function () {
+      setRegion(stateSelect.value);
     });
 
+    // The guess shows in the select itself, with a small "(guessed)" beside
+    // the label that goes once the reader picks.
     if (guessed) {
-      stateNote.textContent = 'Guessed ' + guessed + ' from your time zone. Pick your state if that is wrong.';
+      guessHint.hidden = false;
+      stateSelect.title = 'Guessed from your time zone. Pick your state if that is wrong.';
     }
 
     // "Use my location": the browser asks first, and the answer is matched to
     // a state right here against the outlines in the page. Nothing is sent.
+    // The pin says busy while it waits and stays marked if location is blocked.
     var geoEl = document.getElementById('zi-hc-geo');
     var geo = null;
     try { geo = geoEl ? JSON.parse(geoEl.textContent) : null; } catch (e) { geo = null; }
     if (geo && navigator.geolocation) {
       locate.hidden = false;
+      var busy = false;
+      var setBusy = function (on) {
+        busy = on;
+        locate.setAttribute('aria-busy', on ? 'true' : 'false');
+        locate.classList.toggle('is-busy', on);
+      };
       locate.addEventListener('click', function () {
-        locate.disabled = true;
-        stateNote.textContent = 'Finding your location. It stays on this device.';
+        if (busy) return;
+        setBusy(true);
+        locate.classList.remove('is-denied');
+        say('Finding your location. It stays on this device.', true);
         navigator.geolocation.getCurrentPosition(function (pos) {
-          locate.disabled = false;
+          setBusy(false);
           var hit = regionAt(geo, pos.coords.longitude, pos.coords.latitude);
           if (hit) {
             setRegion(hit, 'Matched ' + hit + ' from your location, on this device only.');
           } else {
-            stateNote.textContent = 'That location is not in an Australian state. Pick yours above.';
+            say('That location is not in an Australian state. Pick yours from State.', true);
           }
         }, function () {
-          locate.disabled = false;
-          stateNote.textContent = 'Location is unavailable or blocked. Pick your state above.';
+          setBusy(false);
+          locate.classList.add('is-denied');
+          locate.title = 'Use my location (unavailable or blocked)';
+          say('Location is unavailable or blocked. Pick your state from State.', true);
         }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
       });
     }

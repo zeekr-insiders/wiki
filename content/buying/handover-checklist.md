@@ -11,11 +11,11 @@ changelog: "Model-year items for the 7X and X, a state picker with state items, 
 
 The Insiders Handover Checklist: everything owners wish they had checked, from the days before delivery to the first weeks with the car. Tick items off on your phone at the dealer. It keeps the handover thorough and helps you check you got everything.
 
-Pick your car and model year, and your state, to hide items that don't apply. The 7X MY25/26 and MY27, and the X MY25 and MY26, differ in screens, seats, wheels, keys and servicing, so each year has its own checks. Your state starts as a guess from your device's time zone; change it, or press "Use my location". When you are done, "Copy what's left" gives you a list to send to the dealer.
+Choose your Model and State at the top to hide items that don't apply. The 7X MY25/26 and MY27, and the X MY25 and MY26, differ in screens, seats, wheels, keys and servicing, so each year has its own checks. State starts as a guess from your device's time zone, marked "guessed"; change it, or tap the pin to use your location. When you are done, "Copy what's left" gives you a list to send to the dealer.
 
-Tags show where an item applies: a model (7X, X, 009), a model year (7X MY25/26, 7X MY27, X MY25, X MY26) or a state (NSW, VIC, QLD, SA, WA, TAS, ACT, NT). Untagged items apply to everyone. Where the car's contents vary, an item says "Confirm what your order includes": your order is the list.
+Tags under each item show where it applies: a model (7X, X, 009), a model year (7X MY25/26, 7X MY27, X MY25, X MY26) or a state (NSW, VIC, QLD, SA, WA, TAS, ACT, NT). Untagged items apply to everyone. Where the car's contents vary, an item says "Confirm what your order includes": your order is the list.
 
-Your ticks and choices stay on this device; nothing is sent anywhere. "Use my location" asks your browser first, and your position is matched to a state on this page itself, never sent or saved.
+Your ticks and choices stay on this device; nothing is sent anywhere. The location pin asks your browser first, and your position is matched to a state on this page itself, never sent or saved.
 
 For what happens between order and delivery, and your rights if something is wrong, see [Taking delivery](delivery.md).
 

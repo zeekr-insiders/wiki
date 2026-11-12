@@ -3608,11 +3608,12 @@ span .zi-icon {
     --zi-hc-top: 0px;
 }
 
+/* One compact toolbar: Model and State selects (with the location pin), then
+   the two actions. At phone width it wraps to two lines at most, at desktop
+   it is one. */
 .md-typeset .zi-hc-tools {
-    display: grid;
-    gap: var(--sp-3);
     margin: var(--sp-5) 0;
-    padding: var(--sp-4);
+    padding: var(--sp-3);
     background: var(--panel);
     border: var(--hairline) solid var(--panel-border);
     border-radius: var(--radius-md);
@@ -3623,49 +3624,105 @@ span .zi-icon {
     display: none;
 }
 
-.md-typeset .zi-hc-models,
-.md-typeset .zi-hc-states {
+/* Markdown leaves empty paragraphs around the raw toolbar markup; they only add height. */
+.md-typeset .zi-hc-tools > p:not([class]):empty {
+    display: none;
+}
+
+.md-typeset .zi-hc-bar {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
+    gap: var(--sp-2) var(--sp-3);
+}
+
+.md-typeset .zi-hc-field {
+    display: grid;
+    gap: 2px;
+}
+
+.md-typeset .zi-hc-field__row {
+    display: flex;
     gap: var(--sp-2);
-}
-
-.md-typeset .zi-hc-locate {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--sp-2);
-}
-
-.md-typeset .zi-hc-locate[hidden] {
-    display: none;
-}
-
-.md-typeset .zi-hc-locate:disabled {
-    cursor: progress;
-    opacity: 0.7;
-}
-
-.md-typeset .zi-hc-locate__icon {
-    width: 18px;
-    height: 18px;
-}
-
-.md-typeset .zi-hc-state-note {
-    flex-basis: 100%;
-    margin: 0;
-    color: var(--ink-muted);
-    font-size: var(--fs-sm);
-}
-
-.md-typeset .zi-hc-state-note:empty {
-    display: none;
 }
 
 .md-typeset .zi-hc-tools__label {
-    flex-basis: 100%;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--ink-muted);
+}
+
+.md-typeset .zi-hc-guess {
+    font-weight: 400;
+}
+
+.md-typeset .zi-hc-guess[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-hc-select {
+    min-height: var(--tap);
+    padding: 0 var(--sp-2);
+    font: inherit;
     font-size: var(--fs-sm);
     font-weight: 600;
+    color: var(--ink);
+    background: var(--bg);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-select:hover {
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-hc-select:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-hc-button.zi-hc-locate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap);
+    padding: 0;
+}
+
+.md-typeset .zi-hc-button.zi-hc-locate[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-hc-locate__icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Busy: the pin pulses and the cursor says so; the status line says it in words. */
+.md-typeset .zi-hc-locate.is-busy {
+    cursor: progress;
+}
+
+.md-typeset .zi-hc-locate.is-busy .zi-hc-locate__icon {
+    animation: zi-hc-pulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes zi-hc-pulse {
+    to { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .zi-hc-locate.is-busy .zi-hc-locate__icon {
+        animation: none;
+        opacity: 0.5;
+    }
+}
+
+/* Blocked or unavailable: a dashed edge and a muted pin, with words in the status line. */
+.md-typeset .zi-hc-locate.is-denied {
+    border-style: dashed;
+    color: var(--ink-muted);
 }
 
 .md-typeset .zi-hc-actions {
@@ -3673,6 +3730,7 @@ span .zi-icon {
     flex-wrap: wrap;
     gap: var(--sp-2);
 }
+
 
 .md-typeset .zi-hc-button {
     min-height: var(--tap);
@@ -3697,10 +3755,14 @@ span .zi-icon {
 }
 
 .md-typeset .zi-hc-status {
-    margin: 0;
-    min-height: 1.2em;
+    margin: var(--sp-2) 0 0;
     color: var(--ink-muted);
     font-size: var(--fs-sm);
+}
+
+/* Empty, it takes no room but stays in the page so messages are announced. */
+.md-typeset .zi-hc-status:empty {
+    margin: 0;
 }
 
 .md-typeset .zi-hc-phase > h2 {
@@ -3870,15 +3932,26 @@ span .zi-icon {
     outline-offset: 2px;
 }
 
-.md-typeset .zi-hc-check input:checked + .zi-hc-text {
+.md-typeset .zi-hc-body {
+    display: grid;
+    gap: var(--sp-1);
+}
+
+.md-typeset .zi-hc-check input:checked + .zi-hc-body .zi-hc-text {
     color: var(--ink-muted);
     text-decoration: line-through;
     text-decoration-thickness: 1px;
 }
 
+/* Tags get their own line under the text, so every item's text starts flush. */
+.md-typeset .zi-hc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-1);
+}
+
 .md-typeset .zi-hc-tag {
     display: inline-block;
-    margin-right: var(--sp-2);
     padding: 0 var(--sp-1);
     font-size: var(--fs-xs);
     font-weight: 600;

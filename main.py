@@ -197,7 +197,7 @@ def define_env(env):
         tags = {"7x": "7X", "7x-my26": "7X MY25/26", "7x-my27": "7X MY27",
                 "x": "X", "x-my25": "X MY25", "x-my26": "X MY26", "009": "009"}
         # The picker offers years, not bare models: the cars differ too much between years.
-        models = [("all", "All models"), ("7x-my26", "7X MY25/26"), ("7x-my27", "7X MY27"),
+        models = [("all", "Any model"), ("7x-my26", "7X MY25/26"), ("7x-my27", "7X MY27"),
                   ("x-my25", "X MY25"), ("x-my26", "X MY26"), ("009", "009")]
         states = ["NSW", "VIC", "QLD", "SA", "WA", "TAS", "ACT", "NT"]
         club = env.variables["extra"]["club"]
@@ -211,26 +211,32 @@ def define_env(env):
             target = page if page.startswith("#") else "../" + page
             return f"[{l['label']}]({target})"
 
+        # One compact toolbar: two native selects (the phone's own picker beats a
+        # wall of chips), the location pin beside State, then the two actions.
+        # The whole bar ships hidden; without JS every item shows, tagged.
         out = ['<div class="zi-hc" markdown>', "",
                '<div class="zi-hc-tools" hidden>'
-               '<div class="zi-hc-models" role="group" aria-labelledby="zi-hc-models-label">'
-               '<span class="zi-hc-tools__label" id="zi-hc-models-label">Show items for</span>'
-               + "".join(f'<button type="button" class="zi-chip" data-model="{k}" aria-pressed="{str(k == "all").lower()}">{v}</button>'
-                         for k, v in models)
-               + '</div>'
-               '<div class="zi-hc-states" role="group" aria-labelledby="zi-hc-states-label">'
-               '<span class="zi-hc-tools__label" id="zi-hc-states-label">Your state</span>'
-               '<button type="button" class="zi-chip" data-state="all" aria-pressed="true">All states</button>'
-               + "".join(f'<button type="button" class="zi-chip" data-state="{s}" aria-pressed="false">{s}</button>'
-                         for s in states)
-               + '<button type="button" class="zi-hc-button zi-hc-locate" hidden>'
-               + _lucide("map-pin", "zi-hc-locate__icon") + '<span>Use my location</span></button>'
-               '<p class="zi-hc-state-note" aria-live="polite"></p>'
-               '</div>'
+               '<div class="zi-hc-bar">'
+               '<div class="zi-hc-field">'
+               '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
+               '<select id="zi-hc-model" class="zi-hc-select">'
+               + "".join(f'<option value="{k}">{v}</option>' for k, v in models)
+               + '</select></div>'
+               '<div class="zi-hc-field">'
+               '<label class="zi-hc-tools__label" for="zi-hc-state">State'
+               '<span class="zi-hc-guess" hidden> (guessed)</span></label>'
+               '<div class="zi-hc-field__row">'
+               '<select id="zi-hc-state" class="zi-hc-select">'
+               '<option value="all">Any state</option>'
+               + "".join(f'<option value="{s}">{s}</option>' for s in states)
+               + '</select>'
+               '<button type="button" class="zi-hc-button zi-hc-locate" aria-label="Use my location" title="Use my location" hidden>'
+               + _lucide("map-pin", "zi-hc-locate__icon") + '</button>'
+               '</div></div>'
                '<div class="zi-hc-actions">'
                '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
                '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
-               '</div>'
+               '</div></div>'
                '<p class="zi-hc-status" role="status" aria-live="polite"></p>'
                '</div>', ""]
         for phase in data["phases"]:
@@ -268,7 +274,11 @@ def define_env(env):
                     out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" '
                             f'data-states="{" ".join(item_states)}" markdown>',
                             f'<label class="zi-hc-check"><input type="checkbox" name="{item["id"]}" data-id="{item["id"]}">'
-                            f'<span class="zi-hc-text">{tag}{esc(item["text"])}</span></label>']
+                            # Tags sit on their own line under the text, so every item's text starts
+                            # flush; inside the label, so a screen reader names them with the box.
+                            f'<span class="zi-hc-body"><span class="zi-hc-text">{esc(item["text"])}</span>'
+                            + (f'<span class="zi-hc-tags">{tag}</span>' if tag else "")
+                            + '</span></label>']
                     if hint or cites or extra:
                         out.append(f'<p class="zi-hc-hint" markdown="span">{hint}{cites}{extra}</p>')
                     out += ["</div>", ""]
