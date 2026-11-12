@@ -7,7 +7,7 @@
 #           section, text (the thing to do), hint (optional, one line),
 #           models (all; 7x or x for every year of that model; 7x-my26 (covers MY25/MY26), 7x-my27,
 #           x-my25, x-my26 for one year; 009; 7gt), states (optional list of ACT, NSW, NT, QLD, SA, TAS, VIC, WA;
-#           absent means every state), express (optional, true for the essentials shown in Express),
+#           absent means every state), express (optional, true for the items shown in Essentials),
 #           cite (optional keys into sources), link (optional {label, page}, page relative to content/
 #           or an #anchor on the page; or {label, club} naming a link in extra.club, such as forum_url).
 # sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
