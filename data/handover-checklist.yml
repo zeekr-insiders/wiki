@@ -1,15 +1,23 @@
 # The Handover checklist (content/buying/handover-checklist.md), rendered by the
 # handover_checklist() macro in main.py and made interactive by javascripts/handover.js.
 #
+# version:  YYYY.MM.DD, the day the checklist last changed; shown on the toolbar's summary line.
+#           Bump it whenever items, sections or sources change.
 # phases:   the three phases, in order.
 # sections: id, title, phase. Shown in this order within each phase.
 # items:    id (stable: it is the localStorage key for a reader's tick, so never reuse or rename one),
-#           section, text (the thing to do), hint (optional, one line), models (all, 7x, 7x-my27, x, 009),
+#           section, text (the thing to do), hint (optional, one line),
+#           models (all; 7x or x for every year of that model; 7x-my26 (covers MY25/MY26), 7x-my27,
+#           x-my25, x-my26 for one year; 009; 7gt), states (optional list of ACT, NSW, NT, QLD, SA, TAS, VIC, WA;
+#           absent means every state), express (optional, true for the items shown in Essentials),
 #           cite (optional keys into sources), link (optional {label, page}, page relative to content/
-#           or an #anchor on the page).
+#           or an #anchor on the page; or {label, club} naming a link in extra.club, such as forum_url;
+#           an app adds `ios` and `android` store URLs, plus `app` when its name differs from the label).
 # sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
 #
 # Where no source says what comes with the car, an item says "Confirm what your order includes".
+
+version: "2026.11.12"
 
 phases:
   - {id: pre, title: "Before delivery day"}
@@ -48,8 +56,48 @@ sources:
   zeekr-7x: "Zeekr Australia, \"Zeekr 7X\", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026."
   carexpert-x: "CarExpert, \"2026 Zeekr X price and specs updated: EV gets massive price cuts\", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026."
   carexpert-009: "CarExpert, \"2026 Zeekr 009: Luxury EV people mover gets more affordable\", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026."
-  racv-7x-review: "RACV, \"2026 Zeekr 7X RWD review (14 Oct 2026)\", <https://www.racv.com.au/royalauto/car-reviews/zeekr/2026-zeekr-7x-rwd-review.html>, accessed 8 November 2026."
   carexpert-7x-longterm: "CarExpert, \"2026 Zeekr 7X review: long-term conclusion (3 Nov 2026)\", <https://www.carexpert.com.au/car-reviews/2026-zeekr-7x-review-long-term-conclusion>, accessed 8 November 2026."
+  brochure-7x: "Zeekr Australia, \"ZEEKR 7X Specification (brochure)\", <https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf>, accessed 12 November 2026."
+  carsguide-7x: "CarsGuide, \"Zeekr 7X 2026 review: Performance\", <https://www.carsguide.com.au/family/zeekr-7x-performance-100309>, accessed 12 November 2026."
+  zeekr-offers: "Zeekr Australia, \"Zeekr Offers\", <https://www.zeekrlife.com/en-au/offers>, accessed 12 November 2026."
+  carexpert-x-2025: "CarExpert, \"2025 Zeekr X price and specs: Model Y money for Volvo EX30 twin\", <https://www.carexpert.com.au/car-news/2025-zeekr-x-price-and-specs-model-y-money-for-volvo-ex30-twin>, accessed 12 November 2026."
+  carexpert-x-review: "CarExpert, \"2025 Zeekr X review\", <https://carexpert.com.au/car-reviews/2025-zeekr-x-review>, accessed 12 November 2026."
+  carexpert-x-quick: "CarExpert, \"2026 Zeekr X review: Quick drive\", <https://carexpert.com.au/car-reviews/2026-zeekr-x-review-quick-drive>, accessed 12 November 2026."
+  chasingcars-x: "Chasing Cars, \"Zeekr X 2026 drops up to $10,000 with more power and better equipment confirmed for Kia EV3, BMW iX1 rival\", <https://www.chasingcars.com.au/news/new-car-prices/zeekr-x-2026-drops-up-to-10000-with-more-power-and-better-equipment-confirmed-for-kia-ev3-bmw-ix1-rival/>, accessed 12 November 2026."
+  thedriven-x-2025: "The Driven, \"Zeekr X Review: Neck-snapping performance in more ways than one\", <https://thedriven.io/2025/07/21/zeekr-x-review-neck-snapping-performance-in-more-ways-than-one/>, accessed 12 November 2026."
+  zeekr-x: "Zeekr Australia, \"Introducing New MY26 ZEEKR X\", <https://www.zeekrlife.com/en-au/models/new-zeekr-x>, accessed 12 November 2026."
+  thedriven-ampol-evie: "The Driven, \"Petrol retailing giant Ampol buys one of Australia's biggest EV charging networks for $225 million\", <https://thedriven.io/2026/10/01/petrol-retailing-giant-ampol-buys-one-of-australias-biggest-ev-charging-networks-for-225-million/>, accessed 12 November 2026."
+  act-chargers: "ACT Government (Everyday Climate Choices), \"Public EV chargers in the ACT\", <https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles/public-ev-chargers-in-the-act>, accessed 12 November 2026."
+  sa-charging: "SA Government (Energy and Mining), \"Statewide charging network\", <https://www.energymining.sa.gov.au/industry/modern-energy/electric-vehicles/statewide-charging-network>, accessed 12 November 2026."
+  racq-charging: "RACQ, \"Queensland electric car charging infrastructure\", <https://www.racq.com.au/car/electric-vehicles/queensland-electric-car-charging-infrastructure>, accessed 12 November 2026."
+  horizon-wa: "Horizon Power, \"WA EV Network\", <https://www.horizonpower.com.au/wa-ev-network>, accessed 12 November 2026."
+  synergy-wa: "Synergy, \"WA EV Network\", <https://synergy.net.au/evnetwork>, accessed 12 November 2026."
+  rac-chargefox: "RAC (WA), \"Member benefit: Chargefox\", <https://rac.com.au/membership-benefits/discounts-and-special-offers/member-benefit-chargefox>, accessed 12 November 2026."
+  yurika-qesh: "Yurika, \"Queensland Electric Super Highway\", <https://www.yurika.com.au/qld-electric-super-highway>, accessed 12 November 2026."
+  nrma-tas: "NRMA, \"Electric Highway Tasmania\", <https://www.mynrma.com.au/electric-vehicles/charging/electric-highway-tasmania>, accessed 12 November 2026."
+  recfit-tas: "Tasmanian Government (ReCFIT), \"Electric vehicles: on the road\", <https://recfit.tas.gov.au/what_is_recfit/climate_change/electric_vehicles/on_the_road>, accessed 12 November 2026."
+  racv-chargefox: "RACV, \"Chargefox member discount\", <https://www.racv.com.au/membership/member-discounts/motoring/chargefox.html>, accessed 12 November 2026."
+  katherine-nt: "Katherine Town Council, \"Fast-charging EV stations ready to connect NT regions\", <https://www.katherine.nt.gov.au/news/fast-charging-ev-stations-ready-to-connect-nt-regions/347>, accessed 12 November 2026."
+  linkt-tags: "Linkt, \"About tags\", <https://www.linkt.com.au/help/travelling-toll-roads/about-tags>, accessed 12 November 2026."
+  eastlink-wgt: "EastLink, \"West Gate Tunnel tolls\", <https://www.eastlink.com.au/enquiries/alerts/west-gate-tunnel-tolls>, accessed 12 November 2026."
+  nsw-toll-cap: "NSW Government, \"Lowering the toll cap, no more admin fees: more relief for motorists\", <https://www.nsw.gov.au/ministerial-releases/lowering-toll-cap>, accessed 12 November 2026."
+  service-nsw-toll: "Service NSW, \"Claim the toll relief cap\", <https://service.nsw.gov.au/transaction/claim-the-toll-relief-cap>, accessed 12 November 2026."
+  nt-duty: "NT Treasury, \"Revenue budget measures RC-GEN-021\", <https://treasury.nt.gov.au/pms/tro/revenue-budget-measures/RC-GEN-021.pdf>, accessed 12 November 2026."
+  pwc-nt: "PwC, \"2026-27 Northern Territory Budget\", <https://www.pwc.com.au/tax/tax-alerts/2026-27-northern-territory-budget.html>, accessed 12 November 2026."
+  act-shs: "ACT Government (Everyday Climate Choices), \"Sustainable Household Scheme\", <https://www.climatechoices.act.gov.au/policy-programs/sustainable-household-scheme>, accessed 12 November 2026."
+  energy-made-easy: "Australian Energy Regulator (Energy Made Easy), \"Who can use Energy Made Easy?\", <https://www.energymadeeasy.gov.au/frequently-asked-questions/what-is-energy-made-easy>, accessed 12 November 2026."
+  nrma-ev-plans: "NRMA, \"Comparing EV electricity plans in Australia\", <https://mynrma.com.au/electric-vehicles/owning/comparing-ev-electricity-plans>, accessed 12 November 2026."
+  vic-energy-compare: "Victorian Government, \"Victorian Energy Compare\", <https://www.victorianenergysaver.vic.gov.au/victorian-energy-compare>, accessed 12 November 2026."
+  synergy-ev-addon: "Synergy, \"Electric Vehicle Add On\", <https://synergy.net.au/Your-home/Energy-plans/Electric-Vehicle-Add-On>, accessed 12 November 2026."
+  jacana-tou: "Jacana Energy, \"Residential pricing and tariffs\", <https://jacanaenergy.com.au/your-home/pricing-and-plans/residential-pricing-and-tariffs>, accessed 12 November 2026."
+  aant: "AANT, \"Join\", <https://www.aant.com.au/Join>, accessed 12 November 2026."
+  zeekr-eu-manual: "Zeekr Europe, \"ZEEKR 7X Owner's Manual (2025 YEAR)\", <https://www.zeekr.eu/en-nl/manual-result?lk=en_US&ln=English&vk=AA69&vn=ZEEKR+7X&yk=MZ17&yn=2025+YEAR>, accessed 12 November 2026."
+  vehicle-recalls: "Australian Government, \"Vehicle Recalls: browse all recalls\", <https://www.vehiclerecalls.gov.au/recalls/browse-all-recalls>, accessed 12 November 2026."
+  nsw-dl: "Service NSW, \"Licence holders and the NSW Digital Driver Licence\", <https://www.service.nsw.gov.au/nsw-digital-driver-licence/licence-holders-and-nsw-digital-driver-licence>, accessed 12 November 2026."
+  vic-dl: "Service Victoria, \"Where can I use my digital licence\", <https://service.vic.gov.au/find-services/digital-wallet/digital-driver-licence/about-digital-driver-licences/where-to-use>, accessed 12 November 2026."
+  qld-dl: "Queensland Government, \"Using the Service Queensland app\", <https://www.qld.gov.au/servicequeensland/app/using>, accessed 12 November 2026."
+  sa-dl: "Government of South Australia, \"mySAGOV mobile app\", <https://www.sa.gov.au/mysagov/my-sagov-mobile-app>, accessed 12 November 2026."
+  zeekr-app-au: "Zeekr Australia, \"Zeekr App Now Integrated with EVIE Charging Network\", <https://www.zeekrlife.com/en-au/posts/zeekr-app-now-integrated-with-evie-charging-network/>, accessed 12 November 2026."
 
 items:
   - id: pre-app-chargefox
@@ -57,34 +105,125 @@ items:
     text: "Install Chargefox and create your account"
     hint: "Sign up in the app. Add a payment card now, not standing at a charger."
     models: ["all"]
+    express: true
     cite: [chargefox]
+    links:
+      - {label: "Chargefox", url: "https://www.chargefox.com/",
+         ios: "https://apps.apple.com/au/app/chargefox-ev-charging-network/id1293614477",
+         android: "https://play.google.com/store/apps/details?id=com.chargefox.android"}
   - id: pre-app-evie
     section: pre-apps
     text: "Install Evie and create your account"
-    hint: "Same again: do it at home on wifi."
+    hint: "Same again: do it at home on wifi. Ampol agreed in October 2026 to buy Evie; until the deal completes, expected in the first half of 2027, the two networks run separately."
     models: ["all"]
-    cite: [evie]
+    cite: [evie, thedriven-ampol-evie]
+    links:
+      - {label: "Evie", url: "https://www.evie.com.au/",
+         ios: "https://apps.apple.com/au/app/evie-charging/id6447230221",
+         android: "https://play.google.com/store/apps/details?id=com.goevie.goevie_app"}
   - id: pre-app-nrma
     section: pre-apps
     text: "Install My NRMA and set up your account"
     hint: "Sessions have to start in the My NRMA app to get the member price. Some sites take tap and pay."
     models: ["all"]
+    states: [NSW, VIC, QLD, SA, TAS, ACT, NT]
     cite: [nrma]
+    links:
+      - {label: "My NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging", app: "My NRMA",
+         ios: "https://apps.apple.com/au/app/my-nrma/id343747162",
+         android: "https://play.google.com/store/apps/details?id=com.nrma"}
   - id: pre-app-jolt
     section: pre-apps
     text: "Install JOLT if it has sites near you"
     hint: "Registration is in the app; you start a session by QR code or the code on the charger."
     models: ["all"]
     cite: [jolt]
-  - id: pre-app-card
+    links:
+      - {label: "JOLT", url: "https://joltcharge.com/au/",
+         ios: "https://apps.apple.com/au/app/jolt-electric-vehicle-charging/id1536466079",
+         android: "https://play.google.com/store/apps/details?id=com.joltcharge.mobile"}
+  - id: pre-app-finder
     section: pre-apps
-    text: "Add a payment card to every app you set up"
-    hint: "One card for all of them keeps it simple."
+    text: "Install PlugShare or A Better Route Planner to find chargers"
+    hint: "Both show chargers across the networks. The ACT and SA governments point drivers to PlugShare; RACQ suggests A Better Route Planner."
     models: ["all"]
+    cite: [act-chargers, sa-charging, racq-charging]
+    links:
+      - {label: "PlugShare", url: "https://www.plugshare.com/",
+         ios: "https://apps.apple.com/au/app/plugshare-ev-charging-map/id421788217",
+         android: "https://play.google.com/store/apps/details?id=com.xatori.Plugshare"}
+      - {label: "A Better Route Planner", url: "https://abetterrouteplanner.com/",
+         ios: "https://apps.apple.com/au/app/a-better-routeplanner-abrp/id1490860521",
+         android: "https://play.google.com/store/apps/details?id=com.iternio.abrpapp"}
+  - id: pre-app-vic
+    section: pre-apps
+    text: "RACV member? Add your number in Chargefox"
+    hint: "RACV members get 10% off charging through Chargefox."
+    models: ["all"]
+    states: [VIC]
+    cite: [racv-chargefox]
+    links:
+      - {label: "RACV Chargefox discount", url: "https://www.racv.com.au/membership/member-discounts/motoring/chargefox.html"}
+  - id: pre-app-qld
+    section: pre-apps
+    text: "Queensland Electric Super Highway: use your Chargefox account"
+    hint: "The state's highway network runs through Chargefox. RACQ members get 4c/kWh off at selected Evie sites in Queensland: link your membership in the Evie app."
+    models: ["all"]
+    states: [QLD]
+    cite: [yurika-qesh, racq-charging]
+    links:
+      - {label: "Queensland Electric Super Highway", url: "https://www.yurika.com.au/qld-electric-super-highway"}
+      - {label: "RACQ charging", url: "https://www.racq.com.au/car/electric-vehicles/queensland-electric-car-charging-infrastructure"}
+  - id: pre-app-wa
+    section: pre-apps
+    text: "WA EV Network: use your Chargefox account"
+    hint: "Synergy and Horizon Power's network (110 fast chargers at 49 locations) runs through Chargefox. RAC members get 20% off at RAC-owned chargers once their number is in Chargefox."
+    models: ["all"]
+    states: [WA]
+    cite: [horizon-wa, synergy-wa, rac-chargefox]
+    links:
+      - {label: "WA EV Network", url: "https://synergy.net.au/evnetwork"}
+      - {label: "RAC Chargefox discount", url: "https://rac.com.au/membership-benefits/discounts-and-special-offers/member-benefit-chargefox"}
+  - id: pre-app-sa
+    section: pre-apps
+    text: "Find RAA Charge sites on the RAA website or PlugShare"
+    hint: "RAA Charge is South Australia's statewide network."
+    models: ["all"]
+    states: [SA]
+    cite: [sa-charging]
+    links:
+      - {label: "SA statewide charging network", url: "https://www.energymining.sa.gov.au/industry/modern-energy/electric-vehicles/statewide-charging-network"}
+  - id: pre-app-tas
+    section: pre-apps
+    text: "Tasmania's Electric Highway: use Chargefox"
+    hint: "NRMA has run it since 1 September 2025, through the Chargefox app or a Chargefox RFID card. Evie and Tesla have sites in Tasmania too."
+    models: ["all"]
+    states: [TAS]
+    cite: [nrma-tas, recfit-tas]
+    links:
+      - {label: "Electric Highway Tasmania", url: "https://www.mynrma.com.au/electric-vehicles/charging/electric-highway-tasmania"}
+  - id: pre-app-act
+    section: pre-apps
+    text: "Canberra: check which operators run your local chargers"
+    hint: "ACT public chargers come from several operators, including Evie, NRMA, BP Pulse and ActewAGL, so you may want more than one app."
+    models: ["all"]
+    states: [ACT]
+    cite: [act-chargers]
+    links:
+      - {label: "ACT public chargers", url: "https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles/public-ev-chargers-in-the-act"}
+  - id: pre-app-nt
+    section: pre-apps
+    text: "Plan around NRMA's highway chargers"
+    hint: "NRMA has fast chargers in Katherine, Tennant Creek and Alice Springs. Plan any trip out of town around them before you go."
+    models: ["all"]
+    states: [NT]
+    cite: [katherine-nt]
+    links:
+      - {label: "NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging"}
   - id: pre-app-rfid
     section: pre-apps
     text: "Ask each network if it offers an RFID card or tag"
-    hint: "Not covered on the sign-up pages we checked, so ask. App-only is fine for most people."
+    hint: "App-only works for most people. A card or tag is a handy backup if your phone is flat."
     models: ["all"]
   - id: pre-video
     section: pre-prep
@@ -92,28 +231,49 @@ items:
     hint: "A full 7X handover covering the infotainment and the Zeekr app. It shows the MY25/MY26 car."
     models: ["7x"]
     cite: [nate-handover]
-    link: {label: "Watch it below", page: "#watch-before-you-go"}
+    link: {label: "Watch it above", page: "#watch-before-you-go"}
   - id: pre-zeekr-app
     section: pre-prep
     text: "Install the Zeekr app and create your account"
-    hint: "Done before the day, you can pair the car in minutes instead of waiting on a sign-up email."
+    hint: "Done before the day, you can pair the car in minutes instead of waiting on a sign-up email. It is the ZEEKR app, from the App Store or Google Play."
     models: ["all"]
-    cite: [nate-handover]
+    express: true
+    cite: [nate-handover, zeekr-app-au]
+    links:
+      - {label: "ZEEKR app", app: "ZEEKR", ios: "https://apps.apple.com/au/app/zeekr/id6504061076",
+         android: "https://play.google.com/store/apps/details?id=com.zeekr.global"}
   - id: pre-licence
     section: pre-prep
     text: "Driver's licence in your wallet"
-    hint: "Use the licence of the person who is insured."
+    hint: "Use the licence of the person who is insured. Bring the card."
     models: ["all"]
+    express: true
+    states: [WA, TAS, ACT, NT]
+  - id: pre-licence-digital
+    section: pre-prep
+    text: "Driver's licence with you: the card, or your state's digital licence"
+    hint: "NSW, Victoria, Queensland and South Australia have a digital licence you can use instead of the card, in the Service NSW, Service Victoria, Service Queensland and mySAGOV apps. Set it up before the day, and take the card too if you're going interstate. Use the licence of the person who is insured."
+    models: ["all"]
+    express: true
+    states: [NSW, VIC, QLD, SA]
+    cite: [nsw-dl, vic-dl, qld-dl, sa-dl]
+    links:
+      - {label: "NSW digital licence", url: "https://www.service.nsw.gov.au/nsw-digital-driver-licence"}
+      - {label: "Victorian digital licence", url: "https://service.vic.gov.au/find-services/digital-wallet/digital-driver-licence"}
+      - {label: "Service Queensland app", url: "https://www.qld.gov.au/servicequeensland/app/using"}
+      - {label: "mySAGOV app", url: "https://www.sa.gov.au/mysagov/my-sagov-mobile-app"}
   - id: pre-insurance
     section: pre-prep
     text: "Comprehensive insurance starts on delivery day"
     hint: "Keep the confirmation on your phone. Give the insurer the VIN as soon as you have it."
     models: ["all"]
+    express: true
   - id: pre-payment
     section: pre-prep
     text: "Final payment or finance confirmed in writing"
     hint: "Bank transfer receipt or finance approval, saved on your phone."
     models: ["all"]
+    express: true
   - id: pre-time
     section: pre-prep
     text: "Booked a daylight slot and allowed an hour or two"
@@ -124,6 +284,7 @@ items:
     text: "Your order, spec and any promised extras saved on your phone"
     hint: "You will check the car and the paperwork against this."
     models: ["all"]
+    express: true
   - id: pre-model-year
     section: pre-prep
     text: "Confirmed in writing which model year you are getting"
@@ -131,12 +292,27 @@ items:
     models: ["7x"]
     cite: [carexpert-7x]
     link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: pre-model-year-x
+    section: pre-prep
+    text: "Confirmed in writing whether your X is an MY25 or MY26"
+    hint: "The MY26 has a redesigned centre console and touch shortcuts on the steering wheel, and the MY26 AWD has a fridge under the front armrest."
+    models: ["x"]
+    cite: [carexpert-x-quick, carexpert-x]
   - id: pre-offer-terms
     section: pre-prep
     text: "Launch offer terms in writing"
-    hint: "Offer items per the MY27 launch offer: two years of servicing, 7 kW wallbox (supply only), free colour choice, 5,000 Zeekr app points. Offer applied to orders placed 1 Nov to 31 Dec 2026."
+    hint: "The MY27 launch offer (orders 1 November to 31 December 2026, not demonstrators) lists two years of servicing, a 7 kW wallbox (supply only), free colour choice and 5,000 Zeekr app points."
     models: ["7x-my27"]
-    cite: [zecar-my27, carexpert-7x, thebeep-7x]
+    cite: [zeekr-offers, zecar-my27, carexpert-7x]
+    links:
+      - {label: "Zeekr offers", url: "https://www.zeekrlife.com/en-au/offers"}
+  - id: pre-nt-rego
+    section: pre-prep
+    text: "Register before 30 June 2027 to get the NT's EV concessions"
+    hint: "Rego fees are waived for EVs until then, and the first $50,000 of the car's value is free of stamp duty (up to $1,500) for registrations up to that date."
+    models: ["all"]
+    states: [NT]
+    cite: [nt-duty, pwc-nt]
   - id: pre-home-charger
     section: pre-plan
     text: "Home charger booked or installed if you need one"
@@ -155,26 +331,75 @@ items:
     hint: "The 7X manual says no adapters, extension cables or multiple ports. Install a proper outlet if the socket is too far."
     models: ["7x"]
     cite: [manual-charging]
+  - id: pre-act-shs
+    section: pre-plan
+    text: "Look at a Sustainable Household Scheme loan for your home charger"
+    hint: "The ACT's low-interest loans cover home EV chargers as well as cars. New applicants can borrow up to $20,000."
+    models: ["all"]
+    states: [ACT]
+    cite: [act-shs]
+    links:
+      - {label: "Sustainable Household Scheme", url: "https://www.climatechoices.act.gov.au/policy-programs/sustainable-household-scheme"}
+  - id: pre-tariff-eme
+    section: pre-plan
+    text: "Compare EV and time-of-use power plans on Energy Made Easy"
+    hint: "The government comparison site. Some EV plans need the car registered at your address, which the comparison may not show."
+    models: ["all"]
+    states: [NSW, QLD, SA, TAS, ACT]
+    cite: [energy-made-easy, nrma-ev-plans]
+    links:
+      - {label: "Energy Made Easy", url: "https://www.energymadeeasy.gov.au/"}
+  - id: pre-tariff-vic
+    section: pre-plan
+    text: "Compare EV and time-of-use power plans on Victorian Energy Compare"
+    hint: "Victoria's government comparison site. Some EV plans need the car registered at your address."
+    models: ["all"]
+    states: [VIC]
+    cite: [vic-energy-compare, energy-made-easy, nrma-ev-plans]
+    links:
+      - {label: "Victorian Energy Compare", url: "https://www.victorianenergysaver.vic.gov.au/victorian-energy-compare"}
+  - id: pre-tariff-wa
+    section: pre-plan
+    text: "Synergy customer? Look at the EV Add On plan"
+    hint: "Cheap overnight and midday rates for homes with an EV registered there. Peak costs more than the standard plan, and you may need a meter change."
+    models: ["all"]
+    states: [WA]
+    cite: [synergy-ev-addon]
+    links:
+      - {label: "Synergy EV Add On", url: "https://synergy.net.au/Your-home/Energy-plans/Electric-Vehicle-Add-On"}
+  - id: pre-tariff-nt
+    section: pre-plan
+    text: "Look at Jacana Energy's time-of-use tariff"
+    hint: "Its cheap period is the middle of the day (9am to 3pm), not overnight. It needs a smart meter."
+    models: ["all"]
+    states: [NT]
+    cite: [jacana-tou]
+    links:
+      - {label: "Jacana Energy tariffs", url: "https://jacanaenergy.com.au/your-home/pricing-and-plans/residential-pricing-and-tariffs"}
   - id: pre-drive-plan
     section: pre-plan
     text: "Plan the drive home and where you will first charge"
     hint: "Pick a charger on or near the route and check you have its app set up."
     models: ["all"]
+    express: true
   - id: paper-invoice
     section: paper
     text: "Invoice matches your order"
     hint: "Check variant, colour, extras, and the drive-away price breakdown."
     models: ["all"]
+    express: true
   - id: paper-vin
     section: paper
     text: "VIN on every document matches the car"
     hint: "Check the invoice, rego papers and insurance against the VIN on the car."
     models: ["all"]
+    express: true
   - id: paper-rego
     section: paper
     text: "Registration papers handed over"
     hint: "Or confirm in writing when and how they arrive."
     models: ["all"]
+    express: true
   - id: paper-booklet
     section: paper
     text: "Service & Warranty Booklet received (or digital copy)"
@@ -192,7 +417,10 @@ items:
     text: "Zeekr Roadside 1800 093 357 saved in your phone"
     hint: "24 hours a day, 7 days a week. Have your VIN and location ready when you call."
     models: ["all"]
+    express: true
     cite: [zeekr-service]
+    links:
+      - {label: "Call 1800 093 357", tel: "1800093357"}
   - id: paper-compliance
     section: paper
     text: "Compliance plate and build date photographed"
@@ -202,8 +430,11 @@ items:
   - id: paper-manual
     section: paper
     text: "Owner's manual in the car or digital access confirmed"
-    hint: "Ask where it lives."
+    hint: "Ask where it lives. For the 7X, Zeekr Europe has the 2025 manual (European edition) online."
+    cite: [zeekr-eu-manual]
     models: ["all"]
+    links:
+      - {label: "Zeekr 7X manual (EU)", url: "https://www.zeekr.eu/en-nl/manual-result?lk=en_US&ln=English&vk=AA69&vn=ZEEKR+7X&yk=MZ17&yn=2025+YEAR"}
   - id: paper-accessories
     section: paper
     text: "Dealer-fitted accessories listed on the invoice"
@@ -215,11 +446,13 @@ items:
     text: "Paint: scratches, chips, swirl marks, repaired-looking patches"
     hint: "Crouch and look along each panel. Check the roof and lower edges."
     models: ["all"]
+    express: true
   - id: ext-gaps
     section: ext
     text: "Panel gaps look even all round"
     hint: "Check bonnet, doors and tailgate."
     models: ["all"]
+    express: true
   - id: ext-colour
     section: ext
     text: "Colour matches your order"
@@ -229,17 +462,31 @@ items:
     section: ext
     text: "Windscreen, windows and glass roof free of chips and cracks"
     models: ["all"]
+    express: true
   - id: ext-wheels
     section: ext
     text: "Wheels and tyres: kerbing, damage, matching tyres"
     hint: "Photograph all four wheels."
     models: ["all"]
+    express: true
   - id: ext-wheel-size
     section: ext
     text: "Wheels match your order"
-    hint: "RWD 19-inch, Performance AWD 21-inch forged on the MY27 car. Long Range sources differ, so go by your order."
+    hint: "RWD 19-inch, Performance AWD 21-inch forged on the MY27 car. Check the Long Range against your order."
     models: ["7x-my27"]
     cite: [carexpert-7x, thebeep-7x]
+  - id: ext-wheel-size-my26
+    section: ext
+    text: "Wheels match your grade"
+    hint: "19-inch on the RWD and Long Range RWD, 21-inch forged on the Performance AWD."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: ext-wheel-size-x
+    section: ext
+    text: "Wheels match your grade"
+    hint: "19-inch on the RWD, 20-inch forged on the AWD. The MY26 AWD could also be ordered with black 20-inch wheels."
+    models: ["x"]
+    cite: [carexpert-x-2025, carexpert-x, carexpert-x-quick]
   - id: ext-lights
     section: ext
     text: "Headlights, indicators, brake and reverse lights work"
@@ -251,7 +498,7 @@ items:
     models: ["all"]
   - id: ext-chargeport
     section: ext
-    text: "Charge port flap opens, closes and the socket looks clean"
+    text: "Charge port flap opens and closes smoothly, and the socket is clean with nothing loose"
     models: ["all"]
   - id: ext-ppf
     section: ext
@@ -266,23 +513,55 @@ items:
     models: ["7x-my27"]
     cite: [carexpert-7x]
     link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
+  - id: ext-plate-my26
+    section: ext
+    text: "Rear number plate is on the bumper"
+    hint: "That is the MY25/MY26 car. The MY27 has it on the tailgate."
+    models: ["7x-my26"]
+    cite: [carexpert-7x]
+    link: {label: "Which 7X do I have?", page: "models/7x/which-7x.md"}
   - id: ext-privacy
     section: ext
     text: "Rear privacy glass fitted"
-    hint: "Reported as standard on every MY27 grade."
+    hint: "Standard on every MY27 grade."
     models: ["7x-my27"]
     cite: [carexpert-7x, thebeep-7x]
+  - id: ext-privacy-my26
+    section: ext
+    text: "Rear privacy glass fitted, if your grade has it"
+    hint: "The Long Range and Performance have it. The base RWD does not."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
   - id: int-seats
     section: int
     text: "Seats and trim free of marks, tears and loose panels"
     hint: "Check all seats, door cards and the console."
     models: ["all"]
+    express: true
   - id: int-material
     section: int
     text: "Seat material matches your order"
-    hint: "Sources disagree on which 7X grades get Nappa leather, so check your order, not a spec sheet."
-    models: ["7x"]
-    cite: [carexpert-7x, zeekr-7x]
+    hint: "On the MY27, Nappa leather moves down to the Long Range. Check the seats against your order."
+    models: ["7x-my27"]
+    cite: [thebeep-7x]
+  - id: int-material-my26
+    section: int
+    text: "Seat material matches your grade"
+    hint: "Soft PU on the RWD and Long Range RWD, Nappa leather on the Performance AWD."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: int-seats-x-my25
+    section: int
+    text: "Seat and comfort features match your order"
+    hint: "On the MY25 RWD, the optional Convenience package added heated and ventilated front seats, a heated steering wheel and the 13-speaker Yamaha audio."
+    models: ["x-my25"]
+    cite: [carexpert-x-2025]
+  - id: int-seats-x-my26
+    section: int
+    text: "Heated front and rear seats work"
+    hint: "Standard on both MY26 grades. The AWD adds massaging front seats."
+    models: ["x-my26"]
+    cite: [chasingcars-x, carexpert-x]
   - id: int-films
     section: int
     text: "Protective film removed from screens and trim"
@@ -295,9 +574,21 @@ items:
   - id: int-screens-my27
     section: int
     text: "16-inch centre screen and 13-inch driver display present"
-    hint: "Reported as standard on every MY27 grade."
+    hint: "Standard on every MY27 grade."
     models: ["7x-my27"]
     cite: [carexpert-7x]
+  - id: int-hud-my26
+    section: int
+    text: "Head-up display works, if your grade has it"
+    hint: "The Long Range and Performance have the 36-inch head-up display. The base RWD does not."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: int-screens-x
+    section: int
+    text: "14.6-inch touchscreen and 8.8-inch driver display work"
+    hint: "The same screens on both grades."
+    models: ["x"]
+    cite: [carexpert-x]
   - id: int-roof
     section: int
     text: "Sunroof or blind opens and closes smoothly, if fitted"
@@ -321,6 +612,12 @@ items:
     hint: "Ask where to find the footage."
     models: ["7x-my27"]
     cite: [carexpert-7x]
+  - id: int-dvr-x
+    section: int
+    text: "Built-in dashcam (DVR) present and recording"
+    hint: "Every X has one. Ask where to find the footage."
+    models: ["x"]
+    cite: [carexpert-x-2025, zeekr-x]
   - id: box-note
     section: box
     text: "Confirm what your order includes, and tick it off here"
@@ -331,17 +628,47 @@ items:
     text: "Confirm what keys or cards your order includes: count them"
     hint: "Test each one."
     models: ["all"]
+    express: true
+  - id: box-keys-7x-my26
+    section: box
+    text: "Test the UWB key fob and the NFC card"
+    hint: "Every MY25/MY26 grade has both. Count them against your order and try each on the car before you leave."
+    models: ["7x-my26"]
+    cite: [brochure-7x]
+  - id: box-keys-x
+    section: box
+    text: "Test the key fob, the NFC card and the phone key"
+    hint: "The X fob is small and square with no keyring loop. The NFC card is tapped on the B-pillar, and the Zeekr app works as a digital key."
+    models: ["x"]
+    cite: [carexpert-x-review]
   - id: box-cables
     section: box
     text: "Confirm what your order includes: charging cable(s)"
-    hint: "The first 1,000 7X buyers were offered a Type 2 cable, a mini portable (10 amp) cable and a 7 kW home charger. Check your contract."
-    models: ["7x"]
-    cite: [carexpert-7x-launch]
+    hint: "Ask which cables come with the car, and get the answer in writing."
+    models: ["all"]
   - id: box-repair
     section: box
     text: "Confirm what your order includes: tyre repair kit or spare"
     hint: "Find where it is stored and check it is sealed and complete."
     models: ["all"]
+  - id: box-repair-7x
+    section: box
+    text: "No spare wheel: find the tyre repair and inflator kit"
+    hint: "The MY25/MY26 7X has a kit instead of a spare. Check it is there and sealed."
+    models: ["7x-my26"]
+    cite: [carsguide-7x]
+  - id: box-repair-x
+    section: box
+    text: "No spare wheel: find the tyre repair kit"
+    hint: "The MY25 X has a kit instead of a spare. Check it is there and sealed."
+    models: ["x-my25"]
+    cite: [carexpert-x-review]
+  - id: box-v2l
+    section: box
+    text: "Ask whether the V2L cable or adapter is in the box"
+    hint: "The 7X powers appliances through a separate discharge cable (3.3 kW on the MY25/MY26). The X uses an external adapter, as it has no socket in the cabin."
+    models: ["7x", "x"]
+    cite: [brochure-7x, carsguide-7x, thedriven-x-2025]
   - id: box-accessories
     section: box
     text: "Accessories you ordered are all there"
@@ -364,6 +691,9 @@ items:
     hint: "Nate's video shows the app features."
     models: ["all"]
     cite: [nate-handover]
+    links:
+      - {label: "ZEEKR app", app: "ZEEKR", ios: "https://apps.apple.com/au/app/zeekr/id6504061076",
+         android: "https://play.google.com/store/apps/details?id=com.zeekr.global"}
   - id: walk-key
     section: walk
     text: "Ask whether your car has a digital key and how to set it up"
@@ -379,20 +709,26 @@ items:
   - id: walk-limit
     section: walk
     text: "Ask how to set a charge limit, and what limit they suggest"
-    hint: "Write down the answer. We have no Zeekr-sourced figure."
+    hint: "Write down the answer."
     models: ["all"]
   - id: walk-rates-7x
     section: walk
     text: "Know your car's peak charging rates: 7X"
-    hint: "DC up to 450 kW (RWD) or 420 kW (Long Range, AWD); AC up to 22 kW. Actual speed depends on the charger."
+    hint: "DC up to 450 kW (RWD) or 420 kW (Long Range, AWD); AC up to 22 kW. The same on MY25/MY26 and MY27. Actual speed depends on the charger."
     models: ["7x"]
-    cite: [carexpert-7x]
+    cite: [brochure-7x, carexpert-7x]
   - id: walk-rates-x
     section: walk
     text: "Know your car's peak charging rates: X (MY26)"
     hint: "RWD: 230 kW DC and 11 kW AC. AWD: 150 kW DC and 22 kW AC."
-    models: ["x"]
+    models: ["x-my26"]
     cite: [carexpert-x]
+  - id: walk-rates-x-my25
+    section: walk
+    text: "Know your car's peak charging rates: X (MY25)"
+    hint: "150 kW DC on both grades. AC: 7.2 kW (RWD) or 11 kW (AWD)."
+    models: ["x-my25"]
+    cite: [carexpert-x-2025]
   - id: walk-rates-009
     section: walk
     text: "Know your car's peak charging rates: 009"
@@ -422,19 +758,50 @@ items:
   - id: walk-service
     section: walk
     text: "Service schedule and how to book"
-    hint: "7X sources differ (12 months / 20,000 km vs 24 months / 40,000 km). Get it from your booklet. The MY26 X is 12 months / 20,000 km."
+    hint: "Take the interval from your booklet."
     models: ["all"]
-    cite: [racv-7x-review, carexpert-7x-longterm, carexpert-x]
+  - id: walk-service-7x-my26
+    section: walk
+    text: "Service interval: confirm it from your booklet"
+    hint: "Reviews of the MY25/MY26 7X give both 2 years / 40,000 km and 12 months / 20,000 km. Your booklet decides."
+    models: ["7x-my26"]
+    cite: [carsguide-7x, carexpert-7x-longterm]
+  - id: walk-service-7x-my27
+    section: walk
+    text: "Service interval: confirm it from your booklet"
+    hint: "The MY27 launch offer's servicing covers the 12 month / 20,000 km and 24 month / 40,000 km services."
+    models: ["7x-my27"]
+    cite: [zeekr-offers]
+  - id: walk-service-x-my25
+    section: walk
+    text: "Service interval: every 24 months or 40,000 km"
+    hint: "The MY25 X schedule. Check it against your booklet."
+    models: ["x-my25"]
+    cite: [carexpert-x-review]
+  - id: walk-service-x-my26
+    section: walk
+    text: "Service interval: every 12 months or 20,000 km"
+    hint: "The MY26 X moved to a shorter interval than the MY25. Check it against your booklet."
+    models: ["x-my26"]
+    cite: [carexpert-x]
+  - id: walk-hud-x
+    section: walk
+    text: "X AWD: set up the head-up display and mirrors on the touchscreen"
+    hint: "The AWD has a 24.3-inch augmented reality head-up display. It and the mirrors are adjusted through the touchscreen."
+    models: ["x"]
+    cite: [carexpert-x-2025, carexpert-x-quick]
   - id: walk-roadside
     section: walk
     text: "How to call Zeekr Roadside and what it covers"
     hint: "Includes flat 12-volt help and a tow to the nearest authorised retailer. Ask what happens if the main battery is flat."
     models: ["all"]
     cite: [roadside-terms]
+    links:
+      - {label: "Call 1800 093 357", tel: "1800093357"}
   - id: walk-dvr
     section: walk
     text: "Where dashcam footage is and how to view it"
-    hint: "Where it is stored is not stated in the sources we found."
+    hint: "Ask the consultant to show you on the car."
     models: ["7x-my27"]
     cite: [carexpert-7x]
   - id: chg-plug
@@ -442,10 +809,7 @@ items:
     text: "Plug in at the dealer if they can, and see a session start"
     hint: "This checks the charge port, the cable and the app together."
     models: ["all"]
-  - id: chg-port
-    section: chg
-    text: "Charge port flap and socket work smoothly, with nothing loose"
-    models: ["all"]
+    express: true
   - id: chg-cable
     section: chg
     text: "Cable has no damage, and fits and locks properly"
@@ -478,12 +842,28 @@ items:
     text: "Any agreed fixes written down and signed (the 'we owe you' list)"
     hint: "Take a photo. Ask when each will be done."
     models: ["all"]
+    express: true
   - id: off-rights
     section: "off"
     text: "Know your rights if something is wrong"
     hint: "The ACL lets you reject a car with a major failure and choose repair, replacement or refund. Tell the dealer clearly and say why. The ACCC page does not cover refusing delivery, so raise problems before you sign."
     models: ["all"]
+    express: true
     cite: [accc]
+    links:
+      - {label: "ACCC: just bought a new car?", url: "https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car"}
+  - id: off-toll
+    section: "off"
+    text: "New plate added to your toll account, or your tag moved across"
+    hint: "Do it before the first toll road on the way home. A Linkt tag works on any Australian toll road, and in Victoria an EastLink account also covers the West Gate Tunnel."
+    models: ["all"]
+    express: true
+    states: [NSW, VIC, QLD]
+    cite: [linkt-tags, eastlink-wgt]
+    links:
+      - {label: "Linkt", url: "https://www.linkt.com.au/"}
+      - {label: "E-Toll", url: "https://www.myetoll.transport.nsw.gov.au/"}
+      - {label: "EastLink", url: "https://www.eastlink.com.au/"}
   - id: off-contact
     section: "off"
     text: "A named contact and phone number for follow-up"
@@ -493,6 +873,7 @@ items:
     section: "off"
     text: "Copies or photos of everything you signed"
     models: ["all"]
+    express: true
   - id: off-photos
     section: "off"
     text: "Photos of the finished car and odometer taken before you leave"
@@ -502,6 +883,7 @@ items:
     text: "Do your first public charge"
     hint: "Try a fast charger near home with the app you set up, so the first one is not on a road trip."
     models: ["all"]
+    express: true
   - id: post-app
     section: post-days
     text: "Try each app feature you were shown once"
@@ -516,6 +898,15 @@ items:
     text: "Insurance and rego details match the car"
     hint: "Check VIN, plate, and the policy start date."
     models: ["all"]
+  - id: post-toll-nsw
+    section: post-days
+    text: "Link your toll account to MyServiceNSW for toll relief"
+    hint: "The weekly toll cap is $50 until it returns to $60 on 5 July 2027. It needs a personal Linkt or E-Toll account and a privately registered NSW car."
+    models: ["all"]
+    states: [NSW]
+    cite: [nsw-toll-cap, service-nsw-toll]
+    links:
+      - {label: "Claim toll relief (Service NSW)", url: "https://service.nsw.gov.au/transaction/claim-the-toll-relief-cap"}
   - id: post-fixes
     section: post-days
     text: "Book the 'we owe you' items and keep the emails"
@@ -525,7 +916,17 @@ items:
     text: "Report any fault to an authorised dealer within 7 days, or as soon as practicable"
     hint: "This is what Zeekr's warranty policy asks."
     models: ["all"]
+    express: true
     cite: [warranty]
+  - id: post-recalls
+    section: post-days
+    text: "Check your VIN for open recalls"
+    hint: "Search the federal government's recall site, vehiclerecalls.gov.au. Do it again now and then."
+    models: ["all"]
+    express: true
+    cite: [vehicle-recalls]
+    links:
+      - {label: "Search vehiclerecalls.gov.au", url: "https://www.vehiclerecalls.gov.au/recalls/browse-all-recalls"}
   - id: post-points
     section: post-days
     text: "MY27 launch offer: check the 5,000 Zeekr app points arrived"
@@ -549,26 +950,30 @@ items:
     text: "Put your first service date in your calendar"
     hint: "Take it from your booklet, not from a review."
     models: ["all"]
-  - id: post-whatsapp
+  - id: post-roadside-club
     section: post-week
-    text: "Join the club WhatsApp group"
-    hint: "The club's main channel and the quickest way to reach other owners."
+    text: "Decide whether you also want state motoring club roadside cover"
+    hint: "Zeekr Roadside comes with the car; club cover (NRMA, RACV, RACQ, RAA, RAC, RACT, AANT) is optional. Membership can also bring charging discounts, such as RACV's and RAC's through Chargefox."
     models: ["all"]
-    link: {label: "Community", page: "community/index.md"}
+    cite: [zeekr-service, aant, racv-chargefox, rac-chargefox]
+  - id: post-forum-join
+    section: post-week
+    text: "Join the club forum and say hello"
+    hint: "The forum is the club's home. Introduce yourself, and search there first when something puzzles you."
+    models: ["all"]
+    link: {label: "Go to the forum", club: forum_url}
+  - id: post-just-got-my-ride
+    section: post-week
+    text: "Show off your new Zeekr in Just Got My Ride on the forum, and tell us how the handover went"
+    hint: "Photos welcome. What you wish you had checked helps the next owner, and makes this list better."
+    models: ["all"]
+    express: true
+    link: {label: "Just Got My Ride", club: forum_url, path: "forums/just-got-my-ride/"}
   - id: post-facebook
     section: post-week
     text: "Join the club Facebook group"
-    hint: "The second channel."
+    hint: "Zeekr Insiders is the club's main group. There are also groups for the 7X and the 7GT."
     models: ["all"]
-    link: {label: "Community", page: "community/index.md"}
-  - id: post-forum
-    section: post-week
-    text: "Watch for the club forum"
-    hint: "Not live yet."
-    models: ["all"]
-    link: {label: "Forum", page: "community/forum.md"}
-  - id: post-feedback
-    section: post-week
-    text: "Tell the club how your handover went"
-    hint: "Fixes this checklist."
-    models: ["all"]
+    links:
+      - {label: "Zeekr Insiders on Facebook", club: facebook_url}
+      - {label: "All the club's groups", page: "community/index.md#where-we-talk"}

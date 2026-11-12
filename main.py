@@ -1,11 +1,14 @@
 """mkdocs-macros for the wiki: card icons, spec cards, click-to-load videos, the
 glossary and the Handover checklist (AGENTS.md describes each)."""
 
+import datetime
 import html
+import json
 import re
 
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import yaml
 
@@ -27,6 +30,41 @@ def _lucide(name: str, cls: str = "zi-spec-card__icon") -> str:
         f'class="{cls}" aria-hidden="true" focusable="false"',
         1,
     )
+
+
+# The chip's icon shows a link leaves the wiki; this says it to screen readers, as the masthead and footer do.
+_EXT = '<span class="zi-vh"> (opens another site)</span>'
+
+_UTM = {"utm_source": "zeekrinsiders", "utm_medium": "wiki", "utm_campaign": "handover-checklist"}
+
+# Apple and Android marks from Simple Icons (CC0, as bundled with Material), inline so the
+# checklist's store icons need no request and take the chip's ink in light and dark.
+_STORES = {
+    "ios": ("the App Store",
+            "M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 "
+            "9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35."
+            "987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3."
+            "182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3."
+            "675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-"
+            ".78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"),
+    "android": ("Google Play",
+                "M18.44 5.559q-1.015 1.748-2.028 3.498-.055-.023-.111-.043a12.098 12.098 0 0 0-8.68.033C7.537 "
+                "8.897 5.868 6.026 5.6 5.56a1 1 0 0 0-.141-.19 1.104 1.104 0 0 0-1.768 1.298c1.947 3.37-.096-"
+                ".216 1.948 3.36.017.03-.495.263-1.393 1.017C2.9 12.176.452 14.772 0 18.99h24a11.7 11.7 0 0 0-"
+                ".746-3.068 12.1 12.1 0 0 0-2.74-4.184 12 12 0 0 0-2.131-1.687c.66-1.122 1.312-2.256 1.965-3."
+                "385a1.11 1.11 0 0 0-.008-1.12 1.1 1.1 0 0 0-.852-.532c-.522-.054-.939.313-1.049.545m-.04 "
+                "8.46c.395.593.324 1.331-.156 1.65-.48.32-1.188.1-1.582-.493s-.324-1.33.156-1.65c.473-.316 "
+                "1.182-.11 1.582.494m-11.193-.492c.48.32.55 1.058.156 1.65-.394.593-1.103.815-1.584.495-.48-"
+                ".32-.55-1.058-.156-1.65.4-.603 1.109-.811 1.584-.495"),
+}
+
+
+def _utm(url: str) -> str:
+    """The Handover checklist's outbound link with its UTM tags, kept after any query the
+    URL already has and before its fragment."""
+    parts = urlsplit(url)
+    query = parse_qsl(parts.query, keep_blank_values=True) + [(k, v) for k, v in _UTM.items()]
+    return urlunsplit(parts._replace(query=urlencode(query)))
 
 
 def define_env(env):
@@ -192,34 +230,142 @@ def define_env(env):
         ids = [i["id"] for i in data["items"]]
         if len(ids) != len(set(ids)):
             raise ValueError("data/handover-checklist.yml: duplicate item id")
-        tags = {"7x": "7X", "7x-my27": "MY27 7X", "x": "X", "009": "009"}
-        models = [("all", "All models"), ("7x", "7X"), ("x", "X"), ("009", "009"), ("7gt", "7GT")]
+        # A bare model tag ("7x") covers every year of it; a year tag narrows it.
+        tags = {"7x": "7X", "7x-my26": "7X MY25/26", "7x-my27": "7X MY27",
+                "x": "X", "x-my25": "X MY25", "x-my26": "X MY26", "009": "009", "7gt": "7GT"}
+        # The picker offers years, not bare models: the cars differ too much between years.
+        # Grouped by car, newest year first. Each year option still names its car ("7X MY27",
+        # not "MY27"), because a closed select shows only the chosen option's text.
+        models = [("all", "Any model"),
+                  ("Zeekr 7X", [("7x-my27", "7X MY27"), ("7x-my26", "7X MY25/26")]),
+                  ("Zeekr X", [("x-my26", "X MY26"), ("x-my25", "X MY25")]),
+                  ("Zeekr 009", [("009", "009")]),
+                  ("Zeekr 7GT", [("7gt", "7GT")])]
+
+        def model_options() -> str:
+            out = ""
+            for k, v in models:
+                if isinstance(v, list):
+                    out += f'<optgroup label="{k}">' + "".join(f'<option value="{a}">{b}</option>' for a, b in v) + "</optgroup>"
+                else:
+                    out += f'<option value="{k}">{v}</option>'
+            return out
+        # A to Z in the State select and on item tags alike, so a reader scans one order everywhere.
+        states = ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
+        club = env.variables["extra"]["club"]
         used: List[str] = list(lead or [])
 
         def link(l: Dict[str, str]) -> str:
+            """One item link: `page` (wiki page or #anchor), `club` (a key in extra.club, plus an
+            optional `path` under it), `url` (anywhere else) or `tel` (digits to dial). Links that
+            leave the wiki get the checklist's UTM tags here, so the data file never carries them;
+            citations are built elsewhere and stay clean."""
+            # Each renders as a link chip (zeekr.css); the kind class picks its icon.
+            label = l["label"]
+            if l.get("store"):
+                raise ValueError("data/handover-checklist.yml: `store` links are gone; put `ios` and `android` "
+                                 f"on the app's link instead ({label})")
+            if l.get("ios") or l.get("android"):
+                return app(l)
+            if l.get("tel"):
+                return f"[{label}](tel:{l['tel']}){{: .zi-hc-link .zi-hc-link--tel }}"
+            if l.get("club"):
+                url = _utm(club[l['club']].rstrip('/') + '/' + l.get('path', '').lstrip('/'))
+                return f"[{label}{_EXT}]({url}){{: .zi-hc-link .zi-hc-link--ext }}"
+            if l.get("url"):
+                return f"[{label}{_EXT}]({_utm(l['url'])}){{: .zi-hc-link .zi-hc-link--ext }}"
             page = l["page"]
             target = page if page.startswith("#") else "../" + page
-            return f"[{l['label']}]({target})"
+            return f"[{label}]({target}){{: .zi-hc-link }}"
 
+        def app(l: Dict[str, str]) -> str:
+            """An app: its name (a chip to its website when it has a `url`, else plain text), then
+            a small Apple and Android icon for its store listings. Store URLs stay clean: the stores
+            drop or mangle UTM tags. handover.js hides the icon for the other platform; without it
+            both show. Each icon is named for screen readers ("ZEEKR on the App Store")."""
+            name = l.get("app") or l["label"]
+            if l.get("url"):
+                head = link({k: v for k, v in l.items() if k not in ("ios", "android")})
+            else:
+                head = f'<span class="zi-hc-app__name">{esc(l["label"])}</span>'
+            icons = ""
+            for store in ("ios", "android"):
+                if not l.get(store):
+                    continue
+                where, path = _STORES[store]
+                aria = esc(f"{name} on {where}")
+                icons += (f'<a class="zi-hc-store" href="{esc(l[store])}" data-store="{store}" '
+                          f'aria-label="{aria}" title="{aria}">'
+                          f'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="{path}"/></svg></a>')
+            return f'<span class="zi-hc-app">{head}{icons}</span>'
+
+        def version() -> str:
+            """When the checklist last changed, "v2026.11.12", from `version` in the data file.
+            Screen readers and the tooltip get the date in words."""
+            v = str(data.get("version") or "")
+            if not re.fullmatch(r"\d{4}\.\d{2}\.\d{2}", v):
+                raise ValueError(f"data/handover-checklist.yml: version must be YYYY.MM.DD, got {v!r}")
+            when = datetime.date(*map(int, v.split(".")))
+            words = f"Checklist last updated {when.day} {when:%B %Y}"
+            return (f'<span class="zi-hc-version" title="{words}">'
+                    f'<span aria-hidden="true">v{v}</span><span class="zi-vh">{words}</span></span>')
+
+        def links(item: Dict[str, Any]) -> str:
+            ls = ([item["link"]] if item.get("link") else []) + list(item.get("links") or [])
+            # Their own row under the hint, so links never trail a sentence.
+            return ('<span class="zi-hc-links">' + " ".join(link(l) for l in ls) + "</span>") if ls else ""
+
+        # One compact toolbar: two native selects (the phone's own picker beats a
+        # wall of chips), the location pin beside State, then Essentials or Everything.
+        # The whole bar ships hidden; without JS every item shows, tagged.
         out = ['<div class="zi-hc" markdown>', "",
                '<div class="zi-hc-tools" hidden>'
-               '<div class="zi-hc-models" role="group" aria-labelledby="zi-hc-models-label">'
-               '<span class="zi-hc-tools__label" id="zi-hc-models-label">Show items for</span>'
-               + "".join(f'<button type="button" class="zi-chip" data-model="{k}" aria-pressed="{str(k == "all").lower()}">{v}</button>'
-                         for k, v in models)
-               + '</div>'
-               '<div class="zi-hc-actions">'
-               '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
-               '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
+               # Once set, the bar folds to a one-line summary with a Change button (handover.js).
+               '<div class="zi-hc-summary" hidden><p class="zi-hc-summary__text"></p>'
+               '<div class="zi-hc-summary__actions">'
+               + version()
+               + '<button type="button" class="zi-hc-button zi-hc-change" aria-expanded="true" aria-controls="zi-hc-bar">'
+               'Done</button>'
+               # The same as "Start again" at the end, where a returning reader can reach it.
+               '<button type="button" class="zi-hc-button zi-hc-restart">Restart</button>'
+               '</div></div>'
+               '<div class="zi-hc-bar" id="zi-hc-bar">'
+               '<div class="zi-hc-field">'
+               '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
+               '<select id="zi-hc-model" class="zi-hc-select">'
+               + model_options()
+               + '</select></div>'
+               '<div class="zi-hc-field">'
+               '<label class="zi-hc-tools__label" for="zi-hc-state">State'
+               '</label>'
+               '<div class="zi-hc-field__row">'
+               '<select id="zi-hc-state" class="zi-hc-select" aria-describedby="zi-hc-state-help">'
+               '<option value="all">Any state</option>'
+               + "".join(f'<option value="{s}">{s}</option>' for s in states)
+               + '</select>'
+               '<button type="button" class="zi-hc-button zi-hc-locate" aria-label="Use my location" title="Use my location" hidden>'
+               + _lucide("map-pin", "zi-hc-locate__icon") + '</button>'
                '</div>'
-               '<p class="zi-hc-status" role="status" aria-live="polite"></p>'
+               # Inline help under State (a guess, or why location failed), not a status line that
+               # pushes the page about. It clears once the reader picks.
+               '<p class="zi-hc-help" id="zi-hc-state-help" aria-live="polite"></p>'
+               '</div>'
+               # Essentials or Everything: native radios, styled as a segmented control. The
+               # counts (handover.js) follow the model and state, so no status line is needed.
+               # The values keep their first names (`express`, `full`) so saved choices still load.
+               '<fieldset class="zi-hc-view"><legend class="zi-hc-tools__label">Show</legend>'
+               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="express">'
+               '<span>Essentials<span class="zi-hc-view__count" data-view="express"></span></span></label>'
+               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="full">'
+               '<span>Everything<span class="zi-hc-view__count" data-view="full"></span></span></label></fieldset>'
+               '</div>'
                '</div>', ""]
         for phase in data["phases"]:
             out += [f'<section class="zi-hc-phase" data-phase="{phase["id"]}" markdown>', "",
                     f'## {phase["title"]} {{ #{phase["id"]} }}', "",
                     '<div class="zi-hc-progress" hidden aria-hidden="true">'
-                    '<div class="zi-hc-progress__text"><span class="zi-hc-progress__phase"></span>'
-                    '<span class="zi-hc-progress__overall"></span></div>'
+                    '<div class="zi-hc-progress__text"><span class="zi-hc-progress__overall"></span>'
+                    '<span class="zi-hc-progress__phase"></span></div>'
                     '<div class="zi-hc-progress__track"><i></i></div></div>', ""]
             for section in [s for s in data["sections"] if s["phase"] == phase["id"]]:
                 out += [f'<details class="zi-hc-section" id="{section["id"]}" open markdown>',
@@ -227,7 +373,17 @@ def define_env(env):
                         '<span class="zi-hc-section__count"></span></summary>', ""]
                 for item in [i for i in data["items"] if i["section"] == section["id"]]:
                     item_models = [m.lower() for m in item.get("models") or ["all"]]
+                    for m in item_models:
+                        if m != "all" and m not in tags:
+                            raise ValueError(f"data/handover-checklist.yml: {item['id']} has unknown model {m}")
                     tag = "".join(f'<span class="zi-hc-tag">{tags[m]}</span>' for m in item_models if m in tags)
+                    # No `states` means every state. Tagged items keep their tags without JS, so a
+                    # printed or script-free list still says where each one applies.
+                    item_states = sorted(s.upper() for s in item.get("states") or [])
+                    for s in item_states:
+                        if s not in states:
+                            raise ValueError(f"data/handover-checklist.yml: {item['id']} has unknown state {s}")
+                    tag += "".join(f'<span class="zi-hc-tag zi-hc-tag--state">{s}</span>' for s in item_states)
                     hint = esc(str(item.get("hint") or "")).strip()
                     for key in item.get("cite") or []:
                         if key not in sources:
@@ -235,16 +391,43 @@ def define_env(env):
                         if key not in used:
                             used.append(key)
                     cites = "".join(f"[^{k}]" for k in item.get("cite") or [])
-                    extra = (" " + link(item["link"]) + ".") if item.get("link") else ""
-                    out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" markdown>',
+                    extra = links(item)
+                    out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" '
+                            f'data-states="{" ".join(item_states)}"'
+                            + (' data-express' if item.get("express") else "") + ' markdown>',
                             f'<label class="zi-hc-check"><input type="checkbox" name="{item["id"]}" data-id="{item["id"]}">'
-                            f'<span class="zi-hc-text">{tag}{esc(item["text"])}</span></label>']
+                            # Tags sit on their own line under the text, so every item's text starts
+                            # flush; inside the label, so a screen reader names them with the box.
+                            f'<span class="zi-hc-body"><span class="zi-hc-text">{esc(item["text"])}</span>'
+                            + (f'<span class="zi-hc-tags">{tag}</span>' if tag else "")
+                            + '</span></label>']
                     if hint or cites or extra:
                         out.append(f'<p class="zi-hc-hint" markdown="span">{hint}{cites}{extra}</p>')
                     out += ["</div>", ""]
                 out += ["</details>", ""]
             out += ["</section>", ""]
         out += ["</div>", ""]
+        # The actions sit at the end, where a reader finishes; they need JS, so they ship hidden.
+        out += ['<div class="zi-hc-end" hidden>'
+                '<div class="zi-hc-actions">'
+                '<button type="button" class="zi-hc-button zi-hc-copy">Copy what\'s left</button>'
+                '<button type="button" class="zi-hc-button zi-hc-reset">Start again</button>'
+                '</div>'
+                '<p class="zi-hc-status" role="status" aria-live="polite"></p>'
+                '</div>', ""]
+        # Feedback on the checklist itself, separate from the theme's "Suggest an edit".
+        feedback = link({"label": "Share your thoughts", "club": "forum_url", "path": "forums/forum-feedback/"})
+        out += ['<aside class="zi-hc-cta" markdown>', "",
+                "## How was the checklist? { #checklist-feedback }", "",
+                "Let us know your thoughts on the forum: what helped, what was missing, and what we could do better.", "",
+                f'<p class="zi-hc-links" markdown="span">{feedback}</p>', "",
+                "</aside>", ""]
+        # The state outlines ride inside the page so "Use my location" needs no request:
+        # the position is matched here, in the browser, and never leaves the device.
+        geo = json.loads((Path(__file__).parent / "data" / "au-states.geojson").read_text(encoding="utf-8"))
+        geo.pop("_comment", None)
+        out += ['<script type="application/json" id="zi-hc-geo">'
+                + json.dumps(geo, separators=(",", ":")).replace("</", "<\\/") + "</script>", ""]
         if used:
             out += ["## Sources", ""] + [f"[^{k}]: {sources[k]}" for k in used] + [""]
         return "\n".join(out)

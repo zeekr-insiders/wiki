@@ -1,86 +1,58 @@
 ---
 seo_title: "Zeekr Insiders forum"
 description: "The Zeekr Insiders owners' forum: what it is for, how it fits with the wiki and the club's other channels, and where to ask questions about owning a Zeekr."
+changelog: "The forum is live: how to join and where to start"
 ---
 # Forum
 
-We're setting up a proper forum for {{ extra.club.full_name }}. It's not quite ready yet, but here's what you can expect.
+The {{ extra.club.full_name }} forum is live, and it is the club's home: **[{{ extra.club.forum_url }}]({{ extra.club.forum_url }})**.
+
+Create an account, introduce yourself, and if you have just taken delivery, post in the deliveries thread.
 
 ## What the forum is for
 
-The forum will be the place for:
-
-- **Questions & answers**: "Is this normal?" "Anyone else getting this issue?" "What tyres are you running?"
-- **Discussions**: Debating the merits of different charging strategies, sharing road trip stories, comparing configurations
-- **Sharing experiences**: First impressions, long-term ownership updates, service experiences
-- **Regional chat**: State-specific discussions about charging networks, dealers, and local events
-- **Technical deep-dives**: For those who want to get into the weeds of OTA updates, battery management, and diagnostic codes
+- **Questions and answers**: "Is this normal?" "Anyone else getting this issue?" "What tyres are you running?"
+- **Discussions**: charging strategies, road trip stories, comparing configurations
+- **Sharing experiences**: first impressions, long-term ownership updates, service experiences
+- **Regional chat**: state-specific discussions about charging networks, dealers and local events
+- **Technical deep-dives**: OTA updates, battery management and diagnostic codes, for those who want the detail
 
 ### What the wiki is for
 
-This wiki is for **reference material**: guides, specifications, how-tos, and documented knowledge. Think of it as the manual.
+This wiki is for **reference material**: guides, specifications, how-tos and documented knowledge. Think of it as the manual.
 
 The forum is for **conversations**: everything else.
 
 ## Why a forum?
 
-We've been using Facebook groups, which work well for quick discussions and event coordination. But Facebook isn't great for:
+Facebook groups work well for quick discussions and event coordination, but they are not great for:
 
-- **Searchability**: Try finding that one post from six months ago about winter tyre recommendations
-- **Organisation**: Threads get buried, topics drift, knowledge gets lost
+- **Searchability**: try finding that one post from six months ago about tyre recommendations
+- **Organisation**: threads get buried, topics drift, knowledge gets lost
 - **Permanence**: Facebook owns your content and can change the rules anytime
-- **Privacy**: Not everyone wants to be on Facebook
+- **Privacy**: not everyone wants to be on Facebook
 
-A forum gives us:
+The forum gives us:
 
 - Proper categories and tags
 - Search that actually works
 - A permanent archive of knowledge
-- No algorithmic timeline nonsense
+- No algorithmic timeline
 - Control over our own data
 
-## When will it be ready?
+## Does it replace the Facebook groups?
 
-Soon. We're setting it up properly rather than rushing it. When it launches, you'll be able to:
+No. The club's Facebook groups are still there for casual chat, event coordination and reaching people quickly: {% for g in extra.club.facebook_groups %}[{{ g.name }}]({{ g.url }}){{ ", " if not loop.last else "." }}{% endfor %} The forum is where deeper discussions live and where answers stay findable. Use whichever suits your question.
 
-- Create an account (separate from Facebook)
-- Browse and search topics
-- Ask questions and get answers
-- Follow threads that interest you
-- Get notifications when someone replies to you
+## How to get started
 
-## Will it replace the Facebook group?
+1. **Create an account**: simple registration, no Facebook required
+2. **Introduce yourself**: say hello and tell us what you drive
+3. **Start posting**: ask questions, share what you know, join discussions
 
-No. The Facebook group isn't going anywhere. It's good for casual chat, event coordination, and reaching a broad audience quickly.
+Early members shape what the forum becomes, so if you have opinions about how it should work, post them there.
 
-The forum will be for deeper discussions and building a searchable knowledge base. Use whichever platform suits your question or topic.
-
-## Planned categories
-
-We're thinking something like:
-
-- **New Owners**: First-weeks questions, delivery experiences, getting started
-- **Models**: Dedicated sections for 7X, X, and 009
-- **Charging & Range**: Home charging, public networks, road trips
-- **Maintenance & Service**: Servicing, repairs, warranties, recalls
-- **Modifications & Accessories**: Mods, aftermarket parts, group buys
-- **Regional**: State-based discussions
-- **Events**: Organising and recapping meetups and drives
-- **Off-Topic**: For everything else
-
-This will evolve based on what the community actually talks about.
-
-## How to get involved
-
-Once the forum launches, we'll announce it in the Facebook group and on [Instagram](https://www.instagram.com/zeekrinsiders/). You'll be able to:
-
-1. **Create an account**: Simple registration, no Facebook required
-2. **Introduce yourself**: There'll be a "new members" area
-3. **Start posting**: Ask questions, share knowledge, join discussions
-
-Early members will help shape what the forum becomes, so if you've got opinions about how it should work, we want to hear them.
-
-## Contributing to the Wiki vs Forum
+## Contributing to the wiki vs the forum
 
 **Post in the forum** when you:
 
@@ -100,16 +72,14 @@ The best content often starts as a forum discussion and gets refined into a wiki
 
 ## Forum link
 
-The forum will be available at:
+**{{ extra.club.forum_url if extra.club.forum_url else extra.club.website }}**
 
-**{{ extra.club.forum_url if extra.club.forum_url else "Coming soon - check the Facebook group for updates" }}**
-
-In the meantime, use the Facebook group for discussions and questions.
+Follow the club on [Instagram](https://www.instagram.com/zeekrinsiders/) too.
 
 ## Questions about the forum?
 
-Use [the contact form](https://zeekrinsiders.com.au/contact) or ask in the club group chat.
+Use [the contact form]({{ extra.club.contact_url }}) or ask on the forum itself.
 
 ---
 
-*The forum is being set up by {{ extra.club.abbreviation }} volunteers. If you've got experience running forums or want to help moderate, we'd love to hear from you.*
+*The forum is run by {{ extra.club.abbreviation }} volunteers. If you have experience running forums or want to help moderate, we would love to hear from you.*

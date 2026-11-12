@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "_comment": "Simplified Australian state and territory outlines for the Handover checklist's 'Use my location' button (handover.js). Coarse on purpose: borders follow the main surveyed lines and the Murray River to within a few kilometres, coastlines are boxed out to sea so coastal towns match. Hand-drawn for this wiki (public domain); good enough to tell states apart, not for anything precise. ACT is listed first and wins over NSW.",
+  "features": [
+    {"type": "Feature", "properties": {"state": "ACT"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [149.00, -35.12], [149.20, -35.15], [149.40, -35.31], [149.21, -35.32], [149.19, -35.45], [149.15, -35.60],
+      [149.12, -35.92], [148.95, -35.75], [148.76, -35.50], [148.80, -35.35], [148.90, -35.25], [149.00, -35.12]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "WA"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [112.0, -9.0], [129.0, -9.0], [129.0, -40.0], [112.0, -40.0], [112.0, -9.0]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "NT"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [129.0, -9.0], [138.0, -9.0], [138.0, -26.0], [129.0, -26.0], [129.0, -9.0]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "SA"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [129.0, -26.0], [141.0, -26.0], [141.0, -29.0], [140.96, -33.98], [140.97, -39.4], [129.0, -39.4], [129.0, -26.0]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "QLD"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [138.0, -9.0], [155.0, -9.0], [155.0, -28.17], [153.55, -28.17], [152.9, -28.27], [152.4, -28.37], [152.1, -28.6],
+      [151.93, -28.9], [151.17, -28.85], [150.33, -28.57], [148.95, -28.99], [141.0, -29.0], [141.0, -26.0], [138.0, -26.0], [138.0, -9.0]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "NSW"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [141.0, -29.0], [148.95, -28.99], [150.33, -28.57], [151.17, -28.85], [151.93, -28.9], [152.1, -28.6], [152.4, -28.37],
+      [152.9, -28.27], [153.55, -28.17], [155.0, -28.17], [155.0, -37.5], [149.98, -37.5], [148.2, -36.8], [148.0, -36.1],
+      [147.6, -36.0], [146.91, -36.1], [146.39, -36.0], [146.0, -36.01], [144.75, -36.12], [143.56, -35.33], [142.76, -34.585],
+      [142.15, -34.17], [140.96, -33.98], [141.0, -29.0]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "VIC"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [140.96, -33.98], [142.15, -34.17], [142.76, -34.585], [143.56, -35.33], [144.75, -36.12], [146.0, -36.01], [146.39, -36.0],
+      [146.91, -36.1], [147.6, -36.0], [148.0, -36.1], [148.2, -36.8], [149.98, -37.5], [152.0, -38.6], [152.0, -39.4],
+      [140.97, -39.4], [140.96, -33.98]
+    ]]}},
+    {"type": "Feature", "properties": {"state": "TAS"}, "geometry": {"type": "Polygon", "coordinates": [[
+      [140.97, -39.4], [152.0, -39.4], [152.0, -44.5], [140.97, -44.5], [140.97, -39.4]
+    ]]}}
+  ]
+}

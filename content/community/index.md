@@ -16,13 +16,23 @@ Zeekr Insiders is a national community of Zeekr owners, with state leads organis
 
 ## Where we talk
 
-The club's WhatsApp group chat is the main channel and the fastest way to reach other owners; the Facebook group is the second [^1]. Drives also use a WhatsApp group for the people on the day [^2].
+The [forum]({{ extra.club.forum_url }}) is the club's home: questions, conversations and anything you'll want to find again. See [Forum](forum.md).
+
+The club's Facebook groups:
+
+{% for g in extra.club.facebook_groups %}
+- [{{ g.name }}]({{ g.url }}), {{ g.note }}{% endfor %}
+
+And the club on social media:
+
+{% for s in extra.social if "facebook" not in s.icon %}
+- [{{ s.name }}]({{ s.link }}){% endfor %}
 
 ## Join in
 
 - Find a drive or event on the [Drives page](https://zeekrinsiders.com.au/drives).
-- Read the [club guides](https://zeekrinsiders.com.au/garage/guides) before your first drive, including the [code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct) [^3].
-- Want to run something? You don't need to be on the leadership team: talk to your state lead or post in the group chat [^1].
+- Read the [club guides](https://zeekrinsiders.com.au/garage/guides) before your first drive, including the [code of conduct](https://zeekrinsiders.com.au/garage/guides#code-of-conduct) [^2].
+- Want to run something? You don't need to be on the leadership team [^1]: talk to your state lead or post on the forum.
 
 ## Help with the wiki
 
@@ -35,5 +45,4 @@ Questions about the club, partnerships or media: use [the contact form](https://
 ## Sources
 
 [^1]: Zeekr Insiders, "Event Organiser Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#organising-an-event>, accessed 8 November 2026.
-[^2]: Zeekr Insiders, "Trip Leading Guide" (April 2026), <https://zeekrinsiders.com.au/garage/guides#leading-a-trip>, accessed 8 November 2026.
-[^3]: Zeekr Insiders, "Code of Conduct" (August 2026), <https://zeekrinsiders.com.au/garage/guides#code-of-conduct>, accessed 8 November 2026.
+[^2]: Zeekr Insiders, "Code of Conduct" (August 2026), <https://zeekrinsiders.com.au/garage/guides#code-of-conduct>, accessed 8 November 2026.

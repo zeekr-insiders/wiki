@@ -158,6 +158,17 @@
     --hue-gold-solid: #E6B237;
     --hue-gold-on: #1A1A1A;
     --hue-gold-ink: #E4BA58;
+    /* Green is kept to one job: a finished Handover checklist section. */
+    --hue-green-ink: #8CCB98;
+    /* Link chips: the Handover checklist's link-outs. Text on the chip is 9:1 here, 7:1 in light. */
+    --link-chip-bg: #16263A;
+    --link-chip-border: #6FA8E8;
+    --link-chip-ink: #A9CDF5;
+    /* Store icons wear their platform's colours so Apple and Android read apart at a glance. */
+    --store-apple-bg: #F5F5F7;
+    --store-apple-ink: #000000;
+    --store-android-bg: #3DDC84;
+    --store-android-ink: #073B1E;
     --hue-tint: 13%;
 
     /* Black line art on <img> icons becomes the ink colour (#F2F2F2 here). */
@@ -190,6 +201,14 @@
     --hue-gold-solid: #E8AF2C;
     --hue-gold-on: #1A1A1A;
     --hue-gold-ink: #865809;
+    --hue-green-ink: #2E6B3A;
+    --link-chip-bg: #E8F1FB;
+    --link-chip-border: #2B6CB0;
+    --link-chip-ink: #1D4F8C;
+    --store-apple-bg: #000000;
+    --store-apple-ink: #FFFFFF;
+    --store-android-bg: #3DDC84;
+    --store-android-ink: #073B1E;
     --hue-tint: 9%;
 
     --icon-filter: brightness(0) invert(10%);
@@ -3605,11 +3624,12 @@ span .zi-icon {
     --zi-hc-top: 0px;
 }
 
+/* One compact toolbar: Model and State selects (with the location pin), then
+   the two actions. At phone width it wraps to two lines at most, at desktop
+   it is one. */
 .md-typeset .zi-hc-tools {
-    display: grid;
-    gap: var(--sp-3);
     margin: var(--sp-5) 0;
-    padding: var(--sp-4);
+    padding: var(--sp-3);
     background: var(--panel);
     border: var(--hairline) solid var(--panel-border);
     border-radius: var(--radius-md);
@@ -3620,17 +3640,217 @@ span .zi-icon {
     display: none;
 }
 
-.md-typeset .zi-hc-models {
+/* Markdown leaves empty paragraphs around the raw toolbar markup; they only add height. */
+.md-typeset .zi-hc-tools > p:not([class]):empty {
+    display: none;
+}
+
+/* Folded toolbar: the choices in one line and a Change (or Done) button. */
+.md-typeset .zi-hc-summary {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-2) var(--sp-3);
+}
+
+.md-typeset .zi-hc-summary:has(+ .zi-hc-bar:not([hidden])) {
+    margin-bottom: var(--sp-3);
+}
+
+.md-typeset .zi-hc-summary__text {
+    margin: 0;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+/* Change (or Done) and Restart, pinned to the right end; on a narrow phone
+   they wrap as one group under the choices, still right-aligned. */
+.md-typeset .zi-hc-summary__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-left: auto;
+}
+
+/* When the checklist last changed: small and muted, so it never competes with the choices. */
+.md-typeset .zi-hc-version {
+    margin-right: var(--sp-1);
+    color: var(--ink-muted);
+    font-size: var(--fs-xs);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.md-typeset .zi-hc-summary[hidden],
+.md-typeset .zi-hc-bar[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-hc-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: var(--sp-2) var(--sp-3);
+}
+
+/* Express / Comprehensive: two native radios drawn as one segmented control.
+   The checked half is filled in ink, so it reads without colour. */
+.md-typeset .zi-hc-view {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+}
+
+.md-typeset .zi-hc-view > legend {
+    float: left;
+    width: 100%;
+    margin: 0 0 2px;
+    padding: 0;
+}
+
+.md-typeset .zi-hc-view__opt {
+    position: relative;
+    display: inline-flex;
+}
+
+.md-typeset .zi-hc-view__opt input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+}
+
+.md-typeset .zi-hc-view__opt > span {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 var(--sp-4);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--bg);
+    border: var(--hairline) solid var(--panel-border);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-view__opt:first-of-type > span {
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.md-typeset .zi-hc-view__opt:last-of-type > span {
+    margin-left: -1px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.md-typeset .zi-hc-view__opt input:checked + span {
+    color: var(--bg);
+    background: var(--ink);
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-hc-view__opt input:focus-visible + span {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.md-typeset .zi-hc-field {
+    display: grid;
+    gap: 2px;
+}
+
+.md-typeset .zi-hc-field__row {
+    display: flex;
     gap: var(--sp-2);
 }
 
 .md-typeset .zi-hc-tools__label {
-    flex-basis: 100%;
+    font-size: var(--fs-xs);
+    font-weight: 600;
+    color: var(--ink-muted);
+}
+
+/* Help under State: small and muted. Empty, it takes no room but stays in
+   the page so a new message is announced. */
+.md-typeset .zi-hc-help {
+    margin: 2px 0 0;
+    color: var(--ink-muted);
+    font-size: var(--fs-xs);
+}
+
+.md-typeset .zi-hc-help:empty {
+    margin: 0;
+}
+
+.md-typeset .zi-hc-select {
+    min-height: var(--tap);
+    padding: 0 var(--sp-2);
+    font: inherit;
     font-size: var(--fs-sm);
     font-weight: 600;
+    color: var(--ink);
+    background: var(--bg);
+    border: var(--hairline) solid var(--panel-border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-select:hover {
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-hc-select:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-hc-button.zi-hc-locate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tap);
+    padding: 0;
+}
+
+.md-typeset .zi-hc-button.zi-hc-locate[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-hc-locate__icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Busy: the pin pulses and the cursor says so; the status line says it in words. */
+.md-typeset .zi-hc-locate.is-busy {
+    cursor: progress;
+}
+
+.md-typeset .zi-hc-locate.is-busy .zi-hc-locate__icon {
+    animation: zi-hc-pulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes zi-hc-pulse {
+    to { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .zi-hc-locate.is-busy .zi-hc-locate__icon {
+        animation: none;
+        opacity: 0.5;
+    }
+}
+
+/* Blocked or unavailable: a dashed edge and a muted pin, with words in the status line. */
+.md-typeset .zi-hc-locate.is-denied {
+    border-style: dashed;
+    color: var(--ink-muted);
 }
 
 .md-typeset .zi-hc-actions {
@@ -3638,6 +3858,7 @@ span .zi-icon {
     flex-wrap: wrap;
     gap: var(--sp-2);
 }
+
 
 .md-typeset .zi-hc-button {
     min-height: var(--tap);
@@ -3662,10 +3883,14 @@ span .zi-icon {
 }
 
 .md-typeset .zi-hc-status {
-    margin: 0;
-    min-height: 1.2em;
+    margin: var(--sp-2) 0 0;
     color: var(--ink-muted);
     font-size: var(--fs-sm);
+}
+
+/* Empty, it takes no room but stays in the page so messages are announced. */
+.md-typeset .zi-hc-status:empty {
+    margin: 0;
 }
 
 .md-typeset .zi-hc-phase > h2 {
@@ -3691,7 +3916,8 @@ span .zi-icon {
     font-weight: 600;
 }
 
-.md-typeset .zi-hc-progress__overall {
+/* The overall count leads; the phase count follows, quieter. */
+.md-typeset .zi-hc-progress__phase {
     color: var(--ink-muted);
     font-weight: 400;
 }
@@ -3776,11 +4002,35 @@ span .zi-icon {
     white-space: nowrap;
 }
 
-/* A finished section says so in words as well as weight. */
+/* A finished section says so in words, a check and weight, with a light
+   green tint and edge on top: colour is never the only signal. */
+.md-content .md-typeset details.zi-hc-section.is-done {
+    background: color-mix(in srgb, var(--hue-green-ink) var(--hue-tint), var(--panel));
+    border-color: var(--hue-green-ink);
+    border-left: 3px solid var(--hue-green-ink);
+}
+
+.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count {
+    color: var(--ink);
+}
+
 .md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::before {
     content: "Done: ";
-    color: var(--ink);
-    font-weight: 600;
+    color: var(--hue-green-ink);
+    font-weight: 700;
+}
+
+/* The check is a mask, not a glyph: the condensed body face has no tick. */
+.md-content .md-typeset details.zi-hc-section.is-done .zi-hc-section__count::after {
+    content: "";
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin-left: var(--sp-1);
+    vertical-align: -0.2em;
+    background-color: var(--hue-green-ink);
+    -webkit-mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center / contain no-repeat;
+    mask: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><path d='M20 6 9 17l-5-5'/></svg>") center / contain no-repeat;
 }
 
 .md-typeset .zi-hc-item {
@@ -3811,15 +4061,32 @@ span .zi-icon {
     outline-offset: 2px;
 }
 
-.md-typeset .zi-hc-check input:checked + .zi-hc-text {
+.md-typeset .zi-hc-body {
+    display: grid;
+    gap: var(--sp-1);
+}
+
+.md-typeset .zi-hc-check input:checked + .zi-hc-body .zi-hc-text {
     color: var(--ink-muted);
     text-decoration: line-through;
     text-decoration-thickness: 1px;
 }
 
+/* Tags get their own line under the text, so every item's text starts flush. */
+.md-typeset .zi-hc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-1);
+}
+
+/* Tags the current filters already satisfy (handover.js). Print shows them all. */
+.md-typeset .zi-hc-tags[hidden],
+.md-typeset .zi-hc-tag[hidden] {
+    display: none;
+}
+
 .md-typeset .zi-hc-tag {
     display: inline-block;
-    margin-right: var(--sp-2);
     padding: 0 var(--sp-1);
     font-size: var(--fs-xs);
     font-weight: 600;
@@ -3830,6 +4097,165 @@ span .zi-icon {
     border-radius: var(--radius-sm);
 }
 
+/* Link chips: an item's link-outs as blue pills on their own row, so they
+   read as things to tap rather than more hint text. An icon says where each
+   goes (off-site, a phone call); wiki links carry none. Blue is kept for this. */
+.md-typeset .zi-hc-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: var(--sp-2);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-link,
+.md-typeset .zi-hc-links a.zi-hc-link:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    padding: 2px var(--sp-3);
+    color: var(--link-chip-ink);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    background: var(--link-chip-bg);
+    border: var(--hairline) solid var(--link-chip-border);
+    border-radius: var(--radius-pill);
+}
+
+/* The actions after the last phase, where a reader finishes. */
+.md-typeset .zi-hc-end {
+    margin: var(--sp-6) 0 0;
+}
+
+.md-typeset .zi-hc-end[hidden] {
+    display: none;
+}
+
+/* "How was the checklist?": a quiet panel after the last phase asking for
+   feedback on the forum, its link the same blue chip as the items' links. */
+.md-typeset .zi-hc-cta {
+    margin: var(--sp-7) 0 var(--sp-5);
+    padding: var(--sp-4) var(--sp-5);
+    background: var(--panel);
+    border: var(--hairline) solid var(--panel-border);
+    border-left: 3px solid var(--link-chip-border);
+    border-radius: var(--radius-md);
+}
+
+.md-typeset .zi-hc-cta > h2 {
+    margin: 0 0 var(--sp-2);
+}
+
+.md-typeset .zi-hc-cta > p {
+    margin: 0;
+}
+
+.md-typeset .zi-hc-cta .zi-hc-links {
+    margin-top: var(--sp-3);
+}
+
+/* An app: its name (a chip, or plain text when it has no website), then a
+   small round Apple and Android icon for its store listings. 32px keeps the
+   tap target above 24px while taking far less room than worded chips. */
+.md-typeset .zi-hc-app {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+}
+
+.md-typeset .zi-hc-app__name {
+    margin-right: 2px;
+    color: var(--ink);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store,
+.md-typeset .zi-hc-links a.zi-hc-store:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    color: var(--link-chip-ink);
+    background: var(--link-chip-bg);
+    border: var(--hairline) solid var(--link-chip-border);
+    border-radius: 50%;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="ios"],
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="ios"]:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    color: var(--store-apple-ink);
+    background: var(--store-apple-bg);
+    border-color: var(--store-apple-bg);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="android"],
+.md-typeset .zi-hc-links a.zi-hc-store[data-store="android"]:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    color: var(--store-android-ink);
+    background: var(--store-android-bg);
+    border-color: var(--store-android-bg);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store:hover {
+    box-shadow: inset 0 0 0 var(--hairline) var(--link-chip-border);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+/* The other platform's store icon (handover.js). */
+.md-typeset .zi-hc-links a.zi-hc-store[hidden] {
+    display: none;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    box-shadow: inset 0 0 0 var(--hairline) var(--link-chip-border);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-link:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+.md-typeset .zi-hc-link--ext::after,
+.md-typeset .zi-hc-link--tel::before {
+    content: "";
+    flex: none;
+    width: 14px;
+    height: 14px;
+    background-color: currentColor;
+    -webkit-mask: var(--zi-link-icon) center / contain no-repeat;
+    mask: var(--zi-link-icon) center / contain no-repeat;
+}
+
+/* Lucide external-link and phone (ISC), as masks so they take the chip's ink. */
+.md-typeset .zi-hc-link--ext {
+    --zi-link-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M15 3h6v6'/><path d='M10 14 21 3'/><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/></svg>");
+}
+
+.md-typeset .zi-hc-link--tel {
+    --zi-link-icon: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384'/></svg>");
+}
+
+/* State tags read apart from model tags by their dashed edge, not colour. */
+.md-typeset .zi-hc-tag--state {
+    border-style: dashed;
+}
+
 .md-typeset .zi-hc-hint {
     margin: var(--sp-1) 0 var(--sp-1) 36px;
     color: var(--ink-muted);
@@ -3838,6 +4264,7 @@ span .zi-icon {
 
 @media print {
     .md-typeset .zi-hc-tools,
+    .md-typeset .zi-hc-end,
     .md-typeset .zi-hc-progress,
     .md-typeset .zi-video,
     .md-content .md-typeset details.zi-hc-section > summary.zi-hc-section__summary::after,
@@ -3845,7 +4272,62 @@ span .zi-icon {
         display: none !important;
     }
 
-    .md-content .md-typeset details.zi-hc-section {
+    /* Link chips print as plain text with the address after them. */
+    .md-typeset .zi-hc-links {
+        display: block;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-link:is(:link, :visited) {
+        display: block;
+        min-height: 0;
+        margin-right: var(--sp-3);
+        padding: 0;
+        color: var(--ink);
+        font-weight: 400;
+        background: none;
+        border: 0;
+    }
+
+    .md-typeset .zi-hc-link--tel::before {
+        display: none;
+    }
+
+    /* Store icons print as their names and addresses. */
+    .md-typeset .zi-hc-app {
+        display: block;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-store[data-store]:is(:link, :visited) {
+        display: block;
+        width: auto;
+        height: auto;
+        color: var(--ink);
+        background: none;
+        border: 0;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-store svg {
+        display: none;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-store::after {
+        content: attr(aria-label) " (" attr(href) ")";
+        word-break: break-all;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-link::after {
+        content: " (" attr(href) ")";
+        width: auto;
+        height: auto;
+        background: none;
+        -webkit-mask: none;
+        mask: none;
+        word-break: break-all;
+    }
+
+    .md-content .md-typeset details.zi-hc-section,
+    .md-content .md-typeset details.zi-hc-section.is-done {
+        background: none;
         border: 0;
         break-inside: auto;
     }
@@ -3875,5 +4357,14 @@ span .zi-icon {
 
     .md-typeset .zi-hc-hint {
         margin-left: 26px;
+    }
+
+    /* A printed list carries every tag, whatever was filtered on screen. */
+    .md-typeset .zi-hc-tags[hidden] {
+        display: flex !important;
+    }
+
+    .md-typeset .zi-hc-tag[hidden] {
+        display: inline-block !important;
     }
 }
