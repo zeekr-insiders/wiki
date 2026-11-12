@@ -526,11 +526,11 @@
       });
     }
 
-    // Store chips: show only the reader's store. `hidden` takes the other out
+    // Store icons: show only the reader's store. `hidden` takes the other out
     // of the accessibility tree too.
     var store = storePlatform();
     if (store) {
-      Array.prototype.forEach.call(root.querySelectorAll('.zi-hc-link[data-store]'), function (a) {
+      Array.prototype.forEach.call(root.querySelectorAll('.zi-hc-store[data-store]'), function (a) {
         a.hidden = a.getAttribute('data-store') !== store;
       });
     }

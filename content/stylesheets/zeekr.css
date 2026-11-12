@@ -4129,8 +4129,53 @@ span .zi-icon {
     margin-top: var(--sp-3);
 }
 
-/* The other platform's store chip (handover.js). */
-.md-typeset .zi-hc-links a.zi-hc-link[hidden] {
+/* An app: its name (a chip, or plain text when it has no website), then a
+   small round Apple and Android icon for its store listings. 32px keeps the
+   tap target above 24px while taking far less room than worded chips. */
+.md-typeset .zi-hc-app {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-1);
+}
+
+.md-typeset .zi-hc-app__name {
+    margin-right: 2px;
+    color: var(--ink);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store,
+.md-typeset .zi-hc-links a.zi-hc-store:is(:link, :visited, :hover, :active, :focus, :focus-visible) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: 32px;
+    height: 32px;
+    color: var(--link-chip-ink);
+    background: var(--link-chip-bg);
+    border: var(--hairline) solid var(--link-chip-border);
+    border-radius: 50%;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store:hover {
+    box-shadow: inset 0 0 0 var(--hairline) var(--link-chip-border);
+}
+
+.md-typeset .zi-hc-links a.zi-hc-store:focus-visible {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+}
+
+/* The other platform's store icon (handover.js). */
+.md-typeset .zi-hc-links a.zi-hc-store[hidden] {
     display: none;
 }
 
@@ -4204,6 +4249,29 @@ span .zi-icon {
 
     .md-typeset .zi-hc-link--tel::before {
         display: none;
+    }
+
+    /* Store icons print as their names and addresses. */
+    .md-typeset .zi-hc-app {
+        display: block;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-store:is(:link, :visited) {
+        display: block;
+        width: auto;
+        height: auto;
+        color: var(--ink);
+        background: none;
+        border: 0;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-store svg {
+        display: none;
+    }
+
+    .md-typeset .zi-hc-links a.zi-hc-store::after {
+        content: attr(aria-label) " (" attr(href) ")";
+        word-break: break-all;
     }
 
     .md-typeset .zi-hc-links a.zi-hc-link::after {

@@ -9,7 +9,8 @@
 #           x-my25, x-my26 for one year; 009; 7gt), states (optional list of ACT, NSW, NT, QLD, SA, TAS, VIC, WA;
 #           absent means every state), express (optional, true for the items shown in Essentials),
 #           cite (optional keys into sources), link (optional {label, page}, page relative to content/
-#           or an #anchor on the page; or {label, club} naming a link in extra.club, such as forum_url).
+#           or an #anchor on the page; or {label, club} naming a link in extra.club, such as forum_url;
+#           an app adds `ios` and `android` store URLs, plus `app` when its name differs from the label).
 # sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
 #
 # Where no source says what comes with the car, an item says "Confirm what your order includes".
@@ -103,9 +104,9 @@ items:
     express: true
     cite: [chargefox]
     links:
-      - {label: "Chargefox", url: "https://www.chargefox.com/"}
-      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/chargefox-ev-charging-network/id1293614477", store: ios}
-      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.chargefox.android", store: android}
+      - {label: "Chargefox", url: "https://www.chargefox.com/",
+         ios: "https://apps.apple.com/au/app/chargefox-ev-charging-network/id1293614477",
+         android: "https://play.google.com/store/apps/details?id=com.chargefox.android"}
   - id: pre-app-evie
     section: pre-apps
     text: "Install Evie and create your account"
@@ -113,9 +114,9 @@ items:
     models: ["all"]
     cite: [evie, thedriven-ampol-evie]
     links:
-      - {label: "Evie", url: "https://www.evie.com.au/"}
-      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/evie-charging/id6447230221", store: ios}
-      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.goevie.goevie_app", store: android}
+      - {label: "Evie", url: "https://www.evie.com.au/",
+         ios: "https://apps.apple.com/au/app/evie-charging/id6447230221",
+         android: "https://play.google.com/store/apps/details?id=com.goevie.goevie_app"}
   - id: pre-app-nrma
     section: pre-apps
     text: "Install My NRMA and set up your account"
@@ -124,9 +125,9 @@ items:
     states: [NSW, VIC, QLD, SA, TAS, ACT, NT]
     cite: [nrma]
     links:
-      - {label: "My NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging"}
-      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/my-nrma/id343747162", store: ios}
-      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.nrma", store: android}
+      - {label: "My NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging", app: "My NRMA",
+         ios: "https://apps.apple.com/au/app/my-nrma/id343747162",
+         android: "https://play.google.com/store/apps/details?id=com.nrma"}
   - id: pre-app-jolt
     section: pre-apps
     text: "Install JOLT if it has sites near you"
@@ -134,9 +135,9 @@ items:
     models: ["all"]
     cite: [jolt]
     links:
-      - {label: "JOLT", url: "https://joltcharge.com/au/"}
-      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/jolt-electric-vehicle-charging/id1536466079", store: ios}
-      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.joltcharge.mobile", store: android}
+      - {label: "JOLT", url: "https://joltcharge.com/au/",
+         ios: "https://apps.apple.com/au/app/jolt-electric-vehicle-charging/id1536466079",
+         android: "https://play.google.com/store/apps/details?id=com.joltcharge.mobile"}
   - id: pre-app-finder
     section: pre-apps
     text: "Install PlugShare or A Better Route Planner to find chargers"
@@ -144,12 +145,12 @@ items:
     models: ["all"]
     cite: [act-chargers, sa-charging, racq-charging]
     links:
-      - {label: "PlugShare", url: "https://www.plugshare.com/"}
-      - {label: "A Better Route Planner", url: "https://abetterrouteplanner.com/"}
-      - {label: "PlugShare on App Store", url: "https://apps.apple.com/au/app/plugshare-ev-charging-map/id421788217", store: ios}
-      - {label: "PlugShare on Google Play", url: "https://play.google.com/store/apps/details?id=com.xatori.Plugshare", store: android}
-      - {label: "ABRP on App Store", url: "https://apps.apple.com/au/app/a-better-routeplanner-abrp/id1490860521", store: ios}
-      - {label: "ABRP on Google Play", url: "https://play.google.com/store/apps/details?id=com.iternio.abrpapp", store: android}
+      - {label: "PlugShare", url: "https://www.plugshare.com/",
+         ios: "https://apps.apple.com/au/app/plugshare-ev-charging-map/id421788217",
+         android: "https://play.google.com/store/apps/details?id=com.xatori.Plugshare"}
+      - {label: "A Better Route Planner", url: "https://abetterrouteplanner.com/",
+         ios: "https://apps.apple.com/au/app/a-better-routeplanner-abrp/id1490860521",
+         android: "https://play.google.com/store/apps/details?id=com.iternio.abrpapp"}
   - id: pre-app-vic
     section: pre-apps
     text: "RACV member? Add your number in Chargefox"
@@ -235,8 +236,8 @@ items:
     express: true
     cite: [nate-handover, zeekr-app-au]
     links:
-      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/zeekr/id6504061076", store: ios}
-      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.zeekr.global", store: android}
+      - {label: "ZEEKR app", app: "ZEEKR", ios: "https://apps.apple.com/au/app/zeekr/id6504061076",
+         android: "https://play.google.com/store/apps/details?id=com.zeekr.global"}
   - id: pre-licence
     section: pre-prep
     text: "Driver's licence in your wallet"
@@ -687,8 +688,8 @@ items:
     models: ["all"]
     cite: [nate-handover]
     links:
-      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/zeekr/id6504061076", store: ios}
-      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.zeekr.global", store: android}
+      - {label: "ZEEKR app", app: "ZEEKR", ios: "https://apps.apple.com/au/app/zeekr/id6504061076",
+         android: "https://play.google.com/store/apps/details?id=com.zeekr.global"}
   - id: walk-key
     section: walk
     text: "Ask whether your car has a digital key and how to set it up"

@@ -36,6 +36,27 @@ _EXT = '<span class="zi-vh"> (opens another site)</span>'
 
 _UTM = {"utm_source": "zeekrinsiders", "utm_medium": "wiki", "utm_campaign": "handover-checklist"}
 
+# Apple and Android marks from Simple Icons (CC0, as bundled with Material), inline so the
+# checklist's store icons need no request and take the chip's ink in light and dark.
+_STORES = {
+    "ios": ("the App Store",
+            "M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 "
+            "9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35."
+            "987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3."
+            "182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3."
+            "675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-"
+            ".78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"),
+    "android": ("Google Play",
+                "M18.44 5.559q-1.015 1.748-2.028 3.498-.055-.023-.111-.043a12.098 12.098 0 0 0-8.68.033C7.537 "
+                "8.897 5.868 6.026 5.6 5.56a1 1 0 0 0-.141-.19 1.104 1.104 0 0 0-1.768 1.298c1.947 3.37-.096-"
+                ".216 1.948 3.36.017.03-.495.263-1.393 1.017C2.9 12.176.452 14.772 0 18.99h24a11.7 11.7 0 0 0-"
+                ".746-3.068 12.1 12.1 0 0 0-2.74-4.184 12 12 0 0 0-2.131-1.687c.66-1.122 1.312-2.256 1.965-3."
+                "385a1.11 1.11 0 0 0-.008-1.12 1.1 1.1 0 0 0-.852-.532c-.522-.054-.939.313-1.049.545m-.04 "
+                "8.46c.395.593.324 1.331-.156 1.65-.48.32-1.188.1-1.582-.493s-.324-1.33.156-1.65c.473-.316 "
+                "1.182-.11 1.582.494m-11.193-.492c.48.32.55 1.058.156 1.65-.394.593-1.103.815-1.584.495-.48-"
+                ".32-.55-1.058-.156-1.65.4-.603 1.109-.811 1.584-.495"),
+}
+
 
 def _utm(url: str) -> str:
     """The Handover checklist's outbound link with its UTM tags, kept after any query the
@@ -240,23 +261,42 @@ def define_env(env):
             citations are built elsewhere and stay clean."""
             # Each renders as a link chip (zeekr.css); the kind class picks its icon.
             label = l["label"]
+            if l.get("store"):
+                raise ValueError("data/handover-checklist.yml: `store` links are gone; put `ios` and `android` "
+                                 f"on the app's link instead ({label})")
+            if l.get("ios") or l.get("android"):
+                return app(l)
             if l.get("tel"):
                 return f"[{label}](tel:{l['tel']}){{: .zi-hc-link .zi-hc-link--tel }}"
             if l.get("club"):
                 url = _utm(club[l['club']].rstrip('/') + '/' + l.get('path', '').lstrip('/'))
                 return f"[{label}{_EXT}]({url}){{: .zi-hc-link .zi-hc-link--ext }}"
-            if l.get("store"):
-                # App Store and Google Play links stay clean: the stores drop or mangle UTM tags.
-                # handover.js shows only the reader's platform's store; without it both show.
-                if l["store"] not in ("ios", "android"):
-                    raise ValueError(f"data/handover-checklist.yml: store must be ios or android, got {l['store']}")
-                return (f"[{label}{_EXT}]({l['url']}){{: .zi-hc-link .zi-hc-link--ext "
-                        f"data-store=\"{l['store']}\" }}")
             if l.get("url"):
                 return f"[{label}{_EXT}]({_utm(l['url'])}){{: .zi-hc-link .zi-hc-link--ext }}"
             page = l["page"]
             target = page if page.startswith("#") else "../" + page
             return f"[{label}]({target}){{: .zi-hc-link }}"
+
+        def app(l: Dict[str, str]) -> str:
+            """An app: its name (a chip to its website when it has a `url`, else plain text), then
+            a small Apple and Android icon for its store listings. Store URLs stay clean: the stores
+            drop or mangle UTM tags. handover.js hides the icon for the other platform; without it
+            both show. Each icon is named for screen readers ("ZEEKR on the App Store")."""
+            name = l.get("app") or l["label"]
+            if l.get("url"):
+                head = link({k: v for k, v in l.items() if k not in ("ios", "android")})
+            else:
+                head = f'<span class="zi-hc-app__name">{esc(l["label"])}</span>'
+            icons = ""
+            for store in ("ios", "android"):
+                if not l.get(store):
+                    continue
+                where, path = _STORES[store]
+                aria = esc(f"{name} on {where}")
+                icons += (f'<a class="zi-hc-store" href="{esc(l[store])}" data-store="{store}" '
+                          f'aria-label="{aria}" title="{aria}">'
+                          f'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="{path}"/></svg></a>')
+            return f'<span class="zi-hc-app">{head}{icons}</span>'
 
         def links(item: Dict[str, Any]) -> str:
             ls = ([item["link"]] if item.get("link") else []) + list(item.get("links") or [])
