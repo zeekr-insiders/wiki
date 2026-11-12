@@ -60,6 +60,31 @@ sources:
   chasingcars-x: "Chasing Cars, \"Zeekr X 2026 drops up to $10,000 with more power and better equipment confirmed for Kia EV3, BMW iX1 rival\", <https://www.chasingcars.com.au/news/new-car-prices/zeekr-x-2026-drops-up-to-10000-with-more-power-and-better-equipment-confirmed-for-kia-ev3-bmw-ix1-rival/>, accessed 12 November 2026."
   thedriven-x-2025: "The Driven, \"Zeekr X Review: Neck-snapping performance in more ways than one\", <https://thedriven.io/2025/07/21/zeekr-x-review-neck-snapping-performance-in-more-ways-than-one/>, accessed 12 November 2026."
   zeekr-x: "Zeekr Australia, \"Introducing New MY26 ZEEKR X\", <https://www.zeekrlife.com/en-au/models/new-zeekr-x>, accessed 12 November 2026."
+  thedriven-ampol-evie: "The Driven, \"Petrol retailing giant Ampol buys one of Australia's biggest EV charging networks for $225 million\", <https://thedriven.io/2026/10/01/petrol-retailing-giant-ampol-buys-one-of-australias-biggest-ev-charging-networks-for-225-million/>, accessed 12 November 2026."
+  act-chargers: "ACT Government (Everyday Climate Choices), \"Public EV chargers in the ACT\", <https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles/public-ev-chargers-in-the-act>, accessed 12 November 2026."
+  sa-charging: "SA Government (Energy and Mining), \"Statewide charging network\", <https://www.energymining.sa.gov.au/industry/modern-energy/electric-vehicles/statewide-charging-network>, accessed 12 November 2026."
+  racq-charging: "RACQ, \"Queensland electric car charging infrastructure\", <https://www.racq.com.au/car/electric-vehicles/queensland-electric-car-charging-infrastructure>, accessed 12 November 2026."
+  horizon-wa: "Horizon Power, \"WA EV Network\", <https://www.horizonpower.com.au/wa-ev-network>, accessed 12 November 2026."
+  synergy-wa: "Synergy, \"WA EV Network\", <https://synergy.net.au/evnetwork>, accessed 12 November 2026."
+  rac-chargefox: "RAC (WA), \"Member benefit: Chargefox\", <https://rac.com.au/membership-benefits/discounts-and-special-offers/member-benefit-chargefox>, accessed 12 November 2026."
+  yurika-qesh: "Yurika, \"Queensland Electric Super Highway\", <https://www.yurika.com.au/qld-electric-super-highway>, accessed 12 November 2026."
+  nrma-tas: "NRMA, \"Electric Highway Tasmania\", <https://www.mynrma.com.au/electric-vehicles/charging/electric-highway-tasmania>, accessed 12 November 2026."
+  recfit-tas: "Tasmanian Government (ReCFIT), \"Electric vehicles: on the road\", <https://recfit.tas.gov.au/what_is_recfit/climate_change/electric_vehicles/on_the_road>, accessed 12 November 2026."
+  racv-chargefox: "RACV, \"Chargefox member discount\", <https://www.racv.com.au/membership/member-discounts/motoring/chargefox.html>, accessed 12 November 2026."
+  katherine-nt: "Katherine Town Council, \"Fast-charging EV stations ready to connect NT regions\", <https://www.katherine.nt.gov.au/news/fast-charging-ev-stations-ready-to-connect-nt-regions/347>, accessed 12 November 2026."
+  linkt-tags: "Linkt, \"About tags\", <https://www.linkt.com.au/help/travelling-toll-roads/about-tags>, accessed 12 November 2026."
+  eastlink-wgt: "EastLink, \"West Gate Tunnel tolls\", <https://www.eastlink.com.au/enquiries/alerts/west-gate-tunnel-tolls>, accessed 12 November 2026."
+  nsw-toll-cap: "NSW Government, \"Lowering the toll cap, no more admin fees: more relief for motorists\", <https://www.nsw.gov.au/ministerial-releases/lowering-toll-cap>, accessed 12 November 2026."
+  service-nsw-toll: "Service NSW, \"Claim the toll relief cap\", <https://service.nsw.gov.au/transaction/claim-the-toll-relief-cap>, accessed 12 November 2026."
+  nt-duty: "NT Treasury, \"Revenue budget measures RC-GEN-021\", <https://treasury.nt.gov.au/pms/tro/revenue-budget-measures/RC-GEN-021.pdf>, accessed 12 November 2026."
+  pwc-nt: "PwC, \"2026-27 Northern Territory Budget\", <https://www.pwc.com.au/tax/tax-alerts/2026-27-northern-territory-budget.html>, accessed 12 November 2026."
+  act-shs: "ACT Government (Everyday Climate Choices), \"Sustainable Household Scheme\", <https://www.climatechoices.act.gov.au/policy-programs/sustainable-household-scheme>, accessed 12 November 2026."
+  energy-made-easy: "Australian Energy Regulator (Energy Made Easy), \"Who can use Energy Made Easy?\", <https://www.energymadeeasy.gov.au/frequently-asked-questions/what-is-energy-made-easy>, accessed 12 November 2026."
+  nrma-ev-plans: "NRMA, \"Comparing EV electricity plans in Australia\", <https://mynrma.com.au/electric-vehicles/owning/comparing-ev-electricity-plans>, accessed 12 November 2026."
+  vic-energy-compare: "Victorian Government, \"Victorian Energy Compare\", <https://www.victorianenergysaver.vic.gov.au/victorian-energy-compare>, accessed 12 November 2026."
+  synergy-ev-addon: "Synergy, \"Electric Vehicle Add On\", <https://synergy.net.au/Your-home/Energy-plans/Electric-Vehicle-Add-On>, accessed 12 November 2026."
+  jacana-tou: "Jacana Energy, \"Residential pricing and tariffs\", <https://jacanaenergy.com.au/your-home/pricing-and-plans/residential-pricing-and-tariffs>, accessed 12 November 2026."
+  aant: "AANT, \"Join\", <https://www.aant.com.au/Join>, accessed 12 November 2026."
 
 items:
   - id: pre-app-chargefox
@@ -71,14 +96,15 @@ items:
   - id: pre-app-evie
     section: pre-apps
     text: "Install Evie and create your account"
-    hint: "Same again: do it at home on wifi."
+    hint: "Same again: do it at home on wifi. Ampol agreed in October 2026 to buy Evie; until the deal completes, expected in the first half of 2027, the two networks run separately."
     models: ["all"]
-    cite: [evie]
+    cite: [evie, thedriven-ampol-evie]
   - id: pre-app-nrma
     section: pre-apps
     text: "Install My NRMA and set up your account"
     hint: "Sessions have to start in the My NRMA app to get the member price. Some sites take tap and pay."
     models: ["all"]
+    states: [NSW, VIC, QLD, SA, TAS, ACT, NT]
     cite: [nrma]
   - id: pre-app-jolt
     section: pre-apps
@@ -86,6 +112,61 @@ items:
     hint: "Registration is in the app; you start a session by QR code or the code on the charger."
     models: ["all"]
     cite: [jolt]
+  - id: pre-app-finder
+    section: pre-apps
+    text: "Install PlugShare or A Better Route Planner to find chargers"
+    hint: "Both show chargers across the networks. The ACT and SA governments point drivers to PlugShare; RACQ suggests A Better Route Planner."
+    models: ["all"]
+    cite: [act-chargers, sa-charging, racq-charging]
+  - id: pre-app-vic
+    section: pre-apps
+    text: "RACV member? Add your number in Chargefox"
+    hint: "RACV members get 10% off charging through Chargefox."
+    models: ["all"]
+    states: [VIC]
+    cite: [racv-chargefox]
+  - id: pre-app-qld
+    section: pre-apps
+    text: "Queensland Electric Super Highway: use your Chargefox account"
+    hint: "The state's highway network runs through Chargefox. RACQ members get 4c/kWh off at selected Evie sites in Queensland: link your membership in the Evie app."
+    models: ["all"]
+    states: [QLD]
+    cite: [yurika-qesh, racq-charging]
+  - id: pre-app-wa
+    section: pre-apps
+    text: "WA EV Network: use your Chargefox account"
+    hint: "Synergy and Horizon Power's network (110 fast chargers at 49 locations) runs through Chargefox. RAC members get 20% off at RAC-owned chargers once their number is in Chargefox."
+    models: ["all"]
+    states: [WA]
+    cite: [horizon-wa, synergy-wa, rac-chargefox]
+  - id: pre-app-sa
+    section: pre-apps
+    text: "Find RAA Charge sites on the RAA website or PlugShare"
+    hint: "RAA Charge is South Australia's statewide network."
+    models: ["all"]
+    states: [SA]
+    cite: [sa-charging]
+  - id: pre-app-tas
+    section: pre-apps
+    text: "Tasmania's Electric Highway: use Chargefox"
+    hint: "NRMA has run it since 1 September 2025, through the Chargefox app or a Chargefox RFID card. Evie and Tesla have sites in Tasmania too."
+    models: ["all"]
+    states: [TAS]
+    cite: [nrma-tas, recfit-tas]
+  - id: pre-app-act
+    section: pre-apps
+    text: "Canberra: check which operators run your local chargers"
+    hint: "ACT public chargers come from several operators, including Evie, NRMA, BP Pulse and ActewAGL, so you may want more than one app."
+    models: ["all"]
+    states: [ACT]
+    cite: [act-chargers]
+  - id: pre-app-nt
+    section: pre-apps
+    text: "Plan around NRMA's highway chargers"
+    hint: "NRMA has fast chargers in Katherine, Tennant Creek and Alice Springs. Plan any trip out of town around them before you go."
+    models: ["all"]
+    states: [NT]
+    cite: [katherine-nt]
   - id: pre-app-card
     section: pre-apps
     text: "Add a payment card to every app you set up"
@@ -153,6 +234,13 @@ items:
     hint: "The MY27 launch offer (orders 1 November to 31 December 2026, not demonstrators) lists two years of servicing, a 7 kW wallbox (supply only), free colour choice and 5,000 Zeekr app points."
     models: ["7x-my27"]
     cite: [zeekr-offers, zecar-my27, carexpert-7x]
+  - id: pre-nt-rego
+    section: pre-prep
+    text: "Register before 30 June 2027 to get the NT's EV concessions"
+    hint: "Rego fees are waived for EVs until then, and the first $50,000 of the car's value is free of stamp duty (up to $1,500) for registrations up to that date."
+    models: ["all"]
+    states: [NT]
+    cite: [nt-duty, pwc-nt]
   - id: pre-home-charger
     section: pre-plan
     text: "Home charger booked or installed if you need one"
@@ -171,6 +259,41 @@ items:
     hint: "The 7X manual says no adapters, extension cables or multiple ports. Install a proper outlet if the socket is too far."
     models: ["7x"]
     cite: [manual-charging]
+  - id: pre-act-shs
+    section: pre-plan
+    text: "Look at a Sustainable Household Scheme loan for your home charger"
+    hint: "The ACT's low-interest loans cover home EV chargers as well as cars. New applicants can borrow up to $20,000."
+    models: ["all"]
+    states: [ACT]
+    cite: [act-shs]
+  - id: pre-tariff-eme
+    section: pre-plan
+    text: "Compare EV and time-of-use power plans on Energy Made Easy"
+    hint: "The government comparison site. Some EV plans need the car registered at your address, which the comparison may not show."
+    models: ["all"]
+    states: [NSW, QLD, SA, TAS, ACT]
+    cite: [energy-made-easy, nrma-ev-plans]
+  - id: pre-tariff-vic
+    section: pre-plan
+    text: "Compare EV and time-of-use power plans on Victorian Energy Compare"
+    hint: "Victoria's government comparison site. Some EV plans need the car registered at your address."
+    models: ["all"]
+    states: [VIC]
+    cite: [vic-energy-compare, energy-made-easy, nrma-ev-plans]
+  - id: pre-tariff-wa
+    section: pre-plan
+    text: "Synergy customer? Look at the EV Add On plan"
+    hint: "Cheap overnight and midday rates for homes with an EV registered there. Peak costs more than the standard plan, and you may need a meter change."
+    models: ["all"]
+    states: [WA]
+    cite: [synergy-ev-addon]
+  - id: pre-tariff-nt
+    section: pre-plan
+    text: "Look at Jacana Energy's time-of-use tariff"
+    hint: "Its cheap period is the middle of the day (9am to 3pm), not overnight. It needs a smart meter."
+    models: ["all"]
+    states: [NT]
+    cite: [jacana-tou]
   - id: pre-drive-plan
     section: pre-plan
     text: "Plan the drive home and where you will first charge"
@@ -626,6 +749,13 @@ items:
     hint: "The ACL lets you reject a car with a major failure and choose repair, replacement or refund. Tell the dealer clearly and say why. The ACCC page does not cover refusing delivery, so raise problems before you sign."
     models: ["all"]
     cite: [accc]
+  - id: off-toll
+    section: "off"
+    text: "New plate added to your toll account, or your tag moved across"
+    hint: "Do it before the first toll road on the way home. A Linkt tag works on any Australian toll road, and in Victoria an EastLink account also covers the West Gate Tunnel."
+    models: ["all"]
+    states: [NSW, VIC, QLD]
+    cite: [linkt-tags, eastlink-wgt]
   - id: off-contact
     section: "off"
     text: "A named contact and phone number for follow-up"
@@ -658,6 +788,13 @@ items:
     text: "Insurance and rego details match the car"
     hint: "Check VIN, plate, and the policy start date."
     models: ["all"]
+  - id: post-toll-nsw
+    section: post-days
+    text: "Link your toll account to MyServiceNSW for toll relief"
+    hint: "The weekly toll cap is $50 until it returns to $60 on 5 July 2027. It needs a personal Linkt or E-Toll account and a privately registered NSW car."
+    models: ["all"]
+    states: [NSW]
+    cite: [nsw-toll-cap, service-nsw-toll]
   - id: post-fixes
     section: post-days
     text: "Book the 'we owe you' items and keep the emails"
@@ -691,6 +828,12 @@ items:
     text: "Put your first service date in your calendar"
     hint: "Take it from your booklet, not from a review."
     models: ["all"]
+  - id: post-roadside-club
+    section: post-week
+    text: "Decide whether you also want state motoring club roadside cover"
+    hint: "Zeekr Roadside comes with the car; club cover (NRMA, RACV, RACQ, RAA, RAC, RACT, AANT) is optional. Membership can also bring charging discounts, such as RACV's and RAC's through Chargefox."
+    models: ["all"]
+    cite: [zeekr-service, aant, racv-chargefox, rac-chargefox]
   - id: post-whatsapp
     section: post-week
     text: "Join the club WhatsApp group"
