@@ -230,6 +230,13 @@ def define_env(env):
             if l.get("club"):
                 url = _utm(club[l['club']].rstrip('/') + '/' + l.get('path', '').lstrip('/'))
                 return f"[{label}{_EXT}]({url}){{: .zi-hc-link .zi-hc-link--ext }}"
+            if l.get("store"):
+                # App Store and Google Play links stay clean: the stores drop or mangle UTM tags.
+                # handover.js shows only the reader's platform's store; without it both show.
+                if l["store"] not in ("ios", "android"):
+                    raise ValueError(f"data/handover-checklist.yml: store must be ios or android, got {l['store']}")
+                return (f"[{label}{_EXT}]({l['url']}){{: .zi-hc-link .zi-hc-link--ext "
+                        f"data-store=\"{l['store']}\" }}")
             if l.get("url"):
                 return f"[{label}{_EXT}]({_utm(l['url'])}){{: .zi-hc-link .zi-hc-link--ext }}"
             page = l["page"]

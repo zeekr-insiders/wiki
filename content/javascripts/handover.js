@@ -71,6 +71,19 @@
     return c;
   }
 
+  // Which app store the reader's device uses, from what the browser already
+  // knows: Client Hints where offered, else the user agent. iPadOS asks for
+  // the desktop site and reports as a Mac, but a Mac has no touch points.
+  // Anything else (desktop, unknown) gets null, and both stores show.
+  function storePlatform() {
+    var hint = (navigator.userAgentData && navigator.userAgentData.platform) || '';
+    var ua = navigator.userAgent || '';
+    if (/android/i.test(hint) || /Android/.test(ua)) return 'android';
+    if (/^i(OS|PadOS)$/i.test(hint) || /iPhone|iPad|iPod/.test(ua) ||
+      (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) return 'ios';
+    return null;
+  }
+
   function regionAt(geo, lon, lat) {
     var hit = null;
     (geo.features || []).some(function (f) {
@@ -443,6 +456,15 @@
           locate.title = 'Use my location (unavailable or blocked)';
           say('Location is unavailable or blocked. Pick your state from State.', true);
         }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 600000 });
+      });
+    }
+
+    // Store chips: show only the reader's store. `hidden` takes the other out
+    // of the accessibility tree too.
+    var store = storePlatform();
+    if (store) {
+      Array.prototype.forEach.call(root.querySelectorAll('.zi-hc-link[data-store]'), function (a) {
+        a.hidden = a.getAttribute('data-store') !== store;
       });
     }
 

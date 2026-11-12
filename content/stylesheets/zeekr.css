@@ -3996,6 +3996,11 @@ span .zi-icon {
     border-radius: var(--radius-pill);
 }
 
+/* The other platform's store chip (handover.js). */
+.md-typeset .zi-hc-links a.zi-hc-link[hidden] {
+    display: none;
+}
+
 .md-typeset .zi-hc-links a.zi-hc-link:hover {
     text-decoration: underline;
     text-underline-offset: 0.2em;

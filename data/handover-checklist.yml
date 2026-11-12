@@ -92,6 +92,7 @@ sources:
   vic-dl: "Service Victoria, \"Where can I use my digital licence\", <https://service.vic.gov.au/find-services/digital-wallet/digital-driver-licence/about-digital-driver-licences/where-to-use>, accessed 12 November 2026."
   qld-dl: "Queensland Government, \"Using the Service Queensland app\", <https://www.qld.gov.au/servicequeensland/app/using>, accessed 12 November 2026."
   sa-dl: "Government of South Australia, \"mySAGOV mobile app\", <https://www.sa.gov.au/mysagov/my-sagov-mobile-app>, accessed 12 November 2026."
+  zeekr-app-au: "Zeekr Australia, \"Zeekr App Now Integrated with EVIE Charging Network\", <https://www.zeekrlife.com/en-au/posts/zeekr-app-now-integrated-with-evie-charging-network/>, accessed 12 November 2026."
 
 items:
   - id: pre-app-chargefox
@@ -102,6 +103,8 @@ items:
     cite: [chargefox]
     links:
       - {label: "Chargefox", url: "https://www.chargefox.com/"}
+      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/chargefox-ev-charging-network/id1293614477", store: ios}
+      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.chargefox.android", store: android}
   - id: pre-app-evie
     section: pre-apps
     text: "Install Evie and create your account"
@@ -110,6 +113,8 @@ items:
     cite: [evie, thedriven-ampol-evie]
     links:
       - {label: "Evie", url: "https://www.evie.com.au/"}
+      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/evie-charging/id6447230221", store: ios}
+      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.goevie.goevie_app", store: android}
   - id: pre-app-nrma
     section: pre-apps
     text: "Install My NRMA and set up your account"
@@ -119,6 +124,8 @@ items:
     cite: [nrma]
     links:
       - {label: "My NRMA charging", url: "https://www.mynrma.com.au/electric-vehicles/charging"}
+      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/my-nrma/id343747162", store: ios}
+      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.nrma", store: android}
   - id: pre-app-jolt
     section: pre-apps
     text: "Install JOLT if it has sites near you"
@@ -127,6 +134,8 @@ items:
     cite: [jolt]
     links:
       - {label: "JOLT", url: "https://joltcharge.com/au/"}
+      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/jolt-electric-vehicle-charging/id1536466079", store: ios}
+      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.joltcharge.mobile", store: android}
   - id: pre-app-finder
     section: pre-apps
     text: "Install PlugShare or A Better Route Planner to find chargers"
@@ -136,6 +145,10 @@ items:
     links:
       - {label: "PlugShare", url: "https://www.plugshare.com/"}
       - {label: "A Better Route Planner", url: "https://abetterrouteplanner.com/"}
+      - {label: "PlugShare on App Store", url: "https://apps.apple.com/au/app/plugshare-ev-charging-map/id421788217", store: ios}
+      - {label: "PlugShare on Google Play", url: "https://play.google.com/store/apps/details?id=com.xatori.Plugshare", store: android}
+      - {label: "ABRP on App Store", url: "https://apps.apple.com/au/app/a-better-routeplanner-abrp/id1490860521", store: ios}
+      - {label: "ABRP on Google Play", url: "https://play.google.com/store/apps/details?id=com.iternio.abrpapp", store: android}
   - id: pre-app-vic
     section: pre-apps
     text: "RACV member? Add your number in Chargefox"
@@ -216,9 +229,12 @@ items:
   - id: pre-zeekr-app
     section: pre-prep
     text: "Install the Zeekr app and create your account"
-    hint: "Done before the day, you can pair the car in minutes instead of waiting on a sign-up email."
+    hint: "Done before the day, you can pair the car in minutes instead of waiting on a sign-up email. It is the ZEEKR app, from the App Store or Google Play."
     models: ["all"]
-    cite: [nate-handover]
+    cite: [nate-handover, zeekr-app-au]
+    links:
+      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/zeekr/id6504061076", store: ios}
+      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.zeekr.global", store: android}
   - id: pre-licence
     section: pre-prep
     text: "Driver's licence in your wallet"
@@ -652,6 +668,9 @@ items:
     hint: "Nate's video shows the app features."
     models: ["all"]
     cite: [nate-handover]
+    links:
+      - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/zeekr/id6504061076", store: ios}
+      - {label: "Google Play (Android)", url: "https://play.google.com/store/apps/details?id=com.zeekr.global", store: android}
   - id: walk-key
     section: walk
     text: "Ask whether your car has a digital key and how to set it up"
