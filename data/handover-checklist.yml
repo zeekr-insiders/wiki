@@ -7,7 +7,7 @@
 #           section, text (the thing to do), hint (optional, one line),
 #           models (all; 7x or x for every year of that model; 7x-my26 (covers MY25/MY26), 7x-my27,
 #           x-my25, x-my26 for one year; 009; 7gt), states (optional list of ACT, NSW, NT, QLD, SA, TAS, VIC, WA;
-#           absent means every state),
+#           absent means every state), express (optional, true for the essentials shown in Express),
 #           cite (optional keys into sources), link (optional {label, page}, page relative to content/
 #           or an #anchor on the page; or {label, club} naming a link in extra.club, such as forum_url).
 # sources:  footnote text in the repo's format: publisher, "title", <url>, accessed date.
@@ -100,6 +100,7 @@ items:
     text: "Install Chargefox and create your account"
     hint: "Sign up in the app. Add a payment card now, not standing at a charger."
     models: ["all"]
+    express: true
     cite: [chargefox]
     links:
       - {label: "Chargefox", url: "https://www.chargefox.com/"}
@@ -231,6 +232,7 @@ items:
     text: "Install the Zeekr app and create your account"
     hint: "Done before the day, you can pair the car in minutes instead of waiting on a sign-up email. It is the ZEEKR app, from the App Store or Google Play."
     models: ["all"]
+    express: true
     cite: [nate-handover, zeekr-app-au]
     links:
       - {label: "App Store (iPhone)", url: "https://apps.apple.com/au/app/zeekr/id6504061076", store: ios}
@@ -240,12 +242,14 @@ items:
     text: "Driver's licence in your wallet"
     hint: "Use the licence of the person who is insured. Bring the card."
     models: ["all"]
+    express: true
     states: [WA, TAS, ACT, NT]
   - id: pre-licence-digital
     section: pre-prep
     text: "Driver's licence with you: the card, or your state's digital licence"
     hint: "NSW, Victoria, Queensland and South Australia have a digital licence you can use instead of the card, in the Service NSW, Service Victoria, Service Queensland and mySAGOV apps. Set it up before the day, and take the card too if you're going interstate. Use the licence of the person who is insured."
     models: ["all"]
+    express: true
     states: [NSW, VIC, QLD, SA]
     cite: [nsw-dl, vic-dl, qld-dl, sa-dl]
     links:
@@ -258,11 +262,13 @@ items:
     text: "Comprehensive insurance starts on delivery day"
     hint: "Keep the confirmation on your phone. Give the insurer the VIN as soon as you have it."
     models: ["all"]
+    express: true
   - id: pre-payment
     section: pre-prep
     text: "Final payment or finance confirmed in writing"
     hint: "Bank transfer receipt or finance approval, saved on your phone."
     models: ["all"]
+    express: true
   - id: pre-time
     section: pre-prep
     text: "Booked a daylight slot and allowed an hour or two"
@@ -273,6 +279,7 @@ items:
     text: "Your order, spec and any promised extras saved on your phone"
     hint: "You will check the car and the paperwork against this."
     models: ["all"]
+    express: true
   - id: pre-model-year
     section: pre-prep
     text: "Confirmed in writing which model year you are getting"
@@ -369,21 +376,25 @@ items:
     text: "Plan the drive home and where you will first charge"
     hint: "Pick a charger on or near the route and check you have its app set up."
     models: ["all"]
+    express: true
   - id: paper-invoice
     section: paper
     text: "Invoice matches your order"
     hint: "Check variant, colour, extras, and the drive-away price breakdown."
     models: ["all"]
+    express: true
   - id: paper-vin
     section: paper
     text: "VIN on every document matches the car"
     hint: "Check the invoice, rego papers and insurance against the VIN on the car."
     models: ["all"]
+    express: true
   - id: paper-rego
     section: paper
     text: "Registration papers handed over"
     hint: "Or confirm in writing when and how they arrive."
     models: ["all"]
+    express: true
   - id: paper-booklet
     section: paper
     text: "Service & Warranty Booklet received (or digital copy)"
@@ -401,6 +412,7 @@ items:
     text: "Zeekr Roadside 1800 093 357 saved in your phone"
     hint: "24 hours a day, 7 days a week. Have your VIN and location ready when you call."
     models: ["all"]
+    express: true
     cite: [zeekr-service]
     links:
       - {label: "Call 1800 093 357", tel: "1800093357"}
@@ -429,11 +441,13 @@ items:
     text: "Paint: scratches, chips, swirl marks, repaired-looking patches"
     hint: "Crouch and look along each panel. Check the roof and lower edges."
     models: ["all"]
+    express: true
   - id: ext-gaps
     section: ext
     text: "Panel gaps look even all round"
     hint: "Check bonnet, doors and tailgate."
     models: ["all"]
+    express: true
   - id: ext-colour
     section: ext
     text: "Colour matches your order"
@@ -443,11 +457,13 @@ items:
     section: ext
     text: "Windscreen, windows and glass roof free of chips and cracks"
     models: ["all"]
+    express: true
   - id: ext-wheels
     section: ext
     text: "Wheels and tyres: kerbing, damage, matching tyres"
     hint: "Photograph all four wheels."
     models: ["all"]
+    express: true
   - id: ext-wheel-size
     section: ext
     text: "Wheels match your order"
@@ -516,6 +532,7 @@ items:
     text: "Seats and trim free of marks, tears and loose panels"
     hint: "Check all seats, door cards and the console."
     models: ["all"]
+    express: true
   - id: int-material
     section: int
     text: "Seat material matches your order"
@@ -606,6 +623,7 @@ items:
     text: "Confirm what keys or cards your order includes: count them"
     hint: "Test each one."
     models: ["all"]
+    express: true
   - id: box-keys-7x-my26
     section: box
     text: "Test the UWB key fob and the NFC card"
@@ -786,6 +804,7 @@ items:
     text: "Plug in at the dealer if they can, and see a session start"
     hint: "This checks the charge port, the cable and the app together."
     models: ["all"]
+    express: true
   - id: chg-cable
     section: chg
     text: "Cable has no damage, and fits and locks properly"
@@ -818,11 +837,13 @@ items:
     text: "Any agreed fixes written down and signed (the 'we owe you' list)"
     hint: "Take a photo. Ask when each will be done."
     models: ["all"]
+    express: true
   - id: off-rights
     section: "off"
     text: "Know your rights if something is wrong"
     hint: "The ACL lets you reject a car with a major failure and choose repair, replacement or refund. Tell the dealer clearly and say why. The ACCC page does not cover refusing delivery, so raise problems before you sign."
     models: ["all"]
+    express: true
     cite: [accc]
     links:
       - {label: "ACCC: just bought a new car?", url: "https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car"}
@@ -831,6 +852,7 @@ items:
     text: "New plate added to your toll account, or your tag moved across"
     hint: "Do it before the first toll road on the way home. A Linkt tag works on any Australian toll road, and in Victoria an EastLink account also covers the West Gate Tunnel."
     models: ["all"]
+    express: true
     states: [NSW, VIC, QLD]
     cite: [linkt-tags, eastlink-wgt]
     links:
@@ -846,6 +868,7 @@ items:
     section: "off"
     text: "Copies or photos of everything you signed"
     models: ["all"]
+    express: true
   - id: off-photos
     section: "off"
     text: "Photos of the finished car and odometer taken before you leave"
@@ -855,6 +878,7 @@ items:
     text: "Do your first public charge"
     hint: "Try a fast charger near home with the app you set up, so the first one is not on a road trip."
     models: ["all"]
+    express: true
   - id: post-app
     section: post-days
     text: "Try each app feature you were shown once"
@@ -887,12 +911,14 @@ items:
     text: "Report any fault to an authorised dealer within 7 days, or as soon as practicable"
     hint: "This is what Zeekr's warranty policy asks."
     models: ["all"]
+    express: true
     cite: [warranty]
   - id: post-recalls
     section: post-days
     text: "Check your VIN for open recalls"
     hint: "Search the federal government's recall site, vehiclerecalls.gov.au. Do it again now and then."
     models: ["all"]
+    express: true
     cite: [vehicle-recalls]
     links:
       - {label: "Search vehiclerecalls.gov.au", url: "https://www.vehiclerecalls.gov.au/recalls/browse-all-recalls"}
@@ -936,6 +962,7 @@ items:
     text: "Show off your new Zeekr in Just Got My Ride on the forum, and tell us how the handover went"
     hint: "Photos welcome. What you wish you had checked helps the next owner, and makes this list better."
     models: ["all"]
+    express: true
     link: {label: "Just Got My Ride", club: forum_url, path: "forums/just-got-my-ride/"}
   - id: post-facebook
     section: post-week

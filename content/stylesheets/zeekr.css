@@ -3643,6 +3643,72 @@ span .zi-icon {
     gap: var(--sp-2) var(--sp-3);
 }
 
+/* Express / Comprehensive: two native radios drawn as one segmented control.
+   The checked half is filled in ink, so it reads without colour. */
+.md-typeset .zi-hc-view {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+}
+
+.md-typeset .zi-hc-view > legend {
+    float: left;
+    width: 100%;
+    margin: 0 0 2px;
+    padding: 0;
+}
+
+.md-typeset .zi-hc-view__opt {
+    position: relative;
+    display: inline-flex;
+}
+
+.md-typeset .zi-hc-view__opt input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+}
+
+.md-typeset .zi-hc-view__opt span {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--tap);
+    padding: 0 var(--sp-4);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--ink);
+    background: var(--bg);
+    border: var(--hairline) solid var(--panel-border);
+    cursor: pointer;
+}
+
+.md-typeset .zi-hc-view__opt:first-of-type span {
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.md-typeset .zi-hc-view__opt:last-of-type span {
+    margin-left: -1px;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.md-typeset .zi-hc-view__opt input:checked + span {
+    color: var(--bg);
+    background: var(--ink);
+    border-color: var(--ink);
+}
+
+.md-typeset .zi-hc-view__opt input:focus-visible + span {
+    outline: var(--rule) solid var(--focus);
+    outline-offset: 2px;
+    position: relative;
+    z-index: 1;
+}
+
 .md-typeset .zi-hc-field {
     display: grid;
     gap: 2px;

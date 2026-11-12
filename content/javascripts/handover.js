@@ -29,11 +29,15 @@
         return {
           done: state.done || {},
           model: MODELS.indexOf(state.model) >= 0 ? state.model : 'all',
-          region: REGIONS.indexOf(state.region) >= 0 ? state.region : null
+          region: REGIONS.indexOf(state.region) >= 0 ? state.region : null,
+          // First visit: Express. A reader who ticked items before the views existed
+          // was using the full list, so they keep it.
+          view: state.view === 'express' || state.view === 'full' ? state.view
+            : (Object.keys(state.done || {}).length ? 'full' : 'express')
         };
       }
     } catch (e) { /* storage blocked or corrupt: start fresh */ }
-    return { done: {}, model: 'all', region: null };
+    return { done: {}, model: 'all', region: null, view: 'express' };
   }
 
   var REGIONS = ['all', 'NSW', 'VIC', 'QLD', 'SA', 'WA', 'TAS', 'ACT', 'NT'];
@@ -108,6 +112,7 @@
     var tools = root.querySelector('.zi-hc-tools');
     var status = root.querySelector('.zi-hc-status');
     var modelSelect = root.querySelector('#zi-hc-model');
+    var viewRadios = Array.prototype.slice.call(root.querySelectorAll('input[name="zi-hc-view"]'));
     var stateSelect = root.querySelector('#zi-hc-state');
     var guessHint = root.querySelector('.zi-hc-guess');
     var locate = root.querySelector('.zi-hc-locate');
@@ -125,6 +130,7 @@
         id: box.getAttribute('data-id'),
         models: (el.getAttribute('data-models') || 'all').split(' '),
         states: (el.getAttribute('data-states') || '').split(' ').filter(Boolean),
+        express: el.hasAttribute('data-express'),
         text: el.querySelector('.zi-hc-text').textContent.trim()
       };
     });
@@ -137,6 +143,7 @@
     // The picker names a year ("7x-my27"); an item applies if it is tagged
     // for every model, for that year, or for the model in every year ("7x").
     function applies(item) {
+      if (state.view === 'express' && !item.express) return false;
       if (region !== 'all' && item.states.length && item.states.indexOf(region) < 0) return false;
       if (state.model === 'all') return true;
       var base = state.model.split('-')[0];
@@ -173,6 +180,7 @@
         p.querySelector('.zi-hc-progress__track i').style.width = (shown ? (ticked / shown) * 100 : 0) + '%';
       });
       modelSelect.value = state.model;
+      viewRadios.forEach(function (r) { r.checked = r.value === state.view; });
       stateSelect.value = region;
     }
 
@@ -389,6 +397,21 @@
       setTimeout(function () {
         if (f.gen === gen && f.section.classList.contains('is-done')) celebrate(f);
       }, 0);
+    });
+
+    // Express or Comprehensive. Ticks are shared: switching only changes
+    // which items count, so progress, folding, the finale and "Copy what's
+    // left" all follow the view.
+    viewRadios.forEach(function (r) {
+      r.addEventListener('change', function () {
+        if (!r.checked) return;
+        state.view = r.value;
+        save(state);
+        render();
+        sync();
+        say((state.view === 'express' ? 'Express: the essentials, ' : 'Comprehensive: everything, ') +
+          items.filter(applies).length + ' items.');
+      });
     });
 
     modelSelect.addEventListener('change', function () {

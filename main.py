@@ -269,6 +269,12 @@ def define_env(env):
         out = ['<div class="zi-hc" markdown>', "",
                '<div class="zi-hc-tools" hidden>'
                '<div class="zi-hc-bar">'
+               # Express or Comprehensive: native radios, styled as a segmented control.
+               '<fieldset class="zi-hc-view"><legend class="zi-hc-tools__label">View</legend>'
+               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="express">'
+               '<span>Express</span></label>'
+               '<label class="zi-hc-view__opt"><input type="radio" name="zi-hc-view" value="full">'
+               '<span>Comprehensive</span></label></fieldset>'
                '<div class="zi-hc-field">'
                '<label class="zi-hc-tools__label" for="zi-hc-model">Model</label>'
                '<select id="zi-hc-model" class="zi-hc-select">'
@@ -324,7 +330,8 @@ def define_env(env):
                     cites = "".join(f"[^{k}]" for k in item.get("cite") or [])
                     extra = links(item)
                     out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" '
-                            f'data-states="{" ".join(item_states)}" markdown>',
+                            f'data-states="{" ".join(item_states)}"'
+                            + (' data-express' if item.get("express") else "") + ' markdown>',
                             f'<label class="zi-hc-check"><input type="checkbox" name="{item["id"]}" data-id="{item["id"]}">'
                             # Tags sit on their own line under the text, so every item's text starts
                             # flush; inside the label, so a screen reader names them with the box.
