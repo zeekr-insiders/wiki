@@ -7,6 +7,7 @@ import re
 
 from pathlib import Path
 from typing import Any, Dict, List, Optional
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 import yaml
 
@@ -28,6 +29,17 @@ def _lucide(name: str, cls: str = "zi-spec-card__icon") -> str:
         f'class="{cls}" aria-hidden="true" focusable="false"',
         1,
     )
+
+
+_UTM = {"utm_source": "zeekrinsiders", "utm_medium": "wiki", "utm_campaign": "handover-checklist"}
+
+
+def _utm(url: str) -> str:
+    """The Handover checklist's outbound link with its UTM tags, kept after any query the
+    URL already has and before its fragment."""
+    parts = urlsplit(url)
+    query = parse_qsl(parts.query, keep_blank_values=True) + [(k, v) for k, v in _UTM.items()]
+    return urlunsplit(parts._replace(query=urlencode(query)))
 
 
 def define_env(env):
@@ -204,12 +216,24 @@ def define_env(env):
         used: List[str] = list(lead or [])
 
         def link(l: Dict[str, str]) -> str:
-            # `club` names a link in extra.club (forum_url, contact_url), so club links live in mkdocs.yml only.
+            """One item link: `page` (wiki page or #anchor), `club` (a key in extra.club, plus an
+            optional `path` under it), `url` (anywhere else) or `tel` (digits to dial). Links that
+            leave the wiki get the checklist's UTM tags here, so the data file never carries them;
+            citations are built elsewhere and stay clean."""
+            label = l["label"]
+            if l.get("tel"):
+                return f"[{label}](tel:{l['tel']})"
             if l.get("club"):
-                return f"[{l['label']}]({club[l['club']]})"
+                return f"[{label}]({_utm(club[l['club']].rstrip('/') + '/' + l.get('path', '').lstrip('/'))})"
+            if l.get("url"):
+                return f"[{label}]({_utm(l['url'])})"
             page = l["page"]
             target = page if page.startswith("#") else "../" + page
-            return f"[{l['label']}]({target})"
+            return f"[{label}]({target})"
+
+        def links(item: Dict[str, Any]) -> str:
+            ls = ([item["link"]] if item.get("link") else []) + list(item.get("links") or [])
+            return (" " + " &middot; ".join(link(l) for l in ls)) if ls else ""
 
         # One compact toolbar: two native selects (the phone's own picker beats a
         # wall of chips), the location pin beside State, then the two actions.
@@ -270,7 +294,7 @@ def define_env(env):
                         if key not in used:
                             used.append(key)
                     cites = "".join(f"[^{k}]" for k in item.get("cite") or [])
-                    extra = (" " + link(item["link"]) + ".") if item.get("link") else ""
+                    extra = links(item)
                     out += [f'<div class="zi-hc-item" data-models="{" ".join(item_models)}" '
                             f'data-states="{" ".join(item_states)}" markdown>',
                             f'<label class="zi-hc-check"><input type="checkbox" name="{item["id"]}" data-id="{item["id"]}">'
