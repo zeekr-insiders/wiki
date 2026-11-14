@@ -23,7 +23,7 @@ Your Service and Warranty Booklet is the authority. Zeekr's warranty policy poin
 
 ## What each service includes
 
-Every visit includes the required vehicle checks and any software updates not delivered over the air. On top of that, the notice lists these parts for the MY25/MY26 car [^2][^driven]:
+Every visit includes the required vehicle checks and any software updates not delivered over the air. On top of that, the notice lists these parts for the MY25/MY26 car [^2][^1]:
 
 | Service | Type | Replaced | Price |
 | :--- | :--- | :--- | :--- |
@@ -54,7 +54,7 @@ The offer to the first 1,000 Australian buyers did not include servicing. It cov
 
 ### MY27 launch offer
 
-Zeekr's terms for the MY27 launch offer are on its offers page [^offers]:
+Zeekr's terms for the MY27 launch offer are on its offers page [^14]:
 
 - **Who:** buyers who purchase, or order with a deposit, a new MY27 7X from an authorised Australian dealer between 1 November and 31 December 2026. Retail buyers only, including ABN holders; fleet, government and rental buyers are excluded unless Zeekr approves, as are demonstrators.
 - **What:** the first two scheduled services free, the 12 months / 20,000 km and 24 months / 40,000 km services.
@@ -62,13 +62,13 @@ Zeekr's terms for the MY27 launch offer are on its offers page [^offers]:
 - **Not covered:** wear items such as tyres, brake pads and wiper blades, repairs, accident damage and unscheduled work.
 - **Where:** an authorised Zeekr service centre, or a provider Zeekr nominates. One entitlement per car, non-transferable and with no cash value.
 
-The offer was first capped at 2,000 orders. Zeekr dropped the cap in early November 2026, so it now runs on dates alone [^14][^15].
+The offer was first capped at 2,000 orders. Zeekr dropped the cap in early November 2026, so it now runs on dates alone [^15][^16].
 
-The terms call both visits scheduled services [^16]. Whether the MY27 car moves to a yearly interval is not yet confirmed: check your MY27 booklet.
+The terms call both visits scheduled services [^14]. Whether the MY27 car moves to a yearly interval is not yet confirmed: check your MY27 booklet.
 
 ## Warranty
 
-These are Zeekr's standard terms for private-use cars [^warranty]:
+These are Zeekr's standard terms for private-use cars [^8]:
 
 | Cover | Term |
 | :--- | :--- |
@@ -83,7 +83,7 @@ The first 1,000 Australian 7X buyers were offered a 7-year, unlimited-km warrant
 
 ## Keeping your warranty
 
-Zeekr's warranty policy does not say you must service at a Zeekr dealer. What it does say [^warranty]:
+Zeekr's warranty policy does not say you must service at a Zeekr dealer. What it does say [^8]:
 
 - The car must be serviced and maintained to the Zeekr schedule in the Service and Warranty Booklet, using parts that meet Zeekr's specifications.
 - Keep detailed records of each service: date, odometer, work done, parts and fluids, and the job card. You need to show the booklet when you claim.
@@ -93,7 +93,7 @@ Zeekr's warranty policy does not say you must service at a Zeekr dealer. What it
 
 The ACCC's position is that a manufacturer's warranty typically lets you choose your own repairer for servicing, as long as the manufacturer's servicing standards are met; some warranties require repairs claimed under warranty to be done in the dealer network [^17]. Your rights under the Australian Consumer Law apply in addition to the warranty, and Zeekr's policy says it does not limit them [^8].
 
-In practice: keep to the schedule, keep every record, use a qualified workshop and parts that meet Zeekr's specifications, wherever you service. Free MY27 launch-offer servicing must be done at an authorised Zeekr service centre or a provider Zeekr nominates [^16].
+In practice: keep to the schedule, keep every record, use a qualified workshop and parts that meet Zeekr's specifications, wherever you service. Free MY27 launch-offer servicing must be done at an authorised Zeekr service centre or a provider Zeekr nominates [^14].
 
 ## Roadside assistance
 
@@ -116,8 +116,8 @@ Cover includes phone help, a flat 12-volt battery test or jump-start, a flat-tyr
 [^11]: Chasing Cars, "Zeekr 7X Performance AWD 2026 review", <https://www.chasingcars.com.au/reviews/midsize-suvs/zeekr-7x-performance-awd-2026-review/>, accessed 15 November 2026.
 [^12]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 15 November 2026.
 [^13]: Zeekr, "A week that changed everything: the Zeekr 7X breaks 1,000 pre-orders", <https://www.zeekrlife.com/en-nz/posts/a-week-that-changed-everything-the-zeekr-7x-breaks-1000-pre-orders/>, accessed 15 November 2026.
-[^14]: CarExpert, "2027 Zeekr 7X update: more power, same price" (updated 3 November 2026), <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 15 November 2026.
-[^15]: ZeCar, "Zeekr 7X launch offer: free servicing, wallbox and paint", 4 November 2026, <https://zecar.com/reviews/zeekr-7x-launch-offer-free-servicing-wallbox-paint>, accessed 15 November 2026.
-[^16]: Zeekr Australia, "Offers: MY27 ZEEKR 7X Launch Offer" (terms and conditions), <https://www.zeekrlife.com/en-au/offers/>, accessed 15 November 2026.
+[^14]: Zeekr Australia, "Offers: MY27 ZEEKR 7X Launch Offer" (terms and conditions), <https://www.zeekrlife.com/en-au/offers/>, accessed 15 November 2026.
+[^15]: CarExpert, "2027 Zeekr 7X update: more power, same price" (updated 3 November 2026), <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 15 November 2026.
+[^16]: ZeCar, "Zeekr 7X launch offer: free servicing, wallbox and paint", 4 November 2026, <https://zecar.com/reviews/zeekr-7x-launch-offer-free-servicing-wallbox-paint>, accessed 15 November 2026.
 [^17]: ACCC, "Just bought a new car?", <https://www.accc.gov.au/about-us/news/media-updates/just-bought-a-new-car>, accessed 8 November 2026.
 [^18]: Zeekr, "New Vehicle Roadside Assistance Program: Terms and Conditions", <https://www.datocms-assets.com/130529/1781067092-zeekr-roadside-assistance-t-c-s.pdf>, accessed 8 November 2026.
