@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr vs other EVs: how to compare"
 description: "How to compare a Zeekr with other EVs in Australia: what to check on price, range, charging and warranty, and why this page does not publish rival figures."
 ---
@@ -8,10 +9,7 @@ description: "How to compare a Zeekr with other EVs in Australia: what to check 
 
 *Last checked: 8 November 2026.*
 
-Comparing a Zeekr with another EV is worth doing, but rival prices and specs change often and we have not verified them, so this page does not publish competitor figures. Instead it lists the Zeekr side with sources, and what to check on the other car.
-
-!!! info "2027 7X (MY27)"
-    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
+Rival prices and specs change often, so this page doesn't publish competitor figures. It gives the Zeekr side, and what to check on the other car.
 
 ## The Zeekr side
 
@@ -20,7 +18,7 @@ For prices, range, charging and towing across the range, see the [model comparis
 - **Price.** The 7X is $57,900, $63,900 or $72,900 before on-road costs, unchanged for the 2027 update [^1][^2]. The MY26 X is from $48,900 drive-away [^3].
 - **DC charging.** The 7X is an 800V car with DC peaks of up to 450 kW (RWD) and 420 kW (Long Range and AWD) [^2]. Real stops depend on the charger, the weather and your state of charge.
 - **Towing.** The MY25/MY26 7X is rated at 2,000 kg braked on every variant [^4].
-- **Boot.** The 7X has 539 L, or 1,978 L with the rear seats folded [^1].
+- **Boot.** The MY25/MY26 7X has 539 L, or 1,978 L with the rear seats folded [^1].
 - **Warranty.** 5 years and unlimited kilometres for private use, 8 years or 160,000 km on the battery, 5 years of roadside assistance [^5].
 - **Dealer network.** Zeekr lists 17 sales sites in ACT, NSW, QLD, SA, VIC and WA, and none in Tasmania or the Northern Territory [^6]. Service is offered at fewer sites; see [Where to Buy](../buying/dealers.md).
 
@@ -41,7 +39,7 @@ Use the manufacturer's own Australian site for each figure, and note the date yo
 | Nearest service centre to you | A dealer that sells cars may not service them. |
 | Whether the price sits under the LCT or FBT thresholds | Affects novated leases; see the [finance guide](../buying/finance.md). |
 
-## Things we don't know yet
+## Not yet known
 
 - Long-term resale values for Zeekr in Australia. The brand is new here and there is little used-sale history.
 - How the 2027 7X compares on towing and boot space, because Zeekr has not published those figures for it [^2].
