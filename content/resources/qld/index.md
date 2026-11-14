@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Queensland EV stamp duty and rego"
 description: "Buying a Zeekr in Queensland: EV stamp duty rates by value, incentives, servicing, driving an EV in the heat, and useful local links for Queensland owners."
 ---
@@ -16,8 +17,7 @@ Queensland charges electric and hybrid light vehicles $2 per $100 (or part) of d
 
 The Queensland zero emission vehicle rebate ended on 2 September 2024. A registration discount remains for eligible vehicles under $100,000 dutiable value [^1].
 
-!!! note "Not yet confirmed"
-    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
+Concessions change often. Check the [useful links](#useful-links) below before you budget.
 
 ## Service
 

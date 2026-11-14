@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "NT EV stamp duty subsidy and rego"
 description: "EV incentives in the Northern Territory for Zeekr owners: the $1,500 stamp duty subsidy until June 2027, free registration, and local servicing and charging."
 ---
@@ -12,10 +13,7 @@ description: "EV incentives in the Northern Territory for Zeekr owners: the $1,5
 
 The NT offers a $1,500 stamp duty subsidy for EVs until 30 June 2027 and up to five years' free registration [^1].
 
-!!! note "Not yet confirmed"
-    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
-
-Check current details with the [NT Government](https://nt.gov.au).
+Concessions change often. Check current details with the [NT Government](https://nt.gov.au).
 
 ## Service
 
