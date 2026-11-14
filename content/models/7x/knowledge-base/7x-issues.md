@@ -1,5 +1,6 @@
 ---
 models: ["7x"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr 7X known issues and fixes"
 description: "Common Zeekr 7X quirks owners raise, such as driver alerts, the over-speed alert, a stuck charging cable and frozen screens, with what the owner's manual says."
@@ -16,16 +17,15 @@ Common quirks owners raise, with what the owner's manual says about each. Menu n
 
 <span id="owner-tips"></span><span id="optimising-7x-audio-settings"></span>Looking for settings and habits? See [Owner tips](../owner-tips.md).
 
-!!! info "About the manual we checked"
-    The instructions below come from a 7X owner's manual (2025 Long Range RWD, Netherlands edition) on an unofficial mirror [^1]. We have not checked them against the Australian manual that comes with the car, and Australian cars may behave differently. If yours does not match, tell us and we will update the entry. For anything that might be a fault, go to your dealer: warranty claims go through an authorised Zeekr dealer [^2].
+The instructions follow the 2025 Long Range RWD owner's manual (Netherlands edition) [^1]. Australian cars may differ, so check the manual that came with yours, and if it doesn't match, tell us and we'll update the entry. For anything that might be a fault, go to your dealer: warranty claims go through an authorised Zeekr dealer [^2].
 
 ## Driver drowsiness and distraction alerts
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^3].
+**Applies to:** MY25/MY26 7X.
 
 **The issue:** the car warns you when it thinks you are drowsy or looking away, for example at the centre screen.
 
-**What the manual says:**
+**What the manual says** [^3]:
 
 - A camera behind the steering wheel watches the driver's eyes. Drowsiness warnings are active above 10 km/h and distraction warnings above 20 km/h.
 - When it detects drowsiness or distraction, it raises the front collision warning to its highest sensitivity.
@@ -35,11 +35,11 @@ The manual does not say whether the setting survives a restart.
 
 ## Over-speed alert
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^4].
+**Applies to:** MY25/MY26 7X.
 
 **The issue:** the car alerts you when you go over the speed limit it has read.
 
-**What the manual says:**
+**What the manual says** [^4]:
 
 - The alert sounds or shows when you exceed the limit by about 1 km/h.
 - It is on by default at the start of every journey.
@@ -50,19 +50,19 @@ The manual does not describe a tolerance or offset setting.
 
 ## Charging cable won't release
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^5].
+**Applies to:** MY25/MY26 7X.
 
 **The issue:** the charging cable stays locked in the charge port after charging.
 
-**What the manual says:** if the cable is stuck, release it manually; the manual has a separate section on how. Read that section in your own manual before you need it.
+**What the manual says** [^5]: if the cable is stuck, release it manually; the manual has a separate section on how. Read that section in your own manual before you need it.
 
 ## Screens frozen or misbehaving
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the manual [^6].
+**Applies to:** MY25/MY26 7X.
 
 **The issue:** the centre display or driver display hangs, or apps such as music streaming stop responding.
 
-**What the manual says:** to restart both displays, press and hold the thumbstick on the left of the steering wheel and the scroll wheel on the right of the steering wheel together for ten seconds.
+**What the manual says** [^6]: to restart both displays, press and hold the thumbstick on the left of the steering wheel and the scroll wheel on the right of the steering wheel together for ten seconds.
 
 ## Sources
 
