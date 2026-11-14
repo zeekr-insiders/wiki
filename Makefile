@@ -1,4 +1,4 @@
-.PHONY: help install run build clean ready lint check citations nav labels seo models serve dev stop deploy
+.PHONY: help install run build clean ready lint check citations nav labels seo models prose serve dev stop deploy
 
 # uv run fails to canonicalise script paths on this machine, so we call the
 # venv interpreter directly. Works on Windows and POSIX venv layouts.
@@ -81,7 +81,13 @@ seo:
 	@echo "Checking search metadata..."
 	$(PY) scripts/check_seo.py site
 
-ready: clean nav models build citations labels seo
+# Flags prose that narrates the research instead of stating the fact (scripts/check_prose.py).
+# Warns only for now; PROSE_STRICT=1 fails on any finding.
+prose:
+	@echo "Checking prose..."
+	$(PY) scripts/check_prose.py $(if $(filter-out 0,$(PROSE_STRICT)),--strict)
+
+ready: clean nav models build citations labels seo prose
 	@echo ""
 	@echo "🎉 All checks passed! Ready for commit."
 	@echo ""
