@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr prices and on-road costs in Australia"
 description: "Current Zeekr 7X, X and 009 prices in Australia before on-road costs, what stamp duty, registration and CTP add, and tips for negotiating with a Zeekr dealer."
 ---
@@ -8,27 +9,21 @@ description: "Current Zeekr 7X, X and 009 prices in Australia before on-road cos
 
 *Last checked: 8 November 2026.*
 
-!!! info "2027 7X (MY27)"
-    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
-
 ## Current prices
 
 ### Zeekr 7X
 
-RRP before on-road costs, unchanged for the MY27 [^1][^2]:
+RRP before on-road costs, unchanged for the updated MY27 car that delivers from December 2026 [^1][^2]:
 
 - **7X RWD**: $57,900
 - **7X Long Range RWD**: $63,900
 - **7X Performance AWD**: $72,900
 
-The MY26 Black Special Edition launched in March 2026 at $75,900 before on-road costs [^3]; whether it is still orderable is not confirmed. The MY27 Black Edition Package for the Performance AWD has no announced price [^1]. Details, colours and the MY27 launch offer: [7X prices and options](../models/7x/2025/pricing.md).
+The MY26 Black Special Edition launched in March 2026 at $75,900 before on-road costs [^3]; ask your dealer whether it can still be ordered. Zeekr has not announced a price for the MY27 Black Edition Package on the Performance AWD [^1]. Details, colours and the MY27 launch offer: [7X prices and options](../models/7x/2025/pricing.md). To tell the model years apart, see [Which 7X do I have?](../models/7x/which-7x.md).
 
 ### Zeekr X (MY26)
 
-The updated X was priced in April 2026 from **$48,900 drive-away** for the RWD [^4][^5].
-
-!!! warning "Sources differ: X AWD price"
-    CarExpert and The Beep give $57,900 drive-away for the AWD [^4][^5]; Carsales shows $55,990 drive-away [^6]. Check current offers with your dealer.
+The updated X was priced in April 2026 from **$48,900 drive-away** for the RWD [^4][^5], and **$55,990 to $57,900 drive-away** for the AWD [^4][^5][^6]. Check current offers with your dealer.
 
 ### Zeekr 009
 
