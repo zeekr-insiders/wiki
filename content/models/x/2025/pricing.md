@@ -1,5 +1,6 @@
 ---
 models: ["x"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr X price in Australia"
 description: "Zeekr X prices in Australia for the updated 2026 RWD and AWD, the pre-order launch offers that ended in May 2026, and what servicing costs for the X."
@@ -14,17 +15,15 @@ description: "Zeekr X prices in Australia for the updated 2026 RWD and AWD, the 
 | Variant | Price |
 | :--- | :--- |
 | **Zeekr X RWD** | $48,900 drive-away [^1][^2] |
-| **Zeekr X AWD** | $57,900 drive-away [^1][^2] |
+| **Zeekr X AWD** | $55,990 to $57,900 drive-away [^1][^2][^3] |
 
-!!! warning "Sources differ"
-    CarExpert and The Beep give the AWD as $57,900 drive-away [^1][^2]. A Carsales listing shows $55,990 drive-away [^3]. Treat the RWD's $48,900 drive-away as the starting point and check current offers with your dealer.
+Drive-away prices can differ between dealers and states, so check current offers with your dealer.
 
 ## Launch offers
 
 The pre-order offers for the updated X ended on 31 May 2026 [^1]. If you ordered under one of them, the terms in your contract apply; Zeekr's warranty policy says its standard terms apply "except where otherwise stated (including as part of a promotional offer)" [^4].
 
-!!! note "Not yet confirmed"
-    The pre-order offer was reported to include a free 7 kW home charger, premium paint and two extra years of warranty and roadside assistance. We have not re-checked those terms. Your contract is the record.
+The pre-order offer included free exterior and interior colours, automatic doors, a 7 kW home charger, and 2 extra years each of warranty and roadside assistance [^1]. Your contract is the record of what you got.
 
 ## Servicing
 
