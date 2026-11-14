@@ -1,5 +1,6 @@
 ---
 models: ["x"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr X compact electric SUV"
 description: "The Zeekr X compact electric SUV in Australia: RWD and AWD grades, battery and WLTP range, drive-away pricing and the guides for Zeekr X owners."
@@ -50,7 +51,7 @@ hero_image: x
     </div>
 </div>
 
-Prices and figures: CarExpert [^1]. AWD drive-away pricing varies between listings; see [pricing](2025/pricing.md).
+Sources: [^1]. AWD drive-away prices vary; see [pricing](2025/pricing.md).
 
 ## Key stats
 
