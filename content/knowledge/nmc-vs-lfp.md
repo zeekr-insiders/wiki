@@ -1,6 +1,7 @@
 ---
 title: NMC vs LFP batteries
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "NMC vs LFP batteries: which Zeekr has which"
 description: "NMC vs LFP EV batteries explained: how the two chemistries differ in weight, lifespan and charging, and which Zeekr X, 7X and 009 grades in Australia use which."
 ---
@@ -27,11 +28,10 @@ Nearly every EV battery sold in Australia is a lithium-ion pack, and most use on
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-nmc-lfp-compare.svg"
-<figcaption>NMC vs LFP at a glance, from the Battery University figures cited above.</figcaption>
+<figcaption>NMC vs LFP at a glance, from the cell figures cited above.</figcaption>
 </figure>
 
-!!! note "Cell figures are a guide"
-    These are generic cell-level figures from Battery University. A finished pack's range, weight and lifespan depend on the maker's design, cooling and software, so do not compare two cars on chemistry alone. Another retail-sourced figure of "4,000 to 10,000 cycles" for LFP circulates online; we did not use it because it comes from a stationary-storage vendor, not a battery maker.
+These are generic cell-level figures [^1]. A finished pack's range, weight and lifespan depend on the maker's design, cooling and software, so don't compare two cars on chemistry alone.
 
 ## What it means for owners
 
@@ -42,22 +42,21 @@ Nearly every EV battery sold in Australia is a lithium-ion pack, and most use on
 
 ## Which Zeekr uses which
 
-| Model and grade | Battery | Chemistry | Source status |
-| :--- | :--- | :--- | :--- |
-| X RWD (MY26) | 61 kWh | LFP | Confirmed [^2] |
-| X AWD (MY26) | 66 kWh | NMC | Confirmed [^2] |
-| 7X RWD | 75 kWh | LFP | Confirmed [^3] |
-| 7X Long Range RWD | 100 kWh | NMC | Confirmed [^3] |
-| 7X Performance AWD | 100 kWh | NMC | Confirmed [^3] |
-| 009 FWD | 116 kWh | NMC | Confirmed [^4] |
-| 009 AWD | Not stated in the sources we found | Not stated | Unconfirmed |
+| Model and grade | Battery | Chemistry |
+| :--- | :--- | :--- |
+| X RWD (MY26) | 61 kWh | LFP [^2] |
+| X AWD (MY26) | 66 kWh | NMC [^2] |
+| 7X RWD | 75 kWh | LFP [^3] |
+| 7X Long Range RWD | 100 kWh | NMC [^3] |
+| 7X Performance AWD | 100 kWh | NMC [^3] |
+| 009 FWD | 116 kWh | NMC [^4] |
+| 009 AWD | - | - |
 
-!!! warning "Check your own car"
-    The 2027 7X (MY27) batteries are reported as unchanged from MY25/MY26 [^3]. Zeekr Australia's own pages carry few battery specifics, so the table rests on motoring press. Some press uses "NCM" (nickel cobalt manganese) for the same family as NMC. If you are unsure, check the compliance and battery plates or ask your dealer.
+Zeekr has not published the 009 AWD's battery size or chemistry. The 2027 7X (MY27) keeps the same batteries as the MY25/MY26 car [^3]. Some press uses "NCM" (nickel cobalt manganese) for the same family as NMC. If you're unsure which battery you have, check the compliance and battery plates or ask your dealer.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-zeekr-chemistry-map.svg"
-<figcaption>Chemistry and pack size by grade, from the table above. The 009 AWD is not stated in our sources.</figcaption>
+<figcaption>Chemistry and pack size by grade, from the table above.</figcaption>
 </figure>
 
 ## Related

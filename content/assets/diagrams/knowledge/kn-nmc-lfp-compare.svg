@@ -43,7 +43,7 @@ svg.zk.zk-wide{max-width:none}
 <text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">BATTERY CHEMISTRY: NMC VS LFP</text>
 <text class="d w6 c-ink" x="24" y="80" font-size="32">NMC is lighter. LFP lasts</text>
 <text class="d w6 c-ink" x="24" y="115" font-size="32">longer.</text>
-<text class="c-muted" x="24" y="144" font-size="15">Bars show the range each source gives, on a scale from 0.</text>
+<text class="c-muted" x="24" y="144" font-size="15">Bars show the published range for each, on a scale from 0.</text>
 <rect class="f-ink" x="24" y="168" width="24" height="14" rx="1"/>
 <text class="w6 c-ink" x="56" y="180" font-size="14">NMC</text>
 <rect class="s-muted" x="112" y="168" width="24" height="14" rx="1" fill="url(#kn-nmc-lfp-compare-hatch)" stroke-width="1"/>
