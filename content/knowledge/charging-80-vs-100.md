@@ -55,7 +55,7 @@ For the 75 kWh LFP 7X RWD, an Australian retailer's charging guide gives 100% as
 
 ## Rules that apply to both
 
-- **Avoid leaving the car parked at 100% for days** where you can. Several sources say prolonged time at a full charge is the main concern [^3]. Time the charge to finish shortly before you drive.
+- **Avoid leaving the car parked at 100% for days** where you can. Prolonged time at a full charge is the commonly cited concern [^3]. Time the charge to finish shortly before you drive.
 - **Charge to what you need on DC stops.** The last part of a fast charge is slow. See [AC vs DC and the charging curve](charging-curve.md) and [charging etiquette](../guides/charging/etiquette.md).
 - **Don't run it flat.** Keep a buffer at the bottom of the battery as well as the top.
 
