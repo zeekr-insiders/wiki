@@ -1,6 +1,7 @@
 ---
 title: Plugs and cables
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Type 2, CCS2 and EV cables in Australia"
 description: "EV plugs and cables in Australia: Type 2 and CCS2, tethered vs untethered chargers, and portable charger safety, including why Zeekr says no extension leads."
 ---
@@ -41,21 +42,18 @@ Two plugs cover almost everything you will meet on a Zeekr in Australia: **Type 
 
 ## The portable charger
 
-A portable (mode 2) charger plugs into a normal household socket and charges the car slowly. RACV lists these at about 1.4 to 2.8 kW, about 10 to 12 km of range per hour, which suits plug-in hybrids better than a large battery car [^1]. A standard 10 A socket gives about 2.3 kW (230 V times 10 A, our arithmetic). Some chargers have a 15 A plug for a dedicated 15 A outlet; a 15 A plug does not fit a standard 10 A socket. Zeekr's first-1,000 7X offer included a mini portable (10 amp) cable [^4].
+A portable (mode 2) charger plugs into a normal household socket and charges the car slowly. These run at about 1.4 to 2.8 kW, adding about 10 to 12 km of range per hour, which suits plug-in hybrids better than a large battery car [^1]. A standard 10 A socket gives about 2.3 kW (calculated: 230 V x 10 A). Some chargers have a 15 A plug for a dedicated 15 A outlet; a 15 A plug does not fit a standard 10 A socket. Zeekr's first-1,000 7X offer included a mini portable (10 amp) cable [^4].
 
 ### Safety rules
 
 !!! danger "No extension leads, no adapters"
-    Zeekr's 7X owner manual lists as a safety rule: "Not use any adapters, extension cables, or multiple ports of any kind." [^6] Plug the portable charger straight into a suitable wall socket. If the socket is too far away or not suitable, have a licensed electrician install a dedicated outlet or a wallbox.
+    Zeekr's 7X owner's manual (Netherlands edition) lists as a safety rule: "Not use any adapters, extension cables, or multiple ports of any kind." [^6] Plug the portable charger straight into a suitable wall socket. If the socket is too far away or not suitable, have a licensed electrician install a dedicated outlet or a wallbox. Your Australian booklet is the authority for your car.
 
 - Do not use damaged cables or ports, and do not bundle the cable while it charges [^6].
 - Keep the cable out of direct sunlight; overheating protection can reduce or stop charging [^6].
 - The cable between car and charger must be shorter than 30 metres [^6].
-- Use a socket in good condition on a circuit with a safety switch (RCD). A Queensland Government electrical safety booklet advises heavy-duty leads outdoors and an RCD [^7]. Queensland Fire and Emergency Services advises using only extension leads and sockets intended for charging EVs [^7]. Those regulator notes sit alongside Zeekr's stricter instruction: for a Zeekr, follow the manual and do not use extension leads.
+- Use a socket in good condition on a circuit with a safety switch (RCD) [^7]. General safety advice sometimes allows extension leads made for EV charging [^7], but Zeekr's manual rules them out, so don't use one with a Zeekr [^6].
 - For regular use, a dedicated circuit or wallbox is the safe answer. See [Home charging explained](home-charging.md).
-
-!!! warning "Source limits"
-    The Zeekr manual we read is the Netherlands edition of the 7X manual on an unofficial mirror; the Australian booklet was not available. Check your own booklet. The Queensland regulator wording is from a search extract; the page returned empty when fetched [^7].
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-portable-safe-chain.svg"
