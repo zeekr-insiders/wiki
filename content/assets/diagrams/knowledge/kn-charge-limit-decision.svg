@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 843" role="img" aria-labelledby="kn-charge-limit-decision-title kn-charge-limit-decision-desc">
 <title id="kn-charge-limit-decision-title">What should I set my charge limit to?</title>
-<desc id="kn-charge-limit-decision-desc">Decision flowchart for a daily charge limit. First find which battery your Zeekr has. NMC: a daily limit of about 80% to 90%; if a long trip is tomorrow, charge to 100% shortly before you leave, otherwise stay at the daily limit. LFP: daily at the manufacturer-permitted limit, often 100% (general industry practice, not Zeekr-confirmed), and charge to 100% at least weekly for calibration. In both cases your Zeekr manual and in-car settings override the chart.</desc>
+<desc id="kn-charge-limit-decision-desc">Decision flowchart for a daily charge limit. First find which battery your Zeekr has. NMC: a daily limit of about 80% to 90%; if a long trip is tomorrow, charge to 100% shortly before you leave, otherwise stay at the daily limit. LFP: daily at the manufacturer-permitted limit, often 100% (general industry practice), and charge to 100% at least weekly for calibration. In both cases your Zeekr manual and in-car settings override the chart.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -73,8 +73,8 @@ svg.zk.zk-wide{max-width:none}
 <text class="d w6 c-ink" x="264" y="382.2" font-size="16">Daily: the maker's</text>
 <text class="d w6 c-ink" x="264" y="402.2" font-size="16">permitted limit, often</text>
 <text class="d w6 c-ink" x="264" y="422.2" font-size="16">100%</text>
-<text class="c-muted" x="264" y="444.2" font-size="14">General practice, not</text>
-<text class="c-muted" x="264" y="462.2" font-size="14">Zeekr-confirmed</text>
+<text class="c-muted" x="264" y="444.2" font-size="14">General practice. Your</text>
+<text class="c-muted" x="264" y="462.2" font-size="14">manual comes first</text>
 <line class="s-muted" x1="354" y1="479" x2="354" y2="503" stroke-width="1.5" marker-end="url(#kn-charge-limit-decision-a)"/>
 <rect class="f-panel s-ink" x="252" y="503" width="204" height="86" rx="2" stroke-width="1.5"/>
 <text class="d w6 c-ink" x="264" y="530.2" font-size="16">Charge to 100% at</text>
