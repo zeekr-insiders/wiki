@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 726" role="img" aria-labelledby="kn-v2x-three-way-title kn-v2x-three-way-desc">
 <title id="kn-v2x-three-way-title">V2L, V2H and V2G: where the power goes</title>
-<desc id="kn-v2x-three-way-desc">Three ways power can leave an EV battery. V2L goes to an appliance such as a camp fridge or tools, via the car socket or an adapter; Zeekr 7X and X give 3.3 kW, and it is available on both. V2H goes to the house switchboard through a bidirectional charger for backup power; not supported on Zeekr per sources, unconfirmed. V2G exports to the street network through the house meter and needs a certified charger and network approval; not supported on Zeekr per sources, unconfirmed, with trials in Australia on other cars.</desc>
+<desc id="kn-v2x-three-way-desc">Three ways power can leave an EV battery. V2L goes to an appliance such as a camp fridge or tools, via the car socket or an adapter; Zeekr 7X and X give 3.3 kW, and it is available on both. V2H goes to the house switchboard through a bidirectional charger for backup power; not yet available on any Zeekr. V2G exports to the street network through the house meter and needs a certified charger and network approval; not yet available on any Zeekr, with trials in Australia on other cars.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -43,7 +43,7 @@ svg.zk.zk-wide{max-width:none}
 <text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">V2L, V2H AND V2G</text>
 <text class="d w6 c-ink" x="24" y="80" font-size="32">V2L yes. V2H and V2G, not</text>
 <text class="d w6 c-ink" x="24" y="115" font-size="32">yet.</text>
-<text class="c-muted" x="24" y="144" font-size="15">Three ways out of the battery. Only one is confirmed on a Zeekr.</text>
+<text class="c-muted" x="24" y="144" font-size="15">Three ways out of the battery. Only one is available on a Zeekr.</text>
 <line class="s-accent" x1="120" y1="220" x2="160" y2="220" stroke-width="4" marker-end="url(#kn-v2x-three-way-aa)"/>
 <line class="s-muted" x1="120" y1="374" x2="160" y2="374" stroke-width="1.5" marker-end="url(#kn-v2x-three-way-a)" stroke-dasharray="4 4"/>
 <line class="s-muted" x1="120" y1="534" x2="160" y2="534" stroke-width="1.5" marker-end="url(#kn-v2x-three-way-a)" stroke-dasharray="4 4"/>
@@ -66,9 +66,9 @@ svg.zk.zk-wide{max-width:none}
 <text class="d w6 c-ink" x="176" y="392" font-size="16">House switchboard</text>
 <text class="c-muted" x="176" y="414" font-size="14">Bidirectional charger. Backup power</text>
 <g class="icon s-muted" stroke-width="2.25" transform="translate(176 426) scale(0.666667)" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></g>
-<text class="w6 c-ink" x="200" y="439" font-size="14">Not supported on Zeekr per sources</text>
-<rect class="f-none s-line" x="200" y="449" width="95.226" height="19" rx="2" stroke-width="1"/>
-<text class="w6 c-muted" x="206" y="462.46" font-size="11" letter-spacing="0.1em">UNCONFIRMED</text>
+<text class="w6 c-ink" x="200" y="439" font-size="14">Not available on any Zeekr yet</text>
+<rect class="f-none s-line" x="200" y="449" width="62" height="19" rx="2" stroke-width="1"/>
+<text class="w6 c-muted" x="206" y="462.46" font-size="11" letter-spacing="0.1em">NOT YET</text>
 <rect class="f-none s-line" x="160" y="494" width="296" height="200" rx="2" stroke-width="1" stroke-dasharray="4 4"/>
 <text class="d w6 c-muted" x="176" y="526" font-size="24">V2G</text>
 <g class="icon s-muted" stroke-width="1.5" transform="translate(416 508) scale(1)" aria-hidden="true"><path d="M12 2v20"/><path d="M2 5h20"/><path d="M3 3v2"/><path d="M7 3v2"/><path d="M17 3v2"/><path d="M21 3v2"/><path d="m19 5-7 7-7-7"/></g>
@@ -77,8 +77,8 @@ svg.zk.zk-wide{max-width:none}
 <text class="c-muted" x="176" y="594" font-size="14">Export. Needs certified charger and network</text>
 <text class="c-muted" x="176" y="612" font-size="14">approval</text>
 <g class="icon s-muted" stroke-width="2.25" transform="translate(176 624) scale(0.666667)" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></g>
-<text class="w6 c-ink" x="200" y="637" font-size="14">Not supported on Zeekr per sources;</text>
+<text class="w6 c-ink" x="200" y="637" font-size="14">Not available on any Zeekr yet;</text>
 <text class="w6 c-ink" x="200" y="655" font-size="14">trials in Australia on other cars</text>
-<rect class="f-none s-line" x="200" y="665" width="95.226" height="19" rx="2" stroke-width="1"/>
-<text class="w6 c-muted" x="206" y="678.46" font-size="11" letter-spacing="0.1em">UNCONFIRMED</text>
+<rect class="f-none s-line" x="200" y="665" width="62" height="19" rx="2" stroke-width="1"/>
+<text class="w6 c-muted" x="206" y="678.46" font-size="11" letter-spacing="0.1em">NOT YET</text>
 </svg>

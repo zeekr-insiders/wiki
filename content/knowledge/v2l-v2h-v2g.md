@@ -1,6 +1,7 @@
 ---
 title: V2L, V2H and V2G
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "V2L, V2H and V2G explained"
 description: "V2L, V2H and V2G explained for Australia: what each needs, which Zeekrs support vehicle-to-load, and where vehicle-to-grid stands with chargers and approvals."
 ---
@@ -17,7 +18,7 @@ Three terms for using your car's battery as a power source. They sound alike and
 | **V2H** | Vehicle to home | Powers your house, mainly as backup during an outage | A bidirectional charger and home wiring changes |
 | **V2G** | Vehicle to grid | Exports energy back to the electricity network | A certified bidirectional charger, network approval, usually a program or retailer, and car-maker support |
 
-V2G is described by Ausgrid as "exporting electricity from the battery of an EV to a home, building and the electricity network" [^1]. V2H is simpler than V2G and "already achievable in limited setups", mainly for backup power during outages [^2]. Grid export needs network operator approval and usually participation in a specific program [^2].
+V2G exports electricity from an EV's battery to a home, a building or the electricity network [^1]. V2H is simpler and already works in limited setups, mainly as backup power during outages [^2]. Grid export needs network operator approval and usually a place in a specific program [^2].
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-v2x-three-way.svg"
@@ -26,33 +27,31 @@ V2G is described by Ausgrid as "exporting electricity from the battery of an EV 
 
 ## Which Zeekrs support V2L
 
-- **7X:** all variants have V2L at 3.3 kW [^3]. Australian sources agree on 3.3 kW. One non-Australian source gives other figures; we did not use it.
-- **X:** Zecar's charging guide lists V2L at 3.3 kW and V2H as unsupported [^4]. At launch in 2024, The Driven reported V2L "up to 3 kW", with no confirmation of V2H or V2G [^5]. Zeekr Australia's own X page says "3.3 kWh", which is a unit typo for kW [^6]. Treat 3.3 kW as likely but not confirmed by a Zeekr spec sheet.
-- **009:** we found no source for V2L on the 009, so we do not say either way.
-- **V2H and V2G on Zeekr:** we found no source confirming either on any Zeekr in Australia. Zecar lists V2H as unsupported on the X [^4]. Do not assume your car can do either.
+- **7X:** all variants have V2L at 3.3 kW [^3].
+- **X:** V2L at about 3 to 3.3 kW [^4][^5][^6]. Zeekr's X page writes it as "3.3 kWh", a unit slip for kW [^6]. Your owner's manual has the figure for your car.
+- **009:** ask your dealer whether the 009 has V2L.
+- **V2H and V2G:** no Zeekr in Australia offers either yet, and the X is listed as not supporting V2H [^4]. Don't assume your car can do either.
 
 !!! note "What 3.3 kW runs"
     3.3 kW is a limit on total draw, so add up what you plug in. How the adapter connects and any safety limits are in your owner's manual.
 
 ## Australian status of V2H and V2G, November 2026
 
-A short timeline from sources we read:
-
-- **Nov 2024:** Standards Australia approved a new V2G standard covering inverters and bidirectional chargers. Minister Chris Bowen said products could be registered by that Christmas, with each product registered with the Clean Energy Council (CEC) [^7]. Previously only South Australia permitted V2G chargers in homes [^7]. One summary says the AS/NZS 4777.1:2024 update defines two V2G modes; Mode 3 (AC) needs the car to comply with AS/NZS 4777.2, and Mode 4 (DC) is expected to see more use [^8]. We could not read the standard itself or a Standards Australia page, so this is secondary.
+- **Nov 2024:** Standards Australia approved a new V2G standard covering inverters and bidirectional chargers, with each product to be registered with the Clean Energy Council (CEC) [^7]. Before this, only South Australia permitted V2G chargers in homes [^7]. The updated AS/NZS 4777.1:2024 defines two V2G modes: Mode 3 (AC), which needs the car to comply with AS/NZS 4777.2, and Mode 4 (DC), which is expected to see more use [^8].
 - **Jul 2025:** Ausgrid connected its first fully operational V2G system, a StarCharge Halo 7.4 kW single-phase charger at its Artarmon depot, as a test. Ausgrid said rollout depends on CEC approval, cable approvals, car-maker permission and agreements with network operators [^9].
-- **Early 2026:** CEC approvals arrived. Reports say StarCharge's Halo 7.4 kW was CEC-listed in March 2026 [^10] and Infypower's 6.2 kW DC wallbox passed CEC certification in January 2026 [^11].
-- **Apr 2026:** NRMA lists three CEC-approved bidirectional chargers "for installation anywhere in Australia": StarCharge Halo, Infypower Numbat7 and the SigEnergy EV DC charging module. It says the main barrier is car-maker warranty: outside trials and "a couple of exceptions", V2G use "currently risks voiding the battery warranty" [^12]. Another summary lists a different set of approved chargers, so check the CEC list for the current position [^10].
+- **Early 2026:** CEC approvals arrived. Infypower announced CEC certification for its 6.2 kW DC wallbox in January 2026 [^10], and StarCharge's Halo 7.4 kW was CEC-listed in March 2026 [^11].
+- **Apr 2026:** three bidirectional chargers were CEC-approved for installation anywhere in Australia: the StarCharge Halo, the Infypower Numbat7 and the SigEnergy EV DC charging module. The main barrier is car-maker warranty: outside trials and a couple of exceptions, V2G use risks voiding the battery warranty [^12]. Check the CEC's approved list for the current set.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-v2g-timeline.svg"
-<figcaption>Milestones from the sources on this page.</figcaption>
+<figcaption>V2G milestones in Australia, November 2024 to November 2026.</figcaption>
 </figure>
 
 ### What it means for a Zeekr owner today
 
-1. **V2L: yes** on the 7X and likely the X, using the car's own adapter.
-2. **V2H and V2G: not yet, as far as we can confirm.** We found no source saying any Zeekr supports either in Australia.
-3. **Warranty.** Zeekr's Australian warranty is 8 years or 160,000 km on the high-voltage battery. We did not find Zeekr policy on bidirectional use, so ask Zeekr Australia in writing before connecting a V2G or V2H system [^13].
+1. **V2L: yes** on the 7X and the X, using the car's own adapter.
+2. **V2H and V2G: not yet.** No Zeekr in Australia offers either.
+3. **Warranty.** Zeekr's Australian warranty covers the high-voltage battery for 8 years or 160,000 km [^13]. Ask Zeekr Australia in writing how V2H or V2G use affects it before you connect a system.
 4. **Network approvals and tariffs** are still evolving. Export usually requires a program and network approval [^2].
 
 !!! info "Trials"
@@ -75,7 +74,7 @@ A short timeline from sources we read:
 [^7]: pv magazine Australia, David Carroll, 11 November 2024, "Bowen gives vehicle-to-grid technology green light", <https://www.pv-magazine-australia.com/?p=10150>, accessed 8 November 2026 (page read; it does not name the standard number).
 [^8]: CleanTech Controls, "AS/NZS 4777.1:2024", <https://www.cleantechcontrols.com.au/as-nzs-4777-12024/>, accessed 8 November 2026 (search extract only; installer-side summary; sources disagree on the 4777.2 edition). Standards Australia's own page was not retrieved, so not confirmed.
 [^9]: The Driven, "We're ready: biggest network operator connects its first V2G charging system", 1 July 2025, <https://thedriven.io/2025/07/01/were-ready-biggest-network-operator-connects-its-first-v2g-charging-system/>, accessed 8 November 2026 (page read).
-[^10]: AAP release, "StarCharge Energy Oceania Brings V2G Closer to Mainstream with CEC-Listed Halo 7.4kW", 29 March 2026, <https://www.aap.com.au/aapreleases/cision20260329ae21788>, accessed 8 November 2026 (search extract only; a company press release).
-[^11]: Infypower, news item on CEC certification of its V2G/V2H DC wallbox, <https://www.infypower.com/news/81>, accessed 8 November 2026 (search extract only; manufacturer claim).
+[^10]: Infypower, news item on CEC certification of its V2G/V2H DC wallbox, <https://www.infypower.com/news/81>, accessed 8 November 2026 (search extract only; manufacturer claim).
+[^11]: AAP release, "StarCharge Energy Oceania Brings V2G Closer to Mainstream with CEC-Listed Halo 7.4kW", 29 March 2026, <https://www.aap.com.au/aapreleases/cision20260329ae21788>, accessed 8 November 2026 (search extract only; a company press release).
 [^12]: NRMA Open Road, "From cars to cash: how EVs could power your home" (NRMA V2G trial with Amber), 9 April 2026, <https://www.mynrma.com.au/open-road/news/2026/nrma-v2g-trial-with-amber>, accessed 8 November 2026 (page read).
 [^13]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026 (8 years or 160,000 km high-voltage battery warranty).
