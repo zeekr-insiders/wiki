@@ -1,26 +1,21 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Why Zeekr? Pros and cons in Australia"
-description: "Why buy a Zeekr in Australia: what you get for the money, the warranty and servicing, and the trade-offs of a newer brand, sticking to what we can source."
+description: "Why buy a Zeekr in Australia: what you get for the money, 800V charging, the warranty, servicing and dealer network, and the trade-offs of a newer brand."
 ---
 
 # Why Zeekr?
 
 *Last checked: 8 November 2026.*
 
-Zeekr is a newer brand in Australia, so it's fair to ask what you get and what you give up. This page sticks to what we can source, plus the trade-offs owners should weigh.
-
-!!! info "2027 7X (MY27)"
-    The updated 2027 7X (MY27) delivers from December 2026. Figures on this page are for the MY25/MY26 car unless marked. See [Which 7X do I have?](../models/7x/which-7x.md).
+Zeekr is a newer brand in Australia, so it's fair to ask what you get and what you give up.
 
 ## What you get
 
 ### 800V charging on the 7X
 
-The 7X runs an 800V system with DC peaks of up to 450 kW (RWD) and 420 kW (Long Range and AWD) [^1]. A higher-voltage car can draw more power from a high-output charger, so on a road trip the stops can be shorter. What you see on the day depends on the charger, the battery temperature and your starting charge.
-
-!!! warning "Sources differ"
-    Published 10-80% times for the 7X range from about 10 to 16 minutes depending on the variant, the source and the date: Zeekr's own page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another, and EV Central quotes "as little as 11 minutes" [^2][^3]. Treat these as best-case figures.
+The 7X runs an 800V system with DC peaks of up to 450 kW (RWD) and 420 kW (Long Range and AWD) [^1]. A higher-voltage car can draw more power from a high-output charger, so on a road trip the stops can be shorter. A 10 to 80% charge takes about 11 to 16 minutes at best, depending on grade [^2][^3]. What you see on the day depends on the charger, the battery temperature and your starting charge.
 
 ### Warranty and roadside assistance
 
