@@ -16,7 +16,7 @@ The 009 is serviced every **12 months or 20,000 km**, whichever comes first [^1]
 
 ## What each service includes
 
-Zeekr Australia doesn't publish the 009's service list online. Zeekr's official schedules for Malaysia and Singapore, on the same 12-month or 20,000 km interval, follow this pattern [^6][^7]:
+Zeekr Australia doesn't publish the 009's service list online. Zeekr's schedules for Malaysia and Singapore, on the same 12-month or 20,000 km interval, follow this pattern [^6][^7]:
 
 | Service | Replaced |
 | :--- | :--- |
@@ -24,7 +24,7 @@ Zeekr Australia doesn't publish the 009's service list online. Zeekr's official 
 | Every 2 years or 40,000 km | Brake fluid and reduction gear oil (front on FWD, front and rear on AWD) |
 | Every 4 years or 80,000 km | Coolant |
 
-These are not Australian schedules, so treat them as a guide to what your dealer will do, not a promise. The Singapore manual halves the brake fluid and cabin filter intervals in harsh conditions such as dust, hilly or humid areas and extreme temperatures [^7].
+They are a guide to what your dealer will do, not an Australian promise. The Singapore manual halves the brake fluid and cabin filter intervals in harsh conditions such as dust, hilly or humid areas and extreme temperatures [^7].
 
 Neither schedule lists a separate air suspension item, tyre rotation, wiper blades, an air-conditioning regas or a key fob battery [^6][^7]. If you want the air suspension or a tyre rotation looked at, ask when you book.
 
