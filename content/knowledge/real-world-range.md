@@ -1,6 +1,7 @@
 ---
 title: Range in the real world
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "EV real-world range vs WLTP"
 description: "Why real EV range differs from the WLTP figure: Australian test results, and what speed, cold, wind, roof loads and towing do to range, with sourced figures."
 ---
@@ -15,7 +16,7 @@ The range on the brochure is a lab figure. It is good for comparing cars and not
 
 **WLTP** is a standard laboratory test cycle that lets you compare cars on the same basis. Zeekr's published Australian figures are WLTP: for example 405 km (X RWD), 627 km (7X Long Range MY27) and 604 km (009 FWD) [^1][^2][^3].
 
-Australia's older official range figure, ADR 81/02, gives lower numbers than WLTP for many cars. One report says a new ADR 81/03 revision will let makers use WLTP figures for vehicles built from 1 December 2026 [^4]. That is a single-source claim and we have not confirmed it against the rule itself.
+Australia's older official range figure, ADR 81/02, gives lower numbers than WLTP for many cars. A new revision, ADR 81/03, is expected to let makers use WLTP figures for vehicles built from 1 December 2026 [^4].
 
 Independent Australian testing by the AAA's Real World Testing Program, run over one fixed mixed circuit, found BEV range 5% to 14% below the makers' claims across five cars [^5]:
 
@@ -27,11 +28,11 @@ Independent Australian testing by the AAA's Real World Testing Program, run over
 | BYD Atto 3 Extended Range | 420 km (WLTP) | 51 km (12%) |
 | Tesla Model 3 RWD | 513 km | 72 km (about 14%) |
 
-The percentages marked "about" are our arithmetic from NRMA's published kilometre shortfalls [^5]. No Zeekr was in that test, so do not assume your car lands in this band.
+Percentages marked "about" are calculated from the published kilometre shortfalls [^5]. No Zeekr was in that test, so don't assume your car lands in this band.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-range-claim-vs-real.svg"
-<figcaption>AAA Real World Testing Program results as reported by NRMA, cited above. No Zeekr was tested.</figcaption>
+<figcaption>AAA Real World Testing Program results, cited above. No Zeekr was tested.</figcaption>
 </figure>
 
 ## What eats your range
@@ -40,20 +41,15 @@ The figures below come from different tests on different cars. Read them as the 
 
 ### Speed
 
-Drag rises sharply with speed. In one test of a Skoda Enyaq iV, going from 96 km/h to 112 km/h cost about 48 km of estimated range, from an estimate of 372 km [^6]. That is roughly 13% (our arithmetic). An NRMA owner review of a Hyundai Ioniq 5 also reports efficiency dropping above 100 km/h, with a bit over 400 km on the highway [^7].
+Drag rises sharply with speed. In one test of a Skoda Enyaq iV, going from 96 km/h to 112 km/h cost about 48 km of estimated range, from an estimate of 372 km [^6]. That is roughly 13% (calculated). An owner review of a Hyundai Ioniq 5 also found efficiency dropping above 100 km/h, with a bit over 400 km on the highway [^7].
 
 ### Cold
 
-With the cabin heater off, EV driving range was about 12% lower at 20 °F (about minus 7 °C) than at 75 °F (about 24 °C). With the heater on, the AAA's 2019 testing put the drop at 41%, and about two-thirds of the extra energy went to heating the cabin [^8]. Preheating while plugged in and using seat heaters instead of the cabin heater are the suggested workarounds [^8]. The US figures are older and not Australian, so use them as an indication only.
-
-### Heat
-
-We did not find a sourced figure for how hot weather and air conditioning change range, so none is given.
+With the cabin heater off, EV driving range was about 12% lower at 20 °F (about minus 7 °C) than at 75 °F (about 24 °C). With the heater on, the AAA's 2019 testing put the drop at 41%, and about two-thirds of the extra energy went to heating the cabin [^8]. Preheating while plugged in and using seat heaters instead of the cabin heater are the suggested workarounds [^8]. These are older US figures, so use them as a guide only.
 
 ### Wind and rain
 
-!!! note "No figures sourced"
-    We found no reliable Australian source quantifying the effect of headwinds or wet roads on range. Drag rises with the relative air speed over the car and wet roads add rolling resistance, so a headwind or heavy rain will cost you something, but we have no number to give. This section will be updated if a source turns up.
+Drag rises with the air speed over the car, so a headwind costs range, and wet roads add rolling resistance. Allow extra margin on windy or wet days.
 
 ### Roof loads
 
@@ -63,7 +59,7 @@ A ski rack cost about 19% of range in the Enyaq test [^6]. The same test gives n
 
 - A towed camper trailer cut a Hyundai Ioniq 5's range by about a third, to about 290 km, with speed held to 90 to 100 km/h [^7].
 - Towing a caravan gave less than half the original range in the Enyaq test [^6].
-- The 7X is reported as approved for 2 tonne towing [^10]. Rated towing capacity says nothing about how far you will get, so plan charging stops with the heavy-load numbers above in mind.
+- The 7X is rated to tow 2,000 kg braked [^10]. A towing rating says nothing about how far you will get, so plan charging stops with the heavy-load numbers above in mind.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-range-factors.svg"

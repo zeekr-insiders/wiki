@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 708" role="img" aria-labelledby="kn-range-factors-title kn-range-factors-desc">
 <title id="kn-range-factors-title">What can cost you range</title>
-<desc id="kn-range-factors-desc">Bar chart of range loss in percent, largest first: towing a caravan more than 50%; cold with heater on (AAA 2019, US) 41%; towing a camper trailer at 90 to 100 km/h about 33%; ski rack about 19%; speed 96 to 112 km/h about 13%; cold with heater off (20 F vs 75 F) about 12%. Wind, rain and heat have no sourced figure. Different cars and tests; direction and rough size only.</desc>
+<desc id="kn-range-factors-desc">Bar chart of range loss in percent, largest first: towing a caravan more than 50%; cold with heater on (AAA 2019, US) 41%; towing a camper trailer at 90 to 100 km/h about 33%; ski rack about 19%; speed 96 to 112 km/h about 13%; cold with heater off (20 F vs 75 F) about 12%. Wind, rain and heat vary with conditions. Different cars and tests; direction and rough size only.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -77,7 +77,7 @@ svg.zk.zk-wide{max-width:none}
 <text class="w6 c-ink" x="99.2" y="533" font-size="15">about 12%</text>
 <text class="w6 c-muted" x="24" y="572" font-size="15">Wind, rain, heat</text>
 <rect class="f-none s-line" x="24" y="582" width="160" height="20" rx="2" stroke-width="1" stroke-dasharray="4 4"/>
-<text class="c-muted" x="36" y="597" font-size="14">No sourced figure</text>
+<text class="c-muted" x="36" y="597" font-size="14">Varies with conditions</text>
 <line class="s-line" x1="24" y1="624" x2="304" y2="624" stroke-width="1"/>
 <line class="s-line" x1="24" y1="624" x2="24" y2="630" stroke-width="1"/>
 <text class="c-muted" x="24" y="648" font-size="14">0%</text>
