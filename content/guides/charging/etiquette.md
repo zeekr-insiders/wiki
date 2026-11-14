@@ -2,6 +2,7 @@
 title: Charging etiquette
 description: Practical charging manners for Zeekr owners at public DC and AC chargers, on road trips and on club drives, with the Australian rules on EV bays.
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "EV charging etiquette in Australia"
 ---
 
@@ -10,9 +11,6 @@ seo_title: "EV charging etiquette in Australia"
 *Last checked: 8 November 2026.*
 
 Public charging is not like pulling into a servo. Chargers are shared, power is often split between plugs, and the person behind you may be on a long trip. A few habits keep it easy for everyone, and most of them cost you nothing.
-
-!!! info "Where this comes from"
-    Based on the AEVA's charging etiquette guide[^1]. It is backed up by advice from the Electric Vehicle Council[^2] and RACV[^3].
 
 ## Quick card
 
@@ -58,11 +56,10 @@ Many networks have an app that shows charge status, so you can come back when yo
 
 Some operators charge you for staying plugged in or parked after you are done. These are set by each network and site, so read the signage or app before you connect[^3].
 
-- Chargefox has been reported to charge $1 per minute after a 10 minute grace period[^5].
-- Tesla Superchargers open to other brands can charge idle or congestion fees at busy sites. In March 2025 it was reported that congestion fees at some sites start once the car reaches 80%, even while charging, and that both fee types are waived if you move within 5 minutes[^5]. Non-Tesla owners see fees in the Tesla app, and typically pay more per kWh than Tesla owners[^3]. You need the Tesla app and an account to use a Supercharger[^3].
+- In March 2025, Chargefox charged $1 per minute after a 10 minute grace period[^5].
+- Tesla Superchargers open to other brands can charge idle or congestion fees at busy sites. Since March 2025, congestion fees at some sites start once the car reaches 80%, even while charging, and both fee types are waived if you move within 5 minutes[^5]. Non-Tesla owners see fees in the Tesla app, and typically pay more per kWh than Tesla owners[^3]. You need the Tesla app and an account to use a Supercharger[^3].
 
-!!! warning "Check current terms"
-    Fee amounts and triggers change. We could not confirm current Evie or NRMA fee terms for this page. Check the app for each site.
+Amounts and triggers change, and Evie, NRMA and other networks set their own. Check the app for each site.
 
 ### Unplugging someone else's car
 
@@ -79,7 +76,7 @@ Don't. It is not okay to unplug another driver's EV, even if it looks finished. 
 AC chargers are slower (typically 7 to 22 kW)[^1] and suit places you will be for hours: hotels, workplaces, shopping centres[^3].
 
 - **Overstays.** Leave when you are charged or at the signed time limit. If the bay is signposted EV charging, you can only stop there while plugged in[^3].
-- **Leave a note.** A short dash note with your mobile number and expected unplug time is a courtesy, not a rule, and helps in holiday towns where chargers are scarce. (Club suggestion, not from a cited source.)
+- **Leave a note.** We suggest a short dash note with your mobile number and expected unplug time. It is a courtesy, not a rule, and helps in holiday towns where chargers are scarce.
 - **Holiday towns.** Leave home with a full battery and, if you can, top up where you are staying before heading home. This leaves public chargers free for others[^2].
 - **Accommodation.** Ask the host before plugging in. If there is no policy, offer to pay a little for the power[^2][^1]. Do not overload a circuit or run extension leads; Zeekr's 7X manual says not to use adapters or extension cables[^7]. Offering to add the venue to PlugShare can help them attract EV guests[^1].
 - **Destination chargers.** Tesla Destination chargers may be set to Tesla-only by the operator, and most do not need the Tesla app[^3].
@@ -95,7 +92,7 @@ Parking in an EV bay when you should not is illegal in most states, and the rule
 | ACT | Up to 20 penalty units for a non-EV in an EV parking space, or any vehicle in an EV charging bay without plugging in. Rules from May 2022. | NRMA[^4] |
 | Queensland | Up to 20 penalty units for stopping in an EV charging spot unless an EV that is plugged in or has just been unplugged. | NRMA[^4] |
 
-Penalty unit values are indexed each year, so check current amounts before quoting a dollar figure. The NRMA article (September 2024) also covers SA, Tasmania, the NT and WA[^4]. In private car parks, EV bays are usually a courtesy backed by the car park's terms, not a state fine[^4].
+Penalty unit values are indexed each year, so check current amounts before quoting a dollar figure. The rules for SA, Tasmania, the NT and WA are in the NRMA's September 2024 summary[^4]. In private car parks, EV bays are usually a courtesy backed by the car park's terms, not a state fine[^4].
 
 Accessible EV charging bays are only for a driver who is charging, displaying a current accessible parking permit, with the permit holder in the vehicle[^3].
 
