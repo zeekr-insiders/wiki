@@ -1,7 +1,7 @@
 ---
 models: ["7gt"]
 title: Zeekr 7GT specifications
-description: Zeekr 7GT specifications for Australia: battery, power, WLTP range, DC charging, size, boot and safety for each grade, ahead of first deliveries in 2027.
+description: "Zeekr 7GT specifications for Australia: battery, power, WLTP range, DC charging, size, boot and safety for each grade, ahead of first deliveries in 2027."
 last_checked: 2026-11-08
 seo_title: "Zeekr 7GT specs (reported)"
 changelog: "Rewritten in plain style"
