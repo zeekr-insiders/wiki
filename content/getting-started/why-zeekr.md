@@ -38,7 +38,7 @@ Zeekr lists 17 sales sites across ACT, NSW, QLD, SA, VIC and WA [^6]. Not every 
 
 ### Servicing
 
-Service intervals depend on the model and model year. The MY26 X is serviced every 12 months or 20,000 km [^7]. For the 7X, published sources disagree, so check your service booklet. Each model's service schedule page has the detail:
+Service intervals depend on the model and model year. The MY26 X is serviced every 12 months or 20,000 km [^7]. The MY25/MY26 7X needs a manufacturer service every 2 years or 40,000 km, with optional health checks every year or 20,000 km [^8]. Each model's service schedule page has the detail:
 [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md), [009](../models/009/service-schedule.md).
 
 ## The trade-offs
@@ -69,3 +69,4 @@ A Zeekr is worth a look if you want an EV with fast DC charging (the 7X), a long
 [^5]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
 [^6]: Zeekr Australia, "Find a dealer", <https://www.zeekrlife.com/en-au/find-us>, accessed 8 November 2026.
 [^7]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
+[^8]: The Driven, "Zeekr 7X first drive: a beast on the track, and a surprise off-roader", 22 September 2025, <https://thedriven.io/2025/09/22/zeekr-7x-first-drive-a-beast-on-the-track-and-a-surprise-off-roader/>, accessed 15 November 2026.
