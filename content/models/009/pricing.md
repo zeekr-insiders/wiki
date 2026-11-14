@@ -33,7 +33,7 @@ Cars used for rental, rideshare, taxi, courier, bus or tour operations are exclu
 
 ## Servicing
 
-See the [009 servicing and warranty page](service-schedule.md). The service interval is not yet confirmed.
+See the [009 servicing and warranty page](service-schedule.md) for the service interval, what each service includes and the capped price.
 
 ## Sources
 

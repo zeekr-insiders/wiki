@@ -30,18 +30,18 @@ Roadside is Zeekr's own service, not a motoring club membership, and runs for 5 
 
 ## Check your service interval
 
-The 7X interval is disputed in published reports (12 months/20,000 km or 24 months/40,000 km), so look it up in your booklet now rather than when the first service is due. The X (MY26) is 12 months/20,000 km. See the service pages for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md).
+The MY25/MY26 7X needs a manufacturer service every 2 years or 40,000 km, with optional health checks every year or 20,000 km [^4]. Look it up in your booklet now rather than when the first service is due. The X (MY26) is 12 months/20,000 km. See the service pages for the [7X](../models/7x/2025/service-schedule.md), [X](../models/x/2025/service-schedule.md) and [009](../models/009/service-schedule.md).
 
 ## Charging at home
 
-- Plug the portable charger straight into a suitable wall socket. The 7X manual says not to use any adapters, extension cables or multiple ports [^4]. If the socket is too far away or not up to it, get a licensed electrician to install a dedicated outlet or a wallbox.
-- MY27 launch-offer wallboxes are supply only; installation is at your cost [^5].
+- Plug the portable charger straight into a suitable wall socket. The 7X manual says not to use any adapters, extension cables or multiple ports [^5]. If the socket is too far away or not up to it, get a licensed electrician to install a dedicated outlet or a wallbox.
+- MY27 launch-offer wallboxes are supply only; installation is at your cost [^6].
 - More in [home charging](../guides/charging/home-setup.md).
 - Before your first public charge, read [charging etiquette](../guides/charging/etiquette.md).
 
 ## Settings worth knowing (7X)
 
-These are from a 7X manual (Netherlands edition, unofficial mirror), so the Australian car may differ [^6]:
+These are from a 7X manual (Netherlands edition, unofficial mirror), so the Australian car may differ [^7]:
 
 - **Driver drowsiness and distraction alerts** are on by default. Each can be turned off under Settings > Safety & Service > Safety, or from the swipe-down menu.
 - **Over-speed alert** warns at about 1 km/h over the limit and is back on at the start of every journey. Change it under Settings > Zeekr AD > Driving assist > Over speed alert; the audible alert can be turned off from the swipe-down menu.
@@ -58,6 +58,7 @@ Club drives run across the country. See the [Drives page](https://zeekrinsiders.
 [^1]: Zeekr Australia, "Service and Warranty", <https://www.zeekrlife.com/en-au/service>, accessed 8 November 2026.
 [^2]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
 [^3]: Zeekr, "New Vehicle Roadside Assistance Program: Terms and Conditions", <https://www.datocms-assets.com/130529/1781067092-zeekr-roadside-assistance-t-c-s.pdf>, accessed 8 November 2026.
-[^4]: Zeekr 7X Manual (mirror), "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
-[^5]: ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
-[^6]: Zeekr 7X Manual (unofficial mirror of the 2025 Long Range RWD, Netherlands edition), <https://zeekr-manual.pages.dev/>, accessed 8 November 2026.
+[^4]: The Driven, "Zeekr 7X first drive: a beast on the track, and a surprise off-roader", 22 September 2025, <https://thedriven.io/2025/09/22/zeekr-7x-first-drive-a-beast-on-the-track-and-a-surprise-off-roader/>, accessed 15 November 2026.
+[^5]: Zeekr 7X Manual (mirror), "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
+[^6]: ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
+[^7]: Zeekr 7X Manual (unofficial mirror of the 2025 Long Range RWD, Netherlands edition), <https://zeekr-manual.pages.dev/>, accessed 8 November 2026.
