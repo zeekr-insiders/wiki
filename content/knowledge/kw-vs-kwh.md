@@ -1,6 +1,7 @@
 ---
 title: kW vs kWh
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "kW vs kWh explained for EV owners"
 description: "kW vs kWh explained: the difference between power and energy, where you see each on a Zeekr, and the two sums every EV owner needs for charge time and cost."
 ---
@@ -36,14 +37,14 @@ The 7X also has vehicle-to-load output rated in kW (3.3 kW), covered in [V2L, V2
 
 ## The two sums
 
-**Charge time** = energy needed (kWh) divided by power (kW). A flat battery to full on a 7 kW charger for a 75 kWh pack is 75 / 7, about 10.7 hours, before charging losses. Real sessions run a little longer because some energy is lost as heat and the charge slows near full; we have not sourced a loss figure, so allow some margin. The full table is in [Home charging explained](home-charging.md).
+**Charge time** = energy needed (kWh) divided by power (kW). A flat battery to full on a 7 kW charger for a 75 kWh pack is 75 / 7, about 10.7 hours, before charging losses. Real sessions run longer because some energy is lost as heat and the charge slows near full, so allow some margin. The full table is in [Home charging explained](home-charging.md).
 
 **Running cost** = energy used (kWh) times your price per kWh. For example, adding 60 kWh at 15c/kWh costs $9. That rate is an example, not a quote; read your own bill.
 
-**Range added** = power (kW) divided by consumption (kWh per 100 km), times 100, per hour. RACV gives the ballpark of what that looks like: 7 kW single-phase adds about 35 to 40 km of range per hour, and up to 22 kW three-phase about 50 to 130 km per hour [^7].
+**Range added** = power (kW) divided by consumption (kWh per 100 km), times 100, per hour. As a ballpark, 7 kW single-phase adds about 35 to 40 km of range per hour, and up to 22 kW three-phase about 50 to 130 km per hour [^7].
 
 !!! note "Do not confuse kW with kWh in specs"
-    You will see "kWh" mistakenly used for power in the wild. For example, Zeekr Australia's own X page describes its V2L as "3.3 kWh", which is almost certainly a typo for kW [^8].
+    You will see "kWh" mistakenly used for power in the wild. For example, Zeekr Australia's X page gives its V2L as "3.3 kWh", a slip for kW [^8].
 
 ## Related
 
