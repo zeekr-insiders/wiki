@@ -1,5 +1,6 @@
 ---
 models: ["7x"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr 7X owner tips and settings"
 description: "Zeekr 7X owner tips: practical settings and habits other owners recommend, starting with audio and EQ settings for a fuller sound, each with its source."
@@ -13,7 +14,7 @@ Practical settings and habits other 7X owners recommend, each with its source or
 
 ## Optimising 7X audio settings
 
-**Applies to:** MY25/MY26 7X. **Last confirmed:** 8 November 2026, against the video [^1].
+**Applies to:** MY25/MY26 7X.
 
 Some owners find the default audio a little flat and recommend this walkthrough, which sets the EQ and sound settings for a fuller sound. The settings themselves are in the video [^1].
 
