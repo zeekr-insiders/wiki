@@ -1,5 +1,6 @@
 ---
 models: ["7x"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr 7X owner modifications"
 description: "Zeekr 7X modifications owners ask about, such as dashcams, screen protectors and mud flaps, and how unapproved changes can affect your Zeekr warranty."
@@ -19,10 +20,10 @@ Mods owners have asked about. Anything that touches the car's wiring can affect 
 **Applies to:** all 7X.
 
 - **MY27:** every grade has a built-in digital video recorder (DVR) that uses the car's own cameras, records while driving and monitors the car while parked [^2][^3]. Where it stores footage has not been published.
-- **MY25/MY26:** no source we found says the launch car has a built-in dashcam, or that one can be added by software update [^2][^4].
+- **MY25/MY26:** the launch car isn't listed with a built-in dashcam, and Zeekr hasn't announced one by software update [^2][^4].
 
 !!! warning "Hardwiring an aftermarket dashcam"
-    We do not publish fuse positions for a hardwired install. We have not found a reliable source for the 7X fuse layout, and tapping the wrong circuit can damage the car or put your warranty at risk [^1]. Use a plug-in dashcam, or have an auto electrician who knows the car do the install and ask your dealer first.
+    We don't publish fuse positions for a hardwired install: tapping the wrong circuit can damage the car or put your warranty at risk [^1]. Use a plug-in dashcam, or have an auto electrician who knows the car do the install, and ask your dealer first.
 
 ## Screen protector
 
