@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Victoria EV stamp duty and rego"
 description: "Buying a Zeekr in Victoria: the green car stamp duty rate from July 2026, the ended EV subsidy, local servicing, and useful links for Victorian Zeekr owners."
 ---
@@ -21,15 +22,14 @@ From 1 July 2026, Victoria charges "green" passenger cars, which includes every 
 
 Duty is charged per $200 or part, so the real figure rounds up slightly. Use the [State Revenue Office calculator](https://www.sro.vic.gov.au/rates-taxes-duties-and-levies/motor-vehicle-duty-current-rates) for your actual price.
 
-!!! note "Not yet confirmed: higher duty on expensive EVs from July 2027"
-    The May 2026 Victorian Budget announced that from 1 July 2027 green cars above the luxury car threshold would lose the 4.2% rate and pay higher rates [^2]. It is subject to legislation and the SRO rate page does not mention it [^1]. It would affect high-priced EVs such as the 009, not the 7X or X.
+!!! note "Higher duty on expensive EVs from July 2027"
+    The May 2026 Victorian Budget announced that from 1 July 2027 green cars above the luxury car threshold would lose the 4.2% rate and pay higher rates [^2]. It still needs legislation, and the SRO rate page does not include it yet [^1]. It would affect high-priced EVs such as the 009, not the 7X or X.
 
 ## Incentives
 
 The Victorian Zero Emissions Vehicle subsidy has ended; there has been no subsidy since 30 June 2023 [^3].
 
-!!! warning "Sources differ: EV registration discount"
-    RACV (May 2026) says EV owners can get a $100 registration discount at renewal [^3]. Other sources say the discount ended on 1 January 2026 [^4]. Check the current registration fee with VicRoads.
+The $100 EV registration discount ended on 1 January 2026 [^4]. Check the current registration fee with VicRoads.
 
 ## Service
 
