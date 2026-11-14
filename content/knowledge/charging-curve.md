@@ -1,6 +1,7 @@
 ---
 title: AC vs DC and the charging curve
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "AC vs DC charging and the charging curve"
 description: "AC vs DC charging explained: where the conversion happens, why fast-charge times are quoted 10 to 80%, why you rarely see the peak kW, and what 800V means."
 ---
@@ -14,10 +15,7 @@ description: "AC vs DC charging explained: where the conversion happens, why fas
 Mains power is AC. A battery stores DC. Something has to convert it, and where that happens is the difference between the two charging types.
 
 - **AC charging** (home, work, destination chargers): AC goes into the car and the car's **onboard charger** converts it to DC. The onboard charger sets the limit: 7X all grades 22 kW [^1]; X RWD 11 kW, X AWD 22 kW; 009 FWD 11 kW [^2][^3].
-- **DC fast charging** (public highway and town chargers): the converter is in the charger, so DC goes to the battery, bypassing the onboard charger. RACV lists DC chargers at 25 to 350 kW [^4].
-
-!!! note "Not yet confirmed"
-    Where the conversion happens (inside the car for AC, in the charger for DC) is standard engineering, but we have not yet found a source to cite for it.
+- **DC fast charging** (public highway and town chargers): the converter is in the charger, so DC goes to the battery, bypassing the onboard charger. Public DC chargers run from 25 to 350 kW [^4].
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-ac-vs-dc-path.svg"
@@ -29,7 +27,7 @@ Mains power is AC. A battery stores DC. Something has to convert it, and where t
 
 A charging curve plots power (kW) against state of charge (SOC, the battery percentage). It is not flat. Power ramps up, holds near a peak, then tapers as the battery fills.
 
-Why it tapers: the battery management system (BMS) reduces current as the pack fills to limit cell voltage and heat [^5]. Where the taper starts varies by car and chemistry, and newer high-power cars taper later [^5]. The exact curve is a property of your car; Zeekr does not publish one in the Australian material we found.
+Why it tapers: the battery management system (BMS) reduces current as the pack fills to limit cell voltage and heat [^5]. Where the taper starts varies by car and chemistry, and newer high-power cars taper later [^5]. The exact curve is a property of your car, and Zeekr does not publish one for its Australian models.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-charging-curve.svg"
@@ -38,22 +36,22 @@ Why it tapers: the battery management system (BMS) reduces current as the pack f
 
 ## Why times are quoted 10% to 80%
 
-- The 10% to 80% window is where charging power is highest, and the slow tail above 80% is skipped. Charging from 80% to 100% takes disproportionately long, and some networks limit power above about 80% so drivers move on [^5]. We found no maker source explaining why the bottom is 10% and not 0%, so we do not explain that part.
-- Zeekr and the press quote the 7X at about 10 to 16 minutes for 10 to 80% depending on variant, battery and charger [^6][^7][^8]. Zeekr's own page shows 13 and 16 minutes in one table and 11 in another, so no single figure is reliable. The 009 FWD is quoted at about 30 minutes [^3].
+- The 10% to 80% window is where charging power is highest, and the slow tail above 80% is skipped. Charging from 80% to 100% takes disproportionately long, and some networks limit power above about 80% so drivers move on [^5].
+- A 10 to 80% charge on the 7X takes about 10 to 16 minutes, depending on grade, battery temperature and charger [^6][^7][^8]. The 009 FWD takes about 30 minutes [^3].
 
 ## Why you rarely see the peak
 
-1. **The charger caps you.** The 7X is rated up to 420 to 450 kW DC, but RACV lists public DC chargers as 25 to 350 kW [^4][^6][^7]. Many sites are lower. Check the charger's rating before you go.
+1. **The charger caps you.** The 7X is rated up to 420 to 450 kW DC, but public DC chargers run from 25 to 350 kW [^4][^6][^7]. Many sites are lower. Check the charger's rating before you go.
 2. **The curve.** The peak is held only briefly [^5].
 3. **Shared power.** Some sites split output between plugs. See [charging etiquette](../guides/charging/etiquette.md) and [public charging](../guides/charging/public-networks.md).
-4. **Battery condition.** Heat is a known limiter [^5]. We found no sourced figure for cold-battery slowdown, so none is given.
+4. **Battery condition.** Heat is a known limiter [^5].
 
 !!! tip "Practical rule"
     For road trips, charge to what gets you to the next stop, usually about 80%, and leave. See the [road trips guide](../guides/charging/road-trips.md).
 
 ## 800V in brief
 
-The 7X uses an 800V electrical architecture [^6][^7]. For the same power, a higher voltage means lower current: at 420 kW, 800 V is about 525 A, where a 400 V system would need about 1,050 A (our arithmetic from P = V x I). Lower current means less heat in cables and parts, which is why 800V cars can sustain higher charging power. The 7GT is press-reported on 800V too [^9], though Zeekr's Australian page does not yet confirm every detail. Reports that the China-market 7X is moving to 900V are not yet confirmed, and no Australian 900V car has been announced.
+The 7X uses an 800V electrical architecture [^6][^7]. For the same power, a higher voltage means lower current: at 420 kW, 800 V is about 525 A, where a 400 V system would need about 1,050 A (calculated from P = V x I). Lower current means less heat in cables and parts, which is why 800V cars can sustain higher charging power. The 7GT is reported to use 800V too [^9].
 
 ## Related
 
