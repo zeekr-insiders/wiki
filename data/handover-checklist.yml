@@ -17,7 +17,7 @@
 #
 # Where no source says what comes with the car, an item says "Confirm what your order includes".
 
-version: "2026.11.12"
+version: "2026.11.15"
 
 phases:
   - {id: pre, title: "Before delivery day"}
@@ -51,16 +51,24 @@ sources:
   evie: "Evie Networks, \"Evie home page (app download)\", <https://www.evie.com.au/>, accessed 8 November 2026."
   nrma: "NRMA, \"EV charging (My NRMA app, tap and pay)\", <https://www.mynrma.com.au/electric-vehicles/charging>, accessed 8 November 2026."
   jolt: "JOLT, \"JOLT Australia home page (app registration)\", <https://joltcharge.com/au/>, accessed 8 November 2026."
-  carexpert-7x-launch: "CarExpert, \"2026 Zeekr 7X price and specs\", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026."
+  carexpert-7x-launch: "CarExpert, \"2026 Zeekr 7X price and specs\", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 15 November 2026."
   nate-handover: "Nate's Tech & Torque (YouTube), \"Zeekr 7X - Detailed Delivery Handover | Infotainment, App Guide and everything you need to know!\", <https://www.youtube.com/watch?v=KlVyyYCinu4>, accessed 8 November 2026."
   zeekr-7x: "Zeekr Australia, \"Zeekr 7X\", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026."
-  carexpert-x: "CarExpert, \"2026 Zeekr X price and specs updated: EV gets massive price cuts\", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026."
+  carexpert-x: "CarExpert, \"2026 Zeekr X price and specs updated: EV gets massive price cuts\", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 15 November 2026."
   carexpert-009: "CarExpert, \"2026 Zeekr 009: Luxury EV people mover gets more affordable\", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026."
-  carexpert-7x-longterm: "CarExpert, \"2026 Zeekr 7X review: long-term conclusion (3 Nov 2026)\", <https://www.carexpert.com.au/car-reviews/2026-zeekr-7x-review-long-term-conclusion>, accessed 8 November 2026."
   brochure-7x: "Zeekr Australia, \"ZEEKR 7X Specification (brochure)\", <https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf>, accessed 12 November 2026."
   carsguide-7x: "CarsGuide, \"Zeekr 7X 2026 review: Performance\", <https://www.carsguide.com.au/family/zeekr-7x-performance-100309>, accessed 12 November 2026."
-  zeekr-offers: "Zeekr Australia, \"Zeekr Offers\", <https://www.zeekrlife.com/en-au/offers>, accessed 12 November 2026."
-  carexpert-x-2025: "CarExpert, \"2025 Zeekr X price and specs: Model Y money for Volvo EX30 twin\", <https://www.carexpert.com.au/car-news/2025-zeekr-x-price-and-specs-model-y-money-for-volvo-ex30-twin>, accessed 12 November 2026."
+  zeekr-offers: "Zeekr Australia, \"Offers: MY27 ZEEKR 7X Launch Offer\" (terms and conditions), <https://www.zeekrlife.com/en-au/offers/>, accessed 15 November 2026."
+  carexpert-x-2025: "CarExpert, \"2025 Zeekr X price and specs: Model Y money for Volvo EX30 twin\", 27 September 2024, <https://www.carexpert.com.au/car-news/2025-zeekr-x-price-and-specs-model-y-money-for-volvo-ex30-twin>, accessed 15 November 2026."
+  thedriven-7x: "The Driven, \"Zeekr 7X first drive: a beast on the track, and a surprise off-roader\", 22 September 2025, <https://thedriven.io/2025/09/22/zeekr-7x-first-drive-a-beast-on-the-track-and-a-surprise-off-roader/>, accessed 15 November 2026."
+  whirlpool-7x: "Whirlpool Forums, \"Zeekr 7X SUV\" thread, owner posts including an image of Zeekr Australia's aftersales notice on 7X servicing (<https://i.imgur.com/LBQM37a.jpeg>), <https://forums.whirlpool.net.au/thread/3rvj6xr7>, accessed 15 November 2026."
+  racv-7x: "RACV, \"2026 Zeekr 7X RWD review\", <https://www.racv.com.au/royalauto/car-reviews/zeekr/2026-zeekr-7x-rwd-review.html>, accessed 15 November 2026."
+  carexpert-7x-review: "CarExpert, \"2026 Zeekr 7X review\", 7 January 2026, <https://www.carexpert.com.au/car-reviews/2026-zeekr-7x-review>, accessed 15 November 2026."
+  drive-x-2025: "Drive, \"Zeekr has landed in Australia, will it set a new benchmark for EVs?\" (2025 Zeekr X AWD review), 4 August 2025, <https://www.drive.com.au/reviews/2025-zeekr-x-awd-review/>, accessed 15 November 2026."
+  carsales-x: "Carsales, \"Zeekr X 2026\", <https://www.carsales.com.au/research/zeekr/x/2026/>, accessed 15 November 2026."
+  carexpert-009-review: "CarExpert, \"2026 Zeekr 009 review\", 2 February 2026, <https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review>, accessed 15 November 2026."
+  thebeep-009: "The Beep, \"2026 Zeekr 009 review\", 10 March 2026, <https://thebeep.com.au/car-reviews/2026-zeekr-009-review/>, accessed 15 November 2026."
+  drive-009: "Drive, \"Zeekr is coming in hot to disrupt the luxury people mover market\" (2025 Zeekr 009 review), 10 September 2025, <https://www.drive.com.au/reviews/2025-zeekr-009-review/>, accessed 15 November 2026."
   carexpert-x-review: "CarExpert, \"2025 Zeekr X review\", <https://carexpert.com.au/car-reviews/2025-zeekr-x-review>, accessed 12 November 2026."
   carexpert-x-quick: "CarExpert, \"2026 Zeekr X review: Quick drive\", <https://carexpert.com.au/car-reviews/2026-zeekr-x-review-quick-drive>, accessed 12 November 2026."
   chasingcars-x: "Chasing Cars, \"Zeekr X 2026 drops up to $10,000 with more power and better equipment confirmed for Kia EV3, BMW iX1 rival\", <https://www.chasingcars.com.au/news/new-car-prices/zeekr-x-2026-drops-up-to-10000-with-more-power-and-better-equipment-confirmed-for-kia-ev3-bmw-ix1-rival/>, accessed 12 November 2026."
@@ -301,7 +309,7 @@ items:
   - id: pre-offer-terms
     section: pre-prep
     text: "Launch offer terms in writing"
-    hint: "The MY27 launch offer (orders 1 November to 31 December 2026, not demonstrators) lists two years of servicing, a 7 kW wallbox (supply only), free colour choice and 5,000 Zeekr app points."
+    hint: "The MY27 launch offer (orders 1 November to 31 December 2026, not demonstrators) lists the first two scheduled services free, a 7 kW wallbox (supply only), free colour choice and 5,000 Zeekr app points."
     models: ["7x-my27"]
     cite: [zeekr-offers, zecar-my27, carexpert-7x]
     links:
@@ -758,32 +766,47 @@ items:
   - id: walk-service
     section: walk
     text: "Service schedule and how to book"
-    hint: "Take the interval from your booklet."
+    hint: "Take the interval from your booklet, and ask the consultant what is inspected and replaced at each visit. Not yet confirmed: the Australian inspection list for each service."
     models: ["all"]
-  - id: walk-service-7x-my26
+    links:
+      - {label: "7X servicing", page: "models/7x/2025/service-schedule.md"}
+      - {label: "X servicing", page: "models/x/2025/service-schedule.md"}
+      - {label: "009 servicing", page: "models/009/service-schedule.md"}
+  - id: walk-service-7x-my26-health
     section: walk
-    text: "Service interval: confirm it from your booklet"
-    hint: "Reviews of the MY25/MY26 7X give both 2 years / 40,000 km and 12 months / 20,000 km. Your booklet decides."
+    text: "Service interval: every 2 years or 40,000 km, plus optional yearly health checks"
+    hint: "That's Zeekr Australia's aftersales notice for the MY25/MY26 7X: the health check is every 12 months or 20,000 km, and the notice makes the first one free. Quotes of 12 months / 20,000 km count the optional checks. Not yet confirmed: whether the year-5 check costs $300 or $330. If you plan to skip the checks, ask the dealer to confirm in writing that your warranty isn't affected."
     models: ["7x-my26"]
-    cite: [carsguide-7x, carexpert-7x-longterm]
+    cite: [thedriven-7x, whirlpool-7x, racv-7x, carexpert-7x-review]
+    link: {label: "7X servicing", page: "models/7x/2025/service-schedule.md"}
   - id: walk-service-7x-my27
     section: walk
     text: "Service interval: confirm it from your booklet"
-    hint: "The MY27 launch offer's servicing covers the 12 month / 20,000 km and 24 month / 40,000 km services."
+    hint: "MY27 orders from 1 November to 31 December 2026 get the first two scheduled services free, at 12 months / 20,000 km and 24 months / 40,000 km, within 2 years of delivery. Not yet confirmed: whether the MY27 moves to a yearly interval. Ask the dealer and check your MY27 booklet."
     models: ["7x-my27"]
     cite: [zeekr-offers]
-  - id: walk-service-x-my25
+    link: {label: "7X servicing", page: "models/7x/2025/service-schedule.md"}
+  - id: walk-service-x-my25-booklet
     section: walk
-    text: "Service interval: every 24 months or 40,000 km"
-    hint: "The MY25 X schedule. Check it against your booklet."
+    text: "Service interval: confirm it from your booklet"
+    hint: "Launch cars from September 2024 were on 24 months / 40,000 km, but Drive's August 2025 review of an MY25 X already quoted 12 months / 20,000 km. Not yet confirmed: when the change applied, so your booklet decides."
     models: ["x-my25"]
-    cite: [carexpert-x-review]
+    cite: [carexpert-x-2025, drive-x-2025]
+    link: {label: "X servicing", page: "models/x/2025/service-schedule.md"}
   - id: walk-service-x-my26
     section: walk
     text: "Service interval: every 12 months or 20,000 km"
-    hint: "The MY26 X moved to a shorter interval than the MY25. Check it against your booklet."
+    hint: "Early MY25 cars were on 24 months / 40,000 km. Check it against your booklet."
     models: ["x-my26"]
-    cite: [carexpert-x]
+    cite: [carexpert-x, carsales-x, carexpert-x-2025]
+    link: {label: "X servicing", page: "models/x/2025/service-schedule.md"}
+  - id: walk-service-009
+    section: walk
+    text: "Service interval: every 12 months or 20,000 km"
+    hint: "Early 2025 cars launched on 2 years / 40,000 km, so check your booklet. Capped-price servicing totals $4,920 over 8 years."
+    models: ["009"]
+    cite: [carexpert-009-review, thebeep-009, drive-009]
+    link: {label: "009 servicing", page: "models/009/service-schedule.md"}
   - id: walk-hud-x
     section: walk
     text: "X AWD: set up the head-up display and mirrors on the touchscreen"
