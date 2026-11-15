@@ -27,7 +27,7 @@ Mains power is AC. A battery stores DC. Something has to convert it, and where t
 
 A charging curve plots power (kW) against state of charge (SOC, the battery percentage). It is not flat. Power ramps up, holds near a peak, then tapers as the battery fills.
 
-Why it tapers: the battery management system (BMS) reduces current as the pack fills to limit cell voltage and heat [^5]. Where the taper starts varies by car and chemistry, and newer high-power cars taper later [^5]. The exact curve is a property of your car, and Zeekr does not publish one for its Australian models.
+Why it tapers: the battery management system (BMS) reduces current as the pack fills to limit cell voltage and heat [^5]. Where the taper starts varies by car and chemistry, and newer high-power cars taper later [^5]. The exact curve is a property of your car.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-charging-curve.svg"
