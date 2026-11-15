@@ -13,7 +13,7 @@ description: "Should you charge your EV to 80% or 100%? Why NMC and LFP Zeekrs g
 "Charge to 80%" is the most repeated EV rule, and it is only half right. It comes from NMC batteries. LFP batteries are usually treated differently. First check which you have: [NMC vs LFP batteries](nmc-vs-lfp.md).
 
 !!! warning "Check the manual first"
-    Zeekr Australia has not published recommended daily charge limits. The advice below is general industry practice from other makers and third parties. Where your owner's manual or the in-car charge settings say something different, follow them.
+    The advice below is general industry practice from other makers and third parties. Check your owner's manual and the in-car charge settings for your grade, and where they say something different, follow them.
 
 ## The short version
 
