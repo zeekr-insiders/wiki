@@ -35,7 +35,7 @@ A car only charges as fast as the slower of the car and the wallbox. 22 kW needs
 A standard 10 amp socket gives about 2.3 kW (230 V x 10 A). That adds roughly 2.3 kWh per hour, so a 75 kWh battery takes well over a day from empty. It's fine for topping up or for low daily mileage, not for regular full charges. See [Plugs and cables](../../knowledge/plugs-and-cables.md) for portable charger safety.
 
 !!! danger "No extension leads or adapters"
-    Zeekr's 7X owner manual (Netherlands edition) says not to use any adapters, extension cables or multiple ports of any kind when charging [^4]. Plug the portable charger straight into a suitable wall socket. If the socket is too far from where you park, or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox. Your own booklet and the portable charger's manual have the Australian instructions.
+    Zeekr's 7X owner manual (Netherlands edition) says not to use any adapters, extension cables or multiple ports of any kind when charging [^4]. Plug the portable charger straight into a suitable wall socket. If the socket is too far from where you park, or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox. Check your own booklet and the portable charger's manual as well.
 
 The same manual says the cable between the car and the charging equipment must be shorter than 30 metres, and not to use damaged cables, bundle the cable while charging, or leave it in direct sunlight, because overheating protection can slow or stop charging [^4].
 
