@@ -13,13 +13,12 @@ description: "Home EV charging explained: what single-phase and three-phase supp
 This page explains the electrical side: what your house can supply and what that means for charge times. For product choices, installers and tariffs, see the [home charging guide](../guides/charging/home-setup.md).
 
 !!! warning "Always ask a licensed electrician"
-    Whether your home can take a given charger depends on your mains cable, switchboard and local network rules. Only a licensed electrician can assess that, and all work inside your property must be done by a licensed electrical contractor [^1].
+    Whether your home can take a given charger depends on your mains cable, switchboard and local network rules. Only a licensed electrician can assess that, and Ausgrid, for one, requires all work inside your property to be done by a licensed electrical contractor [^1].
 
 ## Single-phase and three-phase
 
-- **Single-phase** is the common home supply. A 7 kW wallbox is the usual single-phase top end, adding roughly 35 to 40 km of range per hour [^2].
+- **Single-phase** is the common home supply, and many homes have nothing else. A 7 kW wallbox is the usual single-phase top end, adding roughly 35 to 40 km of range per hour [^2].
 - **Three-phase** gives up to 22 kW on AC, adding about 50 to 130 km of range per hour [^2].
-- Many homes have only single-phase.
 
 The kW figures follow from the current rating. A 32 A single-phase circuit at a nominal 230 V is about 7.4 kW; a 32 A three-phase circuit is about 22 kW; a 16 A three-phase circuit is about 11 kW (calculated from nominal supply voltages of 230 V single-phase and 400 V three-phase).
 
@@ -66,8 +65,8 @@ Quotes vary widely, so get at least two.
 Your electricity network (the distributor, or DNSP: Ausgrid, Endeavour, Energex, Ergon and so on) has rules for how big a charger you can connect. They differ by network and they are changing. In general:
 
 - Your electrician checks your supply and tells you whether the network must be notified or must approve the work. Ausgrid, for example, requires approval where the electrician identifies a need to upgrade the supply, and may ask to be notified before installation so it can assess grid impact [^1].
-- You will probably need to notify your network [^10]. Ask your electrician or network which size of charger triggers notification on your network.
-- Queensland (Energex and Ergon) has had extra rules for single-phase chargers, including network devices or limits. A dedicated 22 kW three-phase charger switched across all phases can be connected without those device options [^11]. The limit on single-phase 32 A chargers without a network device is reported to have been withdrawn from 1 October 2026 [^12]. Check the current Queensland Electricity Connection Manual (QECM) with your electrician before relying on it.
+- Most home chargers now need the network to be notified [^10]. Ask your electrician which charger size triggers notification or pre-approval where you live.
+- Queensland (Energex and Ergon) has had extra rules for single-phase chargers, including network devices or limits. Energex's 2024 material allows a dedicated 22 kW three-phase charger switched across all phases without those device options [^11]. The limit on single-phase 32 A chargers without a network device is reported to have been withdrawn from 1 October 2026 [^12]. Check the current Queensland Electricity Connection Manual (QECM) with your electrician before relying on it.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-home-approval-flow.svg"
