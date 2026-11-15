@@ -22,7 +22,7 @@ V2G exports electricity from an EV's battery to a home, a building or the electr
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-v2x-three-way.svg"
-<figcaption>Where the power goes, what each needs, and where Zeekr stands.</figcaption>
+<figcaption>Where the power goes and what each needs.</figcaption>
 </figure>
 
 ## Which Zeekrs support V2L
@@ -30,7 +30,7 @@ V2G exports electricity from an EV's battery to a home, a building or the electr
 - **7X:** all variants have V2L at 3.3 kW [^3].
 - **X:** V2L at about 3 to 3.3 kW [^4][^5][^6]. Zeekr's X page writes it as "3.3 kWh", a unit slip for kW [^6]. Your owner's manual has the figure for your car.
 - **009:** ask your dealer whether the 009 has V2L.
-- **V2H and V2G:** no Zeekr in Australia offers either yet, and the X is listed as not supporting V2H [^4]. Don't assume your car can do either.
+- **V2H and V2G:** the X is listed as not supporting V2H [^4]. For any Zeekr, ask your dealer before you plan around either.
 
 !!! note "What 3.3 kW runs"
     3.3 kW is a limit on total draw, so add up what you plug in. How the adapter connects and any safety limits are in your owner's manual.
@@ -50,7 +50,7 @@ V2G exports electricity from an EV's battery to a home, a building or the electr
 ### What it means for a Zeekr owner today
 
 1. **V2L: yes** on the 7X and the X, using the car's own adapter.
-2. **V2H and V2G: not yet.** No Zeekr in Australia offers either.
+2. **V2H and V2G: ask first.** Check with your dealer that your car supports either before you buy a bidirectional charger.
 3. **Warranty.** Zeekr's Australian warranty covers the high-voltage battery for 8 years or 160,000 km [^13]. Ask Zeekr Australia in writing how V2H or V2G use affects it before you connect a system.
 4. **Network approvals and tariffs** are still evolving. Export usually requires a program and network approval [^2].
 
