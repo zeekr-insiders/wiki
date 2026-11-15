@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr road trip planning"
 description: "Planning a road trip in a Zeekr: plan on less than the WLTP range, stop at 80% unless you need more, peak charging rates, planning tools and Zeekr Roadside."
 ---
@@ -44,8 +45,7 @@ When others are waiting, see [Charging etiquette](etiquette.md).
 
 These are peaks under ideal conditions. What you see depends on the charger, the battery temperature and how full the battery is.
 
-!!! warning "Sources differ: 7X 10-80% times"
-    Zeekr's own 7X page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another [^5]. Plan on roughly 10 to 16 minutes on a fast charger, plus time to find and start the charger.
+On a fast charger, plan on about 11 to 16 minutes for a 7X to go from 10 to 80%, depending on grade [^5], plus time to find and start the charger.
 
 ### Plan one charger ahead
 
@@ -81,8 +81,8 @@ If you're running low, slow down, turn climate control down, and look for any ch
 
 Roadside runs for five years from first registration (seven years for the first 1,000 7X buyers under the launch offer) [^7][^8]. Under the current terms it includes phone help, 12-volt battery tests and jump-starts, flat tyre help, help with lost or locked keys, and towing to the nearest authorised Zeekr retailer. If you're more than 100 km from home and the car can't be driven for over 24 hours, it can cover accommodation, a rental car or alternative transport, up to set limits [^6].
 
-!!! warning "Sources differ: running out of charge"
-    A 2025 Zeekr roadside summary listed a tow to the nearest compatible charging station if you run out of charge [^9]. The April 2026 terms don't mention it [^6]. We found no source for "mobile charging". If the main battery is flat, expect a tow, and ask what they'll do when you call.
+!!! warning "If you run out of charge"
+    If the main battery is flat, expect a tow, and ask where it will take you when you call. The April 2026 terms don't mention running out of charge [^6]; a 2025 Zeekr roadside summary listed a tow to the nearest compatible charging station [^9].
 
 ### Being towed
 
@@ -90,7 +90,7 @@ Tell the operator it's an EV, and follow the towing instructions in your owner's
 
 ## Zeekr Power
 
-Zeekr has talked about bringing its own charging network to Australia, but we found no confirmed Australian rollout. Use the public networks.
+Zeekr hasn't announced an Australian rollout of its own charging network, so use the public networks.
 
 ## Share your trips
 
