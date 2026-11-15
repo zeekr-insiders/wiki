@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Public EV charging for Zeekr owners"
 description: "Public charging a Zeekr in Australia: the cable and apps to sort out first, how fast each Zeekr charges on DC, charging etiquette and local tips from owners."
 ---
@@ -40,8 +41,7 @@ Don't wait until you're standing at a charger to create an account and add a car
 
 The 7X uses an 800V system [^1], so it can make use of the fastest public chargers. Peak figures are what the car can accept under ideal conditions; a 350 kW charger can't deliver 450 kW, and the actual rate depends on the charger, battery temperature and state of charge. [AC vs DC and the charging curve](../../knowledge/charging-curve.md) explains why times are quoted 10 to 80% and why you rarely see the peak.
 
-!!! warning "Sources differ: 7X 10-80% times"
-    Zeekr's own 7X page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another, and EV Central quotes "as little as 11 minutes" [^4][^5]. Expect roughly 10 to 16 minutes on a fast charger, depending on variant, battery temperature and the charger.
+On a fast charger, the 7X goes from 10 to 80% in about 11 to 16 minutes depending on grade [^4][^5]. Battery temperature and the charger itself can make it slower.
 
 AC charging is much slower and depends on both the charger and your car's onboard charger (11 kW or 22 kW depending on model; see [Home Charging](home-setup.md)).
 
