@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 588" role="img" aria-labelledby="kn-charging-curve-title kn-charging-curve-desc">
 <title id="kn-charging-curve-title">A generic DC charging curve (illustrative)</title>
-<desc id="kn-charging-curve-desc">Illustrative line chart of DC charging power against state of charge: power rises quickly to a peak by about 10%, holds near it to about 50 to 60%, steps down, then falls steeply after 80% to a trickle at 100%. The 10 to 80% band is where most of the energy is added; the last 20% is slow. Zeekr quotes 10 to 80% in about 10 to 16 minutes for the 7X and about 30 minutes for the 009 FWD. Shape is not measured data.</desc>
+<desc id="kn-charging-curve-desc">Illustrative line chart of DC charging power against state of charge: power rises quickly to a peak by about 10%, holds near it to about 50 to 60%, steps down, then falls steeply after 80% to a trickle at 100%. The 10 to 80% band is where most of the energy is added; the last 20% is slow. Zeekr quotes 10 to 80% in 11 to 16 minutes for the 7X and about 30 minutes for the 009. Shape is not measured data.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -77,6 +77,6 @@ svg.zk.zk-wide{max-width:none}
 <text class="d w6 c-inv" x="34" y="505.5" font-size="13" text-anchor="middle">3</text>
 <text class="c-ink" x="56" y="506" font-size="15">Last 20% is slow</text>
 <line class="s-rule" x1="24" y1="532" x2="456" y2="532" stroke-width="1"/>
-<text class="c-muted" x="24" y="556" font-size="14">Zeekr quotes 10-80% in about 10-16 minutes for the 7X, about 30</text>
-<text class="c-muted" x="24" y="574" font-size="14">minutes for the 009 FWD.</text>
+<text class="c-muted" x="24" y="556" font-size="14">Zeekr quotes 10-80% in 11-16 minutes for the 7X, about 30</text>
+<text class="c-muted" x="24" y="574" font-size="14">minutes for the 009.</text>
 </svg>

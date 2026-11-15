@@ -89,6 +89,6 @@ svg.zk.zk-wide{max-width:none}
 <text class="c-muted" x="24" y="832" font-size="14">AC on Zeekr</text>
 <text class="d w6 c-ink" x="200" y="812" font-size="24">25-350 kW</text>
 <text class="c-muted" x="200" y="832" font-size="14">DC on public chargers (RACV)</text>
-<text class="c-muted" x="24" y="860" font-size="14">Car-limited, e.g. up to 420-450 kW 7X (peak,</text>
-<text class="c-muted" x="24" y="878" font-size="14">press-reported), 150 kW X AWD and 009</text>
+<text class="c-muted" x="24" y="860" font-size="14">Car-limited, e.g. up to 420-450 kW 7X (peak),</text>
+<text class="c-muted" x="24" y="878" font-size="14">230 kW X RWD, 150 kW X AWD and 009</text>
 </svg>

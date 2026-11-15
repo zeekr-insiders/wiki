@@ -95,6 +95,6 @@ svg.zk.zk-wide{max-width:none}
 <text class="w6 c-ink" x="312" y="476" font-size="13" letter-spacing="0.14em">DC</text>
 <text class="d w6 c-ink" x="344" y="476" font-size="28">25-350 kW</text>
 <text class="c-muted" x="344" y="500" font-size="13">on public chargers (RACV)</text>
-<text class="c-muted" x="344" y="520" font-size="13">Car-limited, e.g. up to 420-450 kW 7X (peak, press-reported), 150 kW X AWD</text>
+<text class="c-muted" x="344" y="520" font-size="13">Car-limited, e.g. up to 420-450 kW 7X (peak), 230 kW X RWD, 150 kW X AWD</text>
 <text class="c-muted" x="344" y="537" font-size="13">and 009</text>
 </svg>
