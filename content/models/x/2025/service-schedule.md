@@ -15,7 +15,7 @@ description: "Zeekr X servicing in Australia: the 12-month or 20,000 km interval
 The Zeekr X is serviced every **12 months or 20,000 km**, whichever comes first [^1][^2][^3]. Cars from the September 2024 launch were on 24 months or 40,000 km [^4].
 
 !!! note "Early MY25 owners: check your booklet"
-    The 12-month interval is usually described as new for the MY26 car [^1], but an MY25 X reviewed in August 2025 was already on it [^3]. Your Service and Warranty Booklet sets the interval for your car [^5].
+    The 12-month interval was reported as new for the MY26 car [^1], but an MY25 X reviewed in August 2025 was already on it [^3]. Your Service and Warranty Booklet sets the interval for your car [^5].
 
 ## What each service includes
 
@@ -27,7 +27,7 @@ Zeekr Australia doesn't publish the X's service list online. Zeekr's schedules f
 | Every 2 years or 40,000 km | Brake fluid and reduction gear oil (rear on RWD, front and rear on AWD) |
 | Every 4 years or 80,000 km | Coolant |
 
-They are a guide to what your dealer will do, not an Australian promise. The Singapore manual halves the brake fluid and cabin filter intervals in harsh conditions such as dust, hilly or humid areas and extreme temperatures [^7].
+These are overseas schedules: a guide to what your dealer will do, not a promise. The Singapore manual halves the brake fluid and cabin filter intervals in harsh conditions such as dust, hilly or humid areas and extreme temperatures [^7].
 
 None of these schedules list tyre rotation, wiper blades, an air-conditioning regas or a key fob battery [^6][^7]. Ask for a tyre rotation when you book if you want one.
 
