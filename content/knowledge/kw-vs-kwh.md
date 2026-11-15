@@ -10,14 +10,15 @@ description: "kW vs kWh explained: the difference between power and energy, wher
 
 *Last checked: 8 November 2026.*
 
-There's two units with two different jobs. Mixing them up is common source of EV confusion.
+There are two units with two different jobs. Mixing them up is a common source of EV confusion.
 
 - **kWh (kilowatt-hour)** is an amount of energy. It is how big the battery is, and what you buy from the grid.
 - **kW (kilowatt)** is a rate of power. It is how fast energy moves: charger speed, motor output.
 
 !!! tip "The tank and the tap concept"
-    The **battery** is the _tank_, measured in `kWh`.\   
-    The **charger** is the _tap_, measured in `kW`. 
+    The **battery** is the _tank_, measured in `kWh`.
+
+    The **charger** is the _tap_, measured in `kW`.
 
     A bigger tap fills the same tank faster. It does not make the tank bigger.
 

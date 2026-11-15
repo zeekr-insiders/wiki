@@ -58,7 +58,7 @@ Quotes vary widely, so get at least two.
 
 - An installed single-phase 7 kW wallbox typically costs about $1,000 to $3,500 in mid-2026, depending on the job [^6][^7][^8].
 - The main cost driver is distance from the switchboard and whether the board needs work. Older homes built before the mid-2000s often need board work before a 32 A circuit can be added [^7].
-- Zeekr offers: 
+- Zeekr offers:
     - The **MY25 7X launch offer** for preorders of the original Zeekr 7X, included a wall-charger for free (excludes installation) [^9].
     - The **MY27 7X launch offer** for orders from 1 November to 31 December 2026 includes a 7 kW wallbox, supply only; installation by a licensed electrician is at your cost [^9].
 

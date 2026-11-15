@@ -10,13 +10,14 @@ description: "NMC vs LFP EV batteries explained: how the two chemistries differ 
 
 *Last checked: 8 November 2026.*
 
-Nearly every EV battery sold in Australia is a lithium-ion pack, and most use one of two cathode chemistries: **NMC** (nickel manganese cobalt) or **LFP** (lithium iron phosphate). Zeekr uses both, so it's a good idea to know which chemistry your vehicle uses. 
+Nearly every EV battery sold in Australia is a lithium-ion pack, and most use one of two cathode chemistries: **NMC** (nickel manganese cobalt) or **LFP** (lithium iron phosphate). Zeekr uses both, so it's a good idea to know which chemistry your vehicle uses.
 
 It changes how you should charge, see [Charging to 80% vs 100%](charging-80-vs-100.md).
 
 !!! tip "Quick Primer"
-    **NMC** packs the most energy into the least weight.\    
-    **LFP** is tougher, tolerates more charge cycles and handles full charges better. 
+    **NMC** packs the most energy into the least weight.
+
+    **LFP** is tougher, tolerates more charge cycles and handles full charges better.
 
     Zeekr fits LFP to its entry grades and NMC to its bigger-battery and performance grades.
 
@@ -54,8 +55,8 @@ These are generic cell-level figures [^1]. A finished pack's range, weight and l
 | 7X RWD | 75 kWh | LFP [^3] |
 | 7X Long Range RWD | 100 kWh | NMC [^3] |
 | 7X Performance AWD | 100 kWh | NMC [^3] |
-| 009 FWD | 116 kWh | NMC [^4] |
-| 009 AWD | 116 kWh | NMC [^4] |
+| 009 FWD | 116 kWh | NMC [^4][^5] |
+| 009 AWD | 116 kWh | NMC [^5] |
 
 The 2027 7X (MY27) is reported to keep the same battery sizes as the MY25/MY26 car [^3]. Some press uses "NCM" (nickel cobalt manganese) for the same family as NMC. For the 009 AWD, an MY27, or if you're unsure which battery you have, check the compliance and battery plates or ask your dealer.
 
