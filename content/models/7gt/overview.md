@@ -41,11 +41,11 @@ Zeekr has named three grades for Australia: RWD, Long Range RWD and Performance 
 | WLTP range | Up to 525 km | Up to 670 km | Up to 590 km |
 | 0-100 km/h | 5.2 s | 5.0 s | 3.1 s |
 
-These are the figures announced for the local line-up [^2][^3][^5]. Zeekr Australia's own 7GT page doesn't list them yet, so they may change before launch [^1]. [Specifications](specifications.md) has the detail.
+These are the figures Zeekr gave for the local line-up [^2][^3][^5]. Zeekr Australia's own 7GT page doesn't list them yet, so they may change before launch [^1]. [Specifications](specifications.md) has the detail.
 
 ## Pricing
 
-No Australian price has been announced. Zeekr Australia has indicated the 7GT will sit below the 7X [^6], which starts at $57,900 before on-road costs [^7].
+No Australian price has been announced. Zeekr Australia expects it to be priced between the X and the 7X [^6]; the 7X starts at $57,900 before on-road costs [^7].
 
 ## How it relates to the 7X
 
