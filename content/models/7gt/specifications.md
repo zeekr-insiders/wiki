@@ -12,7 +12,7 @@ changelog: "Rewritten in plain style"
 *Last checked: 8 November 2026.*
 
 !!! warning "Not yet on sale in Australia"
-    First deliveries are expected in the first quarter of 2027 [^1][^2]. The figures here are those announced for the Australian line-up; Zeekr Australia says local specifications and features may differ from the overseas car [^1], so check them against the final spec sheet before you order.
+    First deliveries are expected in the first quarter of 2027 [^1][^2]. The figures here are those Zeekr gave for the Australian line-up [^2][^3][^4]; Zeekr Australia says local specifications and features may differ from the overseas car [^1], so check them against the final spec sheet before you order.
 
 ## Australian line-up
 
@@ -49,7 +49,7 @@ Earlier reports from August 2026 carried slower times (0-100 km/h in 6.5, 5.5 an
 | Towing | - |
 | Kerb weight | - |
 
-Towing and kerb weight figures for the Australian car are not yet published.
+Zeekr has not published towing or kerb weight figures for the Australian car.
 
 The China-market 7GT is a different size: 4,864 x 1,900 x 1,460 mm, a 2,925 mm wheelbase and a 645 L boot [^10]. Don't mix its figures with the Australian ones. Boot and rear-seat space trail the 7X, which has a 539 L boot [^8].
 
