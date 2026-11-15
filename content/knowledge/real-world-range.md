@@ -76,8 +76,7 @@ When you lift off the accelerator or press the brake, the motor runs as a genera
 
 It has limits:
 
-- **It can't recover everything.** Hard braking calls in the friction brakes, which recover nothing, so look ahead and slow gently [^14].
-- **The friction brakes still do the hard stops.** Regen is an aid, not a replacement for the brake pedal, so brake whenever the situation needs it [^13][^15].
+- **It can't recover everything.** Hard braking calls in the friction brakes, which recover nothing, so look ahead and slow gently [^14]. Regen is an aid, not a replacement for the brake pedal: brake whenever the situation needs it [^13][^15].
 - **A full battery takes less.** Regen is limited when the battery is full, to protect it [^16]. How much your Zeekr recovers depends on the battery's state, the regen level and your speed [^13][^15].
 - **A cold battery takes less too.** Battery performance drops in cold weather, and that reduces regen [^9].
 
