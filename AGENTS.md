@@ -230,7 +230,7 @@ Plain Markdown. Keep headers and row labels short so a table fits a phone with l
 | `!!! note "Not yet confirmed"` / "This comes from a single secondary source..." | "Concessions change often. Confirm with the state revenue office before you budget." |
 | "That is our arithmetic, not a published price: ask your dealer to confirm." | "so the second service is roughly $550 (calculated from the offer value [^8])." |
 
-`make prose` (`scripts/check_prose.py`, part of `make ready`) flags the usual tells: research narration, publisher-led attribution, method notes, source-status box titles and pages with more than three boxes. It warns for now; `PROSE_STRICT=1 make prose` fails on any finding. For a deliberate exception (a quoted source, a trip report that says "we found the road closed"), text inside quotation marks is skipped, or end the line with `<!-- prose: allow -->`.
+`make prose` (`scripts/check_prose.py`, part of `make ready`) flags the usual tells: research narration, publisher-led attribution, method notes, source-status box titles and pages with more than three boxes. It fails on any finding; `PROSE_STRICT=0 make prose` lists them as warnings while you work. For a deliberate exception (a quoted source, a trip report that says "we found the road closed"), text inside quotation marks is skipped, or end the line with `<!-- prose: allow -->`.
 
 ## Colour and the orange rule
 
@@ -273,7 +273,7 @@ The club uses AI tools to help with research, drafting, code and some artwork, a
 
 ## Before you say work is done
 
-1. `make ready` passes. Failures: nav, strict build, citations, seo (missing or duplicate title or description, canonical, `lang`, H1, structured data), labels (skipped heading levels). Warnings only: page name differing between H1, nav and cards (labels), a description outside 140 to 160 characters (seo) and prose findings (prose).
+1. `make ready` passes. Failures: nav, strict build, citations, seo (missing or duplicate title or description, canonical, `lang`, H1, structured data), labels (skipped heading levels), prose (any finding). Warnings only: page name differing between H1, nav and cards (labels) and a description outside 140 to 160 characters (seo).
 2. For visual changes, look at the page yourself in light and dark, at phone and desktop widths.
 
 Work on a branch with small one-line commits. `main` publishes the live site, so it only takes reviewed changes.

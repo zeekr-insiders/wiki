@@ -43,5 +43,5 @@ jobs:
       - name: Check search metadata
         run: .venv/bin/python scripts/check_seo.py site
 
-      - name: Check prose (warnings only)
-        run: .venv/bin/python scripts/check_prose.py
+      - name: Check prose
+        run: .venv/bin/python scripts/check_prose.py --strict

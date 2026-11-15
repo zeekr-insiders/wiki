@@ -13,8 +13,8 @@ prose fields in data/ that render on pages (checklist `text` and `hint`, glossar
 quoted source is allowed to say whatever it said. A line ending in
 `<!-- prose: allow -->` is skipped.
 
-Warn mode by default (prints findings, exits 0). Fail mode, for when the rewrite
-is done: `--strict` or PROSE_STRICT=1.
+Run on its own it warns (prints findings, exits 0). `--strict` or PROSE_STRICT=1
+fails on any finding; `make prose`, `make ready` and CI run it strict.
 
 Usage: python scripts/check_prose.py [--strict] [paths...]
 """

@@ -82,10 +82,10 @@ seo:
 	$(PY) scripts/check_seo.py site
 
 # Flags prose that narrates the research instead of stating the fact (scripts/check_prose.py).
-# Warns only for now; PROSE_STRICT=1 fails on any finding.
+# Fails on any finding; PROSE_STRICT=0 drops it to warnings while you work.
 prose:
 	@echo "Checking prose..."
-	$(PY) scripts/check_prose.py $(if $(filter-out 0,$(PROSE_STRICT)),--strict)
+	$(PY) scripts/check_prose.py $(if $(filter 0,$(PROSE_STRICT)),,--strict)
 
 ready: clean nav models build citations labels seo prose
 	@echo ""
