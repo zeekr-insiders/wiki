@@ -73,9 +73,9 @@ On timing and grandfathering:
 !!! warning "Not yet law"
     As at 8 November 2026 the ATO lists this measure as "not yet law" [^13]. Treasury released the exposure draft on 10 September 2026 and consultation closed on 28 September [^15][^16]. The bill was introduced on 27 October [^14] and is reported to have passed the House on 29 October [^17]. Wording can still change, so check its status before you sign.
 
-The $75,000 line is tested against the car's "base value" when the employer first holds it, not the sticker price [^15]. A common reading is that base value is the pre-on-road price (drive-away less stamp duty, CTP and registration) with any LCT included, and that for a novated lease the car is first held when the lease starts [^18]. Ask your provider which value and date they use, get it in writing, and check with your tax agent.
+The $75,000 line is tested against the car's "base value" when the employer first holds it, not the sticker price [^15]. One reading of the draft is that base value means the pre-on-road price (drive-away less stamp duty, CTP and registration) with any LCT included, and that for a novated lease the car is first held when the lease starts [^18]. The bill's Explanatory Memorandum is the authority on both points. Ask your provider which value and date they use, get it in writing, and check with your tax agent.
 
-The reportable amount for cars in the 25% band is expected to stay at the full taxable value (20% fraction), as it is now [^16], though at least one calculator models a lower amount [^18]. Ask your provider which they have assumed.
+The draft keeps the reportable amount for cars in the 25% band at the full taxable value (20% fraction), as it is now [^16]; at least one calculator models a lower figure [^18]. Ask your provider which they have assumed.
 
 ### Is it right for you? A checklist
 
@@ -126,8 +126,8 @@ Collect these first: the drive-away price and options, your gross income, the le
 
 | Resource | What it is | Maintainer | Notes |
 | :--- | :--- | :--- | :--- |
-| [Novated Lease Guide calculator](https://novatedlease.guide/calculator/) [^19] | Free web app. Compares a novated lease with cash, a loan or keeping your current car. Models the April 2027 changes from the September 2026 exposure draft, using the lease start date and the car's base value | "changyang1230", an independent Australian specialist doctor. Not affiliated with any provider, no referral fees, funded by donations [^19][^20] | Updated October 2026. Shows no tax year, so check its brackets against the current ones |
-| [Original spreadsheet (Google Sheets)](https://docs.google.com/spreadsheets/d/1CtpBXmuhRW3HrBjqJqnPeFhOfqCbPK-wXA17oz_1fuA/) [^19][^20] | The spreadsheet the web app was built from. The two match to the cent | Same author | In public use since 2023 [^20]. Shows no update date, so prefer the web app |
+| [Novated Lease Guide calculator](https://novatedlease.guide/calculator/) [^19] | Free web app. Compares a novated lease with cash, a loan or keeping your current car. Models the April 2027 changes from the September 2026 exposure draft, using the lease start date and the car's base value | "changyang1230", who describes himself as an independent Australian specialist doctor. The site says it has no provider ties or referral fees and is funded by donations [^19][^20] | Updated October 2026. Shows no tax year, so check its brackets against the current ones |
+| [Original spreadsheet (Google Sheets)](https://docs.google.com/spreadsheets/d/1CtpBXmuhRW3HrBjqJqnPeFhOfqCbPK-wXA17oz_1fuA/) [^19][^20] | The spreadsheet the web app was built from. The site says the two match to the cent | Same author | In public use since 2023 [^20]. Shows no update date, so prefer the web app |
 | [r/AusFinance: "EV and ICE novated lease calculator"](https://www.reddit.com/r/AusFinance/comments/1c5b9xx/ev_and_ice_novated_lease_calculator/) [^21] | The April 2024 community thread where the spreadsheet was shared, with owner comments | Posted by u/changyang1230, the same author [^21][^20] | Uses the old 4.2 cents per km charging rate (5.47 for 2026-27). Good for discussion, not figures |
 
 </div>
