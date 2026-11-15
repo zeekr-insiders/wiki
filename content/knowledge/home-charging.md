@@ -66,7 +66,7 @@ Quotes vary widely, so get at least two.
 Your electricity network (the distributor, or DNSP: Ausgrid, Endeavour, Energex, Ergon and so on) has rules for how big a charger you can connect. They differ by network and they are changing. In general:
 
 - Your electrician checks your supply and tells you whether the network must be notified or must approve the work. Ausgrid, for example, requires approval where the electrician identifies a need to upgrade the supply, and may ask to be notified before installation so it can assess grid impact [^1].
-- Notification thresholds are reported as 20 A single-phase and 40 A three-phase [^10]. Your electrician will know the current figure for your network.
+- You will probably need to notify your network [^10]. Ask your electrician or network which size of charger triggers notification on your network.
 - Queensland (Energex and Ergon) has had extra rules for single-phase chargers, including network devices or limits. A dedicated 22 kW three-phase charger switched across all phases can be connected without those device options [^11]. The limit on single-phase 32 A chargers without a network device is reported to have been withdrawn from 1 October 2026 [^12]. Check the current Queensland Electricity Connection Manual (QECM) with your electrician before relying on it.
 
 <figure class="zi-diagram">
