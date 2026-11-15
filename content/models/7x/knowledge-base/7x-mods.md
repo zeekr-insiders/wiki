@@ -19,8 +19,8 @@ Mods owners have asked about. Anything that touches the car's wiring can affect 
 
 **Applies to:** all 7X.
 
-- **MY27:** every grade has a built-in digital video recorder (DVR) that uses the car's own cameras, records while driving and monitors the car while parked [^2][^3]. Where it stores footage has not been published.
-- **MY25/MY26:** the launch car isn't listed with a built-in dashcam, and Zeekr hasn't announced one by software update [^2][^4].
+- **MY27:** every grade has a built-in digital video recorder (DVR) that uses the car's own cameras, records while driving and monitors the car while parked [^2][^3]. Ask your dealer where it stores the footage.
+- **MY25/MY26:** the launch car isn't listed with a built-in dashcam [^2], and the first Australian over-the-air update in June 2026 didn't add one [^4]. Ask your dealer whether a later update does.
 
 !!! warning "Hardwiring an aftermarket dashcam"
     We don't publish fuse positions for a hardwired install: tapping the wrong circuit can damage the car or put your warranty at risk [^1]. Use a plug-in dashcam, or have an auto electrician who knows the car do the install, and ask your dealer first.
