@@ -46,7 +46,7 @@ Tyre rotation, wiper blades, an air-conditioning regas and the key fob battery a
 
 Zeekr's notice says "the first year / 20,000km service will be offered free of charge to the customers", to bring owners back to the dealer for a check-over [^2][^1]. That is the 12-month optional health check in the table above.
 
-Zeekr has published no terms, cut-off date or grace period for it [^2]. One owner's dealer hadn't heard of it until Zeekr's head office confirmed it [^2], so if yours queries it, ask them to check with Zeekr Australia.
+The notice gives no terms, cut-off date or grace period [^2]. One owner's dealer hadn't heard of the offer until Zeekr's head office confirmed it [^2], so if yours queries it, ask them to check with Zeekr Australia.
 
 The offer to the first 1,000 Australian buyers did not include servicing. It covered a 7-year warranty, 7 years of roadside assistance, a home charger, charging cables and free colour choice [^11][^12].
 
@@ -62,7 +62,7 @@ Zeekr's terms for the MY27 launch offer are on its offers page [^13]:
 
 The offer was first capped at 2,000 orders. Zeekr dropped the cap in early November 2026, so it now runs on dates alone [^14][^15].
 
-The terms call both the 12-month and the 24-month visit a scheduled service [^13]. Your MY27 booklet sets the interval for your car.
+The terms call both the 12-month and the 24-month visit a scheduled service [^13], so the MY27 car may be on a 12-month interval. Your MY27 booklet is the authority.
 
 ## Warranty
 
