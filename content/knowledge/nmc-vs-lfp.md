@@ -52,7 +52,7 @@ These are generic cell-level figures [^1]. A finished pack's range, weight and l
 | 009 FWD | 116 kWh | NMC [^4] |
 | 009 AWD | - | - |
 
-Zeekr has not published the 009 AWD's battery size or chemistry. The 2027 7X (MY27) keeps the same batteries as the MY25/MY26 car [^3]. Some press uses "NCM" (nickel cobalt manganese) for the same family as NMC. If you're unsure which battery you have, check the compliance and battery plates or ask your dealer.
+The 2027 7X (MY27) is reported to keep the same battery sizes as the MY25/MY26 car [^3]. Some press uses "NCM" (nickel cobalt manganese) for the same family as NMC. For the 009 AWD, an MY27, or if you're unsure which battery you have, check the compliance and battery plates or ask your dealer.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-zeekr-chemistry-map.svg"
