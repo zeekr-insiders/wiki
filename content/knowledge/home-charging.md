@@ -1,14 +1,14 @@
 ---
 title: Home charging explained
-last_checked: 2026-11-08
-changelog: "Rewritten in plain style"
+last_checked: 2026-11-15
+changelog: "Added a short section on free midday power and cheap overnight EV plans"
 seo_title: "Home EV charging: single vs three-phase"
 description: "Home EV charging explained: what single-phase and three-phase supply can run, real charge times for each Zeekr battery, install costs and network approval."
 ---
 
 # Home charging explained
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
 This page explains the electrical side: what your house can supply and what that means for charge times. For product choices, installers and tariffs, see the [home charging guide](../guides/charging/home-setup.md).
 
@@ -58,17 +58,24 @@ Quotes vary widely, so get at least two.
 
 - An installed single-phase 7 kW wallbox typically costs about $1,000 to $3,500 in mid-2026, depending on the job [^6][^7][^8].
 - The main cost driver is distance from the switchboard and whether the board needs work. Older homes built before the mid-2000s often need board work before a 32 A circuit can be added [^7].
-- Zeekr offers: 
+- Zeekr offers:
     - The **MY25 7X launch offer** for preorders of the original Zeekr 7X, included a wall-charger for free (excludes installation) [^9].
     - The **MY27 7X launch offer** for orders from 1 November to 31 December 2026 includes a 7 kW wallbox, supply only; installation by a licensed electrician is at your cost [^9].
+
+## Free and cheap power
+
+- Households with a smart meter in NSW, south-east Queensland and South Australia can opt in to 3 free hours of power in the middle of every day [^10]; Victoria has its own version from 11am to 2pm [^11].
+- If the car is away all day, EV plans with a cheap window from 12am to 6am are the usual alternative [^12].
+
+[Free and cheap home charging](home-charging-free-power.md) covers each option state by state, and how to schedule your Zeekr to charge in the cheap hours.
 
 ## Network approval, at a high level
 
 Your electricity network (the distributor, or DNSP: Ausgrid, Endeavour, Energex, Ergon and so on) has rules for how big a charger you can connect. They differ by network and they are changing. In general:
 
 - Your electrician checks your supply and tells you whether the network must be notified or must approve the work. Ausgrid, for example, requires approval where the electrician identifies a need to upgrade the supply, and may ask to be notified before installation so it can assess grid impact [^1].
-- Most home chargers now need the network to be notified [^10]. Ask your electrician which charger size triggers notification or pre-approval where you live.
-- Queensland (Energex and Ergon) has had extra rules for single-phase chargers, including network devices or limits. Energex's 2024 material allows a dedicated 22 kW three-phase charger switched across all phases without those device options [^11]. The limit on single-phase 32 A chargers without a network device is reported to have been withdrawn from 1 October 2026 [^12]. Check the current Queensland Electricity Connection Manual (QECM) with your electrician before relying on it.
+- Most home chargers now need the network to be notified [^13]. Ask your electrician which charger size triggers notification or pre-approval where you live.
+- Queensland (Energex and Ergon) has had extra rules for single-phase chargers, including network devices or limits. Energex's 2024 material allows a dedicated 22 kW three-phase charger switched across all phases without those device options [^14]. The limit on single-phase 32 A chargers without a network device is reported to have been withdrawn from 1 October 2026 [^15]. Check the current Queensland Electricity Connection Manual (QECM) with your electrician before relying on it.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-home-approval-flow.svg"
@@ -78,6 +85,7 @@ Your electricity network (the distributor, or DNSP: Ausgrid, Endeavour, Energex,
 ## Related
 
 - [Home charging guide](../guides/charging/home-setup.md)
+- [Free and cheap home charging](home-charging-free-power.md)
 - [kW vs kWh](kw-vs-kwh.md)
 - [Plugs and cables](plugs-and-cables.md)
 
@@ -92,6 +100,9 @@ Your electricity network (the distributor, or DNSP: Ausgrid, Endeavour, Energex,
 [^7]: Solar X Energy, "EV Charger Installation Cost in Australia: 2026 Guide", <https://solarxenergy.com.au/ev-charger-installation-cost/>, accessed 8 November 2026 (search extract; installer).
 [^8]: e-Green Electrical, "How much does it cost to install an EV charger", <https://e-greenelectrical.com.au/how-much-does-it-cost-to-install-an-ev-charger/>, accessed 8 November 2026 (search extract; installer).
 [^9]: ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
-[^10]: Energy Matters, "Do You Need to Tell Your Network Before Installing a Home EV Charger? (Yes, Probably)", 21 September 2026, <https://www.energymatters.com.au/renewable-news/ev-charger-network-approval-australia/>, accessed 8 November 2026 (page read; thresholds not verified by the author).
-[^11]: Energex, "EV Charging and QECM V4 2024", <https://www.energex.com.au/__data/assets/pdf_file/0003/1171884/EV-Charging-and-QECM-V4-2024.pdf>, accessed 8 November 2026 (search extract only; the PDF returned an access error when fetched).
-[^12]: Zecar, "Queensland EV charger 20A limit network device removed", 9 October 2026, <https://zecar.com/reviews/queensland-ev-charger-20a-limit-network-device-removed>, accessed 8 November 2026 (page read; secondary report citing QECM clause 8.14.4(b); not confirmed against the manual).
+[^10]: energy.gov.au, "Solar Sharer Offer", <https://www.energy.gov.au/rebates/solar-sharer-offer>, accessed 15 November 2026.
+[^11]: Premier of Victoria, "Best Midday Power Offer In The Country", 28 May 2026, <https://www.premier.vic.gov.au/best-midday-power-offer-country>, accessed 15 November 2026.
+[^12]: AGL, "EV Electricity plan: off peak charging 12AM to 6AM" (Night Saver EV), <https://www.agl.com.au/residential/energy/compare-plans/night-saver-ev-plan>, accessed 15 November 2026; and OVO Energy, "The EV Plan", <https://pages.ovoenergy.com.au/the-ev-plan>, accessed 15 November 2026.
+[^13]: Energy Matters, "Do You Need to Tell Your Network Before Installing a Home EV Charger? (Yes, Probably)", 21 September 2026, <https://www.energymatters.com.au/renewable-news/ev-charger-network-approval-australia/>, accessed 8 November 2026 (page read; thresholds not verified by the author).
+[^14]: Energex, "EV Charging and QECM V4 2024", <https://www.energex.com.au/__data/assets/pdf_file/0003/1171884/EV-Charging-and-QECM-V4-2024.pdf>, accessed 8 November 2026 (search extract only; the PDF returned an access error when fetched).
+[^15]: Zecar, "Queensland EV charger 20A limit network device removed", 9 October 2026, <https://zecar.com/reviews/queensland-ev-charger-20a-limit-network-device-removed>, accessed 8 November 2026 (page read; secondary report citing QECM clause 8.14.4(b); not confirmed against the manual).

@@ -24,7 +24,7 @@ categories:
 sources:
   carexpert-x: 'CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.'
   carexpert-7x: 'CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.'
-  carexpert-009: 'CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.'
+  zeekr-009-brochure: 'Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.'
   thebeep-7x: 'The Beep, "2027 Zeekr 7X adds power and features without a price rise", <https://thebeep.com.au/car-news/2027-zeekr-7x-update-price-specs-australia/>, accessed 8 November 2026.'
   zeekr-7x: 'Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.'
   driven-7x: 'The Driven, "Zeekr delivers 1,000th unit of the highly popular 7X SUV, expands dealer network", 13 December 2025, <https://thedriven.io/2025/12/13/zeekr-delivers-1000th-unit-of-the-highly-popular-7x-suv-expands-dealer-network/>, accessed 8 November 2026.'
@@ -34,6 +34,9 @@ sources:
   racv-plugs: 'RACV, "Guide to electric vehicle charging, plug types and cables", 5 February 2025, <https://www.racv.com.au/royalauto/transport/electric-vehicles/electric-car-charging-plug-types>, accessed 8 November 2026.'
   fueleconomy-cold: 'US Department of Energy, fueleconomy.gov, "Fuel Economy in Cold Weather", <https://fueleconomy.gov/Feg/coldweather.shtml>, accessed 8 November 2026.'
   ato-fbt: 'Australian Taxation Office, "Electric vehicles and fringe benefits tax" (fact sheet for employers, current at February 2023), <https://www.ato.gov.au/law/view/pdf/afs/afs_ev_fbt.pdf>, accessed 8 November 2026.'
+  solar-sharer: 'energy.gov.au, "Solar Sharer Offer", <https://www.energy.gov.au/rebates/solar-sharer-offer>, accessed 15 November 2026.'
+  vic-midday: 'Premier of Victoria, "Best Midday Power Offer In The Country", 28 May 2026, <https://www.premier.vic.gov.au/best-midday-power-offer-country>, accessed 15 November 2026.'
+  electrive-x: 'electrive, "Revised Zeekr X cuts fast charging time to 18 minutes", 5 May 2026, <https://www.electrive.com/2026/05/05/revised-zeekr-x-cuts-fast-charging-time-to-18-minutes/>, accessed 15 November 2026.'
   nsw-ruc: 'NSW Government, "Common questions about electric vehicle reform", <https://www.nsw.gov.au/driving-boating-and-transport/nsw-governments-electric-vehicle-strategy/faqs>, accessed 8 November 2026.'
 
 terms:
@@ -99,7 +102,7 @@ terms:
     term: NMC
     aka: [NCM, Nickel manganese cobalt]
     category: battery
-    definition: 'A battery chemistry that stores more energy per kilogram than LFP, usually given an 80% to 90% daily charge limit. Zeekr uses it in the X AWD, the 7X Long Range and Performance AWD, and the 009 FWD [^carexpert-x][^carexpert-7x][^carexpert-009].'
+    definition: 'A battery chemistry that stores more energy per kilogram than LFP, usually given an 80% to 90% daily charge limit. Zeekr uses it in the X AWD, the 7X Long Range and Performance AWD, and both 009 grades [^carexpert-x][^carexpert-7x][^zeekr-009-brochure].'
     see:
       - {label: NMC vs LFP batteries, page: knowledge/nmc-vs-lfp.md}
   - id: soc
@@ -300,9 +303,31 @@ terms:
     term: Time-of-use tariff
     aka: [TOU, EV plan]
     category: home
-    definition: 'An electricity plan with cheaper rates at set times, often overnight or in the middle of the day.'
+    definition: 'An electricity plan with cheaper rates at set times, often overnight or in the middle of the day. EV plans are time-of-use plans with a cheap overnight window, often midnight to 6am.'
     see:
+      - {label: Free and cheap home charging, page: knowledge/home-charging-free-power.md}
       - {label: Home charging, page: guides/charging/home-setup.md}
+  - id: free-midday-power
+    term: Free midday power
+    aka: [Solar Sharer Offer, Midday Power Saver, Free hours, Free power hours]
+    category: home
+    definition: 'Plans with free electricity for a few hours in the middle of the day. The federal Solar Sharer Offer gives three free hours a day in NSW, south-east Queensland and SA, up to 24 kWh [^solar-sharer], and Victoria''s Midday Power Saver gives 11am to 2pm free [^vic-midday]. A smart meter is needed.'
+    see:
+      - {label: Free and cheap home charging, page: knowledge/home-charging-free-power.md}
+  - id: smart-meter
+    term: Smart meter
+    aka: [Digital meter, Interval meter]
+    category: home
+    definition: 'An electricity meter that records when you use power, not just how much. Free midday and overnight EV plans need one.'
+    see:
+      - {label: Free and cheap home charging, page: knowledge/home-charging-free-power.md}
+  - id: controlled-load
+    term: Controlled load
+    aka: [Off-peak hot water, Dedicated circuit tariff]
+    category: home
+    definition: 'A separately metered circuit, usually for hot water, that the network switches on at set times for a cheaper rate. Free-hours and EV plan rates usually don''t apply to it.'
+    see:
+      - {label: Free and cheap home charging, page: knowledge/home-charging-free-power.md}
   - id: v2g
     term: V2G
     aka: [Vehicle to grid]
@@ -330,7 +355,7 @@ terms:
     term: 800V architecture
     aka: [800V, 800 volt]
     category: driving
-    definition: 'A higher-voltage electrical system that carries the same power with less current, so the car can sustain faster charging. The 7X uses one [^zeekr-7x].'
+    definition: 'A higher-voltage electrical system that carries the same power with less current, so the car can sustain faster charging. The 7X is the only 800V Zeekr on sale in Australia [^zeekr-7x]; the X and 009 use 400V systems [^electrive-x][^zeekr-009-brochure].'
     see:
       - {label: AC vs DC and the charging curve, page: knowledge/charging-curve.md}
   - id: adas
@@ -372,14 +397,17 @@ terms:
     aka: [One pedal]
     category: driving
     definition: 'A strong regenerative braking setting that slows the car to a stop when you lift off the accelerator, so you rarely need the brake pedal. What your car offers is in its driving settings.'
-    see: []
+    see:
+      - {label: How Zeekrs do it, page: knowledge/real-world-range.md#how-zeekrs-do-it}
   - id: regen
     term: Regenerative braking
     aka: [Regen]
     category: driving
-    definition: 'The motor working as a generator when you slow down, putting energy back into the battery and saving wear on the friction brakes.'
+    definition: 'The motor working as a generator when you slow down, turning the car''s movement (kinetic energy) back into electricity for the battery and saving wear on the friction brakes.'
     see:
+      - {label: Regenerative braking, page: knowledge/real-world-range.md#regenerative-braking}
       - {label: Running costs and incentives, page: getting-started/ev-basics.md}
+      - {label: Range in the real world, page: knowledge/real-world-range.md#regenerative-braking}
   - id: wltp
     term: WLTP
     aka: [Worldwide Harmonised Light Vehicles Test Procedure]

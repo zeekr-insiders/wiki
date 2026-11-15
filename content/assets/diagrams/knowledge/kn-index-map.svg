@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 624" role="img" aria-labelledby="kn-index-map-title kn-index-map-desc">
+<svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 717" role="img" aria-labelledby="kn-index-map-title kn-index-map-desc">
 <title id="kn-index-map-title">A reading order for new owners</title>
-<desc id="kn-index-map-desc">Suggested reading order for the Knowledge pages: 1 kW vs kWh, 2 NMC vs LFP, 3 charging to 80% vs 100%, 4 home charging, 5 AC vs DC and the curve. Then, in any order: plugs and cables, range in the real world, V2L, V2H and V2G, and the glossary.</desc>
+<desc id="kn-index-map-desc">Suggested reading order for the Knowledge pages: 1 kW vs kWh, 2 NMC vs LFP, 3 charging to 80% vs 100%, 4 home charging, 5 AC vs DC and the curve. Then, in any order: plugs and cables, range in the real world, V2L, V2H and V2G, free and cheap home charging, and the glossary.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -39,7 +39,7 @@ svg.zk.zk-wide{max-width:none}
 <marker id="kn-index-map-aa" markerWidth="14" markerHeight="12" refX="14" refY="6" orient="auto" markerUnits="userSpaceOnUse"><path class="f-accent" d="M0 0L14 6L0 12z"/></marker>
 <pattern id="kn-index-map-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" class="f-panel"/><line x1="0" y1="0" x2="0" y2="6" class="s-muted" stroke-width="2"/></pattern>
 </defs>
-<rect class="bg" width="480" height="624"/>
+<rect class="bg" width="480" height="717"/>
 <text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">KNOWLEDGE: A READING ORDER</text>
 <text class="d w6 c-ink" x="24" y="80" font-size="32">Start with kW vs kWh.</text>
 <text class="c-muted" x="24" y="109" font-size="15">Five pages in order, then dip into the rest.</text>
@@ -83,4 +83,8 @@ svg.zk.zk-wide{max-width:none}
 <text class="d w6 c-ink" x="258" y="564.25" font-size="15">and V2G</text>
 <rect class="f-panel s-line" x="357" y="519" width="99" height="81" rx="2" stroke-width="1"/>
 <text class="d w6 c-ink" x="369" y="545.25" font-size="15">Glossary</text>
+<line class="s-line" x1="129.5" y1="503" x2="129.5" y2="612" stroke-width="1"/>
+<rect class="f-panel s-line" x="24" y="612" width="210" height="81" rx="2" stroke-width="1"/>
+<text class="d w6 c-ink" x="36" y="638.25" font-size="15">Free and cheap</text>
+<text class="d w6 c-ink" x="36" y="657.25" font-size="15">home charging</text>
 </svg>

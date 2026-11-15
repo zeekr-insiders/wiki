@@ -1,23 +1,24 @@
 ---
 title: kW vs kWh
-last_checked: 2026-11-08
-changelog: "Rewritten in plain style"
+last_checked: 2026-11-15
+changelog: "The 009's 116 kWh battery now covers the AWD too"
 seo_title: "kW vs kWh explained for EV owners"
 description: "kW vs kWh explained: the difference between power and energy, where you see each on a Zeekr, and the two sums every EV owner needs for charge time and cost."
 ---
 
 # kW vs kWh
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
-There's two units with two different jobs. Mixing them up is common source of EV confusion.
+There are two units with two different jobs. Mixing them up is a common source of EV confusion.
 
 - **kWh (kilowatt-hour)** is an amount of energy. It is how big the battery is, and what you buy from the grid.
 - **kW (kilowatt)** is a rate of power. It is how fast energy moves: charger speed, motor output.
 
 !!! tip "The tank and the tap concept"
-    The **battery** is the _tank_, measured in `kWh`.\   
-    The **charger** is the _tap_, measured in `kW`. 
+    The **battery** is the _tank_, measured in `kWh`.
+
+    The **charger** is the _tap_, measured in `kW`.
 
     A bigger tap fills the same tank faster. It does not make the tank bigger.
 
@@ -32,7 +33,7 @@ So with this knowledge, let's dig a bit deeper.
 
 | Where | Unit | Example |
 | :--- | :--- | :--- |
-| Battery size | kWh | 61 kWh (X RWD), 75 kWh (7X RWD), 100 kWh (7X Long Range, AWD), 116 kWh (009 FWD) [^1][^2][^3] |
+| Battery size | kWh | 61 kWh (X RWD), 75 kWh (7X RWD), 100 kWh (7X Long Range, AWD), 116 kWh (009 FWD and AWD) [^1][^2][^3] |
 | Charger speed | kW | 7 kW home wallbox, 22 kW three-phase AC, up to 420 or 450 kW DC on the 7X [^2][^4][^5] |
 | Motor output | kW | 335 kW or 500 kW (MY27 7X) [^2] |
 | Efficiency | kWh per 100 km | What the trip computer shows |
@@ -61,7 +62,7 @@ The 7X also has vehicle-to-load output rated in kW (3.3 kW), covered in [V2L, V2
 
 [^1]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
 [^2]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
-[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^3]: Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.
 [^4]: The Driven, "Zeekr delivers 1,000th unit of the highly popular 7X SUV, expands dealer network", 13 December 2025, <https://thedriven.io/2025/12/13/zeekr-delivers-1000th-unit-of-the-highly-popular-7x-suv-expands-dealer-network/>, accessed 8 November 2026.
 [^5]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026 (peak DC 450 kW on the RWD and 420 kW on the Long Range and AWD; Zeekr's own page and the press differ slightly).
 [^6]: The Driven, "Zeekr delivers 1,000th unit of the highly popular 7X SUV, expands dealer network", 13 December 2025, <https://thedriven.io/2025/12/13/zeekr-delivers-1000th-unit-of-the-highly-popular-7x-suv-expands-dealer-network/>, accessed 8 November 2026 ("vehicle-to-load (V2L) capability with 3.3 kW output").

@@ -1,13 +1,13 @@
 ---
-last_checked: 2026-11-08
-changelog: "Rewritten in plain style"
+last_checked: 2026-11-15
+changelog: "Added the 009 AWD from Zeekr's 009 brochure"
 seo_title: "Public EV charging for Zeekr owners"
 description: "Public charging a Zeekr in Australia: the cable and apps to sort out first, how fast each Zeekr charges on DC, charging etiquette and local tips from owners."
 ---
 
 # Public charging
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
 Australia has several charging networks, a couple of plug types at the AC end, and chargers that are sometimes out of action. Here's what to sort out before you need it.
 
@@ -37,7 +37,7 @@ Don't wait until you're standing at a charger to create an account and add a car
 | 7X Long Range and Performance AWD | up to 420 kW [^1] |
 | X RWD (MY26) | up to 230 kW [^2] |
 | X AWD (MY26) | up to 150 kW [^2] |
-| 009 FWD | 150 kW [^3] |
+| 009 FWD and AWD | 150 kW [^3] |
 
 The 7X uses an 800V system [^1], so it can make use of the fastest public chargers. Peak figures are what the car can accept under ideal conditions; a 350 kW charger can't deliver 450 kW, and the actual rate depends on the charger, battery temperature and state of charge. [AC vs DC and the charging curve](../../knowledge/charging-curve.md) explains why times are quoted 10 to 80% and why you rarely see the peak.
 
@@ -57,6 +57,6 @@ Know a reliable charging spot in your area? Tell us through the [community chann
 
 [^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
 [^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^3]: Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.
 [^4]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
 [^5]: EV Central, "Key Tesla Model Y rival gets more power, same price for 2027", <https://evcentral.com.au/key-tesla-model-y-rival-gets-more-power-same-price-for-2027-zeekr-7x-upgraded-with-500kw-flagship-and-up-to-627km-range/>, accessed 8 November 2026.

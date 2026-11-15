@@ -1,13 +1,13 @@
 ---
-last_checked: 2026-11-08
-changelog: "Rewritten in plain style"
+last_checked: 2026-11-15
+changelog: "Added the 009 AWD from Zeekr's 009 brochure"
 seo_title: "Zeekr home charging setup"
 description: "Setting up home charging for a Zeekr: portable charger or wallbox, 7 kW vs 22 kW, what a quote should cover, solar and smart charging, tariffs and strata."
 ---
 
 # Home charging
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
 Charging at home overnight is the cheapest and easiest way to run an EV. Here's how to set it up for your Zeekr.
 
@@ -21,10 +21,7 @@ Charging at home overnight is the cheapest and easiest way to run an EV. Here's 
 | 7X (all grades, MY25/MY26 and MY27) | 22 kW [^1] |
 | X RWD (MY26) | 11 kW [^2] |
 | X AWD (MY26) | 22 kW [^2] |
-| 009 FWD | 11 kW [^3] |
-| 009 AWD | - |
-
-Ask your dealer for the 009 AWD's AC charging rate.
+| 009 FWD and AWD | 11 kW [^3] |
 
 A car only charges as fast as the slower of the car and the wallbox. 22 kW needs three-phase power; most homes are single-phase, which tops out around 7 kW. [Home charging explained](../../knowledge/home-charging.md) covers single-phase and three-phase supply and charge times for each battery, and [kW vs kWh](../../knowledge/kw-vs-kwh.md) the sums behind them.
 
@@ -112,7 +109,7 @@ Rules differ by state, so check your state's fair trading or strata guidance.
 
 [^1]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
 [^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-[^3]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^3]: Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.
 [^4]: Zeekr 7X Manual (unofficial mirror, Netherlands edition), "Charge the car", <https://zeekr-manual.pages.dev/sections/charging/T10211230>, accessed 8 November 2026.
 [^5]: CarExpert, "2026 Zeekr 7X price and specs", <https://www.carexpert.com.au/car-news/2026-zeekr-7x-price-and-specs>, accessed 8 November 2026.
 [^6]: ZeCar, "Zeekr 7X MY27 launch offer", <https://zecar.com/offers-and-deals/zeekr-7x-my27-launch-offer-2026>, accessed 8 November 2026.
