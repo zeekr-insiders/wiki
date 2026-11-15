@@ -1,7 +1,7 @@
 ---
 models: ["009"]
-changelog: "Rewritten in plain style"
-last_checked: 2026-11-08
+changelog: "The 116 kWh battery now covers the AWD too, from Zeekr's 009 brochure"
+last_checked: 2026-11-15
 seo_title: "Zeekr 009 people mover"
 description: "The Zeekr 009 electric people mover in Australia: six or seven seats, 116 kWh battery, WLTP range, price before on-road costs and the guides for 009 owners."
 # Preloads this model's hero banner (overrides/main.html).
@@ -19,7 +19,7 @@ hero_image: 009
     </div>
 </div>
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
 ## The configurations
 
@@ -72,10 +72,10 @@ Prices are before on-road costs, as announced at the November 2025 launch [^1][^
 {{ spec_card("gauge", "0-100 km/h", "4.5 s", "AWD") }}
 {{ spec_card("route", "WLTP range", "604 km", "FWD") }}
 {{ spec_card("speaker", "Yamaha speakers", "30") }}
-{{ spec_card("battery", "Battery", "116 kWh", "FWD") }}
+{{ spec_card("battery", "Battery", "116 kWh", "FWD and AWD") }}
 </div>
 
-Sources: [^1].
+Sources: [^1][^3].
 
 ## Worth knowing
 
@@ -83,7 +83,7 @@ Sources: [^1].
     The 009 is a large vehicle. Check its length and width on Zeekr's site or at the dealer against your garage and car space before you buy.
 
 !!! info "Luxury Car Tax"
-    Every 009 variant is priced above the 2026-27 LCT threshold for fuel-efficient vehicles ($91,661), so LCT applies to the amount above it [^3]. See the [finance guide](../../buying/finance.md).
+    Every 009 variant is priced above the 2026-27 LCT threshold for fuel-efficient vehicles ($91,661), so LCT applies to the amount above it [^4]. See the [finance guide](../../buying/finance.md).
 
 ## More on the 009
 
@@ -96,4 +96,5 @@ Sources: [^1].
 
 [^1]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
 [^2]: Cars24, "2026 Zeekr 009 FWD priced for Australia", <https://www.cars24.com.au/car-news/2026-zeekr-009-fwd-priced-for-australia/>, accessed 8 November 2026.
-[^3]: Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
+[^3]: Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.
+[^4]: Cars24, "Luxury Car Tax thresholds increase for Australia in FY2026-27", <https://www.cars24.com.au/car-news/luxury-car-tax-thresholds-australia-2026-27/>, accessed 8 November 2026.
