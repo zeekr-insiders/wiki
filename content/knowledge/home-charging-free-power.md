@@ -55,6 +55,10 @@ Some retailers go further with their own plans, usually **four free hours**. Two
 
 Outside the free window you pay the plan's normal rates [^7], and those can be higher than a regular plan's. The free hours are only half the story, so compare the whole plan.
 
+### Legacy Free Plans
+
+- **OVO Energy, The Three Free Plan:** $0.00/kWh from 11am to 2pm every day, in Victoria, NSW, Queensland and South Australia. Smart meter required, controlled load excluded, no daily cap but a fair use policy applies, as of November 2026, available to those who signed up but not available to new customers [^21].
+
 ## Option 3: EV plans with a cheap overnight window
 
 If the car is at work with you all day, the midday plans don't help much. **EV time-of-use plans** give you a very low rate overnight instead, usually around **midnight to 6am**. Examples:
@@ -146,3 +150,4 @@ If you have a **three-phase** charger, watch the Solar Sharer Offer's 24 kWh dai
 [^18]: ZEEKR (Hangzhou ZEEKR Automobile Sales and Services), "ZEEKR" on the App Store (Australia), <https://apps.apple.com/au/app/zeekr/id6504061076>, accessed 15 November 2026.
 [^19]: CarExpert, "2026 Zeekr 7X Long Range RWD review: Long-term introduction", 22 July 2026, <https://www.carexpert.com.au/car-reviews/2026-zeekr-7x-long-range-rwd-review-long-term-introduction>, accessed 15 November 2026.
 [^20]: CHOICE, "Solar Sharer Offer power plans: Should you switch for free electricity?" (last updated 17 September 2026), <https://www.choice.com.au/home-improvement/energy-saving/solar/articles/solar-sharer-offer-power-plans-should-you-switch-for-free-electricity>, accessed 15 November 2026.
+[^21]: The 3-Free Plan on Ovo, <https://pages.ovoenergy.com.au/the-free-3-plan>, accessed 15 November 2026 ([web.archive.org](https://web.archive.org/web/20261115062310/https://pages.ovoenergy.com.au/the-free-3-plan)).
