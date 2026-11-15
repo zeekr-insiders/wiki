@@ -54,6 +54,12 @@ For step-by-step guides (setting up a home charger, public networks, road trips)
         <a class="go" href="home-charging/">Home charging explained</a>
     </div>
     <div class="z-card">
+        {{ card_icon("wallet") }}
+        <h3>Free and cheap home charging</h3>
+        <p>Free midday power and cheap overnight EV plans, state by state.</p>
+        <a class="go" href="home-charging-free-power/">Free and cheap home charging</a>
+    </div>
+    <div class="z-card">
         {{ card_icon("chart-spline") }}
         <h3>AC vs DC and the charging curve</h3>
         <p>Why times are quoted 10 to 80%, and why you rarely see the peak.</p>
