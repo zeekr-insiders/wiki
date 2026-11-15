@@ -1,13 +1,13 @@
 ---
-last_checked: 2026-11-08
-changelog: "Rewritten in plain style"
+last_checked: 2026-11-15
+changelog: "Added the 009 AWD from Zeekr's 009 brochure"
 seo_title: "Zeekr road trip planning"
 description: "Planning a road trip in a Zeekr: plan on less than the WLTP range, stop at 80% unless you need more, peak charging rates, planning tools and Zeekr Roadside."
 ---
 
 # Road trips
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
 Road trips in a Zeekr work well with a bit of planning. This page covers the planning habits that matter; the club's own trip guides cover group drives in more detail.
 
@@ -41,7 +41,7 @@ When others are waiting, see [Charging etiquette](etiquette.md).
 | 7X Long Range and Performance AWD | up to 420 kW [^2] |
 | X RWD (MY26) | up to 230 kW [^3] |
 | X AWD (MY26) | up to 150 kW [^3] |
-| 009 FWD | 150 kW [^4] |
+| 009 FWD and AWD | 150 kW [^4] |
 
 These are peaks under ideal conditions. What you see depends on the charger, the battery temperature and how full the battery is.
 
@@ -101,7 +101,7 @@ Done a route in your Zeekr? Share the stops, the range you actually got and anyt
 [^1]: Zeekr Insiders, "Planning a trip" and "Taking part in a trip" club guides, <https://zeekrinsiders.com.au/garage/guides>, accessed 8 November 2026.
 [^2]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026.
 [^3]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
-[^4]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^4]: Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.
 [^5]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
 [^6]: Zeekr, "New Vehicle Roadside Assistance Program: Terms and Conditions" (current as at April 2026), <https://www.datocms-assets.com/130529/1781067092-zeekr-roadside-assistance-t-c-s.pdf>, accessed 8 November 2026.
 [^7]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.

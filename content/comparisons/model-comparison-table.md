@@ -1,13 +1,13 @@
 ---
-last_checked: 2026-11-08
-changelog: "Rewritten in plain style"
+last_checked: 2026-11-15
+changelog: "Added the 009 AWD battery and charging figures from Zeekr's 009 brochure"
 seo_title: "Zeekr 7X vs X vs 009 comparison"
 description: "Zeekr 7X, X and 009 compared side by side for Australia: price, battery, range, charging, size and towing, with each figure's model year and source."
 ---
 
 # Model comparison
 
-*Last checked: 8 November 2026.*
+*Last checked: 15 November 2026.*
 
 The three Zeekr models on sale in Australia, side by side. Prices are the manufacturer's list prices; what you pay on the road depends on your state.
 
@@ -42,9 +42,9 @@ The 7X prices did not change for the 2027 update [^7]. Check current X offers wi
 | **7X Long Range RWD** | 100 kWh NMC | 615 km | up to 420 kW | 22 kW |
 | **7X Performance AWD** | 100 kWh NMC | 543 km | up to 420 kW | 22 kW |
 | **009 FWD** | 116 kWh NMC | 604 km | 150 kW | 11 kW |
-| **009 AWD** | - | 582 km | - | - |
+| **009 AWD** | 116 kWh NMC | 582 km | 150 kW | 11 kW |
 
-Sources: X [^3]; 7X [^7][^10]; 009 [^8][^9]. The 7X uses an 800V system [^7]. Zeekr has not published the 009 AWD's battery size or charging rates.
+Sources: X [^3]; 7X [^7][^10]; 009 [^8][^9][^11]. The 7X uses an 800V system [^7]; the 009 is 400V [^11].
 
 ## Performance and practicality
 
@@ -58,7 +58,7 @@ Sources: X [^3]; 7X [^7][^10]; 009 [^8][^9]. The 7X uses an 800V system [^7]. Ze
 | **009 FWD** | 250 kW / 373 Nm | 7.9 s | 7 | - |
 | **009 AWD** | 450 kW / 693 Nm | 4.5 s | 6 or 7 | - |
 
-Sources: X [^3]; 7X [^7][^10][^11]; 009 [^8][^9]. Ask your dealer for towing ratings on the X and 009. Boot space: X 404 to 1,247 L [^3]; 7X 539 L, or 1,978 L with the rear seats folded [^6].
+Sources: X [^3]; 7X [^7][^10][^12]; 009 [^8][^9]. Ask your dealer for towing ratings on the X and 009. Boot space: X 404 to 1,247 L [^3]; 7X 539 L, or 1,978 L with the rear seats folded [^6].
 
 ## 2027 7X (MY27) figures
 
@@ -72,7 +72,7 @@ Sources: [^7]. Batteries and charging rates are unchanged [^7]. Zeekr has not pu
 
 ## Warranty
 
-All three models carry the same standard private-use cover: 5 years and unlimited kilometres on the vehicle, 8 years or 160,000 km on the high-voltage battery, and 5 years of roadside assistance [^12].
+All three models carry the same standard private-use cover: 5 years and unlimited kilometres on the vehicle, 8 years or 160,000 km on the high-voltage battery, and 5 years of roadside assistance [^13].
 
 ## Sources
 
@@ -86,5 +86,6 @@ All three models carry the same standard private-use cover: 5 years and unlimite
 [^8]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
 [^9]: Cars24, "2026 Zeekr 009 FWD priced for Australia", <https://www.cars24.com.au/car-news/2026-zeekr-009-fwd-priced-for-australia/>, accessed 8 November 2026.
 [^10]: Zeekr Australia, "Zeekr 7X", <https://www.zeekrlife.com/en-au/models/zeekr-7x>, accessed 8 November 2026.
-[^11]: The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
-[^12]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
+[^11]: Zeekr, "ZEEKR 009: Redefine the Luxury MPV" (brochure), <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 15 November 2026.
+[^12]: The Driven, "Zeekr 7X electric SUV approved in Australia, offers 2-tonne towing", <https://thedriven.io/2025/08/29/zeekr-7x-electric-suv-approved-in-australia-offers-2-tonne-towing/>, accessed 8 November 2026.
+[^13]: Zeekr Intelligent Technology Australia, "Australian Warranty Policy", <https://www.datocms-assets.com/130529/1770683613-australian-warranty-policy.pdf>, accessed 8 November 2026.
