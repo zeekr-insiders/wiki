@@ -10,7 +10,12 @@ description: "EV plugs and cables in Australia: Type 2 and CCS2, tethered vs unt
 
 *Last checked: 8 November 2026.*
 
-Two plugs cover almost everything you will meet on a Zeekr in Australia: **Type 2** for AC and **CCS2** for DC. Which charger, cable and plug to carry is mostly a Type 2 question.
+Two plugs cover almost everything you will meet on a Zeekr in Australia: 
+
+- **Type 2** for AC
+- **CCS2** for DC 
+
+Which charger, cable and plug to carry is mostly a Type 2 question.
 
 ## Type 2 and CCS2
 

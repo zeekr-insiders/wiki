@@ -10,7 +10,9 @@ description: "Should you charge your EV to 80% or 100%? Why NMC and LFP Zeekrs g
 
 *Last checked: 8 November 2026.*
 
-"Charge to 80%" is the most repeated EV rule, and it is only half right. It comes from NMC batteries. LFP batteries are usually treated differently. First check which you have: [NMC vs LFP batteries](nmc-vs-lfp.md).
+"Charge to 80%, she'll be right mate!" is the most repeated EV rule (or saying!), and it is only half right. It comes from NMC batteries. LFP batteries are usually treated differently.
+
+First check which you have: [NMC vs LFP batteries](nmc-vs-lfp.md).
 
 !!! warning "Check the manual first"
     The advice below is general industry practice from other makers and third parties. Check your owner's manual and the in-car charge settings for your grade, and where they say something different, follow them.
@@ -22,7 +24,9 @@ description: "Should you charge your EV to 80% or 100%? Why NMC and LFP Zeekrs g
 | NMC (X AWD, 7X Long Range and AWD, 009) | About 80% to 90% | Fine for trips, avoid leaving it sitting full |
 | LFP (X RWD, 7X RWD) | Many makers allow 100% daily | Done regularly, often weekly, to keep the gauge accurate |
 
-Tesla's guidance is the best-documented example: 80% to 90% for NMC and NCA cars most of the time, with 100% kept for trips, and a 100% daily limit with a full charge at least weekly for LFP cars [^1][^2]. That is Tesla's advice for Tesla cars, not Zeekr's.
+Tesla's guidance is the best-documented example: 80% to 90% for NMC and NCA cars most of the time, with 100% kept for trips, and a 100% daily limit with a full charge at least weekly for LFP cars [^1][^2]. 
+
+Remember, that is Tesla's advice for Tesla cars, not Zeekr's.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-charge-limit-decision.svg"

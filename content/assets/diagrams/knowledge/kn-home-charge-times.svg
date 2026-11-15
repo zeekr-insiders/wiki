@@ -134,7 +134,7 @@ svg.zk.zk-wide{max-width:none}
 <rect class="f-bg" x="21" y="616" width="63.375" height="19" rx="0"/>
 <text class="d w6 c-ink" x="24" y="630" font-size="15">116 kWh</text>
 <rect class="f-bg" x="86.375" y="617" width="59.256" height="18" rx="0"/>
-<text class="c-muted" x="89.375" y="630" font-size="14">009 FWD</text>
+<text class="c-muted" x="89.375" y="630" font-size="14">009 FWD/AWD</text>
 <text class="c-muted" x="112" y="652" font-size="14" text-anchor="end">Portable 10 A</text>
 <rect class="f-ink" x="120" y="640" width="283.015" height="14" rx="0"/>
 <rect class="f-bg" x="406.015" y="639" width="42.932" height="18" rx="0"/>
@@ -160,7 +160,7 @@ svg.zk.zk-wide{max-width:none}
 <text class="c-muted" x="400.769" y="736" font-size="14" text-anchor="middle">50</text>
 <text class="c-muted" x="456" y="736" font-size="14" text-anchor="end">hours</text>
 <rect class="s-muted" x="24" y="757" width="24" height="14" rx="0" fill="url(#kn-home-charge-times-hatch)" stroke-width="1"/>
-<text class="c-muted" x="56" y="768" font-size="14">No bar where the car's AC rate is the limit: the X RWD and 009 FWD</text>
+<text class="c-muted" x="56" y="768" font-size="14">No bar where the car's AC rate is the limit: the X RWD and 009 FWD/AWD</text>
 <text class="c-muted" x="56" y="786" font-size="14">take 11 kW at most.</text>
 <line class="s-rule" x1="24" y1="798" x2="456" y2="798" stroke-width="1"/>
 <text class="c-muted" x="24" y="820" font-size="14">Ideal case, calculated as kWh / kW, before charging losses. Portable 10 A</text>

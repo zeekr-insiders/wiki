@@ -10,7 +10,7 @@ description: "Why real EV range differs from the WLTP figure: Australian test re
 
 *Last checked: 8 November 2026.*
 
-The range on the brochure is a lab figure. It is good for comparing cars and not a promise for your commute. Here is how far apart they usually sit, and why.
+The range on the brochure is usually a lab figure. It is good for comparing cars and not a promise for your commute. Here is how far apart they usually sit, and why. It's also important to realise that range can vary greatly between days with the same driver or road conditions, season (heat/cold etc) so _your milage may vary_ applies!
 
 ## WLTP vs real driving
 

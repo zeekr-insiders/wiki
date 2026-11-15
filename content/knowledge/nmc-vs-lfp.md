@@ -10,10 +10,15 @@ description: "NMC vs LFP EV batteries explained: how the two chemistries differ 
 
 *Last checked: 8 November 2026.*
 
-Nearly every EV battery sold in Australia is a lithium-ion pack, and most use one of two cathode chemistries: **NMC** (nickel manganese cobalt) or **LFP** (lithium iron phosphate). Zeekr uses both, so it is worth knowing which one you own. It changes how you should charge, see [Charging to 80% vs 100%](charging-80-vs-100.md).
+Nearly every EV battery sold in Australia is a lithium-ion pack, and most use one of two cathode chemistries: **NMC** (nickel manganese cobalt) or **LFP** (lithium iron phosphate). Zeekr uses both, so it's a good idea to know which chemistry your vehicle uses. 
 
-!!! tip "Quick answer"
-    NMC packs the most energy into the least weight. LFP is tougher, tolerates more charge cycles and handles full charges better. Zeekr fits LFP to its entry grades and NMC to its bigger-battery and performance grades.
+It changes how you should charge, see [Charging to 80% vs 100%](charging-80-vs-100.md).
+
+!!! tip "Quick Primer"
+    **NMC** packs the most energy into the least weight.\    
+    **LFP** is tougher, tolerates more charge cycles and handles full charges better. 
+
+    Zeekr fits LFP to its entry grades and NMC to its bigger-battery and performance grades.
 
 ## The two chemistries
 
@@ -50,7 +55,7 @@ These are generic cell-level figures [^1]. A finished pack's range, weight and l
 | 7X Long Range RWD | 100 kWh | NMC [^3] |
 | 7X Performance AWD | 100 kWh | NMC [^3] |
 | 009 FWD | 116 kWh | NMC [^4] |
-| 009 AWD | - | - |
+| 009 AWD | 116 kWh | NMC [^4] |
 
 The 2027 7X (MY27) is reported to keep the same battery sizes as the MY25/MY26 car [^3]. Some press uses "NCM" (nickel cobalt manganese) for the same family as NMC. For the 009 AWD, an MY27, or if you're unsure which battery you have, check the compliance and battery plates or ask your dealer.
 
@@ -71,3 +76,4 @@ The 2027 7X (MY27) is reported to keep the same battery sizes as the MY25/MY26 c
 [^2]: CarExpert, "2026 Zeekr X price and specs updated: EV gets massive price cuts", <https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1>, accessed 8 November 2026.
 [^3]: CarExpert, "2027 Zeekr 7X update: more power, same price", <https://www.carexpert.com.au/car-news/2027-zeekr-7x-update-more-power-same-price>, accessed 8 November 2026; EV Central, "Key Tesla Model Y rival gets more power, same price for 2027" (1 November 2026), <https://evcentral.com.au/key-tesla-model-y-rival-gets-more-power-same-price-for-2027-zeekr-7x-upgraded-with-500kw-flagship-and-up-to-627km-range/>, accessed 8 November 2026.
 [^4]: CarExpert, "2026 Zeekr 009: Luxury EV people mover gets more affordable", <https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable>, accessed 8 November 2026.
+[^5]: Zeekr 009 Specifications, <https://www.zeekrlife.com/published/assets/604b6b6b551e8479c7e8d141520e5e861aa590dfd4846429ddb48c6a4b8a66a7/ZEEKR-009-Brochure.pdf>, accessed 8 November 2026.

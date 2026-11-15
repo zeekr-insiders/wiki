@@ -40,7 +40,7 @@ Hours from empty to full, ideal case, at the wallbox's rated power (energy divid
 | 66 kWh (X AWD) | 28.7 h | 9.4 h | 6.0 h | 3.0 h |
 | 75 kWh (7X RWD) | 32.6 h | 10.7 h | 6.8 h | 3.4 h |
 | 100 kWh (7X Long Range, AWD) | 43.5 h | 14.3 h | 9.1 h | 4.5 h |
-| 116 kWh (009 FWD) | 50.4 h | 16.6 h | 10.5 h | limited to 11 kW |
+| 116 kWh (009 FWD/AWD) | 50.4 h | 16.6 h | 10.5 h | limited to 11 kW |
 
 Pack sizes: [^3][^4][^5]. The portable column uses 2.3 kW (calculated: 230 V x 10 A), as in the [home charging guide](../guides/charging/home-setup.md); portable chargers run at about 1.4 to 2.8 kW [^2]. In daily life you rarely charge from empty: a typical 20% to 80% top-up takes 60% of those hours. Real sessions run longer, because of charging losses.
 
@@ -58,7 +58,9 @@ Quotes vary widely, so get at least two.
 
 - An installed single-phase 7 kW wallbox typically costs about $1,000 to $3,500 in mid-2026, depending on the job [^6][^7][^8].
 - The main cost driver is distance from the switchboard and whether the board needs work. Older homes built before the mid-2000s often need board work before a 32 A circuit can be added [^7].
-- Zeekr offers: the MY27 7X launch offer for orders from 1 November to 31 December 2026 includes a 7 kW wallbox, supply only; installation by a licensed electrician is at your cost [^9].
+- Zeekr offers: 
+    - The **MY25 7X launch offer** for preorders of the original Zeekr 7X, included a wall-charger for free (excludes installation) [^9].
+    - The **MY27 7X launch offer** for orders from 1 November to 31 December 2026 includes a 7 kW wallbox, supply only; installation by a licensed electrician is at your cost [^9].
 
 ## Network approval, at a high level
 
