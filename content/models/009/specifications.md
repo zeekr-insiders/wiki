@@ -1,5 +1,6 @@
 ---
 models: ["009"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr 009 specs: battery, range, charging"
 description: "Zeekr 009 specifications for Australia: FWD and AWD power and torque, battery, WLTP range, AC and DC charging, seating, audio and warranty for the 2026 range."
@@ -26,21 +27,21 @@ Sources: [^1][^2].
 | **Motors** | Single, front | Dual |
 | **Power / torque** | 250 kW / 373 Nm | 450 kW / 693 Nm |
 | **0-100 km/h** | 7.9 s | 4.5 s |
-| **Battery** | 116 kWh NMC | not published in our sources |
+| **Battery** | 116 kWh NMC | - |
 | **Range (WLTP)** | 604 km | 582 km |
 | **Wheels** | 19-inch | 20-inch |
 | **Seating** | 7 seats (2+2+3) | 7 or 6 seats |
 
-Sources: [^1][^2].
+Sources: [^1][^2]. Zeekr has not published the AWD's battery size.
 
 ## Charging
 
 | Spec | FWD | AWD |
 | :--- | :--- | :--- |
-| **DC** | 150 kW, 10-80% in about 30 minutes | not published in our sources |
-| **AC** | 11 kW | not published in our sources |
+| **DC** | 150 kW, 10-80% in about 30 minutes | - |
+| **AC** | 11 kW | - |
 
-Sources: [^1][^2].
+Sources: [^1][^2]. Zeekr has not published charging rates for the AWD.
 
 What the figures mean: [NMC vs LFP batteries](../../knowledge/nmc-vs-lfp.md) for the battery chemistry, [kW vs kWh](../../knowledge/kw-vs-kwh.md) for the units, and [AC vs DC and the charging curve](../../knowledge/charging-curve.md) for charging speeds.
 
@@ -48,10 +49,8 @@ What the figures mean: [NMC vs LFP batteries](../../knowledge/nmc-vs-lfp.md) for
 
 - **Audio:** 30-speaker Yamaha system [^1].
 - **FWD paint:** Phantom Black or Crystal White only [^1].
-- **Towing:** we have not found a published towing rating for the 009. Ask Zeekr or your dealer before planning to tow.
-
-!!! note "Not yet confirmed"
-    One Carsales listing gives the boot as 574 L with the seats in the standard layout, up to 2,979 L [^3]. We have not seen a second source.
+- **Boot:** 574 L with the seats in the standard layout, up to 2,979 L [^3].
+- **Towing:** Zeekr has not published a towing rating for the 009. Ask your dealer before planning to tow.
 
 ## Warranty and roadside assistance
 

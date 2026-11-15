@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Tasmania EV stamp duty and rego"
 description: "Buying a Zeekr in Tasmania: stamp duty and registration for EVs, no open EV rebates, and local servicing, charging and club resources for Tasmanian owners."
 ---
@@ -12,10 +13,7 @@ description: "Buying a Zeekr in Tasmania: stamp duty and registration for EVs, n
 
 There are no open Tasmanian EV rebates [^1].
 
-!!! note "Not yet confirmed"
-    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
-
-Check current duty and registration with [Tasmanian State Revenue Office](https://www.sro.tas.gov.au) and [Transport Tasmania](https://www.transport.tas.gov.au).
+Concessions change often. Check current duty and registration with [Tasmanian State Revenue Office](https://www.sro.tas.gov.au) and [Transport Tasmania](https://www.transport.tas.gov.au).
 
 ## Service
 

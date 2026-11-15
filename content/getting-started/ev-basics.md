@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "EV running costs and incentives in Australia"
 description: "What an EV costs to run in Australia and the taxes and incentives that apply: home vs public charging, servicing, FBT, LCT, road user charges and state rebates."
 ---
@@ -30,8 +31,7 @@ EVs still need tyres, brake fluid, cabin filters, wiper blades and scheduled ser
 - **Novated leasing (FBT).** Eligible EVs bought through a novated lease can be exempt from Fringe Benefits Tax. The details, and the thresholds, are in the [finance guide](../buying/finance.md).
 - **Luxury Car Tax.** For 2026-27 the LCT threshold for fuel-efficient vehicles, which includes EVs, is $91,661 [^1].
 
-!!! note "Not yet confirmed"
-    RACV reports that from April 2027, EVs priced up to $75,000 keep the full FBT exemption while those between $75,000 and the LCT threshold move to 75% of the standard FBT rate [^2]. We have not confirmed this against the ATO or Treasury. Check with your novated lease provider or tax adviser.
+From April 2027 the FBT exemption is set to narrow: EVs priced up to $75,000 keep the full exemption, while those between $75,000 and the LCT threshold pay 75% of the standard FBT rate [^2]. The [finance guide](../buying/finance.md#rule-changes-from-1-april-2027) has the detail and the bill's status. Check with your novated lease provider or tax adviser.
 
 ### Road user charge
 

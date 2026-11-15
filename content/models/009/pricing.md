@@ -1,5 +1,6 @@
 ---
 models: ["009"]
+changelog: "Rewritten in plain style"
 last_checked: 2026-11-08
 seo_title: "Zeekr 009 price in Australia"
 description: "Zeekr 009 prices in Australia for each grade before on-road costs, as announced at the November 2025 launch, and what to check before you order one."
@@ -11,7 +12,7 @@ description: "Zeekr 009 prices in Australia for each grade before on-road costs,
 
 ## Recommended retail prices
 
-Launch pricing for the 2026 009, announced in November 2025, before on-road costs [^1][^2]. We found no later price change.
+Launch pricing for the 2026 009, announced in November 2025, before on-road costs [^1][^2]. Check the current price with your dealer.
 
 | Grade | RRP |
 | :--- | :--- |
@@ -19,7 +20,7 @@ Launch pricing for the 2026 009, announced in November 2025, before on-road cost
 | 009 7-seat AWD | $135,900 |
 | 009 6-seat AWD | $139,900 |
 
-Carsales gives an indicative drive-away range of $122,218 to $153,907, which varies by state [^3].
+Indicative drive-away prices run from $122,218 to $153,907, depending on the state [^3].
 
 The FWD has a single 250 kW motor and more range than the AWD: 604 km WLTP against 582 km. The AWD has 450 kW and reaches 100 km/h in 4.5 s against the FWD's 7.9 s [^1][^2].
 

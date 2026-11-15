@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 551" role="img" aria-labelledby="kn-zeekr-chemistry-map-title kn-zeekr-chemistry-map-desc">
 <title id="kn-zeekr-chemistry-map-title">Which Zeekr has which battery</title>
-<desc id="kn-zeekr-chemistry-map-desc">Zeekr grades grouped by battery chemistry, with bar length proportional to pack size. LFP: X RWD 61 kWh and 7X RWD 75 kWh. NMC: X AWD 66 kWh, 7X Long Range RWD 100 kWh, 7X Performance AWD 100 kWh and 009 FWD 116 kWh. The 009 AWD battery is not stated in sources.</desc>
+<desc id="kn-zeekr-chemistry-map-desc">Zeekr grades grouped by battery chemistry, with bar length proportional to pack size. LFP: X RWD 61 kWh and 7X RWD 75 kWh. NMC: X AWD 66 kWh, 7X Long Range RWD 100 kWh, 7X Performance AWD 100 kWh and 009 FWD 116 kWh. For the 009 AWD battery, ask your dealer.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -72,5 +72,5 @@ svg.zk.zk-wide{max-width:none}
 <text class="w6 c-ink" x="376" y="456" font-size="14">116 kWh</text>
 <rect class="f-none s-muted" x="24" y="483" width="432" height="44" rx="2" stroke-width="1" stroke-dasharray="4 4"/>
 <text class="w6 c-ink" x="40" y="510" font-size="15">009 AWD</text>
-<text class="c-muted" x="192" y="510" font-size="14">Battery not stated in sources</text>
+<text class="c-muted" x="192" y="510" font-size="14">Ask your dealer</text>
 </svg>

@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr dealers and service centres in Australia"
 description: "Where to buy and service a Zeekr in Australia: the wiki's single list of Zeekr sales and service locations, plus the questions to ask a dealer before you buy."
 ---
@@ -10,9 +11,9 @@ description: "Where to buy and service a Zeekr in Australia: the wiki's single l
 
 This is the wiki's one list of Zeekr sales and service locations. Other pages link here rather than keeping their own list.
 
-Zeekr Australia's dealer locator lists 17 sites in the ACT, NSW, Queensland, South Australia, Victoria and Western Australia, and none in Tasmania or the Northern Territory [^1]. Servicing is done through Zeekr's authorised partner network [^2]. Which sites offer service comes from the club's own check of each dealer on 5 November 2026; the locator does not show it in a form we could verify, so confirm with the dealer or the [official locator](https://www.zeekrlife.com/en-au/find-us) before you book.
+Zeekr Australia's dealer locator lists 17 sites in the ACT, NSW, Queensland, South Australia, Victoria and Western Australia, and none in Tasmania or the Northern Territory [^1]. Servicing is done through Zeekr's authorised partner network [^2]. The Service column is from the club's check of each dealer on 5 November 2026. It can change, so confirm with the dealer or the [official locator](https://www.zeekrlife.com/en-au/find-us) before you book.
 
-| State | Site | Sales | Service (club data) |
+| State | Site | Sales | Service |
 | :--- | :--- | :---: | :---: |
 | ACT | [Zeekr Canberra (Phillip)](https://zeekrcanberra.com.au/) | Yes | Yes |
 | NSW | [Zeekr Castle Hill](https://www.zeekrcastlehill.com.au/) | Yes | No |

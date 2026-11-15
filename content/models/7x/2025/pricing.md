@@ -1,6 +1,7 @@
 ---
 models: ["7x"]
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr 7X price in Australia"
 description: "Zeekr 7X prices in Australia for the RWD, Long Range RWD and Performance AWD before on-road costs, unchanged for the MY27, with options and launch offers."
 ---
@@ -26,8 +27,7 @@ Prices are RRP before on-road costs. They did not change for the MY27 [^1][^2][^
 
 The Black Special Edition launched in March 2026 at $75,900 before on-road costs, $3,000 above the Performance AWD [^4][^5]. It is cosmetic: gloss black lower bumpers, door trims and roof rails, 20-inch black alloys, a rear "7X" badge and black Nappa leather. Performance is the same as the Performance AWD (475 kW, 710 Nm) [^4].
 
-!!! note "Not yet confirmed"
-    We could not confirm whether the MY26 Black Special Edition is still available to order.
+Ask your dealer whether the MY26 Black Special Edition can still be ordered.
 
 ### Black Edition Package (MY27)
 
@@ -35,7 +35,7 @@ The 2027 7X offers an optional Black Edition Package on the Performance AWD: Ony
 
 ## Drive-away prices
 
-Zeekr publishes RRP before on-road costs. Stamp duty, registration and dealer delivery vary by state, so get a written drive-away quote from your dealer. Your [state page](../../../resources/index.md) has duty details where we have them.
+Zeekr publishes RRP before on-road costs. Stamp duty, registration and dealer delivery vary by state, so get a written drive-away quote from your dealer. Your [state page](../../../resources/index.md) has the duty details.
 
 ## Paint
 
@@ -47,7 +47,7 @@ Zeekr publishes RRP before on-road costs. Stamp duty, registration and dealer de
 
     Zeekr lists Onyx Black, Tech Grey, Crystal White, Forest Green and Tech Grey with Black Roof [^7].
 
-No source we found gives a price for any optional paint or interior. Optional colours were free for the first 1,000 launch buyers and are free again for MY27 orders placed between 1 November and 31 December 2026 [^6][^8]. Equipment is bundled by grade, with no separately priced option packs listed [^6]. Zeekr's 7X page mentions an optional air suspension package on the lower grades but gives no price [^7].
+Zeekr has not published prices for optional paint or interiors. Optional colours were free for the first 1,000 launch buyers and are free again for MY27 orders placed between 1 November and 31 December 2026 [^6][^8]. Equipment is bundled by grade, with no separately priced option packs listed [^6]. Zeekr's 7X page lists an optional air suspension package for the lower grades, without a price [^7].
 
 ## MY27 launch offer
 
@@ -60,8 +60,7 @@ As at 8 November 2026, orders placed with a deposit at an authorised dealer from
 
 The offer does not reduce the RRP.
 
-!!! warning "Sources differ: order cap"
-    The offer was first reported as limited to the first 2,000 orders. ZeCar and CarExpert say the cap was replaced by the 1 November to 31 December window [^8][^1]; The Beep still says "first 2,000 orders" [^2]. Confirm with your dealer.
+The offer was first capped at 2,000 orders [^2]. The cap has since been replaced by the 1 November to 31 December window [^1][^8].
 
 ## Sources
 

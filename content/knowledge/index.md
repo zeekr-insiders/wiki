@@ -2,6 +2,7 @@
 title: Knowledge
 description: Evergreen EV explainers for Australian Zeekr owners, from battery chemistry and charging to V2G, with sources and links to the charging guides.
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "EV knowledge: batteries, charging and range"
 ---
 
@@ -9,10 +10,9 @@ seo_title: "EV knowledge: batteries, charging and range"
 
 *Last checked: 8 November 2026.*
 
-Plain-English explainers for owners, with every claim footnoted. For step-by-step guides (setting up a home charger, public networks, road trips) see the [charging guides](../guides/charging/home-setup.md). For model-specific figures, see [Models](../models/index.md). For a quick definition, try the [Glossary](../glossary/index.md).
+This section is about sharing common knowledge about EVs regardless of brand (though, the focus is on Zeekr's). They're tidbits to know and be aware of as you start on your EV journey.
 
-!!! info "How we handle figures"
-    Zeekr figures come from motoring press and Zeekr Australia pages. Where sources conflict or we could not confirm, the page says so. Charts marked "illustrative" show a shape, not measured data.
+For step-by-step guides (setting up a home charger, public networks, road trips) see the [charging guides](../guides/charging/home-setup.md). For model-specific figures, see [Models](../models/index.md). For a quick definition, try the [Glossary](../glossary/index.md).
 
 ## Where to start
 

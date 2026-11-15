@@ -1,4 +1,5 @@
 ---
+changelog: "Rewritten in plain style"
 seo_title: "Recommended Zeekr accessories"
 description: "Accessories Zeekr owners have found useful in Australia: floor and boot protection, organisers, charging cables, dashcams and emergency kits, and what to avoid."
 ---
@@ -34,10 +35,7 @@ Practical accessories that {{ extra.club.full_name }} members have found useful.
 ### Portable charger safety
 
 !!! danger "No extension leads or adapters"
-    Zeekr's 7X owner manual says not to use any adapters, extension cables or multiple ports of any kind when charging [^1]. Plug a portable charger straight into a suitable wall socket. If the nearest socket is too far away or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox.
-
-!!! note "Not yet confirmed for the Australian manual"
-    The manual we read is the Netherlands edition of the 7X manual, on an unofficial mirror [^1]. Check the booklet that came with your car, and follow your portable charger's own manual too.
+    Zeekr's 7X owner's manual (Netherlands edition) says not to use any adapters, extension cables or multiple ports of any kind when charging [^1]. Plug a portable charger straight into a suitable wall socket. If the nearest socket is too far away or isn't suitable, have a licensed electrician install a dedicated outlet or a wallbox. The booklet that came with your car and your portable charger's own manual apply too.
 
 The same manual also says not to use a damaged cable or socket, not to coil or bundle the cable while charging, and to keep the cable out of direct sunlight, because overheating protection can slow or stop charging [^1]. [Plugs and cables](../../knowledge/plugs-and-cables.md) covers portable chargers, Type 2 cables and the safe way to plug in.
 
@@ -50,7 +48,7 @@ The same manual also says not to use a damaged cable or socket, not to coil or b
 
 ### Dashcam
 
-The MY27 7X has a built-in digital video recorder (DVR) as standard on every grade, which uses the car's own cameras and monitors the car while parked [^2]. No source we found says the MY25/MY26 car has one or will get one by software update.
+The MY27 7X has a built-in digital video recorder (DVR) as standard on every grade, which uses the car's own cameras and monitors the car while parked [^2]. If you have an MY25/MY26 car, ask your dealer whether it has the DVR or can get it by software update.
 
 If you fit an aftermarket dashcam to an MY25/MY26 car, use a plug-in power source or have it installed professionally. Zeekr's warranty policy excludes faults caused by unapproved electrical modifications [^3], so don't tap into fuses or wiring yourself.
 

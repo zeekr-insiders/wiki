@@ -1,7 +1,7 @@
 ---
 models: ["x"]
 last_checked: 2026-11-15
-changelog: "Added what each service includes, MY25 prices and the history of free servicing offers"
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr X servicing and warranty"
 description: "Zeekr X servicing in Australia: the 12-month or 20,000 km interval, what each service replaces, capped prices, free servicing offers and warranty cover."
 ---
@@ -15,11 +15,11 @@ description: "Zeekr X servicing in Australia: the 12-month or 20,000 km interval
 The Zeekr X is serviced every **12 months or 20,000 km**, whichever comes first [^1][^2][^3]. Cars from the September 2024 launch were on 24 months or 40,000 km [^4].
 
 !!! note "Early MY25 owners: check your booklet"
-    CarExpert describes the shorter interval as new for the MY26 car [^1], but Drive's August 2025 review of an MY25 X already quoted 12 months or 20,000 km [^3]. When your car changed over is not yet confirmed. Your Service and Warranty Booklet is the authority [^5].
+    The 12-month interval was reported as new for the MY26 car [^1], but an MY25 X reviewed in August 2025 was already on it [^3]. Your Service and Warranty Booklet sets the interval for your car [^5].
 
 ## What each service includes
 
-Zeekr Australia doesn't publish the X's service list online. Zeekr's official schedules for Malaysia and Singapore, on the same 12-month or 20,000 km interval, follow this pattern [^6][^7]:
+Zeekr Australia doesn't publish the X's service list online. Zeekr's schedules for Malaysia and Singapore, on the same 12-month or 20,000 km interval, follow this pattern [^6][^7]:
 
 | Service | Replaced |
 | :--- | :--- |
@@ -27,7 +27,7 @@ Zeekr Australia doesn't publish the X's service list online. Zeekr's official sc
 | Every 2 years or 40,000 km | Brake fluid and reduction gear oil (rear on RWD, front and rear on AWD) |
 | Every 4 years or 80,000 km | Coolant |
 
-These are not Australian schedules, so treat them as a guide to what your dealer will do, not a promise. The Singapore manual halves the brake fluid and cabin filter intervals in harsh conditions such as dust, hilly or humid areas and extreme temperatures [^7].
+These are overseas schedules: a guide to what your dealer will do, not a promise. The Singapore manual halves the brake fluid and cabin filter intervals in harsh conditions such as dust, hilly or humid areas and extreme temperatures [^7].
 
 None of these schedules list tyre rotation, wiper blades, an air-conditioning regas or a key fob battery [^6][^7]. Ask for a tyre rotation when you book if you want one.
 
@@ -35,28 +35,28 @@ None of these schedules list tyre rotation, wiper blades, an air-conditioning re
 
 ### MY26
 
-Capped-price servicing for the MY26 X runs for up to 8 years or 160,000 km, as reported by CarExpert [^1]:
+Capped-price servicing for the MY26 X runs for up to 8 years or 160,000 km [^1]:
 
 | Grade | 5 years | 8 years |
 | :--- | :--- | :--- |
 | X RWD | $2,662 | $4,766 |
 | X AWD | $3,072 | $5,586 |
 
-CarExpert puts the odd-year services (1st, 3rd, 5th, 7th) at $279 on both grades, with the even-year services costing more, up to $1,450 on the AWD [^1]. Dealers valued the first two services at $829 (RWD) or $1,064 (AWD) in their July 2026 offer [^8][^9], which puts the second service at about $550 (RWD) or $785 (AWD). That is our arithmetic, not a published price: ask your dealer to confirm.
+The odd-year services (1st, 3rd, 5th, 7th) are $279 on both grades; the even-year services cost more, up to $1,450 on the AWD [^1]. The first two services together are valued at $829 (RWD) or $1,064 (AWD) [^8][^9], so the second service is roughly $550 (RWD) or $785 (AWD) (calculated from those values). Confirm the price when you book.
 
 ### MY25
 
-Drive's review of the 2025 X AWD reported these capped prices for the first five years or 100,000 km [^3]:
+Capped prices for the MY25 X AWD over the first five years or 100,000 km [^3]:
 
 | Service | 1st | 2nd | 3rd | 4th | 5th |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | X AWD | $237 | $806 | $237 | $1,535 | $237 |
 
-Drive gave the RWD as $1,090 over three years and $2,532 over five [^3]. Its five-year AWD total of $2,862 doesn't match the sum of its own per-service prices ($3,052), so check the figure for your car with your dealer.
+The RWD is $1,090 over three years and $2,532 over five [^3]. The AWD's five-year total is quoted as $2,862, less than the $3,052 the services above add up to [^3], so check the figure for your car with your dealer.
 
 ## Free servicing offers
 
-- **April 2025, existing owners.** When Zeekr cut the X's prices, it offered existing owners free servicing: three years on the AWD and five years on the RWD [^10][^11]. No terms were published, so confirm what applies to your car with your dealer.
+- **April 2025, existing owners.** When Zeekr cut the X's prices, it offered existing owners free servicing: three years on the AWD and five years on the RWD [^10][^11]. Confirm what applies to your car with your dealer.
 - **July 2026, new MY26 cars.** Orders from 1 to 31 July 2026 got the first two scheduled services free, worth $829 (RWD) or $1,064 (AWD). Private retail buyers only; fleet, government, rideshare, ABN and rental buyers were excluded. Servicing had to follow the Service and Warranty Booklet at an authorised dealer, and anything extra was charged [^8][^9].
 
 As at 15 November 2026, Zeekr's offers page lists no current offer for the X [^12].

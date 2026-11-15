@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "NSW EV stamp duty and road user charge"
 description: "Buying a Zeekr in NSW: standard motor vehicle duty now applies to EVs, the rebate has ended, the road user charge from July 2027, and local resources."
 ---
@@ -16,7 +17,7 @@ Duty on passenger vehicles is $3 per $100 (or part) of value up to $44,999, and 
 
 ## Road user charge from 2027
 
-NSW has legislated a distance-based road user charge for EVs. It starts on **1 July 2027**, or earlier if battery EVs reach 30% of new vehicle sales, and the government says it "will replace motor vehicle duty over time" [^1]. The NSW Government is assessing what the *Vanderstock* High Court decision means for the charge [^1]. Rates have not been confirmed, so we don't quote them.
+NSW has legislated a distance-based road user charge for EVs. It starts on **1 July 2027**, or earlier if battery EVs reach 30% of new vehicle sales, and the government says it "will replace motor vehicle duty over time" [^1]. The NSW Government is assessing what the *Vanderstock* High Court decision means for the charge [^1]. The rates have not been confirmed.
 
 ## Service
 

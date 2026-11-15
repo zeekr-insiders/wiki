@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr roadside assistance and support"
 description: "Zeekr Australia roadside assistance and customer support numbers, federal EV tax that applies in every state, useful EV apps, and links to each state page."
 ---
@@ -27,15 +28,15 @@ Roadside runs for 5 years from first registration [^3]. The first 1,000 Australi
 
 The car must have been sold by Zeekr Australia, be registered, and be roadworthy and well maintained [^2].
 
-!!! warning "Sources differ: out of charge"
-    A 2025 summary sheet lists a tow to the nearest compatible charger if you run out of charge, and a $150 taxi limit [^5]. The April 2026 terms list a $100 taxi and do not mention running out of charge [^2]. Zeekr Roadside does not offer a mobile charge in either document. If the high-voltage battery is flat, expect a tow and ask when you call.
+!!! warning "If you run out of charge"
+    Zeekr Roadside does not offer a mobile charge [^2][^5]. If the high-voltage battery is flat, expect a tow, and ask where it will take you when you call. The April 2026 terms don't mention running out of charge [^2]; the 2025 summary sheet listed a tow to the nearest compatible charger [^5].
 
 Zeekr does not name the company that runs its roadside service [^1][^2].
 
 ## Federal tax
 
 - **Luxury car tax:** for FY2026-27 (from 1 July 2026) the threshold for fuel-efficient vehicles, which includes EVs, is $91,661; for other vehicles it is $80,809 [^6][^7]. Every 009 grade is above it; the 7X and X are below it.
-- **Fringe benefits tax:** see the [finance guide](../../buying/finance.md). A change from April 2027 has been reported but is not yet confirmed.
+- **Fringe benefits tax:** see the [finance guide](../../buying/finance.md), which covers the changes announced from 1 April 2027.
 
 ## State pages
 

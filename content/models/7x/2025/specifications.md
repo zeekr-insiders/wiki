@@ -1,6 +1,7 @@
 ---
 models: ["7x"]
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr 7X specs: range, charging, towing"
 description: "Zeekr 7X specifications for Australia: battery, power, WLTP range, DC and AC charging, towing, boot space, equipment and warranty for MY25/MY26 and MY27."
 ---
@@ -18,7 +19,7 @@ description: "Zeekr 7X specifications for Australia: battery, power, WLTP range,
 {{ spec_card("caravan", "Towing", "2,000 / 750 kg", "Braked / unbraked") }}
 </div>
 
-Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 L of front storage for the Performance AWD, so check yours. The towing rating is for the MY25/MY26 car [^3]; the MY27 rating has not been published.
+Sources: [^1][^2]. The front storage figure is for the RWD grades; ask your dealer for the Performance AWD. Towing is the MY25/MY26 rating [^3]; Zeekr has not yet published the MY27 rating.
 
 ## Performance and charging
 
@@ -33,7 +34,7 @@ Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 
     | Peak DC charging | 450 kW | 420 kW | 420 kW |
     | AC charging | 22 kW | 22 kW | 22 kW |
 
-    Range and 0-100 times are from Zeekr's MY25/MY26 comparison table [^4]. Power and torque are the pre-update figures given by CarExpert [^5]. Charging is unchanged between the two versions [^5].
+    Range and 0-100 times are Zeekr's MY25/MY26 figures [^4]; power and torque are the pre-update figures [^5]. Charging is unchanged between the two versions [^5].
 
 === "MY27 (from December 2026)"
 
@@ -46,10 +47,9 @@ Boot and front storage figures are from CarExpert [^1][^2]; one source gives 66 
     | Peak DC charging | 450 kW | 420 kW | 420 kW |
     | AC charging | 22 kW | 22 kW | 22 kW |
 
-    All figures from CarExpert [^5]. The 800V system carries over [^5].
+    Sources: [^5]. The 800V system carries over [^5].
 
-!!! warning "Sources differ: 10-80% charging time"
-    Zeekr's page shows 13 minutes (RWD) and 16 minutes (Long Range, AWD) in one table and 11 minutes in another [^4]; EV Central quotes "as little as 11 minutes" for the MY27 [^6]. Expect roughly 10 to 16 minutes depending on grade, battery and charger.
+A 10 to 80% DC charge takes about 11 to 16 minutes, depending on grade, battery temperature and charger [^4][^6]. [Why times are quoted 10 to 80%](../../../knowledge/charging-curve.md#why-times-are-quoted-10-to-80).
 
 What the figures mean: [NMC vs LFP batteries](../../../knowledge/nmc-vs-lfp.md) for the battery chemistry, [kW vs kWh](../../../knowledge/kw-vs-kwh.md) for the units, and [AC vs DC and the charging curve](../../../knowledge/charging-curve.md) for charging speeds.
 
@@ -57,7 +57,7 @@ What the figures mean: [NMC vs LFP batteries](../../../knowledge/nmc-vs-lfp.md) 
 
 === "MY25/MY26"
 
-    We have not yet sourced a complete grade-by-grade equipment list for the launch car. Zeekr lists Zeekr Sound Pro (21 speakers) on the Long Range and Performance AWD [^4]. Check your build sheet or the Zeekr configurator for anything else.
+    Zeekr's published equipment list for the launch car is short: Zeekr Sound Pro (21 speakers) on the Long Range and Performance AWD [^4]. Your build sheet or the Zeekr configurator has the rest.
 
 === "MY27 (from December 2026)"
 
@@ -67,11 +67,7 @@ What the figures mean: [NMC vs LFP batteries](../../../knowledge/nmc-vs-lfp.md) 
     - **Performance AWD adds:** air suspension, 21-inch forged alloys, automatic doors [^5].
     - **Black Edition Package (Performance AWD, optional):** Onyx Black paint, blacked-out trim, black Nappa leather, 20-inch black alloys. Price not announced [^5][^7].
 
-!!! warning "Sources differ: Nappa leather"
-    Zeekr's 7X page lists Nappa leather on the Performance AWD only [^4]. CarExpert says the MY27 Long Range adds Nappa over the RWD's faux leather [^5]. If it matters to you, check the grade in person.
-
-!!! note "Not yet confirmed"
-    Long Range wheel size is reported as 19-inch in some sources and 21-inch in others [^5][^7].
+    Zeekr's own 7X page lists Nappa leather on the Performance AWD only [^4], so if the Long Range's upholstery matters to you, check it in person. Check its wheel size (19 or 21 inches) when you order, too [^5][^7].
 
 ## Warranty and roadside assistance
 

@@ -766,7 +766,7 @@ items:
   - id: walk-service
     section: walk
     text: "Service schedule and how to book"
-    hint: "Take the interval from your booklet, and ask the consultant what is inspected and replaced at each visit. Not yet confirmed: the Australian inspection list for each service."
+    hint: "Take the interval from your booklet, and ask the consultant what is inspected and replaced at each visit."
     models: ["all"]
     links:
       - {label: "7X servicing", page: "models/7x/2025/service-schedule.md"}
@@ -775,21 +775,21 @@ items:
   - id: walk-service-7x-my26-health
     section: walk
     text: "Service interval: every 2 years or 40,000 km, plus optional yearly health checks"
-    hint: "That's Zeekr Australia's aftersales notice for the MY25/MY26 7X: the health check is every 12 months or 20,000 km, and the notice makes the first one free. Quotes of 12 months / 20,000 km count the optional checks. Not yet confirmed: whether the year-5 check costs $300 or $330. If you plan to skip the checks, ask the dealer to confirm in writing that your warranty isn't affected."
+    hint: "That's Zeekr Australia's aftersales notice for the MY25/MY26 7X: the health check is every 12 months or 20,000 km, and the notice makes the first one free. Quotes of 12 months / 20,000 km count the optional checks. The year-5 check costs $300 to $330. If you plan to skip the checks, ask the dealer to confirm in writing that your warranty isn't affected."
     models: ["7x-my26"]
     cite: [thedriven-7x, whirlpool-7x, racv-7x, carexpert-7x-review]
     link: {label: "7X servicing", page: "models/7x/2025/service-schedule.md"}
   - id: walk-service-7x-my27
     section: walk
     text: "Service interval: confirm it from your booklet"
-    hint: "MY27 orders from 1 November to 31 December 2026 get the first two scheduled services free, at 12 months / 20,000 km and 24 months / 40,000 km, within 2 years of delivery. Not yet confirmed: whether the MY27 moves to a yearly interval. Ask the dealer and check your MY27 booklet."
+    hint: "MY27 orders from 1 November to 31 December 2026 get the first two scheduled services free, at 12 months / 20,000 km and 24 months / 40,000 km, within 2 years of delivery. Ask the dealer whether the MY27 interval differs from the MY25/MY26 car, and check your MY27 booklet."
     models: ["7x-my27"]
     cite: [zeekr-offers]
     link: {label: "7X servicing", page: "models/7x/2025/service-schedule.md"}
   - id: walk-service-x-my25-booklet
     section: walk
     text: "Service interval: confirm it from your booklet"
-    hint: "Launch cars from September 2024 were on 24 months / 40,000 km, but Drive's August 2025 review of an MY25 X already quoted 12 months / 20,000 km. Not yet confirmed: when the change applied, so your booklet decides."
+    hint: "Launch cars from September 2024 were on 24 months / 40,000 km, and an MY25 X reviewed in August 2025 was on 12 months / 20,000 km. Your booklet says which applies to your car."
     models: ["x-my25"]
     cite: [carexpert-x-2025, drive-x-2025]
     link: {label: "X servicing", page: "models/x/2025/service-schedule.md"}

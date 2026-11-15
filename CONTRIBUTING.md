@@ -35,7 +35,7 @@ Every fact needs a source a reader can check.
 
 - Update `last_checked` in the page's front matter when you check its facts.
 - If you changed a page meaningfully (a new figure, a corrected fact, a new section), add a one-line `changelog:` to its front matter, such as `changelog: "Added MY27 towing figure"`. The wiki's update feed and the club site show it as what changed.
-- If a fact isn't confirmed, or sources disagree, say so on the page.
+- State facts plainly and let the footnote carry the attribution. If sources disagree, give the range or the figure to plan on, with every footnote. If something is unknown, say so in one short clause or tell the reader what to check ("Ask your dealer"). Never describe the research ("we couldn't find", "sources differ").
 - Say which model year a figure is for: MY25/MY26 or MY27.
 
 `make ready` fails if a marker has no entry or an entry is never cited.

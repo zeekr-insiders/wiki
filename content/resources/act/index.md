@@ -1,5 +1,6 @@
 ---
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "ACT EV incentives and rego for Zeekr owners"
 description: "EV incentives in the ACT for Zeekr owners: the interest-free loan of up to $15,000, what ended for registration and duty, and local servicing and charging."
 ---
@@ -12,10 +13,7 @@ description: "EV incentives in the ACT for Zeekr owners: the interest-free loan 
 
 The ACT still offers interest-free loans of up to $15,000 towards an EV. The free registration offer and the motor vehicle duty exemption for EVs have ended; the duty exemption ended on 31 August 2025 [^1].
 
-!!! note "Not yet confirmed"
-    This comes from a single secondary source (RACV, May 2026) [^1], and other websites disagree on some state concessions. We have not checked it against the state revenue office yet. Confirm before you budget.
-
-Check current duty with the [ACT Revenue Office](https://www.revenue.act.gov.au/motor-vehicle-duty) and loan details with [Climate Choices ACT](https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles).
+Concessions change often. Check current duty with the [ACT Revenue Office](https://www.revenue.act.gov.au/motor-vehicle-duty) and loan details with [Climate Choices ACT](https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles).
 
 ## Service
 

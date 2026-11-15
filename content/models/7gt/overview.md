@@ -2,6 +2,7 @@
 models: ["7gt"]
 title: Zeekr 7GT
 last_checked: 2026-11-08
+changelog: "Rewritten in plain style"
 seo_title: "Zeekr 7GT electric wagon in Australia"
 description: "The Zeekr 7GT electric shooting brake: confirmed for Australia but not yet on sale. What is known so far about its range, power, timing and how it compares."
 # Preloads this model's hero banner (overrides/main.html).
@@ -22,45 +23,45 @@ hero_image: 7gt
 *Last checked: 8 November 2026.*
 
 !!! warning "Confirmed for Australia, not yet on sale"
-    Zeekr Australia lists the 7GT as "Coming Soon" and has an expression-of-interest form open. The form is not an order [^1]. Zeekr has said launch is in the fourth quarter of 2026 and first deliveries are expected in the first quarter of 2027 [^2][^3]. **Australian pricing, final specifications and the order date have not been announced.** Zeekr's own page says the car shown is an overseas model and Australian specifications and features may differ [^1].
+    Zeekr Australia lists the 7GT as "Coming Soon" with an expression-of-interest form, which is not an order [^1]. Launch is planned for the fourth quarter of 2026, with first deliveries expected in the first quarter of 2027 [^2][^3]. **Australian pricing, final specifications and the order date are still to be announced**, and the car on Zeekr's page is an overseas model whose specifications may differ [^1].
 
 ## What it is
 
-The 7GT is a five-door, low-slung electric wagon (a shooting brake), designed in Gothenburg, Sweden [^4]. It will be Zeekr's fourth Australian model after the X, 7X and 009 [^2]. It was shown in Sydney in left-hand drive in September 2026, and a right-hand-drive car has since been spotted on Australian roads in Newcastle, reportedly in Performance AWD form [^5].
+The 7GT is a five-door, low-slung electric wagon (a shooting brake), designed in Gothenburg, Sweden [^4]. It will be Zeekr's fourth Australian model after the X, 7X and 009 [^2]. It was shown in Sydney in left-hand drive in September 2026, and a right-hand-drive car, apparently a Performance AWD, has since been spotted on the road in Newcastle [^5].
 
 ## Planned Australian grades
 
-Zeekr has named three grades for Australia: RWD, Long Range RWD and Performance AWD [^2][^3]. The Zeekr page says the fast-charging claim applies to the Long Range RWD and Performance AWD only [^1].
+Zeekr has named three grades for Australia: RWD, Long Range RWD and Performance AWD [^2][^3]. Zeekr's fast-charging claim applies to the Long Range RWD and Performance AWD only [^1].
 
 | Spec | RWD | Long Range RWD | Performance AWD |
 | :--- | :--- | :--- | :--- |
-| Price | Not yet confirmed for Australia | Not yet confirmed for Australia | Not yet confirmed for Australia |
+| Price | To be announced | To be announced | To be announced |
 | Battery | 75 kWh LFP | 100 kWh NCM | 100 kWh NCM |
 | Power / torque | 335 kW / 520 Nm | 335 kW / 520 Nm | 500 kW / 790 Nm |
 | WLTP range | Up to 525 km | Up to 670 km | Up to 590 km |
 | 0-100 km/h | 5.2 s | 5.0 s | 3.1 s |
 
-These are the figures Australian outlets have published for the local line-up [^2][^3][^5]. They have not yet appeared on Zeekr Australia's own 7GT page, so treat them as provisional. See [Specifications](specifications.md) for where sources disagree.
+These are the figures Zeekr gave for the local line-up [^2][^3][^5]. Zeekr Australia's own 7GT page doesn't list them yet, so they may change before launch [^1]. [Specifications](specifications.md) has the detail.
 
 ## Pricing
 
-No Australian price has been announced. Zeekr Australia has said the 7GT will sit below the 7X, but this has not been fully confirmed [^6]. Press estimates exist but are guesses, not Zeekr figures. For reference, the 7X starts at $57,900 before on-road costs [^7].
+No Australian price has been announced. Zeekr Australia expects it to be priced between the X and the 7X [^6]; the 7X starts at $57,900 before on-road costs [^7].
 
 ## How it relates to the 7X
 
-Both cars are Zeekr's mid-size 800V electric cars [^4][^8]. For Australia, the 7GT's published power and torque (335 kW / 520 Nm and 500 kW / 790 Nm) and battery sizes (75 kWh LFP and 100 kWh NCM) match the updated 2027 7X [^7][^2]. The 7GT is lower and wider, and a first-impression review found its boot and rear space trail the 7X [^8]. How the two share their platform is described differently by different outlets; see [Specifications](specifications.md).
+Both cars are Zeekr's mid-size 800V electric cars [^4][^8]. For Australia, the 7GT's published power and torque (335 kW / 520 Nm and 500 kW / 790 Nm) and battery sizes (75 kWh LFP and 100 kWh NCM) match the updated 2027 7X [^2][^7]. The 7GT is lower and wider, and its boot and rear-seat space trail the 7X [^8].
 
 ## What an Australian buyer may compare it with
 
-Outlets name the Tesla Model 3 (including Performance), Kia EV6 GT, Hyundai Ioniq 5 N and Polestar 4 as likely cross-shop rivals, and the Porsche Taycan Cross Turismo and BMW i5 Touring as the higher-priced wagons [^8][^5]. The Denza Z9 GT is a confirmed 2027 electric wagon [^5]. These are press comparisons, not Zeekr's.
+Likely cross-shop rivals are the Tesla Model 3 (including Performance), Kia EV6 GT, Hyundai Ioniq 5 N and Polestar 4, with the Porsche Taycan Cross Turismo and BMW i5 Touring as higher-priced wagons [^5][^8]. The Denza Z9 GT is a confirmed 2027 electric wagon [^5].
 
 ## Warranty and service
 
-Australian outlets report a 5-year, unlimited-kilometre vehicle warranty, an 8-year or 160,000 km battery warranty and 5 years of roadside assistance for the 7GT [^3][^6]. Zeekr's 7GT page does not yet state warranty terms [^1]. The 7GT service interval and capped-price schedule are not yet confirmed for Australia.
+The 7GT is expected to come with a 5-year, unlimited-kilometre vehicle warranty, an 8-year or 160,000 km battery warranty and 5 years of roadside assistance [^3][^6]. Its service interval and capped-price schedule are still to be announced.
 
-## Owner reports in Australia
+## Deliveries
 
-None found. The 7GT is not yet delivered, and the October 2026 sales data recorded no 7GT sales [^5].
+No 7GT has been delivered in Australia yet, and October 2026 sales data recorded no 7GT sales [^5].
 
 ## Sources
 

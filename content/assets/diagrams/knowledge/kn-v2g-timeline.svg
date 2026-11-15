@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="zk " viewBox="0 0 480 664" role="img" aria-labelledby="kn-v2g-timeline-title kn-v2g-timeline-desc">
 <title id="kn-v2g-timeline-title">V2G in Australia: milestones</title>
-<desc id="kn-v2g-timeline-desc">Timeline of V2G in Australia: Nov 2024 Standards Australia approves a V2G standard; Jul 2025 Ausgrid connects its first V2G system, 7.4 kW, as a depot test; Jan 2026 Infypower 6.2 kW DC wallbox reported CEC-certified; Mar 2026 StarCharge Halo 7.4 kW CEC-listed; Apr 2026 NRMA lists 3 CEC-approved chargers and says warranty is the main barrier. As of Nov 2026 this wiki's research found no Zeekr confirmed for V2H or V2G.</desc>
+<desc id="kn-v2g-timeline-desc">Timeline of V2G in Australia: Nov 2024 Standards Australia approves a V2G standard; Jul 2025 Ausgrid connects its first V2G system, 7.4 kW, as a depot test; Jan 2026 Infypower 6.2 kW DC wallbox reported CEC-certified; Mar 2026 StarCharge Halo 7.4 kW CEC-listed; Apr 2026 NRMA lists 3 CEC-approved chargers and says warranty is the main barrier. At Nov 2026, Zeekr owners should ask their dealer before planning on V2H or V2G.</desc>
 <defs>
 <style>
 svg.zk{width:100%;height:auto;display:block;max-width:600px;--zk-invm:#A6A6A6}
@@ -42,7 +42,7 @@ svg.zk.zk-wide{max-width:none}
 <rect class="bg" width="480" height="664"/>
 <text class="w6 c-muted" x="24" y="36" font-size="12" letter-spacing="0.14em">V2G IN AUSTRALIA: MILESTONES</text>
 <text class="d w6 c-ink" x="24" y="78" font-size="30">V2G is brand new here.</text>
-<text class="d w6 c-ink" x="24" y="112" font-size="30">No Zeekr is confirmed yet.</text>
+<text class="d w6 c-ink" x="24" y="112" font-size="30">Ask before you plan on it.</text>
 <line class="s-line" x1="24" y1="156" x2="456" y2="156" stroke-width="2"/>
 <line class="s-line" x1="60" y1="148" x2="60" y2="164" stroke-width="1"/>
 <text class="w6 c-muted" x="64" y="144" font-size="13">2025</text>
@@ -75,6 +75,6 @@ svg.zk.zk-wide{max-width:none}
 <circle class="f-bg s-accent" stroke-width="2.5" stroke-dasharray="3 2" cx="40" cy="560" r="8"/>
 <rect class="f-none s-accent" x="56" y="544" width="400" height="92" rx="2" stroke-width="2" stroke-dasharray="6 4"/>
 <text class="d w6 c-accent" x="72" y="574" font-size="18">Nov 2026</text>
-<text class="w6 c-ink" x="72" y="600" font-size="16">No Zeekr confirmed for V2H or V2G</text>
-<text class="c-muted" x="72" y="622" font-size="14">Finding from this wiki's research, not a dated event</text>
+<text class="w6 c-ink" x="72" y="600" font-size="16">Zeekr owners: ask your dealer first</text>
+<text class="c-muted" x="72" y="622" font-size="14">Status at November 2026, not a dated event</text>
 </svg>

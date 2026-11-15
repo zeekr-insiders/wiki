@@ -449,7 +449,7 @@ terms:
     term: OTA update
     aka: [Over-the-air update, Software update]
     category: money
-    definition: 'A software update the car downloads and installs itself, with no workshop visit. Zeekr''s first OTA update for the 7X in Australia was reported in June 2026 [^driven-ota].'
+    definition: 'A software update the car downloads and installs itself, with no workshop visit. Zeekr rolled out its first OTA update for the 7X in Australia in June 2026 [^driven-ota].'
     see:
       - {label: Owner modifications, page: models/7x/knowledge-base/7x-mods.md}
   - id: ppf

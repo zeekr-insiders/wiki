@@ -22,7 +22,7 @@
 - [ ] Each Sources entry has publisher, title, URL and accessed date
 - [ ] `last_checked` is updated on every page whose facts I checked
 - [ ] Add a changelog line to pages you changed meaningfully (`changelog:` in the front matter, one short line)
-- [ ] Unconfirmed or conflicting facts are labelled as such
+- [ ] Gaps and conflicting figures are stated plainly, without describing the research (`make prose`)
 - [ ] Figures say which model year they apply to (MY25/MY26 or MY27)
 
 ## Licensing

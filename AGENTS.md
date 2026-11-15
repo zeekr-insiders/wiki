@@ -20,9 +20,9 @@ Every researched or factual claim on a page is cited. No exceptions, and no gues
     ```
 
 3. **`last_checked` front matter.** Set `last_checked: YYYY-MM-DD` at the top of every page whose facts you checked, and update it whenever you re-check them.
-4. **Label what is shaky.** If no source confirms a fact, say so in the sentence ("not confirmed", "provisional"). If sources disagree, say they disagree and show both, or send the reader to the authority (service booklet, ATO, dealer).
+4. **Label what is shaky, briefly and in the reader's terms.** A weak fact gets a few neutral words or an action for the reader; sources that disagree become a range or the figure to plan on, with every footnote. See [Writing style](#writing-style).
 5. **Model years.** Always say which car a figure applies to. The original 7X is **MY25/MY26**; the updated 2027 car is **MY27**. Never let a figure float without its model year when the years differ.
-6. **Never invent.** No made-up figures, quotes, URLs, dates or publishers. If you can't find a source, leave the claim out or mark it unconfirmed. Citations can't go inside a spec card grid; cite in the sentence after it.
+6. **Never invent.** No made-up figures, quotes, URLs, dates or publishers. If you can't find a source, leave the claim out, and leave no sentence saying so. Citations can't go inside a spec card grid; cite in the sentence after it.
 7. **Public sources only.** Never cite the club's private research notes (such as its internal fact sheet): readers can't open it. Cite the public sources it relies on, each as its own entry. The club's public guides on zeekrinsiders.com.au are fine.
 
 `make citations` fails if a marker has no entry, an entry is never cited, or an entry cites the club's private research or internal fact sheet. It cannot tell whether a source actually says what the page claims; that is on you.
@@ -157,7 +157,7 @@ The Handover checklist (`content/buying/handover-checklist.md`) is built from `d
 - `express: true` marks an essential: the must-dos a first-time reader shouldn't skip (insurance, payment, licence, the paperwork, the damage walk-around, keys, a charging check, the "we owe you" list, rights, roadside, recalls and the like). Keep Essentials to roughly 25 to 35 items across all phases. The toolbar's Show control (two native radios drawn as a segmented control, one selected style) switches between Essentials (only `express` items) and Everything; each option carries a live count for the current model and state, "Essentials (26)", "Everything (124)", so switching needs no status message. The model and state filters apply on top. A first visit opens on Essentials; the saved view keeps its first values, `view: express` (Essentials) or `full` (Everything), so older saves still load, and a reader with ticks saved before the views existed gets Everything. Ticks are shared across views, and progress, counts, folding, the finale and "Copy what's left" follow the current view. Sections with no Essentials hide in Essentials. Without JavaScript everything shows.
 - `cite` lists keys from `sources`, which the macro turns into the page's footnotes and Sources.
 - `link` (one) or `links` (a list) sends the reader somewhere: `{label, page}` (relative to `content/`, or an `#anchor`), `{label, club, path}` (a link in `extra.club` such as `forum_url`, with an optional path under it), `{label, url}` (an outside site) or `{label, tel}` (digits a phone dials). An app adds its store listings to its link as `ios` (App Store) and `android` (Google Play) URLs, plus `app` when its name differs from the label (`{label: "My NRMA charging", url: ..., app: "My NRMA", ios: ..., android: ...}`); with no `url` the name shows as plain text (`{label: "ZEEKR app", app: "ZEEKR", ios: ..., android: ...}`). It renders as the name followed by small round Apple and Android icons (Simple Icons marks, CC0, inline SVG in `main.py`; 32px targets), each named for screen readers, "ZEEKR on the App Store". Store URLs stay clean, with no UTM tags: the stores drop or mangle them. Use the Australian App Store storefront (`apps.apple.com/au/...`) and check each listing is the official one (the network links it, or the developer matches). `handover.js` shows only the reader's store: iOS and iPadOS (including an iPad reporting as a Mac with touch) get the Apple icon only, Android the Android icon only, anything else both; it reads `navigator.userAgentData.platform` where offered, else the user agent, and hides the other icon with `hidden` so screen readers skip it too. Without JavaScript both show; in print they read as "ZEEKR on the App Store" and the address. The macro adds `utm_source=zeekrinsiders&utm_medium=wiki&utm_campaign=handover-checklist` to every `club` and `url` link, after any query the URL already has, so never type UTM tags into the data file. Wiki pages, `tel:` links and the footnote URLs in `sources` stay clean: sources are citations. Link the apps and sites an item names; the links render as blue link chips on their own row under the hint (`--link-chip-*` tokens in `zeekr.css`, light and dark; text is 7:1 on the chip in light, 9:1 in dark), with an external-link icon and "(opens another site)" for screen readers on `url` and `club` links, a phone icon on `tel` links and no icon on wiki links. In print they are plain text with the address after them. Blue is kept for these chips.
-- Phrase a gap as an action ("Ask the dealer", "Confirm what your order includes"), never as an excuse about what the sources lack.
+- Hints follow [Writing style](#writing-style): phrase a gap as an action ("Ask the dealer", "Confirm what your order includes"). `make prose` scans the `text` and `hint` fields too.
 
 Each item shows its model, year and state tags on their own line under the text (outlined; state tags dashed), so the text starts flush and "Copy what's left" copies the text alone. Tags the current filters already satisfy hide: with a model chosen, the model tags; with a state chosen, the state tags; with "Any" they show as usual. Print and no-JavaScript show every tag. Without JavaScript the toolbar and the end actions stay hidden and every item shows, tagged.
 
@@ -201,6 +201,37 @@ Plain Markdown. Keep headers and row labels short so a table fits a phone with l
 - Internal links are relative paths to the `.md` file.
 - No emojis. Use the Lucide icons through the macros. Headings carry no icons.
 
+**In short:** write as one owner telling another what is true. State the fact, put the footnote after it, and move on. The footnote is the attribution; the body is for the reader. The research stays in club-docs.
+
+**Facts and footnotes.** State the fact plainly and put the marker straight after it: "The 7X is serviced every 2 years or 40,000 km [^1]." Don't name the publisher in the sentence unless the exact wording or the identity of the speaker is the point ("Zeekr's warranty policy says..." is fine when the policy's wording matters; "CarExpert reports that the price is $57,900 [^1]" is not). Several sources for one fact go in one marker run: `[^1][^2]`. Never use "according to", "as reported by", "X puts it at" or "Y quotes" in place of a footnote.
+
+**Gaps.** If a fact rests on one weak source, cite it and say in a few neutral words what is missing: "The boot is 574 L [^3]; Zeekr has not published an official figure." If there is no usable source, leave the fact out, and don't write a sentence saying you left it out. A gap the reader can close becomes an action: "Ask your dealer", "Check your booklet", "Confirm with the state revenue office". Never narrate the search ("we could not find", "no source we found", "we have not seen", "so none is given", "not published in our sources"). This applies everywhere: pages, tables, checklist hints and glossary entries.
+
+**Honest, not stronger.** Removing the narration must not upgrade the claim. A reported or expected figure stays reported or expected ("is expected to", "early reports put it at"), and a figure Zeekr has not confirmed is never written as if Zeekr had.
+
+**Sources that disagree.** Give the reader the fact that follows from the disagreement, not the story of it: a range ("$300 to $330 [^1][^2]"), the figure to plan on ("Plan on about 15 minutes [^2][^3]"), or the authority to check ("Your Service and Warranty Booklet is the authority [^8]"). All the footnotes go after it. Don't list who said which number unless a reader needs that to act. No "Sources differ" boxes.
+
+**Absent information.** Say what is true about the world, once, in one clause: "Zeekr has not published a towing rating for the 009." A table cell with no figure shows a dash, with one line under the table if an explanation helps.
+
+**Quoting.** Quote only when the exact words matter: a warranty clause, a legal definition, an offer's terms, a phrase the reader will see on a form. Otherwise paraphrase and cite.
+
+**First person.** "We" is for the club's own advice and practice ("We plan on 70 to 80% of rated range on club drives"), never for the research ("we found", "we checked", "we read").
+
+**Derived figures.** Mark a calculation once, briefly, where it is made: "(calculated: 230 V x 10 A)" or a table note "Hours are energy divided by power, before losses." Not "our arithmetic" in every sentence.
+
+**Admonitions.** A box is for something the reader must act on or must not miss: a safety rule, a deadline, a cost trap, a model-year difference that changes the answer. A box is never about the state of the sources: no "Not yet confirmed", "Sources differ", "No figures sourced", "About the manual we checked" or "How we handle figures" boxes. Aim for at most two boxes per page.
+
+| Don't | Do |
+|---|---|
+| "RACV reports that the discount is $100 [^3]. Other sources say it ended on 1 January 2026 [^4]. We have not checked with VicRoads." | "The $100 EV registration discount ended on 1 January 2026 [^4]. Check the fee with VicRoads." |
+| "One Carsales listing gives the boot as 574 L [^3]. We have not seen a second source." | "The boot holds 574 L [^3]." |
+| "Zeekr's page shows 13 and 16 minutes in one table and 11 in another, so no single figure is reliable [^4]." | "Zeekr quotes 10 to 80% in 11 to 16 minutes depending on grade [^4]." |
+| "We could not confirm whether the Black Special Edition is still orderable." | "Ask your dealer whether the Black Special Edition can still be ordered." |
+| `!!! note "Not yet confirmed"` / "This comes from a single secondary source..." | "Concessions change often. Confirm with the state revenue office before you budget." |
+| "That is our arithmetic, not a published price: ask your dealer to confirm." | "so the second service is roughly $550 (calculated from the offer value [^8])." |
+
+`make prose` (`scripts/check_prose.py`, part of `make ready`) flags the usual tells: research narration, publisher-led attribution, method notes, source-status box titles and pages with more than three boxes. It fails on any finding; `PROSE_STRICT=0 make prose` lists them as warnings while you work. For a deliberate exception (a quoted source, a trip report that says "we found the road closed"), text inside quotation marks is skipped, or end the line with `<!-- prose: allow -->`.
+
 ## Colour and the orange rule
 
 The wiki uses the front door's neutral palette: Carbon, greys and Arctic White, with ink-coloured links. **Zeekr orange (`--zeekr-orange`, `#FF5A00`) is kept for actions and position only**: primary buttons, the current tab underline, reading progress, the home hero and the "On this page" marker. Never use orange for body text, headings, emphasis, icons, card accents or "best in column" markers. On light backgrounds, orange text uses `--orange-ink-light` (`#B03C00`) for contrast. Use the tokens in `zeekr.css`, never raw hex values.
@@ -242,7 +273,7 @@ The club uses AI tools to help with research, drafting, code and some artwork, a
 
 ## Before you say work is done
 
-1. `make ready` passes. Failures: nav, strict build, citations, seo (missing or duplicate title or description, canonical, `lang`, H1, structured data), labels (skipped heading levels). Warnings only: page name differing between H1, nav and cards (labels) and a description outside 140 to 160 characters (seo).
+1. `make ready` passes. Failures: nav, strict build, citations, seo (missing or duplicate title or description, canonical, `lang`, H1, structured data), labels (skipped heading levels), prose (any finding). Warnings only: page name differing between H1, nav and cards (labels) and a description outside 140 to 160 characters (seo).
 2. For visual changes, look at the page yourself in light and dark, at phone and desktop widths.
 
 Work on a branch with small one-line commits. `main` publishes the live site, so it only takes reviewed changes.
