@@ -30,7 +30,7 @@ V2G exports electricity from an EV's battery to a home, a building or the electr
 - **7X:** all variants have V2L at 3.3 kW [^3].
 - **X:** V2L at about 3 to 3.3 kW [^4][^5][^6]. Zeekr's X page writes it as "3.3 kWh", a unit slip for kW [^6]. Your owner's manual has the figure for your car.
 - **009:** ask your dealer whether the 009 has V2L.
-- **V2H and V2G:** the X is listed as not supporting V2H [^4]. For any Zeekr, ask your dealer before you plan around either.
+- **V2H and V2G:** the X is listed as not supporting V2H [^4].
 
 !!! note "What 3.3 kW runs"
     3.3 kW is a limit on total draw, so add up what you plug in. How the adapter connects and any safety limits are in your owner's manual.
@@ -40,7 +40,7 @@ V2G exports electricity from an EV's battery to a home, a building or the electr
 - **Nov 2024:** Standards Australia approved a new V2G standard covering inverters and bidirectional chargers, with each product to be registered with the Clean Energy Council (CEC) [^7]. Before this, only South Australia permitted V2G chargers in homes [^7]. The updated AS/NZS 4777.1:2024 defines two V2G modes: Mode 3 (AC), which needs the car to comply with AS/NZS 4777.2, and Mode 4 (DC), which is expected to see more use [^8].
 - **Jul 2025:** Ausgrid connected its first fully operational V2G system, a StarCharge Halo 7.4 kW single-phase charger at its Artarmon depot, as a test. Ausgrid said rollout depends on CEC approval, cable approvals, car-maker permission and agreements with network operators [^9].
 - **Early 2026:** CEC approvals arrived. Infypower announced CEC certification for its 6.2 kW DC wallbox in January 2026 [^10], and StarCharge's Halo 7.4 kW was CEC-listed in March 2026 [^11].
-- **Apr 2026:** three bidirectional chargers were CEC-approved for installation anywhere in Australia: the StarCharge Halo, the Infypower Numbat7 and the SigEnergy EV DC charging module. The main barrier is car-maker warranty: outside trials and a couple of exceptions, V2G use risks voiding the battery warranty [^12]. Check the CEC's approved list for the current set.
+- **Apr 2026:** three bidirectional chargers were CEC-approved for installation anywhere in Australia: the StarCharge Halo, the Infypower Numbat7 and the SigEnergy EV DC charging module. The main barrier is car-maker warranty: outside trials and a few exceptions, V2G use risks voiding the battery warranty [^12]. Check the CEC's approved list for the current set.
 
 <figure class="zi-diagram">
 --8<-- "content/assets/diagrams/knowledge/kn-v2g-timeline.svg"
