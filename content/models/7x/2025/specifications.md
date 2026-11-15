@@ -19,7 +19,7 @@ description: "Zeekr 7X specifications for Australia: battery, power, WLTP range,
 {{ spec_card("caravan", "Towing", "2,000 / 750 kg", "Braked / unbraked") }}
 </div>
 
-Sources: [^1][^2]. Front storage on the Performance AWD may be larger (66 L), so check yours. Towing is the MY25/MY26 rating [^3]; Zeekr has not yet published the MY27 rating.
+Sources: [^1][^2]. The front storage figure is for the RWD grades; ask your dealer for the Performance AWD. Towing is the MY25/MY26 rating [^3]; Zeekr has not yet published the MY27 rating.
 
 ## Performance and charging
 
