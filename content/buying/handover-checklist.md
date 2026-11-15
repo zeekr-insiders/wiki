@@ -2,7 +2,7 @@
 last_checked: 2026-11-12
 seo_title: "The Insiders Handover Checklist for a new Zeekr"
 description: "A tick-as-you-go Zeekr handover checklist for Australia: what to set up before delivery day, what to check at the dealer, and what to do in the first weeks."
-changelog: "Model-year items for the 7X and X, a state picker with state items, and the forum is now the place to say hello"
+changelog: "Service intervals for every model, with links to what each service includes"
 ---
 
 # Handover checklist
